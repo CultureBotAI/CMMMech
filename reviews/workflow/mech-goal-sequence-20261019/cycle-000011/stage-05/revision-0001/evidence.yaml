@@ -1,0 +1,148 @@
+schema_version: 1.0.0
+repository_key: cmmmech
+github_repository: CultureBotAI/CMMMech
+run_id: mech-goal-sequence-20261019
+cycle: 11
+stage: 5
+revision: 1
+outcome: completed
+summary: 'Consumed the 3 Cycle 11 Stage 4 review findings (cmmmech-cycle11-stage4-finding-0001,
+  cmmmech-cycle11-stage4-finding-0002, cmmmech-cycle11-stage4-finding-0003) across
+  5 distinct records, grouped them by root cause and repair ownership into GRP-C11S5-001
+  (#967, enstatite.yaml, olivine-group.yaml, and dunite.yaml Gluconobacter oxydans
+  silicate bioleaching causal graphs and pqqC/gdh protein_examples updated with Klug
+  et al. 2026 and Lee et al. 2025 study-specific prose and supports: partial), GRP-C11S5-002
+  (#968, metacinnabar.yaml Vazquez-Rodriguez et al. 2015 SoxB protein_examples and
+  causal_graphs[0] updated to distinguish the primary 2 g/L ground natural museum
+  metacinnabar feed from synthetic black HgS and qualify edges[1] aqueous-Hg support
+  to partial), and GRP-C11S5-003 (#969, scandium.yaml Dong et al. 2024 Mex-LanM protein_examples
+  and causal_graphs[0] updated to supports: partial on binding/protein evidence and
+  aligned with the synthetic pH 3.0 16-REE chloride feed and stepwise 30 mM / 50 mM
+  malonate elution at pH 5.0), applied all 5 record remediations with 5 append-only
+  EDIT history sidecars and regenerated pages/, preserved all immutable Stage 4 review
+  bundles untouched, and verified all 5 remediated records in structured review bundle
+  20261109T111500Z-cycle11-stage5-remediation-verification with verdict pass and 0
+  carry-forward findings.'
+source_revision: e5435802649ba486fc86d883ffed926e23fa8719
+scope_frozen_at: '2026-11-09T11:14:00Z'
+previous_evidence:
+  path: reviews/workflow/mech-goal-sequence-20261019/cycle-000011/stage-04/revision-0001/evidence.yaml
+  sha256: 99de4737c419ba8a1368933e1f7221be4aae1affccaef5d220e4867680c45750
+artifacts:
+- path: reviews/workflow/mech-goal-sequence-20261019/cycle-000011/stage-05/revision-0001/issue_map.md
+  sha256: de9e8da5d8465809ed2de1f22e0f59bc3565608c0f466c137266ee65a71ea84d
+  kind: issue_map
+- path: reviews/workflow/mech-goal-sequence-20261019/cycle-000011/stage-05/revision-0001/validation.md
+  sha256: fd2daea50683c1bd37dba436656b4767d868630a07e60fadd351349d25baa108
+  kind: validation
+findings:
+- finding_id: cmmmech-cycle11-stage4-finding-0001
+  carried_from: cmmmech-cycle11-stage4-finding-0001
+  status: resolved
+  group_id: GRP-C11S5-001
+  issue_url: https://github.com/CultureBotAI/CMMMech/issues/967
+  summary: 'Across the three Gluconobacter oxydans whole-culture biolixiviant silicate
+    bioleaching records — data/records/enstatite.yaml (cmmmech:enstatite, mineral,
+    Klug et al. 2026), data/records/olivine-group.yaml (cmmmech:olivine-group, mineral_group,
+    Klug et al. 2026), and data/records/dunite.yaml (cmmmech:dunite, primary_resource,
+    Lee et al. 2025) — enstatite.yaml causal_graphs[0].nodes[4].description retains
+    the generic parenthetical template string repeating the capitalized node label,
+    edges[0..2] in enstatite.yaml and olivine-group.yaml and edges[1..2] in dunite.yaml
+    retain generic one-line template explanations, and dunite.yaml asserts unqualified
+    supports: support on pqqC (UniProtKB:Q9L3B2) and gdh (UniProtKB:P27175) protein_examples
+    and edges[1..2] despite whole-culture comparisons without single-gene pqqC/mgdh
+    knockouts.'
+  disposition: 'Resolved under #967 (GRP-C11S5-001) by replacing the generic parenthetical
+    template description on enstatite.yaml causal_graphs[0].nodes[4].description,
+    replacing generic one-line template explanations on edges[0..2] in enstatite.yaml
+    and olivine-group.yaml and edges[1..2] in dunite.yaml with Klug et al. (2026)
+    and Lee et al. (2025) prose, and setting supports: partial on dunite.yaml pqqC/gdh
+    protein_examples and edges[1..2] with 3 append-only EDIT history sidecars; verified
+    in reviews/structured/20261109T111500Z-cycle11-stage5-remediation-verification/review.yaml.'
+- finding_id: cmmmech-cycle11-stage4-finding-0002
+  carried_from: cmmmech-cycle11-stage4-finding-0002
+  status: resolved
+  group_id: GRP-C11S5-002
+  issue_url: https://github.com/CultureBotAI/CMMMech/issues/968
+  summary: 'In data/records/metacinnabar.yaml (cmmmech:metacinnabar, mineral, Vazquez-Rodriguez
+    et al. 2015), mechanisms[0].protein_examples[0] and causal_graphs[0].nodes[0].protein_examples[0]
+    for UniProtKB:U5TVQ7 (soxB) state that Vazquez-Rodriguez et al. (2015) studied
+    pure-culture dissolution of ''synthetic metacinnabar (beta-HgS)'' whereas primary
+    pure-culture incubations (Figures 3-5, Table 1) used 2 g/L ground natural museum
+    metacinnabar (<250 um, with pyritic inclusions), causal_graphs[0].nodes[1].description
+    omits feed specifics, edges[1] asserts supports: support for soluble Hg(II) accumulation
+    despite low aqueous Hg in viable cultures and chemical Hg release/S0 carryover
+    in controls, and edges[0..3] retain generic one-line explanations.'
+  disposition: 'Resolved under #968 (GRP-C11S5-002) by updating UniProtKB:U5TVQ7 (soxB)
+    protein_examples evidence explanation and causal_graphs[0].nodes[1].description
+    in metacinnabar.yaml to distinguish the primary 2 g/L ground natural museum metacinnabar
+    (<250 um, with pyritic inclusions) from synthetic black HgS, setting edges[1]
+    supports to partial, and replacing generic one-line explanations on edges[0..3]
+    with an append-only EDIT history sidecar; verified in reviews/structured/20261109T111500Z-cycle11-stage5-remediation-verification/review.yaml.'
+- finding_id: cmmmech-cycle11-stage4-finding-0003
+  carried_from: cmmmech-cycle11-stage4-finding-0003
+  status: resolved
+  group_id: GRP-C11S5-003
+  issue_url: https://github.com/CultureBotAI/CMMMech/issues/969
+  summary: 'In data/records/scandium.yaml (cmmmech:scandium, element, Dong et al.
+    2024), mechanisms[0].protein_examples[0] and causal_graphs[0].nodes[0].protein_examples[0]
+    for UniProtKB:C5B164 (Mex-LanM) assert supports: support with ''mild acid stripping''
+    over ''competing transition/base metals'' whereas Dong et al. (2024) Section 3.4
+    and Figures 3C and 5E-F loaded a synthetic pH 3.0 16-REE chloride mixture and
+    eluted Sc(III) at above 99 mol% purity among REEs and above 99% two-step yield
+    (~94.5% Sc yield at 30 mM malonate) using stepwise 30 mM and 50 mM malonate at
+    pH 5.0 without a matched Sc-only resin-without-LanM control (supports: partial),
+    and causal_graphs[0].description, nodes[1..2], and edges[0..1] describe the synthetic
+    16-REE chloride feed as a ''mixed leachate feed'' / ''multi-metal leachate'' with
+    unqualified supports: support on edges[0].'
+  disposition: 'Resolved under #969 (GRP-C11S5-003) by updating UniProtKB:C5B164 (lanM
+    / Mex-LanM) protein_examples evidence and causal_graphs[0].edges[0] in scandium.yaml
+    to supports: partial and aligning protein_examples and causal_graphs[0] with the
+    synthetic pH 3.0 16-REE chloride feed and stepwise 30 mM / 50 mM malonate elution
+    at pH 5.0 with an append-only EDIT history sidecar; verified in reviews/structured/20261109T111500Z-cycle11-stage5-remediation-verification/review.yaml.'
+groups:
+- group_id: GRP-C11S5-001
+  finding_ids:
+  - cmmmech-cycle11-stage4-finding-0001
+  issue_url: https://github.com/CultureBotAI/CMMMech/issues/967
+  status: resolved
+  summary: Replace generic template node/edge explanations and qualify pqqC/gdh support
+    to partial across Gluconobacter oxydans silicate bioleaching records in enstatite.yaml,
+    olivine-group.yaml, and dunite.yaml with 3 append-only EDIT history sidecars.
+  resolution_evidence:
+  - reviews/workflow/mech-goal-sequence-20261019/cycle-000011/stage-05/revision-0001/issue_map.md
+  - reviews/workflow/mech-goal-sequence-20261019/cycle-000011/stage-05/revision-0001/validation.md
+  disposition: Updated causal_graphs[0].nodes[4] and edges[0..2] in enstatite.yaml,
+    edges[0..2] in olivine-group.yaml, and pqqC/gdh protein_examples and edges[1..2]
+    in dunite.yaml with 3 append-only EDIT history sidecars and verified in 20261109T111500Z-cycle11-stage5-remediation-verification.
+- group_id: GRP-C11S5-002
+  finding_ids:
+  - cmmmech-cycle11-stage4-finding-0002
+  issue_url: https://github.com/CultureBotAI/CMMMech/issues/968
+  status: resolved
+  summary: Distinguish primary 2 g/L natural museum metacinnabar feed from synthetic
+    black HgS in SoxB protein_examples and causal_graphs[0].nodes[1], qualify edges[1]
+    support to partial, and replace generic edge explanations in metacinnabar.yaml
+    with an append-only EDIT history sidecar.
+  resolution_evidence:
+  - reviews/workflow/mech-goal-sequence-20261019/cycle-000011/stage-05/revision-0001/issue_map.md
+  - reviews/workflow/mech-goal-sequence-20261019/cycle-000011/stage-05/revision-0001/validation.md
+  disposition: Updated UniProtKB:U5TVQ7 (soxB) protein_examples and causal_graphs[0].nodes[1]
+    and edges[0..3] in metacinnabar.yaml with an append-only EDIT history sidecar
+    and verified in 20261109T111500Z-cycle11-stage5-remediation-verification.
+- group_id: GRP-C11S5-003
+  finding_ids:
+  - cmmmech-cycle11-stage4-finding-0003
+  issue_url: https://github.com/CultureBotAI/CMMMech/issues/969
+  status: resolved
+  summary: 'Align Mex-LanM protein_examples and causal_graphs[0] in scandium.yaml
+    with the synthetic pH 3.0 16-REE chloride feed, stepwise pH 5.0 malonate elution,
+    and supports: partial on binding/protein evidence with an append-only EDIT history
+    sidecar.'
+  resolution_evidence:
+  - reviews/workflow/mech-goal-sequence-20261019/cycle-000011/stage-05/revision-0001/issue_map.md
+  - reviews/workflow/mech-goal-sequence-20261019/cycle-000011/stage-05/revision-0001/validation.md
+  disposition: Updated UniProtKB:C5B164 (lanM / Mex-LanM) protein_examples and causal_graphs[0]
+    in scandium.yaml with an append-only EDIT history sidecar and verified in 20261109T111500Z-cycle11-stage5-remediation-verification.
+carry_forward_ids: []
+infra_tasks: []

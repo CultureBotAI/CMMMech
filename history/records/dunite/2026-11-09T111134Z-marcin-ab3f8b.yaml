@@ -1,0 +1,31 @@
+history_version: 1
+target:
+  kind: record
+  slug: dunite
+  path: data/records/dunite.yaml
+session:
+  id: 2026-11-09T111134Z-marcin-ab3f8b
+  timestamp: '2026-11-09T11:11:34Z'
+  actors:
+  - name: marcin
+    type: ai_agent
+    model: claude-opus-4-6
+    agent_tool: antigravity
+events:
+- type: EDIT
+  outcome: changed
+  summary: Qualify pqqC/gdh protein_examples and edges[1..2] support to partial with lee2025
+    specifics in dunite (#967)
+  details: 'Updated mechanisms[0].protein_examples[2..3] (UniProtKB:Q9L3B2 pqqC and UniProtKB:P27175
+    gdh), causal_graphs[0].nodes[1..2].protein_examples[0], and causal_graphs[0].edges[1..2]
+    in dunite.yaml from supports: support to supports: partial with synchronized Lee et al.
+    (2025) whole-culture wild-type vs B58 delta-pstS, P112:mgdh prose under GRP-C11S5-001
+    (#967).'
+  sections:
+  - mechanisms
+  - causal_graphs
+  - curation_history
+  - history_refs
+links:
+  issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/967

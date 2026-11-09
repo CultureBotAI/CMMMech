@@ -62,8 +62,8 @@ mechanisms:
     annotation_note: Mechanism organism is recorded at species level Methylorubrum extorquens (NCBITaxon:408); grounded to the canonical Methylorubrum extorquens AM1 Swiss-Prot reference proteome entry Mex-LanM (UniProtKB:C5B164, NCBITaxon:272630, UP000009081).
     evidence:
     - source_ref: dong2024
-      supports: support
-      explanation: Immobilized Mex-LanM selectively binds Sc(III) over competing transition/base metals and elutes high-purity scandium upon mild acid stripping.
+      supports: partial
+      explanation: Agarose-immobilized Methylorubrum extorquens AM1 lanmodulin (Mex-LanM-GSGC) retained Sc(III) from a synthetic pH 3.0 16-REE chloride mixture (nominal 0.4 mM total REE in Figure 5; 0.2430 mM sum with 23.8 +/- 1.1 uM Sc in supplement Table S10, labeled Table S9 in caption) and selectively eluted Sc(III) at above 99 mol% purity among REEs and above 99% two-step yield (~94.5% Sc yield at 30 mM malonate in binary Sc/La tests, Figures 3C and 5E-F) using stepwise 30 mM and 50 mM malonate at pH 5.0 in Dong et al. (2024), without a matched Sc-only resin-without-LanM control.
   evidence:
   - source_ref: dong2024
     supports: support
@@ -77,7 +77,7 @@ mechanisms:
 causal_graphs:
 - id: immobilized_mex_lanm_scandium_separation_graph
   name: Immobilized Methylorubrum extorquens AM1 lanmodulin (Mex-LanM) selective Sc(III) capture and elution
-  description: Causal pathway linking column-immobilized Methylorubrum extorquens AM1 lanmodulin (Mex-LanM, UniProtKB:C5B164) to selective coordination of Sc(III) from mixed leachates and pH-controlled desorption.
+  description: Causal pathway linking agarose-immobilized Methylorubrum extorquens AM1 lanmodulin (Mex-LanM, UniProtKB:C5B164) to selective column capture of Sc(III) from a synthetic pH 3.0 16-REE chloride feed and equimolar Sc/La mixtures followed by stepwise pH 5.0 malonate elution.
   scope: RECORD_SPECIFIC_MECHANISM
   mechanism_ref: immobilized_lanmodulin_scandium_separation
   nodes:
@@ -107,37 +107,37 @@ causal_graphs:
       annotation_note: Mechanism organism is recorded at species level Methylorubrum extorquens (NCBITaxon:408); grounded to the canonical Methylorubrum extorquens AM1 Swiss-Prot reference proteome entry Mex-LanM (UniProtKB:C5B164, NCBITaxon:272630, UP000009081).
       evidence:
       - source_ref: dong2024
-        supports: support
-        explanation: Immobilized Mex-LanM selectively binds Sc(III) over competing transition/base metals and elutes high-purity scandium upon mild acid stripping.
+        supports: partial
+        explanation: Agarose-immobilized Methylorubrum extorquens AM1 lanmodulin (Mex-LanM-GSGC) retained Sc(III) from a synthetic pH 3.0 16-REE chloride mixture (nominal 0.4 mM total REE in Figure 5; 0.2430 mM sum with 23.8 +/- 1.1 uM Sc in supplement Table S10, labeled Table S9 in caption) and selectively eluted Sc(III) at above 99 mol% purity among REEs and above 99% two-step yield (~94.5% Sc yield at 30 mM malonate in binary Sc/La tests, Figures 3C and 5E-F) using stepwise 30 mM and 50 mM malonate at pH 5.0 in Dong et al. (2024), without a matched Sc-only resin-without-LanM control.
   - id: mixed_scandium_feed
-    label: Mixed Sc(III)-bearing leachate feed
+    label: Synthetic pH 3.0 16-REE chloride feed containing Sc(III)
     node_type: CHEMICAL_ENTITY
-    description: Acidic feed solution containing Sc(III) and competing non-target cations.
+    description: Synthetic pH 3.0 chloride-salt solution containing Sc(III) (23.8 +/- 1.1 uM Sc within a 16-REE mixture of 0.4 mM nominal / 0.2430 mM sum total REE in supplement Table S10, labeled Table S9 in the Figure 5 caption, plus equimolar Sc/La column feed in Figure 3C) resembling selected leachate compositions.
     protein_grounding_status: NOT_APPLICABLE
   - id: purified_scandium_eluate
     label: Selectively captured and eluted high-purity Sc(III) fraction
     node_type: CHEMICAL_ENTITY
-    description: Resolved Sc(III) fraction recovered at >99% yield and >99% purity from mixed leachate feed (Figure 5) and separated early with 30 mM malonate (pH 5.0, ~94.5% Sc yield) ahead of La(III) (50 mM malonate, pH 5.0, ~98.9% La yield) in binary Sc/La column tests.
+    description: Aqueous Sc(III) eluate fraction recovered at >99% two-step yield and >99 mol% purity among REEs from the synthetic 16-REE chloride feed using stepwise 30 mM and 50 mM malonate at pH 5.0 (Figure 5E-F) and desorbed early at 30 mM malonate (pH 5.0, ~94.5% Sc yield) ahead of La(III) (50 mM malonate, pH 5.0, ~98.9% La yield, Figure 3C).
     protein_grounding_status: NOT_APPLICABLE
   edges:
   - source: mex_lanm_protein
     target: mixed_scandium_feed
     predicate: binds
     relationship: high-affinity EF-hand coordination of Sc(III)
-    description: Immobilized Mex-LanM selectively coordinates Sc(III) at low pH while rejecting base-metal interferents.
+    description: Column-immobilized Mex-LanM-GSGC coordinates Sc(III) from the synthetic pH 3.0 16-REE chloride feed loaded to 70% column capacity on a 0.9 mL agarose bed.
     evidence:
     - source_ref: dong2024
-      supports: support
-      explanation: Immobilized LanM columns selectively retain Sc(III) from multi-metal mixtures.
+      supports: partial
+      explanation: Dong et al. (2024) Section 3.4 and Figures 3C, 4, and 5E-F demonstrate Sc(III) retention by agarose-immobilized Mex-LanM-GSGC from a synthetic pH 3.0 16-REE chloride mixture (0.4 mM nominal / 0.2430 mM sum in Table S9/S10), without a matched Sc-only resin-without-LanM control column.
   - source: mixed_scandium_feed
     target: purified_scandium_eluate
     predicate: transforms_into
-    relationship: selective column capture and desorption of Sc(III) from multi-metal leachate and binary Sc/REE mixtures
-    description: Immobilized Mex-LanM column recovers Sc(III) at >99% yield and >99% purity from mixed multi-metal leachate feed (Figure 5) and selectively desorbs Sc(III) (~94.5% yield) with 30 mM malonate (pH 5.0) before La(III) (~98.9% yield with 50 mM malonate, pH 5.0) in equimolar Sc/La separation tests.
+    relationship: selective column capture and stepwise pH 5.0 malonate desorption of Sc(III) from synthetic 16-REE chloride and binary Sc/La feeds
+    description: Immobilized Mex-LanM column recovers Sc(III) at >99% two-step yield and >99 mol% purity among REEs from the synthetic pH 3.0 16-REE chloride feed using stepwise 30 mM and 50 mM malonate at pH 5.0 (Figure 5E-F) and selectively desorbs Sc(III) (~94.5% yield at 30 mM malonate, pH 5.0) ahead of La(III) (~98.9% yield at 50 mM malonate, pH 5.0) in binary Sc/La column tests (Figure 3C).
     evidence:
     - source_ref: dong2024
       supports: support
-      explanation: Dong et al. (2024) demonstrated >99% Sc(III) yield and >99% purity from mixed leachate feed (Figure 5) and separated equimolar Sc(III)/La(III) on immobilized LanM using stepwise 30 mM and 50 mM malonate (pH 5.0).
+      explanation: Dong et al. (2024) Section 3.4 and Figures 3C and 5E-F report >99% Sc(III) yield and >99 mol% purity among REEs from the synthetic pH 3.0 16-REE chloride feed using two-step 30 mM and 50 mM malonate elution at pH 5.0 and selective Sc(III)/La(III) separation.
 curation_history:
 - timestamp: '2026-10-11T06:27:14Z'
   curator: Codex (GPT-6; Codex)
@@ -159,9 +159,14 @@ curation_history:
   curator: claude
   action: edit
   summary: Normalized top-level key ordering in scandium.yaml so sources precedes criticality per CANONICAL_RECORD_KEYS.
+- timestamp: '2026-11-09T11:11:34Z'
+  curator: marcin
+  action: edit
+  summary: Align Mex-LanM protein_examples and causal_graphs[0] in scandium with dong2024 synthetic 16-REE feed and pH 5.0 malonate elution (#969)
 history_refs:
 - history/records/scandium/2026-10-11T062653Z-codex-38b6bd.yaml
 - history/records/scandium/2026-10-18T042750Z-antigravity-4018cd.yaml
 - history/records/scandium/2026-10-18T065831Z-antigravity-32a9ad.yaml
 - history/records/scandium/2026-10-21T184653Z-claude-616d20.yaml
 - history/records/scandium/2026-10-30T222651Z-claude-31600c.yaml
+- history/records/scandium/2026-11-09T111134Z-marcin-689379.yaml
