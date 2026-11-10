@@ -1,0 +1,28 @@
+history_version: 1
+target:
+  kind: record
+  slug: cuprite
+  path: data/records/cuprite.yaml
+session:
+  id: 2026-11-10T070945Z-marcin-c10491
+  timestamp: '2026-11-10T07:09:45Z'
+  actors:
+    - name: marcin
+      type: ai_agent
+      model: claude-opus-4-6
+      agent_tool: antigravity
+events:
+  - type: EDIT
+    outcome: changed
+    summary: Add congeneric Beauveria bassiana Malate dehydrogenase (BBA_06393, UniProtKB:J4KMZ7)
+      to cuprite.yaml
+    details: Added live-verified Beauveria bassiana reference-proteome (UP000002762, NCBITaxon:655819)
+      Malate dehydrogenase (BBA_06393, UniProtKB:J4KMZ7; EC 1.1.1.37) to mechanisms[0].protein_examples
+      and causal_graphs[0].nodes[beauveria_pyc_oah_cit_organic_acid_enzymes].protein_examples
+      in data/records/cuprite.yaml.
+    sections:
+      - sources
+      - mechanisms
+      - causal_graphs
+      - curation_history
+      - history_refs

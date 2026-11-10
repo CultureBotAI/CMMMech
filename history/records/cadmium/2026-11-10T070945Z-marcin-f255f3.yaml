@@ -1,0 +1,28 @@
+history_version: 1
+target:
+  kind: record
+  slug: cadmium
+  path: data/records/cadmium.yaml
+session:
+  id: 2026-11-10T070945Z-marcin-f255f3
+  timestamp: '2026-11-10T07:09:45Z'
+  actors:
+    - name: marcin
+      type: ai_agent
+      model: claude-opus-4-6
+      agent_tool: antigravity
+events:
+  - type: EDIT
+    outcome: changed
+    summary: Add Klebsiella planticola Cysteine synthase B CysM (cysM, UniProtKB:A0A2X2ECB8) to
+      cadmium.yaml
+    details: Added live-verified Klebsiella planticola reference-proteome (UP001293169, NCBITaxon:575)
+      Cysteine synthase B (cysM / U5E74_26305, UniProtKB:A0A2X2ECB8; EC 2.5.1.47) to mechanisms[0].protein_examples
+      and causal_graphs[0].nodes[klebsiella_planticola_cds1_cysk_cysteine_enzymes].protein_examples
+      in data/records/cadmium.yaml.
+    sections:
+      - sources
+      - mechanisms
+      - causal_graphs
+      - curation_history
+      - history_refs
