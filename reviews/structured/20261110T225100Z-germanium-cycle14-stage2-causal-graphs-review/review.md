@@ -1,0 +1,292 @@
+# Cycle 14 Stage 2 causal_graphs and UniProtKB grounding review of Germanium (cmmmech:germanium)
+
+- Review: 20261110T225100Z-germanium-cycle14-stage2-causal-graphs-review
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-11-10T22:50:00Z
+- Finished UTC: 2026-11-10T22:51:00Z
+- Reviewer: antigravity / cmmmech-cycle14-stage2-causal-graphs-reviewer (self_review)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Germanium (cmmmech:germanium) passes Cycle 14 Stage 2 causal_graphs review (scientific_review: true) at SHA-256 f5752b5f1e005ff4532e29a49551f1b5a4a75b309677ab0e60c5fa312161389d: Updated data/records/germanium.yaml with 'putida_catechol_complexed_germanium_accumulation_graph' (mechanism_ref: putida_catechol_associated_accumulation, 5 nodes / 4 edges), achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and preserving source-faithful support levels and experimental caveats from chmielowski1986: Chmielowski J and Kłapcińska B (1986). Bioaccumulation of Germanium by Pseudomonas putida in the Presence of Two Selected Substrates. Applied and Environmental Microbiology 51:1099-1103. doi:10.1128/aem.51.5.1099-1103.1986; methods and Figures 1-4. (https://doi.org/10.1128/aem.51.5.1099-1103.1986). Live-verified UniProtKB grounding across UniProtKB:Q88GK8 (Q88GK8_PSEPK, catechol 1,2-dioxygenase, gene_symbol: catA-I, TREMBL, NCBITaxon:160488 Pseudomonas putida KT2440, UP000000556); UniProtKB:Q88GK6 (Q88GK6_PSEPK, Muconate cycloisomerase 1, gene_symbol: catB, TREMBL, NCBITaxon:160488 Pseudomonas putida KT2440, UP000000556); UniProtKB:Q88GK7 (Q88GK7_PSEPK, Muconolactone Delta-isomerase, gene_symbol: catC, TREMBL, NCBITaxon:160488 Pseudomonas putida KT2440, UP000000556).
+
+## Scope And Provenance
+
+Cycle 14 Stage 2 causal_graphs and protein_examples review of data/records/germanium.yaml (SHA-256 f5752b5f1e005ff4532e29a49551f1b5a4a75b309677ab0e60c5fa312161389d) and its canonical EDIT history sidecar (history/records/germanium/2026-11-10T224938Z-marcin-6ff72c.yaml) verifying causal-graph node/edge topology, live UniProtKB grounding (UniProtKB:Q88GK8 (Q88GK8_PSEPK, catechol 1,2-dioxygenase, gene_symbol: catA-I, TREMBL, NCBITaxon:160488 Pseudomonas putida KT2440, UP000000556); UniProtKB:Q88GK6 (Q88GK6_PSEPK, Muconate cycloisomerase 1, gene_symbol: catB, TREMBL, NCBITaxon:160488 Pseudomonas putida KT2440, UP000000556); UniProtKB:Q88GK7 (Q88GK7_PSEPK, Muconolactone Delta-isomerase, gene_symbol: catC, TREMBL, NCBITaxon:160488 Pseudomonas putida KT2440, UP000000556)), and primary-source evidence fidelity across 'putida_catechol_complexed_germanium_accumulation_graph' (mechanism_ref: putida_catechol_associated_accumulation, 5 nodes / 4 edges).
+
+Selection: Cycle 14 Stage 2 causal_graphs cohort review for cmmmech:germanium
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 3508503d6abadd52e8bdb9dacd71ebcd26731b83.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:germanium | data/records/germanium.yaml | maintained | Germanium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Strict corpus validation | passed | True | cmmmech:germanium | Checked 713 record(s); 0 failed. |
+| Canonical history validation | passed | True | cmmmech:germanium | Checked 1563 history record(s); 0 error(s). |
+
+## Scientific And Domain Assessments
+
+### Verification of causal_graphs structure, UniProtKB grounding, and parity across 'putida_catechol_complexed_germanium_accumulation_graph' (mechanism_ref: putida_catechol_associated_accumulation, 5 nodes / 4 edges)
+
+graph: supported. Targets: cmmmech:germanium.
+
+Updated data/records/germanium.yaml (SHA-256 f5752b5f1e005ff4532e29a49551f1b5a4a75b309677ab0e60c5fa312161389d) with causal_graphs ('putida_catechol_complexed_germanium_accumulation_graph' (mechanism_ref: putida_catechol_associated_accumulation, 5 nodes / 4 edges)), achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and preserving source-faithful support levels and caveats from chmielowski1986: Chmielowski J and Kłapcińska B (1986). Bioaccumulation of Germanium by Pseudomonas putida in the Presence of Two Selected Substrates. Applied and Environmental Microbiology 51:1099-1103. doi:10.1128/aem.51.5.1099-1103.1986; methods and Figures 1-4. (https://doi.org/10.1128/aem.51.5.1099-1103.1986). Live-verified UniProtKB grounding across UniProtKB:Q88GK8 (Q88GK8_PSEPK, catechol 1,2-dioxygenase, gene_symbol: catA-I, TREMBL, NCBITaxon:160488 Pseudomonas putida KT2440, UP000000556); UniProtKB:Q88GK6 (Q88GK6_PSEPK, Muconate cycloisomerase 1, gene_symbol: catB, TREMBL, NCBITaxon:160488 Pseudomonas putida KT2440, UP000000556); UniProtKB:Q88GK7 (Q88GK7_PSEPK, Muconolactone Delta-isomerase, gene_symbol: catC, TREMBL, NCBITaxon:160488 Pseudomonas putida KT2440, UP000000556).
+
+### Verification of canonical EDIT history sidecar and strict schema validation
+
+provenance: supported. Targets: cmmmech:germanium.
+
+data/records/germanium.yaml was updated exclusively through scripts/curate_causal_graphs.py (curate_record_file), producing append-only history sidecar history/records/germanium/2026-11-10T224938Z-marcin-6ff72c.yaml (SHA-256 131bb32e7d4717fb9a251be8956b7df110865a5f2cb36138e53f9e9c2c15e8ac: Add putida_catechol_complexed_germanium_accumulation_graph causal graph and ground putida_catechol_associated_accumulation to Pseudomonas putida KT2440 catBCA enzymes (UniProtKB:Q88GK8, UniProtKB:Q88GK6, UniProtKB:Q88GK7)) and passing all LinkML and history validation gates.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/records/germanium.yaml; Working-tree record data/records/germanium.yaml (causal_graphs and mechanisms[].protein_examples) | supports | Updated data/records/germanium.yaml (SHA-256 f5752b5f1e005ff4532e29a49551f1b5a4a75b309677ab0e60c5fa312161389d) with causal_graphs ('putida_catechol_complexed_germanium_accumulation_graph' (mechanism_ref: putida_catechol_associated_accumulation, 5 nodes / 4 edges)), achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and preserving source-faithful support levels and experimental caveats. |
+| primary_source | https://doi.org/10.1128/aem.51.5.1099-1103.1986; chmielowski1986: Chmielowski J and Kłapcińska B (1986). Bioaccumulation of Germanium by Pseudomonas putida in the Presence of Two Selected Substrates. Applied and Environmental Microbiology 51:1099-1103. doi:10.1128/aem.51.5.1099-1103.1986; methods and Figures 1-4. (https://doi.org/10.1128/aem.51.5.1099-1103.1986) | supports | Live-verified UniProtKB grounding across UniProtKB:Q88GK8 (Q88GK8_PSEPK, catechol 1,2-dioxygenase, gene_symbol: catA-I, TREMBL, NCBITaxon:160488 Pseudomonas putida KT2440, UP000000556); UniProtKB:Q88GK6 (Q88GK6_PSEPK, Muconate cycloisomerase 1, gene_symbol: catB, TREMBL, NCBITaxon:160488 Pseudomonas putida KT2440, UP000000556); UniProtKB:Q88GK7 (Q88GK7_PSEPK, Muconolactone Delta-isomerase, gene_symbol: catC, TREMBL, NCBITaxon:160488 Pseudomonas putida KT2440, UP000000556). Primary mechanism source (chmielowski1986: Chmielowski J and Kłapcińska B (1986). Bioaccumulation of Germanium by Pseudomonas putida in the Presence of Two Selected Substrates. Applied and Environmental Microbiology 51:1099-1103. doi:10.1128/aem.51.5.1099-1103.1986; methods and Figures 1-4. (https://doi.org/10.1128/aem.51.5.1099-1103.1986)) parameters and source-level caveats are strictly preserved on all nodes, edges, and ProteinExample evidence items. |
+| edit_history | history/records/germanium/2026-11-10T224938Z-marcin-6ff72c.yaml; Canonical EDIT history sidecar history/records/germanium/2026-11-10T224938Z-marcin-6ff72c.yaml | supports | Canonical EDIT history sidecar history/records/germanium/2026-11-10T224938Z-marcin-6ff72c.yaml (SHA-256 131bb32e7d4717fb9a251be8956b7df110865a5f2cb36138e53f9e9c2c15e8ac): Add putida_catechol_complexed_germanium_accumulation_graph causal graph and ground putida_catechol_associated_accumulation to Pseudomonas putida KT2440 catBCA enzymes (UniProtKB:Q88GK8, UniProtKB:Q88GK6, UniProtKB:Q88GK7) |
+| validation | data/records/germanium.yaml; Real CLI validation via python -m cmmmech validate --require-records and validate-history --base main | supports | data/records/germanium.yaml and history/records/germanium/2026-11-10T224938Z-marcin-6ff72c.yaml pass strict LinkML schema, protein_examples parity, and history validation with 0 errors. |
+
+## Limits And Additional Notes
+
+- Review is conducted in single-agent Goal Mode (independence: self_review) against working-tree bytes; an independent subagent PR review is executed prior to merge.
+- Executed during Cycle 14 Stage 2 (causal_graphs) for cmmmech:germanium.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261110T225100Z-germanium-cycle14-stage2-causal-graphs-review
+kind: record
+repository: CultureBotAI/CMMMech
+title: Cycle 14 Stage 2 causal_graphs and UniProtKB grounding review of Germanium
+  (cmmmech:germanium)
+started_at: '2026-11-10T22:50:00Z'
+finished_at: '2026-11-10T22:51:00Z'
+reviewer:
+  identity: antigravity / cmmmech-cycle14-stage2-causal-graphs-reviewer
+  kind: agent
+  model: claude-opus-4-6
+  independence: self_review
+  independence_basis: 'Single-agent Goal Mode execution of .claude/skills/review-record/SKILL.md
+    verifying the Cycle 14 Stage 2 curation of data/records/germanium.yaml (SHA-256
+    f5752b5f1e005ff4532e29a49551f1b5a4a75b309677ab0e60c5fa312161389d) against live
+    UniProtKB grounding and cited primary source (chmielowski1986: Chmielowski J and
+    Kłapcińska B (1986). Bioaccumulation of Germanium by Pseudomonas putida in the
+    Presence of Two Selected Substrates. Applied and Environmental Microbiology 51:1099-1103.
+    doi:10.1128/aem.51.5.1099-1103.1986; methods and Figures 1-4. (https://doi.org/10.1128/aem.51.5.1099-1103.1986)).'
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: 3508503d6abadd52e8bdb9dacd71ebcd26731b83
+  state: working_tree
+  inputs:
+  - path: data/records/germanium.yaml
+    sha256: f5752b5f1e005ff4532e29a49551f1b5a4a75b309677ab0e60c5fa312161389d
+    role: target
+  - path: history/records/germanium/2026-11-10T224938Z-marcin-6ff72c.yaml
+    sha256: 131bb32e7d4717fb9a251be8956b7df110865a5f2cb36138e53f9e9c2c15e8ac
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+targets:
+- target_id: cmmmech:germanium
+  path: data/records/germanium.yaml
+  label: Germanium
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/germanium.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/germanium/2026-11-10T224938Z-marcin-6ff72c.yaml
+    role: canonical_history
+scope:
+  description: 'Cycle 14 Stage 2 causal_graphs and protein_examples review of data/records/germanium.yaml
+    (SHA-256 f5752b5f1e005ff4532e29a49551f1b5a4a75b309677ab0e60c5fa312161389d) and
+    its canonical EDIT history sidecar (history/records/germanium/2026-11-10T224938Z-marcin-6ff72c.yaml)
+    verifying causal-graph node/edge topology, live UniProtKB grounding (UniProtKB:Q88GK8
+    (Q88GK8_PSEPK, catechol 1,2-dioxygenase, gene_symbol: catA-I, TREMBL, NCBITaxon:160488
+    Pseudomonas putida KT2440, UP000000556); UniProtKB:Q88GK6 (Q88GK6_PSEPK, Muconate
+    cycloisomerase 1, gene_symbol: catB, TREMBL, NCBITaxon:160488 Pseudomonas putida
+    KT2440, UP000000556); UniProtKB:Q88GK7 (Q88GK7_PSEPK, Muconolactone Delta-isomerase,
+    gene_symbol: catC, TREMBL, NCBITaxon:160488 Pseudomonas putida KT2440, UP000000556)),
+    and primary-source evidence fidelity across ''putida_catechol_complexed_germanium_accumulation_graph''
+    (mechanism_ref: putida_catechol_associated_accumulation, 5 nodes / 4 edges).'
+  selection: Cycle 14 Stage 2 causal_graphs cohort review for cmmmech:germanium
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:germanium
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/germanium.yaml
+  locator: Working-tree record data/records/germanium.yaml (causal_graphs and mechanisms[].protein_examples)
+  accessed_at: '2026-11-10T22:51:00Z'
+  support: supports
+  summary: 'Updated data/records/germanium.yaml (SHA-256 f5752b5f1e005ff4532e29a49551f1b5a4a75b309677ab0e60c5fa312161389d)
+    with causal_graphs (''putida_catechol_complexed_germanium_accumulation_graph''
+    (mechanism_ref: putida_catechol_associated_accumulation, 5 nodes / 4 edges)),
+    achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples
+    and preserving source-faithful support levels and experimental caveats.'
+  snapshot_sha256: f5752b5f1e005ff4532e29a49551f1b5a4a75b309677ab0e60c5fa312161389d
+- evidence_id: primary_source
+  kind: primary_source
+  reference: https://doi.org/10.1128/aem.51.5.1099-1103.1986
+  locator: 'chmielowski1986: Chmielowski J and Kłapcińska B (1986). Bioaccumulation
+    of Germanium by Pseudomonas putida in the Presence of Two Selected Substrates.
+    Applied and Environmental Microbiology 51:1099-1103. doi:10.1128/aem.51.5.1099-1103.1986;
+    methods and Figures 1-4. (https://doi.org/10.1128/aem.51.5.1099-1103.1986)'
+  accessed_at: '2026-11-10T22:51:00Z'
+  support: supports
+  summary: 'Live-verified UniProtKB grounding across UniProtKB:Q88GK8 (Q88GK8_PSEPK,
+    catechol 1,2-dioxygenase, gene_symbol: catA-I, TREMBL, NCBITaxon:160488 Pseudomonas
+    putida KT2440, UP000000556); UniProtKB:Q88GK6 (Q88GK6_PSEPK, Muconate cycloisomerase
+    1, gene_symbol: catB, TREMBL, NCBITaxon:160488 Pseudomonas putida KT2440, UP000000556);
+    UniProtKB:Q88GK7 (Q88GK7_PSEPK, Muconolactone Delta-isomerase, gene_symbol: catC,
+    TREMBL, NCBITaxon:160488 Pseudomonas putida KT2440, UP000000556). Primary mechanism
+    source (chmielowski1986: Chmielowski J and Kłapcińska B (1986). Bioaccumulation
+    of Germanium by Pseudomonas putida in the Presence of Two Selected Substrates.
+    Applied and Environmental Microbiology 51:1099-1103. doi:10.1128/aem.51.5.1099-1103.1986;
+    methods and Figures 1-4. (https://doi.org/10.1128/aem.51.5.1099-1103.1986)) parameters
+    and source-level caveats are strictly preserved on all nodes, edges, and ProteinExample
+    evidence items.'
+- evidence_id: edit_history
+  kind: record_content
+  reference: history/records/germanium/2026-11-10T224938Z-marcin-6ff72c.yaml
+  locator: Canonical EDIT history sidecar history/records/germanium/2026-11-10T224938Z-marcin-6ff72c.yaml
+  accessed_at: '2026-11-10T22:51:00Z'
+  support: supports
+  summary: 'Canonical EDIT history sidecar history/records/germanium/2026-11-10T224938Z-marcin-6ff72c.yaml
+    (SHA-256 131bb32e7d4717fb9a251be8956b7df110865a5f2cb36138e53f9e9c2c15e8ac): Add
+    putida_catechol_complexed_germanium_accumulation_graph causal graph and ground
+    putida_catechol_associated_accumulation to Pseudomonas putida KT2440 catBCA enzymes
+    (UniProtKB:Q88GK8, UniProtKB:Q88GK6, UniProtKB:Q88GK7)'
+  snapshot_sha256: 131bb32e7d4717fb9a251be8956b7df110865a5f2cb36138e53f9e9c2c15e8ac
+- evidence_id: validation
+  kind: validation
+  reference: data/records/germanium.yaml
+  locator: Real CLI validation via python -m cmmmech validate --require-records and
+    validate-history --base main
+  accessed_at: '2026-11-10T22:51:00Z'
+  support: supports
+  summary: data/records/germanium.yaml and history/records/germanium/2026-11-10T224938Z-marcin-6ff72c.yaml
+    pass strict LinkML schema, protein_examples parity, and history validation with
+    0 errors.
+  snapshot_sha256: f5752b5f1e005ff4532e29a49551f1b5a4a75b309677ab0e60c5fa312161389d
+checks:
+- check_id: validate_records
+  name: Strict corpus validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Checked 713 record(s); 0 failed.
+  target_ids:
+  - cmmmech:germanium
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: validate_history
+  name: Canonical history validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate-history --base main
+  status: passed
+  required: true
+  summary: Checked 1563 history record(s); 0 error(s).
+  target_ids:
+  - cmmmech:germanium
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+assessments:
+- assessment_id: causal_graph_and_protein_grounding
+  area: graph
+  topic: 'Verification of causal_graphs structure, UniProtKB grounding, and parity
+    across ''putida_catechol_complexed_germanium_accumulation_graph'' (mechanism_ref:
+    putida_catechol_associated_accumulation, 5 nodes / 4 edges)'
+  outcome: supported
+  summary: 'Updated data/records/germanium.yaml (SHA-256 f5752b5f1e005ff4532e29a49551f1b5a4a75b309677ab0e60c5fa312161389d)
+    with causal_graphs (''putida_catechol_complexed_germanium_accumulation_graph''
+    (mechanism_ref: putida_catechol_associated_accumulation, 5 nodes / 4 edges)),
+    achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples
+    and preserving source-faithful support levels and caveats from chmielowski1986:
+    Chmielowski J and Kłapcińska B (1986). Bioaccumulation of Germanium by Pseudomonas
+    putida in the Presence of Two Selected Substrates. Applied and Environmental Microbiology
+    51:1099-1103. doi:10.1128/aem.51.5.1099-1103.1986; methods and Figures 1-4. (https://doi.org/10.1128/aem.51.5.1099-1103.1986).
+    Live-verified UniProtKB grounding across UniProtKB:Q88GK8 (Q88GK8_PSEPK, catechol
+    1,2-dioxygenase, gene_symbol: catA-I, TREMBL, NCBITaxon:160488 Pseudomonas putida
+    KT2440, UP000000556); UniProtKB:Q88GK6 (Q88GK6_PSEPK, Muconate cycloisomerase
+    1, gene_symbol: catB, TREMBL, NCBITaxon:160488 Pseudomonas putida KT2440, UP000000556);
+    UniProtKB:Q88GK7 (Q88GK7_PSEPK, Muconolactone Delta-isomerase, gene_symbol: catC,
+    TREMBL, NCBITaxon:160488 Pseudomonas putida KT2440, UP000000556).'
+  target_ids:
+  - cmmmech:germanium
+  evidence_ids:
+  - owner
+  - primary_source
+- assessment_id: provenance_and_validation_verification
+  area: provenance
+  topic: Verification of canonical EDIT history sidecar and strict schema validation
+  outcome: supported
+  summary: 'data/records/germanium.yaml was updated exclusively through scripts/curate_causal_graphs.py
+    (curate_record_file), producing append-only history sidecar history/records/germanium/2026-11-10T224938Z-marcin-6ff72c.yaml
+    (SHA-256 131bb32e7d4717fb9a251be8956b7df110865a5f2cb36138e53f9e9c2c15e8ac: Add
+    putida_catechol_complexed_germanium_accumulation_graph causal graph and ground
+    putida_catechol_associated_accumulation to Pseudomonas putida KT2440 catBCA enzymes
+    (UniProtKB:Q88GK8, UniProtKB:Q88GK6, UniProtKB:Q88GK7)) and passing all LinkML
+    and history validation gates.'
+  target_ids:
+  - cmmmech:germanium
+  evidence_ids:
+  - owner
+  - edit_history
+  - validation
+findings: []
+actions: []
+summary: 'Germanium (cmmmech:germanium) passes Cycle 14 Stage 2 causal_graphs review
+  (scientific_review: true) at SHA-256 f5752b5f1e005ff4532e29a49551f1b5a4a75b309677ab0e60c5fa312161389d:
+  Updated data/records/germanium.yaml with ''putida_catechol_complexed_germanium_accumulation_graph''
+  (mechanism_ref: putida_catechol_associated_accumulation, 5 nodes / 4 edges), achieving
+  100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples
+  and preserving source-faithful support levels and experimental caveats from chmielowski1986:
+  Chmielowski J and Kłapcińska B (1986). Bioaccumulation of Germanium by Pseudomonas
+  putida in the Presence of Two Selected Substrates. Applied and Environmental Microbiology
+  51:1099-1103. doi:10.1128/aem.51.5.1099-1103.1986; methods and Figures 1-4. (https://doi.org/10.1128/aem.51.5.1099-1103.1986).
+  Live-verified UniProtKB grounding across UniProtKB:Q88GK8 (Q88GK8_PSEPK, catechol
+  1,2-dioxygenase, gene_symbol: catA-I, TREMBL, NCBITaxon:160488 Pseudomonas putida
+  KT2440, UP000000556); UniProtKB:Q88GK6 (Q88GK6_PSEPK, Muconate cycloisomerase 1,
+  gene_symbol: catB, TREMBL, NCBITaxon:160488 Pseudomonas putida KT2440, UP000000556);
+  UniProtKB:Q88GK7 (Q88GK7_PSEPK, Muconolactone Delta-isomerase, gene_symbol: catC,
+  TREMBL, NCBITaxon:160488 Pseudomonas putida KT2440, UP000000556).'
+limitations:
+- 'Review is conducted in single-agent Goal Mode (independence: self_review) against
+  working-tree bytes; an independent subagent PR review is executed prior to merge.'
+notes:
+- Executed during Cycle 14 Stage 2 (causal_graphs) for cmmmech:germanium.
+related_reviews: []
+```

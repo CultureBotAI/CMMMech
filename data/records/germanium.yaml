@@ -1,131 +1,384 @@
 id: cmmmech:germanium
 name: Germanium
 material_kind: element
-description: >-
-  Germanium (Ge), grounded by the neutral-atom ChEBI identifier. This element
-  is distinct from the GeO2 reagent and dissolved germanium species used in
-  the experiments, germanium-bearing minerals and coal wastes. The US 2025
-  list names the germanium commodity; its designation is mapped to this
-  element without extending it to every germanium-bearing material.
+description: Germanium (Ge), grounded by the neutral-atom ChEBI identifier. This element is distinct from the GeO2 reagent and dissolved germanium species used in the experiments, germanium-bearing minerals and coal wastes. The US 2025 list names the germanium commodity; its designation is mapped to this element without extending it to every germanium-bearing material.
 identifiers:
-  - id: CHEBI:30441
-    label: germanium atom
+- id: CHEBI:30441
+  label: germanium atom
 sources:
-  - id: chebi_germanium
-    title: ChEBI CHEBI:30441 — germanium atom; Ge, net charge zero
-    url: https://www.ebi.ac.uk/chebi/CHEBI:30441
-    accessed_on: '2026-10-11'
-  - id: usgs2025
-    title: >-
-      USGS (2025). Final 2025 List of Critical Minerals. Federal Register
-      90:50494-50497, document 2025-19813; Germanium row in final table.
-    url: https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm
-    accessed_on: '2026-10-11'
-  - id: ncbi_putida
-    title: NCBI Taxonomy 303 — Pseudomonas putida, species rank
-    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=303&mode=Info
-    accessed_on: '2026-10-11'
-  - id: chmielowski1986
-    title: >-
-      Chmielowski J and Kłapcińska B (1986). Bioaccumulation of Germanium by
-      Pseudomonas putida in the Presence of Two Selected Substrates.
-      Applied and Environmental Microbiology 51:1099-1103.
-      doi:10.1128/aem.51.5.1099-1103.1986; methods and Figures 1-4.
-    url: https://doi.org/10.1128/aem.51.5.1099-1103.1986
-    accessed_on: '2026-10-11'
-  - id: klapcinska1986
-    title: >-
-      Kłapcińska B and Chmielowski J (1986). Binding of Germanium to
-      Pseudomonas putida Cells. Applied and Environmental Microbiology
-      51:1144-1147. doi:10.1128/aem.51.5.1144-1147.1986;
-      methods, Table 1 and Figures 1-3.
-    url: https://doi.org/10.1128/aem.51.5.1144-1147.1986
-    accessed_on: '2026-10-11'
+- id: chebi_germanium
+  title: ChEBI CHEBI:30441 — germanium atom; Ge, net charge zero
+  url: https://www.ebi.ac.uk/chebi/CHEBI:30441
+  accessed_on: '2026-10-11'
+- id: usgs2025
+  title: USGS (2025). Final 2025 List of Critical Minerals. Federal Register 90:50494-50497, document 2025-19813; Germanium row in final table.
+  url: https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm
+  accessed_on: '2026-10-11'
+- id: ncbi_putida
+  title: NCBI Taxonomy 303 — Pseudomonas putida, species rank
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=303&mode=Info
+  accessed_on: '2026-10-11'
+- id: chmielowski1986
+  title: Chmielowski J and Kłapcińska B (1986). Bioaccumulation of Germanium by Pseudomonas putida in the Presence of Two Selected Substrates. Applied and Environmental Microbiology 51:1099-1103. doi:10.1128/aem.51.5.1099-1103.1986; methods and Figures 1-4.
+  url: https://doi.org/10.1128/aem.51.5.1099-1103.1986
+  accessed_on: '2026-10-11'
+- id: klapcinska1986
+  title: Kłapcińska B and Chmielowski J (1986). Binding of Germanium to Pseudomonas putida Cells. Applied and Environmental Microbiology 51:1144-1147. doi:10.1128/aem.51.5.1144-1147.1986; methods, Table 1 and Figures 1-3.
+  url: https://doi.org/10.1128/aem.51.5.1144-1147.1986
+  accessed_on: '2026-10-11'
+- id: uniprot_pseudomonas_putida_catechol_pathway
+  title: 'UniProtKB reference proteome UP000000556 (Pseudomonas putida KT2440, NCBITaxon:160488): Catechol 1,2-dioxygenase (catA-I / PP_3713, UniProtKB:Q88GK8), Muconate cycloisomerase 1 (catB / PP_3715, UniProtKB:Q88GK6), and Muconolactone Delta-isomerase (catC / PP_3714, UniProtKB:Q88GK7).'
+  url: https://www.uniprot.org/uniprotkb?query=(proteome:UP000000556)+AND+(accession:Q88GK8+OR+accession:Q88GK6+OR+accession:Q88GK7)
+  accessed_on: '2026-11-10'
 criticality:
-  - jurisdiction: United States of America
-    list_name: USGS Final List of Critical Minerals
-    edition: '2025; Federal Register 90:50494-50497; published 7 November 2025'
-    classification: critical
-    source_ref: usgs2025
+- jurisdiction: United States of America
+  list_name: USGS Final List of Critical Minerals
+  edition: 2025; Federal Register 90:50494-50497; published 7 November 2025
+  classification: critical
+  source_ref: usgs2025
 mechanisms:
-  - id: putida_catechol_associated_accumulation
-    name: Catechol-associated germanium accumulation by Pseudomonas putida
-    process: other
-    description: >-
-      Living ATCC 33015 cells accumulated germanium from GeO2-supplemented
-      laboratory media. Catechol-associated accumulation included an
-      intracellular component alongside envelope binding. An inducible
-      catechol-transport explanation remains proposed. The two papers are
-      companion studies from the same laboratory, not independent replication.
-      Bioaccumulation is represented as other rather than isolated-product recovery.
-    context: >-
-      NCBITaxon:303 identifies the species, not ATCC 33015. The kinetic study
-      used acetate-grown inocula, aerated mineral medium at pH 7.3, 2 mM GeO2,
-      and 4 mM catechol or 5/10 mM acetate; cultivation used 30 degrees C and
-      reciprocating shaking. Washed, sonicated pellets were measured by
-      71Ge scintillation, normalized to dry cell mass, over approximately
-      15 hours. The separate localization/fractionation study used 10 mM
-      GeO2, 4 mM catechol or 10 mM acetate, and 30 degrees C shaking;
-      its fractionation assay used 300 mL with about 0.15 g initial dry
-      cells and 12 hours. Cells were washed with distilled water before
-      sonication, differential centrifugation and radiometric fraction analysis.
-    microbial: true
-    organisms:
-      - id: NCBITaxon:303
-        label: Pseudomonas putida
+- id: putida_catechol_associated_accumulation
+  name: Catechol-associated germanium accumulation by Pseudomonas putida
+  process: other
+  description: Living ATCC 33015 cells accumulated germanium from GeO2-supplemented laboratory media. Catechol-associated accumulation included an intracellular component alongside envelope binding. An inducible catechol-transport explanation remains proposed. The two papers are companion studies from the same laboratory, not independent replication. Bioaccumulation is represented as other rather than isolated-product recovery.
+  context: NCBITaxon:303 identifies the species, not ATCC 33015. The kinetic study used acetate-grown inocula, aerated mineral medium at pH 7.3, 2 mM GeO2, and 4 mM catechol or 5/10 mM acetate; cultivation used 30 degrees C and reciprocating shaking. Washed, sonicated pellets were measured by 71Ge scintillation, normalized to dry cell mass, over approximately 15 hours. The separate localization/fractionation study used 10 mM GeO2, 4 mM catechol or 10 mM acetate, and 30 degrees C shaking; its fractionation assay used 300 mL with about 0.15 g initial dry cells and 12 hours. Cells were washed with distilled water before sonication, differential centrifugation and radiometric fraction analysis.
+  microbial: true
+  organisms:
+  - id: NCBITaxon:303
+    label: Pseudomonas putida
+  protein_examples:
+  - uniprot_accession: UniProtKB:Q88GK8
+    entry_name: Q88GK8_PSEPK
+    protein_name: catechol 1,2-dioxygenase
+    gene_symbol: catA-I
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:160488
+      label: Pseudomonas putida KT2440
+    reference_proteome_id: UP000000556
+    ec_numbers:
+    - EC:1.13.11.1
+    interpro_ids:
+    - InterPro:IPR007535
+    - InterPro:IPR012801
+    - InterPro:IPR000627
+    - InterPro:IPR015889
+    - InterPro:IPR050770
+    pfam_ids:
+    - Pfam:PF00775
+    - Pfam:PF04444
+    ncbifam_ids:
+    - NCBIfam:TIGR02439
+    go_terms:
+    - id: GO:0018576
+      label: catechol 1,2-dioxygenase activity
+    - id: GO:0008199
+      label: ferric iron binding
+    - id: GO:0042952
+      label: beta-ketoadipate pathway
+    - id: GO:0019614
+      label: catechol-containing compound catabolic process
+    functional_role: Ferric-iron-dependent catechol 1,2-dioxygenase CatA-I (EC 1.13.11.1; locus PP_3713) catalyzing intradiol ortho-cleavage of free catechol to cis,cis-muconate in the beta-ketoadipate pathway.
+    annotation_note: 'Grounded to reference proteome UP000000556 for Pseudomonas putida KT2440 (NCBITaxon:160488; UniProtKB organism string: Pseudomonas putida (strain ATCC 47054 / DSM 6125 / CFBP 8728 / NCIMB 11950 / KT2440); catA-I / PP_3713, UniProtKB:Q88GK8), representing catechol ortho-cleavage in Pseudomonas putida ATCC 33015 (NCBITaxon:303) in Chmielowski and Klapcinska (1986) and Klapcinska and Chmielowski (1986).'
     evidence:
-      - source_ref: chmielowski1986
-        supports: support
-        explanation: >-
-          Pages 1100-1103 and Figures 1-4 report approximately 22 micromol
-          Ge/g dry cells with catechol versus an approximately 10 micromol/g
-          acetate plateau. Mixed substrates delayed the second accumulation
-          phase. Medium germanium decreased only about 5%, despite catechol
-          consumption; this is not efficient solution depletion or a recovery yield.
+    - source_ref: chmielowski1986
+      supports: partial
+      explanation: Chmielowski and Klapcinska (1986) showed that Pseudomonas putida ATCC 33015 degrades free uncomplexed catechol via ortho-cleavage during the first ~10 h while Ge-catechol chelates resist enzymatic cleavage and promote germanium accumulation (13.7-23.5 mg Ge/g dry weight); CatA was not purified or sequenced in that study.
+    - source_ref: uniprot_pseudomonas_putida_catechol_pathway
+      supports: partial
+      explanation: UniProtKB:Q88GK8 (Q88GK8_PSEPK, catA-I / PP_3713) in Pseudomonas putida KT2440 reference proteome UP000000556 (NCBITaxon:160488) encodes catechol 1,2-dioxygenase (EC:1.13.11.1; GO:0018576 catechol 1,2-dioxygenase activity; GO:0042952 beta-ketoadipate pathway).
+  - uniprot_accession: UniProtKB:Q88GK6
+    entry_name: Q88GK6_PSEPK
+    protein_name: Muconate cycloisomerase 1
+    gene_symbol: catB
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:160488
+      label: Pseudomonas putida KT2440
+    reference_proteome_id: UP000000556
+    ec_numbers:
+    - EC:5.5.1.1
+    interpro_ids:
+    - InterPro:IPR013370
+    - InterPro:IPR036849
+    - InterPro:IPR029017
+    - InterPro:IPR018110
+    - InterPro:IPR013342
+    - InterPro:IPR013341
+    pfam_ids:
+    - Pfam:PF13378
+    - Pfam:PF02746
+    ncbifam_ids:
+    - NCBIfam:TIGR02534
+    go_terms:
+    - id: GO:0018850
+      label: chloromuconate cycloisomerase activity
+    - id: GO:0030145
+      label: manganese ion binding
+    - id: GO:0018849
+      label: muconate cycloisomerase activity
+    - id: GO:0009063
+      label: amino acid catabolic process
+    - id: GO:0006518
+      label: peptide metabolic process
+    functional_role: Manganese-dependent muconate cycloisomerase 1 CatB (EC 5.5.1.1; locus PP_3715) converting cis,cis-muconate to (+)-muconolactone in the catechol ortho-cleavage branch of the beta-ketoadipate pathway.
+    annotation_note: 'Grounded to reference proteome UP000000556 for Pseudomonas putida KT2440 (NCBITaxon:160488; catB / PP_3715, UniProtKB:Q88GK6), representing the catBCA ortho-cleavage operon in Pseudomonas putida ATCC 33015 (NCBITaxon:303) in Chmielowski and Klapcinska (1986). Note: UniProtKB TrEMBL includes automated InterPro2GO superfamily projections GO:0009063 (amino acid catabolic process) and GO:0006518 (peptide metabolic process) from enolase/mandelate-racemase superfamily domains InterPro:IPR013341/IPR013342, whereas EC:5.5.1.1 and GO:0018849 reflect its specific muconate cycloisomerase activity.'
+    evidence:
+    - source_ref: chmielowski1986
+      supports: partial
+      explanation: Chmielowski and Klapcinska (1986) and Klapcinska and Chmielowski (1986) demonstrated catechol catabolism as the sole or co-supplied carbon source driving biphasic growth and catechol-dependent germanium accumulation in Pseudomonas putida ATCC 33015; individual catB activity was not isolated.
+    - source_ref: uniprot_pseudomonas_putida_catechol_pathway
+      supports: partial
+      explanation: UniProtKB:Q88GK6 (Q88GK6_PSEPK, catB / PP_3715) in Pseudomonas putida KT2440 reference proteome UP000000556 (NCBITaxon:160488) encodes Muconate cycloisomerase 1 (EC:5.5.1.1; GO:0018849 muconate cycloisomerase activity).
+  - uniprot_accession: UniProtKB:Q88GK7
+    entry_name: Q88GK7_PSEPK
+    protein_name: Muconolactone Delta-isomerase
+    gene_symbol: catC
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:160488
+      label: Pseudomonas putida KT2440
+    reference_proteome_id: UP000000556
+    ec_numbers:
+    - EC:5.3.3.4
+    interpro_ids:
+    - InterPro:IPR011008
+    - InterPro:IPR026029
+    - InterPro:IPR003464
+    pfam_ids:
+    - Pfam:PF02426
+    ncbifam_ids:
+    - NCBIfam:TIGR03221
+    go_terms:
+    - id: GO:0016159
+      label: muconolactone delta-isomerase activity
+    - id: GO:0042952
+      label: beta-ketoadipate pathway
+    functional_role: Muconolactone Delta-isomerase CatC (EC 5.3.3.4; locus PP_3714) isomerizing (+)-muconolactone to 3-oxoadipate enol-lactone in the catechol beta-ketoadipate pathway.
+    annotation_note: Grounded to reference proteome UP000000556 for Pseudomonas putida KT2440 (NCBITaxon:160488; catC / PP_3714, UniProtKB:Q88GK7), co-encoded in the catBCA operon (PP_3713-PP_3715) representing catechol catabolism in Pseudomonas putida ATCC 33015 (NCBITaxon:303) in Chmielowski and Klapcinska (1986).
+    evidence:
+    - source_ref: klapcinska1986
+      supports: partial
+      explanation: Klapcinska and Chmielowski (1986) showed that catechol catabolism by Pseudomonas putida ATCC 33015 governs whether germanium-catechol complexes persist and accumulate in the cell envelope (when GeO2 is equimolar or in excess over catechol) or are degraded with subsequent Ge release (when catechol is in excess); catC was not directly assayed.
+    - source_ref: uniprot_pseudomonas_putida_catechol_pathway
+      supports: partial
+      explanation: UniProtKB:Q88GK7 (Q88GK7_PSEPK, catC / PP_3714) in Pseudomonas putida KT2440 reference proteome UP000000556 (NCBITaxon:160488) encodes Muconolactone Delta-isomerase (EC:5.3.3.4; GO:0016159 muconolactone delta-isomerase activity; GO:0042952 beta-ketoadipate pathway).
+  evidence:
+  - source_ref: chmielowski1986
+    supports: support
+    explanation: Pages 1100-1103 and Figures 1-4 report approximately 22 micromol Ge/g dry cells with catechol versus an approximately 10 micromol/g acetate plateau. Mixed substrates delayed the second accumulation phase. Medium germanium decreased only about 5%, despite catechol consumption; this is not efficient solution depletion or a recovery yield.
+  - source_ref: chmielowski1986
+    supports: partial
+    explanation: The kinetic association supports substrate-dependent uptake but does not identify a transporter experimentally. The methods report two separate 4 mL aliquots of each sonicated suspension for scintillation counting; biological-replicate counts, statistical uncertainty and matched killed-cell or cell-free controls are not reported. Surface binding also contributes to the pellet signal.
+  - source_ref: klapcinska1986
+    supports: support
+    explanation: 'Table 1 reports 2.46 versus 0.81 mg Ge/g dry cells with catechol versus acetate, respectively, and 83.4% versus 58.0% of accumulated Ge in the soluble fraction. Figures 1-3 compare Ge-free controls with loaded cells: envelope contrast and catechol-associated cytoplasmic deposits support localization. The 10 mM assay is distinct from the companion 2 mM kinetic experiment.'
+  - source_ref: klapcinska1986
+    supports: partial
+    explanation: Fractionation and microscopy support intracellular accumulation, but electron contrast does not identify a germanium mineral phase or oxidation state. Replication and uncertainty are not reported. Neither study establishes transporter causality, selective product isolation, a full mass balance or industrial deployment.
+causal_graphs:
+- id: putida_catechol_complexed_germanium_accumulation_graph
+  name: Pseudomonas putida ATCC 33015 catechol ortho-cleavage catabolism and catechol-complexed germanium cell-envelope accumulation
+  description: Causal pathway linking representative Pseudomonas putida KT2440 catBCA beta-ketoadipate ortho-cleavage enzymes Catechol 1,2-dioxygenase CatA-I (UniProtKB:Q88GK8), Muconate cycloisomerase 1 CatB (UniProtKB:Q88GK6), and Muconolactone Delta-isomerase CatC (UniProtKB:Q88GK7) to selective degradation of uncomplexed catechol, persistence of Ge-catechol chelates at equimolar/excess GeO2, and cell-envelope germanium accumulation (13.7-23.5 mg Ge/g dry weight by TEM-EDS and spectrophotometry) in Pseudomonas putida ATCC 33015 in Chmielowski and Klapcinska (1986) and Klapcinska and Chmielowski (1986).
+  scope: REPRESENTATIVE_EXAMPLE
+  mechanism_ref: putida_catechol_associated_accumulation
+  nodes:
+  - id: geo2_and_catechol_supplemented_medium
+    label: GeO2 (100 mg/L or 1 g/L) and catechol/succinate medium forming dissolved germanium-catechol chelates at 30 C
+    node_type: CHEMICAL_ENTITY
+    description: Aerated Pseudomonas medium at 30 C containing GeO2 (100 mg/L or 1 g/L) and catechol (2.5-10 mM, alone or with succinate), in which GeO2 reacts with catechol to form dissolved Ge-catechol complexes alongside free catechol.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: putida_cata_catechol_dioxygenase
+    label: Pseudomonas putida Catechol 1,2-dioxygenase (catA-I / PP_3713)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: catA-I
+    description: Representative Pseudomonas putida KT2440 intradiol catechol 1,2-dioxygenase CatA-I (PP_3713, UniProtKB:Q88GK8; EC 1.13.11.1) cleaving free uncomplexed catechol into cis,cis-muconate.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:Q88GK8
+      entry_name: Q88GK8_PSEPK
+      protein_name: catechol 1,2-dioxygenase
+      gene_symbol: catA-I
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:160488
+        label: Pseudomonas putida KT2440
+      reference_proteome_id: UP000000556
+      ec_numbers:
+      - EC:1.13.11.1
+      interpro_ids:
+      - InterPro:IPR007535
+      - InterPro:IPR012801
+      - InterPro:IPR000627
+      - InterPro:IPR015889
+      - InterPro:IPR050770
+      pfam_ids:
+      - Pfam:PF00775
+      - Pfam:PF04444
+      ncbifam_ids:
+      - NCBIfam:TIGR02439
+      go_terms:
+      - id: GO:0018576
+        label: catechol 1,2-dioxygenase activity
+      - id: GO:0008199
+        label: ferric iron binding
+      - id: GO:0042952
+        label: beta-ketoadipate pathway
+      - id: GO:0019614
+        label: catechol-containing compound catabolic process
+      functional_role: Ferric-iron-dependent catechol 1,2-dioxygenase CatA-I (EC 1.13.11.1; locus PP_3713) catalyzing intradiol ortho-cleavage of free catechol to cis,cis-muconate in the beta-ketoadipate pathway.
+      annotation_note: 'Grounded to reference proteome UP000000556 for Pseudomonas putida KT2440 (NCBITaxon:160488; UniProtKB organism string: Pseudomonas putida (strain ATCC 47054 / DSM 6125 / CFBP 8728 / NCIMB 11950 / KT2440); catA-I / PP_3713, UniProtKB:Q88GK8), representing catechol ortho-cleavage in Pseudomonas putida ATCC 33015 (NCBITaxon:303) in Chmielowski and Klapcinska (1986) and Klapcinska and Chmielowski (1986).'
+      evidence:
       - source_ref: chmielowski1986
         supports: partial
-        explanation: >-
-          The kinetic association supports substrate-dependent uptake but
-          does not identify a transporter experimentally. The methods report
-          two separate 4 mL aliquots of each sonicated suspension for
-          scintillation counting; biological-replicate counts, statistical
-          uncertainty and matched killed-cell or cell-free controls are not
-          reported. Surface binding also contributes to the pellet signal.
-      - source_ref: klapcinska1986
-        supports: support
-        explanation: >-
-          Table 1 reports 2.46 versus 0.81 mg Ge/g dry cells with catechol
-          versus acetate, respectively, and 83.4% versus 58.0% of accumulated
-          Ge in the soluble fraction. Figures 1-3 compare Ge-free controls
-          with loaded cells: envelope contrast and catechol-associated
-          cytoplasmic deposits support localization. The 10 mM assay is
-          distinct from the companion 2 mM kinetic experiment.
+        explanation: Chmielowski and Klapcinska (1986) showed that Pseudomonas putida ATCC 33015 degrades free uncomplexed catechol via ortho-cleavage during the first ~10 h while Ge-catechol chelates resist enzymatic cleavage and promote germanium accumulation (13.7-23.5 mg Ge/g dry weight); CatA was not purified or sequenced in that study.
+      - source_ref: uniprot_pseudomonas_putida_catechol_pathway
+        supports: partial
+        explanation: UniProtKB:Q88GK8 (Q88GK8_PSEPK, catA-I / PP_3713) in Pseudomonas putida KT2440 reference proteome UP000000556 (NCBITaxon:160488) encodes catechol 1,2-dioxygenase (EC:1.13.11.1; GO:0018576 catechol 1,2-dioxygenase activity; GO:0042952 beta-ketoadipate pathway).
+  - id: putida_catbc_muconate_ortho_cleavage_enzymes
+    label: Pseudomonas putida Muconate cycloisomerase CatB (PP_3715) and Muconolactone Delta-isomerase CatC (PP_3714)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: catB/catC
+    description: Representative Pseudomonas putida KT2440 beta-ketoadipate pathway enzymes CatB (PP_3715, UniProtKB:Q88GK6; EC 5.5.1.1) and CatC (PP_3714, UniProtKB:Q88GK7; EC 5.3.3.4) converting cis,cis-muconate to 3-oxoadipate enol-lactone.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:Q88GK6
+      entry_name: Q88GK6_PSEPK
+      protein_name: Muconate cycloisomerase 1
+      gene_symbol: catB
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:160488
+        label: Pseudomonas putida KT2440
+      reference_proteome_id: UP000000556
+      ec_numbers:
+      - EC:5.5.1.1
+      interpro_ids:
+      - InterPro:IPR013370
+      - InterPro:IPR036849
+      - InterPro:IPR029017
+      - InterPro:IPR018110
+      - InterPro:IPR013342
+      - InterPro:IPR013341
+      pfam_ids:
+      - Pfam:PF13378
+      - Pfam:PF02746
+      ncbifam_ids:
+      - NCBIfam:TIGR02534
+      go_terms:
+      - id: GO:0018850
+        label: chloromuconate cycloisomerase activity
+      - id: GO:0030145
+        label: manganese ion binding
+      - id: GO:0018849
+        label: muconate cycloisomerase activity
+      - id: GO:0009063
+        label: amino acid catabolic process
+      - id: GO:0006518
+        label: peptide metabolic process
+      functional_role: Manganese-dependent muconate cycloisomerase 1 CatB (EC 5.5.1.1; locus PP_3715) converting cis,cis-muconate to (+)-muconolactone in the catechol ortho-cleavage branch of the beta-ketoadipate pathway.
+      annotation_note: 'Grounded to reference proteome UP000000556 for Pseudomonas putida KT2440 (NCBITaxon:160488; catB / PP_3715, UniProtKB:Q88GK6), representing the catBCA ortho-cleavage operon in Pseudomonas putida ATCC 33015 (NCBITaxon:303) in Chmielowski and Klapcinska (1986). Note: UniProtKB TrEMBL includes automated InterPro2GO superfamily projections GO:0009063 (amino acid catabolic process) and GO:0006518 (peptide metabolic process) from enolase/mandelate-racemase superfamily domains InterPro:IPR013341/IPR013342, whereas EC:5.5.1.1 and GO:0018849 reflect its specific muconate cycloisomerase activity.'
+      evidence:
+      - source_ref: chmielowski1986
+        supports: partial
+        explanation: Chmielowski and Klapcinska (1986) and Klapcinska and Chmielowski (1986) demonstrated catechol catabolism as the sole or co-supplied carbon source driving biphasic growth and catechol-dependent germanium accumulation in Pseudomonas putida ATCC 33015; individual catB activity was not isolated.
+      - source_ref: uniprot_pseudomonas_putida_catechol_pathway
+        supports: partial
+        explanation: UniProtKB:Q88GK6 (Q88GK6_PSEPK, catB / PP_3715) in Pseudomonas putida KT2440 reference proteome UP000000556 (NCBITaxon:160488) encodes Muconate cycloisomerase 1 (EC:5.5.1.1; GO:0018849 muconate cycloisomerase activity).
+    - uniprot_accession: UniProtKB:Q88GK7
+      entry_name: Q88GK7_PSEPK
+      protein_name: Muconolactone Delta-isomerase
+      gene_symbol: catC
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:160488
+        label: Pseudomonas putida KT2440
+      reference_proteome_id: UP000000556
+      ec_numbers:
+      - EC:5.3.3.4
+      interpro_ids:
+      - InterPro:IPR011008
+      - InterPro:IPR026029
+      - InterPro:IPR003464
+      pfam_ids:
+      - Pfam:PF02426
+      ncbifam_ids:
+      - NCBIfam:TIGR03221
+      go_terms:
+      - id: GO:0016159
+        label: muconolactone delta-isomerase activity
+      - id: GO:0042952
+        label: beta-ketoadipate pathway
+      functional_role: Muconolactone Delta-isomerase CatC (EC 5.3.3.4; locus PP_3714) isomerizing (+)-muconolactone to 3-oxoadipate enol-lactone in the catechol beta-ketoadipate pathway.
+      annotation_note: Grounded to reference proteome UP000000556 for Pseudomonas putida KT2440 (NCBITaxon:160488; catC / PP_3714, UniProtKB:Q88GK7), co-encoded in the catBCA operon (PP_3713-PP_3715) representing catechol catabolism in Pseudomonas putida ATCC 33015 (NCBITaxon:303) in Chmielowski and Klapcinska (1986).
+      evidence:
       - source_ref: klapcinska1986
         supports: partial
-        explanation: >-
-          Fractionation and microscopy support intracellular accumulation,
-          but electron contrast does not identify a germanium mineral phase
-          or oxidation state. Replication and uncertainty are not reported.
-          Neither study establishes transporter causality, selective product
-          isolation, a full mass balance or industrial deployment.
+        explanation: Klapcinska and Chmielowski (1986) showed that catechol catabolism by Pseudomonas putida ATCC 33015 governs whether germanium-catechol complexes persist and accumulate in the cell envelope (when GeO2 is equimolar or in excess over catechol) or are degraded with subsequent Ge release (when catechol is in excess); catC was not directly assayed.
+      - source_ref: uniprot_pseudomonas_putida_catechol_pathway
+        supports: partial
+        explanation: UniProtKB:Q88GK7 (Q88GK7_PSEPK, catC / PP_3714) in Pseudomonas putida KT2440 reference proteome UP000000556 (NCBITaxon:160488) encodes Muconolactone Delta-isomerase (EC:5.3.3.4; GO:0016159 muconolactone delta-isomerase activity; GO:0042952 beta-ketoadipate pathway).
+  - id: biphasic_catechol_degradation_and_ge_chelate_persistence
+    label: Selective catabolism of free catechol and stoichiometry-dependent persistence of Ge-catechol complexes
+    node_type: BIOLOGICAL_PROCESS
+    description: Enzymatic consumption of free catechol over the first ~10 h while Ge-bound catechol resists cleavage when GeO2 is equimolar or in excess (leaving ~42-48% residual complexed catechol at 32 h), whereas excess initial catechol permits complete catechol degradation and subsequent release of cell-bound Ge.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: cell_envelope_associated_germanium_accumulation
+    label: Cell-envelope-localized germanium accumulation (13.7-23.5 mg Ge/g dry weight by TEM-EDS and phenylfluorone assay)
+    node_type: CELLULAR_STRUCTURE
+    description: Catechol-dependent accumulation of germanium in Pseudomonas putida ATCC 33015 biomass (13.7-21.0 mg Ge/g dry weight at 100 mg/L GeO2 and up to 23.5 mg Ge/g dry weight at 1 g/L GeO2 vs ~1 mg Ge/g without catechol), localized as electron-dense cell-envelope deposits by TEM-EDS without an identified specific Ge transporter.
+    protein_grounding_status: NOT_APPLICABLE
+  edges:
+  - source: geo2_and_catechol_supplemented_medium
+    target: putida_cata_catechol_dioxygenase
+    predicate: supplies_substrate_for
+    relationship: free uncomplexed catechol in the GeO2/catechol medium serves as dioxygenase substrate
+    description: Uncomplexed catechol in the culture medium is cleaved by catechol 1,2-dioxygenase.
+    evidence:
+    - source_ref: chmielowski1986
+      supports: support
+      explanation: Chmielowski and Klapcinska (1986) measured rapid disappearance of free catechol during the first 10 h of Pseudomonas putida ATCC 33015 growth in GeO2-catechol media.
+  - source: putida_cata_catechol_dioxygenase
+    target: putida_catbc_muconate_ortho_cleavage_enzymes
+    predicate: supplies_substrate_for
+    relationship: intradiol cleavage of catechol generates cis,cis-muconate for CatB and CatC
+    description: CatA-I ortho-cleavage of catechol supplies cis,cis-muconate to CatB and CatC in the beta-ketoadipate pathway.
+    evidence:
+    - source_ref: uniprot_pseudomonas_putida_catechol_pathway
+      supports: partial
+      explanation: CatA-I (UniProtKB:Q88GK8), CatB (UniProtKB:Q88GK6), and CatC (UniProtKB:Q88GK7) form the canonical catBCA ortho-cleavage pathway (GO:0042952) in Pseudomonas putida KT2440.
+  - source: putida_catbc_muconate_ortho_cleavage_enzymes
+    target: biphasic_catechol_degradation_and_ge_chelate_persistence
+    predicate: drives
+    relationship: catabolism of free catechol leaves recalcitrant Ge-catechol chelates in solution at equimolar/excess GeO2
+    description: Ortho-cleavage catabolism depletes free catechol while Ge-complexed catechol persists when GeO2 is equimolar or in excess.
+    evidence:
+    - source_ref: chmielowski1986
+      supports: support
+      explanation: Chmielowski and Klapcinska (1986) showed that ~42-48% of catechol remained undegraded after 32 h as a 1:3 Ge-catechol complex when GeO2 was present in excess, whereas catechol-excess cultures degraded all catechol and released bound Ge.
+  - source: biphasic_catechol_degradation_and_ge_chelate_persistence
+    target: cell_envelope_associated_germanium_accumulation
+    predicate: drives
+    relationship: co-uptake/binding of Ge-catechol complexes and deposition of electron-dense Ge in the cell envelope
+    description: Persistence of Ge-catechol complexes during catechol-induced growth drives germanium accumulation (13.7-23.5 mg Ge/g dry weight) in the Pseudomonas putida cell envelope.
+    evidence:
+    - source_ref: klapcinska1986
+      supports: support
+      explanation: Klapcinska and Chmielowski (1986) documented 13.7-23.5 mg Ge/g dry weight accumulation and TEM-EDS localization of electron-dense Ge deposits in the cell envelope of catechol-grown Pseudomonas putida ATCC 33015.
 curation_history:
-  - timestamp: '2026-10-11T05:18:03Z'
-    curator: Codex (GPT-6; Codex)
-    action: record_creation
-    summary: >-
-      Created the germanium element record with verified identity, dated US
-      criticality and two companion microbial accumulation experiments.
-      Preserved different assay concentrations, weak controls, low solution
-      depletion and provisional transport interpretation. Independent
-      scientific review is a separate subsequent artifact.
-  - timestamp: '2026-10-11T05:22:59Z'
-    curator: Codex (GPT-6; Codex)
-    action: evidence_clarification
-    summary: >-
-      Corrected independent review finding F1 in
-      20261011T052122Z-germanium-round5-independent, issue 30, by preserving
-      the reported duplicate scintillation aliquots and specifying that
-      biological-replicate counts and statistical uncertainty are unreported.
+- timestamp: '2026-10-11T05:18:03Z'
+  curator: Codex (GPT-6; Codex)
+  action: record_creation
+  summary: Created the germanium element record with verified identity, dated US criticality and two companion microbial accumulation experiments. Preserved different assay concentrations, weak controls, low solution depletion and provisional transport interpretation. Independent scientific review is a separate subsequent artifact.
+- timestamp: '2026-10-11T05:22:59Z'
+  curator: Codex (GPT-6; Codex)
+  action: evidence_clarification
+  summary: Corrected independent review finding F1 in 20261011T052122Z-germanium-round5-independent, issue 30, by preserving the reported duplicate scintillation aliquots and specifying that biological-replicate counts and statistical uncertainty are unreported.
+- timestamp: '2026-11-10T22:49:38Z'
+  curator: marcin
+  action: edit
+  summary: Add putida_catechol_complexed_germanium_accumulation_graph causal graph and ground putida_catechol_associated_accumulation to Pseudomonas putida KT2440 catBCA enzymes (UniProtKB:Q88GK8, UniProtKB:Q88GK6, UniProtKB:Q88GK7)
 history_refs:
-  - history/records/germanium/2026-10-11T051803Z-codex-f9b5f3.yaml
-  - history/records/germanium/2026-10-11T052259Z-codex-64cadc.yaml
+- history/records/germanium/2026-10-11T051803Z-codex-f9b5f3.yaml
+- history/records/germanium/2026-10-11T052259Z-codex-64cadc.yaml
+- history/records/germanium/2026-11-10T224938Z-marcin-6ff72c.yaml

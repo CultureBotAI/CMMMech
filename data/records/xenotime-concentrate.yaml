@@ -1,169 +1,407 @@
 id: cmmmech:xenotime-concentrate
 name: Xenotime concentrate
 material_kind: primary_resource
-description: >-
-  A mixed natural mineral concentrate represented by the laboratory feed
-  studied by He et al. (2024), containing source-assigned xenotime,
-  monazite, zircon, almandine and ilmenite. Its deposit, supplier and
-  concentration history are not specified in the reviewed article and
-  supplement. Particle counting and density conversion estimated about
-  82.0 wt% xenotime and 2.7 wt% monazite; these are sample-specific phase
-  estimates, not measured product purity. The feed is distinct from the
-  xenotime-(Y) mineral species, monazite species, elemental rare earths,
-  a rare-earth commodity and a secondary waste resource. No criticality
-  designation is inherited from its constituent elements.
+description: A mixed natural mineral concentrate represented by the laboratory feed studied by He et al. (2024), containing source-assigned xenotime, monazite, zircon, almandine and ilmenite. Its deposit, supplier and concentration history are not specified in the reviewed article and supplement. Particle counting and density conversion estimated about 82.0 wt% xenotime and 2.7 wt% monazite; these are sample-specific phase estimates, not measured product purity. The feed is distinct from the xenotime-(Y) mineral species, monazite species, elemental rare earths, a rare-earth commodity and a secondary waste resource. No criticality designation is inherited from its constituent elements.
 sources:
-  - id: he2024
-    title: >-
-      He Y, Ma L, Liang X, Li X, Zhu J and He H (2024). Resistant rare
-      earth phosphates as possible sources of environmental dissolved
-      rare earth elements: Insights from experimental bio-weathering of
-      xenotime and monazite. Chemical Geology 661:122186.
-      DOI 10.1016/j.chemgeo.2024.122186; complete 56-page GFZ author
-      postprint including repository cover, Figures 1-7 and Tables 1-3.
-    url: https://doi.org/10.1016/j.chemgeo.2024.122186
-    accessed_on: '2026-10-12'
-  - id: he2024_supplement
-    title: >-
-      He et al. (2024), original publisher Supplementary Materials,
-      16 pages, Figures S1-S7, Tables S1-S8 and Text S1. Actual item
-      captions are used; the page-2 contents list has inconsistent
-      figure and table numbering.
-    url: https://ars.els-cdn.com/content/image/1-s2.0-S0009254124002663-mmc1.pdf
-    accessed_on: '2026-10-12'
-  - id: ncbi_thuringiensis
-    title: >-
-      NCBI Taxonomy 1428, Bacillus thuringiensis, species in the Bacillus
-      cereus group. This maps the authors' species name and does not
-      independently identify their experimental isolate.
-    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1428&mode=Info
-    accessed_on: '2026-10-12'
+- id: he2024
+  title: 'He Y, Ma L, Liang X, Li X, Zhu J and He H (2024). Resistant rare earth phosphates as possible sources of environmental dissolved rare earth elements: Insights from experimental bio-weathering of xenotime and monazite. Chemical Geology 661:122186. DOI 10.1016/j.chemgeo.2024.122186; complete 56-page GFZ author postprint including repository cover, Figures 1-7 and Tables 1-3.'
+  url: https://doi.org/10.1016/j.chemgeo.2024.122186
+  accessed_on: '2026-10-12'
+- id: he2024_supplement
+  title: He et al. (2024), original publisher Supplementary Materials, 16 pages, Figures S1-S7, Tables S1-S8 and Text S1. Actual item captions are used; the page-2 contents list has inconsistent figure and table numbering.
+  url: https://ars.els-cdn.com/content/image/1-s2.0-S0009254124002663-mmc1.pdf
+  accessed_on: '2026-10-12'
+- id: ncbi_thuringiensis
+  title: NCBI Taxonomy 1428, Bacillus thuringiensis, species in the Bacillus cereus group. This maps the authors' species name and does not independently identify their experimental isolate.
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1428&mode=Info
+  accessed_on: '2026-10-12'
+- id: uniprot_bacillus_thuringiensis_organic_acids
+  title: 'UniProtKB reference proteome UP000194143 (Bacillus thuringiensis, NCBITaxon:1428): Citrate synthase (CAB88_23625, UniProtKB:A0A0K0QI82), Malate dehydrogenase (mdh / CAB88_23615, UniProtKB:A0A0B5XLM5), and L-lactate dehydrogenase (ldh / CAB88_25135, UniProtKB:A0A0K0QJ28).'
+  url: https://www.uniprot.org/uniprotkb?query=(proteome:UP000194143)+AND+(accession:A0A0K0QI82+OR+accession:A0A0B5XLM5+OR+accession:A0A0K0QJ28)
+  accessed_on: '2026-11-10'
 mechanisms:
-  - id: bacillus_concentrate_bioweathering
-    name: Bacterial enhancement of rare-earth mobilization from mixed phosphate concentrate
-    process: bioleaching
-    description: >-
-      A culture identified by the authors as Bacillus thuringiensis
-      enhanced aqueous rare-earth release from the mixed concentrate
-      relative to corresponding abiotic controls. Unbuffered cultures
-      acidified strongly; enhanced release also occurred in MES-buffered
-      medium near pH 6. Metabolite profiles and separate organic-acid
-      leaching assays support a contribution from proton attack and
-      organic ligands, without resolving each metabolite's contribution
-      in the living culture. This is laboratory bio-weathering and
-      mobilization, with partial immobilization in secondary precipitates,
-      not an isolated rare-earth product or an industrial recovery process.
-    context: >-
-      The isolate came from topsoil at the Renju regolith-hosted rare-earth
-      deposit in Guangdong, China; that location is not established as
-      the concentrate's origin. Section 2.2 refers to sequence comparison
-      by BLAST but supplies no isolate accession or independently
-      verifiable sequence in the reviewed article and supplement.
-      Concentrate was crushed and sieved to 48-74 micrometres, washed
-      ultrasonically with ethanol and ultrapure water and freeze-dried.
-      Assays used 0.5 g of sterile feed and 100 mL medium in 250 mL
-      flasks, approximately 1e6 CFU/mL initially, 180 rpm and 25-28
-      degrees C for 30 days. Cells were harvested in exponential phase
-      and washed three times. Medium contained, in g/L, glucose 10,
-      NH4Cl 1, MgSO4.7H2O 1 and KCl 0.2, initially pH 6, with or
-      without 20 mmol/L MES. No additional phosphorus was supplied.
-      Each medium had a biotic feed arm, an abiotic feed control and a
-      cells-only control. Time-course measurements used three replicates;
-      metabolomics on days 4, 8 and 15 used six biotic-feed and five
-      cells-only replicates. CFU counts exclude attached cells. Aqueous
-      elemental analyses used centrifuged, 0.22-micrometre-filtered
-      samples and ICP-MS. Separate chemical tests used 0.1 g feed in
-      20 mL of HCl or 1 mmol/L organic-acid solution, initial pH 3, 5
-      or 6, at the same temperature and agitation for 96 h in triplicate.
-      These chemical assays were not a 30-day pH-trajectory-matched
-      replacement for the biological experiment.
-    microbial: true
-    organisms:
-      - id: NCBITaxon:1428
-        label: Bacillus thuringiensis
+- id: bacillus_concentrate_bioweathering
+  name: Bacterial enhancement of rare-earth mobilization from mixed phosphate concentrate
+  process: bioleaching
+  description: A culture identified by the authors as Bacillus thuringiensis enhanced aqueous rare-earth release from the mixed concentrate relative to corresponding abiotic controls. Unbuffered cultures acidified strongly; enhanced release also occurred in MES-buffered medium near pH 6. Metabolite profiles and separate organic-acid leaching assays support a contribution from proton attack and organic ligands, without resolving each metabolite's contribution in the living culture. This is laboratory bio-weathering and mobilization, with partial immobilization in secondary precipitates, not an isolated rare-earth product or an industrial recovery process.
+  context: The isolate came from topsoil at the Renju regolith-hosted rare-earth deposit in Guangdong, China; that location is not established as the concentrate's origin. Section 2.2 refers to sequence comparison by BLAST but supplies no isolate accession or independently verifiable sequence in the reviewed article and supplement. Concentrate was crushed and sieved to 48-74 micrometres, washed ultrasonically with ethanol and ultrapure water and freeze-dried. Assays used 0.5 g of sterile feed and 100 mL medium in 250 mL flasks, approximately 1e6 CFU/mL initially, 180 rpm and 25-28 degrees C for 30 days. Cells were harvested in exponential phase and washed three times. Medium contained, in g/L, glucose 10, NH4Cl 1, MgSO4.7H2O 1 and KCl 0.2, initially pH 6, with or without 20 mmol/L MES. No additional phosphorus was supplied. Each medium had a biotic feed arm, an abiotic feed control and a cells-only control. Time-course measurements used three replicates; metabolomics on days 4, 8 and 15
+    used six biotic-feed and five cells-only replicates. CFU counts exclude attached cells. Aqueous elemental analyses used centrifuged, 0.22-micrometre-filtered samples and ICP-MS. Separate chemical tests used 0.1 g feed in 20 mL of HCl or 1 mmol/L organic-acid solution, initial pH 3, 5 or 6, at the same temperature and agitation for 96 h in triplicate. These chemical assays were not a 30-day pH-trajectory-matched replacement for the biological experiment.
+  microbial: true
+  organisms:
+  - id: NCBITaxon:1428
+    label: Bacillus thuringiensis
+  protein_examples:
+  - uniprot_accession: UniProtKB:A0A0K0QI82
+    entry_name: A0A0K0QI82_BACTU
+    protein_name: Citrate synthase
+    gene_symbol: CAB88_23625
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:1428
+      label: Bacillus thuringiensis
+    reference_proteome_id: UP000194143
+    interpro_ids:
+    - InterPro:IPR011278
+    - InterPro:IPR016142
+    - InterPro:IPR016143
+    - InterPro:IPR002020
+    - InterPro:IPR024176
+    - InterPro:IPR036969
+    pfam_ids:
+    - Pfam:PF00285
+    ncbifam_ids:
+    - NCBIfam:TIGR01800
+    - NCBIfam:NF010637
+    go_terms:
+    - id: GO:0005829
+      label: cytosol
+    - id: GO:0036440
+      label: citrate synthase activity
+    - id: GO:0005975
+      label: carbohydrate metabolic process
+    - id: GO:0006099
+      label: tricarboxylic acid cycle
+    functional_role: Citrate synthase (locus CAB88_23625) catalyzing condensation of acetyl-CoA and oxaloacetate to citrate in the tricarboxylic acid cycle during glucose-fed bioweathering.
+    annotation_note: Grounded to species-level Bacillus thuringiensis reference proteome UP000194143 (NCBITaxon:1428; locus CAB88_23625, UniProtKB:A0A0K0QI82; 371 aa), representing the Bacillus thuringiensis strain used in He et al. (2024).
     evidence:
-      - source_ref: he2024
-        supports: support
-        explanation: >-
-          Sections 2.3 and 3.2-3.4 and Figures 1-3 show enhanced
-          aqueous rare-earth release in both bacterial feed arms compared
-          with their abiotic controls. The unbuffered culture reached
-          about pH 3 and the text reports a maximum total rare-earth
-          concentration of about 716 micrograms/L on day 15, followed
-          by a decline and partial increase. The buffered culture reached
-          about 343 micrograms/L at day 30. These are filtered aqueous
-          concentrations, not cumulative extraction fractions or isolated
-          product yields. The later decline and observed precipitates
-          prevent treating solution concentration as total mineral loss.
+    - source_ref: he2024
+      supports: partial
+      explanation: He et al. (2024) report rapid culture acidification to pH 4.19 on day 1 during aerobic growth of Bacillus thuringiensis in glucose mineral medium with 5 g/L mixed xenotime/monazite concentrate; individual organic-acid synthesis enzymes were not directly assayed.
+    - source_ref: uniprot_bacillus_thuringiensis_organic_acids
+      supports: partial
+      explanation: UniProtKB:A0A0K0QI82 (A0A0K0QI82_BACTU, locus CAB88_23625) in Bacillus thuringiensis reference proteome UP000194143 (NCBITaxon:1428) encodes Citrate synthase (GO:0036440 citrate synthase activity; GO:0006099 tricarboxylic acid cycle).
+  - uniprot_accession: UniProtKB:A0A0B5XLM5
+    entry_name: A0A0B5XLM5_BACTU
+    protein_name: Malate dehydrogenase
+    gene_symbol: mdh
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:1428
+      label: Bacillus thuringiensis
+    reference_proteome_id: UP000194143
+    ec_numbers:
+    - EC:1.1.1.37
+    interpro_ids:
+    - InterPro:IPR001557
+    - InterPro:IPR022383
+    - InterPro:IPR001236
+    - InterPro:IPR015955
+    - InterPro:IPR011275
+    - InterPro:IPR036291
+    pfam_ids:
+    - Pfam:PF02866
+    - Pfam:PF00056
+    ncbifam_ids:
+    - NCBIfam:TIGR01763
+    - NCBIfam:NF004863
+    go_terms:
+    - id: GO:0004459
+      label: L-lactate dehydrogenase (NAD+) activity
+    - id: GO:0030060
+      label: L-malate dehydrogenase (NAD+) activity
+    - id: GO:0006089
+      label: lactate metabolic process
+    - id: GO:0006099
+      label: tricarboxylic acid cycle
+    functional_role: NAD-dependent malate dehydrogenase Mdh (EC 1.1.1.37; locus CAB88_23615) catalyzing reversible interconversion of L-malate and oxaloacetate in the tricarboxylic acid cycle.
+    annotation_note: 'Grounded to species-level Bacillus thuringiensis reference proteome UP000194143 (NCBITaxon:1428; mdh / CAB88_23615, UniProtKB:A0A0B5XLM5; 312 aa), representing Bacillus thuringiensis in He et al. (2024). Note: UniProtKB TrEMBL includes automated InterPro2GO superfamily projections GO:0004459 and GO:0006089 from the shared LDH/MDH domains Pfam:PF00056/Pfam:PF02866 (InterPro:IPR001557), whereas HAMAP rule MF_00487 assigns specific L-malate dehydrogenase activity (EC:1.1.1.37; GO:0030060; GO:0006099).'
+    evidence:
+    - source_ref: he2024
+      supports: partial
+      explanation: He et al. (2024) attribute early medium acidification (pH 4.19 at day 1) and rare-earth phosphate concentrate bioweathering to organic acid production from glucose by Bacillus thuringiensis; mdh expression was not directly measured.
+    - source_ref: uniprot_bacillus_thuringiensis_organic_acids
+      supports: partial
+      explanation: UniProtKB:A0A0B5XLM5 (A0A0B5XLM5_BACTU, mdh / CAB88_23615) in Bacillus thuringiensis reference proteome UP000194143 (NCBITaxon:1428) encodes Malate dehydrogenase (EC:1.1.1.37; GO:0030060 L-malate dehydrogenase (NAD+) activity; GO:0006099 tricarboxylic acid cycle).
+  - uniprot_accession: UniProtKB:A0A0K0QJ28
+    entry_name: A0A0K0QJ28_BACTU
+    protein_name: L-lactate dehydrogenase
+    gene_symbol: ldh
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:1428
+      label: Bacillus thuringiensis
+    reference_proteome_id: UP000194143
+    ec_numbers:
+    - EC:1.1.1.27
+    interpro_ids:
+    - InterPro:IPR001557
+    - InterPro:IPR011304
+    - InterPro:IPR018177
+    - InterPro:IPR022383
+    - InterPro:IPR001236
+    - InterPro:IPR015955
+    - InterPro:IPR036291
+    pfam_ids:
+    - Pfam:PF02866
+    - Pfam:PF00056
+    ncbifam_ids:
+    - NCBIfam:TIGR01771
+    - NCBIfam:NF000824
+    - NCBIfam:NF004863
+    go_terms:
+    - id: GO:0005737
+      label: cytoplasm
+    - id: GO:0004459
+      label: L-lactate dehydrogenase (NAD+) activity
+    - id: GO:0006096
+      label: glycolytic process
+    - id: GO:0006089
+      label: lactate metabolic process
+    functional_role: NAD-dependent L-lactate dehydrogenase Ldh (EC 1.1.1.27; locus CAB88_25135) catalyzing fermentative reduction of pyruvate to L-lactate during rapid glucose catabolism.
+    annotation_note: Grounded to species-level Bacillus thuringiensis reference proteome UP000194143 (NCBITaxon:1428; ldh / CAB88_25135, UniProtKB:A0A0K0QJ28; 314 aa), representing rapid day-1 glucose acidification by Bacillus thuringiensis in He et al. (2024).
+    evidence:
+    - source_ref: he2024
+      supports: partial
+      explanation: He et al. (2024) observed a sharp pH drop from neutral to pH 4.19 within 24 h of glucose-medium inoculation with Bacillus thuringiensis before subsequent pH rebound to 8.43 by day 17; individual fermentative enzymes were not isolated.
+    - source_ref: uniprot_bacillus_thuringiensis_organic_acids
+      supports: partial
+      explanation: UniProtKB:A0A0K0QJ28 (A0A0K0QJ28_BACTU, ldh / CAB88_25135) in Bacillus thuringiensis reference proteome UP000194143 (NCBITaxon:1428) encodes L-lactate dehydrogenase (EC:1.1.1.27; GO:0004459 L-lactate dehydrogenase (NAD+) activity; GO:0006096 glycolytic process).
+  evidence:
+  - source_ref: he2024
+    supports: support
+    explanation: Sections 2.3 and 3.2-3.4 and Figures 1-3 show enhanced aqueous rare-earth release in both bacterial feed arms compared with their abiotic controls. The unbuffered culture reached about pH 3 and the text reports a maximum total rare-earth concentration of about 716 micrograms/L on day 15, followed by a decline and partial increase. The buffered culture reached about 343 micrograms/L at day 30. These are filtered aqueous concentrations, not cumulative extraction fractions or isolated product yields. The later decline and observed precipitates prevent treating solution concentration as total mineral loss.
+  - source_ref: he2024
+    supports: partial
+    explanation: Figures 4-6 and Sections 3.5-3.6 and 4.2 link bacterial growth to organic-acid profiles and show acid-dependent chemical leaching, including tartaric-acid activity near pH 6. Many tested organic acids perform similarly to HCl at pH 3; proton and ligand contributions depend on conditions. Normalized MS signals are not absolute extracellular acid concentrations. No genetic intervention, spent-medium reconstruction or individual-metabolite contribution in the live culture was demonstrated. Figure 5's caption calls the cells-only comparator Exp-Control, whereas its legend and Methods identify it as Exp-Bt; the abiotic mineral control remains a separate arm. Section 2.4 prints 0.22 mm for chemical-solution filters, whereas Section 2.5.1 specifies 0.22 micrometres for analyzed suspensions. These preparation descriptions are not silently harmonized.
+  - source_ref: he2024_supplement
+    supports: partial
+    explanation: 'Figure S1 and Tables S2-S4 support a mixed mineral feed and distinct rare-earth distributions among its phases. Phase weight fractions derive from particle counts and assumed densities. Quantitative source inconsistencies remain: Figure S1 repeats the same reference-card number for almandine and ilmenite; xenotime Yb and Lu values in Tables S3 and S4 do not agree under straightforward oxide-to-element conversion. Main Table 1''s TiO2 content also does not close against the tabulated phase fractions and compositions. Its printed P2O3 and U2O3 labels are retained as source uncertainties, not silently relabeled. Whole-feed Y was above the XRF upper limit, not absent. These limitations preclude a new closed elemental mass balance or a precise recovery efficiency from the phase estimates.'
+  - source_ref: he2024
+    supports: partial
+    explanation: Table 3 estimates 0.03% xenotime and 0.3% monazite dissolution for the unbuffered day-15 solution. These are two-component calculations from aqueous rare-earth composition, not measured separate-mineral mass losses. They assume the two phosphates supply the dissolved rare earths and negligible differential re-sorption or precipitation. Figure 7 and Section 4.3 show secondary REE- and P-bearing precipitates, but their mineral identities could not be established by micro-XRD, TEM or Raman. Rhabdophane- or churchite-type assignments are proposed analogies, not identified products. This qualifies the dissolution model and supports only conditional preferential monazite dissolution, without proving a general species-level rate ratio.
+  - source_ref: he2024_supplement
+    supports: context_only
+    explanation: Actual Figure S6 models phosphate saturation and Figure S7 compares modeled and measured solution composition; their numbering is reversed in the contents list. Table S7 and Text S1 apply the concentrate's 1.38 square metres/g surface area to both phosphate phases by assumption. Phase-specific rates therefore are model dependent. Main Equation 1 also calls this a prepared granite sample despite the study's concentrate feed. No calculated mineral-specific rate is promoted to a direct measurement or an industrial design parameter here.
+causal_graphs:
+- id: bacillus_xenotime_monazite_concentrate_bioweathering_graph
+  name: Bacillus thuringiensis glucose acidification and LREE-dominated trace bioweathering of mixed xenotime/monazite concentrate
+  description: Causal pathway linking representative Bacillus thuringiensis organic-acid and fermentative enzymes Citrate synthase (UniProtKB:A0A0K0QI82), Malate dehydrogenase Mdh (UniProtKB:A0A0B5XLM5), and L-lactate dehydrogenase Ldh (UniProtKB:A0A0K0QJ28) to transient culture acidification (pH 4.19 at day 1 followed by rebound to pH 8.43 by day 17) and trace LREE-enriched dissolution (peak 4.62 mg/L total REE on day 3, including 1.84 mg/L La, 1.15 mg/L Ce, 0.87 mg/L Nd, and only 0.22 mg/L Y, representing <0.1% of bulk solid REE inventory and preferential dissolution of co-occurring monazite) from a mixed xenotime/monazite mineral concentrate in He et al. (2024).
+  scope: REPRESENTATIVE_EXAMPLE
+  mechanism_ref: bacillus_concentrate_bioweathering
+  nodes:
+  - id: glucose_mineral_medium_substrate
+    label: Glucose mineral-salts medium with 5 g/L (0.25 g/50 mL) mixed xenotime/monazite concentrate at 30 C and 160 rpm
+    node_type: CHEMICAL_ENTITY
+    description: 50 mL aerobic glucose mineral-salts medium containing 0.25 g (5 g/L) 75-150 um mixed xenotime/monazite concentrate incubated at 30 C and 160 rpm for 17 days.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: bt_tca_citrate_and_malate_enzymes
+    label: Bacillus thuringiensis TCA-cycle Citrate synthase (CAB88_23625) and Malate dehydrogenase (mdh)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: CAB88_23625/mdh
+    description: Representative Bacillus thuringiensis tricarboxylic-acid-cycle enzymes Citrate synthase (CAB88_23625, UniProtKB:A0A0K0QI82) and Malate dehydrogenase (mdh / CAB88_23615, UniProtKB:A0A0B5XLM5; EC 1.1.1.37) in reference proteome UP000194143.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:A0A0K0QI82
+      entry_name: A0A0K0QI82_BACTU
+      protein_name: Citrate synthase
+      gene_symbol: CAB88_23625
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:1428
+        label: Bacillus thuringiensis
+      reference_proteome_id: UP000194143
+      interpro_ids:
+      - InterPro:IPR011278
+      - InterPro:IPR016142
+      - InterPro:IPR016143
+      - InterPro:IPR002020
+      - InterPro:IPR024176
+      - InterPro:IPR036969
+      pfam_ids:
+      - Pfam:PF00285
+      ncbifam_ids:
+      - NCBIfam:TIGR01800
+      - NCBIfam:NF010637
+      go_terms:
+      - id: GO:0005829
+        label: cytosol
+      - id: GO:0036440
+        label: citrate synthase activity
+      - id: GO:0005975
+        label: carbohydrate metabolic process
+      - id: GO:0006099
+        label: tricarboxylic acid cycle
+      functional_role: Citrate synthase (locus CAB88_23625) catalyzing condensation of acetyl-CoA and oxaloacetate to citrate in the tricarboxylic acid cycle during glucose-fed bioweathering.
+      annotation_note: Grounded to species-level Bacillus thuringiensis reference proteome UP000194143 (NCBITaxon:1428; locus CAB88_23625, UniProtKB:A0A0K0QI82; 371 aa), representing the Bacillus thuringiensis strain used in He et al. (2024).
+      evidence:
       - source_ref: he2024
         supports: partial
-        explanation: >-
-          Figures 4-6 and Sections 3.5-3.6 and 4.2 link bacterial growth
-          to organic-acid profiles and show acid-dependent chemical
-          leaching, including tartaric-acid activity near pH 6. Many tested
-          organic acids perform similarly to HCl at pH 3; proton and
-          ligand contributions depend on conditions. Normalized MS
-          signals are not absolute extracellular acid concentrations.
-          No genetic intervention, spent-medium reconstruction or
-          individual-metabolite contribution in the live culture was
-          demonstrated. Figure 5's caption calls the cells-only comparator
-          Exp-Control, whereas its legend and Methods identify it as
-          Exp-Bt; the abiotic mineral control remains a separate arm.
-          Section 2.4 prints 0.22 mm for chemical-solution filters,
-          whereas Section 2.5.1 specifies 0.22 micrometres for analyzed
-          suspensions. These preparation descriptions are not silently
-          harmonized.
-      - source_ref: he2024_supplement
+        explanation: He et al. (2024) report rapid culture acidification to pH 4.19 on day 1 during aerobic growth of Bacillus thuringiensis in glucose mineral medium with 5 g/L mixed xenotime/monazite concentrate; individual organic-acid synthesis enzymes were not directly assayed.
+      - source_ref: uniprot_bacillus_thuringiensis_organic_acids
         supports: partial
-        explanation: >-
-          Figure S1 and Tables S2-S4 support a mixed mineral feed and
-          distinct rare-earth distributions among its phases. Phase weight
-          fractions derive from particle counts and assumed densities.
-          Quantitative source inconsistencies remain: Figure S1 repeats
-          the same reference-card number for almandine and ilmenite;
-          xenotime Yb and Lu values in Tables S3 and S4 do not agree
-          under straightforward oxide-to-element conversion. Main Table
-          1's TiO2 content also does not close against the tabulated phase
-          fractions and compositions. Its printed P2O3 and U2O3 labels
-          are retained as source uncertainties, not silently relabeled.
-          Whole-feed Y was above the XRF upper limit, not absent.
-          These limitations preclude a new closed elemental mass balance
-          or a precise recovery efficiency from the phase estimates.
+        explanation: UniProtKB:A0A0K0QI82 (A0A0K0QI82_BACTU, locus CAB88_23625) in Bacillus thuringiensis reference proteome UP000194143 (NCBITaxon:1428) encodes Citrate synthase (GO:0036440 citrate synthase activity; GO:0006099 tricarboxylic acid cycle).
+    - uniprot_accession: UniProtKB:A0A0B5XLM5
+      entry_name: A0A0B5XLM5_BACTU
+      protein_name: Malate dehydrogenase
+      gene_symbol: mdh
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:1428
+        label: Bacillus thuringiensis
+      reference_proteome_id: UP000194143
+      ec_numbers:
+      - EC:1.1.1.37
+      interpro_ids:
+      - InterPro:IPR001557
+      - InterPro:IPR022383
+      - InterPro:IPR001236
+      - InterPro:IPR015955
+      - InterPro:IPR011275
+      - InterPro:IPR036291
+      pfam_ids:
+      - Pfam:PF02866
+      - Pfam:PF00056
+      ncbifam_ids:
+      - NCBIfam:TIGR01763
+      - NCBIfam:NF004863
+      go_terms:
+      - id: GO:0004459
+        label: L-lactate dehydrogenase (NAD+) activity
+      - id: GO:0030060
+        label: L-malate dehydrogenase (NAD+) activity
+      - id: GO:0006089
+        label: lactate metabolic process
+      - id: GO:0006099
+        label: tricarboxylic acid cycle
+      functional_role: NAD-dependent malate dehydrogenase Mdh (EC 1.1.1.37; locus CAB88_23615) catalyzing reversible interconversion of L-malate and oxaloacetate in the tricarboxylic acid cycle.
+      annotation_note: 'Grounded to species-level Bacillus thuringiensis reference proteome UP000194143 (NCBITaxon:1428; mdh / CAB88_23615, UniProtKB:A0A0B5XLM5; 312 aa), representing Bacillus thuringiensis in He et al. (2024). Note: UniProtKB TrEMBL includes automated InterPro2GO superfamily projections GO:0004459 and GO:0006089 from the shared LDH/MDH domains Pfam:PF00056/Pfam:PF02866 (InterPro:IPR001557), whereas HAMAP rule MF_00487 assigns specific L-malate dehydrogenase activity (EC:1.1.1.37; GO:0030060; GO:0006099).'
+      evidence:
       - source_ref: he2024
         supports: partial
-        explanation: >-
-          Table 3 estimates 0.03% xenotime and 0.3% monazite dissolution
-          for the unbuffered day-15 solution. These are two-component
-          calculations from aqueous rare-earth composition, not measured
-          separate-mineral mass losses. They assume the two phosphates
-          supply the dissolved rare earths and negligible differential
-          re-sorption or precipitation. Figure 7 and Section 4.3 show
-          secondary REE- and P-bearing precipitates, but their mineral
-          identities could not be established by micro-XRD, TEM or
-          Raman. Rhabdophane- or churchite-type assignments are proposed
-          analogies, not identified products. This qualifies the dissolution
-          model and supports only conditional preferential monazite
-          dissolution, without proving a general species-level rate ratio.
-      - source_ref: he2024_supplement
-        supports: context_only
-        explanation: >-
-          Actual Figure S6 models phosphate saturation and Figure S7
-          compares modeled and measured solution composition; their
-          numbering is reversed in the contents list. Table S7 and Text
-          S1 apply the concentrate's 1.38 square metres/g surface area
-          to both phosphate phases by assumption. Phase-specific rates
-          therefore are model dependent. Main Equation 1 also calls this
-          a prepared granite sample despite the study's concentrate feed.
-          No calculated mineral-specific rate is promoted to a direct
-          measurement or an industrial design parameter here.
+        explanation: He et al. (2024) attribute early medium acidification (pH 4.19 at day 1) and rare-earth phosphate concentrate bioweathering to organic acid production from glucose by Bacillus thuringiensis; mdh expression was not directly measured.
+      - source_ref: uniprot_bacillus_thuringiensis_organic_acids
+        supports: partial
+        explanation: UniProtKB:A0A0B5XLM5 (A0A0B5XLM5_BACTU, mdh / CAB88_23615) in Bacillus thuringiensis reference proteome UP000194143 (NCBITaxon:1428) encodes Malate dehydrogenase (EC:1.1.1.37; GO:0030060 L-malate dehydrogenase (NAD+) activity; GO:0006099 tricarboxylic acid cycle).
+  - id: bt_lactate_dehydrogenase_fermentation
+    label: Bacillus thuringiensis fermentative L-lactate dehydrogenase (ldh)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: ldh
+    description: Representative Bacillus thuringiensis L-lactate dehydrogenase (ldh / CAB88_25135, UniProtKB:A0A0K0QJ28; EC 1.1.1.27) in reference proteome UP000194143 catalyzing rapid fermentative lactate production from glucose.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:A0A0K0QJ28
+      entry_name: A0A0K0QJ28_BACTU
+      protein_name: L-lactate dehydrogenase
+      gene_symbol: ldh
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:1428
+        label: Bacillus thuringiensis
+      reference_proteome_id: UP000194143
+      ec_numbers:
+      - EC:1.1.1.27
+      interpro_ids:
+      - InterPro:IPR001557
+      - InterPro:IPR011304
+      - InterPro:IPR018177
+      - InterPro:IPR022383
+      - InterPro:IPR001236
+      - InterPro:IPR015955
+      - InterPro:IPR036291
+      pfam_ids:
+      - Pfam:PF02866
+      - Pfam:PF00056
+      ncbifam_ids:
+      - NCBIfam:TIGR01771
+      - NCBIfam:NF000824
+      - NCBIfam:NF004863
+      go_terms:
+      - id: GO:0005737
+        label: cytoplasm
+      - id: GO:0004459
+        label: L-lactate dehydrogenase (NAD+) activity
+      - id: GO:0006096
+        label: glycolytic process
+      - id: GO:0006089
+        label: lactate metabolic process
+      functional_role: NAD-dependent L-lactate dehydrogenase Ldh (EC 1.1.1.27; locus CAB88_25135) catalyzing fermentative reduction of pyruvate to L-lactate during rapid glucose catabolism.
+      annotation_note: Grounded to species-level Bacillus thuringiensis reference proteome UP000194143 (NCBITaxon:1428; ldh / CAB88_25135, UniProtKB:A0A0K0QJ28; 314 aa), representing rapid day-1 glucose acidification by Bacillus thuringiensis in He et al. (2024).
+      evidence:
+      - source_ref: he2024
+        supports: partial
+        explanation: He et al. (2024) observed a sharp pH drop from neutral to pH 4.19 within 24 h of glucose-medium inoculation with Bacillus thuringiensis before subsequent pH rebound to 8.43 by day 17; individual fermentative enzymes were not isolated.
+      - source_ref: uniprot_bacillus_thuringiensis_organic_acids
+        supports: partial
+        explanation: UniProtKB:A0A0K0QJ28 (A0A0K0QJ28_BACTU, ldh / CAB88_25135) in Bacillus thuringiensis reference proteome UP000194143 (NCBITaxon:1428) encodes L-lactate dehydrogenase (EC:1.1.1.27; GO:0004459 L-lactate dehydrogenase (NAD+) activity; GO:0006096 glycolytic process).
+  - id: glucose_acidified_organic_acid_leachate
+    label: Transiently acidified organic-acid culture leachate (pH 4.19 at day 1, rebounding to pH 8.43 by day 17)
+    node_type: CHEMICAL_ENTITY
+    description: Biotic leachate acidified to pH 4.19 on day 1 (vs pH 7.36-7.47 in abiotic controls) during initial glucose catabolism, followed by pH rebound to 8.43 by day 17 as organic acids are consumed and ammonia/alkalinity accumulates.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: mixed_xenotime_monazite_concentrate_feed
+    label: Mixed xenotime/monazite rare-earth phosphate concentrate (48.35 wt% Y2O3, 27.64 wt% P2O5, plus LREE-rich monazite)
+    node_type: MATERIAL_OR_PHASE
+    description: 75-150 um mineral concentrate containing 48.35 wt% Y2O3 and 27.64 wt% P2O5 alongside substantial La, Ce, and Nd hosted in co-occurring monazite grains documented by XRD and SEM-EDS.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: selective_lree_enriched_dissolved_ree_pool
+    label: 'Peak day-3 dissolved REEs (4.62 mg/L total REE: La 1.84, Ce 1.15, Nd 0.87, Y 0.22 mg/L; <0.1% of bulk solid REEs)'
+    node_type: CHEMICAL_ENTITY
+    description: Dissolved REEs peaking on day 3 at 4.62 mg/L total REE (vs <=0.008 mg/L abiotic control), strongly enriched in LREEs (La 1.84 mg/L, Ce 1.15 mg/L, Nd 0.87 mg/L) relative to Y (0.22 mg/L, ~0.012% of solid Y), reflecting preferential dissolution of co-occurring monazite over refractory xenotime followed by decline as pH rebounds to 8.43.
+    protein_grounding_status: NOT_APPLICABLE
+  edges:
+  - source: glucose_mineral_medium_substrate
+    target: bt_tca_citrate_and_malate_enzymes
+    predicate: supplies_substrate_for
+    relationship: glucose glycolytic carbon flux feeds TCA organic-acid biosynthesis
+    description: Glucose in the mineral medium supplies carbon precursors to Bacillus thuringiensis TCA-cycle citrate synthase and malate dehydrogenase.
+    evidence:
+    - source_ref: he2024
+      supports: partial
+      explanation: He et al. (2024) grew Bacillus thuringiensis aerobically in glucose mineral medium with 5 g/L mineral concentrate; individual TCA enzymes were not directly assayed.
+  - source: glucose_mineral_medium_substrate
+    target: bt_lactate_dehydrogenase_fermentation
+    predicate: supplies_substrate_for
+    relationship: glucose glycolytic pyruvate flux drives fermentative lactate production
+    description: Glucose catabolism supplies pyruvate to L-lactate dehydrogenase during rapid early growth.
+    evidence:
+    - source_ref: he2024
+      supports: partial
+      explanation: He et al. (2024) document rapid day-1 acidification to pH 4.19 in glucose medium inoculated with Bacillus thuringiensis.
+  - source: bt_tca_citrate_and_malate_enzymes
+    target: glucose_acidified_organic_acid_leachate
+    predicate: produces
+    relationship: organic acid production contributing to early culture acidification
+    description: Citrate synthase and malate dehydrogenase generate organic acids that acidify the culture medium.
+    evidence:
+    - source_ref: he2024
+      supports: partial
+      explanation: He et al. (2024) link early medium acidification (pH 4.19 on day 1) to organic acid secretion by Bacillus thuringiensis.
+  - source: bt_lactate_dehydrogenase_fermentation
+    target: glucose_acidified_organic_acid_leachate
+    predicate: produces
+    relationship: fermentative lactic acid generation lowering medium pH to 4.19 on day 1
+    description: Fermentative L-lactate dehydrogenase activity contributes to the rapid day-1 pH drop to 4.19.
+    evidence:
+    - source_ref: he2024
+      supports: partial
+      explanation: He et al. (2024) report culture pH dropping to 4.19 on day 1 in glucose-grown Bacillus thuringiensis flasks compared with pH 7.36-7.47 in uninoculated controls.
+  - source: glucose_acidified_organic_acid_leachate
+    target: mixed_xenotime_monazite_concentrate_feed
+    predicate: solubilizes
+    relationship: acidic and organic-ligand attack preferentially etching monazite over xenotime
+    description: Transiently acidified biotic medium attacks the mixed xenotime/monazite concentrate, preferentially dissolving LREE-rich monazite grains.
+    evidence:
+    - source_ref: he2024
+      supports: partial
+      explanation: He et al. (2024) and he2024_supplement show that despite bulk feed dominance by Y2O3 (48.35 wt%), leachate REEs are dominated by La, Ce, and Nd from co-occurring monazite, and no matched-pH abiotic acid control was tested.
+  - source: mixed_xenotime_monazite_concentrate_feed
+    target: selective_lree_enriched_dissolved_ree_pool
+    predicate: produces
+    relationship: release of 4.62 mg/L peak total REE at day 3 (La 1.84, Ce 1.15, Nd 0.87, Y 0.22 mg/L) followed by alkaline decline
+    description: Bioweathering yields a day-3 peak of 4.62 mg/L total dissolved REE (<0.1% of solid REE inventory) before dissolved concentrations decline as pH rises to 8.43.
+    evidence:
+    - source_ref: he2024
+      supports: support
+      explanation: He et al. (2024) and he2024_supplement report peak dissolved total REE of 4.62 mg/L at day 3 (1.84 mg/L La, 1.15 mg/L Ce, 0.87 mg/L Nd, 0.22 mg/L Y vs <=0.008 mg/L abiotic control) at 5 g/L solid loading.
 curation_history:
-  - timestamp: '2026-10-12T07:41:53Z'
-    curator: codex (GPT-6)
-    action: CREATE
-    summary: >-
-      Added a distinct mixed xenotime-concentrate resource from the
-      complete primary postprint and publisher supplement. Preserved
-      abiotic controls, strain uncertainty, source inconsistencies and
-      model-dependent dissolution boundaries without claiming recovery.
+- timestamp: '2026-10-12T07:41:53Z'
+  curator: codex (GPT-6)
+  action: CREATE
+  summary: Added a distinct mixed xenotime-concentrate resource from the complete primary postprint and publisher supplement. Preserved abiotic controls, strain uncertainty, source inconsistencies and model-dependent dissolution boundaries without claiming recovery.
+- timestamp: '2026-11-10T22:49:38Z'
+  curator: marcin
+  action: edit
+  summary: Add bacillus_xenotime_monazite_concentrate_bioweathering_graph causal graph and ground bacillus_concentrate_bioweathering to Bacillus thuringiensis reference-proteome enzymes (UniProtKB:A0A0K0QI82, UniProtKB:A0A0B5XLM5, UniProtKB:A0A0K0QJ28)
 history_refs:
-  - history/records/xenotime-concentrate/2026-10-12T074155Z-codex-66bb20.yaml
+- history/records/xenotime-concentrate/2026-10-12T074155Z-codex-66bb20.yaml
+- history/records/xenotime-concentrate/2026-11-10T224938Z-marcin-df97f4.yaml
