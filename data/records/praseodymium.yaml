@@ -59,7 +59,7 @@ mechanisms:
     evidence:
     - source_ref: diep2026
       supports: partial
-      explanation: Benchmark lanmodulin comparator (o-621) tested alongside Melba-LanM (o-36) in automated high-throughput screening and column separation of Pr(III)/La(III).
+      explanation: Benchmark Methylorubrum extorquens AM1 lanmodulin comparator (Mex-LanM, ortholog o-621) tested alongside immobilized Melba-LanM (o-36) in Diep et al. (2026) Figure 6d and Extended Data Figure 8c-d, where Mex-LanM largely co-eluted Pr(III) and La(III) under the binary pH-step column protocol.
   evidence:
   - source_ref: diep2026
     supports: support
@@ -107,45 +107,45 @@ causal_graphs:
       evidence:
       - source_ref: diep2026
         supports: partial
-        explanation: Benchmark lanmodulin comparator (o-621) tested alongside Melba-LanM (o-36) in automated high-throughput screening and column separation of Pr(III)/La(III).
+        explanation: Benchmark Methylorubrum extorquens AM1 lanmodulin comparator (Mex-LanM, ortholog o-621) tested alongside immobilized Melba-LanM (o-36) in Diep et al. (2026) Figure 6d and Extended Data Figure 8c-d, where Mex-LanM largely co-eluted Pr(III) and La(III) under the binary pH-step column protocol.
   - id: equimolar_pr_la_feed
     label: Equimolar Pr(III)/La(III) feed mixture
     node_type: CHEMICAL_ENTITY
-    description: Adjacent light rare-earth binary mixture loaded onto the immobilized lanmodulin column.
+    description: Synthetic equimolar binary feed containing 0.4 mM Pr(III) and 0.4 mM La(III) (0.8 mM total rare earth) applied for 2 min at ~0.32 mL/min (reported 10% column capacity) onto a 0.8 mL agarose bed (0.5 cm x 5 cm column, pre-equilibrated for 20 min with 10 mM glycine at pH 3.0) in Figure 6d, or tested on three independent 0.4 mL repeat columns fabricated with a new protein batch in Extended Data Figure 8d.
     protein_grounding_status: NOT_APPLICABLE
   - id: resolved_pr3_eluate
     label: Chromatographically separated Pr(III) and La(III) fractions
     node_type: CHEMICAL_ENTITY
-    description: High-purity La(III) and Pr(III) fractions eluted by stepwise pH reduction.
+    description: 'Aqueous La(III) and Pr(III) eluate fractions resolved by a 20-min water wash followed by pH-step desorption: in the single 0.8 mL column run of Figure 6d (pH 2.4 for 140 min then pH 1.5 for 25 min), bed volumes 48-80 yielded 99.97 mol% Pr purity (reported >99.9 mol%) and 83.16% summed-eluate Pr recovery (reported 83.2% across 96 ICP-MS fractions in Source Data Figure 6 sheet o36 Agarose La-Pr), whereas three independent 0.4 mL repeat columns with a new protein batch eluted at pH 2.5 then pH 1.5 yielded 96.5 +/- 0.2 mol% Pr purity and 72.0 +/- 5.8% yield across fractions 53-93 (Extended Data Figure 8d).'
     protein_grounding_status: NOT_APPLICABLE
   edges:
   - source: melba_lanm_o36
     target: equimolar_pr_la_feed
     predicate: binds
     relationship: enhanced Pr(III) vs La(III) stability-constant discrimination
-    description: Immobilized Melba-LanM binds Pr(III) more tightly than La(III) across the low-pH elution window.
+    description: Agarose-immobilized Melba-LanM (ortholog o-36, carrying a C-terminal GSGC tag) retains Pr(III) more strongly than La(III) during low-pH step elution of an equimolar 0.4 mM Pr(III) / 0.4 mM La(III) binary feed.
     evidence:
     - source_ref: diep2026
-      supports: support
-      explanation: Melba-LanM (o-36) exhibits superior Pr/La separation factor and column resolution.
+      supports: partial
+      explanation: Diep et al. (2026) Figure 6d and Extended Data Figure 8c-d show that agarose-immobilized Melba-LanM (o-36) selectively retains Pr(III) over La(III) during pH 2.4/2.5 elution relative to benchmark Mex-LanM (o-621), with quantitative Pr fraction purity and recovery varying between the single 0.8 mL column run at pH 2.4 -> pH 1.5 (99.97 mol% purity, 83.16% summed-eluate recovery across bed volumes 48-80) and three independent 0.4 mL repeat columns using a new protein batch at pH 2.5 -> pH 1.5 (96.5 +/- 0.2 mol% purity, 72.0 +/- 5.8% yield across fractions 53-93) and no exact causal amino-acid substitution isolated by the column experiment.
   - source: mex_lanm_o621_comparator
     target: equimolar_pr_la_feed
     predicate: binds
     relationship: baseline EF-hand lanthanide coordination
-    description: Benchmark Mex-LanM (o-621) provides the reference lanthanide-binding selectivity profile.
+    description: Immobilized benchmark Mex-LanM (ortholog o-621) binds both Pr(III) and La(III) with insufficient intra-light-lanthanide discrimination under the binary pH-step column protocol, serving as the reference comparator.
     evidence:
     - source_ref: diep2026
       supports: partial
-      explanation: Mex-LanM (o-621) is benchmarked alongside Melba-LanM (o-36) in Diep et al. (2026).
+      explanation: In Diep et al. (2026) Figure 6d and Extended Data Figure 8c-d, benchmark Methylorubrum extorquens AM1 lanmodulin (Mex-LanM, ortholog o-621) largely co-eluted Pr(III) and La(III) under the binary pH-step column protocol, providing a protein comparator against Melba-LanM (o-36) rather than a bare-agarose control.
   - source: equimolar_pr_la_feed
     target: resolved_pr3_eluate
     predicate: transforms_into
     relationship: pH-step desorption into purified La(III) and Pr(III) fractions
-    description: Stepwise pH elution desorbs weaker-bound La(III) ahead of tighter-bound Pr(III).
+    description: Stepwise low-pH desorption after a 20-min water wash elutes weaker-bound La(III) at pH 2.4 (0.8 mL column, 140 min, Figure 6d) or pH 2.5 (0.4 mL repeat columns, Extended Data Figure 8d) ahead of Pr(III) stripped at pH 1.5 (25 min).
     evidence:
     - source_ref: diep2026
-      supports: support
-      explanation: Single-column pH-step elution separates Pr(III) and La(III) into high-purity fractions.
+      supports: partial
+      explanation: Diep et al. (2026) Figure 6d and Source Data Figure 6 (sheet o36 Agarose La-Pr) report 99.97 mol% Pr purity (>99.9 mol% in text) and 83.16% Pr recovery (83.2% in text, calculated by dividing summed Pr in bed volumes 48-80 by summed Pr across all 96 tabulated ICP-MS fractions rather than an independent input mass balance) for one 0.8 mL column run (pH 2.4 then pH 1.5), whereas three independent 0.4 mL repeat columns with a new protein batch at pH 2.5 then pH 1.5 achieved 96.5 +/- 0.2 mol% Pr purity and 72.0 +/- 5.8% yield across fractions 53-93 (Extended Data Figure 8d).
 curation_history:
 - timestamp: '2026-10-11T06:27:14Z'
   curator: Codex (GPT-6; Codex)
@@ -159,7 +159,12 @@ curation_history:
   curator: claude
   action: edit
   summary: Normalized top-level key ordering in praseodymium.yaml so sources precedes criticality per CANONICAL_RECORD_KEYS.
+- timestamp: '2026-11-09T23:13:12Z'
+  curator: marcin
+  action: edit
+  summary: Expand praseodymium Melba-LanM/Mex-LanM column causal graph with 0.8 mL vs 0.4 mL batch variance and summed-eluate caveats (#982)
 history_refs:
 - history/records/praseodymium/2026-10-11T062656Z-codex-5084e0.yaml
 - history/records/praseodymium/2026-10-18T042750Z-antigravity-860186.yaml
 - history/records/praseodymium/2026-10-30T222651Z-claude-3e3f93.yaml
+- history/records/praseodymium/2026-11-09T231312Z-marcin-a907c8.yaml

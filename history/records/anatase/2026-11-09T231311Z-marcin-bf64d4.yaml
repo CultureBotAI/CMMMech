@@ -1,0 +1,33 @@
+history_version: 1
+target:
+  kind: record
+  slug: anatase
+  path: data/records/anatase.yaml
+session:
+  id: 2026-11-09T231311Z-marcin-bf64d4
+  timestamp: '2026-11-09T23:13:11Z'
+  actors:
+  - name: marcin
+    type: ai_agent
+    model: claude-opus-4-6
+    agent_tool: antigravity
+events:
+- type: EDIT
+  outcome: changed
+  summary: Align anatase INP-silaffin protein examples and causal graph with pET(INP-nR5)
+    constructs, INP-only controls, and thermal regimes (#980)
+  details: 'Updated mechanisms[0].protein_examples[0..1] (UniProtKB:P06620 InaZ and UniProtKB:Q9SE35
+    Sil1), causal_graphs[0].nodes[0..1].protein_examples[0], causal_graphs[0].nodes[0,1,3].description,
+    and causal_graphs[0].edges[0..2] (with supports: partial on edges[0..2]) in anatase.yaml
+    to specify pET(INP-nR5) (n = 1, 3, or 5 R5 repeats in E. coli BL21(DE3)), the INP-only
+    comparator (Supporting Figures S2 and S4b) versus omitted cell-free/live-vs-killed controls,
+    proposed R5 templating (Figures 1d, 3d, 5), and 37 C / 80 C / 600 C air-vs-argon and PDF
+    21-1271/21-1272 qualifications under GRP-C12S5-001 (#980).'
+  sections:
+  - mechanisms
+  - causal_graphs
+  - curation_history
+  - history_refs
+links:
+  issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/980

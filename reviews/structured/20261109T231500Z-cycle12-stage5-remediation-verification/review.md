@@ -1,0 +1,807 @@
+# Cycle 12 Stage 5 Post-Remediation Verification Review: 4 Remediated CMMMech Records
+
+- Review: 20261109T231500Z-cycle12-stage5-remediation-verification
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-11-09T23:14:00Z
+- Finished UTC: 2026-11-09T23:15:00Z
+- Reviewer: antigravity / cmmmech-cycle12-stage5-remediation-reviewer (self_review)
+- Completion: completed
+- Verdict: pass
+- Scientific review: true
+
+## Summary
+
+Post-remediation verification review across all 4 CMMMech records modified in Cycle 12 Stage 5 (1 mineral, 2 element, and 1 commodity record) resolving all 3 open Cycle 12 Stage 4 review findings under GitHub Issues #980 (GRP-C12S5-001: anatase.yaml Ping et al. 2016 INP-silaffin protein_examples and causal_graphs[0] aligned with pET(INP-nR5) n = 1, 3, or 5 R5 repeats, INP-only comparator cells in Supporting Figures S2 and S4b vs omitted cell-free/live-vs-killed controls, proposed R5 templating, 37 C / 80 C / 600 C air-vs-argon stages, PDF 21-1271/21-1272 discrepancy, and supports: partial on edges[0..2]), #981 (GRP-C12S5-002: selenium.yaml Li et al. 2014 and Klonowska et al. 2005 Shewanella oneidensis MR-1 FccA/CymA/MtrC protein_examples and causal_graphs[0] updated to supports: partial with deletion-mutant kinetics, fumarate competition, residual delta-cymA reduction, and predominantly intracellular plus smaller surface Se(0)-assigned particle localization), and #982 (GRP-C12S5-003: praseodymium.yaml Diep et al. 2026 and rare-earth-element-commodities.yaml Mattocks et al. 2023 immobilized-lanmodulin column causal graphs and protein_examples expanded with 0.8 mL vs 0.4 mL repeat-column batch variance, Page 92 / Extended Data Figure 6 immobilized-dimer minority and wild-type Hans-LanM comparators, and summed-eluate yield denominator / binary molar-share purity qualifications with supports: partial). All 4 records pass strict validation, history validation, and page rendering checks with 0 open findings.
+
+## Scope And Provenance
+
+All 4 distinct CMMMech records affected by the 3 Cycle 12 Stage 4 findings carried into Stage 5 (1 engineered E. coli INP-nR5 anatase templating record in GRP-C12S5-001 / #980, 1 Shewanella oneidensis MR-1 selenite reduction record in GRP-C12S5-002 / #981, and 2 immobilized-lanmodulin column chromatography records in GRP-C12S5-003 / #982).
+
+Selection: cycle12_stage4_open_finding_targets
+Coverage: full; 4 reviewed / 4 in the declared population.
+Source: working_tree at Git base 7fcb2a9fde66904e6274a675769cdbfe608cfa33.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:anatase | data/records/anatase.yaml | maintained | Anatase |
+| cmmmech:praseodymium | data/records/praseodymium.yaml | maintained | Praseodymium |
+| cmmmech:rare-earth-element-commodities | data/records/rare-earth-element-commodities.yaml | maintained | Rare-earth-element commodities, Australian list scope |
+| cmmmech:selenium | data/records/selenium.yaml | maintained | Selenium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Strict LinkML and semantic record validation | passed | True | cmmmech:anatase, cmmmech:praseodymium, cmmmech:rare-earth-element-commodities, cmmmech:selenium | All 703 records (including all 4 remediated records) pass .venv/bin/python -m cmmmech.cli validate --require-records with 0 errors. |
+| Append-only history sidecar validation | passed | True | cmmmech:anatase, cmmmech:praseodymium, cmmmech:rare-earth-element-commodities, cmmmech:selenium | All 4 new EDIT history sidecars and existing history sidecars pass .venv/bin/python -m cmmmech.cli validate-history --base main with 0 errors. |
+| Ping et al. (2016) anatase.yaml pET(INP-nR5), INP-only comparator, and thermal regime concordance (#980) | passed | True | cmmmech:anatase | Verified that anatase.yaml mechanisms[0].protein_examples[0..1] and causal_graphs[0].nodes[0..1].protein_examples[0] are byte-identical and specify pET(INP-nR5) (n = 1, 3, or 5 R5 repeats) and the INP-only comparator in Supporting Figures S2 and S4b vs omitted cell-free/live-vs-killed controls, and that nodes[0,1,3] and edges[0..2] (with supports: partial on edges[0..2]) include the 37 C / 80 C / 600 C air-vs-argon stages and PDF 21-1271/21-1272 discrepancy. |
+| Li et al. (2014) and Klonowska et al. (2005) selenium.yaml FccA/CymA/MtrC and causal_graphs[0] concordance (#981) | passed | True | cmmmech:selenium | Verified that selenium.yaml mechanisms[0].protein_examples[0..2] and causal_graphs[0].nodes[0..2].protein_examples[0] are synchronized with supports: partial and deletion-mutant kinetic prose (0.54 +/- 0.13 vs 1.35 +/- 0.05 umol/h in Figure 2; 20 mM fumarate competition; residual delta-cymA reduction in Figure 4 and klonowska_2005), and that nodes[0..4] and edges[0..3] (supports: partial) reflect predominantly intracellular plus smaller surface Se(0)-assigned particles. |
+| Diep et al. (2026) praseodymium.yaml and Mattocks et al. (2023) rare-earth-element-commodities.yaml concordance (#982) | passed | True | cmmmech:praseodymium, cmmmech:rare-earth-element-commodities | Verified that praseodymium.yaml causal_graphs[0].nodes[2..3] and edges[0..2] (supports: partial) specify the 0.8 mL (Figure 6d, 99.97 mol% purity / 83.16% summed-eluate recovery) vs 0.4 mL repeat-column (Extended Data Figure 8d, 96.5 +/- 0.2 mol% purity / 72.0 +/- 5.8% yield) parameters, and that rare-earth-element-commodities.yaml protein_examples[0..1] and edges[0..2] (supports: partial) include the Page 92 immobilized-dimer minority, Extended Data Figure 6 wild-type comparator, and mattocks_2023_fig4_data summed-eluate denominator caveats. |
+
+## Scientific And Domain Assessments
+
+### Ping et al. (2016) anatase.yaml pET(INP-nR5) and causal_graphs[0] remediation (GRP-C12S5-001, #980)
+
+graph: supported. Targets: cmmmech:anatase.
+
+anatase.yaml now accurately specifies pET(INP-nR5) (n = 1, 3, or 5 R5 repeats), the INP-only comparator in Supporting Figures S2 and S4b vs omitted cell-free and live-vs-killed controls, proposed R5 templating, and 37 C / 80 C / 600 C air-vs-argon and PDF 21-1271/21-1272 qualifications with supports: partial on edges[0..2].
+
+### Li et al. (2014) and Klonowska et al. (2005) selenium.yaml remediation (GRP-C12S5-002, #981)
+
+graph: supported. Targets: cmmmech:selenium.
+
+selenium.yaml now qualifies FccA, CymA, and MtrC protein_examples and edges[0..3] to supports: partial with deletion-mutant kinetic prose, fumarate competition, residual delta-cymA reduction, and predominantly intracellular plus smaller surface Se(0)-assigned particle localization.
+
+### Diep et al. (2026) and Mattocks et al. (2023) lanmodulin column graphs remediation (GRP-C12S5-003, #982)
+
+graph: supported. Targets: cmmmech:praseodymium, cmmmech:rare-earth-element-commodities.
+
+praseodymium.yaml and rare-earth-element-commodities.yaml now include full column parameters, 0.8 mL vs 0.4 mL repeat-column batch variance, Page 92 immobilized-dimer minority and Extended Data Figure 6 wild-type comparators, and summed-eluate yield denominator caveats with supports: partial.
+
+## Findings
+
+### cmmmech-cycle12-stage4-finding-0001: Anatase INP-silaffin protein examples and causal graph now specify pET(INP-nR5) constructs, INP-only comparator controls, and 37 C / 80 C / 600 C air-vs-argon and PDF 21-1271/21-1272 caveats with supports: partial
+
+minor / resolved / confirmed; issue key: cmmmech.ping2016-anatase.construct-control-discrepancy-and-abbreviated-graph-evidence.
+
+In data/records/anatase.yaml (cmmmech:anatase, mineral, Ping et al. 2016 Chemical Science 7:6330-6336, DOI:10.1039/C6SC02311H, ping2016; mechanisms[0] bacterial_template_then_thermal_anatase_synthesis, lines 32-136; causal_graphs[0] inp_silaffin_templated_anatase_graph, lines 138-247), mechanisms[0].protein_examples[0..1] (UniProtKB:P06620 lines 108, 114-117; UniProtKB:Q9SE35 lines 133-136), causal_graphs[0].nodes[0..1].protein_examples[0] (inaz_surface_anchor lines 167, 173-176; sil1_mineralization_peptide lines 200-203), and causal_graphs[0].edges[0..1] (lines 225, 230-236) name a single plasmid construct 'pET28a-INP-silaffin' with 'the synthetic Sil-1 peptide sequence (SSKKSGSYSGSKGSKRRIL)' and state that 'non-engineered E. coli controls were not included' / 'without a non-engineered cell control' / 'because non-engineered E. coli controls were omitted', contradicting mechanisms[0].context (lines 41-42) and mechanisms[0].evidence[2] (lines 78-85), which document that the Supporting Information specifies pET(INP-nR5) constructs with one, three, or five repeated silaffin-derived R5 segments (n = 1, 3, 5) in Escherichia coli BL21(DE3) and that INP-only cells WERE included as a protein-display comparator (Figure S2 smoother surfaces vs 5R5 arm; Figure S4b aggregated particles with loss of rod shape after 600 C heating) while matched cell-free precursor controls and live-versus-killed cell comparisons were omitted. Furthermore, nodes[1].description (lines 181-182) states 'C-terminal silaffin peptide domain catalyzing titanium precursor condensation at the bacterial cell surface.' without the qualification in mechanisms[0].evidence[3] (lines 88-90) that electrostatic binding, hydrogen-bond catalysis, and protein confinement (Figures 1d, 3d, 5) are proposed molecular explanations rather than direct measurements of catalytic intermediates; nodes[3].description (calcined_anatase_tio2, line 213, 91 chars) and edges[2].evidence[0].explanation (lines 246-247, 99 chars, supports: support) omit the 37 C (24 h, amorphous precursor in Figure 1b / S2g) and 80 C (24 h, weak 26-degree peak in Figure S2h) stages, the 600 C (4 h) air (10 C/min; ~5 nm / 5.8 +/- 0.8 nm rod-like aggregates in Figure 3) versus argon (4 C/min; anatase-carbon composite) regimes, the XRD reference-card label discrepancy (main text page 6332 21-1271 vs Figure 2e and Supporting Figure S6 21-1272), and the absence of titanium mass balance or isolated-product yield; and edges[0].evidence[0] (lines 223-225, 89 chars) asserts supports: support even though Supporting Figure S1 documents SDS-PAGE membrane-protein bands without a viability assay or direct surface-display quantification (supports: partial). In this scope, 1 record(s) (anatase) are affected.
+
+Disposition: Resolved under GitHub Issue #980 (GRP-C12S5-001): updated mechanisms[0].protein_examples[0..1], causal_graphs[0].nodes[0..1].protein_examples[0], causal_graphs[0].nodes[0,1,3].description, and causal_graphs[0].edges[0..2] (with supports: partial on edges[0..2]) in anatase.yaml to specify pET(INP-nR5) (n = 1, 3, or 5 R5 repeats in E. coli BL21(DE3)), the INP-only comparator in Supporting Figures S2 and S4b vs omitted cell-free/live-vs-killed controls, proposed R5 templating (Figures 1d, 3d, 5), and 37 C / 80 C / 600 C air-vs-argon and PDF 21-1271/21-1272 qualifications with an append-only EDIT history sidecar.
+
+### cmmmech-cycle12-stage4-finding-0002: Selenium Shewanella oneidensis MR-1 FccA/CymA causal graph and protein examples now use supports: partial with conditional deletion kinetics and predominantly intracellular plus surface Se(0) localization
+
+minor / resolved / confirmed; issue key: cmmmech.li2014-selenium-mr1.abbreviated-graph-evidence-and-localization-catalysis-qualifications.
+
+In data/records/selenium.yaml (cmmmech:selenium, element, Li et al. 2014 Scientific Reports 4:3735, DOI:10.1038/srep03735, li_2014 / li_2014_supplement, and Klonowska et al. 2005 Appl. Environ. Microbiol. 71:5607-5609, klonowska_2005; mechanisms[0] mr1_selenite_reduction, lines 40-135; causal_graphs[0] mr1_fcca_cyma_selenite_reduction_graph, lines 137-283), mechanisms[0].description (line 43) and mechanisms[0].evidence[0..1,3] (lines 124-135) explicitly establish that gene-deletion phenotypes in washed non-growing Shewanella oneidensis MR-1 suspensions (OD600 1.0 in 40 mL anaerobic mineral medium under N2 with 0.5 mM selenite and 20 mM lactate at 30 C; declining Micro BCA protein biomass in Figure S2/S4) support conditional FccA and CymA involvement rather than an exclusive pathway or direct catalysis by purified FccA (no complementation or purified-FccA enzyme assay is reported; initial 12 h selenite-depletion rate drops from 1.35 +/- 0.05 umol/h in WT to 0.54 +/- 0.13 umol/h in delta-fccA [Figure 2, triplicate SE], while Figure 4 preserves substantial later residual reduction in delta-cymA and klonowska_2005 reports selenite reduction by a cymA mutant in LB), and that 48 h TEM/EDX and Se 3d XPS (Figure 5) show predominantly intracellular plus smaller surface Se(0)-assigned particles rather than exclusive periplasmic localization or an isolated phase-pure product (Table 1 provides an acid-digestion/ICP-AES selenium balance). By contrast, in causal_graphs[0] and protein_examples: nodes[0].description (line 147, 81 chars), nodes[1].description (line 178, 90 chars), and edges[1].description (line 261) assert unqualified electron transfer and direct periplasmic catalysis ('FccA directly reduces soluble selenite in the periplasm.'); nodes[4].description (elemental_se0_nanoparticles, line 245, 85 chars) states 'Red elemental selenium nanoparticles accumulated in the periplasm and cell envelope.', omitting the predominantly intracellular plus surface particle distribution in Figure 5 TEM/EDX (and extracellular/cell-attached deposits at 2 mM selenite in LB in klonowska_2005 Figure 1); and edges[0..3] (lines 248-283) carry abbreviated 75-to-87-character one-sentence evidence[0].explanation strings with supports: support on edges[0], edges[1], and edges[3] (as well as protein_examples[0..1].evidence[0] on UniProtKB:P83223 and UniProtKB:Q8E8S0, lines 75, 99, 172, 206) despite the absence of complementation or purified-FccA assays, substantial residual reduction in delta-cymA, and mixed intracellular/surface localization. In this scope, 1 record(s) (selenium) are affected.
+
+Disposition: Resolved under GitHub Issue #981 (GRP-C12S5-002): updated mechanisms[0].protein_examples[0..2], causal_graphs[0].nodes[0..2].protein_examples[0], causal_graphs[0].nodes[0..4].description, and causal_graphs[0].edges[0..3] in selenium.yaml to supports: partial with synchronized deletion-mutant kinetic prose (0.54 +/- 0.13 vs 1.35 +/- 0.05 umol/h in Figure 2; 20 mM fumarate competition; residual delta-cymA reduction in Figure 4 and klonowska_2005; no complementation or purified-FccA assay) and predominantly intracellular plus smaller surface Se(0)-assigned particle localization (Figure 5 TEM/EDX and 48 h Se 3d XPS; Table 1 ICP-AES balance) with an append-only EDIT history sidecar.
+
+### cmmmech-cycle12-stage4-finding-0003: Immobilized-lanmodulin column causal graphs in praseodymium.yaml and rare-earth-element-commodities.yaml now include replicate-batch, immobilized-dimer minority, and summed-eluate denominator caveats with supports: partial
+
+minor / resolved / confirmed; issue key: cmmmech.diep2026-mattocks2023-lanmodulin-graphs.abbreviated-edge-evidence-and-batch-dimer-qualifications.
+
+In data/records/praseodymium.yaml (cmmmech:praseodymium, element, Diep et al. 2026 Nature Chemical Biology 22:829-839, DOI:10.1038/s41589-026-02176-3, diep2026; causal_graphs[0] melba_mex_lanm_pr_la_separation_graph, lines 71-148) and data/records/rare-earth-element-commodities.yaml (cmmmech:rare-earth-element-commodities, commodity, Mattocks et al. 2023 Nature 618:87-93, DOI:10.1038/s41586-023-05945-5, mattocks_2023 / mattocks_2023_si / mattocks_2023_fig4_data; causal_graphs[0] hans_lanm_r100k_nd_dy_separation_graph, lines 101-198), immobilized-lanmodulin causal-graph nodes and edges retain abbreviated 71-to-119-character descriptions and evidence explanations that omit key experimental parameters and partial-support caveats documented in mechanisms[0]: (1) in praseodymium.yaml, nodes[2].description (equimolar_pr_la_feed, line 114, 86 chars) and nodes[3].description (resolved_pr3_eluate, line 119, 77 chars) omit the 0.8 mL agarose column (0.5 x 5 cm, pre-equilibrated with 10 mM glycine pH 3.0), 0.4 mM Pr(III) + 0.4 mM La(III) synthetic binary feed (loaded 2 min at ~0.32 mL/min, 10% capacity), pH 2.4 (140 min) then pH 1.5 (25 min) elution, and the single-run Figure 6d Pr fraction result (99.97 mol% Pr purity / 83.16% fraction recovery across bed volumes 48-80) versus the three independent 0.4 mL repeat columns with a new protein batch at pH 2.5 then pH 1.5 (96.5 +/- 0.2 mol% Pr purity and 72.0 +/- 5.8% yield across fractions 53-93 in Extended Data Figure 8d), while edges[0..2] (lines 122-148) carry 82-to-87-character evidence[0].explanation strings with supports: support on edges[0] and edges[2] that omit the Extended Data Figure 8d batch/scale conditionality, the summed-eluate denominator in Source Data Figure 6 (sheet o36 Agarose La-Pr) rather than an independent feed-to-product mass balance, and comparator Mex-LanM (o-621) co-elution of Pr and La; and (2) in rare-earth-element-commodities.yaml, mechanisms[0].protein_examples[0].evidence[0] (lines 63-65), nodes[0].protein_examples[0].evidence[0] (lines 130-132), and edges[0] (lines 172-180, 119-char explanation) assert supports: support and cooperative dimer/EF-hand discrimination without the qualification in mechanisms[0].evidence[1] (lines 92-93, supports: partial) that Page 92 and Extended Data Figure 6 explicitly distinguish solution dimerization from column behavior because functional dimers may occur in only a minority of immobilized protein units and no bare-agarose control is reported, edges[1].evidence[0].explanation (line 189, 71 chars) omits the Extended Data Figure 6 wild-type Hans-LanM (83.6% Dy purity / 98.1% yield; 99.8% Nd purity / 98.5% yield) and monomeric Mex-LanM comparisons, and edges[2].evidence[0] (lines 196-198) asserts supports: support without noting the mattocks_2023_fig4_data summed-eluate yield denominator (SUM(H32:H43)/SUM(H32:H51) = 99.3964% vs printed 99.3% for Dy; SUM(G44:G51)/SUM(G32:G51) = 99.8% for Nd), binary molar-share purity definition, and Table S16 vs workbook Nd SD discrepancy (4.4 vs ~15.1942) documented in mechanisms[0].evidence[0,3]. In this scope, 2 record(s) (praseodymium, rare-earth-element-commodities) are affected.
+
+Disposition: Resolved under GitHub Issue #982 (GRP-C12S5-003): updated praseodymium.yaml (mechanisms[0].protein_examples[0], causal_graphs[0].nodes[1].protein_examples[0], nodes[2..3].description, and edges[0..2] with supports: partial) and rare-earth-element-commodities.yaml (mechanisms[0].protein_examples[0..1], causal_graphs[0].nodes[0..1].protein_examples[0], and edges[0..2] with supports: partial) to incorporate full column parameters, replicate-column/batch variance (Extended Data Figure 8d in diep2026), Page 92 immobilized-dimer minority and Extended Data Figure 6 wild-type comparators in mattocks_2023, and summed-eluate yield denominator / binary molar-share purity qualifications with 2 append-only EDIT history sidecars.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+- retain: cmmmech:anatase, cmmmech:praseodymium, cmmmech:rare-earth-element-commodities, cmmmech:selenium. All 4 remediated records represent distinct material entities (1 IMA-approved mineral, 2 chemical elements, and 1 official Australian list commodity family) with disjoint identifiers and provenance; cohort boundaries from Cycle 12 Stage 4 are retained unchanged.
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| ev-stage4-evidence | reviews/workflow/mech-goal-sequence-20261019/cycle-000012/stage-04/revision-0001/evidence.yaml; findings[0..2] (cmmmech-cycle12-stage4-finding-0001..0003) | supports | Verified the 3 open Cycle 12 Stage 4 review findings and their 4 distinct target records. |
+| ev-stage4-findings | reviews/workflow/mech-goal-sequence-20261019/cycle-000012/stage-04/revision-0001/review_findings.yaml; findings[0..2] root-cause groups, issue_keys, and structured_reviews | supports | Confirmed exact Stage 4 finding IDs, issue_key identifiers, previous review_id occurrences, and target record lists. |
+| ev-schema | src/cmmmech/schema/cmmmech.yaml; classes.MaterialRecord, classes.CausalGraph, classes.CausalNode, classes.CausalEdge | supports | Canonical LinkML schema defining MaterialRecord and CausalGraph/CausalNode/CausalEdge structure. |
+| ev-ping2016 | https://doi.org/10.1039/C6SC02311H; Ping et al. (2016) Chemical Science 7:6330-6336, Figures 1-5, and Supporting Information pages 2-3 and Figures S1-S8 | supports | Confirms E. coli BL21(DE3) pET(INP-nR5) (n = 1, 3, or 5 R5 repeats), Supporting Figure S1 membrane-fraction SDS-PAGE, INP-only comparator cells in Supporting Figures S2 and S4b, 37 C / 80 C / 600 C air-vs-argon stages, and PDF 21-1271 vs 21-1272 labels. |
+| ev-li2014-klonowska2005 | https://doi.org/10.1038/srep03735; Li et al. (2014) Scientific Reports 4:3735 (Figures 2, 4, 5, Table 1, Supporting Figures S1-S2, S4) and Klonowska et al. (2005) Appl. Environ. Microbiol. 71:5607-5609 (DOI:10.1128/AEM.71.9.5607-5609.2005, Figure 1) | supports | Confirms initial 12 h selenite-depletion rates (0.54 +/- 0.13 umol/h in delta-fccA vs 1.35 +/- 0.05 umol/h in WT, Figure 2), 20 mM fumarate competition, residual reduction in delta-cymA (Figure 4; klonowska_2005), and predominantly intracellular plus smaller surface Se(0)-assigned particles (Figure 5 TEM/EDX and 48 h Se 3d XPS; Table 1 ICP-AES balance). |
+| ev-diep2026-mattocks2023 | https://doi.org/10.1038/s41589-026-02176-3; Diep et al. (2026) Nature Chemical Biology 22:829-839 (Figure 6d, Extended Data Figure 8c-d, Source Data Figure 6 sheet o36 Agarose La-Pr) and Mattocks et al. (2023) Nature 618:87-93 (DOI:10.1038/s41586-023-05945-5, Figure 4d, Page 92, Extended Data Figure 6, Table S16, Source Data Figure 4 sheet Fig4d) | supports | Confirms 0.8 mL (Figure 6d, 99.97 mol% Pr purity / 83.16% summed-eluate recovery) vs 0.4 mL repeat-column (Extended Data Figure 8d, 96.5 +/- 0.2 mol% Pr purity / 72.0 +/- 5.8% yield) Melba-LanM separation in Diep et al. (2026) and Hans-LanM R100K vs wild-type column separation, Page 92 immobilized-dimer minority caveat, and summed-eluate yield denominators in Mattocks et al. (2023). |
+
+## Limits And Additional Notes
+
+- This verification review is scoped to the 4 records remediated in Cycle 12 Stage 5; the remaining 699 records were verified with 0 open findings in the immutable Cycle 12 Stage 4 review bundles.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261109T231500Z-cycle12-stage5-remediation-verification
+title: 'Cycle 12 Stage 5 Post-Remediation Verification Review: 4 Remediated CMMMech
+  Records'
+repository: CultureBotAI/CMMMech
+kind: category
+started_at: '2026-11-09T23:14:00Z'
+finished_at: '2026-11-09T23:15:00Z'
+skill: .claude/skills/review-yaml-category/SKILL.md
+completion: completed
+verdict: pass
+scientific_review: true
+summary: 'Post-remediation verification review across all 4 CMMMech records modified
+  in Cycle 12 Stage 5 (1 mineral, 2 element, and 1 commodity record) resolving all
+  3 open Cycle 12 Stage 4 review findings under GitHub Issues #980 (GRP-C12S5-001:
+  anatase.yaml Ping et al. 2016 INP-silaffin protein_examples and causal_graphs[0]
+  aligned with pET(INP-nR5) n = 1, 3, or 5 R5 repeats, INP-only comparator cells in
+  Supporting Figures S2 and S4b vs omitted cell-free/live-vs-killed controls, proposed
+  R5 templating, 37 C / 80 C / 600 C air-vs-argon stages, PDF 21-1271/21-1272 discrepancy,
+  and supports: partial on edges[0..2]), #981 (GRP-C12S5-002: selenium.yaml Li et
+  al. 2014 and Klonowska et al. 2005 Shewanella oneidensis MR-1 FccA/CymA/MtrC protein_examples
+  and causal_graphs[0] updated to supports: partial with deletion-mutant kinetics,
+  fumarate competition, residual delta-cymA reduction, and predominantly intracellular
+  plus smaller surface Se(0)-assigned particle localization), and #982 (GRP-C12S5-003:
+  praseodymium.yaml Diep et al. 2026 and rare-earth-element-commodities.yaml Mattocks
+  et al. 2023 immobilized-lanmodulin column causal graphs and protein_examples expanded
+  with 0.8 mL vs 0.4 mL repeat-column batch variance, Page 92 / Extended Data Figure
+  6 immobilized-dimer minority and wild-type Hans-LanM comparators, and summed-eluate
+  yield denominator / binary molar-share purity qualifications with supports: partial).
+  All 4 records pass strict validation, history validation, and page rendering checks
+  with 0 open findings.'
+reviewer:
+  identity: antigravity / cmmmech-cycle12-stage5-remediation-reviewer
+  kind: agent
+  model: claude-opus-4-6
+  independence: self_review
+  independence_basis: Cycle 12 Stage 5 post-remediation verification review (.claude/skills/review-yaml-category/SKILL.md)
+    of the 4 remediated records against the immutable Cycle 12 Stage 4 review bundles.
+source:
+  git_revision: 7fcb2a9fde66904e6274a675769cdbfe608cfa33
+  state: working_tree
+  inputs:
+  - path: data/records/anatase.yaml
+    sha256: c8834e94983b6bb85b6f3f09e1e87badfb974088db42f27301055749711a2ceb
+    role: target
+  - path: data/records/praseodymium.yaml
+    sha256: 4af12949df734ef099e6399430e238795b9fc5bcaeef7d4286bdc2d6e166f059
+    role: target
+  - path: data/records/rare-earth-element-commodities.yaml
+    sha256: 33f4bbd56f8fd0ec63f60dfd132e4ce5ae8a401d0be2aea7762dee28f7d6494e
+    role: target
+  - path: data/records/selenium.yaml
+    sha256: d9a282311203a1b718e8859cd90e25bdcaa7e4e528cc3054689f6ed457038340
+    role: target
+  - path: reviews/workflow/mech-goal-sequence-20261019/cycle-000012/stage-04/revision-0001/evidence.yaml
+    sha256: 980b60dfc4f33d1c1c2f8590cae92fecd954fe811cedeb3896b3d7eb5020e5eb
+    role: context
+  - path: reviews/workflow/mech-goal-sequence-20261019/cycle-000012/stage-04/revision-0001/review_findings.yaml
+    sha256: 614e193497e3225c77787134c74d4d3a56c228cda0b92276132acf3579e42f87
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+scope:
+  description: 'All 4 distinct CMMMech records affected by the 3 Cycle 12 Stage 4
+    findings carried into Stage 5 (1 engineered E. coli INP-nR5 anatase templating
+    record in GRP-C12S5-001 / #980, 1 Shewanella oneidensis MR-1 selenite reduction
+    record in GRP-C12S5-002 / #981, and 2 immobilized-lanmodulin column chromatography
+    records in GRP-C12S5-003 / #982).'
+  selection: cycle12_stage4_open_finding_targets
+  coverage: full
+  population_size: 4
+  reviewed_target_ids:
+  - cmmmech:anatase
+  - cmmmech:praseodymium
+  - cmmmech:rare-earth-element-commodities
+  - cmmmech:selenium
+targets:
+- target_id: cmmmech:anatase
+  path: data/records/anatase.yaml
+  label: Anatase
+  record_class: MaterialRecord
+  kind: maintained
+  semantic_digest:
+    algorithm: yaml_canonical_sha256
+    sha256: 2c80f7a893f129279a881c8902b9b5d0058ecf6419ad82ac19f0b7cd90f0b30c
+    description: SHA-256 of canonical sorted-key YAML parse of record
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/anatase.yaml
+    role: maintained_record
+- target_id: cmmmech:praseodymium
+  path: data/records/praseodymium.yaml
+  label: Praseodymium
+  record_class: MaterialRecord
+  kind: maintained
+  semantic_digest:
+    algorithm: yaml_canonical_sha256
+    sha256: 87469a1e103040e25bced1381ef56fde9556e389f21cbda781d1820d746bc8d9
+    description: SHA-256 of canonical sorted-key YAML parse of record
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/praseodymium.yaml
+    role: maintained_record
+- target_id: cmmmech:rare-earth-element-commodities
+  path: data/records/rare-earth-element-commodities.yaml
+  label: Rare-earth-element commodities, Australian list scope
+  record_class: MaterialRecord
+  kind: maintained
+  semantic_digest:
+    algorithm: yaml_canonical_sha256
+    sha256: 45f73441e316b949eee51fa14252ebbf5ea656648817a1a2ca8990cd64841f9f
+    description: SHA-256 of canonical sorted-key YAML parse of record
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/rare-earth-element-commodities.yaml
+    role: maintained_record
+- target_id: cmmmech:selenium
+  path: data/records/selenium.yaml
+  label: Selenium
+  record_class: MaterialRecord
+  kind: maintained
+  semantic_digest:
+    algorithm: yaml_canonical_sha256
+    sha256: 2b2ac2295108ffb3aaeaeb7ea6934a3861609c27efbaf79e3714dcf4e9fa4547
+    description: SHA-256 of canonical sorted-key YAML parse of record
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/selenium.yaml
+    role: maintained_record
+checks:
+- check_id: chk-validate-records
+  name: Strict LinkML and semantic record validation
+  status: passed
+  required: true
+  summary: All 703 records (including all 4 remediated records) pass .venv/bin/python
+    -m cmmmech.cli validate --require-records with 0 errors.
+  target_ids:
+  - cmmmech:anatase
+  - cmmmech:praseodymium
+  - cmmmech:rare-earth-element-commodities
+  - cmmmech:selenium
+  command: .venv/bin/python -m cmmmech.cli validate --require-records
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - ev-stage4-findings
+  - ev-schema
+- check_id: chk-validate-history
+  name: Append-only history sidecar validation
+  status: passed
+  required: true
+  summary: All 4 new EDIT history sidecars and existing history sidecars pass .venv/bin/python
+    -m cmmmech.cli validate-history --base main with 0 errors.
+  target_ids:
+  - cmmmech:anatase
+  - cmmmech:praseodymium
+  - cmmmech:rare-earth-element-commodities
+  - cmmmech:selenium
+  command: .venv/bin/python -m cmmmech.cli validate-history --base main
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - ev-stage4-findings
+  - ev-schema
+- check_id: chk-grp1-ping2016-anatase
+  name: Ping et al. (2016) anatase.yaml pET(INP-nR5), INP-only comparator, and thermal
+    regime concordance (#980)
+  status: passed
+  required: true
+  summary: 'Verified that anatase.yaml mechanisms[0].protein_examples[0..1] and causal_graphs[0].nodes[0..1].protein_examples[0]
+    are byte-identical and specify pET(INP-nR5) (n = 1, 3, or 5 R5 repeats) and the
+    INP-only comparator in Supporting Figures S2 and S4b vs omitted cell-free/live-vs-killed
+    controls, and that nodes[0,1,3] and edges[0..2] (with supports: partial on edges[0..2])
+    include the 37 C / 80 C / 600 C air-vs-argon stages and PDF 21-1271/21-1272 discrepancy.'
+  target_ids:
+  - cmmmech:anatase
+  evidence_ids:
+  - ev-ping2016
+  - ev-stage4-findings
+  - ev-schema
+- check_id: chk-grp2-li2014-selenium
+  name: Li et al. (2014) and Klonowska et al. (2005) selenium.yaml FccA/CymA/MtrC
+    and causal_graphs[0] concordance (#981)
+  status: passed
+  required: true
+  summary: 'Verified that selenium.yaml mechanisms[0].protein_examples[0..2] and causal_graphs[0].nodes[0..2].protein_examples[0]
+    are synchronized with supports: partial and deletion-mutant kinetic prose (0.54
+    +/- 0.13 vs 1.35 +/- 0.05 umol/h in Figure 2; 20 mM fumarate competition; residual
+    delta-cymA reduction in Figure 4 and klonowska_2005), and that nodes[0..4] and
+    edges[0..3] (supports: partial) reflect predominantly intracellular plus smaller
+    surface Se(0)-assigned particles.'
+  target_ids:
+  - cmmmech:selenium
+  evidence_ids:
+  - ev-li2014-klonowska2005
+  - ev-stage4-findings
+  - ev-schema
+- check_id: chk-grp3-diep2026-mattocks2023-lanmodulin
+  name: Diep et al. (2026) praseodymium.yaml and Mattocks et al. (2023) rare-earth-element-commodities.yaml
+    concordance (#982)
+  status: passed
+  required: true
+  summary: 'Verified that praseodymium.yaml causal_graphs[0].nodes[2..3] and edges[0..2]
+    (supports: partial) specify the 0.8 mL (Figure 6d, 99.97 mol% purity / 83.16%
+    summed-eluate recovery) vs 0.4 mL repeat-column (Extended Data Figure 8d, 96.5
+    +/- 0.2 mol% purity / 72.0 +/- 5.8% yield) parameters, and that rare-earth-element-commodities.yaml
+    protein_examples[0..1] and edges[0..2] (supports: partial) include the Page 92
+    immobilized-dimer minority, Extended Data Figure 6 wild-type comparator, and mattocks_2023_fig4_data
+    summed-eluate denominator caveats.'
+  target_ids:
+  - cmmmech:praseodymium
+  - cmmmech:rare-earth-element-commodities
+  evidence_ids:
+  - ev-diep2026-mattocks2023
+  - ev-stage4-findings
+  - ev-schema
+evidence:
+- evidence_id: ev-stage4-evidence
+  kind: record_content
+  reference: reviews/workflow/mech-goal-sequence-20261019/cycle-000012/stage-04/revision-0001/evidence.yaml
+  locator: findings[0..2] (cmmmech-cycle12-stage4-finding-0001..0003)
+  accessed_at: '2026-11-09T23:14:30Z'
+  support: supports
+  summary: Verified the 3 open Cycle 12 Stage 4 review findings and their 4 distinct
+    target records.
+  snapshot_sha256: 980b60dfc4f33d1c1c2f8590cae92fecd954fe811cedeb3896b3d7eb5020e5eb
+- evidence_id: ev-stage4-findings
+  kind: record_content
+  reference: reviews/workflow/mech-goal-sequence-20261019/cycle-000012/stage-04/revision-0001/review_findings.yaml
+  locator: findings[0..2] root-cause groups, issue_keys, and structured_reviews
+  accessed_at: '2026-11-09T23:14:30Z'
+  support: supports
+  summary: Confirmed exact Stage 4 finding IDs, issue_key identifiers, previous review_id
+    occurrences, and target record lists.
+  snapshot_sha256: 614e193497e3225c77787134c74d4d3a56c228cda0b92276132acf3579e42f87
+- evidence_id: ev-schema
+  kind: record_content
+  reference: src/cmmmech/schema/cmmmech.yaml
+  locator: classes.MaterialRecord, classes.CausalGraph, classes.CausalNode, classes.CausalEdge
+  accessed_at: '2026-11-09T23:14:30Z'
+  support: supports
+  summary: Canonical LinkML schema defining MaterialRecord and CausalGraph/CausalNode/CausalEdge
+    structure.
+  snapshot_sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+- evidence_id: ev-ping2016
+  kind: primary_source
+  reference: https://doi.org/10.1039/C6SC02311H
+  locator: Ping et al. (2016) Chemical Science 7:6330-6336, Figures 1-5, and Supporting
+    Information pages 2-3 and Figures S1-S8
+  accessed_at: '2026-11-09T23:14:30Z'
+  support: supports
+  summary: Confirms E. coli BL21(DE3) pET(INP-nR5) (n = 1, 3, or 5 R5 repeats), Supporting
+    Figure S1 membrane-fraction SDS-PAGE, INP-only comparator cells in Supporting
+    Figures S2 and S4b, 37 C / 80 C / 600 C air-vs-argon stages, and PDF 21-1271 vs
+    21-1272 labels.
+- evidence_id: ev-li2014-klonowska2005
+  kind: primary_source
+  reference: https://doi.org/10.1038/srep03735
+  locator: Li et al. (2014) Scientific Reports 4:3735 (Figures 2, 4, 5, Table 1, Supporting
+    Figures S1-S2, S4) and Klonowska et al. (2005) Appl. Environ. Microbiol. 71:5607-5609
+    (DOI:10.1128/AEM.71.9.5607-5609.2005, Figure 1)
+  accessed_at: '2026-11-09T23:14:30Z'
+  support: supports
+  summary: Confirms initial 12 h selenite-depletion rates (0.54 +/- 0.13 umol/h in
+    delta-fccA vs 1.35 +/- 0.05 umol/h in WT, Figure 2), 20 mM fumarate competition,
+    residual reduction in delta-cymA (Figure 4; klonowska_2005), and predominantly
+    intracellular plus smaller surface Se(0)-assigned particles (Figure 5 TEM/EDX
+    and 48 h Se 3d XPS; Table 1 ICP-AES balance).
+- evidence_id: ev-diep2026-mattocks2023
+  kind: primary_source
+  reference: https://doi.org/10.1038/s41589-026-02176-3
+  locator: Diep et al. (2026) Nature Chemical Biology 22:829-839 (Figure 6d, Extended
+    Data Figure 8c-d, Source Data Figure 6 sheet o36 Agarose La-Pr) and Mattocks et
+    al. (2023) Nature 618:87-93 (DOI:10.1038/s41586-023-05945-5, Figure 4d, Page 92,
+    Extended Data Figure 6, Table S16, Source Data Figure 4 sheet Fig4d)
+  accessed_at: '2026-11-09T23:14:30Z'
+  support: supports
+  summary: Confirms 0.8 mL (Figure 6d, 99.97 mol% Pr purity / 83.16% summed-eluate
+    recovery) vs 0.4 mL repeat-column (Extended Data Figure 8d, 96.5 +/- 0.2 mol%
+    Pr purity / 72.0 +/- 5.8% yield) Melba-LanM separation in Diep et al. (2026) and
+    Hans-LanM R100K vs wild-type column separation, Page 92 immobilized-dimer minority
+    caveat, and summed-eluate yield denominators in Mattocks et al. (2023).
+assessments:
+- assessment_id: assess-grp1-ping2016-anatase
+  area: graph
+  topic: 'Ping et al. (2016) anatase.yaml pET(INP-nR5) and causal_graphs[0] remediation
+    (GRP-C12S5-001, #980)'
+  outcome: supported
+  summary: 'anatase.yaml now accurately specifies pET(INP-nR5) (n = 1, 3, or 5 R5
+    repeats), the INP-only comparator in Supporting Figures S2 and S4b vs omitted
+    cell-free and live-vs-killed controls, proposed R5 templating, and 37 C / 80 C
+    / 600 C air-vs-argon and PDF 21-1271/21-1272 qualifications with supports: partial
+    on edges[0..2].'
+  target_ids:
+  - cmmmech:anatase
+  evidence_ids:
+  - ev-stage4-evidence
+  - ev-stage4-findings
+  - ev-ping2016
+  - ev-schema
+  metrics:
+  - name: grp1_ping2016_anatase_concordance
+    value: 1.0
+    unit: fraction
+    definition: 'Fraction of GRP-C12S5-001 records with aligned pET(INP-nR5) constructs,
+      INP-only comparator controls, thermal stages, and supports: partial on edges[0..2]'
+    denominator: 1
+    minimum: 0.0
+    maximum: 1.0
+- assessment_id: assess-grp2-li2014-selenium
+  area: graph
+  topic: 'Li et al. (2014) and Klonowska et al. (2005) selenium.yaml remediation (GRP-C12S5-002,
+    #981)'
+  outcome: supported
+  summary: 'selenium.yaml now qualifies FccA, CymA, and MtrC protein_examples and
+    edges[0..3] to supports: partial with deletion-mutant kinetic prose, fumarate
+    competition, residual delta-cymA reduction, and predominantly intracellular plus
+    smaller surface Se(0)-assigned particle localization.'
+  target_ids:
+  - cmmmech:selenium
+  evidence_ids:
+  - ev-stage4-evidence
+  - ev-stage4-findings
+  - ev-li2014-klonowska2005
+  - ev-schema
+  metrics:
+  - name: grp2_li2014_selenium_concordance
+    value: 1.0
+    unit: fraction
+    definition: 'Fraction of GRP-C12S5-002 records with conditional deletion kinetics,
+      intracellular/surface Se(0) localization, and supports: partial on protein_examples
+      and edges[0..3]'
+    denominator: 1
+    minimum: 0.0
+    maximum: 1.0
+- assessment_id: assess-grp3-diep2026-mattocks2023-lanmodulin
+  area: graph
+  topic: 'Diep et al. (2026) and Mattocks et al. (2023) lanmodulin column graphs remediation
+    (GRP-C12S5-003, #982)'
+  outcome: supported
+  summary: 'praseodymium.yaml and rare-earth-element-commodities.yaml now include
+    full column parameters, 0.8 mL vs 0.4 mL repeat-column batch variance, Page 92
+    immobilized-dimer minority and Extended Data Figure 6 wild-type comparators, and
+    summed-eluate yield denominator caveats with supports: partial.'
+  target_ids:
+  - cmmmech:praseodymium
+  - cmmmech:rare-earth-element-commodities
+  evidence_ids:
+  - ev-stage4-evidence
+  - ev-stage4-findings
+  - ev-diep2026-mattocks2023
+  - ev-schema
+  metrics:
+  - name: grp3_lanmodulin_column_graphs_concordance
+    value: 1.0
+    unit: fraction
+    definition: 'Fraction of GRP-C12S5-003 records with expanded column parameters,
+      batch/dimer-minority caveats, summed-eluate denominators, and supports: partial'
+    denominator: 2
+    minimum: 0.0
+    maximum: 1.0
+findings:
+- finding_id: cmmmech-cycle12-stage4-finding-0001
+  issue_key: cmmmech.ping2016-anatase.construct-control-discrepancy-and-abbreviated-graph-evidence
+  category: graph
+  severity: minor
+  status: resolved
+  certainty: confirmed
+  title: 'Anatase INP-silaffin protein examples and causal graph now specify pET(INP-nR5)
+    constructs, INP-only comparator controls, and 37 C / 80 C / 600 C air-vs-argon
+    and PDF 21-1271/21-1272 caveats with supports: partial'
+  description: 'In data/records/anatase.yaml (cmmmech:anatase, mineral, Ping et al.
+    2016 Chemical Science 7:6330-6336, DOI:10.1039/C6SC02311H, ping2016; mechanisms[0]
+    bacterial_template_then_thermal_anatase_synthesis, lines 32-136; causal_graphs[0]
+    inp_silaffin_templated_anatase_graph, lines 138-247), mechanisms[0].protein_examples[0..1]
+    (UniProtKB:P06620 lines 108, 114-117; UniProtKB:Q9SE35 lines 133-136), causal_graphs[0].nodes[0..1].protein_examples[0]
+    (inaz_surface_anchor lines 167, 173-176; sil1_mineralization_peptide lines 200-203),
+    and causal_graphs[0].edges[0..1] (lines 225, 230-236) name a single plasmid construct
+    ''pET28a-INP-silaffin'' with ''the synthetic Sil-1 peptide sequence (SSKKSGSYSGSKGSKRRIL)''
+    and state that ''non-engineered E. coli controls were not included'' / ''without
+    a non-engineered cell control'' / ''because non-engineered E. coli controls were
+    omitted'', contradicting mechanisms[0].context (lines 41-42) and mechanisms[0].evidence[2]
+    (lines 78-85), which document that the Supporting Information specifies pET(INP-nR5)
+    constructs with one, three, or five repeated silaffin-derived R5 segments (n =
+    1, 3, 5) in Escherichia coli BL21(DE3) and that INP-only cells WERE included as
+    a protein-display comparator (Figure S2 smoother surfaces vs 5R5 arm; Figure S4b
+    aggregated particles with loss of rod shape after 600 C heating) while matched
+    cell-free precursor controls and live-versus-killed cell comparisons were omitted.
+    Furthermore, nodes[1].description (lines 181-182) states ''C-terminal silaffin
+    peptide domain catalyzing titanium precursor condensation at the bacterial cell
+    surface.'' without the qualification in mechanisms[0].evidence[3] (lines 88-90)
+    that electrostatic binding, hydrogen-bond catalysis, and protein confinement (Figures
+    1d, 3d, 5) are proposed molecular explanations rather than direct measurements
+    of catalytic intermediates; nodes[3].description (calcined_anatase_tio2, line
+    213, 91 chars) and edges[2].evidence[0].explanation (lines 246-247, 99 chars,
+    supports: support) omit the 37 C (24 h, amorphous precursor in Figure 1b / S2g)
+    and 80 C (24 h, weak 26-degree peak in Figure S2h) stages, the 600 C (4 h) air
+    (10 C/min; ~5 nm / 5.8 +/- 0.8 nm rod-like aggregates in Figure 3) versus argon
+    (4 C/min; anatase-carbon composite) regimes, the XRD reference-card label discrepancy
+    (main text page 6332 21-1271 vs Figure 2e and Supporting Figure S6 21-1272), and
+    the absence of titanium mass balance or isolated-product yield; and edges[0].evidence[0]
+    (lines 223-225, 89 chars) asserts supports: support even though Supporting Figure
+    S1 documents SDS-PAGE membrane-protein bands without a viability assay or direct
+    surface-display quantification (supports: partial). In this scope, 1 record(s)
+    (anatase) are affected.'
+  target_ids:
+  - cmmmech:anatase
+  field_paths:
+  - mechanisms[0].protein_examples[0].functional_role
+  - mechanisms[0].protein_examples[0].annotation_note
+  - mechanisms[0].protein_examples[0].evidence[0].explanation
+  - mechanisms[0].protein_examples[1].functional_role
+  - mechanisms[0].protein_examples[1].annotation_note
+  - mechanisms[0].protein_examples[1].evidence[0].explanation
+  - causal_graphs[0].nodes[0].description
+  - causal_graphs[0].nodes[0].protein_examples[0].functional_role
+  - causal_graphs[0].nodes[0].protein_examples[0].annotation_note
+  - causal_graphs[0].nodes[0].protein_examples[0].evidence[0].explanation
+  - causal_graphs[0].nodes[1].description
+  - causal_graphs[0].nodes[1].protein_examples[0].functional_role
+  - causal_graphs[0].nodes[1].protein_examples[0].annotation_note
+  - causal_graphs[0].nodes[1].protein_examples[0].evidence[0].explanation
+  - causal_graphs[0].nodes[3].description
+  - causal_graphs[0].edges[0].description
+  - causal_graphs[0].edges[0].evidence[0].supports
+  - causal_graphs[0].edges[0].evidence[0].explanation
+  - causal_graphs[0].edges[1].description
+  - causal_graphs[0].edges[1].evidence[0].explanation
+  - causal_graphs[0].edges[2].description
+  - causal_graphs[0].edges[2].evidence[0].supports
+  - causal_graphs[0].edges[2].evidence[0].explanation
+  - curation_history
+  - history_refs
+  evidence_ids:
+  - ev-stage4-evidence
+  - ev-stage4-findings
+  - ev-ping2016
+  - ev-schema
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/anatase.yaml
+    role: maintained_record
+  disposition_reason: 'Resolved under GitHub Issue #980 (GRP-C12S5-001): updated mechanisms[0].protein_examples[0..1],
+    causal_graphs[0].nodes[0..1].protein_examples[0], causal_graphs[0].nodes[0,1,3].description,
+    and causal_graphs[0].edges[0..2] (with supports: partial on edges[0..2]) in anatase.yaml
+    to specify pET(INP-nR5) (n = 1, 3, or 5 R5 repeats in E. coli BL21(DE3)), the
+    INP-only comparator in Supporting Figures S2 and S4b vs omitted cell-free/live-vs-killed
+    controls, proposed R5 templating (Figures 1d, 3d, 5), and 37 C / 80 C / 600 C
+    air-vs-argon and PDF 21-1271/21-1272 qualifications with an append-only EDIT history
+    sidecar.'
+  previous_occurrences:
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261109T203001Z-cycle12-stage4-mineral-cohort-review
+    finding_id: cmmmech-cycle12-stage4-finding-0001
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261109T203006Z-cycle12-stage4-causal-graphs-cohort-review
+    finding_id: cmmmech-cycle12-stage4-finding-0001
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261109T203007Z-anatase-cycle12-stage4-record-review
+    finding_id: cmmmech-cycle12-stage4-finding-0001
+  external_issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/980
+- finding_id: cmmmech-cycle12-stage4-finding-0002
+  issue_key: cmmmech.li2014-selenium-mr1.abbreviated-graph-evidence-and-localization-catalysis-qualifications
+  category: graph
+  severity: minor
+  status: resolved
+  certainty: confirmed
+  title: 'Selenium Shewanella oneidensis MR-1 FccA/CymA causal graph and protein examples
+    now use supports: partial with conditional deletion kinetics and predominantly
+    intracellular plus surface Se(0) localization'
+  description: 'In data/records/selenium.yaml (cmmmech:selenium, element, Li et al.
+    2014 Scientific Reports 4:3735, DOI:10.1038/srep03735, li_2014 / li_2014_supplement,
+    and Klonowska et al. 2005 Appl. Environ. Microbiol. 71:5607-5609, klonowska_2005;
+    mechanisms[0] mr1_selenite_reduction, lines 40-135; causal_graphs[0] mr1_fcca_cyma_selenite_reduction_graph,
+    lines 137-283), mechanisms[0].description (line 43) and mechanisms[0].evidence[0..1,3]
+    (lines 124-135) explicitly establish that gene-deletion phenotypes in washed non-growing
+    Shewanella oneidensis MR-1 suspensions (OD600 1.0 in 40 mL anaerobic mineral medium
+    under N2 with 0.5 mM selenite and 20 mM lactate at 30 C; declining Micro BCA protein
+    biomass in Figure S2/S4) support conditional FccA and CymA involvement rather
+    than an exclusive pathway or direct catalysis by purified FccA (no complementation
+    or purified-FccA enzyme assay is reported; initial 12 h selenite-depletion rate
+    drops from 1.35 +/- 0.05 umol/h in WT to 0.54 +/- 0.13 umol/h in delta-fccA [Figure
+    2, triplicate SE], while Figure 4 preserves substantial later residual reduction
+    in delta-cymA and klonowska_2005 reports selenite reduction by a cymA mutant in
+    LB), and that 48 h TEM/EDX and Se 3d XPS (Figure 5) show predominantly intracellular
+    plus smaller surface Se(0)-assigned particles rather than exclusive periplasmic
+    localization or an isolated phase-pure product (Table 1 provides an acid-digestion/ICP-AES
+    selenium balance). By contrast, in causal_graphs[0] and protein_examples: nodes[0].description
+    (line 147, 81 chars), nodes[1].description (line 178, 90 chars), and edges[1].description
+    (line 261) assert unqualified electron transfer and direct periplasmic catalysis
+    (''FccA directly reduces soluble selenite in the periplasm.''); nodes[4].description
+    (elemental_se0_nanoparticles, line 245, 85 chars) states ''Red elemental selenium
+    nanoparticles accumulated in the periplasm and cell envelope.'', omitting the
+    predominantly intracellular plus surface particle distribution in Figure 5 TEM/EDX
+    (and extracellular/cell-attached deposits at 2 mM selenite in LB in klonowska_2005
+    Figure 1); and edges[0..3] (lines 248-283) carry abbreviated 75-to-87-character
+    one-sentence evidence[0].explanation strings with supports: support on edges[0],
+    edges[1], and edges[3] (as well as protein_examples[0..1].evidence[0] on UniProtKB:P83223
+    and UniProtKB:Q8E8S0, lines 75, 99, 172, 206) despite the absence of complementation
+    or purified-FccA assays, substantial residual reduction in delta-cymA, and mixed
+    intracellular/surface localization. In this scope, 1 record(s) (selenium) are
+    affected.'
+  target_ids:
+  - cmmmech:selenium
+  field_paths:
+  - mechanisms[0].protein_examples[0].functional_role
+  - mechanisms[0].protein_examples[0].evidence[0].supports
+  - mechanisms[0].protein_examples[0].evidence[0].explanation
+  - mechanisms[0].protein_examples[1].functional_role
+  - mechanisms[0].protein_examples[1].evidence[0].supports
+  - mechanisms[0].protein_examples[1].evidence[0].explanation
+  - mechanisms[0].protein_examples[2].evidence[0].explanation
+  - causal_graphs[0].nodes[0].description
+  - causal_graphs[0].nodes[0].protein_examples[0].functional_role
+  - causal_graphs[0].nodes[0].protein_examples[0].evidence[0].supports
+  - causal_graphs[0].nodes[0].protein_examples[0].evidence[0].explanation
+  - causal_graphs[0].nodes[1].description
+  - causal_graphs[0].nodes[1].protein_examples[0].functional_role
+  - causal_graphs[0].nodes[1].protein_examples[0].evidence[0].supports
+  - causal_graphs[0].nodes[1].protein_examples[0].evidence[0].explanation
+  - causal_graphs[0].nodes[2].description
+  - causal_graphs[0].nodes[2].protein_examples[0].evidence[0].explanation
+  - causal_graphs[0].nodes[3].description
+  - causal_graphs[0].nodes[4].description
+  - causal_graphs[0].edges[0].description
+  - causal_graphs[0].edges[0].evidence[0].supports
+  - causal_graphs[0].edges[0].evidence[0].explanation
+  - causal_graphs[0].edges[1].description
+  - causal_graphs[0].edges[1].evidence[0].supports
+  - causal_graphs[0].edges[1].evidence[0].explanation
+  - causal_graphs[0].edges[2].description
+  - causal_graphs[0].edges[2].evidence[0].explanation
+  - causal_graphs[0].edges[3].description
+  - causal_graphs[0].edges[3].evidence[0].supports
+  - causal_graphs[0].edges[3].evidence[0].explanation
+  - curation_history
+  - history_refs
+  evidence_ids:
+  - ev-stage4-evidence
+  - ev-stage4-findings
+  - ev-li2014-klonowska2005
+  - ev-schema
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/selenium.yaml
+    role: maintained_record
+  disposition_reason: 'Resolved under GitHub Issue #981 (GRP-C12S5-002): updated mechanisms[0].protein_examples[0..2],
+    causal_graphs[0].nodes[0..2].protein_examples[0], causal_graphs[0].nodes[0..4].description,
+    and causal_graphs[0].edges[0..3] in selenium.yaml to supports: partial with synchronized
+    deletion-mutant kinetic prose (0.54 +/- 0.13 vs 1.35 +/- 0.05 umol/h in Figure
+    2; 20 mM fumarate competition; residual delta-cymA reduction in Figure 4 and klonowska_2005;
+    no complementation or purified-FccA assay) and predominantly intracellular plus
+    smaller surface Se(0)-assigned particle localization (Figure 5 TEM/EDX and 48
+    h Se 3d XPS; Table 1 ICP-AES balance) with an append-only EDIT history sidecar.'
+  previous_occurrences:
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261109T203000Z-cycle12-stage4-element-cohort-review
+    finding_id: cmmmech-cycle12-stage4-finding-0002
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261109T203006Z-cycle12-stage4-causal-graphs-cohort-review
+    finding_id: cmmmech-cycle12-stage4-finding-0002
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261109T203008Z-selenium-cycle12-stage4-record-review
+    finding_id: cmmmech-cycle12-stage4-finding-0002
+  external_issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/981
+- finding_id: cmmmech-cycle12-stage4-finding-0003
+  issue_key: cmmmech.diep2026-mattocks2023-lanmodulin-graphs.abbreviated-edge-evidence-and-batch-dimer-qualifications
+  category: graph
+  severity: minor
+  status: resolved
+  certainty: confirmed
+  title: 'Immobilized-lanmodulin column causal graphs in praseodymium.yaml and rare-earth-element-commodities.yaml
+    now include replicate-batch, immobilized-dimer minority, and summed-eluate denominator
+    caveats with supports: partial'
+  description: 'In data/records/praseodymium.yaml (cmmmech:praseodymium, element,
+    Diep et al. 2026 Nature Chemical Biology 22:829-839, DOI:10.1038/s41589-026-02176-3,
+    diep2026; causal_graphs[0] melba_mex_lanm_pr_la_separation_graph, lines 71-148)
+    and data/records/rare-earth-element-commodities.yaml (cmmmech:rare-earth-element-commodities,
+    commodity, Mattocks et al. 2023 Nature 618:87-93, DOI:10.1038/s41586-023-05945-5,
+    mattocks_2023 / mattocks_2023_si / mattocks_2023_fig4_data; causal_graphs[0] hans_lanm_r100k_nd_dy_separation_graph,
+    lines 101-198), immobilized-lanmodulin causal-graph nodes and edges retain abbreviated
+    71-to-119-character descriptions and evidence explanations that omit key experimental
+    parameters and partial-support caveats documented in mechanisms[0]: (1) in praseodymium.yaml,
+    nodes[2].description (equimolar_pr_la_feed, line 114, 86 chars) and nodes[3].description
+    (resolved_pr3_eluate, line 119, 77 chars) omit the 0.8 mL agarose column (0.5
+    x 5 cm, pre-equilibrated with 10 mM glycine pH 3.0), 0.4 mM Pr(III) + 0.4 mM La(III)
+    synthetic binary feed (loaded 2 min at ~0.32 mL/min, 10% capacity), pH 2.4 (140
+    min) then pH 1.5 (25 min) elution, and the single-run Figure 6d Pr fraction result
+    (99.97 mol% Pr purity / 83.16% fraction recovery across bed volumes 48-80) versus
+    the three independent 0.4 mL repeat columns with a new protein batch at pH 2.5
+    then pH 1.5 (96.5 +/- 0.2 mol% Pr purity and 72.0 +/- 5.8% yield across fractions
+    53-93 in Extended Data Figure 8d), while edges[0..2] (lines 122-148) carry 82-to-87-character
+    evidence[0].explanation strings with supports: support on edges[0] and edges[2]
+    that omit the Extended Data Figure 8d batch/scale conditionality, the summed-eluate
+    denominator in Source Data Figure 6 (sheet o36 Agarose La-Pr) rather than an independent
+    feed-to-product mass balance, and comparator Mex-LanM (o-621) co-elution of Pr
+    and La; and (2) in rare-earth-element-commodities.yaml, mechanisms[0].protein_examples[0].evidence[0]
+    (lines 63-65), nodes[0].protein_examples[0].evidence[0] (lines 130-132), and edges[0]
+    (lines 172-180, 119-char explanation) assert supports: support and cooperative
+    dimer/EF-hand discrimination without the qualification in mechanisms[0].evidence[1]
+    (lines 92-93, supports: partial) that Page 92 and Extended Data Figure 6 explicitly
+    distinguish solution dimerization from column behavior because functional dimers
+    may occur in only a minority of immobilized protein units and no bare-agarose
+    control is reported, edges[1].evidence[0].explanation (line 189, 71 chars) omits
+    the Extended Data Figure 6 wild-type Hans-LanM (83.6% Dy purity / 98.1% yield;
+    99.8% Nd purity / 98.5% yield) and monomeric Mex-LanM comparisons, and edges[2].evidence[0]
+    (lines 196-198) asserts supports: support without noting the mattocks_2023_fig4_data
+    summed-eluate yield denominator (SUM(H32:H43)/SUM(H32:H51) = 99.3964% vs printed
+    99.3% for Dy; SUM(G44:G51)/SUM(G32:G51) = 99.8% for Nd), binary molar-share purity
+    definition, and Table S16 vs workbook Nd SD discrepancy (4.4 vs ~15.1942) documented
+    in mechanisms[0].evidence[0,3]. In this scope, 2 record(s) (praseodymium, rare-earth-element-commodities)
+    are affected.'
+  target_ids:
+  - cmmmech:praseodymium
+  - cmmmech:rare-earth-element-commodities
+  field_paths:
+  - mechanisms[0].protein_examples[0].evidence[0].supports
+  - mechanisms[0].protein_examples[0].evidence[0].explanation
+  - mechanisms[0].protein_examples[1].evidence[0].explanation
+  - causal_graphs[0].nodes[0].protein_examples[0].evidence[0].supports
+  - causal_graphs[0].nodes[0].protein_examples[0].evidence[0].explanation
+  - causal_graphs[0].nodes[1].protein_examples[0].evidence[0].explanation
+  - causal_graphs[0].nodes[2].description
+  - causal_graphs[0].nodes[3].description
+  - causal_graphs[0].edges[0].description
+  - causal_graphs[0].edges[0].evidence[0].supports
+  - causal_graphs[0].edges[0].evidence[0].explanation
+  - causal_graphs[0].edges[1].description
+  - causal_graphs[0].edges[1].evidence[0].explanation
+  - causal_graphs[0].edges[2].description
+  - causal_graphs[0].edges[2].evidence[0].supports
+  - causal_graphs[0].edges[2].evidence[0].explanation
+  - curation_history
+  - history_refs
+  evidence_ids:
+  - ev-stage4-evidence
+  - ev-stage4-findings
+  - ev-diep2026-mattocks2023
+  - ev-schema
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/praseodymium.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: data/records/rare-earth-element-commodities.yaml
+    role: maintained_record
+  disposition_reason: 'Resolved under GitHub Issue #982 (GRP-C12S5-003): updated praseodymium.yaml
+    (mechanisms[0].protein_examples[0], causal_graphs[0].nodes[1].protein_examples[0],
+    nodes[2..3].description, and edges[0..2] with supports: partial) and rare-earth-element-commodities.yaml
+    (mechanisms[0].protein_examples[0..1], causal_graphs[0].nodes[0..1].protein_examples[0],
+    and edges[0..2] with supports: partial) to incorporate full column parameters,
+    replicate-column/batch variance (Extended Data Figure 8d in diep2026), Page 92
+    immobilized-dimer minority and Extended Data Figure 6 wild-type comparators in
+    mattocks_2023, and summed-eluate yield denominator / binary molar-share purity
+    qualifications with 2 append-only EDIT history sidecars.'
+  previous_occurrences:
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261109T203000Z-cycle12-stage4-element-cohort-review
+    finding_id: cmmmech-cycle12-stage4-finding-0003
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261109T203003Z-cycle12-stage4-commodity-cohort-review
+    finding_id: cmmmech-cycle12-stage4-finding-0003
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261109T203006Z-cycle12-stage4-causal-graphs-cohort-review
+    finding_id: cmmmech-cycle12-stage4-finding-0003
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261109T203009Z-praseodymium-cycle12-stage4-record-review
+    finding_id: cmmmech-cycle12-stage4-finding-0003
+  external_issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/982
+actions: []
+boundary_decisions:
+- action: retain
+  target_ids:
+  - cmmmech:anatase
+  - cmmmech:praseodymium
+  - cmmmech:rare-earth-element-commodities
+  - cmmmech:selenium
+  evidence_ids:
+  - ev-stage4-evidence
+  - ev-stage4-findings
+  - ev-schema
+  rationale: All 4 remediated records represent distinct material entities (1 IMA-approved
+    mineral, 2 chemical elements, and 1 official Australian list commodity family)
+    with disjoint identifiers and provenance; cohort boundaries from Cycle 12 Stage
+    4 are retained unchanged.
+limitations:
+- This verification review is scoped to the 4 records remediated in Cycle 12 Stage
+  5; the remaining 699 records were verified with 0 open findings in the immutable
+  Cycle 12 Stage 4 review bundles.
+```

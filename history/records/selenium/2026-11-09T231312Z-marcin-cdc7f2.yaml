@@ -1,0 +1,34 @@
+history_version: 1
+target:
+  kind: record
+  slug: selenium
+  path: data/records/selenium.yaml
+session:
+  id: 2026-11-09T231312Z-marcin-cdc7f2
+  timestamp: '2026-11-09T23:13:12Z'
+  actors:
+  - name: marcin
+    type: ai_agent
+    model: claude-opus-4-6
+    agent_tool: antigravity
+events:
+- type: EDIT
+  outcome: changed
+  summary: Refine selenium S. oneidensis MR-1 FccA/CymA causal graph and protein examples
+    with conditional deletion kinetics and localization (#981)
+  details: 'Updated mechanisms[0].protein_examples[0..2] (UniProtKB:P83223 FccA, UniProtKB:Q8E8S0
+    CymA, UniProtKB:Q8EG34 MtrC), causal_graphs[0].nodes[0..2].protein_examples[0], causal_graphs[0].nodes[0..4].description,
+    and causal_graphs[0].edges[0..3] in selenium.yaml to supports: partial with synchronized
+    deletion-mutant kinetic prose (0.54 +/- 0.13 vs 1.35 +/- 0.05 umol/h in Figure 2; 20 mM
+    fumarate competition; residual delta-cymA reduction in Figure 4 and klonowska_2005; no
+    complementation or purified-FccA assay) and predominantly intracellular plus smaller surface
+    Se(0)-assigned particle localization (Figure 5 TEM/EDX and Se 3d XPS; Table 1 ICP-AES
+    balance) under GRP-C12S5-002 (#981).'
+  sections:
+  - mechanisms
+  - causal_graphs
+  - curation_history
+  - history_refs
+links:
+  issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/981

@@ -1,0 +1,33 @@
+history_version: 1
+target:
+  kind: record
+  slug: praseodymium
+  path: data/records/praseodymium.yaml
+session:
+  id: 2026-11-09T231312Z-marcin-a907c8
+  timestamp: '2026-11-09T23:13:12Z'
+  actors:
+  - name: marcin
+    type: ai_agent
+    model: claude-opus-4-6
+    agent_tool: antigravity
+events:
+- type: EDIT
+  outcome: changed
+  summary: Expand praseodymium Melba-LanM/Mex-LanM column causal graph with 0.8 mL vs 0.4
+    mL batch variance and summed-eluate caveats (#982)
+  details: 'Updated mechanisms[0].protein_examples[0], causal_graphs[0].nodes[1].protein_examples[0],
+    causal_graphs[0].nodes[2..3].description, and causal_graphs[0].edges[0..2] (setting supports:
+    partial on edges[0..2]) in praseodymium.yaml to specify the 0.8 mL column (Figure 6d,
+    pH 2.4 -> pH 1.5, 99.97 mol% Pr purity / 83.16% summed-eluate recovery across bed volumes
+    48-80) versus the three independent 0.4 mL repeat columns with a new protein batch (Extended
+    Data Figure 8d, pH 2.5 -> pH 1.5, 96.5 +/- 0.2 mol% Pr purity / 72.0 +/- 5.8% yield across
+    fractions 53-93) and comparator Mex-LanM co-elution under GRP-C12S5-003 (#982).'
+  sections:
+  - mechanisms
+  - causal_graphs
+  - curation_history
+  - history_refs
+links:
+  issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/982
