@@ -2,19 +2,19 @@
 
 - **Run / Cycle / Stage**: `mech-goal-sequence-20261019`, Cycle 14, Stage 1 (`add_records`)
 - **Corpus Count**: `708 -> 713` (`+5` records)
-- **Canonical History Sidecars**: `1544 -> 1549` (`+5` `CREATE` sidecars)
-- **Structured Scientific Reviews**: `1285 -> 1290` (`+5` review bundles)
-- **Source Investigation Dossier**: `research/sources/round132-minerals/20261110T193500Z-source-investigation.json` (`3176449bb8271d45a5573effa1a6812b68d9e0388b0bec3034425dd5c5769f52`)
+- **Canonical History Sidecars**: `1544 -> 1553` (`+5` `CREATE`, `+4` `EDIT` sidecars)
+- **Structured Scientific Reviews**: `1285 -> 1295` (`+5` initial + `+5` post-remediation review bundles)
+- **Source Investigation Dossier**: `research/sources/round132-minerals/20261110T193500Z-source-investigation.json` (`dc6aaf84dc7559b7d0395a9e0334fee7ff855afb456dde1bf9c41a50c2b84dee`)
 
 ## Admitted Records (`+5`)
 
 | Slug | IMA ID | IMA Symbol | Formula | Primary DOI | Record SHA-256 | Review Bundle |
 |---|---|---|---|---|---|---|
-| `batoniite` | `IMA:2023-008` | none | `[Al8(OH)14(H2O)18](SO4)5 * 5H2O (Al8(SO4)5(OH)14(H2O)18*5H2O in IMA Master List)` | https://doi.org/10.5194/ejm-35-703-2023 | `8b9a2d3b714bf264...` | `reviews/structured/20261110T193600Z-batoniite-round132-scientific-review/review.yaml` |
-| `fluor-rewitzerite` | `IMA:2023-115` | none | `[(H2O)K]Mn2(Al2Ti)(PO4)4(OF)(H2O)10 * 4H2O` | https://doi.org/10.5194/ejm-36-541-2024 | `7e6e8d4fb3c5dfc3...` | `reviews/structured/20261110T193600Z-fluor-rewitzerite-round132-scientific-review/review.yaml` |
-| `friisite` | `IMA:2024-047` | `Fii` | `Pb8Al3Si8O27Cl3` | https://doi.org/10.5194/ejm-38-169-2026 | `5a677b637a8658bc...` | `reviews/structured/20261110T193600Z-friisite-round132-scientific-review/review.yaml` |
-| `gobelinite` | `IMA:2018-167` | none | `CoCu4(SO4)2(OH)6 * 6H2O (CoCu4(SO4)2(OH)6(H2O)6 in IMA Master List)` | https://doi.org/10.5194/ejm-32-637-2020 | `09f50c3c295cc230...` | `reviews/structured/20261110T193600Z-gobelinite-round132-scientific-review/review.yaml` |
-| `zinkgruvanite` | `IMA:2020-031` | none | `Ba4Mn2+4Fe3+2(Si2O7)2(SO4)2O2(OH)2` | https://doi.org/10.5194/ejm-33-659-2021 | `1ce522a354582c4a...` | `reviews/structured/20261110T193600Z-zinkgruvanite-round132-scientific-review/review.yaml` |
+| `batoniite` | `IMA:2023-008` | none | `[Al8(OH)14(H2O)18](SO4)5 * 5H2O (Al8(SO4)5(OH)14(H2O)18*5H2O in IMA Master List)` | https://doi.org/10.5194/ejm-35-703-2023 | `c7f511e2e7b43d83...` | `reviews/structured/20261110T211000Z-batoniite-round132-remediation-review/review.yaml` |
+| `fluor-rewitzerite` | `IMA:2023-115` | none | `[(H2O)K]Mn2(Al2Ti)(PO4)4(OF)(H2O)10 * 4H2O` | https://doi.org/10.5194/ejm-36-541-2024 | `7886ade4ff123844...` | `reviews/structured/20261110T211000Z-fluor-rewitzerite-round132-remediation-review/review.yaml` |
+| `friisite` | `IMA:2024-047` | `Fii` | `Pb8Al3Si8O27Cl3` | https://doi.org/10.5194/ejm-38-169-2026 | `eaf4ab7bc9ea1080...` | `reviews/structured/20261110T211000Z-friisite-round132-remediation-review/review.yaml` |
+| `gobelinite` | `IMA:2018-167` | none | `CoCu4(SO4)2(OH)6 * 6H2O (CoCu4(SO4)2(OH)6(H2O)6 in IMA Master List)` | https://doi.org/10.5194/ejm-32-637-2020 | `87314e337b46824e...` | `reviews/structured/20261110T211000Z-gobelinite-round132-remediation-review/review.yaml` |
+| `zinkgruvanite` | `IMA:2020-031` | none | `Ba4Mn2+4Fe3+2(Si2O7)2(SO4)2O2(OH)2` | https://doi.org/10.5194/ejm-33-659-2021 | `1ce522a354582c4a...` | `reviews/structured/20261110T211000Z-zinkgruvanite-round132-remediation-review/review.yaml` |
 
 ## Preserved Frontier Queue
 

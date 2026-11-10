@@ -2,18 +2,18 @@
 
 - **Investigation ID**: `cmmmech-round132-source-investigation-20261110T193500Z`
 - **Run / Cycle / Stage**: `mech-goal-sequence-20261019`, Cycle 14, Stage 1 (`add_records`)
-- **Corpus Transition**: `708 -> 713` records (`+5`), `1544 -> 1549` canonical history sidecars (`+5` `CREATE`), `1285 -> 1290` structured review bundles (`+5` scientific reviews)
+- **Corpus Transition**: `708 -> 713` records (`+5`), `1544 -> 1553` canonical history sidecars (`+5` `CREATE`, `+4` `EDIT`), `1285 -> 1295` structured review bundles (`+5` initial scientific reviews, `+5` post-remediation reviews)
 - **Primary Authority Catalog**: `IMA_Master_List_(2026-09).pdf` (`3,129,886` B, SHA-256 `2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973`, pages 21, 76, 78, 84, 242)
 - **Bounded Passage Indexing**: 5 open-access *European Journal of Mineralogy* PDFs (`58` full-PDF pages / `51` main-text pages, `162` total passages / `135` main-text passages `<= 1,800` B each, `235,091` passage bytes, plus `30` single-page 150-DPI PNG renders)
 
 ## Curated Records and Primary Sources
 
-| Slug | IMA ID | IMA Symbol | Formula | Critical Elements | Primary DOI | Record SHA-256 | History Sidecar |
+| Slug | IMA ID | IMA Symbol | Formula | Critical Elements | Primary DOI | Record SHA-256 | History Sidecars |
 |---|---|---|---|---|---|---|---|
-| `batoniite` | `IMA:2023-008` | none | `[Al8(OH)14(H2O)18](SO4)5 * 5H2O (Al8(SO4)5(OH)14(H2O)18*5H2O in IMA Master List)` | Al | https://doi.org/10.5194/ejm-35-703-2023 | `8b9a2d3b714bf264...` | `history/records/batoniite/2026-11-10T193154Z-antigravity-762ae9.yaml` |
-| `fluor-rewitzerite` | `IMA:2023-115` | none | `[(H2O)K]Mn2(Al2Ti)(PO4)4(OF)(H2O)10 * 4H2O` | Mn, Al, Ti, F, Mg | https://doi.org/10.5194/ejm-36-541-2024 | `7e6e8d4fb3c5dfc3...` | `history/records/fluor-rewitzerite/2026-11-10T193156Z-antigravity-8797f5.yaml` |
-| `friisite` | `IMA:2024-047` | `Fii` | `Pb8Al3Si8O27Cl3` | Al, Si, Mn, Zn | https://doi.org/10.5194/ejm-38-169-2026 | `5a677b637a8658bc...` | `history/records/friisite/2026-11-10T193158Z-antigravity-fd529c.yaml` |
-| `gobelinite` | `IMA:2018-167` | none | `CoCu4(SO4)2(OH)6 * 6H2O (CoCu4(SO4)2(OH)6(H2O)6 in IMA Master List)` | Co, Cu, Ni, Zn | https://doi.org/10.5194/ejm-32-637-2020 | `09f50c3c295cc230...` | `history/records/gobelinite/2026-11-10T193159Z-antigravity-383cc5.yaml` |
+| `batoniite` | `IMA:2023-008` | none | `[Al8(OH)14(H2O)18](SO4)5 * 5H2O (Al8(SO4)5(OH)14(H2O)18*5H2O in IMA Master List)` | Al | https://doi.org/10.5194/ejm-35-703-2023 | `c7f511e2e7b43d83...` | `history/records/batoniite/2026-11-10T193154Z-antigravity-762ae9.yaml`, `history/records/batoniite/2026-11-10T210921Z-antigravity-e122c9.yaml` |
+| `fluor-rewitzerite` | `IMA:2023-115` | none | `[(H2O)K]Mn2(Al2Ti)(PO4)4(OF)(H2O)10 * 4H2O` | Mn, Al, Ti, F, Mg | https://doi.org/10.5194/ejm-36-541-2024 | `7886ade4ff123844...` | `history/records/fluor-rewitzerite/2026-11-10T193156Z-antigravity-8797f5.yaml`, `history/records/fluor-rewitzerite/2026-11-10T210922Z-antigravity-d33c5d.yaml` |
+| `friisite` | `IMA:2024-047` | `Fii` | `Pb8Al3Si8O27Cl3` | Al, Si, Mn, Zn | https://doi.org/10.5194/ejm-38-169-2026 | `eaf4ab7bc9ea1080...` | `history/records/friisite/2026-11-10T193158Z-antigravity-fd529c.yaml`, `history/records/friisite/2026-11-10T210924Z-antigravity-031114.yaml` |
+| `gobelinite` | `IMA:2018-167` | none | `CoCu4(SO4)2(OH)6 * 6H2O (CoCu4(SO4)2(OH)6(H2O)6 in IMA Master List)` | Co, Cu, Ni, Zn | https://doi.org/10.5194/ejm-32-637-2020 | `87314e337b46824e...` | `history/records/gobelinite/2026-11-10T193159Z-antigravity-383cc5.yaml`, `history/records/gobelinite/2026-11-10T210926Z-antigravity-3732e2.yaml` |
 | `zinkgruvanite` | `IMA:2020-031` | none | `Ba4Mn2+4Fe3+2(Si2O7)2(SO4)2O2(OH)2` | Ba, Mn, Si, Ti, Al, F, Mg | https://doi.org/10.5194/ejm-33-659-2021 | `1ce522a354582c4a...` | `history/records/zinkgruvanite/2026-11-10T193201Z-antigravity-38afcb.yaml` |
 
 ## Documented Primary-Source Discrepancies
@@ -21,27 +21,26 @@
 ### `batoniite` (Batoniite, `IMA:2023-008`)
 - The September 2026 IMA Master List (PDF p. 21) writes the formula as Al8(SO4)5(OH)14(H2O)18*5H2O, whereas Mauro et al. (2023) write the structural formula as [Al8(OH)14(H2O)18](SO4)5 * 5H2O.
 - The Abstract (p. 703) specifies '811 parameters and 60 restraints' for the single-crystal refinement, whereas Table 2 (p. 706) lists 'Number of least-squares parameters: 811' without a restraints row.
-- In the Abstract (p. 703), the fifth strongest powder X-ray diffraction line at dobs = 4.324 A (m) is indexed as '201, -202, 104', whereas in Table S2 (p. 709) it is indexed as '2 0 1, -2 0 2, 1 0 -4' (with dcalc = 4.361, 4.311, 4.294 A), and two additional reflections at dobs = 9.21 A (1 0 0) and 3.679 A (-1 0 5) are also rated 'm' (medium) in Table S2.
 
 ### `fluor-rewitzerite` (Fluor-rewitzerite, `IMA:2023-115`)
 - The Abstract (p. 541) reports the gamma refractive index as gamma = 1.602(3), whereas Section 3 (p. 542) prints gamma = 1.6021(3) (with an extra fourth decimal digit).
 - In Table 3 (p. 547), the row 'Largest diff. peak and hole' prints '0.99 and -1.25 e A2' with a typographical exponent 'A2' instead of 'A-3'.
-- In Table 5 (p. 548), the refined site electron counts are A1 = 8.6 e (0.85 H2O + 0.15 K) and A2 = 17.0 e (1.00 K), whereas Table 9 (p. 552) transposes and slightly alters them as 'A1, A2 = 17.1, 8.9'.
-- In Section 4 (p. 543), the ideal end-member oxide percentages (K2O 5.04, MnO 15.16, Al2O3 10.90, TiO2 8.54, P2O5 30.34, F 2.03, H2O 28.86, -O = F -0.85) are stated to have 'total 100.00 wt %', whereas their exact arithmetic sum is 100.02 wt%.
+- In Table 5 (p. 549), the refined site electron counts are A1 = 8.6 e (0.85 H2O + 0.15 K) and A2 = 17.0 e (1.00 K), whereas Table 9 (p. 552) transposes and slightly alters them as 'A1, A2 = 17.1, 8.9'.
 
 ### `friisite` (Friisite, `IMA:2024-047`)
-- The first sentence of the Abstract (p. 169) misspells the mineral name as 'Friiste'.
+- The 11th sentence of the Abstract (p. 169) misspells the mineral name as 'Friiste'.
 - Table 1 (p. 171) prints Total = 98.98 wt%, whereas the exact arithmetic sum of the rounded mean constituents (0.14 + 4.42 + 19.80 + 4.19 + 0.19 + 0.31 + 0.63 + 0.42 + 69.83 - 0.94) is 98.99 wt%.
 - Calculated density is reported as 5.54(1) g cm-3 in the Abstract (p. 169) and Section 3 (p. 170) vs 5.54 g cm-3 in Table 3 (p. 173), and unit-cell parameter a is printed as 8.5955(1) A in the Abstract vs 8.59550(10) A in Table 3.
 - In Section 5 (p. 171), the intense low-wavenumber Raman bands are listed as '29, 42, 52, 63, 72, 96 123, 179, and ~213 cm-1' (omitting the comma between 96 and 123), whereas the top of p. 172 refers to the two bands as '64 and 73 cm-1' instead of '63, 72 cm-1'.
-- In Section 7.1 (p. 176), reaction (R2) prints 'NaAlSi3O8 (albite)' without the stoichiometric coefficient 3 required to balance 3Na+ and Si/Al.
+- In Section 7.1 (p. 175), reaction (R2) prints 'NaAlSi3O8 (Ab)' without the stoichiometric coefficient 3 required to balance 3NaOH(aq) and 3Al.
 
 ### `gobelinite` (Gobelinite, `IMA:2018-167`)
-- Section 4 text (p. 639) states that 'A total of 10 points on two crystals were analysed' for Cap Garonne gobelinite, whereas the Table 1 caption (p. 640) states 'n = 9'.
+- Section 4 text (p. 639) states that 'Quantitative wavelength-dispersive electron-microprobe analyses (10 points) of gobelinite from Cap Garonne were carried out', whereas the Table 1 caption (p. 640) states 'n = 9'.
 - The Abstract (p. 637) lists the Cap Garonne WDS constituents as 'CuO 42.45, CoO 6.58, NiO 3.37, ZnO 3.14, SO3 22.12, H2Ocalc 22.62, total 100.30 wt %', omitting Al2O3 0.02 wt% from Table 1 (p. 640) while retaining the 100.30 wt% total.
 - For the Eisenzecher Zug single-crystal X-ray refinement, the Abstract (p. 637) reports 'R1 = 0.0280 for 1998 unique reflections with Fo > 4sigma(Fo)', whereas Section 5.2 (p. 641) reports 'R1 = 0.0289 for 1998 Fo > 4sigma(Fo)'.
 - In Section 5.2 (p. 640), the dimensions of the Eisenzecher Zug crystal fragment used for laboratory Nonius KappaCCD SCXRD are printed as '0.05 x 0.05 x 0.13 um' (a typographical unit error for mm).
-- In Table 2 (p. 640), the six bolded strongest PXRD reflections include three lines with Iobs = 15 (013, 006, 008), while reflection -1 2 3 at dobs = 2.561 A also has Iobs = 15 but is not bolded.
+- For Eisenzecher Zug gobelinite, Table 4 (p. 642) lists <Cu2-O> = 2.106 A, whereas Section 6 text (p. 641) states 2.105 A.
+- The Abstract (p. 637) lists eight strongest powder X-ray diffraction lines (including 4.883 [10] 102 and 2.561 [15] -1 2 3), whereas Table 2 (p. 640) marks six of them in bold (002, 004, 013, 006, 008, and 202).
 
 ### `zinkgruvanite` (Zinkgruvanite, `IMA:2020-031`)
 - In the Abstract (p. 659), the eight strongest powder X-ray diffraction lines are printed as '3.508 (70; 103), 2.980(70; 114), 2.814 (68; 122), 2.777 (70; 121), 2.699 (714; 200), 2.680 (68; 201), 2.125 (100; 124, 204) and 2.107 (96; 221)', where '714' at 2.699 A is a typographical error for I = 71 in Table 4 (p. 665), and '68' at 2.680 A in the Abstract differs from I = 85 (Icalc = 74) at dobs = 2.6804 A in Table 4.

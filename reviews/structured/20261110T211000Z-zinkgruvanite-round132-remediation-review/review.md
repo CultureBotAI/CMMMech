@@ -1,0 +1,307 @@
+# Post-remediation primary-source scientific review of zinkgruvanite (IMA:2020-031, status A, Ba4Mn2+4Fe3+2(Si2O7)2(SO4)2O2(OH)2)
+
+- Review: 20261110T211000Z-zinkgruvanite-round132-remediation-review
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-11-10T21:09:30Z
+- Finished UTC: 2026-11-10T21:10:00Z
+- Reviewer: antigravity / round132-scientific-reviewer (self_review)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Zinkgruvanite (IMA:2020-031, status A, Ba4Mn2+4Fe3+2(Si2O7)2(SO4)2O2(OH)2) passes post-remediation primary-source scientific review (scientific_review: true) at SHA-256 1ce522a354582c4a71a4032fd1cb74fcd582e4f55bd4523d65a1fbfbb636d505 against all bounded passages and rendered table PNGs of Camara F, Holtstam D, Jansson N, Jonsson E, Karlsson A, Langhof J, Majka J, Zetterqvist A (2021) Zinkgruvanite, Ba4Mn2+4Fe3+2(Si2O7)2(SO4)2O2(OH)2, a new ericssonite-group mineral from the Zinkgruvan Zn-Pb-Ag-Cu deposit, Askersund, Orebro County, Sweden. European Journal of Mineralogy 33:659-673 (https://doi.org/10.5194/ejm-33-659-2021).
+
+## Scope And Provenance
+
+Post-remediation primary-source scientific review of data/records/zinkgruvanite.yaml (SHA-256 1ce522a354582c4a71a4032fd1cb74fcd582e4f55bd4523d65a1fbfbb636d505) and its canonical history sidecars (history/records/zinkgruvanite/2026-11-10T193201Z-antigravity-38afcb.yaml) against all bounded primary-source passages and rendered table PNGs from Camara F, Holtstam D, Jansson N, Jonsson E, Karlsson A, Langhof J, Majka J, Zetterqvist A (2021) Zinkgruvanite, Ba4Mn2+4Fe3+2(Si2O7)2(SO4)2O2(OH)2, a new ericssonite-group mineral from the Zinkgruvan Zn-Pb-Ag-Cu deposit, Askersund, Orebro County, Sweden. European Journal of Mineralogy 33:659-673 (https://doi.org/10.5194/ejm-33-659-2021) and the September 2026 IMA-CNMNC Master List (PDF p. 242).
+
+Selection: Round 132 mineral record zinkgruvanite
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base ba25d717f2cb7f3988da126431035219e9f29a20.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:zinkgruvanite | data/records/zinkgruvanite.yaml | maintained | Zinkgruvanite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Strict corpus validation | passed | True | cmmmech:zinkgruvanite | Checked 713 record(s); 0 failed. |
+| Canonical history validation | passed | True | cmmmech:zinkgruvanite | Checked 1553 history record(s); 0 error(s). |
+
+## Scientific And Domain Assessments
+
+### Verification of IMA:2020-031 identity, ima_symbol (None), type locality, type specimens, chemical composition, crystal structure, and internal source discrepancies for zinkgruvanite
+
+evidence: supported. Targets: cmmmech:zinkgruvanite.
+
+All numeric, crystallographic, spectroscopic, and chemical claims in data/records/zinkgruvanite.yaml (SHA-256 1ce522a354582c4a71a4032fd1cb74fcd582e4f55bd4523d65a1fbfbb636d505) match the bounded primary-source passages and rendered table PNGs of Camara F, Holtstam D, Jansson N, Jonsson E, Karlsson A, Langhof J, Majka J, Zetterqvist A (2021) Zinkgruvanite, Ba4Mn2+4Fe3+2(Si2O7)2(SO4)2O2(OH)2, a new ericssonite-group mineral from the Zinkgruvan Zn-Pb-Ag-Cu deposit, Askersund, Orebro County, Sweden. European Journal of Mineralogy 33:659-673 and the September 2026 IMA Master List (PDF p. 242).
+
+### Verification of 0 mechanisms (abiotic occurrence only) and append-only history provenance
+
+provenance: supported. Targets: cmmmech:zinkgruvanite.
+
+data/records/zinkgruvanite.yaml accurately omits mechanisms (0 mechanisms) and explicitly discloses that no biological or microbial interaction data are reported in the type mineralogical description. Append-only history sidecars pass validation with 0 errors.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/records/zinkgruvanite.yaml; Working-tree record data/records/zinkgruvanite.yaml | supports | Working-tree record data/records/zinkgruvanite.yaml captures IMA:2020-031 identity (ima_symbol: None), type locality (Drill core (ca. 530 m borehole depth, intersecting the stratiform Burkland Zn-Pb-Ag ore body at ca. 1500 m mine level), Zinkgruvan Zn-Pb-Ag-Cu deposit (58 deg 49 min N, 15 deg 6 min E; 170 m a.s.l.), near Ammeberg, Askersund municipality, Orebro County, Sweden), type specimens (Holotype GEO-NRM 20170502 (incomplete drill core slice ~10 mm thick), deposited in the type mineral collection of the Department of Geosciences, Swedish Museum of Natural History, Stockholm, Sweden), Table 2 (p. 664) JEOL JXA-8530F Superprobe WDS chemistry (Crystal no. 1, n = 15, mean [2sigma]: SiO2 17.38 [0.34], TiO2 1.05 [0.12], Al2O3 0.20 [0.06], Cr2O3 0.01 [0.04], [FeO]total 17.94 [0.44] partitioned by Mossbauer into FeO 7.53 and Fe2O3 11.56, MnO 8.49 [0.32], ZnO 0.03 [0.08], NiO 0.03 [0.06], V2O5 0.03 [0.06], P2O5 0.31 [0.28], MgO 0.37 [0.06], CaO 0.39 [0.06], Na2O 0.07 [0.08], K2O 0.01 [0.02], BaO 41.26 [0.36], F 0.10 [0.16], Cl 0.70 [0.06], SO3 8.63 [0.32], H2Ocalc 0.99, O = Cl,F -0.20, printed Total 98.93 wt% [exact sum 98.91 wt%]; Crystal no. 2, n = 15, printed Total 98.79 wt% [exact sum 98.75 wt%]; empirical formula (Ba4.02Na0.03)sum=4.05(Mn1.79Fe2+1.56Fe3+0.42Mg0.14Ca0.10Ni0.01Zn0.01)sum=4.03(Fe3+1.74Ti0.20Al0.06)sum=2.00Si4(S1.61Si0.32P0.07)sum=1.99O24(OH1.63Cl0.29F0.08)sum=2.00), triclinic P-1 (#2) crystal structure, documented primary-source discrepancies, and 0 mechanisms (SHA-256 1ce522a354582c4a71a4032fd1cb74fcd582e4f55bd4523d65a1fbfbb636d505). |
+| ima_authority | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; IMA-CNMNC September 2026 Master List, PDF p. 242 | supports | Confirms Zinkgruvanite, status A, IMA:2020-031, formula Ba4Mn2+4Fe3+2(Si2O7)2(SO4)2O2(OH)2, and first reference in Camara F, Holtstam D, Jansson N, Jonsson E, Karlsson A, Langhof J, Majka J, Zetterqvist A (2021) Zinkgruvanite, Ba4Mn2+4Fe3+2(Si2O7)2(SO4)2O2(OH)2, a new ericssonite-group mineral from the Zinkgruvan Zn-Pb-Ag-Cu deposit, Askersund, Orebro County, Sweden. European Journal of Mineralogy 33:659-673. |
+| camara_2021_zinkgruvanite_primary | https://doi.org/10.5194/ejm-33-659-2021; Camara F, Holtstam D, Jansson N, Jonsson E, Karlsson A, Langhof J, Majka J, Zetterqvist A (2021) Zinkgruvanite, Ba4Mn2+4Fe3+2(Si2O7)2(SO4)2O2(OH)2, a new ericssonite-group mineral from the Zinkgruvan Zn-Pb-Ag-Cu deposit, Askersund, Orebro County, Sweden. European Journal of Mineralogy 33:659-673 (43 bounded passages &lt;= 1,800 B across 15 full-PDF pages / 13 main-text pages, plus 150-DPI PNG table renders) | supports | All bounded passages (&lt;= 1,800 B) and single-page 150-DPI PNG table renders inspected from Camara F, Holtstam D, Jansson N, Jonsson E, Karlsson A, Langhof J, Majka J, Zetterqvist A (2021) Zinkgruvanite, Ba4Mn2+4Fe3+2(Si2O7)2(SO4)2O2(OH)2, a new ericssonite-group mineral from the Zinkgruvan Zn-Pb-Ag-Cu deposit, Askersund, Orebro County, Sweden. European Journal of Mineralogy 33:659-673, confirming verbatim title, authors, type locality, type specimen repositories, chemical composition, unit-cell parameters, structure refinement, and documented internal source discrepancies. |
+| canonical_history | history/records/zinkgruvanite/2026-11-10T193201Z-antigravity-38afcb.yaml; Canonical history sidecars history/records/zinkgruvanite/2026-11-10T193201Z-antigravity-38afcb.yaml | supports | Canonical history sidecars (history/records/zinkgruvanite/2026-11-10T193201Z-antigravity-38afcb.yaml; latest SHA-256 3848e87c3f12352fae01149ff3e187bc0f231c673e94bae29db1485720d6cb50) record the CREATE and #998 EDIT sessions. |
+| validation | data/records/zinkgruvanite.yaml; Real CLI validation via .venv/bin/cmmmech validate --require-records and .venv/bin/cmmmech validate-history --base main | supports | Checked 713 record(s); 0 failed. Checked 1553 history record(s); 0 error(s). |
+
+## Limits And Additional Notes
+
+- Review is conducted in single-agent Goal Mode (independence: self_review) against working-tree bytes; an independent subagent PR re-review is executed prior to merge.
+- Executed under the Round 132 bounded source-text workflow (scripts/index_bounded_pdf_passages.py, max 1,800 bytes per passage) plus single-page 150-DPI PNG table renders after #998 remediation.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261110T211000Z-zinkgruvanite-round132-remediation-review
+kind: record
+repository: CultureBotAI/CMMMech
+title: Post-remediation primary-source scientific review of zinkgruvanite (IMA:2020-031,
+  status A, Ba4Mn2+4Fe3+2(Si2O7)2(SO4)2O2(OH)2)
+started_at: '2026-11-10T21:09:30Z'
+finished_at: '2026-11-10T21:10:00Z'
+reviewer:
+  identity: antigravity / round132-scientific-reviewer
+  kind: agent
+  model: gemini-3.1-pro
+  independence: self_review
+  independence_basis: Single-agent Goal Mode execution of .claude/skills/review-record/SKILL.md
+    verifying all scientific claims in data/records/zinkgruvanite.yaml (SHA-256 1ce522a354582c4a71a4032fd1cb74fcd582e4f55bd4523d65a1fbfbb636d505)
+    and its canonical history sidecars (history/records/zinkgruvanite/2026-11-10T193201Z-antigravity-38afcb.yaml)
+    against all bounded passages (43 total / 38 main-text passages <= 1,800 B across
+    15 full-PDF / 13 main-text pages) and single-page 150-DPI PNG table renders of
+    Camara F, Holtstam D, Jansson N, Jonsson E, Karlsson A, Langhof J, Majka J, Zetterqvist
+    A (2021) Zinkgruvanite, Ba4Mn2+4Fe3+2(Si2O7)2(SO4)2O2(OH)2, a new ericssonite-group
+    mineral from the Zinkgruvan Zn-Pb-Ag-Cu deposit, Askersund, Orebro County, Sweden.
+    European Journal of Mineralogy 33:659-673 (https://doi.org/10.5194/ejm-33-659-2021,
+    PDF SHA-256 f1f927bb20d852c1a7b01846113da8aeea1eab4d29b1f865594b6774f5e1a972)
+    and the September 2026 IMA-CNMNC Master List (PDF p. 242, SHA-256 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973).
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: ba25d717f2cb7f3988da126431035219e9f29a20
+  state: working_tree
+  inputs:
+  - path: data/records/zinkgruvanite.yaml
+    sha256: 1ce522a354582c4a71a4032fd1cb74fcd582e4f55bd4523d65a1fbfbb636d505
+    role: target
+  - path: history/records/zinkgruvanite/2026-11-10T193201Z-antigravity-38afcb.yaml
+    sha256: 3848e87c3f12352fae01149ff3e187bc0f231c673e94bae29db1485720d6cb50
+    role: context
+  - path: research/sources/round132-minerals/20261110T193500Z-source-investigation.json
+    sha256: dc6aaf84dc7559b7d0395a9e0334fee7ff855afb456dde1bf9c41a50c2b84dee
+    role: context
+  - path: research/sources/round132-minerals/20261110T193500Z-source-investigation.md
+    sha256: bd62bd657d7731014df9d661c29b83f02830b71cec1897fd69e51067f4f47743
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+targets:
+- target_id: cmmmech:zinkgruvanite
+  path: data/records/zinkgruvanite.yaml
+  label: Zinkgruvanite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/zinkgruvanite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/zinkgruvanite/2026-11-10T193201Z-antigravity-38afcb.yaml
+    role: canonical_history
+scope:
+  description: Post-remediation primary-source scientific review of data/records/zinkgruvanite.yaml
+    (SHA-256 1ce522a354582c4a71a4032fd1cb74fcd582e4f55bd4523d65a1fbfbb636d505) and
+    its canonical history sidecars (history/records/zinkgruvanite/2026-11-10T193201Z-antigravity-38afcb.yaml)
+    against all bounded primary-source passages and rendered table PNGs from Camara
+    F, Holtstam D, Jansson N, Jonsson E, Karlsson A, Langhof J, Majka J, Zetterqvist
+    A (2021) Zinkgruvanite, Ba4Mn2+4Fe3+2(Si2O7)2(SO4)2O2(OH)2, a new ericssonite-group
+    mineral from the Zinkgruvan Zn-Pb-Ag-Cu deposit, Askersund, Orebro County, Sweden.
+    European Journal of Mineralogy 33:659-673 (https://doi.org/10.5194/ejm-33-659-2021)
+    and the September 2026 IMA-CNMNC Master List (PDF p. 242).
+  selection: Round 132 mineral record zinkgruvanite
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:zinkgruvanite
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/zinkgruvanite.yaml
+  locator: Working-tree record data/records/zinkgruvanite.yaml
+  accessed_at: '2026-11-10T21:09:45Z'
+  support: supports
+  summary: 'Working-tree record data/records/zinkgruvanite.yaml captures IMA:2020-031
+    identity (ima_symbol: None), type locality (Drill core (ca. 530 m borehole depth,
+    intersecting the stratiform Burkland Zn-Pb-Ag ore body at ca. 1500 m mine level),
+    Zinkgruvan Zn-Pb-Ag-Cu deposit (58 deg 49 min N, 15 deg 6 min E; 170 m a.s.l.),
+    near Ammeberg, Askersund municipality, Orebro County, Sweden), type specimens
+    (Holotype GEO-NRM 20170502 (incomplete drill core slice ~10 mm thick), deposited
+    in the type mineral collection of the Department of Geosciences, Swedish Museum
+    of Natural History, Stockholm, Sweden), Table 2 (p. 664) JEOL JXA-8530F Superprobe
+    WDS chemistry (Crystal no. 1, n = 15, mean [2sigma]: SiO2 17.38 [0.34], TiO2 1.05
+    [0.12], Al2O3 0.20 [0.06], Cr2O3 0.01 [0.04], [FeO]total 17.94 [0.44] partitioned
+    by Mossbauer into FeO 7.53 and Fe2O3 11.56, MnO 8.49 [0.32], ZnO 0.03 [0.08],
+    NiO 0.03 [0.06], V2O5 0.03 [0.06], P2O5 0.31 [0.28], MgO 0.37 [0.06], CaO 0.39
+    [0.06], Na2O 0.07 [0.08], K2O 0.01 [0.02], BaO 41.26 [0.36], F 0.10 [0.16], Cl
+    0.70 [0.06], SO3 8.63 [0.32], H2Ocalc 0.99, O = Cl,F -0.20, printed Total 98.93
+    wt% [exact sum 98.91 wt%]; Crystal no. 2, n = 15, printed Total 98.79 wt% [exact
+    sum 98.75 wt%]; empirical formula (Ba4.02Na0.03)sum=4.05(Mn1.79Fe2+1.56Fe3+0.42Mg0.14Ca0.10Ni0.01Zn0.01)sum=4.03(Fe3+1.74Ti0.20Al0.06)sum=2.00Si4(S1.61Si0.32P0.07)sum=1.99O24(OH1.63Cl0.29F0.08)sum=2.00),
+    triclinic P-1 (#2) crystal structure, documented primary-source discrepancies,
+    and 0 mechanisms (SHA-256 1ce522a354582c4a71a4032fd1cb74fcd582e4f55bd4523d65a1fbfbb636d505).'
+  snapshot_sha256: 1ce522a354582c4a71a4032fd1cb74fcd582e4f55bd4523d65a1fbfbb636d505
+- evidence_id: ima_authority
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: IMA-CNMNC September 2026 Master List, PDF p. 242
+  accessed_at: '2026-11-10T21:09:45Z'
+  support: supports
+  summary: Confirms Zinkgruvanite, status A, IMA:2020-031, formula Ba4Mn2+4Fe3+2(Si2O7)2(SO4)2O2(OH)2,
+    and first reference in Camara F, Holtstam D, Jansson N, Jonsson E, Karlsson A,
+    Langhof J, Majka J, Zetterqvist A (2021) Zinkgruvanite, Ba4Mn2+4Fe3+2(Si2O7)2(SO4)2O2(OH)2,
+    a new ericssonite-group mineral from the Zinkgruvan Zn-Pb-Ag-Cu deposit, Askersund,
+    Orebro County, Sweden. European Journal of Mineralogy 33:659-673.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: camara_2021_zinkgruvanite_primary
+  kind: primary_source
+  reference: https://doi.org/10.5194/ejm-33-659-2021
+  locator: Camara F, Holtstam D, Jansson N, Jonsson E, Karlsson A, Langhof J, Majka
+    J, Zetterqvist A (2021) Zinkgruvanite, Ba4Mn2+4Fe3+2(Si2O7)2(SO4)2O2(OH)2, a new
+    ericssonite-group mineral from the Zinkgruvan Zn-Pb-Ag-Cu deposit, Askersund,
+    Orebro County, Sweden. European Journal of Mineralogy 33:659-673 (43 bounded passages
+    <= 1,800 B across 15 full-PDF pages / 13 main-text pages, plus 150-DPI PNG table
+    renders)
+  accessed_at: '2026-11-10T21:09:45Z'
+  support: supports
+  summary: All bounded passages (<= 1,800 B) and single-page 150-DPI PNG table renders
+    inspected from Camara F, Holtstam D, Jansson N, Jonsson E, Karlsson A, Langhof
+    J, Majka J, Zetterqvist A (2021) Zinkgruvanite, Ba4Mn2+4Fe3+2(Si2O7)2(SO4)2O2(OH)2,
+    a new ericssonite-group mineral from the Zinkgruvan Zn-Pb-Ag-Cu deposit, Askersund,
+    Orebro County, Sweden. European Journal of Mineralogy 33:659-673, confirming verbatim
+    title, authors, type locality, type specimen repositories, chemical composition,
+    unit-cell parameters, structure refinement, and documented internal source discrepancies.
+  snapshot_sha256: f1f927bb20d852c1a7b01846113da8aeea1eab4d29b1f865594b6774f5e1a972
+- evidence_id: canonical_history
+  kind: record_content
+  reference: history/records/zinkgruvanite/2026-11-10T193201Z-antigravity-38afcb.yaml
+  locator: Canonical history sidecars history/records/zinkgruvanite/2026-11-10T193201Z-antigravity-38afcb.yaml
+  accessed_at: '2026-11-10T21:09:45Z'
+  support: supports
+  summary: 'Canonical history sidecars (history/records/zinkgruvanite/2026-11-10T193201Z-antigravity-38afcb.yaml;
+    latest SHA-256 3848e87c3f12352fae01149ff3e187bc0f231c673e94bae29db1485720d6cb50)
+    record the CREATE and #998 EDIT sessions.'
+  snapshot_sha256: 3848e87c3f12352fae01149ff3e187bc0f231c673e94bae29db1485720d6cb50
+- evidence_id: validation
+  kind: validation
+  reference: data/records/zinkgruvanite.yaml
+  locator: Real CLI validation via .venv/bin/cmmmech validate --require-records and
+    .venv/bin/cmmmech validate-history --base main
+  accessed_at: '2026-11-10T21:09:55Z'
+  support: supports
+  summary: Checked 713 record(s); 0 failed. Checked 1553 history record(s); 0 error(s).
+  snapshot_sha256: 1ce522a354582c4a71a4032fd1cb74fcd582e4f55bd4523d65a1fbfbb636d505
+checks:
+- check_id: validate_records
+  name: Strict corpus validation
+  command: .venv/bin/cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Checked 713 record(s); 0 failed.
+  target_ids:
+  - cmmmech:zinkgruvanite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: validate_history
+  name: Canonical history validation
+  command: .venv/bin/cmmmech validate-history --base main
+  status: passed
+  required: true
+  summary: Checked 1553 history record(s); 0 error(s).
+  target_ids:
+  - cmmmech:zinkgruvanite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+assessments:
+- assessment_id: identity_and_primary_source_verification
+  area: evidence
+  topic: Verification of IMA:2020-031 identity, ima_symbol (None), type locality,
+    type specimens, chemical composition, crystal structure, and internal source discrepancies
+    for zinkgruvanite
+  outcome: supported
+  summary: All numeric, crystallographic, spectroscopic, and chemical claims in data/records/zinkgruvanite.yaml
+    (SHA-256 1ce522a354582c4a71a4032fd1cb74fcd582e4f55bd4523d65a1fbfbb636d505) match
+    the bounded primary-source passages and rendered table PNGs of Camara F, Holtstam
+    D, Jansson N, Jonsson E, Karlsson A, Langhof J, Majka J, Zetterqvist A (2021)
+    Zinkgruvanite, Ba4Mn2+4Fe3+2(Si2O7)2(SO4)2O2(OH)2, a new ericssonite-group mineral
+    from the Zinkgruvan Zn-Pb-Ag-Cu deposit, Askersund, Orebro County, Sweden. European
+    Journal of Mineralogy 33:659-673 and the September 2026 IMA Master List (PDF p.
+    242).
+  target_ids:
+  - cmmmech:zinkgruvanite
+  evidence_ids:
+  - owner
+  - ima_authority
+  - camara_2021_zinkgruvanite_primary
+- assessment_id: mechanism_absence_and_provenance_verification
+  area: provenance
+  topic: Verification of 0 mechanisms (abiotic occurrence only) and append-only history
+    provenance
+  outcome: supported
+  summary: data/records/zinkgruvanite.yaml accurately omits mechanisms (0 mechanisms)
+    and explicitly discloses that no biological or microbial interaction data are
+    reported in the type mineralogical description. Append-only history sidecars pass
+    validation with 0 errors.
+  target_ids:
+  - cmmmech:zinkgruvanite
+  evidence_ids:
+  - owner
+  - camara_2021_zinkgruvanite_primary
+  - canonical_history
+  - validation
+findings: []
+actions: []
+summary: 'Zinkgruvanite (IMA:2020-031, status A, Ba4Mn2+4Fe3+2(Si2O7)2(SO4)2O2(OH)2)
+  passes post-remediation primary-source scientific review (scientific_review: true)
+  at SHA-256 1ce522a354582c4a71a4032fd1cb74fcd582e4f55bd4523d65a1fbfbb636d505 against
+  all bounded passages and rendered table PNGs of Camara F, Holtstam D, Jansson N,
+  Jonsson E, Karlsson A, Langhof J, Majka J, Zetterqvist A (2021) Zinkgruvanite, Ba4Mn2+4Fe3+2(Si2O7)2(SO4)2O2(OH)2,
+  a new ericssonite-group mineral from the Zinkgruvan Zn-Pb-Ag-Cu deposit, Askersund,
+  Orebro County, Sweden. European Journal of Mineralogy 33:659-673 (https://doi.org/10.5194/ejm-33-659-2021).'
+limitations:
+- 'Review is conducted in single-agent Goal Mode (independence: self_review) against
+  working-tree bytes; an independent subagent PR re-review is executed prior to merge.'
+notes:
+- 'Executed under the Round 132 bounded source-text workflow (scripts/index_bounded_pdf_passages.py,
+  max 1,800 bytes per passage) plus single-page 150-DPI PNG table renders after #998
+  remediation.'
+```
