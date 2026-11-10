@@ -1,0 +1,41 @@
+schema_version: 1.0.0
+repository_key: cmmmech
+github_repository: CultureBotAI/CMMMech
+run_id: mech-goal-sequence-20261019
+cycle: 13
+stage: 6
+revision: 1
+outcome: completed
+summary: "Froze INFRA_TASKS.md at supervisor cutoff 2026-11-10T18:33:36Z (sha256 119da1ebdf4aaa82509a9e68941838c77d2d9c35a20d54faff3202b1ded52819) across the 2 non-resolved infrastructure tasks (cmmmech-infra-0001 and cmmmech-infra-0005; while retaining the 11 previously resolved tasks cmmmech-infra-0002 through cmmmech-infra-0004 and cmmmech-infra-0006 through cmmmech-infra-0013 in INFRA_TASKS.md), verified all 11 previously resolved local infrastructure upgrades across the 708-record corpus and 392-test suite, updated reviews/workflow/latest.yaml with the verified Cycle 13 Stage 5 PR #994 entry, and explicitly carried forward deferred upstream-governed scripts/record_review.py tasks cmmmech-infra-0001 and cmmmech-infra-0005 under open issue #805."
+source_revision: 2a19a238b2c6e2a18b8a4a11655618d68fbb854c
+scope_frozen_at: '2026-11-10T18:33:36Z'
+artifacts:
+- path: reviews/workflow/mech-goal-sequence-20261019/cycle-000013/stage-06/revision-0001/infra_snapshot.md
+  sha256: 119da1ebdf4aaa82509a9e68941838c77d2d9c35a20d54faff3202b1ded52819
+  kind: infra_snapshot
+- path: reviews/workflow/mech-goal-sequence-20261019/cycle-000013/stage-06/revision-0001/implementation_plan.md
+  sha256: 1e9e90472f520d7f95e1ab9980badb62047737a415d4ddbdbfde67e673782c85
+  kind: implementation_plan
+- path: reviews/workflow/mech-goal-sequence-20261019/cycle-000013/stage-06/revision-0001/validation.md
+  sha256: ed081ead34ea2311d096c51d5f0df6f9bf2b8017c2cb473c1f004ff2df197029
+  kind: validation
+findings: []
+groups: []
+carry_forward_ids: []
+infra_tasks:
+- task_id: cmmmech-infra-0001
+  issue_url: https://github.com/CultureBotAI/CMMMech/issues/805
+  status: deferred
+  summary: "Anchor scripts/record_review.py _directory() traversal at repository ROOT instead of filesystem root / so review validation runs inside Seatbelt sandboxes"
+  resolution_evidence:
+  - reviews/workflow/mech-goal-sequence-20261019/cycle-000013/stage-06/revision-0001/implementation_plan.md
+  - reviews/workflow/mech-goal-sequence-20261019/cycle-000013/stage-06/revision-0001/validation.md
+  disposition: "Deferred in Cycle 1 Stage 6 and carried forward in Cycles 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, and 13 Stage 6 because scripts/record_review.py and tests/test_record_review_contract.py are vendored artifacts governed by CultureBotAI/culturebotai-claw (enforced by scripts/check_vendored_sync.py at pinned revision a1c9db3260fc253de16cabfaef5cf6c2fc3fbdd7); tracked under open issue #805 for coordinated upstream implementation and sync."
+- task_id: cmmmech-infra-0005
+  issue_url: https://github.com/CultureBotAI/CMMMech/issues/805
+  status: deferred
+  summary: "Batch git cat-file object size and content checks in scripts/record_review.py assert_append_only() and source_provenance() via git cat-file --batch"
+  resolution_evidence:
+  - reviews/workflow/mech-goal-sequence-20261019/cycle-000013/stage-06/revision-0001/implementation_plan.md
+  - reviews/workflow/mech-goal-sequence-20261019/cycle-000013/stage-06/revision-0001/validation.md
+  disposition: "Deferred in Cycle 1 Stage 6 and carried forward in Cycles 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, and 13 Stage 6 because scripts/record_review.py is a vendored artifact governed by CultureBotAI/culturebotai-claw (enforced by scripts/check_vendored_sync.py at pinned revision a1c9db3260fc253de16cabfaef5cf6c2fc3fbdd7); grouped with cmmmech-infra-0001 under open issue #805 for upstream implementation and sync."
