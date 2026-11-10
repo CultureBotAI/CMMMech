@@ -1,117 +1,355 @@
 id: cmmmech:chromium-tanned-leather-shavings
 name: Chromium-tanned leather shavings
 material_kind: secondary_resource
-description: Chromium-bearing collagenous shavings generated during leather manufacture after chrome tanning,
-  represented here by wet-blue tannery waste from Poland. This processing residue is distinct from tannery
-  wastewater-treatment sludge, tanning liquors, elemental chromium and purified collagen. The accepted
-  laboratory evidence concerns yeast-associated matrix bioconversion and chromium partitioning, not an
-  isolated chromium product or industrial deployment. Constituent criticality is not inherited.
+description: Chromium-bearing collagenous shavings generated during leather manufacture after chrome tanning, represented here by wet-blue tannery waste from Poland. This processing residue is distinct from tannery wastewater-treatment sludge, tanning liquors, elemental chromium and purified collagen. The accepted laboratory evidence concerns yeast-associated matrix bioconversion and chromium partitioning, not an isolated chromium product or industrial deployment. Constituent criticality is not inherited.
 sources:
 - id: wieczorek2023
-  title: Dorota Wieczorek, Dorota Gendaszewska, Katarzyna Miśkiewicz, Anna Słubik and Katarzyna Ławińska
-    (2023). Biotransformation of protein-rich waste by Yarrowia lipolytica IPS21 to high-value products—amino
-    acid supernatants. Microbiology Spectrum 11(5):e02749-23. DOI 10.1128/spectrum.02749-23; PMID 37707427;
-    PMC10581069. Complete original JATS/HTML, Tables 1–2, Figures 1–5 and all five supplemental PDFs inspected;
-    the nominal local main-PDF download was HTML and is not evidence.
+  title: Dorota Wieczorek, Dorota Gendaszewska, Katarzyna Miśkiewicz, Anna Słubik and Katarzyna Ławińska (2023). Biotransformation of protein-rich waste by Yarrowia lipolytica IPS21 to high-value products—amino acid supernatants. Microbiology Spectrum 11(5):e02749-23. DOI 10.1128/spectrum.02749-23; PMID 37707427; PMC10581069. Complete original JATS/HTML, Tables 1–2, Figures 1–5 and all five supplemental PDFs inspected; the nominal local main-PDF download was HTML and is not evidence.
   url: https://doi.org/10.1128/spectrum.02749-23
   accessed_on: '2026-10-15'
 - id: ncbi4952
-  title: 'NCBI Taxonomy 4952: Yarrowia lipolytica, species. Current official taxonomy XML verifies the
-    species label, not the identity or performance of the experimental IPS21 stock.'
+  title: 'NCBI Taxonomy 4952: Yarrowia lipolytica, species. Current official taxonomy XML verifies the species label, not the identity or performance of the experimental IPS21 stock.'
   url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=4952&mode=Info
   accessed_on: '2026-10-15'
+- id: uniprot_yarrowia_lipolytica_proteases
+  title: 'UniProtKB/Swiss-Prot reviewed entries in Yarrowia lipolytica reference proteome UP000001300 (NCBITaxon:284591): Alkaline extracellular protease XPR2 (UniProtKB:P09230), Acid extracellular protease AXP1 (UniProtKB:Q92389), and pH-response transcription factor pacC/RIM101 (UniProtKB:P78978).'
+  url: https://www.uniprot.org/uniprotkb?query=(proteome:UP000001300)+AND+(accession:P09230+OR+accession:Q92389+OR+accession:P78978)
+  accessed_on: '2026-11-10'
 mechanisms:
 - id: ips21_matrix_bioconversion_and_chromium_partitioning
   name: Yeast-associated matrix bioconversion and chromium partitioning
   process: other
+  description: Living Yarrowia lipolytica IPS21 cultures were associated with proteolytic activity, increased soluble amino acids, changing pH and altered total-chromium concentrations in operational liquid and combined biomass/residue fractions. These observations support conditional bioconversion of a chromium-bearing waste matrix. They do not establish purified chromium recovery, a closed chromium extraction yield, intracellular chromium exclusion or a demonstrated redox mechanism.
+  context: Wieczorek et al. obtained wet-blue chrome-tanned shavings from a Polish tannery at source-reported 51°29′37.8″N, 21°08′43.1″E. Reported moisture was 15% and aqueous-extract pH 3.09; the listed 4.4 ± 0.2% chromium(III) oxide, ash and nitrogen values are attributed to earlier literature rather than clearly documented lot-specific characterization. Particle sizes were reported as 1–5 mm. Source-designated IPS21 came from the institute collection, originally isolated from contaminated soil near the former BORUTA dye factory. Laboratory assays used 100 mL flasks with 40 mL sterile modified YPG medium and 0.1–4% (wt/wt) shavings, with 0.4 or 0.8 mL inoculum, 30°C, 190 rpm and 48 h. Initial pH was set to 7.07 before autoclaving at 121°C for 20 min. Yeast extract supplies nutrients independently of the shavings. The abstract gives 15 g/L yeast extract and 5 g/L NaCl, whereas the stock-medium method gives 2.5 g/L NaCl and agar; the final liquid recipe is not fully reconciled. The printed
+    inoculum OD600 token is 1,000, with no independently verified viable-cell count. Yeast-only, medium-only and uninoculated shavings comparisons appear for the relevant endpoints; comparisons are not pH-matched. Total-Cr experiments concern 0.1% and 1% feeds, not the 4% arm. Reported endpoint summaries use n=3. No industrial treatment trial is established.
   microbial: true
-  description: Living Yarrowia lipolytica IPS21 cultures were associated with proteolytic activity, increased
-    soluble amino acids, changing pH and altered total-chromium concentrations in operational liquid and
-    combined biomass/residue fractions. These observations support conditional bioconversion of a chromium-bearing
-    waste matrix. They do not establish purified chromium recovery, a closed chromium extraction yield,
-    intracellular chromium exclusion or a demonstrated redox mechanism.
-  context: Wieczorek et al. obtained wet-blue chrome-tanned shavings from a Polish tannery at source-reported
-    51°29′37.8″N, 21°08′43.1″E. Reported moisture was 15% and aqueous-extract pH 3.09; the listed 4.4
-    ± 0.2% chromium(III) oxide, ash and nitrogen values are attributed to earlier literature rather than
-    clearly documented lot-specific characterization. Particle sizes were reported as 1–5 mm. Source-designated
-    IPS21 came from the institute collection, originally isolated from contaminated soil near the former
-    BORUTA dye factory. Laboratory assays used 100 mL flasks with 40 mL sterile modified YPG medium and
-    0.1–4% (wt/wt) shavings, with 0.4 or 0.8 mL inoculum, 30°C, 190 rpm and 48 h. Initial pH was set to
-    7.07 before autoclaving at 121°C for 20 min. Yeast extract supplies nutrients independently of the
-    shavings. The abstract gives 15 g/L yeast extract and 5 g/L NaCl, whereas the stock-medium method
-    gives 2.5 g/L NaCl and agar; the final liquid recipe is not fully reconciled. The printed inoculum
-    OD600 token is 1,000, with no independently verified viable-cell count. Yeast-only, medium-only and
-    uninoculated shavings comparisons appear for the relevant endpoints; comparisons are not pH-matched.
-    Total-Cr experiments concern 0.1% and 1% feeds, not the 4% arm. Reported endpoint summaries use n=3.
-    No industrial treatment trial is established.
   organisms:
   - id: NCBITaxon:4952
     label: Yarrowia lipolytica
+  protein_examples:
+  - uniprot_accession: UniProtKB:P09230
+    entry_name: AEP_YARLI
+    protein_name: Alkaline extracellular protease
+    gene_symbol: XPR2
+    entry_status: SWISS_PROT
+    target_organism:
+      id: NCBITaxon:284591
+      label: Yarrowia lipolytica (strain CLIB 122 / E 150)
+    reference_proteome_id: UP000001300
+    ec_numbers:
+    - EC:3.4.21.62
+    interpro_ids:
+    - InterPro:IPR034193
+    - InterPro:IPR000209
+    - InterPro:IPR036852
+    - InterPro:IPR023827
+    - InterPro:IPR022398
+    - InterPro:IPR023828
+    - InterPro:IPR050131
+    - InterPro:IPR015500
+    - InterPro:IPR010259
+    pfam_ids:
+    - Pfam:PF05922
+    - Pfam:PF00082
+    go_terms:
+    - id: GO:0005576
+      label: extracellular region
+    - id: GO:0004252
+      label: serine-type endopeptidase activity
+    - id: GO:0006508
+      label: proteolysis
+    functional_role: Major secreted subtilisin-family alkaline extracellular serine endopeptidase (XPR2; EC 3.4.21.62) hydrolyzing proteinaceous substrates under neutral-to-alkaline culture conditions.
+    annotation_note: Grounded to reviewed Swiss-Prot entry UniProtKB:P09230 (AEP_YARLI; gene XPR2 / YALI0F31889g) in Yarrowia lipolytica reference proteome UP000001300 (NCBITaxon:284591), representing species-rank Yarrowia lipolytica (NCBITaxon:4952) strain IPS21 extracellular protease activity in Wieczorek et al. (2023).
+    evidence:
+    - source_ref: wieczorek2023
+      supports: partial
+      explanation: Wieczorek et al. (2023) measured extracellular protease activity, soluble amino-acid release, and culture alkalinization (from initial pH 7.07) in Yarrowia lipolytica IPS21 cultures incubated with 0.1-4% (wt/wt) wet-blue chrome-tanned leather shavings in modified YPG medium (Tables 1-2, Figures 1-3); individual protease genes (XPR2, AXP1) were not separately quantified or knocked out.
+    - source_ref: uniprot_yarrowia_lipolytica_proteases
+      supports: partial
+      explanation: Reviewed Swiss-Prot entry UniProtKB:P09230 (AEP_YARLI) in Yarrowia lipolytica reference proteome UP000001300 (strain CLIB 122 / E 150, NCBITaxon:284591) encodes Alkaline extracellular protease XPR2 (EC 3.4.21.62; GO:0005576 extracellular region; GO:0004252 serine-type endopeptidase activity; GO:0006508 proteolysis) as a species-level reference-proteome proxy for isolate IPS21.
+  - uniprot_accession: UniProtKB:Q92389
+    entry_name: AXP1_YARLI
+    protein_name: Acid extracellular protease
+    gene_symbol: AXP1
+    entry_status: SWISS_PROT
+    target_organism:
+      id: NCBITaxon:284591
+      label: Yarrowia lipolytica (strain CLIB 122 / E 150)
+    reference_proteome_id: UP000001300
+    ec_numbers:
+    - EC:3.4.23.-
+    interpro_ids:
+    - InterPro:IPR001461
+    - InterPro:IPR001969
+    - InterPro:IPR033121
+    - InterPro:IPR021109
+    - InterPro:IPR033876
+    pfam_ids:
+    - Pfam:PF00026
+    go_terms:
+    - id: GO:0009277
+      label: fungal-type cell wall
+    - id: GO:0004190
+      label: aspartic-type endopeptidase activity
+    - id: GO:0031505
+      label: fungal-type cell wall organization
+    - id: GO:0016485
+      label: protein processing
+    functional_role: Secreted pepsin-family acid extracellular aspartic endopeptidase (AXP1; EC 3.4.23.-) hydrolyzing extracellular proteins under acidic conditions.
+    annotation_note: Grounded to reviewed Swiss-Prot entry UniProtKB:Q92389 (AXP1_YARLI; gene AXP1 / YALI0B05654g) in Yarrowia lipolytica reference proteome UP000001300 (strain CLIB 122 / E 150, NCBITaxon:284591), representing the complementary acidic secreted protease of Yarrowia lipolytica (NCBITaxon:4952) as acidic shavings extracts (pH 3.09) transition toward neutral/alkaline culture pH in Wieczorek et al. (2023).
+    evidence:
+    - source_ref: wieczorek2023
+      supports: partial
+      explanation: Wieczorek et al. (2023) documented that uninoculated wet-blue shavings (aqueous extract pH 3.09) acidified modified YPG medium whereas Yarrowia lipolytica IPS21 cultures exhibited proteolytic activity and shifted pH upward over 48 h (Figures 1-3); specific contributions of acidic (AXP1) versus alkaline (XPR2) secreted proteases were not resolved.
+    - source_ref: uniprot_yarrowia_lipolytica_proteases
+      supports: partial
+      explanation: Reviewed Swiss-Prot entry UniProtKB:Q92389 (AXP1_YARLI) in Yarrowia lipolytica reference proteome UP000001300 (strain CLIB 122 / E 150, NCBITaxon:284591) encodes Acid extracellular protease AXP1 (EC 3.4.23.-; GO:0004190 aspartic-type endopeptidase activity; GO:0016485 protein processing) as a species-level reference-proteome proxy for isolate IPS21.
+  - uniprot_accession: UniProtKB:P78978
+    entry_name: PACC_YARLI
+    protein_name: pH-response transcription factor pacC/RIM101
+    gene_symbol: RIM101
+    entry_status: SWISS_PROT
+    target_organism:
+      id: NCBITaxon:284591
+      label: Yarrowia lipolytica (strain CLIB 122 / E 150)
+    reference_proteome_id: UP000001300
+    interpro_ids:
+    - InterPro:IPR050806
+    - InterPro:IPR013087
+    - InterPro:IPR036236
+    pfam_ids:
+    - Pfam:PF00096
+    go_terms:
+    - id: GO:0005737
+      label: cytoplasm
+    - id: GO:0005634
+      label: nucleus
+    - id: GO:0045944
+      label: positive regulation of transcription by RNA polymerase II
+    functional_role: Ambient-pH-responsive zinc-finger transcription factor (PacC/RIM101) activating alkaline-expressed genes (including XPR2) and repressing acid-expressed genes (AXP1) as culture pH rises.
+    annotation_note: Grounded to reviewed Swiss-Prot entry UniProtKB:P78978 (PACC_YARLI; gene RIM101 / YALI0B13640g) in Yarrowia lipolytica reference proteome UP000001300 (strain CLIB 122 / E 150, NCBITaxon:284591), representing pH-dependent regulation of extracellular protease secretion in Yarrowia lipolytica (NCBITaxon:4952).
+    evidence:
+    - source_ref: wieczorek2023
+      supports: partial
+      explanation: Wieczorek et al. (2023) observed coupled shifts in culture pH, protease activity, and amino-acid accumulation across 0.1-4% shavings loadings over 48 h (Figures 1-3), without directly assaying RIM101 transcription or pH-matched enzyme controls.
+    - source_ref: uniprot_yarrowia_lipolytica_proteases
+      supports: partial
+      explanation: Reviewed Swiss-Prot entry UniProtKB:P78978 (PACC_YARLI) in Yarrowia lipolytica reference proteome UP000001300 (strain CLIB 122 / E 150, NCBITaxon:284591) encodes pH-response transcription factor pacC/RIM101 (GO:0045944 positive regulation of transcription by RNA polymerase II), annotated as regulating synthesis and secretion of XPR2 and AXP1 in response to ambient pH.
   evidence:
   - source_ref: wieczorek2023
     supports: support
-    explanation: Methods Biological material, Waste material, Biotransformation process and Determination
-      of the total chromium; Tables 1–2 and Figures 1–4 support laboratory culture-associated transformation.
-      Protease activity and amino-acid concentrations increased in selected culture/feed arms; uninoculated
-      shavings acidified the medium while corresponding yeast treatments became more alkaline. Figure
-      4 shows a larger supernatant total-Cr concentration and a smaller combined solid-residue contribution
-      for the 1% yeast treatment than for the 1% uninoculated treatment. These operational endpoints support
-      conditional redistribution, not an independently quantified isolated product.
+    explanation: Methods Biological material, Waste material, Biotransformation process and Determination of the total chromium; Tables 1–2 and Figures 1–4 support laboratory culture-associated transformation. Protease activity and amino-acid concentrations increased in selected culture/feed arms; uninoculated shavings acidified the medium while corresponding yeast treatments became more alkaline. Figure 4 shows a larger supernatant total-Cr concentration and a smaller combined solid-residue contribution for the 1% yeast treatment than for the 1% uninoculated treatment. These operational endpoints support conditional redistribution, not an independently quantified isolated product.
   - source_ref: wieczorek2023
     supports: partial
-    explanation: Figure 4 stacks quantities labelled total chromium in g/kg for liquid and solid fractions.
-      Methods digest 0.1 g or 0.1 mL and dilute to 25 mL but do not clearly define a common mass basis,
-      fraction masses, liquid density or complete starting/ending inventory. Stacking these concentrations
-      cannot establish an elemental mass balance or recovery fraction. The Results assign 10.31 g/kg to
-      the 0.1% yeast sample, whereas the plotted value near 10 belongs to the 1% uninoculated supernatant.
-      No exact extraction percentage or corrected numerical assignment is adopted.
+    explanation: Figure 4 stacks quantities labelled total chromium in g/kg for liquid and solid fractions. Methods digest 0.1 g or 0.1 mL and dilute to 25 mL but do not clearly define a common mass basis, fraction masses, liquid density or complete starting/ending inventory. Stacking these concentrations cannot establish an elemental mass balance or recovery fraction. The Results assign 10.31 g/kg to the 0.1% yeast sample, whereas the plotted value near 10 belongs to the 1% uninoculated supernatant. No exact extraction percentage or corrected numerical assignment is adopted.
   - source_ref: wieczorek2023
     supports: partial
-    explanation: The measured solid residue explicitly combines biomass and remaining shavings. The discussion
-      infers little intracellular chromium, but the assay does not separate intracellular uptake from
-      surface sorption, retained feed or abiotic precipitation. Yeast-associated pH shifts also change
-      chromium chemistry; no pH-matched sterile or enzyme-inactivated comparison establishes the contribution
-      of proteases versus alkalinization or other culture products. Proposed chromium hydroxide/oxide
-      chemistry is not direct phase identification.
+    explanation: The measured solid residue explicitly combines biomass and remaining shavings. The discussion infers little intracellular chromium, but the assay does not separate intracellular uptake from surface sorption, retained feed or abiotic precipitation. Yeast-associated pH shifts also change chromium chemistry; no pH-matched sterile or enzyme-inactivated comparison establishes the contribution of proteases versus alkalinization or other culture products. Proposed chromium hydroxide/oxide chemistry is not direct phase identification.
   - source_ref: wieczorek2023
     supports: partial
-    explanation: Supplemental file 2 reports Cr(VI) as not detected in medium, 0.1% and 1% shavings supernatants
-      and corresponding residues, with stated bounds ≤1 mg/L for liquids and ≤1 mg/kg for residues. These
-      censored results are retained as nondetections, not zeros, proof that oxidation never occurred,
-      or a complete chromium-speciation balance. They do not extend to the 4% arm.
+    explanation: Supplemental file 2 reports Cr(VI) as not detected in medium, 0.1% and 1% shavings supernatants and corresponding residues, with stated bounds ≤1 mg/L for liquids and ≤1 mg/kg for residues. These censored results are retained as nondetections, not zeros, proof that oxidation never occurred, or a complete chromium-speciation balance. They do not extend to the 4% arm.
   - source_ref: wieczorek2023
     supports: partial
-    explanation: Table 1 lists larger 48 h source-labelled degradation rates at 1% shavings than at 4%,
-      contrary to the Results/abstract narrative favoring 4%. Methods say this rate was calculated from
-      biomass concentration but give no explicit equation separating yeast from residual feed; it is not
-      a chromium yield or a demonstrated collagen mass balance. Added yeast extract and the yeast-only
-      amino-acid response prevent attributing all soluble products to the shavings. No universal optimum
-      is accepted.
+    explanation: Table 1 lists larger 48 h source-labelled degradation rates at 1% shavings than at 4%, contrary to the Results/abstract narrative favoring 4%. Methods say this rate was calculated from biomass concentration but give no explicit equation separating yeast from residual feed; it is not a chromium yield or a demonstrated collagen mass balance. Added yeast extract and the yeast-only amino-acid response prevent attributing all soluble products to the shavings. No universal optimum is accepted.
   - source_ref: wieczorek2023
     supports: context_only
-    explanation: Supplemental files 3a and 3b contain sequences for laboratory samples 1304–1306 and a
-      species report assigning sample C/1306 to Yarrowia lipolytica. They do not supply a public IPS21
-      accession or an explicit sample-number-to-IPS21 crosswalk. The identification report is dated October
-      2021, while main text describes sequencing in 2022; February 2022 email printouts accompany the
-      sequences. IPS21 remains the paper-reported strain designation, distinct from an independently verified
-      culture accession.
+    explanation: Supplemental files 3a and 3b contain sequences for laboratory samples 1304–1306 and a species report assigning sample C/1306 to Yarrowia lipolytica. They do not supply a public IPS21 accession or an explicit sample-number-to-IPS21 crosswalk. The identification report is dated October 2021, while main text describes sequencing in 2022; February 2022 email printouts accompany the sequences. IPS21 remains the paper-reported strain designation, distinct from an independently verified culture accession.
   - source_ref: wieczorek2023
     supports: context_only
-    explanation: Figure 5 and the separate short plant assay evaluate diluted supernatants, while supplemental
-      file 5 depicts plate growth around shavings. Neither establishes comprehensive detoxification, safe
-      fertilizer use, industrial deployment or recovered chromium product quality. Those conclusions are
-      not adopted.
+    explanation: Figure 5 and the separate short plant assay evaluate diluted supernatants, while supplemental file 5 depicts plate growth around shavings. Neither establishes comprehensive detoxification, safe fertilizer use, industrial deployment or recovered chromium product quality. Those conclusions are not adopted.
   - source_ref: ncbi4952
     supports: context_only
-    explanation: The current official species entry resolves Yarrowia lipolytica and taxon 4952. It does
-      not validate the experimental stock, sequence provenance, matrix-specific mechanism or source-level
-      strain identity.
+    explanation: The current official species entry resolves Yarrowia lipolytica and taxon 4952. It does not validate the experimental stock, sequence provenance, matrix-specific mechanism or source-level strain identity.
+causal_graphs:
+- id: ips21_proteolytic_leather_matrix_bioconversion_and_cr_partitioning_graph
+  name: Yarrowia lipolytica IPS21 proteolytic matrix bioconversion and conditional chromium partitioning on chrome-tanned leather shavings
+  description: Causal pathway linking Yarrowia lipolytica ambient-pH regulator RIM101 (UniProtKB:P78978) and secreted extracellular proteases XPR2 (UniProtKB:P09230) and AXP1 (UniProtKB:Q92389) to proteolytic hydrolysis of wet-blue chromium-tanned leather shavings in modified YPG medium, culture pH increase, soluble amino-acid accumulation, and altered total-chromium partitioning between operational liquid supernatant and combined biomass/shavings residue fractions in 0.1% and 1% feed arms (Wieczorek et al., 2023), while preserving unresolved mass-balance, yeast-extract background, censored Cr(VI) (<=1 mg/L or <=1 mg/kg), and pH-control limitations.
+  scope: REPRESENTATIVE_EXAMPLE
+  mechanism_ref: ips21_matrix_bioconversion_and_chromium_partitioning
+  nodes:
+  - id: yarrowia_rim101_ph_regulator
+    label: Yarrowia lipolytica pH-response transcription factor PacC/RIM101
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: RIM101
+    description: Ambient-pH-responsive zinc-finger transcription factor RIM101 (reviewed Swiss-Prot UniProtKB:P78978 in Yarrowia lipolytica reference proteome UP000001300) governing pH-dependent expression of alkaline protease XPR2 and acid protease AXP1.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:P78978
+      entry_name: PACC_YARLI
+      protein_name: pH-response transcription factor pacC/RIM101
+      gene_symbol: RIM101
+      entry_status: SWISS_PROT
+      target_organism:
+        id: NCBITaxon:284591
+        label: Yarrowia lipolytica (strain CLIB 122 / E 150)
+      reference_proteome_id: UP000001300
+      interpro_ids:
+      - InterPro:IPR050806
+      - InterPro:IPR013087
+      - InterPro:IPR036236
+      pfam_ids:
+      - Pfam:PF00096
+      go_terms:
+      - id: GO:0005737
+        label: cytoplasm
+      - id: GO:0005634
+        label: nucleus
+      - id: GO:0045944
+        label: positive regulation of transcription by RNA polymerase II
+      functional_role: Ambient-pH-responsive zinc-finger transcription factor (PacC/RIM101) activating alkaline-expressed genes (including XPR2) and repressing acid-expressed genes (AXP1) as culture pH rises.
+      annotation_note: Grounded to reviewed Swiss-Prot entry UniProtKB:P78978 (PACC_YARLI; gene RIM101 / YALI0B13640g) in Yarrowia lipolytica reference proteome UP000001300 (strain CLIB 122 / E 150, NCBITaxon:284591), representing pH-dependent regulation of extracellular protease secretion in Yarrowia lipolytica (NCBITaxon:4952).
+      evidence:
+      - source_ref: wieczorek2023
+        supports: partial
+        explanation: Wieczorek et al. (2023) observed coupled shifts in culture pH, protease activity, and amino-acid accumulation across 0.1-4% shavings loadings over 48 h (Figures 1-3), without directly assaying RIM101 transcription or pH-matched enzyme controls.
+      - source_ref: uniprot_yarrowia_lipolytica_proteases
+        supports: partial
+        explanation: Reviewed Swiss-Prot entry UniProtKB:P78978 (PACC_YARLI) in Yarrowia lipolytica reference proteome UP000001300 (strain CLIB 122 / E 150, NCBITaxon:284591) encodes pH-response transcription factor pacC/RIM101 (GO:0045944 positive regulation of transcription by RNA polymerase II), annotated as regulating synthesis and secretion of XPR2 and AXP1 in response to ambient pH.
+  - id: yarrowia_xpr2_axp1_extracellular_proteases
+    label: Yarrowia lipolytica secreted extracellular proteases XPR2 and AXP1
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: XPR2/AXP1
+    description: Secreted alkaline serine endopeptidase XPR2 (EC 3.4.21.62; reviewed Swiss-Prot UniProtKB:P09230) and acid aspartic endopeptidase AXP1 (EC 3.4.23.-; reviewed Swiss-Prot UniProtKB:Q92389) representing extracellular proteolytic activity assayed in Yarrowia lipolytica IPS21 cultures.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:P09230
+      entry_name: AEP_YARLI
+      protein_name: Alkaline extracellular protease
+      gene_symbol: XPR2
+      entry_status: SWISS_PROT
+      target_organism:
+        id: NCBITaxon:284591
+        label: Yarrowia lipolytica (strain CLIB 122 / E 150)
+      reference_proteome_id: UP000001300
+      ec_numbers:
+      - EC:3.4.21.62
+      interpro_ids:
+      - InterPro:IPR034193
+      - InterPro:IPR000209
+      - InterPro:IPR036852
+      - InterPro:IPR023827
+      - InterPro:IPR022398
+      - InterPro:IPR023828
+      - InterPro:IPR050131
+      - InterPro:IPR015500
+      - InterPro:IPR010259
+      pfam_ids:
+      - Pfam:PF05922
+      - Pfam:PF00082
+      go_terms:
+      - id: GO:0005576
+        label: extracellular region
+      - id: GO:0004252
+        label: serine-type endopeptidase activity
+      - id: GO:0006508
+        label: proteolysis
+      functional_role: Major secreted subtilisin-family alkaline extracellular serine endopeptidase (XPR2; EC 3.4.21.62) hydrolyzing proteinaceous substrates under neutral-to-alkaline culture conditions.
+      annotation_note: Grounded to reviewed Swiss-Prot entry UniProtKB:P09230 (AEP_YARLI; gene XPR2 / YALI0F31889g) in Yarrowia lipolytica reference proteome UP000001300 (NCBITaxon:284591), representing species-rank Yarrowia lipolytica (NCBITaxon:4952) strain IPS21 extracellular protease activity in Wieczorek et al. (2023).
+      evidence:
+      - source_ref: wieczorek2023
+        supports: partial
+        explanation: Wieczorek et al. (2023) measured extracellular protease activity, soluble amino-acid release, and culture alkalinization (from initial pH 7.07) in Yarrowia lipolytica IPS21 cultures incubated with 0.1-4% (wt/wt) wet-blue chrome-tanned leather shavings in modified YPG medium (Tables 1-2, Figures 1-3); individual protease genes (XPR2, AXP1) were not separately quantified or knocked out.
+      - source_ref: uniprot_yarrowia_lipolytica_proteases
+        supports: partial
+        explanation: Reviewed Swiss-Prot entry UniProtKB:P09230 (AEP_YARLI) in Yarrowia lipolytica reference proteome UP000001300 (strain CLIB 122 / E 150, NCBITaxon:284591) encodes Alkaline extracellular protease XPR2 (EC 3.4.21.62; GO:0005576 extracellular region; GO:0004252 serine-type endopeptidase activity; GO:0006508 proteolysis) as a species-level reference-proteome proxy for isolate IPS21.
+    - uniprot_accession: UniProtKB:Q92389
+      entry_name: AXP1_YARLI
+      protein_name: Acid extracellular protease
+      gene_symbol: AXP1
+      entry_status: SWISS_PROT
+      target_organism:
+        id: NCBITaxon:284591
+        label: Yarrowia lipolytica (strain CLIB 122 / E 150)
+      reference_proteome_id: UP000001300
+      ec_numbers:
+      - EC:3.4.23.-
+      interpro_ids:
+      - InterPro:IPR001461
+      - InterPro:IPR001969
+      - InterPro:IPR033121
+      - InterPro:IPR021109
+      - InterPro:IPR033876
+      pfam_ids:
+      - Pfam:PF00026
+      go_terms:
+      - id: GO:0009277
+        label: fungal-type cell wall
+      - id: GO:0004190
+        label: aspartic-type endopeptidase activity
+      - id: GO:0031505
+        label: fungal-type cell wall organization
+      - id: GO:0016485
+        label: protein processing
+      functional_role: Secreted pepsin-family acid extracellular aspartic endopeptidase (AXP1; EC 3.4.23.-) hydrolyzing extracellular proteins under acidic conditions.
+      annotation_note: Grounded to reviewed Swiss-Prot entry UniProtKB:Q92389 (AXP1_YARLI; gene AXP1 / YALI0B05654g) in Yarrowia lipolytica reference proteome UP000001300 (strain CLIB 122 / E 150, NCBITaxon:284591), representing the complementary acidic secreted protease of Yarrowia lipolytica (NCBITaxon:4952) as acidic shavings extracts (pH 3.09) transition toward neutral/alkaline culture pH in Wieczorek et al. (2023).
+      evidence:
+      - source_ref: wieczorek2023
+        supports: partial
+        explanation: Wieczorek et al. (2023) documented that uninoculated wet-blue shavings (aqueous extract pH 3.09) acidified modified YPG medium whereas Yarrowia lipolytica IPS21 cultures exhibited proteolytic activity and shifted pH upward over 48 h (Figures 1-3); specific contributions of acidic (AXP1) versus alkaline (XPR2) secreted proteases were not resolved.
+      - source_ref: uniprot_yarrowia_lipolytica_proteases
+        supports: partial
+        explanation: Reviewed Swiss-Prot entry UniProtKB:Q92389 (AXP1_YARLI) in Yarrowia lipolytica reference proteome UP000001300 (strain CLIB 122 / E 150, NCBITaxon:284591) encodes Acid extracellular protease AXP1 (EC 3.4.23.-; GO:0004190 aspartic-type endopeptidase activity; GO:0016485 protein processing) as a species-level reference-proteome proxy for isolate IPS21.
+  - id: wet_blue_chrome_tanned_shavings_matrix
+    label: Wet-blue chromium-tanned leather shavings in modified YPG medium (0.1-4% wt/wt)
+    node_type: MATERIAL_OR_PHASE
+    description: Polish wet-blue tannery shavings (1-5 mm particles, 15% moisture, aqueous extract pH 3.09, literature-attributed 4.4 +/- 0.2% Cr2O3) incubated at 0.1-4% (wt/wt) in 40 mL modified YPG medium (containing yeast extract that also supplies amino acids) at 30 C and 190 rpm for 48 h.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: proteolytic_amino_acid_release_and_alkalinization
+    label: Proteolytic peptide/amino-acid release and culture alkalinization relative to uninoculated shavings
+    node_type: ENVIRONMENTAL_CONDITION
+    description: Increased soluble amino-acid concentrations and upward culture pH shift in living Yarrowia lipolytica IPS21 treatments compared with uninoculated shavings controls that acidified the medium (Figures 1-3, Tables 1-2), with yeast-extract nutrients contributing background amino acids.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: operational_liquid_and_combined_solid_chromium_partitioning
+    label: Conditional total-chromium redistribution between supernatant and combined biomass/shavings residue
+    node_type: CHEMICAL_ENTITY
+    description: Altered operational total-chromium concentrations in liquid supernatant and combined biomass-plus-residual-shavings solid fractions for the 0.1% and 1% feed arms (Figure 4; larger supernatant total-Cr and smaller combined solid-residue value in 1% yeast vs 1% uninoculated treatment, with Cr(VI) censored at <=1 mg/L liquid and <=1 mg/kg solid in Supplement 2), without a closed mass balance, separated biomass vs feed solid analysis, or isolated chromium product.
+    protein_grounding_status: NOT_APPLICABLE
+  edges:
+  - source: yarrowia_rim101_ph_regulator
+    target: yarrowia_xpr2_axp1_extracellular_proteases
+    predicate: positively_regulates
+    relationship: ambient-pH-dependent transcriptional regulation of extracellular protease synthesis and secretion
+    description: PacC/RIM101 mediates pH-responsive transcriptional regulation of Yarrowia lipolytica extracellular proteases XPR2 and AXP1.
+    evidence:
+    - source_ref: uniprot_yarrowia_lipolytica_proteases
+      supports: partial
+      explanation: Reviewed Swiss-Prot entry UniProtKB:P78978 (PACC_YARLI) in Yarrowia lipolytica reference strain CLIB 122 / E 150 documents that RIM101 activates alkaline-expressed genes (XPR2) and represses acid-expressed genes (AXP1) in response to ambient pH; support is partial for isolate IPS21 because RIM101 was not directly assayed in Wieczorek et al. (2023).
+  - source: yarrowia_xpr2_axp1_extracellular_proteases
+    target: wet_blue_chrome_tanned_shavings_matrix
+    predicate: hydrolyzes
+    relationship: extracellular proteolytic attack on collagenous leather shavings
+    description: Secreted Yarrowia lipolytica proteases hydrolyze protein components in the modified-YPG plus wet-blue leather shavings culture system.
+    evidence:
+    - source_ref: wieczorek2023
+      supports: partial
+      explanation: Figures 1-3 and Tables 1-2 show protease activity and elevated soluble amino acids in Yarrowia lipolytica IPS21 cultures with 0.1-4% shavings; support is partial because yeast extract in modified YPG also supplies protein/amino acids and Table 1's biomass-based degradation-rate formula does not isolate collagen hydrolysis from yeast growth.
+  - source: wet_blue_chrome_tanned_shavings_matrix
+    target: proteolytic_amino_acid_release_and_alkalinization
+    predicate: drives
+    relationship: culture-associated proteolysis and deamination shifting medium pH upward
+    description: Bioconversion of the protein-rich culture and shavings matrix increases soluble amino acids and shifts medium pH upward relative to uninoculated shavings flasks.
+    evidence:
+    - source_ref: wieczorek2023
+      supports: support
+      explanation: Figures 1-3 and Table 2 document higher soluble amino-acid concentrations and more alkaline endpoint pH in IPS21-inoculated shavings treatments than in uninoculated shavings treatments after 48 h at 30 C.
+  - source: proteolytic_amino_acid_release_and_alkalinization
+    target: operational_liquid_and_combined_solid_chromium_partitioning
+    predicate: modulates
+    relationship: conditional redistribution of total chromium between liquid supernatant and combined biomass/shavings solid residue
+    description: Matrix proteolysis and culture pH shifts alter total-chromium partitioning between the supernatant and the combined solid residue in the 0.1% and 1% shavings assays.
+    evidence:
+    - source_ref: wieczorek2023
+      supports: partial
+      explanation: Figure 4 reports a higher supernatant total-Cr concentration and lower combined solid-residue value for 1% shavings with IPS21 than for 1% uninoculated shavings; support is partial because Figure 4 stacks g/kg values without fraction masses or liquid density, Results text misassigns 10.31 g/kg between 0.1% yeast and 1% uninoculated arms, solid residues combine yeast biomass with residual shavings, and no pH-matched abiotic or enzyme-inactivated control separates proteolytic release from pH-driven chromium speciation changes.
 curation_history:
 - timestamp: '2026-10-15T05:08:31.055559Z'
   curator: Codex (GPT-6; codex)
   action: CREATE
-  summary: Created a distinct leather-shavings secondary-resource record from the complete Wieczorek2023
-    original and supplements, retaining conditional yeast-associated matrix conversion, chromium partitioning,
-    censored Cr(VI), source discrepancies and control limits without a recovery-yield or deployment claim.
+  summary: Created a distinct leather-shavings secondary-resource record from the complete Wieczorek2023 original and supplements, retaining conditional yeast-associated matrix conversion, chromium partitioning, censored Cr(VI), source discrepancies and control limits without a recovery-yield or deployment claim.
+- timestamp: '2026-11-10T05:40:33Z'
+  curator: marcin
+  action: edit
+  summary: Add ips21_proteolytic_leather_matrix_bioconversion_and_cr_partitioning_graph causal graph and ground ips21_matrix_bioconversion_and_chromium_partitioning to reviewed Yarrowia lipolytica Swiss-Prot entries (UniProtKB:P09230, UniProtKB:Q92389, UniProtKB:P78978)
 history_refs:
 - history/records/chromium-tanned-leather-shavings/2026-10-15T050839Z-codex-a4deea.yaml
+- history/records/chromium-tanned-leather-shavings/2026-11-10T054033Z-marcin-dd04cd.yaml

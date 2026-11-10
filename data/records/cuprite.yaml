@@ -1,32 +1,18 @@
 id: cmmmech:cuprite
 name: Cuprite
 material_kind: mineral
-description: >-
-  Cuprite is the cubic copper(I) oxide mineral Cu2O, listed as grandfathered
-  in the September 2026 IMA compilation. It is distinct from elemental copper,
-  tenorite (CuO), copper oxalates and heterogeneous copper ores. The experiment
-  below used a commercial Cu2O preparation, not a natural ore specimen. No
-  criticality designation is inherited from copper.
+description: Cuprite is the cubic copper(I) oxide mineral Cu2O, listed as grandfathered in the September 2026 IMA compilation. It is distinct from elemental copper, tenorite (CuO), copper oxalates and heterogeneous copper ores. The experiment below used a commercial Cu2O preparation, not a natural ore specimen. No criticality designation is inherited from copper.
 sources:
 - id: ima_2026_09
-  title: >-
-    IMA-CNMNC. The New IMA List of Minerals, September 2026. Cuprite row,
-    PDF page 52; introductory status definitions. G is grandfathered;
-    1845 is an original-description year, not an IMA approval number.
+  title: IMA-CNMNC. The New IMA List of Minerals, September 2026. Cuprite row, PDF page 52; introductory status definitions. G is grandfathered; 1845 is an original-description year, not an IMA approval number.
   url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
   accessed_on: '2026-10-14'
 - id: handbook_cuprite
-  title: >-
-    Handbook of Mineralogy. Cuprite, Cu2O. Single-page species description,
-    cubic structure, powder reference and geological occurrence.
+  title: Handbook of Mineralogy. Cuprite, Cu2O. Single-page species description, cubic structure, powder reference and geological occurrence.
   url: https://www.handbookofmineralogy.org/pdfs/cuprite.pdf
   accessed_on: '2026-10-14'
 - id: fomina2005
-  title: >-
-    Fomina et al. (2005). Role of Oxalic Acid Overexcretion in Transformations
-    of Toxic Metal Minerals by Beauveria caledonica. Applied and Environmental
-    Microbiology 71:371-381. Complete article, Methods and Results,
-    Figures 1-7; Cu2O-specific Figures 1, 2C, 3C and shared Figure 5B.
+  title: Fomina et al. (2005). Role of Oxalic Acid Overexcretion in Transformations of Toxic Metal Minerals by Beauveria caledonica. Applied and Environmental Microbiology 71:371-381. Complete article, Methods and Results, Figures 1-7; Cu2O-specific Figures 1, 2C, 3C and shared Figure 5B.
   url: https://doi.org/10.1128/AEM.71.1.371-381.2005
   accessed_on: '2026-10-14'
 - id: ncbi_caledonica
@@ -34,113 +20,374 @@ sources:
   url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=38006
   accessed_on: '2026-10-14'
 - id: reference_its
-  title: >-
-    GenBank U19043.1. Beauveria caledonica ribosomal and ITS sequence,
-    630 bases; historical reference sequence used for the study's comparison,
-    not a deposition of its experimental isolate.
+  title: GenBank U19043.1. Beauveria caledonica ribosomal and ITS sequence, 630 bases; historical reference sequence used for the study's comparison, not a deposition of its experimental isolate.
   url: https://www.ncbi.nlm.nih.gov/nuccore/U19043.1
   accessed_on: '2026-10-14'
+- id: uniprot_beauveria_oxalate_citrate
+  title: 'UniProtKB reference proteome UP000002762 (Beauveria bassiana strain ARSEF 2860, NCBITaxon:655819): Oxaloacetate acetylhydrolase (BBA_06346, UniProtKB:J4UKL8), Pyruvate carboxylase (BBA_04309, UniProtKB:J5JXL6), and Citrate synthase (BBA_06310, UniProtKB:J5JPA1).'
+  url: https://www.uniprot.org/uniprotkb?query=(proteome:UP000002762)+AND+(accession:J4UKL8+OR+accession:J5JXL6+OR+accession:J5JPA1)
+  accessed_on: '2026-11-10'
 mechanisms:
 - id: caledonica_associated_cu2o_alteration
   name: Fungal-associated alteration of commercial cuprite-form copper oxide
   process: bioleaching
+  description: Laboratory cultures inoculated with Beauveria caledonica cleared an initially opaque Cu2O-containing agar and produced organic acids in a separate liquid Cu2O experiment. The authors also report copper oxalate hydrate formation from the copper substrates. These observations support culture-associated alteration with a proposed ligand-promoted pathway; they do not isolate oxalate as a necessary cause, determine a copper oxidation pathway, or establish complete copper extraction or an isolated product recovery yield. No industrial deployment was tested.
+  context: The source's unnamed isolate came from lawn soil in the United Kingdom via the CEH Merlewood collection. An approximately 550-base ITS sequence was reported as 99 percent similar to U19043; that historical reference accession does not identify the experimental isolate. Commercial BDH Cu2O was heat sterilized at 95 degrees C for 36-48 hours. Its starting phase purity and particle size were not reported; a starting-material diffraction check described for pyromorphite must not be transferred. Modified Melin-Norkrans medium contained, per litre, glucose 10 g, (NH4)2HPO4 0.5 g, KH2PO4 0.3 g, MgSO4.7H2O 0.14 g, CaCl2.6H2O 0.05 g, NaCl 0.025 g, glutamic acid 0.001 g and thiamine 0.0001 g; solid medium additionally contained agar 14 g. The initial pH was adjusted to 5.5 before autoclaving. Agar assays used 20 mL medium in 90-mm dishes with 7.5 mM Cu2O, equivalent to 15 mM copper atoms, a cellophane membrane and a 7-mm inoculum disc from a culture at least 14 days old. Incubation was
+    at 25 degrees C with colony and clear-zone monitoring over two months. Methods specify at least three replicates; Figure 1 states at least four determinations. Separately, static liquid cultures used 12 mL medium in 50-mL flasks with the same Cu2O loading and inoculum at 25 degrees C for 60 days, with at least three replicates. Liquid organic acids were assayed by HPLC and oxalate also by an enzymatic method. A Cu2O-specific pH trajectory and matched acid-only, killed-cell or pH-matched controls were not reported. Mineral-free inoculated medium was a comparison.
   microbial: true
   organisms:
   - id: NCBITaxon:38006
     label: Beauveria caledonica
-  description: >-
-    Laboratory cultures inoculated with Beauveria caledonica cleared an
-    initially opaque Cu2O-containing agar and produced organic acids in a
-    separate liquid Cu2O experiment. The authors also report copper oxalate
-    hydrate formation from the copper substrates. These observations support
-    culture-associated alteration with a proposed ligand-promoted pathway;
-    they do not isolate oxalate as a necessary cause, determine a copper
-    oxidation pathway, or establish complete copper extraction or an isolated
-    product recovery yield. No industrial deployment was tested.
-  context: >-
-    The source's unnamed isolate came from lawn soil in the United Kingdom
-    via the CEH Merlewood collection. An approximately 550-base ITS sequence
-    was reported as 99 percent similar to U19043; that historical reference
-    accession does not identify the experimental isolate. Commercial BDH
-    Cu2O was heat sterilized at 95 degrees C for 36-48 hours. Its starting
-    phase purity and particle size were not reported; a starting-material
-    diffraction check described for pyromorphite must not be transferred.
-    Modified Melin-Norkrans medium contained, per litre, glucose 10 g,
-    (NH4)2HPO4 0.5 g, KH2PO4 0.3 g, MgSO4.7H2O 0.14 g,
-    CaCl2.6H2O 0.05 g, NaCl 0.025 g, glutamic acid 0.001 g and
-    thiamine 0.0001 g; solid medium additionally contained agar 14 g.
-    The initial pH was adjusted to 5.5 before autoclaving. Agar assays used
-    20 mL medium in 90-mm dishes with 7.5 mM Cu2O, equivalent to 15 mM
-    copper atoms, a cellophane membrane and a 7-mm inoculum disc from a
-    culture at least 14 days old. Incubation was at 25 degrees C with
-    colony and clear-zone monitoring over two months. Methods specify at
-    least three replicates; Figure 1 states at least four determinations.
-    Separately, static liquid cultures used 12 mL medium in 50-mL flasks
-    with the same Cu2O loading and inoculum at 25 degrees C for 60 days,
-    with at least three replicates. Liquid organic acids were assayed by
-    HPLC and oxalate also by an enzymatic method. A Cu2O-specific pH
-    trajectory and matched acid-only, killed-cell or pH-matched controls
-    were not reported. Mineral-free inoculated medium was a comparison.
+  protein_examples:
+  - uniprot_accession: UniProtKB:J4UKL8
+    entry_name: J4UKL8_BEAB2
+    protein_name: Oxaloacetate acetylhydrolase
+    gene_symbol: BBA_06346
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:655819
+      label: Beauveria bassiana (strain ARSEF 2860)
+    reference_proteome_id: UP000002762
+    interpro_ids:
+    - InterPro:IPR039556
+    - InterPro:IPR018523
+    - InterPro:IPR015813
+    - InterPro:IPR040442
+    pfam_ids:
+    - Pfam:PF13714
+    go_terms:
+    - id: GO:0004451
+      label: isocitrate lyase activity
+    - id: GO:0046421
+      label: methylisocitrate lyase activity
+    functional_role: Oxaloacetate acetylhydrolase (OAH; EC 3.7.1.1 family; BBA_06346) catalyzing cytoplasmic hydrolysis of oxaloacetate into oxalate and acetate.
+    annotation_note: Grounded to congeneric Beauveria bassiana ARSEF 2860 reference proteome UP000002762 (NCBITaxon:655819; BBA_06346, UniProtKB:J4UKL8), representing genus-level oxalic-acid biosynthesis for the unnamed UK soil isolate of Beauveria caledonica (NCBITaxon:38006, which has 0 metabolic enzyme entries in UniProtKB) in Fomina et al. (2005). This unreviewed TrEMBL entry is classified as Oxaloacetate hydrolase (InterPro:IPR039556) and carries automated superfamily-level GO projections (GO:0004451 isocitrate lyase activity; GO:0046421 methylisocitrate lyase activity) inherited from the ICL/PEPM (InterPro:IPR018523 / Pfam:PF13714) structural superfamily.
+    evidence:
+    - source_ref: fomina2005
+      supports: partial
+      explanation: Figure 3C of Fomina et al. (2005) quantified oxalic acid (alongside citric acid) in separate 60-day static liquid cultures of Beauveria caledonica containing 7.5 mM commercial Cu2O (15 mM Cu atoms), and Figure 5B assigned copper oxalate hydrate (moolooite, PDF 21-0297) under a shared copper-phosphate/cuprite caption; OAH enzyme activity or gene expression was not directly assayed.
+    - source_ref: uniprot_beauveria_oxalate_citrate
+      supports: partial
+      explanation: UniProtKB:J4UKL8 (J4UKL8_BEAB2, BBA_06346) in congeneric Beauveria bassiana reference proteome UP000002762 (NCBITaxon:655819) encodes Oxaloacetate acetylhydrolase (InterPro:IPR039556; InterPro:IPR018523; Pfam:PF13714).
+  - uniprot_accession: UniProtKB:J5JXL6
+    entry_name: J5JXL6_BEAB2
+    protein_name: Pyruvate carboxylase
+    gene_symbol: BBA_04309
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:655819
+      label: Beauveria bassiana (strain ARSEF 2860)
+    reference_proteome_id: UP000002762
+    ec_numbers:
+    - EC:6.4.1.1
+    interpro_ids:
+    - InterPro:IPR013785
+    - InterPro:IPR011761
+    - InterPro:IPR005481
+    - InterPro:IPR001882
+    - InterPro:IPR011764
+    - InterPro:IPR005482
+    - InterPro:IPR000089
+    - InterPro:IPR003379
+    - InterPro:IPR005479
+    - InterPro:IPR055268
+    - InterPro:IPR016185
+    - InterPro:IPR000891
+    - InterPro:IPR005930
+    - InterPro:IPR011054
+    - InterPro:IPR011053
+    pfam_ids:
+    - Pfam:PF02785
+    - Pfam:PF00289
+    - Pfam:PF00364
+    - Pfam:PF02786
+    - Pfam:PF00682
+    - Pfam:PF02436
+    ncbifam_ids:
+    - NCBIfam:NF006761
+    - NCBIfam:NF009554
+    - NCBIfam:TIGR01235
+    go_terms:
+    - id: GO:0005737
+      label: cytoplasm
+    - id: GO:0005524
+      label: ATP binding
+    - id: GO:0004075
+      label: biotin carboxylase activity
+    - id: GO:0046872
+      label: metal ion binding
+    - id: GO:0004736
+      label: pyruvate carboxylase activity
+    - id: GO:0006094
+      label: gluconeogenesis
+    functional_role: Biotin-dependent cytoplasmic pyruvate carboxylase (EC 6.4.1.1; BBA_04309) catalyzing ATP-dependent carboxylation of pyruvate to oxaloacetate, supplying the direct precursor for both oxalate and citrate.
+    annotation_note: Grounded to congeneric Beauveria bassiana ARSEF 2860 reference proteome UP000002762 (NCBITaxon:655819; BBA_04309, UniProtKB:J5JXL6), representing anaplerotic oxaloacetate supply for oxalate and citrate excretion by Beauveria caledonica (NCBITaxon:38006) on 10 g/L D-glucose in Fomina et al. (2005).
+    evidence:
+    - source_ref: fomina2005
+      supports: partial
+      explanation: Fomina et al. (2005) grew Beauveria caledonica in Modified Melin-Norkrans medium with 10 g/L glucose and 7.5 mM Cu2O and measured secreted oxalate and citrate by HPLC and enzymatic assay (Figure 3C), without assaying pyruvate carboxylase directly.
+    - source_ref: uniprot_beauveria_oxalate_citrate
+      supports: partial
+      explanation: UniProtKB:J5JXL6 (J5JXL6_BEAB2, BBA_04309) in congeneric Beauveria bassiana reference proteome UP000002762 (NCBITaxon:655819) encodes Pyruvate carboxylase (EC 6.4.1.1; GO:0004736 pyruvate carboxylase activity).
+  - uniprot_accession: UniProtKB:J5JPA1
+    entry_name: J5JPA1_BEAB2
+    protein_name: Citrate synthase
+    gene_symbol: BBA_06310
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:655819
+      label: Beauveria bassiana (strain ARSEF 2860)
+    reference_proteome_id: UP000002762
+    interpro_ids:
+    - InterPro:IPR016142
+    - InterPro:IPR016143
+    - InterPro:IPR002020
+    - InterPro:IPR019810
+    - InterPro:IPR036969
+    pfam_ids:
+    - Pfam:PF00285
+    ncbifam_ids:
+    - NCBIfam:NF007128
+    go_terms:
+    - id: GO:0005759
+      label: mitochondrial matrix
+    - id: GO:0050440
+      label: 2-methylcitrate synthase activity
+    - id: GO:0036440
+      label: citrate synthase activity
+    - id: GO:0005975
+      label: carbohydrate metabolic process
+    - id: GO:0019543
+      label: propionate catabolic process
+    - id: GO:0006099
+      label: tricarboxylic acid cycle
+    functional_role: Citrate synthase (BBA_06310; GO:0036440) catalyzing condensation of acetyl-CoA and oxaloacetate to citrate in the tricarboxylic acid / organic-acid excretion pathway.
+    annotation_note: Grounded to congeneric Beauveria bassiana ARSEF 2860 reference proteome UP000002762 (NCBITaxon:655819; BBA_06310, UniProtKB:J5JPA1), representing citrate biosynthesis co-excreted with oxalate in liquid Cu2O cultures of Beauveria caledonica (NCBITaxon:38006) in Fomina et al. (2005). This unreviewed TrEMBL entry in Pfam:PF00285 carries dual citrate synthase (GO:0036440) and 2-methylcitrate synthase (GO:0050440) functional annotations.
+    evidence:
+    - source_ref: fomina2005
+      supports: partial
+      explanation: Figure 3C of Fomina et al. (2005) demonstrates citric acid and oxalic acid accumulation in static liquid Cu2O cultures of Beauveria caledonica after 60 days at 25 C; individual citrate synthase genes were not assayed or mutated.
+    - source_ref: uniprot_beauveria_oxalate_citrate
+      supports: partial
+      explanation: UniProtKB:J5JPA1 (J5JPA1_BEAB2, BBA_06310) in congeneric Beauveria bassiana reference proteome UP000002762 (NCBITaxon:655819) encodes Citrate synthase (GO:0036440 citrate synthase activity; GO:0006099 tricarboxylic acid cycle).
   evidence:
   - source_ref: fomina2005
     supports: support
-    explanation: >-
-      Figure 1B and Results describe full-plate clearing around fungal growth
-      on Cu2O-containing agar. This is the visual solubilization criterion
-      used by the authors, not a complete copper mass balance or measured
-      100-percent metal recovery. Figure 1A is a fungal biomass tolerance
-      ratio against mineral-free medium, not an extraction yield. Figure 2C
-      shows Cu2O-associated mycelial morphology after three weeks. Figure 3C
-      demonstrates oxalate and citrate production in the separate liquid
-      experiment; Figure 3A shows acids in the mineral-free fungal culture.
+    explanation: Figure 1B and Results describe full-plate clearing around fungal growth on Cu2O-containing agar. This is the visual solubilization criterion used by the authors, not a complete copper mass balance or measured 100-percent metal recovery. Figure 1A is a fungal biomass tolerance ratio against mineral-free medium, not an extraction yield. Figure 2C shows Cu2O-associated mycelial morphology after three weeks. Figure 3C demonstrates oxalate and citrate production in the separate liquid experiment; Figure 3A shows acids in the mineral-free fungal culture.
   - source_ref: fomina2005
     supports: partial
-    explanation: >-
-      Figure 5B and the Results assign copper oxalate hydrate (moolooite,
-      PDF 21-0297) to products from copper phosphate or cuprite. The displayed
-      trace has a shared substrate caption rather than a separately labelled
-      cuprite trace. It therefore supports the authors' reported product
-      assignment with limited arm-specific traceability, not a quantified
-      cuprite-to-pure-moolooite conversion, hydration measurement or yield.
-      Copper-phosphate-arm electron microscopy, X-ray absorption measurements
-      and biomass copper quantities are not transferred to the Cu2O arm.
+    explanation: Figure 5B and the Results assign copper oxalate hydrate (moolooite, PDF 21-0297) to products from copper phosphate or cuprite. The displayed trace has a shared substrate caption rather than a separately labelled cuprite trace. It therefore supports the authors' reported product assignment with limited arm-specific traceability, not a quantified cuprite-to-pure-moolooite conversion, hydration measurement or yield. Copper-phosphate-arm electron microscopy, X-ray absorption measurements and biomass copper quantities are not transferred to the Cu2O arm.
   - source_ref: fomina2005
     supports: partial
-    explanation: >-
-      Organic acid production and the reported oxalate product are consistent
-      with the proposed ligand-promoted pathway, but do not separate oxalate,
-      citrate, proton attack and other culture effects. The abiotic oxalic
-      acid dissolution comparison in this paper concerns phosphate substrates,
-      not Cu2O. Neither a Cu(I)-to-Cu(II) electron balance nor a causal enzyme
-      experiment is provided for cuprite. The endpoint of the Figure 1
-      summary is not explicitly stated beyond the incubation protocol.
+    explanation: Organic acid production and the reported oxalate product are consistent with the proposed ligand-promoted pathway, but do not separate oxalate, citrate, proton attack and other culture effects. The abiotic oxalic acid dissolution comparison in this paper concerns phosphate substrates, not Cu2O. Neither a Cu(I)-to-Cu(II) electron balance nor a causal enzyme experiment is provided for cuprite. The endpoint of the Figure 1 summary is not explicitly stated beyond the incubation protocol.
   - source_ref: ncbi_caledonica
     supports: context_only
-    explanation: >-
-      The authority verifies the species label and TaxID, not the identity
-      or activity of the unnamed experimental isolate.
+    explanation: The authority verifies the species label and TaxID, not the identity or activity of the unnamed experimental isolate.
   - source_ref: reference_its
     supports: context_only
-    explanation: >-
-      U19043.1 is a historical species reference whose direct-submission
-      entry gives a National Taiwan University address. No specimen-country
-      qualifier is supplied. The study compared its UK isolate to this
-      accession; it did not deposit that isolate under this identifier.
+    explanation: U19043.1 is a historical species reference whose direct-submission entry gives a National Taiwan University address. No specimen-country qualifier is supplied. The study compared its UK isolate to this accession; it did not deposit that isolate under this identifier.
+causal_graphs:
+- id: caledonica_oxalate_citrate_cuprite_alteration_graph
+  name: Beauveria caledonica oxalic and citric acid excretion, commercial Cu2O agar clearing, and moolooite product assignment
+  description: Causal pathway linking congeneric Beauveria pyruvate carboxylase (UniProtKB:J5JXL6), oxaloacetate acetylhydrolase (UniProtKB:J4UKL8), and citrate synthase (UniProtKB:J5JPA1) to oxalic and citric acid excretion in 10 g/L glucose Modified Melin-Norkrans medium, full-plate visual clearing of 7.5 mM commercial Cu2O agar, and XRD assignment of copper oxalate hydrate (moolooite, PDF 21-0297, under a shared copper-phosphate/cuprite caption in Figure 5B) in Beauveria caledonica cultures (Fomina et al., 2005), without isolating oxalate necessity, resolving the Cu(I)-to-Cu(II) redox balance, or transferring copper-phosphate-arm microscopy/XAS/sorption metrics.
+  scope: REPRESENTATIVE_EXAMPLE
+  mechanism_ref: caledonica_associated_cu2o_alteration
+  nodes:
+  - id: beauveria_pyc_oah_cit_organic_acid_enzymes
+    label: Beauveria pyruvate carboxylase, oxaloacetate acetylhydrolase, and citrate synthase enzymes
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: BBA_04309/BBA_06346/BBA_06310
+    description: Pyruvate carboxylase (EC 6.4.1.1; UniProtKB:J5JXL6), oxaloacetate acetylhydrolase (UniProtKB:J4UKL8), and citrate synthase (UniProtKB:J5JPA1) in congeneric Beauveria bassiana reference proteome UP000002762, representing organic-acid biosynthesis from D-glucose in Beauveria caledonica.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:J4UKL8
+      entry_name: J4UKL8_BEAB2
+      protein_name: Oxaloacetate acetylhydrolase
+      gene_symbol: BBA_06346
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:655819
+        label: Beauveria bassiana (strain ARSEF 2860)
+      reference_proteome_id: UP000002762
+      interpro_ids:
+      - InterPro:IPR039556
+      - InterPro:IPR018523
+      - InterPro:IPR015813
+      - InterPro:IPR040442
+      pfam_ids:
+      - Pfam:PF13714
+      go_terms:
+      - id: GO:0004451
+        label: isocitrate lyase activity
+      - id: GO:0046421
+        label: methylisocitrate lyase activity
+      functional_role: Oxaloacetate acetylhydrolase (OAH; EC 3.7.1.1 family; BBA_06346) catalyzing cytoplasmic hydrolysis of oxaloacetate into oxalate and acetate.
+      annotation_note: Grounded to congeneric Beauveria bassiana ARSEF 2860 reference proteome UP000002762 (NCBITaxon:655819; BBA_06346, UniProtKB:J4UKL8), representing genus-level oxalic-acid biosynthesis for the unnamed UK soil isolate of Beauveria caledonica (NCBITaxon:38006, which has 0 metabolic enzyme entries in UniProtKB) in Fomina et al. (2005). This unreviewed TrEMBL entry is classified as Oxaloacetate hydrolase (InterPro:IPR039556) and carries automated superfamily-level GO projections (GO:0004451 isocitrate lyase activity; GO:0046421 methylisocitrate lyase activity) inherited from the ICL/PEPM (InterPro:IPR018523 / Pfam:PF13714) structural superfamily.
+      evidence:
+      - source_ref: fomina2005
+        supports: partial
+        explanation: Figure 3C of Fomina et al. (2005) quantified oxalic acid (alongside citric acid) in separate 60-day static liquid cultures of Beauveria caledonica containing 7.5 mM commercial Cu2O (15 mM Cu atoms), and Figure 5B assigned copper oxalate hydrate (moolooite, PDF 21-0297) under a shared copper-phosphate/cuprite caption; OAH enzyme activity or gene expression was not directly assayed.
+      - source_ref: uniprot_beauveria_oxalate_citrate
+        supports: partial
+        explanation: UniProtKB:J4UKL8 (J4UKL8_BEAB2, BBA_06346) in congeneric Beauveria bassiana reference proteome UP000002762 (NCBITaxon:655819) encodes Oxaloacetate acetylhydrolase (InterPro:IPR039556; InterPro:IPR018523; Pfam:PF13714).
+    - uniprot_accession: UniProtKB:J5JXL6
+      entry_name: J5JXL6_BEAB2
+      protein_name: Pyruvate carboxylase
+      gene_symbol: BBA_04309
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:655819
+        label: Beauveria bassiana (strain ARSEF 2860)
+      reference_proteome_id: UP000002762
+      ec_numbers:
+      - EC:6.4.1.1
+      interpro_ids:
+      - InterPro:IPR013785
+      - InterPro:IPR011761
+      - InterPro:IPR005481
+      - InterPro:IPR001882
+      - InterPro:IPR011764
+      - InterPro:IPR005482
+      - InterPro:IPR000089
+      - InterPro:IPR003379
+      - InterPro:IPR005479
+      - InterPro:IPR055268
+      - InterPro:IPR016185
+      - InterPro:IPR000891
+      - InterPro:IPR005930
+      - InterPro:IPR011054
+      - InterPro:IPR011053
+      pfam_ids:
+      - Pfam:PF02785
+      - Pfam:PF00289
+      - Pfam:PF00364
+      - Pfam:PF02786
+      - Pfam:PF00682
+      - Pfam:PF02436
+      ncbifam_ids:
+      - NCBIfam:NF006761
+      - NCBIfam:NF009554
+      - NCBIfam:TIGR01235
+      go_terms:
+      - id: GO:0005737
+        label: cytoplasm
+      - id: GO:0005524
+        label: ATP binding
+      - id: GO:0004075
+        label: biotin carboxylase activity
+      - id: GO:0046872
+        label: metal ion binding
+      - id: GO:0004736
+        label: pyruvate carboxylase activity
+      - id: GO:0006094
+        label: gluconeogenesis
+      functional_role: Biotin-dependent cytoplasmic pyruvate carboxylase (EC 6.4.1.1; BBA_04309) catalyzing ATP-dependent carboxylation of pyruvate to oxaloacetate, supplying the direct precursor for both oxalate and citrate.
+      annotation_note: Grounded to congeneric Beauveria bassiana ARSEF 2860 reference proteome UP000002762 (NCBITaxon:655819; BBA_04309, UniProtKB:J5JXL6), representing anaplerotic oxaloacetate supply for oxalate and citrate excretion by Beauveria caledonica (NCBITaxon:38006) on 10 g/L D-glucose in Fomina et al. (2005).
+      evidence:
+      - source_ref: fomina2005
+        supports: partial
+        explanation: Fomina et al. (2005) grew Beauveria caledonica in Modified Melin-Norkrans medium with 10 g/L glucose and 7.5 mM Cu2O and measured secreted oxalate and citrate by HPLC and enzymatic assay (Figure 3C), without assaying pyruvate carboxylase directly.
+      - source_ref: uniprot_beauveria_oxalate_citrate
+        supports: partial
+        explanation: UniProtKB:J5JXL6 (J5JXL6_BEAB2, BBA_04309) in congeneric Beauveria bassiana reference proteome UP000002762 (NCBITaxon:655819) encodes Pyruvate carboxylase (EC 6.4.1.1; GO:0004736 pyruvate carboxylase activity).
+    - uniprot_accession: UniProtKB:J5JPA1
+      entry_name: J5JPA1_BEAB2
+      protein_name: Citrate synthase
+      gene_symbol: BBA_06310
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:655819
+        label: Beauveria bassiana (strain ARSEF 2860)
+      reference_proteome_id: UP000002762
+      interpro_ids:
+      - InterPro:IPR016142
+      - InterPro:IPR016143
+      - InterPro:IPR002020
+      - InterPro:IPR019810
+      - InterPro:IPR036969
+      pfam_ids:
+      - Pfam:PF00285
+      ncbifam_ids:
+      - NCBIfam:NF007128
+      go_terms:
+      - id: GO:0005759
+        label: mitochondrial matrix
+      - id: GO:0050440
+        label: 2-methylcitrate synthase activity
+      - id: GO:0036440
+        label: citrate synthase activity
+      - id: GO:0005975
+        label: carbohydrate metabolic process
+      - id: GO:0019543
+        label: propionate catabolic process
+      - id: GO:0006099
+        label: tricarboxylic acid cycle
+      functional_role: Citrate synthase (BBA_06310; GO:0036440) catalyzing condensation of acetyl-CoA and oxaloacetate to citrate in the tricarboxylic acid / organic-acid excretion pathway.
+      annotation_note: Grounded to congeneric Beauveria bassiana ARSEF 2860 reference proteome UP000002762 (NCBITaxon:655819; BBA_06310, UniProtKB:J5JPA1), representing citrate biosynthesis co-excreted with oxalate in liquid Cu2O cultures of Beauveria caledonica (NCBITaxon:38006) in Fomina et al. (2005). This unreviewed TrEMBL entry in Pfam:PF00285 carries dual citrate synthase (GO:0036440) and 2-methylcitrate synthase (GO:0050440) functional annotations.
+      evidence:
+      - source_ref: fomina2005
+        supports: partial
+        explanation: Figure 3C of Fomina et al. (2005) demonstrates citric acid and oxalic acid accumulation in static liquid Cu2O cultures of Beauveria caledonica after 60 days at 25 C; individual citrate synthase genes were not assayed or mutated.
+      - source_ref: uniprot_beauveria_oxalate_citrate
+        supports: partial
+        explanation: UniProtKB:J5JPA1 (J5JPA1_BEAB2, BBA_06310) in congeneric Beauveria bassiana reference proteome UP000002762 (NCBITaxon:655819) encodes Citrate synthase (GO:0036440 citrate synthase activity; GO:0006099 tricarboxylic acid cycle).
+  - id: secreted_oxalic_and_citric_acids
+    label: Excreted oxalic and citric acids in Modified Melin-Norkrans Cu2O culture
+    node_type: CHEMICAL_ENTITY
+    description: Oxalic acid and citric acid quantified by HPLC and enzymatic oxalate assay in 60-day static liquid Modified Melin-Norkrans cultures (10 g/L glucose, initial pH 5.5, 25 C) containing 7.5 mM commercial Cu2O (Figure 3C).
+    protein_grounding_status: NOT_APPLICABLE
+  - id: commercial_cu2o_agar_clearing_and_alteration
+    label: Full-plate clearing of 7.5 mM commercial Cu2O agar and ligand/proton-promoted substrate alteration
+    node_type: BIOLOGICAL_PROCESS
+    description: Visual full-plate halo clearing around Beauveria caledonica colonies on 90-mm Modified Melin-Norkrans agar plates containing 7.5 mM heat-sterilized commercial BDH Cu2O over two months at 25 C (Figure 1B), without a Cu(I)-to-Cu(II) electron balance, Cu2O-specific pH trajectory, or matched acid-only Cu2O control.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: shared_caption_moolooite_copper_oxalate_assignment
+    label: Reported copper oxalate hydrate (moolooite, PDF 21-0297) product assignment (shared Figure 5B caption)
+    node_type: MATERIAL_OR_PHASE
+    description: Copper oxalate hydrate (moolooite, PDF 21-0297) assigned by XRD in Figure 5B and Results to transformation products from copper phosphate or cuprite under a shared figure caption, without a separately labelled Cu2O XRD trace or quantified Cu2O-to-moolooite recovery yield.
+    protein_grounding_status: NOT_APPLICABLE
+  edges:
+  - source: beauveria_pyc_oah_cit_organic_acid_enzymes
+    target: secreted_oxalic_and_citric_acids
+    predicate: produces
+    relationship: biosynthesis and excretion of oxalic and citric acids from glucose
+    description: Pyruvate carboxylase, oxaloacetate acetylhydrolase, and citrate synthase convert glucose-derived pyruvate/acetyl-CoA into excreted oxalic and citric acids.
+    evidence:
+    - source_ref: fomina2005
+      supports: support
+      explanation: Figure 3C and Results demonstrate oxalate and citrate accumulation in 60-day static liquid cultures of Beauveria caledonica with 7.5 mM Cu2O (and in mineral-free Figure 3A controls).
+  - source: secreted_oxalic_and_citric_acids
+    target: commercial_cu2o_agar_clearing_and_alteration
+    predicate: drives
+    relationship: culture-associated ligand and proton attack clearing opaque Cu2O agar
+    description: Excreted organic acids (oxalate and citrate) and culture acidification promote dissolution/clearing of commercial Cu2O in agar cultures.
+    evidence:
+    - source_ref: fomina2005
+      supports: partial
+      explanation: Figure 1B documents full-plate clearing of 7.5 mM Cu2O agar and Figure 3C documents oxalate and citrate production in liquid Cu2O culture; support is partial because the paper does not separate oxalate, citrate, and proton effects on Cu2O or resolve the oxidative conversion of Cu(I) in Cu2O to Cu(II).
+  - source: commercial_cu2o_agar_clearing_and_alteration
+    target: shared_caption_moolooite_copper_oxalate_assignment
+    predicate: transforms_into
+    relationship: precipitation of copper oxalate hydrate (moolooite) from mobilized copper and excreted oxalate
+    description: Mobilized copper reacts with fungal oxalate to precipitate copper oxalate hydrate (moolooite, PDF 21-0297).
+    evidence:
+    - source_ref: fomina2005
+      supports: partial
+      explanation: Results and Figure 5B assign moolooite (PDF 21-0297) to products formed from copper phosphate or cuprite; support is partial because Figure 5B uses a shared substrate caption rather than a separately labelled Cu2O diffraction trace and no Cu2O-specific product mass balance was reported.
 curation_history:
 - timestamp: '2026-10-14T22:54:27Z'
   curator: codex (GPT-6; codex)
   action: CREATE
-  summary: >-
-    Added cuprite identity and qualified fungal-associated commercial Cu2O
-    alteration, separating clearance and acid assays from mass-balanced
-    extraction, product recovery and copper-phosphate-arm measurements.
+  summary: Added cuprite identity and qualified fungal-associated commercial Cu2O alteration, separating clearance and acid assays from mass-balanced extraction, product recovery and copper-phosphate-arm measurements.
 - timestamp: '2026-10-14T22:59:22.562183+00:00'
   curator: codex (GPT-6; codex)
   action: EDIT
-  summary: >-
-    Corrected U19043.1 geographic provenance to its submission address,
-    leaving specimen origin unrecorded after independent review finding
-    CMMMech.cuprite.reference-sequence-taiwan-provenance.
+  summary: Corrected U19043.1 geographic provenance to its submission address, leaving specimen origin unrecorded after independent review finding CMMMech.cuprite.reference-sequence-taiwan-provenance.
+- timestamp: '2026-11-10T05:40:33Z'
+  curator: marcin
+  action: edit
+  summary: Add caledonica_oxalate_citrate_cuprite_alteration_graph causal graph and ground caledonica_associated_cu2o_alteration to congeneric Beauveria bassiana reference-proteome organic-acid enzymes (UniProtKB:J4UKL8, UniProtKB:J5JXL6, UniProtKB:J5JPA1)
 history_refs:
 - history/records/cuprite/2026-10-14T225433Z-codex-9c0462.yaml
 - history/records/cuprite/2026-10-14T225925Z-codex-62bb0f.yaml
+- history/records/cuprite/2026-11-10T054033Z-marcin-1443d7.yaml

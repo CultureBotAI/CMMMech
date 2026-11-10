@@ -1,0 +1,226 @@
+schema_version: 1.0.0
+review_id: 20261110T054200Z-brochantite-cycle13-stage2-causal-graphs-review
+kind: record
+repository: CultureBotAI/CMMMech
+title: Cycle 13 Stage 2 causal_graphs and UniProtKB grounding review of Brochantite
+  (cmmmech:brochantite)
+started_at: '2026-11-10T05:40:00Z'
+finished_at: '2026-11-10T05:42:00Z'
+reviewer:
+  identity: antigravity / cmmmech-cycle13-stage2-causal-graphs-reviewer
+  kind: agent
+  model: claude-opus-4-6
+  independence: self_review
+  independence_basis: 'Single-agent Goal Mode execution of .claude/skills/review-record/SKILL.md
+    verifying the Cycle 13 Stage 2 curation of data/records/brochantite.yaml (SHA-256
+    8c181fbaa272591514f933c83418db79e49ad8ca298da11edd9b8ca0476aaa41) against live
+    UniProtKB grounding and cited primary source (joseph2012: Joseph et al. (2012).
+    Protection of Metal Artifacts with the Formation of Metal-Oxalates Complexes by
+    Beauveria bassiana. Frontiers in Microbiology 2:270; published 9 January 2012,
+    eCollection 2011. Complete eight-page article, Table 1 and Figures 1-8, especially
+    mineral assays in Figure 1 and separate acid assay in Figure 3. (https://doi.org/10.3389/fmicb.2011.00270)).'
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: 3bc89f7aeaf6db9fc42676e61efb86ca906fbdc5
+  state: working_tree
+  inputs:
+  - path: data/records/brochantite.yaml
+    sha256: 8c181fbaa272591514f933c83418db79e49ad8ca298da11edd9b8ca0476aaa41
+    role: target
+  - path: history/records/brochantite/2026-11-10T054033Z-marcin-396544.yaml
+    sha256: 0753fda72f33084771b9a461ec5388dde9ee6cea5c335940a3274236b337ae4b
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+targets:
+- target_id: cmmmech:brochantite
+  path: data/records/brochantite.yaml
+  label: Brochantite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/brochantite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/brochantite/2026-11-10T054033Z-marcin-396544.yaml
+    role: canonical_history
+scope:
+  description: 'Cycle 13 Stage 2 causal_graphs and protein_examples review of data/records/brochantite.yaml
+    (SHA-256 8c181fbaa272591514f933c83418db79e49ad8ca298da11edd9b8ca0476aaa41) and
+    its canonical EDIT history sidecar (history/records/brochantite/2026-11-10T054033Z-marcin-396544.yaml)
+    verifying causal-graph node/edge topology, live UniProtKB grounding (UniProtKB:J4UKL8
+    (J4UKL8_BEAB2, Oxaloacetate acetylhydrolase, gene_symbol: BBA_06346, TREMBL, NCBITaxon:655819
+    Beauveria bassiana (strain ARSEF 2860), UP000002762); UniProtKB:J5JXL6 (J5JXL6_BEAB2,
+    Pyruvate carboxylase, gene_symbol: BBA_04309, TREMBL, NCBITaxon:655819 Beauveria
+    bassiana (strain ARSEF 2860), UP000002762); UniProtKB:J4KMZ7 (J4KMZ7_BEAB2, Malate
+    dehydrogenase, gene_symbol: BBA_06393, TREMBL, NCBITaxon:655819 Beauveria bassiana
+    (strain ARSEF 2860), UP000002762)), and primary-source evidence fidelity across
+    ''bassiana_oxalate_synthetic_brochantite_transformation_graph'' (mechanism_ref:
+    bassiana_associated_oxalate_formation, 4 nodes / 3 edges); ''bassiana_oxalate_roof_coupon_patina_conversion_graph''
+    (mechanism_ref: bassiana_roof_patina_conversion, 3 nodes / 2 edges).'
+  selection: Cycle 13 Stage 2 causal_graphs cohort review for cmmmech:brochantite
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:brochantite
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/brochantite.yaml
+  locator: Working-tree record data/records/brochantite.yaml (causal_graphs and mechanisms[].protein_examples)
+  accessed_at: '2026-11-10T05:42:00Z'
+  support: supports
+  summary: 'Updated data/records/brochantite.yaml (SHA-256 8c181fbaa272591514f933c83418db79e49ad8ca298da11edd9b8ca0476aaa41)
+    with causal_graphs (''bassiana_oxalate_synthetic_brochantite_transformation_graph''
+    (mechanism_ref: bassiana_associated_oxalate_formation, 4 nodes / 3 edges); ''bassiana_oxalate_roof_coupon_patina_conversion_graph''
+    (mechanism_ref: bassiana_roof_patina_conversion, 3 nodes / 2 edges)), achieving
+    100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples
+    and preserving source-faithful support levels and experimental caveats.'
+  snapshot_sha256: 8c181fbaa272591514f933c83418db79e49ad8ca298da11edd9b8ca0476aaa41
+- evidence_id: primary_source
+  kind: primary_source
+  reference: https://doi.org/10.3389/fmicb.2011.00270
+  locator: 'joseph2012: Joseph et al. (2012). Protection of Metal Artifacts with the
+    Formation of Metal-Oxalates Complexes by Beauveria bassiana. Frontiers in Microbiology
+    2:270; published 9 January 2012, eCollection 2011. Complete eight-page article,
+    Table 1 and Figures 1-8, especially mineral assays in Figure 1 and separate acid
+    assay in Figure 3. (https://doi.org/10.3389/fmicb.2011.00270)'
+  accessed_at: '2026-11-10T05:42:00Z'
+  support: supports
+  summary: 'Live-verified UniProtKB grounding across UniProtKB:J4UKL8 (J4UKL8_BEAB2,
+    Oxaloacetate acetylhydrolase, gene_symbol: BBA_06346, TREMBL, NCBITaxon:655819
+    Beauveria bassiana (strain ARSEF 2860), UP000002762); UniProtKB:J5JXL6 (J5JXL6_BEAB2,
+    Pyruvate carboxylase, gene_symbol: BBA_04309, TREMBL, NCBITaxon:655819 Beauveria
+    bassiana (strain ARSEF 2860), UP000002762); UniProtKB:J4KMZ7 (J4KMZ7_BEAB2, Malate
+    dehydrogenase, gene_symbol: BBA_06393, TREMBL, NCBITaxon:655819 Beauveria bassiana
+    (strain ARSEF 2860), UP000002762). Primary mechanism source (joseph2012: Joseph
+    et al. (2012). Protection of Metal Artifacts with the Formation of Metal-Oxalates
+    Complexes by Beauveria bassiana. Frontiers in Microbiology 2:270; published 9
+    January 2012, eCollection 2011. Complete eight-page article, Table 1 and Figures
+    1-8, especially mineral assays in Figure 1 and separate acid assay in Figure 3.
+    (https://doi.org/10.3389/fmicb.2011.00270)) parameters and source-level caveats
+    are strictly preserved on all nodes, edges, and ProteinExample evidence items.'
+- evidence_id: edit_history
+  kind: record_content
+  reference: history/records/brochantite/2026-11-10T054033Z-marcin-396544.yaml
+  locator: Canonical EDIT history sidecar history/records/brochantite/2026-11-10T054033Z-marcin-396544.yaml
+  accessed_at: '2026-11-10T05:42:00Z'
+  support: supports
+  summary: 'Canonical EDIT history sidecar history/records/brochantite/2026-11-10T054033Z-marcin-396544.yaml
+    (SHA-256 0753fda72f33084771b9a461ec5388dde9ee6cea5c335940a3274236b337ae4b): Add
+    synthetic-brochantite and roof-coupon causal graphs and ground both brochantite
+    mechanisms to Beauveria bassiana reference-proteome oxalate-pathway enzymes (UniProtKB:J4UKL8,
+    UniProtKB:J5JXL6, UniProtKB:J4KMZ7)'
+  snapshot_sha256: 0753fda72f33084771b9a461ec5388dde9ee6cea5c335940a3274236b337ae4b
+- evidence_id: validation
+  kind: validation
+  reference: data/records/brochantite.yaml
+  locator: Real CLI validation via python -m cmmmech validate --require-records and
+    validate-history --base main
+  accessed_at: '2026-11-10T05:42:00Z'
+  support: supports
+  summary: data/records/brochantite.yaml and history/records/brochantite/2026-11-10T054033Z-marcin-396544.yaml
+    pass strict LinkML schema, protein_examples parity, and history validation with
+    0 errors.
+  snapshot_sha256: 8c181fbaa272591514f933c83418db79e49ad8ca298da11edd9b8ca0476aaa41
+checks:
+- check_id: validate_records
+  name: Strict corpus validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Checked 708 record(s); 0 failed.
+  target_ids:
+  - cmmmech:brochantite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: validate_history
+  name: Canonical history validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate-history --base main
+  status: passed
+  required: true
+  summary: Checked 1529 history record(s); 0 error(s).
+  target_ids:
+  - cmmmech:brochantite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+assessments:
+- assessment_id: causal_graph_and_protein_grounding
+  area: graph
+  topic: 'Verification of causal_graphs structure, UniProtKB grounding, and parity
+    across ''bassiana_oxalate_synthetic_brochantite_transformation_graph'' (mechanism_ref:
+    bassiana_associated_oxalate_formation, 4 nodes / 3 edges); ''bassiana_oxalate_roof_coupon_patina_conversion_graph''
+    (mechanism_ref: bassiana_roof_patina_conversion, 3 nodes / 2 edges)'
+  outcome: supported
+  summary: 'Updated data/records/brochantite.yaml (SHA-256 8c181fbaa272591514f933c83418db79e49ad8ca298da11edd9b8ca0476aaa41)
+    with causal_graphs (''bassiana_oxalate_synthetic_brochantite_transformation_graph''
+    (mechanism_ref: bassiana_associated_oxalate_formation, 4 nodes / 3 edges); ''bassiana_oxalate_roof_coupon_patina_conversion_graph''
+    (mechanism_ref: bassiana_roof_patina_conversion, 3 nodes / 2 edges)), achieving
+    100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples
+    and preserving source-faithful support levels and caveats from joseph2012: Joseph
+    et al. (2012). Protection of Metal Artifacts with the Formation of Metal-Oxalates
+    Complexes by Beauveria bassiana. Frontiers in Microbiology 2:270; published 9
+    January 2012, eCollection 2011. Complete eight-page article, Table 1 and Figures
+    1-8, especially mineral assays in Figure 1 and separate acid assay in Figure 3.
+    (https://doi.org/10.3389/fmicb.2011.00270). Live-verified UniProtKB grounding
+    across UniProtKB:J4UKL8 (J4UKL8_BEAB2, Oxaloacetate acetylhydrolase, gene_symbol:
+    BBA_06346, TREMBL, NCBITaxon:655819 Beauveria bassiana (strain ARSEF 2860), UP000002762);
+    UniProtKB:J5JXL6 (J5JXL6_BEAB2, Pyruvate carboxylase, gene_symbol: BBA_04309,
+    TREMBL, NCBITaxon:655819 Beauveria bassiana (strain ARSEF 2860), UP000002762);
+    UniProtKB:J4KMZ7 (J4KMZ7_BEAB2, Malate dehydrogenase, gene_symbol: BBA_06393,
+    TREMBL, NCBITaxon:655819 Beauveria bassiana (strain ARSEF 2860), UP000002762).'
+  target_ids:
+  - cmmmech:brochantite
+  evidence_ids:
+  - owner
+  - primary_source
+- assessment_id: provenance_and_validation_verification
+  area: provenance
+  topic: Verification of canonical EDIT history sidecar and strict schema validation
+  outcome: supported
+  summary: 'data/records/brochantite.yaml was updated exclusively through scripts/curate_causal_graphs.py
+    (curate_record_file), producing append-only history sidecar history/records/brochantite/2026-11-10T054033Z-marcin-396544.yaml
+    (SHA-256 0753fda72f33084771b9a461ec5388dde9ee6cea5c335940a3274236b337ae4b: Add
+    synthetic-brochantite and roof-coupon causal graphs and ground both brochantite
+    mechanisms to Beauveria bassiana reference-proteome oxalate-pathway enzymes (UniProtKB:J4UKL8,
+    UniProtKB:J5JXL6, UniProtKB:J4KMZ7)) and passing all LinkML and history validation
+    gates.'
+  target_ids:
+  - cmmmech:brochantite
+  evidence_ids:
+  - owner
+  - edit_history
+  - validation
+findings: []
+actions: []
+summary: 'Brochantite (cmmmech:brochantite) passes Cycle 13 Stage 2 causal_graphs
+  review (scientific_review: true) at SHA-256 8c181fbaa272591514f933c83418db79e49ad8ca298da11edd9b8ca0476aaa41:
+  Updated data/records/brochantite.yaml with ''bassiana_oxalate_synthetic_brochantite_transformation_graph''
+  (mechanism_ref: bassiana_associated_oxalate_formation, 4 nodes / 3 edges); ''bassiana_oxalate_roof_coupon_patina_conversion_graph''
+  (mechanism_ref: bassiana_roof_patina_conversion, 3 nodes / 2 edges), achieving 100%
+  parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples
+  and preserving source-faithful support levels and experimental caveats from joseph2012:
+  Joseph et al. (2012). Protection of Metal Artifacts with the Formation of Metal-Oxalates
+  Complexes by Beauveria bassiana. Frontiers in Microbiology 2:270; published 9 January
+  2012, eCollection 2011. Complete eight-page article, Table 1 and Figures 1-8, especially
+  mineral assays in Figure 1 and separate acid assay in Figure 3. (https://doi.org/10.3389/fmicb.2011.00270).
+  Live-verified UniProtKB grounding across UniProtKB:J4UKL8 (J4UKL8_BEAB2, Oxaloacetate
+  acetylhydrolase, gene_symbol: BBA_06346, TREMBL, NCBITaxon:655819 Beauveria bassiana
+  (strain ARSEF 2860), UP000002762); UniProtKB:J5JXL6 (J5JXL6_BEAB2, Pyruvate carboxylase,
+  gene_symbol: BBA_04309, TREMBL, NCBITaxon:655819 Beauveria bassiana (strain ARSEF
+  2860), UP000002762); UniProtKB:J4KMZ7 (J4KMZ7_BEAB2, Malate dehydrogenase, gene_symbol:
+  BBA_06393, TREMBL, NCBITaxon:655819 Beauveria bassiana (strain ARSEF 2860), UP000002762).'
+limitations:
+- 'Review is conducted in single-agent Goal Mode (independence: self_review) against
+  working-tree bytes; an independent subagent PR review is executed prior to merge.'
+notes:
+- Executed during Cycle 13 Stage 2 (causal_graphs) for cmmmech:brochantite.
+related_reviews: []
