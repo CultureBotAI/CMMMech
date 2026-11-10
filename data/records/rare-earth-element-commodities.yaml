@@ -61,8 +61,8 @@ mechanisms:
     annotation_note: Direct UniProtKB match for Hansschlegelia quercus (NCBITaxon:2528245) lanmodulin (EYR15_14300, reference proteome UP000291613) characterized in Mattocks et al. (2023).
     evidence:
     - source_ref: mattocks_2023
-      supports: support
-      explanation: Immobilized Hans-LanM (and engineered R100K dimer-interface variant) exhibits pronounced LREE vs HREE selectivity, enabling single-column separation of Nd/Dy mixtures to >98% purity.
+      supports: partial
+      explanation: In Mattocks et al. (2023) Figure 4d, Extended Data Figure 6, and Table S16, maleimide-agarose-immobilized Hans-LanM R100K (0.7 mL bed conditioned at pH 5.0) resolved a synthetic 95:5 Nd/Dy chloride feed (mean 344.2 uM Nd and 18.5 uM Dy) by stepwise 30, 50, and 90 mM malonate (pH 5.0) and pH 1.5 HCl elution into a Dy fraction (98.1% binary molar purity, 99.3% summed-eluate yield vs 83.6% purity and 98.1% yield for wild-type Hans-LanM in Extended Data Figure 6) and an Nd fraction (99.9% binary molar purity, 99.8% summed-eluate yield vs 99.8% purity and 98.5% yield for wild-type Hans-LanM); Page 92 and Extended Data Figure 6 note that functional dimers may occur in only a minority of immobilized protein units on the column and no matched bare-agarose control was reported.
   - uniprot_accession: UniProtKB:C5B164
     entry_name: LANM_METEA
     protein_name: Lanmodulin
@@ -83,7 +83,7 @@ mechanisms:
     evidence:
     - source_ref: mattocks_2023
       supports: partial
-      explanation: Comparator monomeric lanmodulin benchmarked against dimeric Hans-LanM to demonstrate how EF-hand and dimer-interface architecture tune Nd/Dy separation.
+      explanation: Benchmark monomeric Methylorubrum extorquens AM1 lanmodulin (Mex-LanM) compared structurally and thermodynamically with Hansschlegelia quercus Hans-LanM and Hans-LanM R100K in Mattocks et al. (2023) to evaluate LREE/HREE selectivity, while Page 92 and Extended Data Figure 6 caution that solution dimerization does not directly prove that immobilized dimers drive the R100K column improvement.
   evidence:
   - source_ref: mattocks_2023
     supports: support
@@ -128,8 +128,8 @@ causal_graphs:
       annotation_note: Direct UniProtKB match for Hansschlegelia quercus (NCBITaxon:2528245) lanmodulin (EYR15_14300, reference proteome UP000291613) characterized in Mattocks et al. (2023).
       evidence:
       - source_ref: mattocks_2023
-        supports: support
-        explanation: Immobilized Hans-LanM (and engineered R100K dimer-interface variant) exhibits pronounced LREE vs HREE selectivity, enabling single-column separation of Nd/Dy mixtures to >98% purity.
+        supports: partial
+        explanation: In Mattocks et al. (2023) Figure 4d, Extended Data Figure 6, and Table S16, maleimide-agarose-immobilized Hans-LanM R100K (0.7 mL bed conditioned at pH 5.0) resolved a synthetic 95:5 Nd/Dy chloride feed (mean 344.2 uM Nd and 18.5 uM Dy) by stepwise 30, 50, and 90 mM malonate (pH 5.0) and pH 1.5 HCl elution into a Dy fraction (98.1% binary molar purity, 99.3% summed-eluate yield vs 83.6% purity and 98.1% yield for wild-type Hans-LanM in Extended Data Figure 6) and an Nd fraction (99.9% binary molar purity, 99.8% summed-eluate yield vs 99.8% purity and 98.5% yield for wild-type Hans-LanM); Page 92 and Extended Data Figure 6 note that functional dimers may occur in only a minority of immobilized protein units on the column and no matched bare-agarose control was reported.
   - id: mex_lanm_comparator
     label: Mex-LanM monomeric lanmodulin comparator (lanM / META1_1786)
     node_type: GENE_OR_PROTEIN
@@ -157,7 +157,7 @@ causal_graphs:
       evidence:
       - source_ref: mattocks_2023
         supports: partial
-        explanation: Comparator monomeric lanmodulin benchmarked against dimeric Hans-LanM to demonstrate how EF-hand and dimer-interface architecture tune Nd/Dy separation.
+        explanation: Benchmark monomeric Methylorubrum extorquens AM1 lanmodulin (Mex-LanM) compared structurally and thermodynamically with Hansschlegelia quercus Hans-LanM and Hans-LanM R100K in Mattocks et al. (2023) to evaluate LREE/HREE selectivity, while Page 92 and Extended Data Figure 6 caution that solution dimerization does not directly prove that immobilized dimers drive the R100K column improvement.
   - id: mixed_nd_dy_feed
     label: Mixed Nd(III)/Dy(III) feed solution (344.2 uM Nd / 18.5 uM Dy; 95:5 Nd/Dy molar mixture)
     node_type: CHEMICAL_ENTITY
@@ -173,29 +173,29 @@ causal_graphs:
     target: mixed_nd_dy_feed
     predicate: binds
     relationship: differential LREE (Nd) vs HREE (Dy) coordination affinity
-    description: Hans-LanM R100K binds Nd(III) more strongly than Dy(III) due to cooperative EF-hand coordination.
+    description: Maleimide-agarose-immobilized Hans-LanM R100K retains Nd(III) more strongly than Dy(III) from a synthetic 95:5 Nd/Dy chloride feed at pH 5.0, improving Dy enrichment relative to wild-type immobilized Hans-LanM, although functional dimers may represent only a minority of immobilized protein units.
     evidence:
     - source_ref: mattocks_2023
-      supports: support
-      explanation: Calorimetry, crystallography, and column tests show enhanced LREE/HREE discrimination by Hans-LanM and Hans-LanM R100K.
+      supports: partial
+      explanation: Mattocks et al. (2023) Figure 4d and Extended Data Figure 6 show stronger Nd(III) vs Dy(III) discrimination on the 0.7 mL immobilized Hans-LanM R100K agarose column (98.1% Dy purity / 99.3% yield; 99.9% Nd purity / 99.8% yield) than on wild-type immobilized Hans-LanM (83.6% Dy purity / 98.1% yield; 99.8% Nd purity / 98.5% yield), but Page 92 and Extended Data Figure 6 explicitly state that functional dimers may occur in only a minority of immobilized protein units and no matched bare-agarose separation control was reported.
   - source: mex_lanm_comparator
     target: mixed_nd_dy_feed
     predicate: binds
     relationship: reference monomeric lanmodulin coordination
-    description: Mex-LanM provides the baseline LREE/HREE affinity comparison.
+    description: Monomeric Mex-LanM (and wild-type immobilized Hans-LanM in Extended Data Figure 6) provide structural, thermodynamic, and column comparators against immobilized Hans-LanM R100K.
     evidence:
     - source_ref: mattocks_2023
       supports: partial
-      explanation: Mex-LanM is compared directly with Hans-LanM in Mattocks et al. (2023).
+      explanation: Mattocks et al. (2023) benchmark monomeric Mex-LanM structurally and thermodynamically against dimeric Hans-LanM and compare wild-type immobilized Hans-LanM on a column (83.6% Dy binary molar purity and 98.1% yield; 99.8% Nd binary molar purity and 98.5% yield in Extended Data Figure 6) with Hans-LanM R100K (Figure 4d), serving as protein comparators rather than a protein-free resin control.
   - source: mixed_nd_dy_feed
     target: separated_nd_and_dy_fractions
     predicate: transforms_into
     relationship: stepwise 30, 50, and 90 mM malonate (pH 5.0) and pH 1.5 HCl column elution
-    description: Immobilized Hans-LanM R100K column resolves a 95:5 Nd/Dy feed (344.2 uM Nd, 18.5 uM Dy at pH 5.0) into 98.1%-pure Dy (99.3% yield) and 99.9%-pure Nd (99.8% yield) fractions using stepwise 30, 50, and 90 mM malonate followed by pH 1.5 HCl stripping.
+    description: Immobilized Hans-LanM R100K column (0.7 mL bed, conditioned with 10 mM HOMOPIPES pH 5.0 at 0.5 mL/min and washed with 5 bed volumes of water) resolves a synthetic 95:5 Nd/Dy chloride feed (mean 344.2 uM Nd, 18.5 uM Dy, Table S16) into a Dy-enriched fraction (98.1% binary molar purity, 99.3% summed-eluate yield) during stepwise 30, 50, and 90 mM malonate elution (pH 5.0) and an Nd-enriched fraction (99.9% binary molar purity, 99.8% summed-eluate yield) during pH 1.5 HCl stripping.
     evidence:
     - source_ref: mattocks_2023
-      supports: support
-      explanation: Figure 4d and Table S16 report single-column stepwise elution of a 344.2 uM Nd / 18.5 uM Dy (95:5) feed conditioned at pH 5.0 using 30, 50, and 90 mM malonate followed by pH 1.5 HCl, yielding 98.1% pure Dy (99.3% yield) and 99.9% pure Nd (99.8% yield).
+      supports: partial
+      explanation: Mattocks et al. (2023) Figure 4d (page 91), Supplementary Information page 3 and Table S16 (page 53), and Source Data Figure 4 workbook (sheet Fig4d, mattocks_2023_fig4_data) report 98.1% Dy purity / 99.3% yield and 99.9% Nd purity / 99.8% yield from a synthetic 344.2 uM Nd / 18.5 uM Dy feed, where purity is the binary molar share within Nd+Dy, yields divide selected-fraction sums by summed tabulated eluate (SUM(H32:H43)/SUM(H32:H51) = 99.3964% in cell O33 vs printed 99.3% for Dy; SUM(G44:G51)/SUM(G32:G51) = 99.8% in cell N45 for Nd) rather than an independent input mass balance, and Table S16 reports an Nd feed SD of 4.4 versus ~15.1942 in the workbook.
 curation_history:
 - timestamp: '2026-10-11T08:37:57Z'
   curator: Codex (GPT-6; Codex)
@@ -217,9 +217,14 @@ curation_history:
   curator: claude
   action: edit
   summary: Normalized top-level key ordering in rare-earth-element-commodities.yaml so sources precedes criticality per CANONICAL_RECORD_KEYS.
+- timestamp: '2026-11-09T23:13:12Z'
+  curator: marcin
+  action: edit
+  summary: Expand rare-earth-element-commodities Hans-LanM R100K causal graph and protein examples with dimer-minority and summed-eluate caveats (#982)
 history_refs:
 - history/records/rare-earth-element-commodities/2026-10-11T083756Z-codex-eb8683.yaml
 - history/records/rare-earth-element-commodities/2026-10-18T042750Z-antigravity-e6fe74.yaml
 - history/records/rare-earth-element-commodities/2026-10-18T065829Z-antigravity-078a23.yaml
 - history/records/rare-earth-element-commodities/2026-10-21T184653Z-claude-6f9636.yaml
 - history/records/rare-earth-element-commodities/2026-10-30T222651Z-claude-5f3072.yaml
+- history/records/rare-earth-element-commodities/2026-11-09T231312Z-marcin-025f56.yaml
