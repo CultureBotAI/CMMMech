@@ -1,0 +1,35 @@
+history_version: 1
+target:
+  kind: record
+  slug: nannoniite
+  path: data/records/nannoniite.yaml
+session:
+  id: 2026-11-10T034835Z-antigravity-32840c
+  timestamp: '2026-11-10T03:48:35Z'
+  actors:
+  - name: antigravity
+    type: ai_agent
+    model: gemini-3.1-pro
+    agent_tool: antigravity-cli
+events:
+- type: EDIT
+  outcome: changed
+  summary: 'Populate ima_symbol: Nnn and document associated dacostaite formula subscript
+    omission for nannoniite (Issue #986, PR #985)'
+  details: 'Added top-level ima_symbol: Nnn and updated description in data/records/nannoniite.yaml
+    to note that Section 4.5 (p. 1020) of Biagioni et al. (2024, European Journal of Mineralogy
+    36:1011-1022) prints K(Mg2Al)[Mg(H2O)6](AsO4)2F6*2H2O for associated dacostaite (IMA 2024-015),
+    omitting the subscript 2 on [Mg(H2O)6]2 relative to its charge-balanced ideal formula
+    K(Mg2Al)[Mg(H2O)6]2(AsO4)2F6*2H2O.'
+  sections:
+  - ima_symbol
+  - description
+  - curation_history
+  - history_refs
+links:
+  issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/986
+  prs:
+  - https://github.com/CultureBotAI/CMMMech/pull/985
+  urls:
+  - https://doi.org/10.5194/ejm-36-1011-2024

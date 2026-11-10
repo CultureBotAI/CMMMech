@@ -1,0 +1,35 @@
+history_version: 1
+target:
+  kind: record
+  slug: marioantofilliite
+  path: data/records/marioantofilliite.yaml
+session:
+  id: 2026-11-10T034833Z-antigravity-451ae9
+  timestamp: '2026-11-10T03:48:33Z'
+  actors:
+  - name: antigravity
+    type: ai_agent
+    model: gemini-3.1-pro
+    agent_tool: antigravity-cli
+events:
+- type: EDIT
+  outcome: changed
+  summary: 'Populate ima_symbol: Maf and document C-O(1i) uncertainty discrepancy and PXRD
+    cutoff for marioantofilliite (Issue #986, PR #985)'
+  details: 'Added top-level ima_symbol: Maf and updated description in data/records/marioantofilliite.yaml
+    to document the C-O(1i) standard uncertainty discrepancy (1.28(6) A in Section 7.2 / Table
+    5 vs 1.28(2) A in Section 7.3) and clarify that the 10 listed PXRD lines from Table 2
+    (p. 738) are all observed reflections with Iobs >= 2.4 out of 23 observed reflections
+    in Biagioni et al. (2025, European Journal of Mineralogy 37:733-746).'
+  sections:
+  - ima_symbol
+  - description
+  - curation_history
+  - history_refs
+links:
+  issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/986
+  prs:
+  - https://github.com/CultureBotAI/CMMMech/pull/985
+  urls:
+  - https://doi.org/10.5194/ejm-37-733-2025
