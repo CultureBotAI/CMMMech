@@ -1,0 +1,287 @@
+# Cycle 13 Stage 4 record review: cmmmech:neodymium (Neodymium)
+
+- Review: 20261110T085009Z-neodymium-cycle13-stage4-record-review
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-11-10T08:49:30Z
+- Finished UTC: 2026-11-10T08:50:09Z
+- Reviewer: antigravity / cmmmech-cycle13-stage4-record-reviewer (self_review)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Reviewed data/records/neodymium.yaml (cmmmech:neodymium) at commit 01de2d17fc49adec7f67da17266cbc82713d0df1 (alongside companion Gluconobacter oxydans B58 records cmmmech:allanite-concentrate and cmmmech:fluorescent-lamp-phosphor). Verified CHEBI:33372 identity, USGS 2022/2025 and EU 2024 criticality, Chlorella vulgaris biosorption (Kucuker et al. 2017), and Gluconobacter oxydans B58 synthetic Mon2 phosphate bioleaching from Marecos et al. (2025, Communications Biology 8:682, DOI:10.1038/s42003-025-08061-4). Identified 1 minor graph finding (cmmmech-cycle13-stage4-finding-0003) for Stage 5 grouped remediation.
+
+## Scope And Provenance
+
+Single-record Cycle 13 Stage 4 audit of cmmmech:neodymium.
+
+Selection: data/records/neodymium.yaml at 01de2d17fc49adec7f67da17266cbc82713d0df1
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: git_commit at Git base 01de2d17fc49adec7f67da17266cbc82713d0df1.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:neodymium | data/records/neodymium.yaml | maintained | Neodymium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| cmmmech validate data/records/neodymium.yaml | passed | True | cmmmech:neodymium | data/records/neodymium.yaml passes LinkML structural, semantic, and canonical top-level key-order validation with 0 errors. |
+
+## Scientific And Domain Assessments
+
+### Gluconobacter oxydans B58 synthetic Mon2 Nd-phosphate bioleaching causal graph and PqqC/Gdh/GOX1598/GcvH groundings
+
+graph: supported. Targets: cmmmech:neodymium.
+
+Protein groundings (P27175 Gdh, Q9L3B2 PqqC, Q5FQK7 GOX1598, Q5FRY1 GcvH) are synchronized, but PqqC/Gdh/GOX1598 protein_examples and causal_graphs[0] nodes/edges retain template descriptions and supports: support polarity omitting 621H proxy grounding, non-pH mutant effects, and relative extraction denominators.
+
+## Findings
+
+### cmmmech-cycle13-stage4-finding-0003: Gluconobacter oxydans B58 causal graphs and protein examples in allanite-concentrate.yaml, fluorescent-lamp-phosphor.yaml, and neodymium.yaml retain template PqqC/Gdh descriptions and supports: support polarity omitting 621H proxy grounding, residual mutant leaching, and relative extraction denominators
+
+minor / open / confirmed; issue key: cmmmech.schmitz-marecos-gluconobacter-graphs.template-pqqc-gdh-nodes-edges-and-relative-denominator-qualifications.
+
+In data/records/allanite-concentrate.yaml (cmmmech:allanite-concentrate, primary_resource, Schmitz et al. 2025 Communications Biology 8:815, schmitz2025; causal_graphs[0] lines 182-398), data/records/fluorescent-lamp-phosphor.yaml (cmmmech:fluorescent-lamp-phosphor, secondary_resource, Schmitz et al. 2021 Nature Communications 12:6693, schmitz2021; causal_graphs[0] lines 105-263), and data/records/neodymium.yaml (cmmmech:neodymium, element, Marecos et al. 2025 Communications Biology 8:682, marecos2025; causal_graphs[0] lines 204-403), Gluconobacter oxydans B58 protein_examples (UniProtKB:Q9L3B2 PqqC, UniProtKB:P27175 Gdh, UniProtKB:Q5FT13 PstC in fluorescent-lamp-phosphor.yaml, and UniProtKB:Q5FQK7 GOX1598 in neodymium.yaml) and causal_graphs[0] nodes/edges retain generic 72-to-130-character template descriptions and supports: support polarity that omit 621H reference-proteome (UP000006375) proxy grounding for unsequenced experimental strain B58, residual REE release in mgdh/pqqC disruption mutants (Figure 4D of schmitz2021) and non-pH mutant effects (9 of 12 mutants in marecos2025; unresolved concentration vs composition in schmitz2025 Discussion), relative-over-wild-type vs absolute-recovery denominators (53.1%/73.1% in schmitz2025; ~111% in marecos2025; literature-based 4.7%/5.5% phosphor denominator in schmitz2021), and study-specific timing/control caveats (24 h vs 36 h pH timing and Figure S2 nitric-acid comparator in schmitz2025; non-sterile-filtered centrifuged supernatant in schmitz2021; missing no-bacteria rows in Supplementary Data 4A of marecos2025). In this scope, 1 record(s) (neodymium) are affected.
+
+## Recommended Actions And Acceptance Checks
+
+### act-refine-schmitz-marecos-gluconobacter-graphs-and-proteins
+
+Update protein_examples and causal_graphs[0] nodes/edges across data/records/allanite-concentrate.yaml, data/records/fluorescent-lamp-phosphor.yaml, and data/records/neodymium.yaml to supports: partial with study-specific prose documenting 621H reference-proteome proxy grounding for strain B58, residual mgdh/pqqC mutant leaching and non-pH mutant effects, relative-over-wild-type vs absolute-recovery denominators, and study-specific timing/control caveats during Stage 5 grouped remediation with canonical history provenance.
+
+- mechanisms[].protein_examples and causal_graphs[0].nodes[].protein_examples across allanite-concentrate.yaml, fluorescent-lamp-phosphor.yaml, and neodymium.yaml are byte-identical with supports: partial and study-specific prose.
+- causal_graphs[0].nodes and edges across all 3 records replace template PqqC/Gdh/biolixiviant text with study-specific conditions, relative denominators, and control caveats with supports: partial.
+- Matching EDIT history sidecars exist in history/records/ and pass just check.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| ev-neodymium-file | data/records/neodymium.yaml; mechanisms[1] (lines 86-202); causal_graphs[0] (lines 204-403) | supports | Inspected data/records/neodymium.yaml (and companion records allanite-concentrate.yaml and fluorescent-lamp-phosphor.yaml) comparing mechanisms[1] against protein_examples and causal_graphs[0]. |
+| ev-neodymium-marecos2025 | DOI:10.1038/s42003-025-08061-4; Marecos et al. 2025 Figures 3-5 and Supplementary Data 4 (Sheet 4A) | supports | Marecos et al. (2025) report 56-111% relative improvements in Nd solubilization from synthetic Mon2 mixed phosphate over proxy wild-type (pWT B), with 9 of 12 selected mutants not significantly changing pH. |
+
+## Limits And Additional Notes
+
+- data/records/neodymium.yaml (and companion records allanite-concentrate.yaml and fluorescent-lamp-phosphor.yaml) retains template PqqC/Gdh/biolixiviant descriptions and supports: support polarity (tracked as open finding cmmmech-cycle13-stage4-finding-0003 for Stage 5 remediation).
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261110T085009Z-neodymium-cycle13-stage4-record-review
+title: 'Cycle 13 Stage 4 record review: cmmmech:neodymium (Neodymium)'
+repository: CultureBotAI/CMMMech
+kind: record
+started_at: '2026-11-10T08:49:30Z'
+finished_at: '2026-11-10T08:50:09Z'
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Reviewed data/records/neodymium.yaml (cmmmech:neodymium) at commit 01de2d17fc49adec7f67da17266cbc82713d0df1
+  (alongside companion Gluconobacter oxydans B58 records cmmmech:allanite-concentrate
+  and cmmmech:fluorescent-lamp-phosphor). Verified CHEBI:33372 identity, USGS 2022/2025
+  and EU 2024 criticality, Chlorella vulgaris biosorption (Kucuker et al. 2017), and
+  Gluconobacter oxydans B58 synthetic Mon2 phosphate bioleaching from Marecos et al.
+  (2025, Communications Biology 8:682, DOI:10.1038/s42003-025-08061-4). Identified
+  1 minor graph finding (cmmmech-cycle13-stage4-finding-0003) for Stage 5 grouped
+  remediation.
+reviewer:
+  identity: antigravity / cmmmech-cycle13-stage4-record-reviewer
+  kind: agent
+  model: claude-opus-4-6
+  independence: self_review
+  independence_basis: Single-agent Goal Mode execution of Cycle 13 Stage 4 record_review
+    (.claude/skills/review-yaml-record/SKILL.md) against frozen commit 01de2d17fc49adec7f67da17266cbc82713d0df1.
+source:
+  git_revision: 01de2d17fc49adec7f67da17266cbc82713d0df1
+  state: git_commit
+  inputs:
+  - path: data/records/neodymium.yaml
+    sha256: 91a74a542eb1dbd45aeb4cbd24f3ced3f382854dc7e7e3d2292effcded89341f
+    role: target
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+  - path: src/cmmmech/validation.py
+    sha256: edf999adb3da7dceadcc340b5561663a7fb56dfd1178992633a1a7ad1abcb937
+    role: context
+scope:
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:neodymium
+  selection: data/records/neodymium.yaml at 01de2d17fc49adec7f67da17266cbc82713d0df1
+  description: Single-record Cycle 13 Stage 4 audit of cmmmech:neodymium.
+targets:
+- target_id: cmmmech:neodymium
+  path: data/records/neodymium.yaml
+  kind: maintained
+  label: Neodymium
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/neodymium.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+checks:
+- check_id: cmmmech-validate-neodymium
+  name: cmmmech validate data/records/neodymium.yaml
+  status: passed
+  required: true
+  command: .venv/bin/cmmmech validate data/records/neodymium.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - cmmmech:neodymium
+  evidence_ids:
+  - ev-neodymium-file
+  summary: data/records/neodymium.yaml passes LinkML structural, semantic, and canonical
+    top-level key-order validation with 0 errors.
+assessments:
+- assessment_id: assess-neodymium-gluconobacter-graph-and-proteins
+  topic: Gluconobacter oxydans B58 synthetic Mon2 Nd-phosphate bioleaching causal
+    graph and PqqC/Gdh/GOX1598/GcvH groundings
+  area: graph
+  outcome: supported
+  target_ids:
+  - cmmmech:neodymium
+  evidence_ids:
+  - ev-neodymium-file
+  - ev-neodymium-marecos2025
+  summary: 'Protein groundings (P27175 Gdh, Q9L3B2 PqqC, Q5FQK7 GOX1598, Q5FRY1 GcvH)
+    are synchronized, but PqqC/Gdh/GOX1598 protein_examples and causal_graphs[0] nodes/edges
+    retain template descriptions and supports: support polarity omitting 621H proxy
+    grounding, non-pH mutant effects, and relative extraction denominators.'
+findings:
+- finding_id: cmmmech-cycle13-stage4-finding-0003
+  issue_key: cmmmech.schmitz-marecos-gluconobacter-graphs.template-pqqc-gdh-nodes-edges-and-relative-denominator-qualifications
+  title: 'Gluconobacter oxydans B58 causal graphs and protein examples in allanite-concentrate.yaml,
+    fluorescent-lamp-phosphor.yaml, and neodymium.yaml retain template PqqC/Gdh descriptions
+    and supports: support polarity omitting 621H proxy grounding, residual mutant
+    leaching, and relative extraction denominators'
+  severity: minor
+  category: graph
+  certainty: confirmed
+  status: open
+  target_ids:
+  - cmmmech:neodymium
+  field_paths:
+  - mechanisms[1].protein_examples[0].evidence[0].supports
+  - mechanisms[1].protein_examples[0].evidence[0].explanation
+  - mechanisms[1].protein_examples[1].evidence[0].supports
+  - mechanisms[1].protein_examples[1].evidence[0].explanation
+  - mechanisms[1].protein_examples[2].evidence[0].supports
+  - mechanisms[1].protein_examples[2].evidence[0].explanation
+  - causal_graphs[0].nodes[0].description
+  - causal_graphs[0].nodes[0].protein_examples[0].evidence[0].supports
+  - causal_graphs[0].nodes[0].protein_examples[0].evidence[0].explanation
+  - causal_graphs[0].nodes[1].description
+  - causal_graphs[0].nodes[1].protein_examples[0].evidence[0].supports
+  - causal_graphs[0].nodes[1].protein_examples[0].evidence[0].explanation
+  - causal_graphs[0].nodes[2].description
+  - causal_graphs[0].nodes[2].protein_examples[0].evidence[0].supports
+  - causal_graphs[0].nodes[2].protein_examples[0].evidence[0].explanation
+  - causal_graphs[0].nodes[3].description
+  - causal_graphs[0].edges[0].evidence[0].supports
+  - causal_graphs[0].edges[0].evidence[0].explanation
+  - causal_graphs[0].edges[1].evidence[0].supports
+  - causal_graphs[0].edges[1].evidence[0].explanation
+  - causal_graphs[0].edges[2].evidence[0].supports
+  - causal_graphs[0].edges[2].evidence[0].explanation
+  - causal_graphs[0].edges[3].evidence[0].supports
+  - causal_graphs[0].edges[3].evidence[0].explanation
+  - causal_graphs[0].edges[4].evidence[0].supports
+  - causal_graphs[0].edges[4].evidence[0].explanation
+  evidence_ids:
+  - ev-neodymium-file
+  - ev-neodymium-marecos2025
+  description: 'In data/records/allanite-concentrate.yaml (cmmmech:allanite-concentrate,
+    primary_resource, Schmitz et al. 2025 Communications Biology 8:815, schmitz2025;
+    causal_graphs[0] lines 182-398), data/records/fluorescent-lamp-phosphor.yaml (cmmmech:fluorescent-lamp-phosphor,
+    secondary_resource, Schmitz et al. 2021 Nature Communications 12:6693, schmitz2021;
+    causal_graphs[0] lines 105-263), and data/records/neodymium.yaml (cmmmech:neodymium,
+    element, Marecos et al. 2025 Communications Biology 8:682, marecos2025; causal_graphs[0]
+    lines 204-403), Gluconobacter oxydans B58 protein_examples (UniProtKB:Q9L3B2 PqqC,
+    UniProtKB:P27175 Gdh, UniProtKB:Q5FT13 PstC in fluorescent-lamp-phosphor.yaml,
+    and UniProtKB:Q5FQK7 GOX1598 in neodymium.yaml) and causal_graphs[0] nodes/edges
+    retain generic 72-to-130-character template descriptions and supports: support
+    polarity that omit 621H reference-proteome (UP000006375) proxy grounding for unsequenced
+    experimental strain B58, residual REE release in mgdh/pqqC disruption mutants
+    (Figure 4D of schmitz2021) and non-pH mutant effects (9 of 12 mutants in marecos2025;
+    unresolved concentration vs composition in schmitz2025 Discussion), relative-over-wild-type
+    vs absolute-recovery denominators (53.1%/73.1% in schmitz2025; ~111% in marecos2025;
+    literature-based 4.7%/5.5% phosphor denominator in schmitz2021), and study-specific
+    timing/control caveats (24 h vs 36 h pH timing and Figure S2 nitric-acid comparator
+    in schmitz2025; non-sterile-filtered centrifuged supernatant in schmitz2021; missing
+    no-bacteria rows in Supplementary Data 4A of marecos2025). In this scope, 1 record(s)
+    (neodymium) are affected.'
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/neodymium.yaml
+    role: maintained_record
+actions:
+- action_id: act-refine-schmitz-marecos-gluconobacter-graphs-and-proteins
+  finding_ids:
+  - cmmmech-cycle13-stage4-finding-0003
+  target_ids:
+  - cmmmech:neodymium
+  description: 'Update protein_examples and causal_graphs[0] nodes/edges across data/records/allanite-concentrate.yaml,
+    data/records/fluorescent-lamp-phosphor.yaml, and data/records/neodymium.yaml to
+    supports: partial with study-specific prose documenting 621H reference-proteome
+    proxy grounding for strain B58, residual mgdh/pqqC mutant leaching and non-pH
+    mutant effects, relative-over-wild-type vs absolute-recovery denominators, and
+    study-specific timing/control caveats during Stage 5 grouped remediation with
+    canonical history provenance.'
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/neodymium.yaml
+    role: maintained_record
+  acceptance_checks:
+  - 'mechanisms[].protein_examples and causal_graphs[0].nodes[].protein_examples across
+    allanite-concentrate.yaml, fluorescent-lamp-phosphor.yaml, and neodymium.yaml
+    are byte-identical with supports: partial and study-specific prose.'
+  - 'causal_graphs[0].nodes and edges across all 3 records replace template PqqC/Gdh/biolixiviant
+    text with study-specific conditions, relative denominators, and control caveats
+    with supports: partial.'
+  - Matching EDIT history sidecars exist in history/records/ and pass just check.
+evidence:
+- evidence_id: ev-neodymium-file
+  kind: record_content
+  reference: data/records/neodymium.yaml
+  locator: mechanisms[1] (lines 86-202); causal_graphs[0] (lines 204-403)
+  accessed_at: '2026-11-10T08:50:09Z'
+  support: supports
+  summary: Inspected data/records/neodymium.yaml (and companion records allanite-concentrate.yaml
+    and fluorescent-lamp-phosphor.yaml) comparing mechanisms[1] against protein_examples
+    and causal_graphs[0].
+- evidence_id: ev-neodymium-marecos2025
+  kind: primary_source
+  reference: DOI:10.1038/s42003-025-08061-4
+  locator: Marecos et al. 2025 Figures 3-5 and Supplementary Data 4 (Sheet 4A)
+  accessed_at: '2026-11-10T08:50:09Z'
+  support: supports
+  summary: Marecos et al. (2025) report 56-111% relative improvements in Nd solubilization
+    from synthetic Mon2 mixed phosphate over proxy wild-type (pWT B), with 9 of 12
+    selected mutants not significantly changing pH.
+limitations:
+- 'data/records/neodymium.yaml (and companion records allanite-concentrate.yaml and
+  fluorescent-lamp-phosphor.yaml) retains template PqqC/Gdh/biolixiviant descriptions
+  and supports: support polarity (tracked as open finding cmmmech-cycle13-stage4-finding-0003
+  for Stage 5 remediation).'
+notes: []
+```
