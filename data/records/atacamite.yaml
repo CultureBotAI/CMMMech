@@ -1,104 +1,386 @@
 id: cmmmech:atacamite
 name: Atacamite
 material_kind: mineral
-description: Atacamite is the orthorhombic copper hydroxychloride mineral Cu2Cl(OH)3. It is
-  distinct from elemental copper, other copper minerals and mixed corrosion patinas. The laboratory
-  mineral experiment below used a synthetic preparation. No criticality designation is inherited
-  from copper.
+description: Atacamite is the orthorhombic copper hydroxychloride mineral Cu2Cl(OH)3. It is distinct from elemental copper, other copper minerals and mixed corrosion patinas. The laboratory mineral experiment below used a synthetic preparation. No criticality designation is inherited from copper.
 sources:
 - id: ima_2026_09
-  title: IMA-CNMNC. The New IMA List of Minerals, September 2026. Atacamite row, PDF page 17;
-    introductory status definitions. G, 1797 denotes grandfathered status and original-description
-    year, not an approval number.
+  title: IMA-CNMNC. The New IMA List of Minerals, September 2026. Atacamite row, PDF page 17; introductory status definitions. G, 1797 denotes grandfathered status and original-description year, not an approval number.
   url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
   accessed_on: '2026-10-15'
 - id: handbook_atacamite
-  title: Handbook of Mineralogy. Atacamite, Cu2Cl(OH)3. Complete single-page identity, composition
-    and crystallographic description.
+  title: Handbook of Mineralogy. Atacamite, Cu2Cl(OH)3. Complete single-page identity, composition and crystallographic description.
   url: https://www.handbookofmineralogy.org/pdfs/atacamite.pdf
   accessed_on: '2026-10-15'
 - id: joseph2012
-  title: Joseph et al. (2012). Protection of Metal Artifacts with the Formation of Metal-Oxalates
-    Complexes by Beauveria bassiana. Frontiers in Microbiology 2:270; published 9 January 2012,
-    eCollection 2011. Complete eight-page article, Table 1 and Figures 1-8, especially mineral
-    assays in Figure 1 and separate acid assay in Figure 3.
+  title: Joseph et al. (2012). Protection of Metal Artifacts with the Formation of Metal-Oxalates Complexes by Beauveria bassiana. Frontiers in Microbiology 2:270; published 9 January 2012, eCollection 2011. Complete eight-page article, Table 1 and Figures 1-8, especially mineral assays in Figure 1 and separate acid assay in Figure 3.
   url: https://doi.org/10.3389/fmicb.2011.00270
   accessed_on: '2026-10-15'
 - id: ncbi_bassiana
   title: NCBI Taxonomy 176275. Beauveria bassiana, species node.
   url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=176275
   accessed_on: '2026-10-15'
+- id: uniprot_beauveria_bassiana_oxalate
+  title: 'UniProtKB reference proteome UP000002762 (Beauveria bassiana strain ARSEF 2860, NCBITaxon:655819): Oxaloacetate acetylhydrolase (BBA_06346, UniProtKB:J4UKL8), Pyruvate carboxylase (BBA_04309, UniProtKB:J5JXL6), and Malate dehydrogenase (BBA_06393, UniProtKB:J4KMZ7).'
+  url: https://www.uniprot.org/uniprotkb?query=(proteome:UP000002762)+AND+(accession:J4UKL8+OR+accession:J5JXL6+OR+accession:J4KMZ7)
+  accessed_on: '2026-11-10'
 mechanisms:
 - id: bassiana_associated_oxalate_formation
   name: Fungal-associated copper oxalate formation on synthetic atacamite
   process: biomineralization
+  description: Laboratory cultures of Beauveria bassiana grew on synthetic atacamite-containing malt agar and the authors assigned copper oxalate products. This supports a qualified culture-associated transformation and precipitation observation. Acid-mediated dissolution followed by precipitation is a proposed explanation; neither causal necessity of oxalate nor isolated-metal recovery was established.
+  context: The live, unnamed Beauveria bassiana isolate came from copper-contaminated vineyard soil at Bevaix Abbey, Neuchatel, Switzerland. The article mentions a local collection deposit but supplies no accession; the species TaxID does not identify the isolate. Synthetic substrate was prepared using cited chemical methods, exposed to UV for 30 minutes and added after medium autoclaving. Malt agar contained 12 g/L malt and 15 g/L agar; incubation was at room temperature in the dark, with numerical temperature and pH unspecified. Five-mm square fungal plugs were used. Radial growth was followed in two perpendicular directions every 3-4 days over 18 days. The methods specify two or three replicates, whereas Figure 1 specifies three with standard errors. Figure 1 labels loadings 10, 20 and 50 g/L Cu(II) compounds, while the caption and prose vary between copper, Cu(II) and compound concentrations; no elemental-copper conversion is accepted. Copper-free malt agar was the growth comparison.
+    No matched mineral-only sterile, killed-cell, pH-matched or acid-specific control is reported for this mineral assay. The silver-arm sterile control cannot be transferred. Separate product estimates used cultures after three months, dried at 60 degrees C, ground below 40 micrometres and pressed as 800-mg samples for Cu-K-alpha XRD, with a copper oxalate dihydrate/quartz calibration.
   microbial: true
   organisms:
   - id: NCBITaxon:176275
     label: Beauveria bassiana
-  description: Laboratory cultures of Beauveria bassiana grew on synthetic atacamite-containing
-    malt agar and the authors assigned copper oxalate products. This supports a qualified culture-associated
-    transformation and precipitation observation. Acid-mediated dissolution followed by precipitation
-    is a proposed explanation; neither causal necessity of oxalate nor isolated-metal recovery
-    was established.
-  context: The live, unnamed Beauveria bassiana isolate came from copper-contaminated vineyard
-    soil at Bevaix Abbey, Neuchatel, Switzerland. The article mentions a local collection deposit
-    but supplies no accession; the species TaxID does not identify the isolate. Synthetic substrate
-    was prepared using cited chemical methods, exposed to UV for 30 minutes and added after
-    medium autoclaving. Malt agar contained 12 g/L malt and 15 g/L agar; incubation was at room
-    temperature in the dark, with numerical temperature and pH unspecified. Five-mm square fungal
-    plugs were used. Radial growth was followed in two perpendicular directions every 3-4 days
-    over 18 days. The methods specify two or three replicates, whereas Figure 1 specifies three
-    with standard errors. Figure 1 labels loadings 10, 20 and 50 g/L Cu(II) compounds, while
-    the caption and prose vary between copper, Cu(II) and compound concentrations; no elemental-copper
-    conversion is accepted. Copper-free malt agar was the growth comparison. No matched mineral-only
-    sterile, killed-cell, pH-matched or acid-specific control is reported for this mineral assay.
-    The silver-arm sterile control cannot be transferred. Separate product estimates used cultures
-    after three months, dried at 60 degrees C, ground below 40 micrometres and pressed as 800-mg
-    samples for Cu-K-alpha XRD, with a copper oxalate dihydrate/quartz calibration.
+  protein_examples:
+  - uniprot_accession: UniProtKB:J4UKL8
+    entry_name: J4UKL8_BEAB2
+    protein_name: Oxaloacetate acetylhydrolase
+    gene_symbol: BBA_06346
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:655819
+      label: Beauveria bassiana (strain ARSEF 2860)
+    reference_proteome_id: UP000002762
+    interpro_ids:
+    - InterPro:IPR039556
+    - InterPro:IPR018523
+    - InterPro:IPR015813
+    - InterPro:IPR040442
+    pfam_ids:
+    - Pfam:PF13714
+    go_terms:
+    - id: GO:0004451
+      label: isocitrate lyase activity
+    - id: GO:0046421
+      label: methylisocitrate lyase activity
+    functional_role: Oxaloacetate acetylhydrolase (OAH; BBA_06346) catalyzing hydrolysis of oxaloacetate into oxalate and acetate during fungal oxalic-acid secretion.
+    annotation_note: Grounded to Beauveria bassiana ARSEF 2860 reference proteome UP000002762 (NCBITaxon:655819; BBA_06346, UniProtKB:J4UKL8), matching the species-rank organism assignment for the unnamed Bevaix Abbey vineyard-soil Beauveria bassiana isolate (NCBITaxon:176275) on synthetic atacamite (10 and 20 g/L loadings; full growth inhibition at 50 g/L) in Joseph et al. (2012). This unreviewed TrEMBL entry is classified as Oxaloacetate hydrolase (InterPro:IPR039556) and carries automated superfamily-level GO projections (GO:0004451 isocitrate lyase activity; GO:0046421 methylisocitrate lyase activity) inherited from the ICL/PEPM (InterPro:IPR018523 / Pfam:PF13714) structural superfamily.
+    evidence:
+    - source_ref: joseph2012
+      supports: partial
+      explanation: Joseph et al. (2012) detected oxalic acid by HPLC in separate 21-day mineral-free malt-agar cultures of Beauveria bassiana (Figure 3) and assigned copper oxalate hydrate (moolooite, CuC2O4.nH2O) on synthetic atacamite (10 and 20 g/L loadings; full growth inhibition at 50 g/L); OAH activity was not directly assayed and causal necessity of oxalate alone was not isolated.
+    - source_ref: uniprot_beauveria_bassiana_oxalate
+      supports: partial
+      explanation: UniProtKB:J4UKL8 (J4UKL8_BEAB2, BBA_06346) in Beauveria bassiana reference proteome UP000002762 (strain ARSEF 2860, NCBITaxon:655819) encodes Oxaloacetate acetylhydrolase (InterPro:IPR039556; InterPro:IPR018523; Pfam:PF13714) as a species-level reference-proteome proxy for the unnamed Bevaix Abbey isolate.
+  - uniprot_accession: UniProtKB:J5JXL6
+    entry_name: J5JXL6_BEAB2
+    protein_name: Pyruvate carboxylase
+    gene_symbol: BBA_04309
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:655819
+      label: Beauveria bassiana (strain ARSEF 2860)
+    reference_proteome_id: UP000002762
+    ec_numbers:
+    - EC:6.4.1.1
+    interpro_ids:
+    - InterPro:IPR013785
+    - InterPro:IPR011761
+    - InterPro:IPR005481
+    - InterPro:IPR001882
+    - InterPro:IPR011764
+    - InterPro:IPR005482
+    - InterPro:IPR000089
+    - InterPro:IPR003379
+    - InterPro:IPR005479
+    - InterPro:IPR055268
+    - InterPro:IPR016185
+    - InterPro:IPR000891
+    - InterPro:IPR005930
+    - InterPro:IPR011054
+    - InterPro:IPR011053
+    pfam_ids:
+    - Pfam:PF02785
+    - Pfam:PF00289
+    - Pfam:PF00364
+    - Pfam:PF02786
+    - Pfam:PF00682
+    - Pfam:PF02436
+    ncbifam_ids:
+    - NCBIfam:NF006761
+    - NCBIfam:NF009554
+    - NCBIfam:TIGR01235
+    go_terms:
+    - id: GO:0005737
+      label: cytoplasm
+    - id: GO:0005524
+      label: ATP binding
+    - id: GO:0004075
+      label: biotin carboxylase activity
+    - id: GO:0046872
+      label: metal ion binding
+    - id: GO:0004736
+      label: pyruvate carboxylase activity
+    - id: GO:0006094
+      label: gluconeogenesis
+    functional_role: Biotin-dependent cytoplasmic pyruvate carboxylase (EC 6.4.1.1; BBA_04309) catalyzing ATP-dependent carboxylation of pyruvate to oxaloacetate, the immediate precursor of oxalate.
+    annotation_note: Grounded to Beauveria bassiana ARSEF 2860 reference proteome UP000002762 (NCBITaxon:655819; BBA_04309, UniProtKB:J5JXL6), representing anaplerotic oxaloacetate formation in Beauveria bassiana (NCBITaxon:176275) grown on malt agar with synthetic atacamite (10 and 20 g/L loadings; full growth inhibition at 50 g/L) in Joseph et al. (2012).
+    evidence:
+    - source_ref: joseph2012
+      supports: partial
+      explanation: Joseph et al. (2012) documented oxalic acid secretion on 8-12 g/L malt agar (Figure 3) and copper-oxalate formation on synthetic atacamite (10 and 20 g/L loadings; full growth inhibition at 50 g/L) without genetic or enzymatic assay of pyruvate carboxylase.
+    - source_ref: uniprot_beauveria_bassiana_oxalate
+      supports: partial
+      explanation: UniProtKB:J5JXL6 (J5JXL6_BEAB2, BBA_04309) in Beauveria bassiana reference proteome UP000002762 (strain ARSEF 2860, NCBITaxon:655819) encodes Pyruvate carboxylase (EC 6.4.1.1; GO:0004736 pyruvate carboxylase activity) as a species-level reference-proteome proxy for the unnamed Bevaix Abbey isolate.
+  - uniprot_accession: UniProtKB:J4KMZ7
+    entry_name: J4KMZ7_BEAB2
+    protein_name: Malate dehydrogenase
+    gene_symbol: BBA_06393
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:655819
+      label: Beauveria bassiana (strain ARSEF 2860)
+    reference_proteome_id: UP000002762
+    ec_numbers:
+    - EC:1.1.1.37
+    interpro_ids:
+    - InterPro:IPR001557
+    - InterPro:IPR022383
+    - InterPro:IPR001236
+    - InterPro:IPR015955
+    - InterPro:IPR001252
+    - InterPro:IPR010097
+    - InterPro:IPR036291
+    pfam_ids:
+    - Pfam:PF02866
+    - Pfam:PF00056
+    ncbifam_ids:
+    - NCBIfam:TIGR01772
+    go_terms:
+    - id: GO:0005829
+      label: cytosol
+    - id: GO:0030060
+      label: L-malate dehydrogenase (NAD+) activity
+    - id: GO:0006108
+      label: malate metabolic process
+    - id: GO:0006099
+      label: tricarboxylic acid cycle
+    functional_role: Cytosolic NAD-dependent L-malate dehydrogenase (EC 1.1.1.37; BBA_06393) interconverting L-malate and oxaloacetate in the tricarboxylic acid / glyoxylate / oxalate precursor pathway.
+    annotation_note: Grounded to Beauveria bassiana ARSEF 2860 reference proteome UP000002762 (NCBITaxon:655819; BBA_06393, UniProtKB:J4KMZ7), representing cytosolic oxaloacetate precursor supply for oxalate biosynthesis in Beauveria bassiana (NCBITaxon:176275) on synthetic atacamite (10 and 20 g/L loadings; full growth inhibition at 50 g/L) in Joseph et al. (2012).
+    evidence:
+    - source_ref: joseph2012
+      supports: partial
+      explanation: Joseph et al. (2012) reported oxalic acid production in mineral-free malt agar (Figure 3) and copper oxalate formation on synthetic atacamite (10 and 20 g/L loadings; full growth inhibition at 50 g/L), without directly assaying malate dehydrogenase.
+    - source_ref: uniprot_beauveria_bassiana_oxalate
+      supports: partial
+      explanation: UniProtKB:J4KMZ7 (J4KMZ7_BEAB2, BBA_06393) in Beauveria bassiana reference proteome UP000002762 (strain ARSEF 2860, NCBITaxon:655819) encodes Malate dehydrogenase (EC 1.1.1.37; GO:0030060 L-malate dehydrogenase (NAD+) activity; GO:0005829 cytosol) as a species-level reference-proteome proxy for the unnamed Bevaix Abbey isolate.
   evidence:
   - source_ref: joseph2012
     supports: support
-    explanation: Figure 1A and Results show growth at the labelled 10 and 20 g/L loadings, but
-      full growth inhibition at 50 g/L atacamite. Figure 1B displays product estimates for the
-      lower loadings; its missing 50-g/L bar is not treated as a measured zero product yield.
-      The MATA series is named in text and Figure 1 but omitted from Table 1; no unstated standard
-      MATA recipe is inferred.
+    explanation: Figure 1A and Results show growth at the labelled 10 and 20 g/L loadings, but full growth inhibition at 50 g/L atacamite. Figure 1B displays product estimates for the lower loadings; its missing 50-g/L bar is not treated as a measured zero product yield. The MATA series is named in text and Figure 1 but omitted from Table 1; no unstated standard MATA recipe is inferred.
   - source_ref: joseph2012
     supports: partial
-    explanation: Results page 5 assigns moolooite, CuC2O4.nH2O with n below 1, to products on
-      all three copper media using ESEM, XRD and FTIR, partly referring to Joseph et al. 2011
-      for characterization. The complete 2012 article was inspected, but does not display the
-      original powder patterns for these mineral arms. The accepted outcome is the authors'
-      copper-oxalate product assignment, not independent confirmation of hydration, phase purity
-      or complete substrate conversion. The related 2011 article's original graphics were not
-      successfully acquired in this investigation and are not accepted as directly inspected
-      evidence.
+    explanation: Results page 5 assigns moolooite, CuC2O4.nH2O with n below 1, to products on all three copper media using ESEM, XRD and FTIR, partly referring to Joseph et al. 2011 for characterization. The complete 2012 article was inspected, but does not display the original powder patterns for these mineral arms. The accepted outcome is the authors' copper-oxalate product assignment, not independent confirmation of hydration, phase purity or complete substrate conversion. The related 2011 article's original graphics were not successfully acquired in this investigation and are not accepted as directly inspected evidence.
   - source_ref: joseph2012
     supports: partial
-    explanation: Figure 1B provides semiquantitative XRD estimates after three months. Its caption
-      uses percentage of dry treated mycelium, while methods describe dried culture and Results
-      use an ambiguous amount-of-copper denominator. The prose percentages are not unambiguously
-      mapped to each mineral arm. No numerical extraction efficiency or recovered-product yield
-      is imported; neither a copper mass balance nor purified product recovery was demonstrated.
+    explanation: Figure 1B provides semiquantitative XRD estimates after three months. Its caption uses percentage of dry treated mycelium, while methods describe dried culture and Results use an ambiguous amount-of-copper denominator. The prose percentages are not unambiguously mapped to each mineral arm. No numerical extraction efficiency or recovered-product yield is imported; neither a copper mass balance nor purified product recovery was demonstrated.
   - source_ref: joseph2012
     supports: partial
-    explanation: Figure 3 and organic-acid methods concern separate mineral-free malt-agar cultures
-      after 21 days at 8 or 12 g/L malt. Oxalic acid was detected among eleven acid standards.
-      This supports an oxalate-producing phenotype, not proof that oxalate is the sole or necessary
-      cause in the mineral arm. Reported production-rate units and extrapolated quantities are
-      unresolved and are not imported or silently corrected. No industrial deployment or long-term
-      conservation performance follows from these laboratory observations.
+    explanation: Figure 3 and organic-acid methods concern separate mineral-free malt-agar cultures after 21 days at 8 or 12 g/L malt. Oxalic acid was detected among eleven acid standards. This supports an oxalate-producing phenotype, not proof that oxalate is the sole or necessary cause in the mineral arm. Reported production-rate units and extrapolated quantities are unresolved and are not imported or silently corrected. No industrial deployment or long-term conservation performance follows from these laboratory observations.
   - source_ref: ncbi_bassiana
     supports: context_only
-    explanation: The live authority resolves NCBITaxon:176275 to Beauveria bassiana at species
-      rank. It does not verify the unnamed study isolate, strain accession or causal pathway.
+    explanation: The live authority resolves NCBITaxon:176275 to Beauveria bassiana at species rank. It does not verify the unnamed study isolate, strain accession or causal pathway.
+causal_graphs:
+- id: bassiana_oxalate_synthetic_atacamite_transformation_graph
+  name: Beauveria bassiana oxalic acid secretion and copper oxalate assignment on synthetic atacamite agar
+  description: Causal pathway linking Beauveria bassiana pyruvate carboxylase (UniProtKB:J5JXL6), cytosolic malate dehydrogenase (UniProtKB:J4KMZ7), and oxaloacetate acetylhydrolase (UniProtKB:J4UKL8) in species reference proteome UP000002762 to oxalic acid secretion (assayed in separate mineral-free malt agar in Figure 3) and culture-associated formation of copper oxalate hydrate (moolooite, CuC2O4.nH2O) on synthetic atacamite malt agar at labelled 10 and 20 g/L loadings (with complete fungal growth inhibition at 50 g/L in Figure 1A-B of Joseph et al., 2012), while preserving unresolved compound vs Cu(II) loading labels, ambiguous Figure 1B XRD percentage denominators, uninspected 2011 raw diffraction graphics, and absence of matched sterile/killed-cell mineral controls.
+  scope: REPRESENTATIVE_EXAMPLE
+  mechanism_ref: bassiana_associated_oxalate_formation
+  nodes:
+  - id: beauveria_bassiana_pyc_mdh_oah_oxalate_pathway
+    label: Beauveria bassiana pyruvate carboxylase, malate dehydrogenase, and oxaloacetate acetylhydrolase
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: BBA_04309/BBA_06393/BBA_06346
+    description: Pyruvate carboxylase (EC 6.4.1.1; UniProtKB:J5JXL6), cytosolic NAD-dependent malate dehydrogenase (EC 1.1.1.37; UniProtKB:J4KMZ7), and oxaloacetate acetylhydrolase (UniProtKB:J4UKL8) in Beauveria bassiana reference proteome UP000002762, representing the fungal oxaloacetate-to-oxalate biosynthetic pathway.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:J4UKL8
+      entry_name: J4UKL8_BEAB2
+      protein_name: Oxaloacetate acetylhydrolase
+      gene_symbol: BBA_06346
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:655819
+        label: Beauveria bassiana (strain ARSEF 2860)
+      reference_proteome_id: UP000002762
+      interpro_ids:
+      - InterPro:IPR039556
+      - InterPro:IPR018523
+      - InterPro:IPR015813
+      - InterPro:IPR040442
+      pfam_ids:
+      - Pfam:PF13714
+      go_terms:
+      - id: GO:0004451
+        label: isocitrate lyase activity
+      - id: GO:0046421
+        label: methylisocitrate lyase activity
+      functional_role: Oxaloacetate acetylhydrolase (OAH; BBA_06346) catalyzing hydrolysis of oxaloacetate into oxalate and acetate during fungal oxalic-acid secretion.
+      annotation_note: Grounded to Beauveria bassiana ARSEF 2860 reference proteome UP000002762 (NCBITaxon:655819; BBA_06346, UniProtKB:J4UKL8), matching the species-rank organism assignment for the unnamed Bevaix Abbey vineyard-soil Beauveria bassiana isolate (NCBITaxon:176275) on synthetic atacamite (10 and 20 g/L loadings; full growth inhibition at 50 g/L) in Joseph et al. (2012). This unreviewed TrEMBL entry is classified as Oxaloacetate hydrolase (InterPro:IPR039556) and carries automated superfamily-level GO projections (GO:0004451 isocitrate lyase activity; GO:0046421 methylisocitrate lyase activity) inherited from the ICL/PEPM (InterPro:IPR018523 / Pfam:PF13714) structural superfamily.
+      evidence:
+      - source_ref: joseph2012
+        supports: partial
+        explanation: Joseph et al. (2012) detected oxalic acid by HPLC in separate 21-day mineral-free malt-agar cultures of Beauveria bassiana (Figure 3) and assigned copper oxalate hydrate (moolooite, CuC2O4.nH2O) on synthetic atacamite (10 and 20 g/L loadings; full growth inhibition at 50 g/L); OAH activity was not directly assayed and causal necessity of oxalate alone was not isolated.
+      - source_ref: uniprot_beauveria_bassiana_oxalate
+        supports: partial
+        explanation: UniProtKB:J4UKL8 (J4UKL8_BEAB2, BBA_06346) in Beauveria bassiana reference proteome UP000002762 (strain ARSEF 2860, NCBITaxon:655819) encodes Oxaloacetate acetylhydrolase (InterPro:IPR039556; InterPro:IPR018523; Pfam:PF13714) as a species-level reference-proteome proxy for the unnamed Bevaix Abbey isolate.
+    - uniprot_accession: UniProtKB:J5JXL6
+      entry_name: J5JXL6_BEAB2
+      protein_name: Pyruvate carboxylase
+      gene_symbol: BBA_04309
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:655819
+        label: Beauveria bassiana (strain ARSEF 2860)
+      reference_proteome_id: UP000002762
+      ec_numbers:
+      - EC:6.4.1.1
+      interpro_ids:
+      - InterPro:IPR013785
+      - InterPro:IPR011761
+      - InterPro:IPR005481
+      - InterPro:IPR001882
+      - InterPro:IPR011764
+      - InterPro:IPR005482
+      - InterPro:IPR000089
+      - InterPro:IPR003379
+      - InterPro:IPR005479
+      - InterPro:IPR055268
+      - InterPro:IPR016185
+      - InterPro:IPR000891
+      - InterPro:IPR005930
+      - InterPro:IPR011054
+      - InterPro:IPR011053
+      pfam_ids:
+      - Pfam:PF02785
+      - Pfam:PF00289
+      - Pfam:PF00364
+      - Pfam:PF02786
+      - Pfam:PF00682
+      - Pfam:PF02436
+      ncbifam_ids:
+      - NCBIfam:NF006761
+      - NCBIfam:NF009554
+      - NCBIfam:TIGR01235
+      go_terms:
+      - id: GO:0005737
+        label: cytoplasm
+      - id: GO:0005524
+        label: ATP binding
+      - id: GO:0004075
+        label: biotin carboxylase activity
+      - id: GO:0046872
+        label: metal ion binding
+      - id: GO:0004736
+        label: pyruvate carboxylase activity
+      - id: GO:0006094
+        label: gluconeogenesis
+      functional_role: Biotin-dependent cytoplasmic pyruvate carboxylase (EC 6.4.1.1; BBA_04309) catalyzing ATP-dependent carboxylation of pyruvate to oxaloacetate, the immediate precursor of oxalate.
+      annotation_note: Grounded to Beauveria bassiana ARSEF 2860 reference proteome UP000002762 (NCBITaxon:655819; BBA_04309, UniProtKB:J5JXL6), representing anaplerotic oxaloacetate formation in Beauveria bassiana (NCBITaxon:176275) grown on malt agar with synthetic atacamite (10 and 20 g/L loadings; full growth inhibition at 50 g/L) in Joseph et al. (2012).
+      evidence:
+      - source_ref: joseph2012
+        supports: partial
+        explanation: Joseph et al. (2012) documented oxalic acid secretion on 8-12 g/L malt agar (Figure 3) and copper-oxalate formation on synthetic atacamite (10 and 20 g/L loadings; full growth inhibition at 50 g/L) without genetic or enzymatic assay of pyruvate carboxylase.
+      - source_ref: uniprot_beauveria_bassiana_oxalate
+        supports: partial
+        explanation: UniProtKB:J5JXL6 (J5JXL6_BEAB2, BBA_04309) in Beauveria bassiana reference proteome UP000002762 (strain ARSEF 2860, NCBITaxon:655819) encodes Pyruvate carboxylase (EC 6.4.1.1; GO:0004736 pyruvate carboxylase activity) as a species-level reference-proteome proxy for the unnamed Bevaix Abbey isolate.
+    - uniprot_accession: UniProtKB:J4KMZ7
+      entry_name: J4KMZ7_BEAB2
+      protein_name: Malate dehydrogenase
+      gene_symbol: BBA_06393
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:655819
+        label: Beauveria bassiana (strain ARSEF 2860)
+      reference_proteome_id: UP000002762
+      ec_numbers:
+      - EC:1.1.1.37
+      interpro_ids:
+      - InterPro:IPR001557
+      - InterPro:IPR022383
+      - InterPro:IPR001236
+      - InterPro:IPR015955
+      - InterPro:IPR001252
+      - InterPro:IPR010097
+      - InterPro:IPR036291
+      pfam_ids:
+      - Pfam:PF02866
+      - Pfam:PF00056
+      ncbifam_ids:
+      - NCBIfam:TIGR01772
+      go_terms:
+      - id: GO:0005829
+        label: cytosol
+      - id: GO:0030060
+        label: L-malate dehydrogenase (NAD+) activity
+      - id: GO:0006108
+        label: malate metabolic process
+      - id: GO:0006099
+        label: tricarboxylic acid cycle
+      functional_role: Cytosolic NAD-dependent L-malate dehydrogenase (EC 1.1.1.37; BBA_06393) interconverting L-malate and oxaloacetate in the tricarboxylic acid / glyoxylate / oxalate precursor pathway.
+      annotation_note: Grounded to Beauveria bassiana ARSEF 2860 reference proteome UP000002762 (NCBITaxon:655819; BBA_06393, UniProtKB:J4KMZ7), representing cytosolic oxaloacetate precursor supply for oxalate biosynthesis in Beauveria bassiana (NCBITaxon:176275) on synthetic atacamite (10 and 20 g/L loadings; full growth inhibition at 50 g/L) in Joseph et al. (2012).
+      evidence:
+      - source_ref: joseph2012
+        supports: partial
+        explanation: Joseph et al. (2012) reported oxalic acid production in mineral-free malt agar (Figure 3) and copper oxalate formation on synthetic atacamite (10 and 20 g/L loadings; full growth inhibition at 50 g/L), without directly assaying malate dehydrogenase.
+      - source_ref: uniprot_beauveria_bassiana_oxalate
+        supports: partial
+        explanation: UniProtKB:J4KMZ7 (J4KMZ7_BEAB2, BBA_06393) in Beauveria bassiana reference proteome UP000002762 (strain ARSEF 2860, NCBITaxon:655819) encodes Malate dehydrogenase (EC 1.1.1.37; GO:0030060 L-malate dehydrogenase (NAD+) activity; GO:0005829 cytosol) as a species-level reference-proteome proxy for the unnamed Bevaix Abbey isolate.
+  - id: malt_agar_oxalic_acid_secretion
+    label: Excreted oxalic acid in Beauveria bassiana malt-agar culture
+    node_type: CHEMICAL_ENTITY
+    description: Oxalic acid detected among 11 organic-acid standards after 21 days in separate mineral-free malt-agar cultures (8 or 12 g/L malt; Figure 3 of Joseph et al., 2012), with unresolved production-rate units in the source prose.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: synthetic_atacamite_malt_agar_interaction
+    label: Culture-associated interaction with synthetic atacamite Cu2Cl(OH)3 at 10 and 20 g/L loadings (inhibited at 50 g/L)
+    node_type: BIOLOGICAL_PROCESS
+    description: Fungal growth over 18 days (and 3-month product incubation) on 12 g/L malt agar containing UV-treated synthetic atacamite at labelled 10 and 20 g/L loadings (full growth inhibition at 50 g/L; Figure 1A), with MATA omitted from Table 1 and compound vs elemental Cu(II) concentration wording unresolved.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: atacamite_derived_moolooite_product_assignment
+    label: Assigned copper oxalate hydrate (moolooite, CuC2O4.nH2O) product on 10 and 20 g/L synthetic atacamite
+    node_type: MATERIAL_OR_PHASE
+    description: Authors' assignment of moolooite (CuC2O4.nH2O, n < 1) and semiquantitative 3-month XRD product estimates (Figure 1B, pressed 800-mg dried samples calibrated with copper oxalate dihydrate/quartz) on 10 and 20 g/L atacamite media, without displayed raw powder diffraction patterns in the 2012 article, resolved dry-mycelium vs copper-amount denominators, or isolated metal recovery.
+    protein_grounding_status: NOT_APPLICABLE
+  edges:
+  - source: beauveria_bassiana_pyc_mdh_oah_oxalate_pathway
+    target: malt_agar_oxalic_acid_secretion
+    predicate: produces
+    relationship: biosynthesis and secretion of oxalic acid via oxaloacetate hydrolysis
+    description: Pyruvate carboxylase, malate dehydrogenase, and oxaloacetate acetylhydrolase generate and hydrolyze oxaloacetate to secreted oxalic acid.
+    evidence:
+    - source_ref: joseph2012
+      supports: partial
+      explanation: Figure 3 detects oxalic acid in 21-day mineral-free malt-agar cultures of the Beauveria bassiana isolate; support is partial because organic acids were assayed in mineral-free medium and individual enzymes were not directly assayed.
+  - source: malt_agar_oxalic_acid_secretion
+    target: synthetic_atacamite_malt_agar_interaction
+    predicate: drives
+    relationship: proposed acid/ligand-promoted alteration of synthetic atacamite at permissive loadings (10 and 20 g/L)
+    description: Fungal organic-acid excretion is proposed to promote dissolution and complexation of synthetic atacamite at 10 and 20 g/L loadings where growth occurs.
+    evidence:
+    - source_ref: joseph2012
+      supports: partial
+      explanation: Figure 1A shows radial growth at labelled 10 and 20 g/L atacamite loadings (and full inhibition at 50 g/L); support is partial because no matched sterile-mineral, killed-cell, or acid-only control was run to prove oxalate is the sole necessary agent.
+  - source: synthetic_atacamite_malt_agar_interaction
+    target: atacamite_derived_moolooite_product_assignment
+    predicate: transforms_into
+    relationship: formation of copper oxalate hydrate (moolooite) product assigned in 3-month cultures
+    description: Culture-associated transformation of synthetic atacamite at 10 and 20 g/L loadings yields products assigned by the authors to copper oxalate hydrate (moolooite).
+    evidence:
+    - source_ref: joseph2012
+      supports: partial
+      explanation: Results (p. 5) and Figure 1B assign moolooite (CuC2O4.nH2O) and report semiquantitative 3-month XRD estimates for the 10 and 20 g/L atacamite arms; support is partial because raw powder XRD patterns are not shown in the 2012 paper and Figure 1B's percentage denominator varies between caption, methods, and prose.
 curation_history:
 - timestamp: '2026-10-15T00:08:15.724112Z'
   curator: codex (GPT-6; codex)
   action: CREATE
-  summary: Added atacamite mineral identity and qualified laboratory fungal-associated copper
-    oxalate formation; preserved source concentration/product-denominator ambiguity and phase/control
-    limits.
+  summary: Added atacamite mineral identity and qualified laboratory fungal-associated copper oxalate formation; preserved source concentration/product-denominator ambiguity and phase/control limits.
+- timestamp: '2026-11-10T05:40:33Z'
+  curator: marcin
+  action: edit
+  summary: Add bassiana_oxalate_synthetic_atacamite_transformation_graph causal graph and ground bassiana_associated_oxalate_formation to Beauveria bassiana reference-proteome oxalate-pathway enzymes (UniProtKB:J4UKL8, UniProtKB:J5JXL6, UniProtKB:J4KMZ7)
 history_refs:
 - history/records/atacamite/2026-10-15T000817Z-codex-36807b.yaml
+- history/records/atacamite/2026-11-10T054033Z-marcin-f8b342.yaml

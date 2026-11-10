@@ -1,0 +1,30 @@
+history_version: 1
+target:
+  kind: record
+  slug: cadmium
+  path: data/records/cadmium.yaml
+session:
+  id: 2026-11-10T054033Z-marcin-f8e8cb
+  timestamp: '2026-11-10T05:40:33Z'
+  actors:
+  - name: marcin
+    type: ai_agent
+    model: claude-opus-4-6
+    agent_tool: antigravity
+events:
+- type: EDIT
+  outcome: changed
+  summary: Add cd1_anaerobic_sulfidogenesis_and_cds_precipitation_graph causal graph and ground
+    cd1_cadmium_sulfide to Klebsiella planticola reference-proteome sulfur-metabolism enzymes
+    (UniProtKB:A0A443VK69, UniProtKB:A0A2X2E5R3, UniProtKB:A0A0D8SNU2)
+  details: Grounded cd1_cadmium_sulfide in data/records/cadmium.yaml to live-verified Klebsiella
+    planticola (NCBITaxon:575, reference proteome UP001293169) entries GlpE (UniProtKB:A0A443VK69),
+    Cds1 (UniProtKB:A0A2X2E5R3), and CysK (UniProtKB:A0A0D8SNU2) and added cd1_anaerobic_sulfidogenesis_and_cds_precipitation_graph
+    preserving S-XANES/Cd-EXAFS Cd-O ligand, ~1 mM sulfide-based CdS estimate, and cell-free
+    control caveats from Sharma et al. (2000).
+  sections:
+  - sources
+  - mechanisms
+  - causal_graphs
+  - curation_history
+  - history_refs

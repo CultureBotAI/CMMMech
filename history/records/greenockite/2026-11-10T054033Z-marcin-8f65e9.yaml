@@ -1,0 +1,31 @@
+history_version: 1
+target:
+  kind: record
+  slug: greenockite
+  path: data/records/greenockite.yaml
+session:
+  id: 2026-11-10T054033Z-marcin-8f65e9
+  timestamp: '2026-11-10T05:40:33Z'
+  actors:
+  - name: marcin
+    type: ai_agent
+    model: claude-opus-4-6
+    agent_tool: antigravity
+events:
+- type: EDIT
+  outcome: changed
+  summary: Add x513_thermophilic_sulfidogenic_greenockite_cds_formation_graph causal graph
+    and ground x513_cds_formation to congeneric Thermoanaerobacter pseudethanolicus reference-proteome
+    sulfur-metabolism enzymes (UniProtKB:B0KC13, UniProtKB:B0KCT7, UniProtKB:B0KC12)
+  details: Grounded x513_cds_formation in data/records/greenockite.yaml to live-verified congeneric
+    Thermoanaerobacter pseudethanolicus reference proteome UP000002156 entries (iscS UniProtKB:B0KC13,
+    Teth39_1911 UniProtKB:B0KCT7, Teth39_0279 UniProtKB:B0KC12) alongside an explicit UNGROUNDED
+    node for strain X513's unsequenced thiosulfate/sulfite reduction system, preserving cubic-only
+    cysteine comparator, filtration/autoclave control, and d(002)/(102) indexing caveats from
+    Moon et al. (2013).
+  sections:
+  - sources
+  - mechanisms
+  - causal_graphs
+  - curation_history
+  - history_refs
