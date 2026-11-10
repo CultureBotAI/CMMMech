@@ -1,0 +1,298 @@
+# Primary-source scientific review of jonlarsenite (IMA:2024-078a, status A, Al4Cu9)
+
+- Review: 20261110T021300Z-jonlarsenite-round131-scientific-review
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-11-10T02:12:30Z
+- Finished UTC: 2026-11-10T02:13:00Z
+- Reviewer: antigravity / round131-scientific-reviewer (self_review)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Jonlarsenite (IMA:2024-078a, status A, Al4Cu9) passes primary-source scientific review (scientific_review: true) at SHA-256 45de05cd8368cbaaeba1a53215c8be5a7d873be655044e19ecbbe4788c11d1aa against all bounded passages and rendered table PNGs of Bindi L, Kihle JB, Cheng G, Hu J, Yao N, Ma C, Guan Y, Asimow PD, Steinhardt PJ (2025) Jonlarsenite, Al4Cu9, a new intermetallic phase in the Al-Cu system discovered in a micrometeorite from Oslo, Norway. European Journal of Mineralogy 37:783-791 (https://doi.org/10.5194/ejm-37-783-2025).
+
+## Scope And Provenance
+
+Primary-source scientific review of data/records/jonlarsenite.yaml (SHA-256 45de05cd8368cbaaeba1a53215c8be5a7d873be655044e19ecbbe4788c11d1aa) and its canonical CREATE history sidecar (history/records/jonlarsenite/2026-11-10T021137Z-antigravity-5741ff.yaml) against all bounded primary-source passages and rendered table PNGs from Bindi L, Kihle JB, Cheng G, Hu J, Yao N, Ma C, Guan Y, Asimow PD, Steinhardt PJ (2025) Jonlarsenite, Al4Cu9, a new intermetallic phase in the Al-Cu system discovered in a micrometeorite from Oslo, Norway. European Journal of Mineralogy 37:783-791 (https://doi.org/10.5194/ejm-37-783-2025) and the September 2026 IMA-CNMNC Master List (PDF p. 106).
+
+Selection: Round 131 mineral record jonlarsenite
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base b85e201c0e49280cad6edd6ffa6e8a096d78f607.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:jonlarsenite | data/records/jonlarsenite.yaml | maintained | Jonlarsenite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Strict corpus validation | passed | True | cmmmech:jonlarsenite | Checked 708 record(s); 0 failed. |
+| Canonical history validation | passed | True | cmmmech:jonlarsenite | Checked 1515 history record(s); 0 error(s). |
+
+## Scientific And Domain Assessments
+
+### Verification of IMA:2024-078a identity, type locality, type specimens, chemical composition, crystal structure, and internal source discrepancies for jonlarsenite
+
+evidence: supported. Targets: cmmmech:jonlarsenite.
+
+All numeric, crystallographic, and chemical claims in data/records/jonlarsenite.yaml (SHA-256 45de05cd8368cbaaeba1a53215c8be5a7d873be655044e19ecbbe4788c11d1aa) match the bounded primary-source passages and rendered table PNGs of Bindi L, Kihle JB, Cheng G, Hu J, Yao N, Ma C, Guan Y, Asimow PD, Steinhardt PJ (2025) Jonlarsenite, Al4Cu9, a new intermetallic phase in the Al-Cu system discovered in a micrometeorite from Oslo, Norway. European Journal of Mineralogy 37:783-791 and the September 2026 IMA Master List (PDF p. 106).
+
+### Verification of 0 mechanisms (abiotic occurrence only) and append-only history provenance
+
+provenance: supported. Targets: cmmmech:jonlarsenite.
+
+data/records/jonlarsenite.yaml accurately omits mechanisms (0 mechanisms) and explicitly discloses that no biological or microbial interaction data are reported in the type mineralogical description. Append-only CREATE history sidecar passes validation with 0 errors.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/records/jonlarsenite.yaml; Working-tree record data/records/jonlarsenite.yaml | supports | Working-tree record data/records/jonlarsenite.yaml captures IMA:2024-078a identity, type locality (Urban micrometeorite NMM/L2 recovered from the roof of Bertel O. Steen Logistics industrial facility near Skedsmokorset, north of Oslo, Norway (60.0176196 deg N, 11.0578908 deg E; country listed as 'Norway (meteorite)' in IMA Master List)), type specimens (Holotype KNR 44452 (polished section of micrometeorite NMM/L2), deposited in the collections of the Natural History Museum, University of Oslo, Blindern, Oslo, Norway), Table 1 (p. 786) JEOL 8200 WDS EPMA (n = 2: mean Al 13.64 wt% [13.15-14.12], Cu 81.12 wt% [80.38-81.86], Fe 3.86 wt% [3.60-4.11], Total 98.62 wt%; empirical formula (Al3.55Fe0.45)sum=4.00(Cu8.96Fe0.04)sum=9.00 on 13 apfu) and Titan Cubed Themis 300 STEM-EDS on FIB lamella (n = 4: mean Al 15.05 wt% [12.84-16.52], Cu 80.58 wt% [79.96-81.33], Fe 4.37 wt% [3.40-5.83], Total 100.00 wt%; empirical formula (Al3.81Fe0.19)sum=4.00(Cu8.66Fe0.34)sum=9.00 on 13 apfu), cubic P-43m (#215) crystal structure, documented primary-source discrepancies, and 0 mechanisms (SHA-256 45de05cd8368cbaaeba1a53215c8be5a7d873be655044e19ecbbe4788c11d1aa). |
+| ima_authority | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; IMA-CNMNC September 2026 Master List, PDF p. 106 | supports | Confirms Jonlarsenite, status A, IMA:2024-078a, formula Al4Cu9, and first reference in Bindi L, Kihle JB, Cheng G, Hu J, Yao N, Ma C, Guan Y, Asimow PD, Steinhardt PJ (2025) Jonlarsenite, Al4Cu9, a new intermetallic phase in the Al-Cu system discovered in a micrometeorite from Oslo, Norway. European Journal of Mineralogy 37:783-791. |
+| bindi_2025_jonlarsenite_primary | https://doi.org/10.5194/ejm-37-783-2025; Bindi L, Kihle JB, Cheng G, Hu J, Yao N, Ma C, Guan Y, Asimow PD, Steinhardt PJ (2025) Jonlarsenite, Al4Cu9, a new intermetallic phase in the Al-Cu system discovered in a micrometeorite from Oslo, Norway. European Journal of Mineralogy 37:783-791 (21 bounded passages &lt;= 1,800 B across 9 full-PDF pages / 8 main-text pages, plus 150-DPI PNG table renders) | supports | All bounded passages (&lt;= 1,800 B) and single-page 150-DPI PNG table renders inspected from Bindi L, Kihle JB, Cheng G, Hu J, Yao N, Ma C, Guan Y, Asimow PD, Steinhardt PJ (2025) Jonlarsenite, Al4Cu9, a new intermetallic phase in the Al-Cu system discovered in a micrometeorite from Oslo, Norway. European Journal of Mineralogy 37:783-791, confirming verbatim title, authors, type locality, type specimen repositories, chemical composition, unit-cell parameters, structure refinement, and documented internal source discrepancies. |
+| canonical_history | history/records/jonlarsenite/2026-11-10T021137Z-antigravity-5741ff.yaml; Canonical history sidecar history/records/jonlarsenite/2026-11-10T021137Z-antigravity-5741ff.yaml | supports | Canonical history sidecar history/records/jonlarsenite/2026-11-10T021137Z-antigravity-5741ff.yaml (SHA-256 007093ad1f6d956bc195b7f94de0732f06a5d4190ba78c047d15d194a7aa0b8f) records the CREATE session. |
+| validation | data/records/jonlarsenite.yaml; Real CLI validation via .venv/bin/cmmmech validate --require-records and .venv/bin/cmmmech validate-history --base main | supports | Checked 708 record(s); 0 failed. Checked 1515 history record(s); 0 error(s). |
+
+## Limits And Additional Notes
+
+- Review is conducted in single-agent Goal Mode (independence: self_review) against working-tree bytes; an independent subagent PR review is executed prior to merge.
+- Executed under the Round 131 bounded source-text workflow (scripts/index_bounded_pdf_passages.py, max 1,800 bytes per passage) plus single-page 150-DPI PNG table renders.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261110T021300Z-jonlarsenite-round131-scientific-review
+kind: record
+repository: CultureBotAI/CMMMech
+title: Primary-source scientific review of jonlarsenite (IMA:2024-078a, status A,
+  Al4Cu9)
+started_at: '2026-11-10T02:12:30Z'
+finished_at: '2026-11-10T02:13:00Z'
+reviewer:
+  identity: antigravity / round131-scientific-reviewer
+  kind: agent
+  model: gemini-3.1-pro
+  independence: self_review
+  independence_basis: Single-agent Goal Mode execution of .claude/skills/review-record/SKILL.md
+    verifying all scientific claims in data/records/jonlarsenite.yaml (SHA-256 45de05cd8368cbaaeba1a53215c8be5a7d873be655044e19ecbbe4788c11d1aa)
+    and its canonical CREATE history sidecar (history/records/jonlarsenite/2026-11-10T021137Z-antigravity-5741ff.yaml)
+    against all bounded passages (21 total / 17 main-text passages <= 1,800 B across
+    9 full-PDF / 8 main-text pages) and single-page 150-DPI PNG table renders of Bindi
+    L, Kihle JB, Cheng G, Hu J, Yao N, Ma C, Guan Y, Asimow PD, Steinhardt PJ (2025)
+    Jonlarsenite, Al4Cu9, a new intermetallic phase in the Al-Cu system discovered
+    in a micrometeorite from Oslo, Norway. European Journal of Mineralogy 37:783-791
+    (https://doi.org/10.5194/ejm-37-783-2025, PDF SHA-256 b0c9289e60dcde8620d4bd85d16c910aaf87ef57b6cb885122fd0fd10a245a1e)
+    and the September 2026 IMA-CNMNC Master List (PDF p. 106, SHA-256 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973).
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: b85e201c0e49280cad6edd6ffa6e8a096d78f607
+  state: working_tree
+  inputs:
+  - path: data/records/jonlarsenite.yaml
+    sha256: 45de05cd8368cbaaeba1a53215c8be5a7d873be655044e19ecbbe4788c11d1aa
+    role: target
+  - path: history/records/jonlarsenite/2026-11-10T021137Z-antigravity-5741ff.yaml
+    sha256: 007093ad1f6d956bc195b7f94de0732f06a5d4190ba78c047d15d194a7aa0b8f
+    role: context
+  - path: research/sources/round131-minerals/20261110T021200Z-source-investigation.json
+    sha256: 1a8dfe4bd7424bd3b2f3dda4fefabba69d6e975123bdeacb2a946ccc84e4e17a
+    role: context
+  - path: research/sources/round131-minerals/20261110T021200Z-source-investigation.md
+    sha256: b363db903e06594483bff15fd3e3c73f06d68e1aeb0b06432194aac55a1a6066
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+targets:
+- target_id: cmmmech:jonlarsenite
+  path: data/records/jonlarsenite.yaml
+  label: Jonlarsenite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/jonlarsenite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/jonlarsenite/2026-11-10T021137Z-antigravity-5741ff.yaml
+    role: canonical_history
+scope:
+  description: Primary-source scientific review of data/records/jonlarsenite.yaml
+    (SHA-256 45de05cd8368cbaaeba1a53215c8be5a7d873be655044e19ecbbe4788c11d1aa) and
+    its canonical CREATE history sidecar (history/records/jonlarsenite/2026-11-10T021137Z-antigravity-5741ff.yaml)
+    against all bounded primary-source passages and rendered table PNGs from Bindi
+    L, Kihle JB, Cheng G, Hu J, Yao N, Ma C, Guan Y, Asimow PD, Steinhardt PJ (2025)
+    Jonlarsenite, Al4Cu9, a new intermetallic phase in the Al-Cu system discovered
+    in a micrometeorite from Oslo, Norway. European Journal of Mineralogy 37:783-791
+    (https://doi.org/10.5194/ejm-37-783-2025) and the September 2026 IMA-CNMNC Master
+    List (PDF p. 106).
+  selection: Round 131 mineral record jonlarsenite
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:jonlarsenite
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/jonlarsenite.yaml
+  locator: Working-tree record data/records/jonlarsenite.yaml
+  accessed_at: '2026-11-10T02:12:45Z'
+  support: supports
+  summary: 'Working-tree record data/records/jonlarsenite.yaml captures IMA:2024-078a
+    identity, type locality (Urban micrometeorite NMM/L2 recovered from the roof of
+    Bertel O. Steen Logistics industrial facility near Skedsmokorset, north of Oslo,
+    Norway (60.0176196 deg N, 11.0578908 deg E; country listed as ''Norway (meteorite)''
+    in IMA Master List)), type specimens (Holotype KNR 44452 (polished section of
+    micrometeorite NMM/L2), deposited in the collections of the Natural History Museum,
+    University of Oslo, Blindern, Oslo, Norway), Table 1 (p. 786) JEOL 8200 WDS EPMA
+    (n = 2: mean Al 13.64 wt% [13.15-14.12], Cu 81.12 wt% [80.38-81.86], Fe 3.86 wt%
+    [3.60-4.11], Total 98.62 wt%; empirical formula (Al3.55Fe0.45)sum=4.00(Cu8.96Fe0.04)sum=9.00
+    on 13 apfu) and Titan Cubed Themis 300 STEM-EDS on FIB lamella (n = 4: mean Al
+    15.05 wt% [12.84-16.52], Cu 80.58 wt% [79.96-81.33], Fe 4.37 wt% [3.40-5.83],
+    Total 100.00 wt%; empirical formula (Al3.81Fe0.19)sum=4.00(Cu8.66Fe0.34)sum=9.00
+    on 13 apfu), cubic P-43m (#215) crystal structure, documented primary-source discrepancies,
+    and 0 mechanisms (SHA-256 45de05cd8368cbaaeba1a53215c8be5a7d873be655044e19ecbbe4788c11d1aa).'
+  snapshot_sha256: 45de05cd8368cbaaeba1a53215c8be5a7d873be655044e19ecbbe4788c11d1aa
+- evidence_id: ima_authority
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: IMA-CNMNC September 2026 Master List, PDF p. 106
+  accessed_at: '2026-11-10T02:12:45Z'
+  support: supports
+  summary: Confirms Jonlarsenite, status A, IMA:2024-078a, formula Al4Cu9, and first
+    reference in Bindi L, Kihle JB, Cheng G, Hu J, Yao N, Ma C, Guan Y, Asimow PD,
+    Steinhardt PJ (2025) Jonlarsenite, Al4Cu9, a new intermetallic phase in the Al-Cu
+    system discovered in a micrometeorite from Oslo, Norway. European Journal of Mineralogy
+    37:783-791.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: bindi_2025_jonlarsenite_primary
+  kind: primary_source
+  reference: https://doi.org/10.5194/ejm-37-783-2025
+  locator: Bindi L, Kihle JB, Cheng G, Hu J, Yao N, Ma C, Guan Y, Asimow PD, Steinhardt
+    PJ (2025) Jonlarsenite, Al4Cu9, a new intermetallic phase in the Al-Cu system
+    discovered in a micrometeorite from Oslo, Norway. European Journal of Mineralogy
+    37:783-791 (21 bounded passages <= 1,800 B across 9 full-PDF pages / 8 main-text
+    pages, plus 150-DPI PNG table renders)
+  accessed_at: '2026-11-10T02:12:45Z'
+  support: supports
+  summary: All bounded passages (<= 1,800 B) and single-page 150-DPI PNG table renders
+    inspected from Bindi L, Kihle JB, Cheng G, Hu J, Yao N, Ma C, Guan Y, Asimow PD,
+    Steinhardt PJ (2025) Jonlarsenite, Al4Cu9, a new intermetallic phase in the Al-Cu
+    system discovered in a micrometeorite from Oslo, Norway. European Journal of Mineralogy
+    37:783-791, confirming verbatim title, authors, type locality, type specimen repositories,
+    chemical composition, unit-cell parameters, structure refinement, and documented
+    internal source discrepancies.
+  snapshot_sha256: b0c9289e60dcde8620d4bd85d16c910aaf87ef57b6cb885122fd0fd10a245a1e
+- evidence_id: canonical_history
+  kind: record_content
+  reference: history/records/jonlarsenite/2026-11-10T021137Z-antigravity-5741ff.yaml
+  locator: Canonical history sidecar history/records/jonlarsenite/2026-11-10T021137Z-antigravity-5741ff.yaml
+  accessed_at: '2026-11-10T02:12:45Z'
+  support: supports
+  summary: Canonical history sidecar history/records/jonlarsenite/2026-11-10T021137Z-antigravity-5741ff.yaml
+    (SHA-256 007093ad1f6d956bc195b7f94de0732f06a5d4190ba78c047d15d194a7aa0b8f) records
+    the CREATE session.
+  snapshot_sha256: 007093ad1f6d956bc195b7f94de0732f06a5d4190ba78c047d15d194a7aa0b8f
+- evidence_id: validation
+  kind: validation
+  reference: data/records/jonlarsenite.yaml
+  locator: Real CLI validation via .venv/bin/cmmmech validate --require-records and
+    .venv/bin/cmmmech validate-history --base main
+  accessed_at: '2026-11-10T02:12:55Z'
+  support: supports
+  summary: Checked 708 record(s); 0 failed. Checked 1515 history record(s); 0 error(s).
+  snapshot_sha256: 45de05cd8368cbaaeba1a53215c8be5a7d873be655044e19ecbbe4788c11d1aa
+checks:
+- check_id: validate_records
+  name: Strict corpus validation
+  command: .venv/bin/cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Checked 708 record(s); 0 failed.
+  target_ids:
+  - cmmmech:jonlarsenite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: validate_history
+  name: Canonical history validation
+  command: .venv/bin/cmmmech validate-history --base main
+  status: passed
+  required: true
+  summary: Checked 1515 history record(s); 0 error(s).
+  target_ids:
+  - cmmmech:jonlarsenite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+assessments:
+- assessment_id: identity_and_primary_source_verification
+  area: evidence
+  topic: Verification of IMA:2024-078a identity, type locality, type specimens, chemical
+    composition, crystal structure, and internal source discrepancies for jonlarsenite
+  outcome: supported
+  summary: All numeric, crystallographic, and chemical claims in data/records/jonlarsenite.yaml
+    (SHA-256 45de05cd8368cbaaeba1a53215c8be5a7d873be655044e19ecbbe4788c11d1aa) match
+    the bounded primary-source passages and rendered table PNGs of Bindi L, Kihle
+    JB, Cheng G, Hu J, Yao N, Ma C, Guan Y, Asimow PD, Steinhardt PJ (2025) Jonlarsenite,
+    Al4Cu9, a new intermetallic phase in the Al-Cu system discovered in a micrometeorite
+    from Oslo, Norway. European Journal of Mineralogy 37:783-791 and the September
+    2026 IMA Master List (PDF p. 106).
+  target_ids:
+  - cmmmech:jonlarsenite
+  evidence_ids:
+  - owner
+  - ima_authority
+  - bindi_2025_jonlarsenite_primary
+- assessment_id: mechanism_absence_and_provenance_verification
+  area: provenance
+  topic: Verification of 0 mechanisms (abiotic occurrence only) and append-only history
+    provenance
+  outcome: supported
+  summary: data/records/jonlarsenite.yaml accurately omits mechanisms (0 mechanisms)
+    and explicitly discloses that no biological or microbial interaction data are
+    reported in the type mineralogical description. Append-only CREATE history sidecar
+    passes validation with 0 errors.
+  target_ids:
+  - cmmmech:jonlarsenite
+  evidence_ids:
+  - owner
+  - bindi_2025_jonlarsenite_primary
+  - canonical_history
+  - validation
+findings: []
+actions: []
+summary: 'Jonlarsenite (IMA:2024-078a, status A, Al4Cu9) passes primary-source scientific
+  review (scientific_review: true) at SHA-256 45de05cd8368cbaaeba1a53215c8be5a7d873be655044e19ecbbe4788c11d1aa
+  against all bounded passages and rendered table PNGs of Bindi L, Kihle JB, Cheng
+  G, Hu J, Yao N, Ma C, Guan Y, Asimow PD, Steinhardt PJ (2025) Jonlarsenite, Al4Cu9,
+  a new intermetallic phase in the Al-Cu system discovered in a micrometeorite from
+  Oslo, Norway. European Journal of Mineralogy 37:783-791 (https://doi.org/10.5194/ejm-37-783-2025).'
+limitations:
+- 'Review is conducted in single-agent Goal Mode (independence: self_review) against
+  working-tree bytes; an independent subagent PR review is executed prior to merge.'
+notes:
+- Executed under the Round 131 bounded source-text workflow (scripts/index_bounded_pdf_passages.py,
+  max 1,800 bytes per passage) plus single-page 150-DPI PNG table renders.
+related_reviews: []
+```
