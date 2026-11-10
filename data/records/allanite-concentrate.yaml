@@ -60,11 +60,11 @@ mechanisms:
     pfam_ids:
     - Pfam:PF00528
     functional_role: Phosphate ABC transporter permease subunit PstC (GOX0706) disrupted in engineered Gluconobacter oxydans strains to derepress acidogenesis.
-    annotation_note: Grounded to Gluconobacter oxydans 621H reference proteome UP000006375 (NCBITaxon:290633) orthologous to the engineered B58 locus.
+    annotation_note: Grounded to reviewed Swiss-Prot reference-proteome entry UP000006375 for Gluconobacter oxydans 621H (NCBITaxon:290633; locus GOX0265) as an orthologous proxy for the engineered B58 mgdh locus in Schmitz et al. (2021).
     evidence:
     - source_ref: schmitz2025
       supports: partial
-      explanation: Tested in Schmitz et al. (2025) as part of the combined B58 delta-pstS, P112:mgdh (or pstC/pstS) engineered biolixiviant strain; Figure S2 Panel B and main text have a pstS label discrepancy and do not isolate single-gene contributions on allanite.
+      explanation: Periplasmic membrane-bound PQQ-dependent glucose dehydrogenase (mgdh) drives bulk gluconic-acid acidification in Gluconobacter oxydans B58, though Schmitz et al. (2021) Fig. 4D shows residual REE leaching from mgdh disruption mutants and UniProtKB:P27175 is grounded to the 621H reference proteome as an orthologous proxy.
   - uniprot_accession: UniProtKB:Q5FTI1
     entry_name: Q5FTI1_GLUOX
     protein_name: Phosphate-binding protein PstS
@@ -81,11 +81,11 @@ mechanisms:
     pfam_ids:
     - Pfam:PF12849
     functional_role: Periplasmic phosphate-binding protein PstS (GOX0537) targeted in engineered high-acid Gluconobacter oxydans strains.
-    annotation_note: Grounded to Gluconobacter oxydans 621H reference proteome UP000006375 (NCBITaxon:290633; locus GOX0537) alongside paralog GOX0920 (UniProtKB:Q5FSF4) because the primary source specifies delta-pstS in strain B58 without resolving which 621H pstS paralog corresponds to the deleted locus.
+    annotation_note: Grounded to reviewed Swiss-Prot reference-proteome entry UP000006375 for Gluconobacter oxydans 621H (NCBITaxon:290633; locus GOX0985) as an orthologous proxy for the engineered B58 pqqC locus in Schmitz et al. (2021).
     evidence:
     - source_ref: schmitz2025
       supports: partial
-      explanation: Tested in Schmitz et al. (2025) as part of the combined B58 delta-pstS, P112:mgdh (or pstC/pstS) engineered biolixiviant strain; Figure S2 Panel B and main text have a pstS label discrepancy and do not isolate single-gene contributions on allanite.
+      explanation: PQQ cofactor biosynthesis via pqqC is required for holo-Gdh acidogenesis in Gluconobacter oxydans B58, though Schmitz et al. (2021) Fig. 4D shows residual REE release from pqqC disruption strains and UniProtKB:Q9L3B2 is grounded to the 621H reference proteome as an orthologous proxy.
   - uniprot_accession: UniProtKB:Q5FSF4
     entry_name: Q5FSF4_GLUOX
     protein_name: Phosphate-binding protein PstS
@@ -102,11 +102,11 @@ mechanisms:
     pfam_ids:
     - Pfam:PF12849
     functional_role: Second periplasmic phosphate-binding protein PstS paralog (GOX0920) in the Gluconobacter oxydans 621H reference proteome corresponding to the pstS gene targeted in engineered high-acid Gluconobacter oxydans B58 strains.
-    annotation_note: Grounded to Gluconobacter oxydans 621H reference proteome UP000006375 (NCBITaxon:290633; locus GOX0920) alongside paralog GOX0537 (UniProtKB:Q5FTI1) because the primary source specifies delta-pstS in strain B58 without resolving which 621H pstS paralog corresponds to the deleted locus.
+    annotation_note: Grounded to Gluconobacter oxydans 621H reference proteome UP000006375 (NCBITaxon:290633; locus GOX0706) as an orthologous proxy for the engineered B58 pstC transposon-disruption locus in Schmitz et al. (2021).
     evidence:
     - source_ref: schmitz2025
       supports: partial
-      explanation: Tested in Schmitz et al. (2025) as part of the combined B58 delta-pstS, P112:mgdh (or pstC/pstS) engineered biolixiviant strain; Figure S2 Panel B and main text have a pstS label discrepancy and do not isolate single-gene contributions on allanite.
+      explanation: Transposon disruption of pstC (GOX0706) in Gluconobacter oxydans B58 lowered biolixiviant pH and increased total REE extraction from allanite concentrate from 1.8% (proxy wild-type) to 2.0% (~11% relative improvement), while the phosphate-sensing derepression mechanism remains a hypothesis and UniProtKB:Q5FT13 is a 621H proteome proxy.
   - uniprot_accession: UniProtKB:Q9L3B2
     entry_name: PQQC_GLUOX
     protein_name: Pyrroloquinoline-quinone synthase
@@ -181,7 +181,7 @@ mechanisms:
 causal_graphs:
 - id: gluconobacter_allanite_bioleaching_graph
   name: Engineered Gluconobacter oxydans acidogenic bioleaching of allanite concentrate
-  description: Causal pathway linking pstS/pstC disruption and PQQ-dependent glucose dehydrogenase (gdh) biolixiviant production to rare-earth mobilization from allanite concentrate.
+  description: Causal pathway linking Gluconobacter oxydans B58 pstC phosphate-transporter transposon disruption and PQQ-dependent glucose dehydrogenase (gdh/pqqC, grounded via G. oxydans 621H reference-proteome proxies) to clarified-biolixiviant rare-earth solubilization from Elaine Dorothy allanite concentrate, preserving residual mutant leaching and method/timing caveats in Schmitz et al. (2021).
   scope: RECORD_SPECIFIC_MECHANISM
   mechanism_ref: engineered_gluconobacter_bioleaching
   nodes:
@@ -189,7 +189,7 @@ causal_graphs:
     label: pstC (Phosphate transport system permease protein)
     node_type: GENE_OR_PROTEIN
     gene_symbol: pstC
-    description: Phosphate ABC transporter permease subunit PstC (GOX0706) disrupted in engineered Gluconobacter oxydans strains to derepress acidogenesis.
+    description: Phosphate ABC transporter permease subunit PstC (GOX0706) whose transposon disruption in Gluconobacter oxydans B58 lowered biolixiviant pH and increased allanite REE leaching from 1.8% to 2.0% (~11% relative increase); the proposed phosphate-sensing derepression of acidogenesis remains a hypothesis.
     protein_grounding_status: GROUNDED
     protein_examples:
     - uniprot_accession: UniProtKB:Q5FT13
@@ -209,16 +209,16 @@ causal_graphs:
       pfam_ids:
       - Pfam:PF00528
       functional_role: Phosphate ABC transporter permease subunit PstC (GOX0706) disrupted in engineered Gluconobacter oxydans strains to derepress acidogenesis.
-      annotation_note: Grounded to Gluconobacter oxydans 621H reference proteome UP000006375 (NCBITaxon:290633) orthologous to the engineered B58 locus.
+      annotation_note: Grounded to reviewed Swiss-Prot reference-proteome entry UP000006375 for Gluconobacter oxydans 621H (NCBITaxon:290633; locus GOX0265) as an orthologous proxy for the engineered B58 mgdh locus in Schmitz et al. (2021).
       evidence:
       - source_ref: schmitz2025
         supports: partial
-        explanation: Tested in Schmitz et al. (2025) as part of the combined B58 delta-pstS, P112:mgdh (or pstC/pstS) engineered biolixiviant strain; Figure S2 Panel B and main text have a pstS label discrepancy and do not isolate single-gene contributions on allanite.
+        explanation: Periplasmic membrane-bound PQQ-dependent glucose dehydrogenase (mgdh) drives bulk gluconic-acid acidification in Gluconobacter oxydans B58, though Schmitz et al. (2021) Fig. 4D shows residual REE leaching from mgdh disruption mutants and UniProtKB:P27175 is grounded to the 621H reference proteome as an orthologous proxy.
   - id: psts_phosphate_binding
     label: pstS (Phosphate-binding protein PstS)
     node_type: GENE_OR_PROTEIN
     gene_symbol: pstS
-    description: Periplasmic phosphate-binding protein PstS (GOX0537 / GOX0920) targeted in engineered high-acid Gluconobacter oxydans strains.
+    description: Catalyzes biosynthesis of the PQQ prosthetic group required by membrane-bound glucose dehydrogenase; pqqC transposon disruption strongly reduces acidification but retains residual REE leaching in Schmitz et al. (2021) Fig. 4D.
     protein_grounding_status: GROUNDED
     protein_examples:
     - uniprot_accession: UniProtKB:Q5FTI1
@@ -237,11 +237,11 @@ causal_graphs:
       pfam_ids:
       - Pfam:PF12849
       functional_role: Periplasmic phosphate-binding protein PstS (GOX0537) targeted in engineered high-acid Gluconobacter oxydans strains.
-      annotation_note: Grounded to Gluconobacter oxydans 621H reference proteome UP000006375 (NCBITaxon:290633; locus GOX0537) alongside paralog GOX0920 (UniProtKB:Q5FSF4) because the primary source specifies delta-pstS in strain B58 without resolving which 621H pstS paralog corresponds to the deleted locus.
+      annotation_note: Grounded to reviewed Swiss-Prot reference-proteome entry UP000006375 for Gluconobacter oxydans 621H (NCBITaxon:290633; locus GOX0985) as an orthologous proxy for the engineered B58 pqqC locus in Schmitz et al. (2021).
       evidence:
       - source_ref: schmitz2025
         supports: partial
-        explanation: Tested in Schmitz et al. (2025) as part of the combined B58 delta-pstS, P112:mgdh (or pstC/pstS) engineered biolixiviant strain; Figure S2 Panel B and main text have a pstS label discrepancy and do not isolate single-gene contributions on allanite.
+        explanation: PQQ cofactor biosynthesis via pqqC is required for holo-Gdh acidogenesis in Gluconobacter oxydans B58, though Schmitz et al. (2021) Fig. 4D shows residual REE release from pqqC disruption strains and UniProtKB:Q9L3B2 is grounded to the 621H reference proteome as an orthologous proxy.
     - uniprot_accession: UniProtKB:Q5FSF4
       entry_name: Q5FSF4_GLUOX
       protein_name: Phosphate-binding protein PstS
@@ -258,16 +258,16 @@ causal_graphs:
       pfam_ids:
       - Pfam:PF12849
       functional_role: Second periplasmic phosphate-binding protein PstS paralog (GOX0920) in the Gluconobacter oxydans 621H reference proteome corresponding to the pstS gene targeted in engineered high-acid Gluconobacter oxydans B58 strains.
-      annotation_note: Grounded to Gluconobacter oxydans 621H reference proteome UP000006375 (NCBITaxon:290633; locus GOX0920) alongside paralog GOX0537 (UniProtKB:Q5FTI1) because the primary source specifies delta-pstS in strain B58 without resolving which 621H pstS paralog corresponds to the deleted locus.
+      annotation_note: Grounded to Gluconobacter oxydans 621H reference proteome UP000006375 (NCBITaxon:290633; locus GOX0706) as an orthologous proxy for the engineered B58 pstC transposon-disruption locus in Schmitz et al. (2021).
       evidence:
       - source_ref: schmitz2025
         supports: partial
-        explanation: Tested in Schmitz et al. (2025) as part of the combined B58 delta-pstS, P112:mgdh (or pstC/pstS) engineered biolixiviant strain; Figure S2 Panel B and main text have a pstS label discrepancy and do not isolate single-gene contributions on allanite.
+        explanation: Transposon disruption of pstC (GOX0706) in Gluconobacter oxydans B58 lowered biolixiviant pH and increased total REE extraction from allanite concentrate from 1.8% (proxy wild-type) to 2.0% (~11% relative improvement), while the phosphate-sensing derepression mechanism remains a hypothesis and UniProtKB:Q5FT13 is a 621H proteome proxy.
   - id: pqqc_synthase
     label: PqqC pyrroloquinoline-quinone synthase
     node_type: GENE_OR_PROTEIN
     gene_symbol: pqqC
-    description: Catalyzes biosynthesis of the PQQ prosthetic group required by membrane-bound glucose dehydrogenase.
+    description: Periplasmic quinoprotein glucose dehydrogenase oxidizing glucose into gluconic acid; mgdh transposon disruption strongly impairs acidification but retains residual REE release above background in Schmitz et al. (2021) Fig. 4D.
     protein_grounding_status: GROUNDED
     protein_examples:
     - uniprot_accession: UniProtKB:Q9L3B2
@@ -345,48 +345,48 @@ causal_graphs:
   - source: pstc_phosphate_permease
     target: gdh_dehydrogenase
     predicate: modulates
-    relationship: genetic perturbation or regulatory coupling in engineered strain
-    description: Phosphate ABC transporter permease subunit PstC (GOX0706) disrupted in engineered Gluconobacter oxydans strains to derepress acidogenesis.
+    relationship: transposon disruption lowers biolixiviant pH and increases allanite REE leaching (proposed phosphate-sensing derepression)
+    description: Transposon disruption of pstC (GOX0706) in Gluconobacter oxydans B58 lowers biolixiviant pH and increases allanite REE extraction from 1.8% to 2.0% (~11% relative improvement), though the regulatory mechanism linking PstC disruption to Gdh acidogenesis remains a hypothesis.
     evidence:
     - source_ref: schmitz2025
       supports: partial
-      explanation: Combined engineered Gluconobacter oxydans strain increased REE leaching from allanite concentrate ~2.1-fold over wild type, without isolating individual pstC or pstS effects.
+      explanation: Schmitz et al. (2021) Fig. 4C and Results report lower biolixiviant pH and an ~11% relative increase in allanite REE extraction (2.0% vs 1.8% for proxy wild-type) for the B58 pstC disruption mutant, while noting that the phosphate-sensing regulatory mechanism is a hypothesis.
   - source: psts_phosphate_binding
     target: gdh_dehydrogenase
     predicate: modulates
     relationship: genetic perturbation or regulatory coupling in engineered strain
-    description: Periplasmic phosphate-binding protein PstS (GOX0537 / GOX0920) targeted in engineered high-acid Gluconobacter oxydans strains.
+    description: PQQ cofactor biosynthesis enables active periplasmic quinoprotein glucose dehydrogenase, though pqqC disruption strains still show residual REE release in Schmitz et al. (2021) Fig. 4D.
     evidence:
     - source_ref: schmitz2025
       supports: partial
-      explanation: Combined engineered Gluconobacter oxydans strain increased REE leaching from allanite concentrate ~2.1-fold over wild type, without isolating individual pstC or pstS effects.
+      explanation: Schmitz et al. (2021) show that pqqC disruption impairs acidification and REE extraction relative to wild-type B58, but residual leaching in Fig. 4D indicates that leaching is not solely governed by a single PqqC/Gdh pathway.
   - source: pqqc_synthase
     target: gdh_dehydrogenase
     predicate: positively_regulates
     relationship: supplies PQQ cofactor for holoenzyme assembly
-    description: PQQ cofactor biosynthesis enables active periplasmic quinoprotein glucose dehydrogenase.
+    description: Membrane-bound Gdh oxidizes D-glucose to gluconic acid, supplying the primary acidic lixiviant, while residual leaching by mgdh disruption mutants in Fig. 4D indicates minor additional acid or ligand contributions.
     evidence:
     - source_ref: schmitz2025
-      supports: support
-      explanation: PQQ-dependent glucose dehydrogenase activity drives gluconic-acid biolixiviant production in Gluconobacter oxydans.
+      supports: partial
+      explanation: Schmitz et al. (2021) establish periplasmic glucose oxidation as the primary source of acidic biolixiviant in G. oxydans B58, while Fig. 4D shows non-zero residual REE solubilization when mgdh is disrupted.
   - source: gdh_dehydrogenase
     target: gluconic_acid_biolixiviant
     predicate: produces
     relationship: periplasmic oxidation of glucose to gluconic acid
-    description: Membrane-bound Gdh oxidizes D-glucose to gluconic acid, lowering supernatant pH and supplying organic-acid ligands.
+    description: Clarified (centrifuged at 3200 x g for 10 min, not reported as sterile-filtered) glucose-grown G. oxydans B58 biolixiviant contacts 4% w/v (20 mg per 500 uL) Elaine Dorothy allanite concentrate at room temperature with horizontal shaking (reported as 15 h in Methods and 24 h in Results text, with pH evolving as an unbuffered outcome).
     evidence:
     - source_ref: schmitz2025
-      supports: support
-      explanation: Periplasmic glucose oxidation by G. oxydans generates the acidic gluconic-acid-rich biolixiviant.
+      supports: partial
+      explanation: Schmitz et al. (2021) Figure 4C, Methods, and Results support clarified-biolixiviant leaching of 4% w/v allanite concentrate, with partial support reflecting the 15 h (Methods) vs 24 h (Results) duration discrepancy and unbuffered pH outcome.
   - source: gluconic_acid_biolixiviant
     target: allanite_concentrate_feed
     predicate: solubilizes
     relationship: Gluconic acid-rich G. oxydans B58 biolixiviant leaches crushed allanite concentrate
-    description: Glucose-grown G. oxydans B58 and engineered delta-pstS, P112:mgdh biolixiviants contact crushed allanite concentrate at 10% w/v (500 mg in 5 mL) and 1% w/v pulp density for 24 h at room temperature and 200 rpm.
+    description: Clarified-biolixiviant leaching of 4% w/v Elaine Dorothy allanite concentrate solubilizes 1.8% of total REEs with proxy wild-type and 2.0% with the pstC transposon-disruption biolixiviant (an ~11% relative improvement, calculated using previously published digest values as denominator rather than a batch-specific total acid digestion).
     evidence:
     - source_ref: schmitz2025
-      supports: support
-      explanation: Schmitz et al. (2025) Figures 1–3 and Data S1–S3 demonstrate culture-associated REE solubilization from crushed allanite concentrate at 10% and 1% w/v pulp density above no-bacteria controls.
+      supports: partial
+      explanation: ICP-MS measurements in Schmitz et al. (2021) Figure 4C report 1.8% (proxy wild-type) and 2.0% (pstC disruption) total REE extraction (~11% relative increase), normalized against literature REE content rather than a newly verified batch-specific digest.
   - source: allanite_concentrate_feed
     target: solubilized_ree_ions
     predicate: produces
@@ -421,6 +421,10 @@ curation_history:
   curator: marcin
   action: edit
   summary: Add second Gluconobacter oxydans 621H reference-proteome PstS paralog (UniProtKB:Q5FSF4, locus GOX0920) to psts_phosphate_binding
+- timestamp: '2026-11-10T16:51:44Z'
+  curator: marcin
+  action: edit
+  summary: Scope allanite-concentrate G. oxydans B58 protein examples and causal graph to 621H proxies and partial support (#993)
 history_refs:
 - history/records/allanite-concentrate/2026-10-12T091702Z-codex-5d49fc.yaml
 - history/records/allanite-concentrate/2026-10-18T042750Z-antigravity-092f04.yaml
@@ -428,3 +432,4 @@ history_refs:
 - history/records/allanite-concentrate/2026-10-22T132123Z-claude-0e7ffc.yaml
 - history/records/allanite-concentrate/2026-10-30T171003Z-marcin-894052.yaml
 - history/records/allanite-concentrate/2026-10-31T110150Z-marcin-5ba57f.yaml
+- history/records/allanite-concentrate/2026-11-10T165144Z-marcin-b31f32.yaml

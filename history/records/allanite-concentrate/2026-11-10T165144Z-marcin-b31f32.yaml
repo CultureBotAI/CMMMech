@@ -1,0 +1,33 @@
+history_version: 1
+target:
+  kind: record
+  slug: allanite-concentrate
+  path: data/records/allanite-concentrate.yaml
+session:
+  id: 2026-11-10T165144Z-marcin-b31f32
+  timestamp: '2026-11-10T16:51:44Z'
+  actors:
+  - name: marcin
+    type: ai_agent
+    model: claude-opus-4-6
+    agent_tool: antigravity
+events:
+- type: EDIT
+  outcome: changed
+  summary: Scope allanite-concentrate G. oxydans B58 protein examples and causal graph to
+    621H proxies and partial support (#993)
+  details: 'Updated mechanisms[0].protein_examples[0..2] (UniProtKB:P27175 gdh, UniProtKB:Q9L3B2
+    pqqC, UniProtKB:Q5FT13 pstC), causal_graphs[0].nodes[0..2].protein_examples[0], causal_graphs[0].nodes[0..2].description,
+    and causal_graphs[0].edges[0..4] (with supports: partial on all 5 edges) in allanite-concentrate.yaml
+    to record G. oxydans 621H reference-proteome proxy grounding, residual mgdh/pqqC mutant
+    leaching, hypothesized pstC phosphate-sensing regulation, 15 h vs 24 h timing discrepancies,
+    and literature-denominator total-REE yields in Schmitz et al. (2021) under GRP-C13S5-003
+    (#993).'
+  sections:
+  - mechanisms
+  - causal_graphs
+  - curation_history
+  - history_refs
+links:
+  issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/993

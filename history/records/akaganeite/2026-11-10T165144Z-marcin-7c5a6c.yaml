@@ -1,0 +1,33 @@
+history_version: 1
+target:
+  kind: record
+  slug: akaganeite
+  path: data/records/akaganeite.yaml
+session:
+  id: 2026-11-10T165144Z-marcin-7c5a6c
+  timestamp: '2026-11-10T16:51:44Z'
+  actors:
+  - name: marcin
+    type: ai_agent
+    model: claude-opus-4-6
+    agent_tool: antigravity
+events:
+- type: EDIT
+  outcome: changed
+  summary: Scope Geobacter sulfurreducens ImcH/CbcL protein examples and akaganeite causal
+    graph to PCA EET proxies and 10 uM AQDS caveats (#991)
+  details: 'Updated mechanisms[0].protein_examples[0..1] (UniProtKB:Q747K6 ImcH, UniProtKB:Q74GH2
+    CbcL), causal_graphs[0].nodes[0..1].protein_examples[0], causal_graphs[0].nodes[0..4].description,
+    and causal_graphs[0].edges[0..3] (with supports: partial on all 4 edges) in akaganeite.yaml
+    to explicitly state that ImcH and CbcL are grounded as G. sulfurreducens PCA reference-proteome
+    EET proxies not directly assayed in Cutting et al. (2009), and to record the 10 microM
+    AQDS shuttle and secondary magnetite/goethite mineral transformation caveats under GRP-C13S5-001
+    (#991).'
+  sections:
+  - mechanisms
+  - causal_graphs
+  - curation_history
+  - history_refs
+links:
+  issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/991

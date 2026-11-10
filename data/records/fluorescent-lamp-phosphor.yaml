@@ -43,11 +43,11 @@ mechanisms:
     pfam_ids:
     - Pfam:PF01011
     functional_role: Membrane-bound PQQ-dependent glucose dehydrogenase (EC 1.1.5.2) that oxidizes D-glucose to D-glucono-1,5-lactone/gluconic acid in the periplasm, generating the organic-acid biolixiviant.
-    annotation_note: Grounded to reviewed Swiss-Prot reference-proteome entry UP000006375 for Gluconobacter oxydans 621H (NCBITaxon:290633; locus GOX0265).
+    annotation_note: Grounded to reviewed Swiss-Prot reference-proteome entry UP000006375 for Gluconobacter oxydans 621H (NCBITaxon:290633; locus GOX0265) as an orthologous proxy for the engineered B58 mgdh locus in Schmitz et al. (2021).
     evidence:
     - source_ref: schmitz2021
-      supports: support
-      explanation: Glucose oxidation by membrane-bound PQQ-dependent glucose dehydrogenase generates the gluconic acid-dominated acidic biolixiviant used to leach the mineral/feed.
+      supports: partial
+      explanation: Periplasmic membrane-bound PQQ-dependent glucose dehydrogenase (mgdh) drives bulk gluconic-acid acidification in Gluconobacter oxydans B58, though Schmitz et al. (2021) Fig. 4D shows residual REE leaching from mgdh disruption mutants and UniProtKB:P27175 is grounded to the 621H reference proteome as an orthologous proxy.
   - uniprot_accession: UniProtKB:Q9L3B2
     entry_name: PQQC_GLUOX
     protein_name: Pyrroloquinoline-quinone synthase
@@ -67,11 +67,11 @@ mechanisms:
     pfam_ids:
     - Pfam:PF03070
     functional_role: Pyrroloquinoline-quinone synthase (EC 1.3.3.11) catalyzing the final ring-closure and oxidation steps of PQQ cofactor biosynthesis required for holo-Gdh activity.
-    annotation_note: Grounded to reviewed Swiss-Prot reference-proteome entry UP000006375 for Gluconobacter oxydans 621H (NCBITaxon:290633; locus GOX0985).
+    annotation_note: Grounded to reviewed Swiss-Prot reference-proteome entry UP000006375 for Gluconobacter oxydans 621H (NCBITaxon:290633; locus GOX0985) as an orthologous proxy for the engineered B58 pqqC locus in Schmitz et al. (2021).
     evidence:
     - source_ref: schmitz2021
-      supports: support
-      explanation: Biosynthesis of the pyrroloquinoline quinone (PQQ) cofactor is required for periplasmic quinoprotein dehydrogenase activity during acidogenic biolixiviant production.
+      supports: partial
+      explanation: PQQ cofactor biosynthesis via pqqC is required for holo-Gdh acidogenesis in Gluconobacter oxydans B58, though Schmitz et al. (2021) Fig. 4D shows residual REE release from pqqC disruption strains and UniProtKB:Q9L3B2 is grounded to the 621H reference proteome as an orthologous proxy.
   - uniprot_accession: UniProtKB:Q5FT13
     entry_name: Q5FT13_GLUOX
     protein_name: Phosphate transport system permease protein
@@ -89,11 +89,11 @@ mechanisms:
     pfam_ids:
     - Pfam:PF00528
     functional_role: Phosphate ABC transporter permease subunit PstC (GOX0706) whose transposon disruption in Gluconobacter oxydans B58 lowers biolixiviant pH and increases rare-earth leaching from retorted fluorescent-lamp phosphor powder.
-    annotation_note: Grounded to Gluconobacter oxydans 621H reference proteome UP000006375 (NCBITaxon:290633) orthologous to the engineered B58 locus.
+    annotation_note: Grounded to Gluconobacter oxydans 621H reference proteome UP000006375 (NCBITaxon:290633; locus GOX0706) as an orthologous proxy for the engineered B58 pstC transposon-disruption locus in Schmitz et al. (2021).
     evidence:
     - source_ref: schmitz2021
-      supports: support
-      explanation: Whole-genome knockout collection screening in Schmitz et al. (2021) identified transposon disruption of pstC (GOX0706) as enhancing biolixiviant acidification and increasing REE leaching from retorted phosphor powder compared with wild-type B58.
+      supports: partial
+      explanation: Transposon disruption of pstC (GOX0706) in Gluconobacter oxydans B58 lowered biolixiviant pH and increased total REE extraction from retorted lamp phosphor from 4.7% (proxy wild-type) to 5.5% (18% relative improvement), while the phosphate-sensing derepression mechanism remains a hypothesis and UniProtKB:Q5FT13 is a 621H proteome proxy.
   evidence:
   - source_ref: schmitz2021
     supports: support
@@ -104,7 +104,7 @@ mechanisms:
 causal_graphs:
 - id: gluconobacter_phosphor_bioleaching_graph
   name: Gluconobacter oxydans biolixiviant rare-earth leaching from retorted lamp phosphor
-  description: Causal pathway linking pstC phosphate-transporter disruption and PQQ-dependent glucose dehydrogenase (gdh) biolixiviant production to rare-earth mobilization from retorted fluorescent-lamp phosphor powder.
+  description: Causal pathway linking Gluconobacter oxydans B58 pstC phosphate-transporter transposon disruption and PQQ-dependent glucose dehydrogenase (gdh/pqqC, grounded via G. oxydans 621H reference-proteome proxies) to clarified-biolixiviant rare-earth mobilization from retorted fluorescent-lamp phosphor powder, preserving residual mutant leaching and normalization caveats in Schmitz et al. (2021).
   scope: RECORD_SPECIFIC_MECHANISM
   mechanism_ref: gluconobacter_biolixiviant_ree_release
   nodes:
@@ -112,7 +112,7 @@ causal_graphs:
     label: pstC (Phosphate transport system permease protein)
     node_type: GENE_OR_PROTEIN
     gene_symbol: pstC
-    description: Phosphate ABC transporter permease subunit PstC (GOX0706) disrupted in Gluconobacter oxydans B58 to derepress periplasmic glucose oxidation and acidogenesis.
+    description: Phosphate ABC transporter permease subunit PstC (GOX0706) whose transposon disruption in Gluconobacter oxydans B58 lowered biolixiviant pH and increased retorted-phosphor REE leaching from 4.7% to 5.5% (18% relative improvement); the proposed phosphate-sensing derepression of acidogenesis remains a hypothesis.
     protein_grounding_status: GROUNDED
     protein_examples:
     - uniprot_accession: UniProtKB:Q5FT13
@@ -132,16 +132,16 @@ causal_graphs:
       pfam_ids:
       - Pfam:PF00528
       functional_role: Phosphate ABC transporter permease subunit PstC (GOX0706) whose transposon disruption in Gluconobacter oxydans B58 lowers biolixiviant pH and increases rare-earth leaching from retorted fluorescent-lamp phosphor powder.
-      annotation_note: Grounded to Gluconobacter oxydans 621H reference proteome UP000006375 (NCBITaxon:290633) orthologous to the engineered B58 locus.
+      annotation_note: Grounded to Gluconobacter oxydans 621H reference proteome UP000006375 (NCBITaxon:290633; locus GOX0706) as an orthologous proxy for the engineered B58 pstC transposon-disruption locus in Schmitz et al. (2021).
       evidence:
       - source_ref: schmitz2021
-        supports: support
-        explanation: Whole-genome knockout collection screening in Schmitz et al. (2021) identified transposon disruption of pstC (GOX0706) as enhancing biolixiviant acidification and increasing REE leaching from retorted phosphor powder compared with wild-type B58.
+        supports: partial
+        explanation: Transposon disruption of pstC (GOX0706) in Gluconobacter oxydans B58 lowered biolixiviant pH and increased total REE extraction from retorted lamp phosphor from 4.7% (proxy wild-type) to 5.5% (18% relative improvement), while the phosphate-sensing derepression mechanism remains a hypothesis and UniProtKB:Q5FT13 is a 621H proteome proxy.
   - id: pqqc_synthase
     label: PqqC pyrroloquinoline-quinone synthase
     node_type: GENE_OR_PROTEIN
     gene_symbol: pqqC
-    description: Catalyzes biosynthesis of the PQQ prosthetic group required by membrane-bound glucose dehydrogenase.
+    description: Catalyzes biosynthesis of the PQQ prosthetic group required by membrane-bound glucose dehydrogenase; pqqC transposon disruption strongly reduces acidification but retains residual REE leaching in Schmitz et al. (2021) Fig. 4D.
     protein_grounding_status: GROUNDED
     protein_examples:
     - uniprot_accession: UniProtKB:Q9L3B2
@@ -163,16 +163,16 @@ causal_graphs:
       pfam_ids:
       - Pfam:PF03070
       functional_role: Pyrroloquinoline-quinone synthase (EC 1.3.3.11) catalyzing the final ring-closure and oxidation steps of PQQ cofactor biosynthesis required for holo-Gdh activity.
-      annotation_note: Grounded to reviewed Swiss-Prot reference-proteome entry UP000006375 for Gluconobacter oxydans 621H (NCBITaxon:290633; locus GOX0985).
+      annotation_note: Grounded to reviewed Swiss-Prot reference-proteome entry UP000006375 for Gluconobacter oxydans 621H (NCBITaxon:290633; locus GOX0985) as an orthologous proxy for the engineered B58 pqqC locus in Schmitz et al. (2021).
       evidence:
       - source_ref: schmitz2021
-        supports: support
-        explanation: Biosynthesis of the pyrroloquinoline quinone (PQQ) cofactor is required for periplasmic quinoprotein dehydrogenase activity during acidogenic biolixiviant production.
+        supports: partial
+        explanation: PQQ cofactor biosynthesis via pqqC is required for holo-Gdh acidogenesis in Gluconobacter oxydans B58, though Schmitz et al. (2021) Fig. 4D shows residual REE release from pqqC disruption strains and UniProtKB:Q9L3B2 is grounded to the 621H reference proteome as an orthologous proxy.
   - id: gdh_dehydrogenase
     label: Gdh membrane-bound PQQ-dependent glucose dehydrogenase
     node_type: GENE_OR_PROTEIN
     gene_symbol: gdh
-    description: Periplasmic quinoprotein glucose dehydrogenase oxidizing glucose into gluconic acid.
+    description: Periplasmic quinoprotein glucose dehydrogenase oxidizing glucose into gluconic acid; mgdh transposon disruption strongly impairs acidification but retains residual REE release above background in Schmitz et al. (2021) Fig. 4D.
     protein_grounding_status: GROUNDED
     protein_examples:
     - uniprot_accession: UniProtKB:P27175
@@ -195,11 +195,11 @@ causal_graphs:
       pfam_ids:
       - Pfam:PF01011
       functional_role: Membrane-bound PQQ-dependent glucose dehydrogenase (EC 1.1.5.2) that oxidizes D-glucose to D-glucono-1,5-lactone/gluconic acid in the periplasm, generating the organic-acid biolixiviant.
-      annotation_note: Grounded to reviewed Swiss-Prot reference-proteome entry UP000006375 for Gluconobacter oxydans 621H (NCBITaxon:290633; locus GOX0265).
+      annotation_note: Grounded to reviewed Swiss-Prot reference-proteome entry UP000006375 for Gluconobacter oxydans 621H (NCBITaxon:290633; locus GOX0265) as an orthologous proxy for the engineered B58 mgdh locus in Schmitz et al. (2021).
       evidence:
       - source_ref: schmitz2021
-        supports: support
-        explanation: Glucose oxidation by membrane-bound PQQ-dependent glucose dehydrogenase generates the gluconic acid-dominated acidic biolixiviant used to leach the mineral/feed.
+        supports: partial
+        explanation: Periplasmic membrane-bound PQQ-dependent glucose dehydrogenase (mgdh) drives bulk gluconic-acid acidification in Gluconobacter oxydans B58, though Schmitz et al. (2021) Fig. 4D shows residual REE leaching from mgdh disruption mutants and UniProtKB:P27175 is grounded to the 621H reference proteome as an orthologous proxy.
   - id: gluconic_acid_biolixiviant
     label: Extracellular gluconic acid and organic-acid biolixiviant
     node_type: CHEMICAL_ENTITY
@@ -219,48 +219,48 @@ causal_graphs:
   - source: pstc_phosphate_permease
     target: gdh_dehydrogenase
     predicate: modulates
-    relationship: transposon disruption derepresses periplasmic glucose oxidation and acidogenesis
-    description: Disruption of pstC (GOX0706) in the phosphate transport complex increases periplasmic gluconic acid production and lowers biolixiviant pH for phosphor leaching.
+    relationship: transposon disruption lowers biolixiviant pH and increases phosphor REE leaching (proposed phosphate-sensing derepression)
+    description: Transposon disruption of pstC (GOX0706) in Gluconobacter oxydans B58 was the single phosphate-transport disruption retaining statistical significance after multiple-testing correction, lowering biolixiviant pH and increasing phosphor REE extraction from 4.7% to 5.5% (18% relative improvement), though the regulatory mechanism linking PstC to Gdh acidogenesis remains a hypothesis.
     evidence:
     - source_ref: schmitz2021
-      supports: support
-      explanation: Transposon disruption of pstC (GOX0706) lowered biolixiviant pH and increased REE extraction from retorted fluorescent-lamp phosphor relative to wild-type B58.
+      supports: partial
+      explanation: Schmitz et al. (2021) Fig. 4C and Results identify pstC as the improved disruption strain retaining significance after multiple-comparison correction (5.5% vs 4.7% proxy wild-type total REE extraction), while noting that the phosphate-sensing regulatory mechanism remains a hypothesis.
   - source: pqqc_synthase
     target: gdh_dehydrogenase
     predicate: positively_regulates
     relationship: supplies PQQ cofactor for holoenzyme assembly
-    description: PQQ cofactor biosynthesis enables active periplasmic quinoprotein glucose dehydrogenase.
+    description: PQQ cofactor biosynthesis enables active periplasmic quinoprotein glucose dehydrogenase, though pqqC disruption strains still show residual REE release in Schmitz et al. (2021) Fig. 4D.
     evidence:
     - source_ref: schmitz2021
-      supports: support
-      explanation: PQQ-dependent glucose dehydrogenase activity drives gluconic-acid biolixiviant production in Gluconobacter oxydans.
+      supports: partial
+      explanation: Schmitz et al. (2021) show that pqqC disruption impairs acidification and REE extraction relative to wild-type B58, but residual leaching in Fig. 4D indicates that leaching is not solely governed by a single PqqC/Gdh pathway.
   - source: gdh_dehydrogenase
     target: gluconic_acid_biolixiviant
     predicate: produces
     relationship: periplasmic oxidation of glucose to gluconic acid
-    description: Membrane-bound Gdh oxidizes D-glucose to gluconic acid, lowering supernatant pH and supplying organic-acid ligands.
+    description: Membrane-bound Gdh oxidizes D-glucose to gluconic acid, supplying the primary acidic lixiviant, while residual leaching by mgdh disruption mutants in Fig. 4D indicates minor additional acid or ligand contributions.
     evidence:
     - source_ref: schmitz2021
-      supports: support
-      explanation: Periplasmic glucose oxidation by G. oxydans generates the acidic gluconic-acid-rich biolixiviant.
+      supports: partial
+      explanation: Schmitz et al. (2021) establish periplasmic glucose oxidation as the primary source of acidic biolixiviant in G. oxydans B58, while Fig. 4D shows non-zero residual REE solubilization when mgdh is disrupted.
   - source: gluconic_acid_biolixiviant
     target: retorted_lamp_phosphor
     predicate: solubilizes
     relationship: Centrifuged G. oxydans B58 biolixiviant leaches retorted fluorescent lamp phosphor powder
-    description: Clarified (centrifuged at 3200 x g for 10 min) glucose-grown G. oxydans B58 biolixiviant contacts 4% w/v (20 mg per 500 uL) retorted phosphor powder for 36 h with horizontal shaking at room temperature.
+    description: Clarified (centrifuged at 3200 x g for 10 min, not reported as sterile-filtered) glucose-grown G. oxydans B58 biolixiviant contacts 4% w/v (20 mg per 500 uL) retorted fluorescent-lamp phosphor powder for 36 h with horizontal shaking at room temperature and unbuffered pH as an outcome.
     evidence:
     - source_ref: schmitz2021
-      supports: support
-      explanation: Schmitz et al. (2021) Figure 4C and Results demonstrate 36-h REE solubilization from 4% w/v retorted lamp phosphor by clarified G. oxydans B58 biolixiviants.
+      supports: partial
+      explanation: Schmitz et al. (2021) Figure 4C and Methods support 36-h REE solubilization from 4% w/v retorted lamp phosphor by centrifuged (not sterile-filtered) G. oxydans B58 biolixiviants with unbuffered pH evolving as an outcome.
   - source: retorted_lamp_phosphor
     target: leached_y_eu_ree
     predicate: produces
     relationship: 36-h bioleaching of retorted lamp phosphor releases 4.7% to 5.5% of total REEs into 0.45-um filtrate
-    description: 36-h leaching of 4% w/v retorted fluorescent lamp phosphor solubilizes 4.7% of total REEs with proxy wild-type biolixiviant and 5.5% with the pstC transposon-disruption biolixiviant (an 18% relative improvement).
+    description: 36-h leaching of 4% w/v retorted fluorescent-lamp phosphor solubilizes 4.7% of total REEs with proxy wild-type biolixiviant and 5.5% with the pstC transposon-disruption biolixiviant (an 18% relative improvement, normalized to previously published phosphor REE content rather than a newly verified batch-specific total digestion).
     evidence:
     - source_ref: schmitz2021
-      supports: support
-      explanation: ICP-MS measurements in Schmitz et al. (2021) Figure 4C confirm 4.7% total REE extraction for proxy wild-type and 5.5% for the pstC disruption mutant after 36 h.
+      supports: partial
+      explanation: ICP-MS measurements in Schmitz et al. (2021) Figure 4C report 4.7% total REE extraction for proxy wild-type and 5.5% for the pstC disruption mutant after 36 h (an 18% relative improvement), using previously published phosphor REE amounts as the denominator.
 curation_history:
 - timestamp: '2026-10-09T04:47:54Z'
   curator: Codex (GPT-6; Codex)
@@ -278,8 +278,13 @@ curation_history:
   curator: marcin
   action: edit
   summary: Upgrade fluorescent-lamp-phosphor causal_graphs[0] lixiviant predicate to solubilizes and ground node/edge text in schmitz2021
+- timestamp: '2026-11-10T16:51:44Z'
+  curator: marcin
+  action: edit
+  summary: Scope fluorescent-lamp-phosphor G. oxydans B58 protein examples and causal graph to 621H proxies and partial support (#993)
 history_refs:
 - history/records/fluorescent-lamp-phosphor/2026-10-09T044754Z-codex-45750b.yaml
 - history/records/fluorescent-lamp-phosphor/2026-10-18T042750Z-antigravity-8a8590.yaml
 - history/records/fluorescent-lamp-phosphor/2026-10-21T184653Z-claude-bcf6e7.yaml
 - history/records/fluorescent-lamp-phosphor/2026-10-30T171004Z-marcin-139c21.yaml
+- history/records/fluorescent-lamp-phosphor/2026-11-10T165144Z-marcin-daa0d7.yaml

@@ -208,7 +208,7 @@
         <a href="#mechanism-w3110_biofilm_calcium_phosphate" class="badge" style="text-decoration: none;">Mechanism: <code>w3110_biofilm_calcium_phosphate</code></a>
       </div>
     </div>
-    <p style="margin: .5rem 0; font-size: .94rem;">Causal pathway linking periplasmic alkaline phosphatase PhoA (UniProtKB:P00634) in Escherichia coli K-12 W3110 biofilms to enzymatic hydrolysis of beta-glycerophosphate and nucleation of hydroxyapatite within the extracellular curli/cellulose matrix.</p>
+    <p style="margin: .5rem 0; font-size: .94rem;">Process-level pathway representing organic-acid and proton production by Gluconobacter oxydans and Burkholderia fungorum on glucose medium and the resulting acidolysis/complexolysis of finely ground Tunisian Gafsa phosphorite ore (francolite/carbonate-fluorapatite bearing gangue carbonates and quartz, mapped to hydroxylapatite as a phosphate-mineral proxy) in Antonijevic et al. (2023).</p>
 
     <strong style="font-size: .86rem; color: var(--muted); text-transform: uppercase; letter-spacing: .05em;">Causal Nodes (3):</strong>
     <table style="margin: .4rem 0 .8rem; font-size: .88rem;">
@@ -230,7 +230,7 @@
             <br><span class="badge" style="font-size: .72rem; margin-top: .2rem;">GROUNDED</span>
           </td>
           <td>
-<div>Zn/Mg-dependent periplasmic phosphomonoesterase (EC 3.1.3.1) cleaving organic phosphate esters.</div>            <div style="margin-top: .35rem; padding-top: .35rem; border-top: 1px solid var(--border);">
+<div>Acidogenic glucose oxidation and organic-acid secretion by Gluconobacter oxydans or Burkholderia fungorum during 14-day rotary-shaker incubation at 30 degrees C (1% w/v solid loading); Antonijevic et al. (2023) did not isolate individual organic-acid anions or enzyme activities.</div>            <div style="margin-top: .35rem; padding-top: .35rem; border-top: 1px solid var(--border);">
               <div style="margin-bottom: .25rem;">
                 <a href="https://www.uniprot.org/uniprotkb/P00634" target="_blank" rel="noopener"><code>UniProtKB:P00634</code></a>
                 (PPB_ECOLI, <span class="badge" style="font-size: .7rem;">SWISS_PROT</span>)
@@ -251,7 +251,7 @@
             <br><span class="badge" style="font-size: .72rem; margin-top: .2rem;">NOT_APPLICABLE</span>
           </td>
           <td>
-<div>Inorganic phosphate liberated into the biofilm microenvironment by enzymatic dephosphorylation.</div>          </td>
+<div>Finely ground (&lt;37 um) natural sedimentary phosphorite ore from the Gafsa basin, Tunisia (~27.7 wt% P2O5, dominated by carbonate-fluorapatite/francolite with carbonate and silicate gangue, represented here under the hydroxylapatite proxy record).</div>          </td>
         </tr>
         <tr id="causal-node-w3110_phoa_biofilm_hydroxyapatite_graph-biofilm_hydroxyapatite_phase">
           <td>
@@ -263,7 +263,7 @@
             <br><span class="badge" style="font-size: .72rem; margin-top: .2rem;">NOT_APPLICABLE</span>
           </td>
           <td>
-<div>Crystalline calcium phosphate / hydroxyapatite mineral deposited within the E. coli W3110 biofilm.</div>          </td>
+<div>Solubilized orthophosphate (~20-52% phosphate extraction reported by Antonijevic et al. 2023) and co-released Ca(II) in the aqueous leachate after 14 days at 1% w/v pulp density.</div>          </td>
         </tr>
       </tbody>
     </table>
@@ -271,11 +271,11 @@
     <strong style="font-size: .86rem; color: var(--muted); text-transform: uppercase; letter-spacing: .05em;">Causal Edges (2):</strong>
     <ul style="margin: .4rem 0 0; padding-left: 1.2rem; font-size: .88rem;">
       <li style="margin-bottom: .35rem;">
-        <code>phoa_alkaline_phosphatase</code> &rarr; <strong>hydrolysis of beta-glycerophosphate to orthophosphate</strong> (<code>catalyzes</code>) &rarr; <code>inorganic_phosphate_release</code>
-: PhoA hydrolyzes beta-glycerophosphate supplied in the mineralization medium to release free PO4(3-).[<a href="#source-zorzetto_2023"><code>zorzetto_2023</code></a>]      </li>
+        <code>phoa_alkaline_phosphatase</code> &rarr; <strong>Microbial organic-acid and proton production drives acidolysis and complexation of Gafsa phosphorite ore</strong> (<code>catalyzes</code>) &rarr; <code>inorganic_phosphate_release</code>
+: Microbially produced protons and organic acids attack the phosphate-bearing Gafsa phosphorite matrix (&lt;37 um, 1% w/v) over 14 days; because the feed is a natural francolite-rich phosphorite rather than phase-pure hydroxylapatite and individual organic acids were not quantified separately, the mineral-specific and ligand-specific attributions carry partial support.[<a href="#source-zorzetto_2023"><code>zorzetto_2023</code></a>]      </li>
       <li style="margin-bottom: .35rem;">
-        <code>inorganic_phosphate_release</code> &rarr; <strong>calcium phosphate supersaturation and matrix-templated crystallization</strong> (<code>drives</code>) &rarr; <code>biofilm_hydroxyapatite_phase</code>
-: Released orthophosphate reacts with Ca2+ within the biofilm scaffold to nucleate hydroxyapatite.[<a href="#source-zorzetto_2023"><code>zorzetto_2023</code></a>]      </li>
+        <code>inorganic_phosphate_release</code> &rarr; <strong>Dissolution of Gafsa phosphorite releases ~20-52% phosphate into aqueous solution</strong> (<code>drives</code>) &rarr; <code>biofilm_hydroxyapatite_phase</code>
+: Acidic bioleaching of 1% w/v Gafsa phosphorite (&lt;37 um) over 14 days at 30 degrees C releases ~20-52% of feed phosphate into the aqueous phase; extraction percentages reflect bulk phosphorite dissolution rather than stoichiometric phase-pure hydroxylapatite dissolution.[<a href="#source-zorzetto_2023"><code>zorzetto_2023</code></a>]      </li>
     </ul>
   </div>
 </div>
@@ -347,6 +347,12 @@
         <td><span class="badge">EDIT</span></td>
         <td>Qualified PhoA alkaline phosphatase evidence in hydroxylapatite.yaml as partial (no phoA deletion mutant tested; mineralization also occurred in 4% paraformaldehyde-fixed biofilms).</td>
       </tr>
+      <tr>
+        <td><code>2026-11-10T16:51:44Z</code></td>
+        <td>marcin</td>
+        <td><span class="badge">edit</span></td>
+        <td>Scope hydroxylapatite causal graph to Gafsa francolite phosphorite proxy and partial support (#992)</td>
+      </tr>
     </tbody>
   </table>
 </div>
@@ -356,7 +362,7 @@
 </p>
 </main>
 <footer>
-  <p><strong>CMMMech</strong> · Critical Materials and Minerals Mechanism Ontology · data: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · code: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/LICENSE-CODE">BSD-3-Clause</a> · <a href="../index.json" download>Download index.json</a> · <a href="../corpus_map.json" download>Download corpus_map.json</a> · <a href="https://github.com/CultureBotAI/CMMMech/blob/main/src/cmmmech/schema/cmmmech.yaml">LinkML schema</a> · generated by <code>scripts/render_pages.py</code> (708 materials · 609 mechanisms · latest curation 2026-11-10 · corpus digest <code>08427a0a9c7d</code>)</p>
+  <p><strong>CMMMech</strong> · Critical Materials and Minerals Mechanism Ontology · data: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · code: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/LICENSE-CODE">BSD-3-Clause</a> · <a href="../index.json" download>Download index.json</a> · <a href="../corpus_map.json" download>Download corpus_map.json</a> · <a href="https://github.com/CultureBotAI/CMMMech/blob/main/src/cmmmech/schema/cmmmech.yaml">LinkML schema</a> · generated by <code>scripts/render_pages.py</code> (708 materials · 609 mechanisms · latest curation 2026-11-10 · corpus digest <code>4c5e39294f21</code>)</p>
   <p class="fam">
     <a href="https://culturebotai.github.io/CultureMech/">CultureMech</a> ·
     <a href="https://culturebotai.github.io/MediaIngredientMech/">MediaIngredientMech</a> ·
