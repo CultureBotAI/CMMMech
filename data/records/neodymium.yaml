@@ -114,11 +114,11 @@ mechanisms:
     pfam_ids:
     - Pfam:PF01011
     functional_role: Membrane-bound PQQ-dependent glucose dehydrogenase (EC 1.1.5.2) that oxidizes D-glucose to D-glucono-1,5-lactone/gluconic acid in the periplasm, generating the organic-acid biolixiviant.
-    annotation_note: Grounded to reviewed Swiss-Prot reference-proteome entry UP000006375 for Gluconobacter oxydans 621H (NCBITaxon:290633; locus GOX0265).
+    annotation_note: Grounded to reviewed Swiss-Prot reference-proteome entry UP000006375 for Gluconobacter oxydans 621H (NCBITaxon:290633; locus GOX0265) as an orthologous proxy for the Gluconobacter oxydans B58 periplasmic glucose dehydrogenase in Marecos et al. (2025).
     evidence:
     - source_ref: marecos2025
-      supports: support
-      explanation: Glucose oxidation by membrane-bound PQQ-dependent glucose dehydrogenase generates the gluconic acid-dominated acidic biolixiviant used to leach the mineral/feed.
+      supports: partial
+      explanation: Periplasmic PQQ-dependent glucose dehydrogenase generates the baseline gluconic-acid biolixiviant (final pH 2.17-2.84) in Gluconobacter oxydans B58, though 9 of 12 selected mutants in Marecos et al. (2025) altered Mon2 Nd extraction without significantly changing pH relative to proxy wild-type, and UniProtKB:P27175 is grounded to the 621H reference proteome as an orthologous proxy.
   - uniprot_accession: UniProtKB:Q9L3B2
     entry_name: PQQC_GLUOX
     protein_name: Pyrroloquinoline-quinone synthase
@@ -138,11 +138,11 @@ mechanisms:
     pfam_ids:
     - Pfam:PF03070
     functional_role: Pyrroloquinoline-quinone synthase (EC 1.3.3.11) catalyzing the final ring-closure and oxidation steps of PQQ cofactor biosynthesis required for holo-Gdh activity.
-    annotation_note: Grounded to reviewed Swiss-Prot reference-proteome entry UP000006375 for Gluconobacter oxydans 621H (NCBITaxon:290633; locus GOX0985).
+    annotation_note: Grounded to reviewed Swiss-Prot reference-proteome entry UP000006375 for Gluconobacter oxydans 621H (NCBITaxon:290633; locus GOX0985) as an orthologous proxy for the Gluconobacter oxydans B58 PQQ synthase locus in Marecos et al. (2025).
     evidence:
     - source_ref: marecos2025
-      supports: support
-      explanation: Biosynthesis of the pyrroloquinoline quinone (PQQ) cofactor is required for periplasmic quinoprotein dehydrogenase activity during acidogenic biolixiviant production.
+      supports: partial
+      explanation: PQQ cofactor biosynthesis supports periplasmic quinoprotein dehydrogenase acidogenesis in Gluconobacter oxydans B58, while 9 of 12 selected mutants in Marecos et al. (2025) changed Nd extraction without significant pH shifts relative to proxy wild-type, and UniProtKB:Q9L3B2 is grounded to the 621H reference proteome as an orthologous proxy.
   - uniprot_accession: UniProtKB:Q5FQK7
     entry_name: Q5FQK7_GLUOX
     protein_name: Putative oxidoreductase
@@ -161,11 +161,11 @@ mechanisms:
     pfam_ids:
     - Pfam:PF00248
     functional_role: Putative oxidoreductase GOX1598 (GO_1598) whose clean deletion in Gluconobacter oxydans B58 increased neodymium extraction from synthetic Mon2 mixed phosphate by ~111% relative to proxy wild-type.
-    annotation_note: Grounded to Gluconobacter oxydans 621H reference proteome UP000006375 (NCBITaxon:290633) orthologous to the engineered B58 locus.
+    annotation_note: Grounded to Gluconobacter oxydans 621H reference proteome UP000006375 (NCBITaxon:290633; locus GOX1598) as an orthologous proxy for the engineered B58 GO_1598 locus in Marecos et al. (2025).
     evidence:
     - source_ref: marecos2025_data4
-      supports: support
-      explanation: Sheet 4A triplicates for proxy wild-type (pWT B) and clean deletion delta-GO_1598 (GOX1598) support the reported ~111% relative improvement in Nd extraction from synthetic Mon2.
+      supports: partial
+      explanation: Sheet 4A triplicates in Marecos et al. (2025) Supplementary Data 4 support an ~111% relative increase in Mon2 Nd extraction for clean deletion delta-GO_1598 compared with proxy wild-type (pWT B); this is a relative improvement over wild-type rather than percent recovery of total substrate Nd, the biochemical mechanism remains unresolved, and UniProtKB:Q5FQK7 is a 621H reference-proteome proxy.
   - uniprot_accession: UniProtKB:Q5FRY1
     entry_name: Q5FRY1_GLUOX
     protein_name: Glycine cleavage system H protein
@@ -185,11 +185,11 @@ mechanisms:
     pfam_ids:
     - Pfam:PF01597
     functional_role: Glycine cleavage system H protein GcvH (GOX1096 / GO_1096) targeted by transposon disruption and clean deletion in Gluconobacter oxydans B58 Mon2 bioleaching assays.
-    annotation_note: Grounded to Gluconobacter oxydans 621H reference proteome UP000006375 (NCBITaxon:290633) orthologous to the engineered B58 locus.
+    annotation_note: Grounded to Gluconobacter oxydans 621H reference proteome UP000006375 (NCBITaxon:290633; locus GOX1096) as an orthologous proxy for the engineered B58 GO_1096 (gcvH) locus in Marecos et al. (2025).
     evidence:
     - source_ref: marecos2025
       supports: partial
-      explanation: Transposon disruption of GO_1096 (gcvH) strongly decreased Nd extraction from synthetic Mon2, whereas clean deletion delta-GO_1096 did not reproduce that effect.
+      explanation: Transposon disruption of GO_1096 (gcvH) in Gluconobacter oxydans B58 strongly decreased Nd extraction from synthetic Mon2, whereas clean deletion delta-GO_1096 did not reproduce that effect, and UniProtKB:Q5FRY1 is grounded to the 621H reference proteome as an orthologous proxy.
   evidence:
   - source_ref: marecos2025
     supports: support
@@ -203,7 +203,7 @@ mechanisms:
 causal_graphs:
 - id: gluconobacter_neodymium_phosphate_bioleaching_graph
   name: Gluconobacter oxydans biolixiviant release of neodymium from synthetic NdPO4
-  description: Causal pathway linking Gluconobacter oxydans B58 PQQ-dependent glucose dehydrogenase (gdh), pqqC, clean deletion of GO_1598 (GOX1598), and transposon disruption vs clean deletion of GO_1096 (gcvH) to acidic biolixiviant solubilization of neodymium from synthetic Mon2 mixed phosphate.
+  description: Causal pathway linking Gluconobacter oxydans B58 PQQ-dependent glucose dehydrogenase (gdh/pqqC), clean deletion of GO_1598 (GOX1598), and transposon disruption vs clean deletion of GO_1096 (gcvH) (all grounded via G. oxydans 621H reference-proteome proxies) to biolixiviant solubilization of neodymium from synthetic Mon2 mixed phosphate, preserving non-pH mutant effects and relative-extraction caveats in Marecos et al. (2025).
   scope: RECORD_SPECIFIC_MECHANISM
   mechanism_ref: gluconobacter_synthetic_phosphate_bioleaching
   nodes:
@@ -211,7 +211,7 @@ causal_graphs:
     label: PqqC pyrroloquinoline-quinone synthase
     node_type: GENE_OR_PROTEIN
     gene_symbol: pqqC
-    description: Catalyzes biosynthesis of the PQQ prosthetic group required by membrane-bound glucose dehydrogenase.
+    description: Catalyzes biosynthesis of the PQQ prosthetic group required by membrane-bound glucose dehydrogenase (grounded via G. oxydans 621H reference-proteome proxy UniProtKB:Q9L3B2).
     protein_grounding_status: GROUNDED
     protein_examples:
     - uniprot_accession: UniProtKB:Q9L3B2
@@ -233,16 +233,16 @@ causal_graphs:
       pfam_ids:
       - Pfam:PF03070
       functional_role: Pyrroloquinoline-quinone synthase (EC 1.3.3.11) catalyzing the final ring-closure and oxidation steps of PQQ cofactor biosynthesis required for holo-Gdh activity.
-      annotation_note: Grounded to reviewed Swiss-Prot reference-proteome entry UP000006375 for Gluconobacter oxydans 621H (NCBITaxon:290633; locus GOX0985).
+      annotation_note: Grounded to reviewed Swiss-Prot reference-proteome entry UP000006375 for Gluconobacter oxydans 621H (NCBITaxon:290633; locus GOX0985) as an orthologous proxy for the Gluconobacter oxydans B58 PQQ synthase locus in Marecos et al. (2025).
       evidence:
       - source_ref: marecos2025
-        supports: support
-        explanation: Biosynthesis of the pyrroloquinoline quinone (PQQ) cofactor is required for periplasmic quinoprotein dehydrogenase activity during acidogenic biolixiviant production.
+        supports: partial
+        explanation: PQQ cofactor biosynthesis supports periplasmic quinoprotein dehydrogenase acidogenesis in Gluconobacter oxydans B58, while 9 of 12 selected mutants in Marecos et al. (2025) changed Nd extraction without significant pH shifts relative to proxy wild-type, and UniProtKB:Q9L3B2 is grounded to the 621H reference proteome as an orthologous proxy.
   - id: gdh_dehydrogenase
     label: Gdh membrane-bound PQQ-dependent glucose dehydrogenase
     node_type: GENE_OR_PROTEIN
     gene_symbol: gdh
-    description: Periplasmic quinoprotein glucose dehydrogenase oxidizing glucose into gluconic acid.
+    description: Periplasmic quinoprotein glucose dehydrogenase oxidizing glucose into gluconic acid (grounded via G. oxydans 621H reference-proteome proxy UniProtKB:P27175); baseline acidogenesis does not alone explain the 9 of 12 selected mutants in Marecos et al. (2025) that altered Nd extraction without significant pH change.
     protein_grounding_status: GROUNDED
     protein_examples:
     - uniprot_accession: UniProtKB:P27175
@@ -265,16 +265,16 @@ causal_graphs:
       pfam_ids:
       - Pfam:PF01011
       functional_role: Membrane-bound PQQ-dependent glucose dehydrogenase (EC 1.1.5.2) that oxidizes D-glucose to D-glucono-1,5-lactone/gluconic acid in the periplasm, generating the organic-acid biolixiviant.
-      annotation_note: Grounded to reviewed Swiss-Prot reference-proteome entry UP000006375 for Gluconobacter oxydans 621H (NCBITaxon:290633; locus GOX0265).
+      annotation_note: Grounded to reviewed Swiss-Prot reference-proteome entry UP000006375 for Gluconobacter oxydans 621H (NCBITaxon:290633; locus GOX0265) as an orthologous proxy for the Gluconobacter oxydans B58 periplasmic glucose dehydrogenase in Marecos et al. (2025).
       evidence:
       - source_ref: marecos2025
-        supports: support
-        explanation: Glucose oxidation by membrane-bound PQQ-dependent glucose dehydrogenase generates the gluconic acid-dominated acidic biolixiviant used to leach the mineral/feed.
+        supports: partial
+        explanation: Periplasmic PQQ-dependent glucose dehydrogenase generates the baseline gluconic-acid biolixiviant (final pH 2.17-2.84) in Gluconobacter oxydans B58, though 9 of 12 selected mutants in Marecos et al. (2025) altered Mon2 Nd extraction without significantly changing pH relative to proxy wild-type, and UniProtKB:P27175 is grounded to the 621H reference proteome as an orthologous proxy.
   - id: gox1598_putative_oxidoreductase
     label: GOX1598 (GO_1598 putative oxidoreductase)
     node_type: GENE_OR_PROTEIN
     gene_symbol: GOX1598
-    description: Putative oxidoreductase (GO_1598 / GOX1598) whose clean deletion increased Nd extraction from synthetic Mon2 by ~111% relative to proxy wild-type.
+    description: Putative oxidoreductase (GO_1598 / GOX1598, grounded via 621H proxy UniProtKB:Q5FQK7) whose clean deletion in G. oxydans B58 increased Nd extraction from synthetic Mon2 by ~111% relative to proxy wild-type (a relative improvement over wild-type rather than percent recovery of feed Nd).
     protein_grounding_status: GROUNDED
     protein_examples:
     - uniprot_accession: UniProtKB:Q5FQK7
@@ -295,16 +295,16 @@ causal_graphs:
       pfam_ids:
       - Pfam:PF00248
       functional_role: Putative oxidoreductase GOX1598 (GO_1598) whose clean deletion in Gluconobacter oxydans B58 increased neodymium extraction from synthetic Mon2 mixed phosphate by ~111% relative to proxy wild-type.
-      annotation_note: Grounded to Gluconobacter oxydans 621H reference proteome UP000006375 (NCBITaxon:290633) orthologous to the engineered B58 locus.
+      annotation_note: Grounded to Gluconobacter oxydans 621H reference proteome UP000006375 (NCBITaxon:290633; locus GOX1598) as an orthologous proxy for the engineered B58 GO_1598 locus in Marecos et al. (2025).
       evidence:
       - source_ref: marecos2025_data4
-        supports: support
-        explanation: Sheet 4A triplicates for proxy wild-type (pWT B) and clean deletion delta-GO_1598 (GOX1598) support the reported ~111% relative improvement in Nd extraction from synthetic Mon2.
+        supports: partial
+        explanation: Sheet 4A triplicates in Marecos et al. (2025) Supplementary Data 4 support an ~111% relative increase in Mon2 Nd extraction for clean deletion delta-GO_1598 compared with proxy wild-type (pWT B); this is a relative improvement over wild-type rather than percent recovery of total substrate Nd, the biochemical mechanism remains unresolved, and UniProtKB:Q5FQK7 is a 621H reference-proteome proxy.
   - id: gcvh_glycine_cleavage_protein
     label: gcvH (GO_1096 glycine cleavage system H protein)
     node_type: GENE_OR_PROTEIN
     gene_symbol: gcvH
-    description: Glycine cleavage system H protein (GO_1096 / GOX1096) where transposon disruption strongly decreased Nd extraction from Mon2, though clean deletion did not reproduce the effect.
+    description: Glycine cleavage system H protein (GO_1096 / GOX1096, grounded via 621H proxy UniProtKB:Q5FRY1) where transposon disruption strongly decreased Nd extraction from Mon2, whereas clean deletion delta-GO_1096 did not reproduce that effect.
     protein_grounding_status: GROUNDED
     protein_examples:
     - uniprot_accession: UniProtKB:Q5FRY1
@@ -326,11 +326,11 @@ causal_graphs:
       pfam_ids:
       - Pfam:PF01597
       functional_role: Glycine cleavage system H protein GcvH (GOX1096 / GO_1096) targeted by transposon disruption and clean deletion in Gluconobacter oxydans B58 Mon2 bioleaching assays.
-      annotation_note: Grounded to Gluconobacter oxydans 621H reference proteome UP000006375 (NCBITaxon:290633) orthologous to the engineered B58 locus.
+      annotation_note: Grounded to Gluconobacter oxydans 621H reference proteome UP000006375 (NCBITaxon:290633; locus GOX1096) as an orthologous proxy for the engineered B58 GO_1096 (gcvH) locus in Marecos et al. (2025).
       evidence:
       - source_ref: marecos2025
         supports: partial
-        explanation: Transposon disruption of GO_1096 (gcvH) strongly decreased Nd extraction from synthetic Mon2, whereas clean deletion delta-GO_1096 did not reproduce that effect.
+        explanation: Transposon disruption of GO_1096 (gcvH) in Gluconobacter oxydans B58 strongly decreased Nd extraction from synthetic Mon2, whereas clean deletion delta-GO_1096 did not reproduce that effect, and UniProtKB:Q5FRY1 is grounded to the 621H reference proteome as an orthologous proxy.
   - id: gluconic_acid_biolixiviant
     label: Extracellular gluconic acid and organic-acid biolixiviant
     node_type: CHEMICAL_ENTITY
@@ -351,20 +351,20 @@ causal_graphs:
     target: gdh_dehydrogenase
     predicate: positively_regulates
     relationship: supplies PQQ cofactor for holoenzyme assembly
-    description: PQQ cofactor biosynthesis enables active periplasmic quinoprotein glucose dehydrogenase.
+    description: PQQ cofactor biosynthesis enables active periplasmic quinoprotein glucose dehydrogenase for baseline gluconic-acid production, though 9 of 12 selected B58 mutants in Marecos et al. (2025) changed Mon2 Nd extraction without significant pH shifts.
     evidence:
     - source_ref: marecos2025
-      supports: support
-      explanation: PQQ-dependent glucose dehydrogenase activity drives gluconic-acid biolixiviant production in Gluconobacter oxydans.
+      supports: partial
+      explanation: Marecos et al. (2025) rely on glucose-grown G. oxydans B58 acidogenesis (final pH 2.17-2.84), while showing that 9 of 12 selected mutant strains altered Nd extraction without significantly changing pH relative to proxy wild-type.
   - source: gox1598_putative_oxidoreductase
     target: gluconic_acid_biolixiviant
     predicate: modulates
     relationship: clean deletion increases biolixiviant Nd extraction relative to proxy wild-type
-    description: Clean deletion delta-GO_1598 in Gluconobacter oxydans B58 increases Nd extraction from synthetic Mon2 by ~111% relative to proxy wild-type (pWT B).
+    description: Clean deletion delta-GO_1598 in Gluconobacter oxydans B58 increases Nd extraction from synthetic Mon2 by ~111% relative to proxy wild-type (pWT B; relative increase over comparator rather than absolute percent recovery of substrate Nd), through an unresolved biochemical contribution to the biolixiviant.
     evidence:
     - source_ref: marecos2025_data4
-      supports: support
-      explanation: Sheet 4A triplicates for pWT B and delta-GO_1598 support the reported ~111% relative improvement in Nd extraction from synthetic Mon2.
+      supports: partial
+      explanation: Sheet 4A triplicates in Marecos et al. (2025) Supplementary Data 4 support the ~111% relative improvement in Mon2 Nd extraction for delta-GO_1598 vs pWT B, while the molecular mechanism linking GO_1598 deletion to lixiviant composition is not resolved.
   - source: gcvh_glycine_cleavage_protein
     target: gluconic_acid_biolixiviant
     predicate: modulates
@@ -378,29 +378,29 @@ causal_graphs:
     target: gluconic_acid_biolixiviant
     predicate: produces
     relationship: periplasmic oxidation of glucose to gluconic acid
-    description: Membrane-bound Gdh oxidizes D-glucose to gluconic acid, lowering supernatant pH and supplying organic-acid ligands.
+    description: Membrane-bound Gdh oxidizes D-glucose to gluconic acid, lowering culture pH to 2.17-2.84, though Marecos et al. (2025) show that 9 of 12 selected mutants altered Nd extraction without significantly changing pH relative to proxy wild-type.
     evidence:
     - source_ref: marecos2025
-      supports: support
-      explanation: Periplasmic glucose oxidation by G. oxydans generates the acidic gluconic-acid-rich biolixiviant.
+      supports: partial
+      explanation: Periplasmic glucose oxidation supplies the baseline acidic biolixiviant in G. oxydans B58, but Marecos et al. (2025) Figs. 3-5 note that most selected mutant extraction gains were not explained by pH differences alone.
   - source: gluconic_acid_biolixiviant
     target: synthetic_ndpo4_substrate
     predicate: solubilizes
     relationship: Gluconic acid-rich G. oxydans B58 biolixiviant leaches synthetic Mon2 Nd-phosphate powder
-    description: 48-h glucose-grown G. oxydans B58 and transposon-derivative biolixiviants (final assay pH 2.17–2.84 in Supplementary Data 4A) contact 1% w/v synthetic Mon2 (monazite-Nd / rhabdophane-Nd) powder for 24 h at 30 degrees C and 200 rpm.
+    description: 48-h glucose-grown G. oxydans B58 and derivative biolixiviants (final assay pH 2.17-2.84 in Supplementary Data 4A; cell removal prior to Mon2 contact not specified) contact 1% w/v synthetic Mon2 (mixed monazite-Nd and rhabdophane-Nd phases, not natural monazite ore) for 24 h at 30 degrees C and 200 rpm.
     evidence:
     - source_ref: marecos2025
-      supports: support
-      explanation: Marecos et al. (2025) demonstrate 24-h bioleaching of 1% w/v synthetic Mon2 Nd-phosphate powder by G. oxydans B58 and selected transposon mutants above no-bacteria controls.
+      supports: partial
+      explanation: Marecos et al. (2025) demonstrate 24-h bioleaching of 1% w/v synthetic Mon2 mixed Nd-phosphate powder at pH 2.17-2.84, with partial support reflecting synthetic mixed phases, unbuffered pH as an outcome, and unspecified pre-leaching cell separation.
   - source: synthetic_ndpo4_substrate
     target: dissolved_neodymium_ions
     predicate: produces
     relationship: 24-h bioleaching of synthetic Mon2 Nd-phosphate releases dissolved Nd into 0.45-um filtrate
-    description: 24-h contact of 1% w/v synthetic Mon2 powder with G. oxydans B58-derived biolixiviants at 30 degrees C and 200 rpm releases dissolved Nd into 0.45-um-filtered leachate measured by ICP-MS.
+    description: 24-h contact of 1% w/v synthetic Mon2 powder with G. oxydans B58-derived biolixiviants at 30 degrees C and 200 rpm releases dissolved Nd into 0.45-um-filtered leachate (56-111% relative improvements over proxy wild-type for 8 of 12 selected mutants, where Supplementary Data 4A omits no-bacteria control rows needed to reconstruct background-corrected absolute percent yield).
     evidence:
     - source_ref: marecos2025
-      supports: support
-      explanation: ICP-MS analysis of 0.45-um-filtered leachates in Marecos et al. (2025) confirms Nd solubilization from synthetic Mon2 above no-bacteria controls.
+      supports: partial
+      explanation: ICP-MS measurements in Marecos et al. (2025) Fig. 3 and Supplementary Data 4A confirm relative Nd extraction improvements (56-111% over proxy wild-type) in 0.45-um-filtered leachates, without reporting absolute percentage of substrate Nd dissolved or no-bacteria rows in Sheet 4A.
 curation_history:
 - timestamp: '2026-10-08T02:36:05Z'
   curator: Codex (GPT-6; Codex)
@@ -426,6 +426,10 @@ curation_history:
   curator: marcin
   action: edit
   summary: Upgrade neodymium causal_graphs[0] lixiviant predicate to solubilizes and ground node/edge text in marecos2025
+- timestamp: '2026-11-10T16:51:44Z'
+  curator: marcin
+  action: edit
+  summary: Scope neodymium G. oxydans B58 Mon2 protein examples and causal graph to 621H proxies and partial support (#993)
 history_refs:
 - history/records/neodymium/2026-10-08T023605Z-codex-131e84.yaml
 - history/records/neodymium/2026-10-09T044752Z-codex-7f72ec.yaml
@@ -433,3 +437,4 @@ history_refs:
 - history/records/neodymium/2026-10-18T042750Z-antigravity-a1a8f5.yaml
 - history/records/neodymium/2026-10-21T184653Z-claude-8cee72.yaml
 - history/records/neodymium/2026-10-30T171004Z-marcin-d172c1.yaml
+- history/records/neodymium/2026-11-10T165144Z-marcin-3d1c04.yaml

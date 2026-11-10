@@ -208,7 +208,7 @@
         <a href="#mechanism-w3110_biofilm_calcium_phosphate" class="badge" style="text-decoration: none;">Mechanism: <code>w3110_biofilm_calcium_phosphate</code></a>
       </div>
     </div>
-    <p style="margin: .5rem 0; font-size: .94rem;">Causal pathway linking periplasmic alkaline phosphatase PhoA (UniProtKB:P00634) in Escherichia coli K-12 W3110 biofilms to enzymatic hydrolysis of beta-glycerophosphate and nucleation of hydroxyapatite within the extracellular curli/cellulose matrix.</p>
+    <p style="margin: .5rem 0; font-size: .94rem;">Causal pathway linking periplasmic alkaline phosphatase PhoA (UniProtKB:P00634, grounded via E. coli K-12 reference proteome UP000000625) in Escherichia coli K-12 substr. W3110 (pMP7604) biofilms to hydrolysis of 10 mM beta-glycerophosphate and precipitation of WAXS-assigned nanocrystalline hydroxyapatite on salt-free LB agar with 1 or 10 mM CaCl2 (P-Ca 10:1 or 10:10) over 5-10 days at 28 degrees C in Zorzetto et al. (2023), preserving 4% PFA/PBS-fixed biofilm mineralization, 20 mM L-glutathione and pH 10.4 purified-ALP control limits, and unmeasured OH/F/Cl occupancy.</p>
 
     <strong style="font-size: .86rem; color: var(--muted); text-transform: uppercase; letter-spacing: .05em;">Causal Nodes (3):</strong>
     <table style="margin: .4rem 0 .8rem; font-size: .88rem;">
@@ -230,7 +230,7 @@
             <br><span class="badge" style="font-size: .72rem; margin-top: .2rem;">GROUNDED</span>
           </td>
           <td>
-<div>Zn/Mg-dependent periplasmic phosphomonoesterase (EC 3.1.3.1) cleaving organic phosphate esters.</div>            <div style="margin-top: .35rem; padding-top: .35rem; border-top: 1px solid var(--border);">
+<div>Periplasmic Zn/Mg-dependent alkaline phosphatase PhoA (EC 3.1.3.1; phoA / b0383; UniProtKB:P00634 in parent E. coli K-12 reference proteome UP000000625) proposed to cleave 10 mM sodium beta-glycerophosphate in Escherichia coli W3110 (pMP7604) biofilms; Zorzetto et al. (2023) did not test a phoA knockout, observed mineralization in 4% PFA/PBS-fixed 5-day biofilms (Figure S9, Table S10), saw delayed/residual reflections and altered biofilm diameters with 20 mM L-glutathione (Figure 4A, Figure S7), and tested purified ALP at pH 10.4 without a matched buffer-only or inactive-enzyme control (Figure 4B).</div>            <div style="margin-top: .35rem; padding-top: .35rem; border-top: 1px solid var(--border);">
               <div style="margin-bottom: .25rem;">
                 <a href="https://www.uniprot.org/uniprotkb/P00634" target="_blank" rel="noopener"><code>UniProtKB:P00634</code></a>
                 (PPB_ECOLI, <span class="badge" style="font-size: .7rem;">SWISS_PROT</span>)
@@ -251,7 +251,7 @@
             <br><span class="badge" style="font-size: .72rem; margin-top: .2rem;">NOT_APPLICABLE</span>
           </td>
           <td>
-<div>Inorganic phosphate liberated into the biofilm microenvironment by enzymatic dephosphorylation.</div>          </td>
+<div>Inorganic orthophosphate (Pi) liberated in the biofilm/agar microenvironment primarily from 0.22-um-filtered 10 mM sodium beta-glycerophosphate added to salt-free LB agar (1.8% w/v agar, 1% tryptone, 0.5% yeast extract; P-Ca 10:10 or 10:1 with 10 or 1 mM CaCl2), with minor yeast-extract phosphate or 4% PFA/PBS fixation-buffer contributions not excluded by a phosphate-source tracer (Figures S5-S6, Figure S9).</div>          </td>
         </tr>
         <tr id="causal-node-w3110_phoa_biofilm_hydroxyapatite_graph-biofilm_hydroxyapatite_phase">
           <td>
@@ -263,7 +263,7 @@
             <br><span class="badge" style="font-size: .72rem; margin-top: .2rem;">NOT_APPLICABLE</span>
           </td>
           <td>
-<div>Crystalline calcium phosphate / hydroxyapatite mineral deposited within the E. coli W3110 biofilm.</div>          </td>
+<div>Nanocrystalline apatite-like calcium phosphate assigned by WAXS to hydroxyapatite (Ca5(PO4)3(OH)) within E. coli W3110 (pMP7604) biofilms grown 5-10 days at 28 degrees C on P-Ca 10:10 (and by day 10 on P-Ca 10:1) salt-free LB agar (mostly fixed in 4% PFA/PBS and lyophilized, with hydrated non-lyophilized confirmation in Figure 4B; no OH/F/Cl occupancy refinement or whole-biofilm mineral yield is reported).</div>          </td>
         </tr>
       </tbody>
     </table>
@@ -272,10 +272,10 @@
     <ul style="margin: .4rem 0 0; padding-left: 1.2rem; font-size: .88rem;">
       <li style="margin-bottom: .35rem;">
         <code>phoa_alkaline_phosphatase</code> &rarr; <strong>hydrolysis of beta-glycerophosphate to orthophosphate</strong> (<code>catalyzes</code>) &rarr; <code>inorganic_phosphate_release</code>
-: PhoA hydrolyzes beta-glycerophosphate supplied in the mineralization medium to release free PO4(3-).[<a href="#source-zorzetto_2023"><code>zorzetto_2023</code></a>]      </li>
+: Periplasmic PhoA and biofilm-associated phosphatase activity hydrolyze 10 mM beta-glycerophosphate on P-Ca 10:10 and 10:1 salt-free LB agar at 28 degrees C to release orthophosphate, though a phoA deletion/complementation test was not performed, 20 mM L-glutathione left residual WAXS reflections while altering biofilm diameter (Figure 4A, Figure S7), pH 10.4 purified-ALP assays lacked buffer-only or heat-inactivated controls (Figure 4B), and 4% PFA/PBS-fixed 5-day biofilms retained phosphatase activity and mineralized (Figure S9, Table S10).[<a href="#source-zorzetto_2023"><code>zorzetto_2023</code></a>]      </li>
       <li style="margin-bottom: .35rem;">
         <code>inorganic_phosphate_release</code> &rarr; <strong>calcium phosphate supersaturation and matrix-templated crystallization</strong> (<code>drives</code>) &rarr; <code>biofilm_hydroxyapatite_phase</code>
-: Released orthophosphate reacts with Ca2+ within the biofilm scaffold to nucleate hydroxyapatite.[<a href="#source-zorzetto_2023"><code>zorzetto_2023</code></a>]      </li>
+: Released orthophosphate reacts with 10 mM or 1 mM CaCl2 (P-Ca 10:10 over 5-10 days or P-Ca 10:1 by day 10 at 28 degrees C) in the W3110 biofilm matrix (including 4% PFA/PBS-fixed biofilms in Figure S9 and hydrated samples in Figure 4B) to precipitate WAXS-assigned nanocrystalline hydroxyapatite, without direct OH/F/Cl occupancy measurement, fixation-free mass balance, or isolated whole-biofilm mineral recovery yield.[<a href="#source-zorzetto_2023"><code>zorzetto_2023</code></a>]      </li>
     </ul>
   </div>
 </div>
@@ -347,6 +347,12 @@
         <td><span class="badge">EDIT</span></td>
         <td>Qualified PhoA alkaline phosphatase evidence in hydroxylapatite.yaml as partial (no phoA deletion mutant tested; mineralization also occurred in 4% paraformaldehyde-fixed biofilms).</td>
       </tr>
+      <tr>
+        <td><code>2026-11-10T17:43:28Z</code></td>
+        <td>marcin</td>
+        <td><span class="badge">edit</span></td>
+        <td>Expand hydroxylapatite E. coli W3110 PhoA biofilm causal graph with Zorzetto et al. (2023) fixed-biofilm and control caveats (#992, #995)</td>
+      </tr>
     </tbody>
   </table>
 </div>
@@ -356,7 +362,7 @@
 </p>
 </main>
 <footer>
-  <p><strong>CMMMech</strong> · Critical Materials and Minerals Mechanism Ontology · data: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · code: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/LICENSE-CODE">BSD-3-Clause</a> · <a href="../index.json" download>Download index.json</a> · <a href="../corpus_map.json" download>Download corpus_map.json</a> · <a href="https://github.com/CultureBotAI/CMMMech/blob/main/src/cmmmech/schema/cmmmech.yaml">LinkML schema</a> · generated by <code>scripts/render_pages.py</code> (708 materials · 609 mechanisms · latest curation 2026-11-10 · corpus digest <code>08427a0a9c7d</code>)</p>
+  <p><strong>CMMMech</strong> · Critical Materials and Minerals Mechanism Ontology · data: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · code: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/LICENSE-CODE">BSD-3-Clause</a> · <a href="../index.json" download>Download index.json</a> · <a href="../corpus_map.json" download>Download corpus_map.json</a> · <a href="https://github.com/CultureBotAI/CMMMech/blob/main/src/cmmmech/schema/cmmmech.yaml">LinkML schema</a> · generated by <code>scripts/render_pages.py</code> (708 materials · 609 mechanisms · latest curation 2026-11-10 · corpus digest <code>4c5e39294f21</code>)</p>
   <p class="fam">
     <a href="https://culturebotai.github.io/CultureMech/">CultureMech</a> ·
     <a href="https://culturebotai.github.io/MediaIngredientMech/">MediaIngredientMech</a> ·

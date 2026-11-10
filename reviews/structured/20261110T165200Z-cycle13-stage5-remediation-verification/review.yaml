@@ -1,0 +1,691 @@
+schema_version: 1.0.0
+review_id: 20261110T165200Z-cycle13-stage5-remediation-verification
+title: 'Cycle 13 Stage 5 Post-Remediation Verification Review: 5 Remediated CMMMech
+  Records'
+repository: CultureBotAI/CMMMech
+kind: category
+started_at: '2026-11-10T16:51:00Z'
+finished_at: '2026-11-10T16:52:00Z'
+skill: .claude/skills/review-yaml-category/SKILL.md
+completion: completed
+verdict: pass
+scientific_review: true
+summary: 'Post-remediation verification review across all 5 CMMMech records modified
+  in Cycle 13 Stage 5 (2 mineral, 1 primary_resource, 1 secondary_resource, and 1
+  element record) resolving all 3 open Cycle 13 Stage 4 review findings under GitHub
+  Issues #991 (GRP-C13S5-001: akaganeite.yaml Levar et al. 2017 Geobacter sulfurreducens
+  PCA ImcH/CbcL protein_examples and causal_graphs[0] nodes/edges scoped to supports:
+  partial with pH 6.8 vs 6.3 and 121 C autoclaving phenotypes, inferred mineral redox
+  potential vs Figure 1 soluble Fe(III)-citrate, cited-only complementation, unquantified
+  initial Fe loading, and 0.5 N HCl ferrozine extraction scope), #992 (GRP-C13S5-002:
+  hydroxylapatite.yaml Zorzetto et al. 2023 Escherichia coli K-12 substr. W3110 PhoA
+  biofilm causal_graphs[0] nodes and edges scoped to supports: partial with P-Ca 10:10
+  and 10:1 salt-free LB agar conditions, 4% PFA/PBS-fixed biofilm mineralization in
+  Figure S9 / Table S10, 20 mM L-glutathione in Figure 4A / Figure S7 and pH 10.4
+  purified-ALP in Figure 4B control limits, and WAXS OH/F/Cl occupancy and yield caveats),
+  and #993 (GRP-C13S5-003: allanite-concentrate.yaml Schmitz et al. 2025, fluorescent-lamp-phosphor.yaml
+  Schmitz et al. 2021, and neodymium.yaml Marecos et al. 2025 Gluconobacter oxydans
+  B58 protein_examples and causal_graphs[0] nodes/edges scoped to supports: partial
+  with G. oxydans 621H reference-proteome proxy grounding, residual mgdh/pqqC mutant
+  leaching, non-pH-resolved mutant effects across 9 of 12 strains, unresolved concentration
+  vs composition in Schmitz et al. 2025 Discussion, and relative-over-wild-type vs
+  absolute-recovery denominators). All 5 records pass strict validation, history validation,
+  and page rendering checks with 0 open findings.'
+reviewer:
+  identity: antigravity / cmmmech-cycle13-stage5-remediation-reviewer
+  kind: agent
+  model: gemini-3.1-pro
+  independence: self_review
+  independence_basis: Cycle 13 Stage 5 post-remediation verification review (.claude/skills/review-yaml-category/SKILL.md)
+    of the 5 remediated records against the immutable Cycle 13 Stage 4 review bundles.
+source:
+  git_revision: eda4d51de595671d30cf55438a0724bb087c923b
+  state: working_tree
+  inputs:
+  - path: data/records/akaganeite.yaml
+    sha256: 6e9eddc9f28ce55f3096f3e04ac94deb5e61fad09852a8f8e44f140b146bf0f0
+    role: target
+  - path: data/records/allanite-concentrate.yaml
+    sha256: 24eaefe7270119dcd34a34a2fb1865ad908e12285f33c7aa6658699528af2de3
+    role: target
+  - path: data/records/fluorescent-lamp-phosphor.yaml
+    sha256: 162652eafc1c002291632acb88a0c03832406c17112c065d36d4427fc4beec65
+    role: target
+  - path: data/records/hydroxylapatite.yaml
+    sha256: 570dd6caac19751b35889518d9cce02c056a8fab2aea8d953988534c7505330c
+    role: target
+  - path: data/records/neodymium.yaml
+    sha256: 2825a690e53475d50030c82f854485bdfeb3cc62566864e3e172cac382308cd7
+    role: target
+  - path: reviews/workflow/mech-goal-sequence-20261019/cycle-000013/stage-04/revision-0001/evidence.yaml
+    sha256: 297254433f266a44507f83c259b937a8105d8923675bffee143d6044311c898e
+    role: context
+  - path: reviews/workflow/mech-goal-sequence-20261019/cycle-000013/stage-04/revision-0001/review_findings.yaml
+    sha256: 761246dfa7a66cfdba31873ad5861dc94917cc5786013f118bb4abebd3770167
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+scope:
+  description: 'All 5 distinct CMMMech records affected by the 3 Cycle 13 Stage 4
+    findings carried into Stage 5 (1 Geobacter sulfurreducens PCA akaganeite reduction
+    record in GRP-C13S5-001 / #991, 1 Escherichia coli W3110 PhoA biofilm hydroxyapatite
+    mineralization record in GRP-C13S5-002 / #992, and 3 Gluconobacter oxydans B58
+    REE bioleaching records in GRP-C13S5-003 / #993).'
+  selection: cycle13_stage4_open_finding_targets
+  coverage: full
+  population_size: 5
+  reviewed_target_ids:
+  - cmmmech:akaganeite
+  - cmmmech:allanite-concentrate
+  - cmmmech:fluorescent-lamp-phosphor
+  - cmmmech:hydroxylapatite
+  - cmmmech:neodymium
+targets:
+- target_id: cmmmech:akaganeite
+  path: data/records/akaganeite.yaml
+  label: Akaganeite
+  record_class: MaterialRecord
+  kind: maintained
+  semantic_digest:
+    algorithm: yaml_canonical_sha256
+    sha256: 9f392af34aec7f6aa711f7a10f13934d5c711cc7570ba500f0e771fd95791273
+    description: SHA-256 of canonical sorted-key YAML parse of record
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/akaganeite.yaml
+    role: maintained_record
+- target_id: cmmmech:allanite-concentrate
+  path: data/records/allanite-concentrate.yaml
+  label: Allanite concentrate
+  record_class: MaterialRecord
+  kind: maintained
+  semantic_digest:
+    algorithm: yaml_canonical_sha256
+    sha256: 3a851b5067ac5d19f1afc1812e723b658f8913fc5789013480de767b4700da0c
+    description: SHA-256 of canonical sorted-key YAML parse of record
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/allanite-concentrate.yaml
+    role: maintained_record
+- target_id: cmmmech:fluorescent-lamp-phosphor
+  path: data/records/fluorescent-lamp-phosphor.yaml
+  label: Spent fluorescent-lamp phosphor powder
+  record_class: MaterialRecord
+  kind: maintained
+  semantic_digest:
+    algorithm: yaml_canonical_sha256
+    sha256: b8318dfb92cbd4a0047a7fd540edd3c10bb55340861679291b45ddfcbc32dc38
+    description: SHA-256 of canonical sorted-key YAML parse of record
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/fluorescent-lamp-phosphor.yaml
+    role: maintained_record
+- target_id: cmmmech:hydroxylapatite
+  path: data/records/hydroxylapatite.yaml
+  label: Hydroxylapatite
+  record_class: MaterialRecord
+  kind: maintained
+  semantic_digest:
+    algorithm: yaml_canonical_sha256
+    sha256: 44b97c5a1e5c446b6be18572c3381caed9ecf6dec775b12af5f26aa74beda3ae
+    description: SHA-256 of canonical sorted-key YAML parse of record
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/hydroxylapatite.yaml
+    role: maintained_record
+- target_id: cmmmech:neodymium
+  path: data/records/neodymium.yaml
+  label: Neodymium
+  record_class: MaterialRecord
+  kind: maintained
+  semantic_digest:
+    algorithm: yaml_canonical_sha256
+    sha256: 93824dd57899b3a8fe1aeb52dc781a95a40a8dd91095ed61d48f0c3786d393f3
+    description: SHA-256 of canonical sorted-key YAML parse of record
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/neodymium.yaml
+    role: maintained_record
+checks:
+- check_id: chk-validate-records
+  name: Strict LinkML and semantic record validation
+  status: passed
+  required: true
+  summary: All 708 records (including all 5 remediated records) pass .venv/bin/python
+    -m cmmmech.cli validate --require-records with 0 errors.
+  target_ids:
+  - cmmmech:akaganeite
+  - cmmmech:allanite-concentrate
+  - cmmmech:fluorescent-lamp-phosphor
+  - cmmmech:hydroxylapatite
+  - cmmmech:neodymium
+  command: .venv/bin/python -m cmmmech.cli validate --require-records
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - ev-stage4-findings
+  - ev-schema
+- check_id: chk-validate-history
+  name: Append-only history sidecar validation
+  status: passed
+  required: true
+  summary: All 5 new EDIT history sidecars and existing history sidecars pass .venv/bin/python
+    -m cmmmech.cli validate-history --base main with 0 errors.
+  target_ids:
+  - cmmmech:akaganeite
+  - cmmmech:allanite-concentrate
+  - cmmmech:fluorescent-lamp-phosphor
+  - cmmmech:hydroxylapatite
+  - cmmmech:neodymium
+  command: .venv/bin/python -m cmmmech.cli validate-history --base main
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - ev-stage4-findings
+  - ev-schema
+- check_id: chk-grp1-levar2017-akaganeite
+  name: Levar et al. (2017) akaganeite.yaml ImcH/CbcL pH/autoclaving and inferred
+    redox concordance (#991)
+  status: passed
+  required: true
+  summary: 'Verified that akaganeite.yaml mechanisms[0].protein_examples[0..1] and
+    causal_graphs[0].nodes[0..1].protein_examples[0] are byte-identical with supports:
+    partial and Levar et al. (2017) pH 6.8 vs 6.3 and 121 C autoclaving phenotypes,
+    and that causal_graphs[0].nodes[0..4] and edges[0..3] (supports: partial) include
+    inferred mineral redox potential vs Figure 1 soluble Fe(III)-citrate, cited-only
+    complementation, unquantified initial Fe loading, and 0.5 N HCl ferrozine extraction
+    caveats.'
+  target_ids:
+  - cmmmech:akaganeite
+  evidence_ids:
+  - ev-levar2017
+  - ev-stage4-findings
+  - ev-schema
+- check_id: chk-grp2-zorzetto2023-hydroxylapatite
+  name: Zorzetto et al. (2023) hydroxylapatite.yaml E. coli W3110 PhoA biofilm mineralization
+    concordance (#992)
+  status: passed
+  required: true
+  summary: 'Verified that hydroxylapatite.yaml causal_graphs[0].description, nodes[0..2].description,
+    and edges[0..1] (supports: partial) incorporate Zorzetto et al. (2023) P-Ca 10:10
+    and 10:1 salt-free LB agar conditions, 4% PFA/PBS-fixed biofilm mineralization
+    (Figure S9, Table S10), 20 mM L-glutathione (Figure 4A, Figure S7) and pH 10.4
+    purified-ALP (Figure 4B) control limits, and WAXS OH/F/Cl occupancy and yield
+    caveats.'
+  target_ids:
+  - cmmmech:hydroxylapatite
+  evidence_ids:
+  - ev-zorzetto2023
+  - ev-stage4-findings
+  - ev-schema
+- check_id: chk-grp3-schmitz-marecos-gluconobacter
+  name: Schmitz et al. (2025), Schmitz et al. (2021), and Marecos et al. (2025) G.
+    oxydans B58 REE bioleaching trio concordance (#993)
+  status: passed
+  required: true
+  summary: 'Verified that allanite-concentrate.yaml (Schmitz et al. 2025), fluorescent-lamp-phosphor.yaml
+    (Schmitz et al. 2021), and neodymium.yaml (Marecos et al. 2025) protein_examples
+    and causal_graphs[0] nodes/edges are synchronized with supports: partial, G. oxydans
+    621H reference-proteome proxy grounding, residual mgdh/pqqC mutant leaching, non-pH-resolved
+    mutant effects, unresolved concentration vs composition in Schmitz et al. (2025),
+    and relative-over-wild-type vs absolute-recovery denominators.'
+  target_ids:
+  - cmmmech:allanite-concentrate
+  - cmmmech:fluorescent-lamp-phosphor
+  - cmmmech:neodymium
+  evidence_ids:
+  - ev-schmitz-marecos
+  - ev-stage4-findings
+  - ev-schema
+evidence:
+- evidence_id: ev-stage4-evidence
+  kind: record_content
+  reference: reviews/workflow/mech-goal-sequence-20261019/cycle-000013/stage-04/revision-0001/evidence.yaml
+  locator: findings[0..2] (cmmmech-cycle13-stage4-finding-0001..0003)
+  accessed_at: '2026-11-10T16:51:30Z'
+  support: supports
+  summary: Verified the 3 open Cycle 13 Stage 4 review findings and their 5 distinct
+    target records.
+  snapshot_sha256: 297254433f266a44507f83c259b937a8105d8923675bffee143d6044311c898e
+- evidence_id: ev-stage4-findings
+  kind: record_content
+  reference: reviews/workflow/mech-goal-sequence-20261019/cycle-000013/stage-04/revision-0001/review_findings.yaml
+  locator: findings[0..2] root-cause groups, issue_keys, and structured_reviews
+  accessed_at: '2026-11-10T16:51:30Z'
+  support: supports
+  summary: Confirmed exact Stage 4 finding IDs, issue_key identifiers, previous review_id
+    occurrences, and target record lists.
+  snapshot_sha256: 761246dfa7a66cfdba31873ad5861dc94917cc5786013f118bb4abebd3770167
+- evidence_id: ev-schema
+  kind: record_content
+  reference: src/cmmmech/schema/cmmmech.yaml
+  locator: classes.MaterialRecord, classes.CausalGraph, classes.CausalNode, classes.CausalEdge
+  accessed_at: '2026-11-10T16:51:30Z'
+  support: supports
+  summary: Canonical LinkML schema defining MaterialRecord and CausalGraph/CausalNode/CausalEdge
+    structure.
+  snapshot_sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+- evidence_id: ev-levar2017
+  kind: primary_source
+  reference: https://doi.org/10.1038/ismej.2016.146
+  locator: Levar et al. (2017) ISME Journal 11:741-752, Methods pp. 742-744, Table
+    1, Results pp. 745-749, Figures 1-2
+  accessed_at: '2026-11-10T16:51:30Z'
+  support: supports
+  summary: Confirms Geobacter sulfurreducens PCA wild-type, delta-imcH, and delta-cbcL
+    synthetic akaganeite reduction across pH 6.8 vs 6.3 and 121 C autoclaving regimes,
+    inferred mineral redox potential vs soluble Fe(III)-citrate, cited-only complementation,
+    and 0.5 N HCl ferrozine extraction scope.
+- evidence_id: ev-zorzetto2023
+  kind: primary_source
+  reference: https://doi.org/10.1021/acs.chemmater.2c02969
+  locator: Zorzetto et al. (2023) Chemistry of Materials 35(7):2762-2772 (Figures
+    1-4) and Supporting Information (DOI:10.1021/acs.chemmater.2c02969.s001, Figures
+    S1, S5-S9, Tables S3, S10)
+  accessed_at: '2026-11-10T16:51:30Z'
+  support: supports
+  summary: Confirms E. coli K-12 substr. W3110 (pMP7604) PhoA biofilm hydroxyapatite
+    WAXS reflections on P-Ca 10:10 and 10:1 salt-free LB agar, 4% PFA/PBS-fixed biofilm
+    mineralization (Figure S9, Table S10), 20 mM L-glutathione (Figure 4A, Figure
+    S7) and pH 10.4 purified-ALP (Figure 4B) control limits, and unmeasured OH/F/Cl
+    occupancy.
+- evidence_id: ev-schmitz-marecos
+  kind: primary_source
+  reference: https://doi.org/10.1038/s42003-025-08109-5
+  locator: Schmitz et al. (2025) Communications Biology 8:815 (Figures 1-3, Figures
+    S1-S2, Data S1-S3, S6), Schmitz et al. (2021) Nature Communications 12:6693 (DOI:10.1038/s41467-021-27047-4,
+    Figure 4C-D), and Marecos et al. (2025) Communications Biology 8:682 (DOI:10.1038/s42003-025-08061-4,
+    Figures 3-5, Supplementary Data 4 sheet 4A)
+  accessed_at: '2026-11-10T16:51:30Z'
+  support: supports
+  summary: Confirms G. oxydans B58 bioleaching assays on Zappall allanite concentrate
+    (53.1% at 10% w/v and 73.1% at 1% w/v relative improvements over wild-type for
+    delta-pstS, P112:mgdh in Schmitz et al. 2025), retorted lamp phosphor (4.7% to
+    5.5% total REE in Schmitz et al. 2021), and synthetic Mon2 Nd-phosphate (56-111%
+    relative improvement over proxy wild-type in Marecos et al. 2025), with 621H reference-proteome
+    proxy grounding.
+assessments:
+- assessment_id: assess-grp1-levar2017-akaganeite
+  area: graph
+  topic: 'Levar et al. (2017) akaganeite.yaml ImcH/CbcL and causal_graphs[0] remediation
+    (GRP-C13S5-001, #991)'
+  outcome: supported
+  summary: 'akaganeite.yaml now scopes ImcH (UniProtKB:Q747K6) and CbcL (UniProtKB:Q74GH2)
+    protein_examples and causal_graphs[0] nodes/edges to supports: partial with Levar
+    et al. (2017) pH 6.8 vs 6.3 and 121 C autoclaving phenotypes, inferred mineral
+    redox potential, cited-only complementation, unquantified initial Fe loading,
+    and 0.5 N HCl ferrozine extraction scope.'
+  target_ids:
+  - cmmmech:akaganeite
+  evidence_ids:
+  - ev-stage4-evidence
+  - ev-stage4-findings
+  - ev-levar2017
+  - ev-schema
+  metrics:
+  - name: grp1_levar2017_akaganeite_concordance
+    value: 1.0
+    unit: fraction
+    definition: 'Fraction of GRP-C13S5-001 records with Levar et al. (2017) pH/autoclaving
+      phenotypes, inferred redox potential, cited-only complementation, and supports:
+      partial on protein_examples and edges[0..3]'
+    denominator: 1
+    minimum: 0.0
+    maximum: 1.0
+- assessment_id: assess-grp2-zorzetto2023-hydroxylapatite
+  area: graph
+  topic: 'Zorzetto et al. (2023) hydroxylapatite.yaml E. coli W3110 PhoA biofilm graph
+    remediation (GRP-C13S5-002, #992)'
+  outcome: supported
+  summary: 'hydroxylapatite.yaml causal_graphs[0] now specifies P-Ca 10:10 and 10:1
+    salt-free LB agar conditions, 4% PFA/PBS-fixed biofilm mineralization (Figure
+    S9, Table S10), 20 mM L-glutathione (Figure 4A, Figure S7) and pH 10.4 purified-ALP
+    (Figure 4B) control limits, and WAXS OH/F/Cl occupancy and yield caveats with
+    supports: partial on edges[0..1].'
+  target_ids:
+  - cmmmech:hydroxylapatite
+  evidence_ids:
+  - ev-stage4-evidence
+  - ev-stage4-findings
+  - ev-zorzetto2023
+  - ev-schema
+  metrics:
+  - name: grp2_zorzetto2023_hydroxylapatite_concordance
+    value: 1.0
+    unit: fraction
+    definition: 'Fraction of GRP-C13S5-002 records with Zorzetto et al. (2023) P-Ca
+      10:10/10:1, 4% PFA-fixed biofilm, L-glutathione/ALP control limits, and supports:
+      partial on edges[0..1]'
+    denominator: 1
+    minimum: 0.0
+    maximum: 1.0
+- assessment_id: assess-grp3-schmitz-marecos-gluconobacter
+  area: graph
+  topic: 'Schmitz et al. (2025), Schmitz et al. (2021), and Marecos et al. (2025)
+    G. oxydans B58 REE bioleaching trio remediation (GRP-C13S5-003, #993)'
+  outcome: supported
+  summary: 'allanite-concentrate.yaml (Schmitz et al. 2025), fluorescent-lamp-phosphor.yaml
+    (Schmitz et al. 2021), and neodymium.yaml (Marecos et al. 2025) now scope protein_examples
+    and causal_graphs[0] edges to supports: partial and include G. oxydans 621H reference-proteome
+    proxy grounding, residual mgdh/pqqC mutant leaching, non-pH-resolved mutant effects,
+    unresolved concentration vs composition in Schmitz et al. (2025), and relative
+    vs absolute extraction denominator caveats.'
+  target_ids:
+  - cmmmech:allanite-concentrate
+  - cmmmech:fluorescent-lamp-phosphor
+  - cmmmech:neodymium
+  evidence_ids:
+  - ev-stage4-evidence
+  - ev-stage4-findings
+  - ev-schmitz-marecos
+  - ev-schema
+  metrics:
+  - name: grp3_gluconobacter_b58_trio_concordance
+    value: 1.0
+    unit: fraction
+    definition: 'Fraction of GRP-C13S5-003 records with 621H proxy grounding, mutant/control
+      caveats, relative-vs-absolute denominator qualifications, and supports: partial'
+    denominator: 3
+    minimum: 0.0
+    maximum: 1.0
+findings:
+- finding_id: cmmmech-cycle13-stage4-finding-0001
+  issue_key: cmmmech.levar2017-akaganeite.abbreviated-graph-nodes-edges-and-redox-complementation-qualifications
+  category: graph
+  severity: minor
+  status: resolved
+  certainty: confirmed
+  title: 'Akaganeite Geobacter sulfurreducens PCA ImcH/CbcL protein examples and causal
+    graph now use supports: partial with Levar et al. (2017) pH/autoclaving phenotypes,
+    inferred redox potential, cited-only complementation, and 0.5 N HCl extraction
+    caveats'
+  description: 'In data/records/akaganeite.yaml (cmmmech:akaganeite, mineral, Levar
+    et al. 2017 ISME Journal 11:741-752, DOI:10.1038/ismej.2016.146, levar_2017; mechanisms[0]
+    pca_akaganeite_reduction, lines 44-143; causal_graphs[0] pca_imch_cbcl_akaganeite_pathway,
+    lines 145-266), mechanisms[0].description, context, and evidence[0..1] (lines
+    51-89) establish that mineral redox potentials cannot be directly measured in
+    these experiments (Figure 1 soluble Fe(III)-citrate potentials vs akaganeite),
+    direct ImcH (GSU3259, UniProtKB:Q747K6) or CbcL (GSU0274, UniProtKB:Q74GH2) electron
+    movement from the menaquinone pool is not demonstrated by purified-protein assays
+    and complementation is cited from earlier work rather than performed in Figure
+    2, and 0.5 N HCl extraction (>=24 h at 23-25 C before ferrozine) measures acid-extractable
+    Fe(II) without an independently quantified initial akaganeite Fe loading or isolated
+    mineral product. By contrast, mechanisms[0].protein_examples[0..1].evidence[0]
+    (lines 119-122, 140-143), causal_graphs[0].nodes[0..1].protein_examples[0].evidence[0]
+    (lines 179-183, 209-212), nodes[3..4].description (lines 222 and 227, 51 and 82
+    chars), and edges[0..3] (lines 230-266, 83-103 char explanations) use abbreviated
+    one-sentence descriptions and supports: support polarity that omit these redox,
+    complementation, initial Fe loading, and 0.5 N HCl extraction caveats. In this
+    scope, 1 record(s) (akaganeite) are affected.'
+  target_ids:
+  - cmmmech:akaganeite
+  field_paths:
+  - mechanisms[0].protein_examples[0].evidence[0].supports
+  - mechanisms[0].protein_examples[0].evidence[0].explanation
+  - mechanisms[0].protein_examples[1].evidence[0].supports
+  - mechanisms[0].protein_examples[1].evidence[0].explanation
+  - causal_graphs[0].nodes[0].description
+  - causal_graphs[0].nodes[0].protein_examples[0].evidence[0].supports
+  - causal_graphs[0].nodes[0].protein_examples[0].evidence[0].explanation
+  - causal_graphs[0].nodes[1].description
+  - causal_graphs[0].nodes[1].protein_examples[0].evidence[0].supports
+  - causal_graphs[0].nodes[1].protein_examples[0].evidence[0].explanation
+  - causal_graphs[0].nodes[2].description
+  - causal_graphs[0].nodes[3].description
+  - causal_graphs[0].nodes[4].description
+  - causal_graphs[0].edges[0].description
+  - causal_graphs[0].edges[0].evidence[0].supports
+  - causal_graphs[0].edges[0].evidence[0].explanation
+  - causal_graphs[0].edges[1].description
+  - causal_graphs[0].edges[1].evidence[0].supports
+  - causal_graphs[0].edges[1].evidence[0].explanation
+  - causal_graphs[0].edges[2].description
+  - causal_graphs[0].edges[2].evidence[0].supports
+  - causal_graphs[0].edges[2].evidence[0].explanation
+  - causal_graphs[0].edges[3].description
+  - causal_graphs[0].edges[3].evidence[0].supports
+  - causal_graphs[0].edges[3].evidence[0].explanation
+  - curation_history
+  - history_refs
+  evidence_ids:
+  - ev-stage4-evidence
+  - ev-stage4-findings
+  - ev-levar2017
+  - ev-schema
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/akaganeite.yaml
+    role: maintained_record
+  disposition_reason: 'Resolved under GitHub Issues #991 and #995 (GRP-C13S5-001):
+    updated mechanisms[0].protein_examples[0..1] (UniProtKB:Q747K6 ImcH, UniProtKB:Q74GH2
+    CbcL), causal_graphs[0].nodes[0..1].protein_examples[0], causal_graphs[0].nodes[0..4].description,
+    and causal_graphs[0].edges[0..3] in akaganeite.yaml to supports: partial with
+    Levar et al. (2017) pH 6.8 vs 6.3 and 121 C autoclaving phenotypes, inferred mineral
+    redox potential vs Figure 1 soluble Fe(III)-citrate, cited-only complementation,
+    unquantified initial Fe loading, and 0.5 N HCl ferrozine extraction scope with
+    an append-only EDIT history sidecar.'
+  previous_occurrences:
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261110T085001Z-cycle13-stage4-mineral-cohort-review
+    finding_id: cmmmech-cycle13-stage4-finding-0001
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261110T085006Z-cycle13-stage4-causal-graphs-cohort-review
+    finding_id: cmmmech-cycle13-stage4-finding-0001
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261110T085007Z-akaganeite-cycle13-stage4-record-review
+    finding_id: cmmmech-cycle13-stage4-finding-0001
+  external_issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/991
+  - https://github.com/CultureBotAI/CMMMech/issues/995
+- finding_id: cmmmech-cycle13-stage4-finding-0002
+  issue_key: cmmmech.zorzetto2023-hydroxylapatite.abbreviated-graph-nodes-edges-and-fixed-biofilm-control-qualifications
+  category: graph
+  severity: minor
+  status: resolved
+  certainty: confirmed
+  title: 'Hydroxylapatite Escherichia coli W3110 PhoA biofilm causal graph now incorporates
+    Zorzetto et al. (2023) P-Ca 10:10/10:1 conditions, 4% PFA-fixed biofilm mineralization,
+    inhibitor/ALP control limits, and WAXS occupancy/yield caveats with supports:
+    partial'
+  description: 'In data/records/hydroxylapatite.yaml (cmmmech:hydroxylapatite, mineral,
+    Zorzetto et al. 2023 Chemistry of Materials 35:2762-2772, DOI:10.1021/acs.chemmater.2c02969,
+    zorzetto_2023 / zorzetto_2023_si; mechanisms[0] w3110_biofilm_calcium_phosphate,
+    lines 43-152; causal_graphs[0] w3110_phoa_biofilm_hydroxyapatite_graph, lines
+    154-231), mechanisms[0].description, context, and evidence[0..6] (lines 46-117)
+    document that Escherichia coli K-12 substr. W3110 (pMP7604) biofilms grown on
+    salt-free LB agar with 10 mM sodium beta-glycerophosphate and 1 or 10 mM CaCl2
+    (P-Ca 10:1 or 10:10, 5-10 days at 28 C) were mostly fixed in 4% paraformaldehyde
+    in PBS and lyophilized before WAXS, that 4% PFA/PBS-fixed 5-day salt-free biofilms
+    retained phosphatase activity and mineralized on P-Ca 10:10 agar (Figure S9, Table
+    S10), that 20 mM L-glutathione left residual reflections and altered biofilm diameter
+    (Figure 4A, Figure S7) while pH 10.4 purified-ALP assays lacked buffer-only or
+    inactive-enzyme controls (Figure 4B), and that WAXS phase assignment lacks OH/F/Cl
+    occupancy measurement or whole-biofilm mineral yield. By contrast, causal_graphs[0].nodes[0..2].description
+    (lines 166-167, 203, 208-209, 93-98 chars) and edges[0..1] (lines 212-231, 108-
+    and 88-char explanations, with supports: support on edges[1]) omit these P-Ca
+    10:10/10:1 conditions, fixed-biofilm mineralization, inhibitor/enzyme control
+    limits, and phase-purity/yield caveats. In this scope, 1 record(s) (hydroxylapatite)
+    are affected.'
+  target_ids:
+  - cmmmech:hydroxylapatite
+  field_paths:
+  - causal_graphs[0].description
+  - causal_graphs[0].nodes[0].description
+  - causal_graphs[0].nodes[1].description
+  - causal_graphs[0].nodes[2].description
+  - causal_graphs[0].edges[0].description
+  - causal_graphs[0].edges[0].evidence[0].explanation
+  - causal_graphs[0].edges[1].description
+  - causal_graphs[0].edges[1].evidence[0].supports
+  - causal_graphs[0].edges[1].evidence[0].explanation
+  - curation_history
+  - history_refs
+  evidence_ids:
+  - ev-stage4-evidence
+  - ev-stage4-findings
+  - ev-zorzetto2023
+  - ev-schema
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/hydroxylapatite.yaml
+    role: maintained_record
+  disposition_reason: 'Resolved under GitHub Issues #992 and #995 (GRP-C13S5-002):
+    updated causal_graphs[0].description, causal_graphs[0].nodes[0..2].description,
+    and causal_graphs[0].edges[0..1] (with supports: partial on both edges) in hydroxylapatite.yaml
+    to incorporate Zorzetto et al. (2023) P-Ca 10:10 and 10:1 salt-free LB agar conditions,
+    4% PFA/PBS-fixed biofilm mineralization (Figure S9, Table S10), 20 mM L-glutathione
+    (Figure 4A, Figure S7) and pH 10.4 purified-ALP (Figure 4B) control limits, and
+    WAXS OH/F/Cl occupancy and yield caveats with an append-only EDIT history sidecar.'
+  previous_occurrences:
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261110T085001Z-cycle13-stage4-mineral-cohort-review
+    finding_id: cmmmech-cycle13-stage4-finding-0002
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261110T085006Z-cycle13-stage4-causal-graphs-cohort-review
+    finding_id: cmmmech-cycle13-stage4-finding-0002
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261110T085008Z-hydroxylapatite-cycle13-stage4-record-review
+    finding_id: cmmmech-cycle13-stage4-finding-0002
+  external_issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/992
+  - https://github.com/CultureBotAI/CMMMech/issues/995
+- finding_id: cmmmech-cycle13-stage4-finding-0003
+  issue_key: cmmmech.schmitz-marecos-gluconobacter-graphs.template-pqqc-gdh-nodes-edges-and-relative-denominator-qualifications
+  category: graph
+  severity: minor
+  status: resolved
+  certainty: confirmed
+  title: 'Gluconobacter oxydans B58 REE bioleaching protein examples and causal graphs
+    in allanite-concentrate, fluorescent-lamp-phosphor, and neodymium now use supports:
+    partial with 621H proxy grounding and study-specific mutant/denominator caveats'
+  description: 'In data/records/allanite-concentrate.yaml (cmmmech:allanite-concentrate,
+    primary_resource, Schmitz et al. 2025 Communications Biology 8:815, schmitz2025;
+    causal_graphs[0] lines 182-398), data/records/fluorescent-lamp-phosphor.yaml (cmmmech:fluorescent-lamp-phosphor,
+    secondary_resource, Schmitz et al. 2021 Nature Communications 12:6693, schmitz2021;
+    causal_graphs[0] lines 105-263), and data/records/neodymium.yaml (cmmmech:neodymium,
+    element, Marecos et al. 2025 Communications Biology 8:682, marecos2025; causal_graphs[0]
+    lines 204-403), Gluconobacter oxydans B58 protein_examples (UniProtKB:Q9L3B2 PqqC,
+    UniProtKB:P27175 Gdh, UniProtKB:Q5FT13 PstC in fluorescent-lamp-phosphor.yaml,
+    and UniProtKB:Q5FQK7 GOX1598 in neodymium.yaml) and causal_graphs[0] nodes/edges
+    retain generic 72-to-130-character template descriptions and supports: support
+    polarity that omit 621H reference-proteome (UP000006375) proxy grounding for unsequenced
+    experimental strain B58, residual REE release in mgdh/pqqC disruption mutants
+    (Figure 4D of schmitz2021) and non-pH mutant effects (9 of 12 mutants in marecos2025;
+    unresolved concentration vs composition in schmitz2025 Discussion), relative-over-wild-type
+    vs absolute-recovery denominators (53.1%/73.1% in schmitz2025; ~111% in marecos2025;
+    literature-based 4.7%/5.5% phosphor denominator in schmitz2021), and study-specific
+    timing/control caveats (24 h vs 36 h pH timing and Figure S2 nitric-acid comparator
+    in schmitz2025; non-sterile-filtered centrifuged supernatant in schmitz2021; missing
+    no-bacteria rows in Supplementary Data 4A of marecos2025). In this scope, 3 record(s)
+    (allanite-concentrate, fluorescent-lamp-phosphor, neodymium) are affected.'
+  target_ids:
+  - cmmmech:allanite-concentrate
+  - cmmmech:fluorescent-lamp-phosphor
+  - cmmmech:neodymium
+  field_paths:
+  - mechanisms[0].protein_examples[3].evidence[0].supports
+  - mechanisms[0].protein_examples[3].evidence[0].explanation
+  - mechanisms[0].protein_examples[4].evidence[0].supports
+  - mechanisms[0].protein_examples[4].evidence[0].explanation
+  - causal_graphs[0].nodes[0].description
+  - causal_graphs[0].nodes[0].protein_examples[0].evidence[0].supports
+  - causal_graphs[0].nodes[0].protein_examples[0].evidence[0].explanation
+  - causal_graphs[0].nodes[1].description
+  - causal_graphs[0].nodes[1].protein_examples[0].evidence[0].supports
+  - causal_graphs[0].nodes[1].protein_examples[0].evidence[0].explanation
+  - causal_graphs[0].nodes[2].description
+  - causal_graphs[0].nodes[3].description
+  - causal_graphs[0].edges[0].evidence[0].supports
+  - causal_graphs[0].edges[0].evidence[0].explanation
+  - causal_graphs[0].edges[1].evidence[0].supports
+  - causal_graphs[0].edges[1].evidence[0].explanation
+  - causal_graphs[0].edges[2].evidence[0].supports
+  - causal_graphs[0].edges[2].evidence[0].explanation
+  - causal_graphs[0].edges[3].evidence[0].supports
+  - causal_graphs[0].edges[3].evidence[0].explanation
+  - causal_graphs[0].edges[4].evidence[0].supports
+  - causal_graphs[0].edges[4].evidence[0].explanation
+  - mechanisms[0].protein_examples[0].evidence[0].supports
+  - mechanisms[0].protein_examples[0].evidence[0].explanation
+  - mechanisms[0].protein_examples[1].evidence[0].supports
+  - mechanisms[0].protein_examples[1].evidence[0].explanation
+  - mechanisms[0].protein_examples[2].evidence[0].supports
+  - mechanisms[0].protein_examples[2].evidence[0].explanation
+  - causal_graphs[0].nodes[2].protein_examples[0].evidence[0].supports
+  - causal_graphs[0].nodes[2].protein_examples[0].evidence[0].explanation
+  - mechanisms[1].protein_examples[0].evidence[0].supports
+  - mechanisms[1].protein_examples[0].evidence[0].explanation
+  - mechanisms[1].protein_examples[1].evidence[0].supports
+  - mechanisms[1].protein_examples[1].evidence[0].explanation
+  - mechanisms[1].protein_examples[2].evidence[0].supports
+  - mechanisms[1].protein_examples[2].evidence[0].explanation
+  - curation_history
+  - history_refs
+  evidence_ids:
+  - ev-stage4-evidence
+  - ev-stage4-findings
+  - ev-schmitz-marecos
+  - ev-schema
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/allanite-concentrate.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: data/records/fluorescent-lamp-phosphor.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: data/records/neodymium.yaml
+    role: maintained_record
+  disposition_reason: 'Resolved under GitHub Issues #993 and #995 (GRP-C13S5-003):
+    updated G. oxydans B58 protein_examples and causal_graphs[0] nodes/edges in allanite-concentrate.yaml
+    (Schmitz et al. 2025), fluorescent-lamp-phosphor.yaml (Schmitz et al. 2021), and
+    neodymium.yaml (Marecos et al. 2025) to supports: partial, documenting G. oxydans
+    621H reference-proteome proxy grounding (UP000006375, NCBITaxon:290633), residual
+    mgdh/pqqC mutant leaching, hypothesized pstC/pstS pho-regulon regulation, unresolved
+    concentration vs composition and 24 h vs 36 h pH timing / Figure S2 nitric-acid
+    comparator caveats in Schmitz et al. (2025), centrifuged non-sterile-filtered
+    lixiviant contact in Schmitz et al. (2021), non-pH-resolved mutant effects (9
+    of 12 strains) and Supplementary Data 4A control-row scope in Marecos et al. (2025),
+    and relative-over-wild-type vs absolute-recovery denominators with 3 append-only
+    EDIT history sidecars.'
+  previous_occurrences:
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261110T085000Z-cycle13-stage4-element-cohort-review
+    finding_id: cmmmech-cycle13-stage4-finding-0003
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261110T085004Z-cycle13-stage4-primary-resource-cohort-review
+    finding_id: cmmmech-cycle13-stage4-finding-0003
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261110T085005Z-cycle13-stage4-secondary-resource-cohort-review
+    finding_id: cmmmech-cycle13-stage4-finding-0003
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261110T085006Z-cycle13-stage4-causal-graphs-cohort-review
+    finding_id: cmmmech-cycle13-stage4-finding-0003
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261110T085009Z-neodymium-cycle13-stage4-record-review
+    finding_id: cmmmech-cycle13-stage4-finding-0003
+  external_issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/993
+  - https://github.com/CultureBotAI/CMMMech/issues/995
+actions: []
+boundary_decisions:
+- action: retain
+  target_ids:
+  - cmmmech:akaganeite
+  - cmmmech:allanite-concentrate
+  - cmmmech:fluorescent-lamp-phosphor
+  - cmmmech:hydroxylapatite
+  - cmmmech:neodymium
+  evidence_ids:
+  - ev-stage4-evidence
+  - ev-stage4-findings
+  - ev-schema
+  rationale: All 5 remediated records represent distinct material entities (2 minerals,
+    1 primary resource, 1 secondary resource, and 1 chemical element) with disjoint
+    identifiers and provenance; cohort boundaries from Cycle 13 Stage 4 are retained
+    unchanged.
+limitations:
+- This verification review is scoped to the 5 records remediated in Cycle 13 Stage
+  5; the remaining 703 records were verified with 0 open findings in the immutable
+  Cycle 13 Stage 4 review bundles.
