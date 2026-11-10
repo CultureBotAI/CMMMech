@@ -2,19 +2,19 @@
 
 - **Run / Cycle / Stage**: `mech-goal-sequence-20261019`, Cycle 13, Stage 1 (`add_records`)
 - **Corpus Count**: `703 -> 708` (`+5` records)
-- **Canonical History Sidecars**: `1510 -> 1515` (`+5` `CREATE` sidecars)
-- **Structured Scientific Reviews**: `1244 -> 1249` (`+5` review bundles)
-- **Source Investigation Dossier**: `research/sources/round131-minerals/20261110T021200Z-source-investigation.json` (`1a8dfe4bd7424bd3b2f3dda4fefabba69d6e975123bdeacb2a946ccc84e4e17a`)
+- **Canonical History Sidecars**: `1510 -> 1519` (`+5` `CREATE` + `+4` `EDIT` sidecars)
+- **Structured Scientific Reviews**: `1244 -> 1254` (`+5` initial + `+5` post-remediation review bundles)
+- **Source Investigation Dossier**: `research/sources/round131-minerals/20261110T021200Z-source-investigation.json` (`cc2628dc6c394b0d1a130e32782f93ae41b97b138b2f63b3ea5610ee44c12f79`)
 
 ## Admitted Records (`+5`)
 
-| Slug | IMA ID | Formula | Primary DOI | Record SHA-256 | Review Bundle |
-|---|---|---|---|---|---|
-| `heimaeyite` | `IMA:2023-127a` | `Na3Al(SO4)3 (also written Na3AlS3O12 in Section 3, p. 81)` | https://doi.org/10.5194/ejm-37-79-2025 | `c9d3ff564edd8a35...` | `reviews/structured/20261110T021300Z-heimaeyite-round131-scientific-review/review.yaml` |
-| `delchiaroite` | `IMA:2025-076` | `Cu3I(CH3S)2` | https://doi.org/10.5194/ejm-38-153-2026 | `14e12fd32e237ab0...` | `reviews/structured/20261110T021300Z-delchiaroite-round131-scientific-review/review.yaml` |
-| `marioantofilliite` | `IMA:2025-012` | `[Cu4Al2(OH)12](CO3)(H2O)3 ([Cu4Al2(OH)12](CO3)*3H2O in primary paper)` | https://doi.org/10.5194/ejm-37-733-2025 | `15bfcf39a0edb18b...` | `reviews/structured/20261110T021300Z-marioantofilliite-round131-scientific-review/review.yaml` |
-| `jonlarsenite` | `IMA:2024-078a` | `Al4Cu9` | https://doi.org/10.5194/ejm-37-783-2025 | `45de05cd8368cbaa...` | `reviews/structured/20261110T021300Z-jonlarsenite-round131-scientific-review/review.yaml` |
-| `nannoniite` | `IMA:2024-010` | `Al2(OH)5F` | https://doi.org/10.5194/ejm-36-1011-2024 | `0df1c6a5bf7d5883...` | `reviews/structured/20261110T021300Z-nannoniite-round131-scientific-review/review.yaml` |
+| Slug | IMA ID | IMA Symbol | Formula | Primary DOI | Record SHA-256 | Post-Remediation Review Bundle |
+|---|---|---|---|---|---|---|
+| `heimaeyite` | `IMA:2023-127a` | none | `Na3Al(SO4)3 (also written Na3AlS3O12 in Section 3, p. 81)` | https://doi.org/10.5194/ejm-37-79-2025 | `b654bf22f87bcb03...` | `reviews/structured/20261110T035000Z-heimaeyite-round131-remediation-review/review.yaml` |
+| `delchiaroite` | `IMA:2025-076` | `Dch` | `Cu3I(CH3S)2` | https://doi.org/10.5194/ejm-38-153-2026 | `4d8c2370a39ddb7f...` | `reviews/structured/20261110T035000Z-delchiaroite-round131-remediation-review/review.yaml` |
+| `marioantofilliite` | `IMA:2025-012` | `Maf` | `[Cu4Al2(OH)12](CO3)(H2O)3 ([Cu4Al2(OH)12](CO3)*3H2O in primary paper)` | https://doi.org/10.5194/ejm-37-733-2025 | `65bfcba42fee181f...` | `reviews/structured/20261110T035000Z-marioantofilliite-round131-remediation-review/review.yaml` |
+| `jonlarsenite` | `IMA:2024-078a` | none | `Al4Cu9` | https://doi.org/10.5194/ejm-37-783-2025 | `45de05cd8368cbaa...` | `reviews/structured/20261110T035000Z-jonlarsenite-round131-remediation-review/review.yaml` |
+| `nannoniite` | `IMA:2024-010` | `Nnn` | `Al2(OH)5F` | https://doi.org/10.5194/ejm-36-1011-2024 | `14baa8383feacad8...` | `reviews/structured/20261110T035000Z-nannoniite-round131-remediation-review/review.yaml` |
 
 ## Preserved Frontier Queue
 

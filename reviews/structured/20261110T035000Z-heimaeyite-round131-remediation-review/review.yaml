@@ -1,0 +1,235 @@
+schema_version: 1.0.0
+review_id: 20261110T035000Z-heimaeyite-round131-remediation-review
+kind: record
+repository: CultureBotAI/CMMMech
+title: Post-remediation primary-source scientific review of heimaeyite (IMA:2023-127a,
+  status A, Na3Al(SO4)3 (also written Na3AlS3O12 in Section 3, p. 81))
+started_at: '2026-11-10T03:49:30Z'
+finished_at: '2026-11-10T03:50:00Z'
+reviewer:
+  identity: antigravity / round131-scientific-reviewer
+  kind: agent
+  model: gemini-3.1-pro
+  independence: self_review
+  independence_basis: 'Single-agent Goal Mode post-remediation execution of .claude/skills/review-record/SKILL.md
+    (superseding 20261110T021300Z-heimaeyite-round131-scientific-review after Issue
+    #986 remediation on PR #985) verifying all scientific claims in data/records/heimaeyite.yaml
+    (SHA-256 b654bf22f87bcb037a237ce68da1d621e72b630d52a4202b389729f452b542b8) and
+    its canonical history sidecars (history/records/heimaeyite/2026-11-10T015229Z-antigravity-36f503.yaml,
+    history/records/heimaeyite/2026-11-10T034829Z-antigravity-1ce5eb.yaml) against
+    all bounded passages (27 total / 25 main-text passages <= 1,800 B across 11 full-PDF
+    / 10 main-text pages) and single-page 150-DPI PNG table renders of Balic-Zunic
+    T, Garavelli A, Mitolo D, Nestola F, Pamato MG, Rasmussen MB, Jolnaes MB (2025)
+    Heimaeyite, Na3Al(SO4)3, a new mineral from the fumaroles on Eldfell volcano,
+    Iceland. European Journal of Mineralogy 37:79-89 (https://doi.org/10.5194/ejm-37-79-2025,
+    PDF SHA-256 2fdeda91b078db82eb6ff62c7d8805bd05240c4fbe47d483f7325bd153aa9c28)
+    and the September 2026 IMA-CNMNC Master List (PDF p. 91, SHA-256 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973).'
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: e95a207c9dbe1f2e73a1cbd0643bc17fc5905ffd
+  state: working_tree
+  inputs:
+  - path: data/records/heimaeyite.yaml
+    sha256: b654bf22f87bcb037a237ce68da1d621e72b630d52a4202b389729f452b542b8
+    role: target
+  - path: history/records/heimaeyite/2026-11-10T015229Z-antigravity-36f503.yaml
+    sha256: 92d3e342f1c3427d48530dde6070dac1be84ba10fba2c8da280ae1ae0a35f23d
+    role: context
+  - path: history/records/heimaeyite/2026-11-10T034829Z-antigravity-1ce5eb.yaml
+    sha256: f9ab81852bfcbdc4ac6e2835efc5383af55b66de46b40b9f8b56f2b6483f8e35
+    role: context
+  - path: research/sources/round131-minerals/20261110T021200Z-source-investigation.json
+    sha256: cc2628dc6c394b0d1a130e32782f93ae41b97b138b2f63b3ea5610ee44c12f79
+    role: context
+  - path: research/sources/round131-minerals/20261110T021200Z-source-investigation.md
+    sha256: cb6e167d40809045dd374338d3a11184fb6f3800df76da36be917eb697b51222
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+targets:
+- target_id: cmmmech:heimaeyite
+  path: data/records/heimaeyite.yaml
+  label: Heimaeyite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/heimaeyite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/heimaeyite/2026-11-10T015229Z-antigravity-36f503.yaml
+    role: canonical_history
+  - repository: CultureBotAI/CMMMech
+    path: history/records/heimaeyite/2026-11-10T034829Z-antigravity-1ce5eb.yaml
+    role: canonical_history
+scope:
+  description: Post-remediation primary-source scientific review of data/records/heimaeyite.yaml
+    (SHA-256 b654bf22f87bcb037a237ce68da1d621e72b630d52a4202b389729f452b542b8) and
+    its canonical history sidecars (history/records/heimaeyite/2026-11-10T015229Z-antigravity-36f503.yaml,
+    history/records/heimaeyite/2026-11-10T034829Z-antigravity-1ce5eb.yaml) against
+    all bounded primary-source passages and rendered table PNGs from Balic-Zunic T,
+    Garavelli A, Mitolo D, Nestola F, Pamato MG, Rasmussen MB, Jolnaes MB (2025) Heimaeyite,
+    Na3Al(SO4)3, a new mineral from the fumaroles on Eldfell volcano, Iceland. European
+    Journal of Mineralogy 37:79-89 (https://doi.org/10.5194/ejm-37-79-2025) and the
+    September 2026 IMA-CNMNC Master List (PDF p. 91).
+  selection: 'Round 131 mineral record heimaeyite (post-Issue #986 remediation)'
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:heimaeyite
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/heimaeyite.yaml
+  locator: Working-tree record data/records/heimaeyite.yaml
+  accessed_at: '2026-11-10T03:49:45Z'
+  support: supports
+  summary: 'Working-tree record data/records/heimaeyite.yaml captures IMA:2023-127a
+    identity (ima_symbol: None), type locality (Fumarole (200-300 deg C at collection
+    in 2009) in red scoria on Eldfell volcano (63 deg 25 min 50 sec N, 20 deg 14 min
+    48 sec W), Heimaey Island, Vestmannaeyjar archipelago, Iceland), type specimens
+    (Holotype NI-30218, deposited in the mineral collection of the Icelandic Institute
+    of Natural History in Gardabaer, Iceland), Table 1 (p. 80) JEOL JXA-8200 WDS EMPA
+    chemistry (n = 11 analyses: mean Fe2O3 4.18 wt% [SD 0.58], MnO 0.43 wt% [SD 0.16],
+    K2O 0.98 wt% [SD 0.14], SO3 56.72 wt% [SD 1.40], SiO2 0.10 wt% [SD 0.07], Al2O3
+    10.10 wt% [SD 0.57], MgO 1.00 wt% [SD 0.12], Na2O 19.39 wt% [SD 0.79], printed
+    Total 92.89 wt% [exact sum of rounded means 92.90 wt%]; empirical formula after
+    subtracting admixed koryakite and EA: Na2.93Al0.82Fe0.25S2.99O12.05; SCXRD refined
+    formula Na3Al0.93Fe0.07S3O12), trigonal R-3 (#148) crystal structure, documented
+    primary-source discrepancies, and 0 mechanisms (SHA-256 b654bf22f87bcb037a237ce68da1d621e72b630d52a4202b389729f452b542b8).'
+  snapshot_sha256: b654bf22f87bcb037a237ce68da1d621e72b630d52a4202b389729f452b542b8
+- evidence_id: ima_authority
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: IMA-CNMNC September 2026 Master List, PDF p. 91
+  accessed_at: '2026-11-10T03:49:45Z'
+  support: supports
+  summary: Confirms Heimaeyite, status A, IMA:2023-127a, formula Na3Al(SO4)3 (also
+    written Na3AlS3O12 in Section 3, p. 81), and first reference in Balic-Zunic T,
+    Garavelli A, Mitolo D, Nestola F, Pamato MG, Rasmussen MB, Jolnaes MB (2025) Heimaeyite,
+    Na3Al(SO4)3, a new mineral from the fumaroles on Eldfell volcano, Iceland. European
+    Journal of Mineralogy 37:79-89.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: balic_zunic_2025_heimaeyite_primary
+  kind: primary_source
+  reference: https://doi.org/10.5194/ejm-37-79-2025
+  locator: Balic-Zunic T, Garavelli A, Mitolo D, Nestola F, Pamato MG, Rasmussen MB,
+    Jolnaes MB (2025) Heimaeyite, Na3Al(SO4)3, a new mineral from the fumaroles on
+    Eldfell volcano, Iceland. European Journal of Mineralogy 37:79-89 (27 bounded
+    passages <= 1,800 B across 11 full-PDF pages / 10 main-text pages, plus 150-DPI
+    PNG table renders)
+  accessed_at: '2026-11-10T03:49:45Z'
+  support: supports
+  summary: All bounded passages (<= 1,800 B) and single-page 150-DPI PNG table renders
+    inspected from Balic-Zunic T, Garavelli A, Mitolo D, Nestola F, Pamato MG, Rasmussen
+    MB, Jolnaes MB (2025) Heimaeyite, Na3Al(SO4)3, a new mineral from the fumaroles
+    on Eldfell volcano, Iceland. European Journal of Mineralogy 37:79-89, confirming
+    verbatim title, authors, type locality, type specimen repositories, chemical composition,
+    unit-cell parameters, structure refinement, and documented internal source discrepancies.
+  snapshot_sha256: 2fdeda91b078db82eb6ff62c7d8805bd05240c4fbe47d483f7325bd153aa9c28
+- evidence_id: canonical_history
+  kind: record_content
+  reference: history/records/heimaeyite/2026-11-10T034829Z-antigravity-1ce5eb.yaml
+  locator: Canonical history sidecar history/records/heimaeyite/2026-11-10T034829Z-antigravity-1ce5eb.yaml
+  accessed_at: '2026-11-10T03:49:45Z'
+  support: supports
+  summary: 'Canonical history sidecars (history/records/heimaeyite/2026-11-10T015229Z-antigravity-36f503.yaml,
+    history/records/heimaeyite/2026-11-10T034829Z-antigravity-1ce5eb.yaml; latest
+    SHA-256 f9ab81852bfcbdc4ac6e2835efc5383af55b66de46b40b9f8b56f2b6483f8e35) record
+    the CREATE and Issue #986 EDIT sessions.'
+  snapshot_sha256: f9ab81852bfcbdc4ac6e2835efc5383af55b66de46b40b9f8b56f2b6483f8e35
+- evidence_id: validation
+  kind: validation
+  reference: data/records/heimaeyite.yaml
+  locator: Real CLI validation via .venv/bin/cmmmech validate --require-records and
+    .venv/bin/cmmmech validate-history --base main
+  accessed_at: '2026-11-10T03:49:55Z'
+  support: supports
+  summary: Checked 708 record(s); 0 failed. Checked 1519 history record(s); 0 error(s).
+  snapshot_sha256: b654bf22f87bcb037a237ce68da1d621e72b630d52a4202b389729f452b542b8
+checks:
+- check_id: validate_records
+  name: Strict corpus validation
+  command: .venv/bin/cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Checked 708 record(s); 0 failed.
+  target_ids:
+  - cmmmech:heimaeyite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: validate_history
+  name: Canonical history validation
+  command: .venv/bin/cmmmech validate-history --base main
+  status: passed
+  required: true
+  summary: Checked 1519 history record(s); 0 error(s).
+  target_ids:
+  - cmmmech:heimaeyite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+assessments:
+- assessment_id: identity_and_primary_source_verification
+  area: evidence
+  topic: Verification of IMA:2023-127a identity, ima_symbol (None), type locality,
+    type specimens, chemical composition, crystal structure, and internal source discrepancies
+    for heimaeyite
+  outcome: supported
+  summary: All numeric, crystallographic, and chemical claims in data/records/heimaeyite.yaml
+    (SHA-256 b654bf22f87bcb037a237ce68da1d621e72b630d52a4202b389729f452b542b8) match
+    the bounded primary-source passages and rendered table PNGs of Balic-Zunic T,
+    Garavelli A, Mitolo D, Nestola F, Pamato MG, Rasmussen MB, Jolnaes MB (2025) Heimaeyite,
+    Na3Al(SO4)3, a new mineral from the fumaroles on Eldfell volcano, Iceland. European
+    Journal of Mineralogy 37:79-89 and the September 2026 IMA Master List (PDF p.
+    91).
+  target_ids:
+  - cmmmech:heimaeyite
+  evidence_ids:
+  - owner
+  - ima_authority
+  - balic_zunic_2025_heimaeyite_primary
+- assessment_id: mechanism_absence_and_provenance_verification
+  area: provenance
+  topic: Verification of 0 mechanisms (abiotic occurrence only) and append-only history
+    provenance
+  outcome: supported
+  summary: data/records/heimaeyite.yaml accurately omits mechanisms (0 mechanisms)
+    and explicitly discloses that no biological or microbial interaction data are
+    reported in the type mineralogical description. Append-only history sidecars pass
+    validation with 0 errors.
+  target_ids:
+  - cmmmech:heimaeyite
+  evidence_ids:
+  - owner
+  - balic_zunic_2025_heimaeyite_primary
+  - canonical_history
+  - validation
+findings: []
+actions: []
+summary: 'Heimaeyite (IMA:2023-127a, status A, Na3Al(SO4)3 (also written Na3AlS3O12
+  in Section 3, p. 81)) passes post-remediation primary-source scientific review (scientific_review:
+  true) at SHA-256 b654bf22f87bcb037a237ce68da1d621e72b630d52a4202b389729f452b542b8
+  against all bounded passages and rendered table PNGs of Balic-Zunic T, Garavelli
+  A, Mitolo D, Nestola F, Pamato MG, Rasmussen MB, Jolnaes MB (2025) Heimaeyite, Na3Al(SO4)3,
+  a new mineral from the fumaroles on Eldfell volcano, Iceland. European Journal of
+  Mineralogy 37:79-89 (https://doi.org/10.5194/ejm-37-79-2025), superseding 20261110T021300Z-heimaeyite-round131-scientific-review
+  after Issue #986 remediation.'
+limitations:
+- 'Review is conducted in single-agent Goal Mode (independence: self_review) against
+  working-tree bytes; an independent subagent PR re-review is executed prior to merge.'
+notes:
+- Executed under the Round 131 bounded source-text workflow (scripts/index_bounded_pdf_passages.py,
+  max 1,800 bytes per passage) plus single-page 150-DPI PNG table renders.
+- 'Supersedes 20261110T021300Z-heimaeyite-round131-scientific-review following Issue
+  #986 remediation on PR #985.'
+related_reviews:
+- repository: CultureBotAI/CMMMech
+  review_id: 20261110T021300Z-heimaeyite-round131-scientific-review
+  relationship: supersedes_after_issue_986_remediation

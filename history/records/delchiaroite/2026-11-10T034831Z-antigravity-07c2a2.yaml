@@ -1,0 +1,34 @@
+history_version: 1
+target:
+  kind: record
+  slug: delchiaroite
+  path: data/records/delchiaroite.yaml
+session:
+  id: 2026-11-10T034831Z-antigravity-07c2a2
+  timestamp: '2026-11-10T03:48:31Z'
+  actors:
+  - name: antigravity
+    type: ai_agent
+    model: gemini-3.1-pro
+    agent_tool: antigravity-cli
+events:
+- type: EDIT
+  outcome: changed
+  summary: 'Populate ima_symbol: Dch and document Raman 196/239 cm-1 peaks and Table 7 typo
+    for delchiaroite (Issue #986, PR #985)'
+  details: 'Added top-level ima_symbol: Dch and updated description in data/records/delchiaroite.yaml
+    to document the weak Raman bands at 196 and 239 cm-1 labelled in Figure 4 (p. 160) and
+    the Table 7 (p. 160) dcalc/Icalc column-transposition typo for dobs = 2.362, 2.310, 2.289,
+    and 2.222 A in Biagioni et al. (2026, European Journal of Mineralogy 38:153-167).'
+  sections:
+  - ima_symbol
+  - description
+  - curation_history
+  - history_refs
+links:
+  issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/986
+  prs:
+  - https://github.com/CultureBotAI/CMMMech/pull/985
+  urls:
+  - https://doi.org/10.5194/ejm-38-153-2026
