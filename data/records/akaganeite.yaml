@@ -54,12 +54,12 @@ mechanisms:
     - InterPro:IPR038266
     pfam_ids:
     - Pfam:PF03264
-    functional_role: Inner-membrane multiheme c-type cytochrome ImcH (GSU3259) inferred by analogy from Geobacter sulfurreducens EET genetics as a high-potential (> -0.1 V vs SHE) electron-transfer component during microbial Fe(III) reduction; Cutting et al. (2009) did not perform mutant, proteomic, or transcriptomic assays.
+    functional_role: Inner-membrane multiheme c-type cytochrome ImcH (GSU3259) associated by deletion-mutant phenotypes with condition-dependent extracellular electron transfer to synthetic akaganeite at higher effective redox potential (pH 6.8 vs 6.3 and 121 degrees C autoclaving in Levar et al. 2017; direct mineral redox potential and purified-ImcH quinone oxidoreductase activity were not measured).
     evidence:
     - source_ref: levar_2017
       supports: partial
-      explanation: Cutting et al. (2009) assayed wild-type Geobacter sulfurreducens PCA reducing synthetic akaganeite in the presence of 10 microM AQDS without genetic, proteomic, or transcriptomic measurements; ImcH (GSU3259) is grounded as a canonical G. sulfurreducens PCA inner-membrane EET proxy rather than a directly assayed study variable.
-    annotation_note: Grounded to Geobacter sulfurreducens PCA reference proteome UP000000577 (NCBITaxon:243231, locus GSU3259) as an organism-level EET proxy; Cutting et al. (2009) used unmutated G. sulfurreducens with 10 microM AQDS and did not directly assay ImcH.
+      explanation: In Levar et al. (2017) Figure 2, deleting imcH (GSU3259) in Geobacter sulfurreducens PCA caused an ~7-day lag before akaganeite reduction approached the wild-type endpoint at pH 6.8 (shortened by 121 degrees C autoclaving) and strongly suppressed reduction at pH 6.3, while mineral redox potential was inferred from soluble Fe(III)-citrate comparisons (Figure 1) rather than directly measured and complementation was cited from prior work.
+    annotation_note: Grounded to Geobacter sulfurreducens PCA reference proteome UP000000577 (NCBITaxon:243231, locus GSU3259); Levar et al. (2017) tested the delta-imcH deletion mutant in strain PCA and cited complementation from earlier work rather than repeating complementation in Figure 2.
   - uniprot_accession: UniProtKB:Q74GH2
     entry_name: Q74GH2_GEOSL
     protein_name: Cytochrome c, and cytochrome b
@@ -74,12 +74,12 @@ mechanisms:
     - InterPro:IPR012286
     pfam_ids:
     - Pfam:PF14537
-    functional_role: Inner-membrane b/c-type cytochrome complex CbcL (GSU0274) inferred by analogy from Geobacter sulfurreducens EET genetics as a lower-potential electron-transfer pathway component during Fe(III) mineral reduction; Cutting et al. (2009) did not perform mutant, proteomic, or transcriptomic assays.
+    functional_role: Inner-membrane b/c-type cytochrome CbcL (GSU0274) associated by deletion-mutant phenotypes with sustaining akaganeite reduction to the full wild-type 0.5 N HCl-extractable Fe(II) endpoint in Levar et al. (2017), without direct mineral redox-potential measurement or purified-protein assays.
     evidence:
     - source_ref: levar_2017
       supports: partial
-      explanation: Cutting et al. (2009) assayed wild-type Geobacter sulfurreducens PCA reducing synthetic akaganeite in the presence of 10 microM AQDS without genetic, proteomic, or transcriptomic measurements; CbcL (GSU0274) is grounded as a canonical G. sulfurreducens PCA inner-membrane EET proxy rather than a directly assayed study variable.
-    annotation_note: Grounded to Geobacter sulfurreducens PCA reference proteome UP000000577 (NCBITaxon:243231, locus GSU0274) as an organism-level EET proxy; Cutting et al. (2009) used unmutated G. sulfurreducens with 10 microM AQDS and did not directly assay CbcL.
+      explanation: In Levar et al. (2017) Figure 2, deleting cbcL (GSU0274) in Geobacter sulfurreducens PCA allowed initial akaganeite reduction without the delta-imcH lag but stalled below the wild-type 0.5 N HCl-extractable Fe(II) endpoint across pH 6.8 and 6.3 regimes, while mineral redox potential was not directly measured and complementation was cited from prior work.
+    annotation_note: Grounded to Geobacter sulfurreducens PCA reference proteome UP000000577 (NCBITaxon:243231, locus GSU0274); Levar et al. (2017) tested the delta-cbcL deletion mutant in strain PCA and cited complementation from earlier work rather than repeating complementation in Figure 2.
   evidence:
   - source_ref: levar_2017
     supports: support
@@ -93,7 +93,7 @@ mechanisms:
 causal_graphs:
 - id: pca_imch_cbcl_akaganeite_pathway
   name: Condition-dependent ImcH and CbcL electron-transfer pathways for akaganeite reduction
-  description: Causal pathway linking inferred Geobacter sulfurreducens PCA inner-membrane cytochrome complexes (ImcH, CbcL) and exogenously added 10 microM AQDS electron shuttle to reductive dissolution of synthetic akaganeite (beta-FeOOH) and biogenic magnetite/goethite mineral transformation in Cutting et al. (2009).
+  description: Directed causal graph modeling condition-dependent inner-membrane ImcH (GSU3259) and CbcL (GSU0274) electron-transfer pathways in Geobacter sulfurreducens PCA during synthetic XRD-assigned akaganeite reduction across pH 6.8 vs 6.3 and 121 degrees C autoclaving regimes in Levar et al. (2017), preserving unmeasured mineral redox potential, cited-only complementation, and 0.5 N HCl ferrozine extraction caveats.
   scope: RECORD_SPECIFIC_MECHANISM
   mechanism_ref: pca_akaganeite_reduction
   nodes:
@@ -101,7 +101,7 @@ causal_graphs:
     label: ImcH inner-membrane c-type cytochrome (GSU3259)
     node_type: GENE_OR_PROTEIN
     gene_symbol: imcH
-    description: Inner-membrane multiheme c-type cytochrome ImcH (GSU3259) inferred from canonical Geobacter sulfurreducens PCA extracellular electron transfer pathways; Cutting et al. (2009) did not directly assay ImcH mutants or expression.
+    description: Inner-membrane multiheme c-type cytochrome ImcH (GSU3259; UniProtKB:Q747K6) whose deletion in Geobacter sulfurreducens PCA causes an ~7-day lag on unautoclaved akaganeite at pH 6.8 (shortened by 121 degrees C autoclaving) and strongly suppresses reduction at pH 6.3; direct menaquinone-pool electron transfer and akaganeite redox potential were not directly measured, and complementation was cited from prior studies.
     protein_grounding_status: GROUNDED
     protein_examples:
     - uniprot_accession: UniProtKB:Q747K6
@@ -120,17 +120,17 @@ causal_graphs:
       - InterPro:IPR038266
       pfam_ids:
       - Pfam:PF03264
-      functional_role: Inner-membrane multiheme c-type cytochrome ImcH (GSU3259) inferred by analogy from Geobacter sulfurreducens EET genetics as a high-potential (> -0.1 V vs SHE) electron-transfer component during microbial Fe(III) reduction; Cutting et al. (2009) did not perform mutant, proteomic, or transcriptomic assays.
+      functional_role: Inner-membrane multiheme c-type cytochrome ImcH (GSU3259) associated by deletion-mutant phenotypes with condition-dependent extracellular electron transfer to synthetic akaganeite at higher effective redox potential (pH 6.8 vs 6.3 and 121 degrees C autoclaving in Levar et al. 2017; direct mineral redox potential and purified-ImcH quinone oxidoreductase activity were not measured).
       evidence:
       - source_ref: levar_2017
         supports: partial
-        explanation: Cutting et al. (2009) assayed wild-type Geobacter sulfurreducens PCA reducing synthetic akaganeite in the presence of 10 microM AQDS without genetic, proteomic, or transcriptomic measurements; ImcH (GSU3259) is grounded as a canonical G. sulfurreducens PCA inner-membrane EET proxy rather than a directly assayed study variable.
-      annotation_note: Grounded to Geobacter sulfurreducens PCA reference proteome UP000000577 (NCBITaxon:243231, locus GSU3259) as an organism-level EET proxy; Cutting et al. (2009) used unmutated G. sulfurreducens with 10 microM AQDS and did not directly assay ImcH.
+        explanation: In Levar et al. (2017) Figure 2, deleting imcH (GSU3259) in Geobacter sulfurreducens PCA caused an ~7-day lag before akaganeite reduction approached the wild-type endpoint at pH 6.8 (shortened by 121 degrees C autoclaving) and strongly suppressed reduction at pH 6.3, while mineral redox potential was inferred from soluble Fe(III)-citrate comparisons (Figure 1) rather than directly measured and complementation was cited from prior work.
+      annotation_note: Grounded to Geobacter sulfurreducens PCA reference proteome UP000000577 (NCBITaxon:243231, locus GSU3259); Levar et al. (2017) tested the delta-imcH deletion mutant in strain PCA and cited complementation from earlier work rather than repeating complementation in Figure 2.
   - id: cbcl_cytochrome
     label: CbcL inner-membrane b/c-type cytochrome (GSU0274)
     node_type: GENE_OR_PROTEIN
     gene_symbol: cbcL
-    description: Inner-membrane b/c-type cytochrome CbcL (GSU0274) inferred from canonical Geobacter sulfurreducens PCA extracellular electron transfer pathways; Cutting et al. (2009) did not directly assay CbcL mutants or expression.
+    description: Inner-membrane b/c-type cytochrome CbcL (GSU0274; UniProtKB:Q74GH2) whose deletion in Geobacter sulfurreducens PCA permits initial akaganeite reduction but stalls below the wild-type 0.5 N HCl-extractable Fe(II) endpoint; direct menaquinone-pool electron transfer and akaganeite redox potential were not directly measured, and complementation was cited from prior studies.
     protein_grounding_status: GROUNDED
     protein_examples:
     - uniprot_accession: UniProtKB:Q74GH2
@@ -147,64 +147,64 @@ causal_graphs:
       - InterPro:IPR012286
       pfam_ids:
       - Pfam:PF14537
-      functional_role: Inner-membrane b/c-type cytochrome complex CbcL (GSU0274) inferred by analogy from Geobacter sulfurreducens EET genetics as a lower-potential electron-transfer pathway component during Fe(III) mineral reduction; Cutting et al. (2009) did not perform mutant, proteomic, or transcriptomic assays.
+      functional_role: Inner-membrane b/c-type cytochrome CbcL (GSU0274) associated by deletion-mutant phenotypes with sustaining akaganeite reduction to the full wild-type 0.5 N HCl-extractable Fe(II) endpoint in Levar et al. (2017), without direct mineral redox-potential measurement or purified-protein assays.
       evidence:
       - source_ref: levar_2017
         supports: partial
-        explanation: Cutting et al. (2009) assayed wild-type Geobacter sulfurreducens PCA reducing synthetic akaganeite in the presence of 10 microM AQDS without genetic, proteomic, or transcriptomic measurements; CbcL (GSU0274) is grounded as a canonical G. sulfurreducens PCA inner-membrane EET proxy rather than a directly assayed study variable.
-      annotation_note: Grounded to Geobacter sulfurreducens PCA reference proteome UP000000577 (NCBITaxon:243231, locus GSU0274) as an organism-level EET proxy; Cutting et al. (2009) used unmutated G. sulfurreducens with 10 microM AQDS and did not directly assay CbcL.
+        explanation: In Levar et al. (2017) Figure 2, deleting cbcL (GSU0274) in Geobacter sulfurreducens PCA allowed initial akaganeite reduction without the delta-imcH lag but stalled below the wild-type 0.5 N HCl-extractable Fe(II) endpoint across pH 6.8 and 6.3 regimes, while mineral redox potential was not directly measured and complementation was cited from prior work.
+      annotation_note: Grounded to Geobacter sulfurreducens PCA reference proteome UP000000577 (NCBITaxon:243231, locus GSU0274); Levar et al. (2017) tested the delta-cbcL deletion mutant in strain PCA and cited complementation from earlier work rather than repeating complementation in Figure 2.
   - id: ph_and_autoclaving_condition
     label: Medium pH (6.8 vs 6.3) and autoclaving regime
     node_type: ENVIRONMENTAL_CONDITION
-    description: Respiratory electron flux from acetate oxidation transferred across the Geobacter sulfurreducens cell envelope and mediated by 10 microM AQDS to extracellular Fe(III) mineral surfaces (Cutting et al. 2009 did not include an AQDS-free biological control).
+    description: Medium pH (6.8 vs 6.3) and thermal treatment (fresh unautoclaved suspension vs 20 min autoclaving at 121 degrees C in modified NB basal medium with 20 mM acetate and 0.69 g/L NaH2PO4.H2O under 80:20 N2:CO2), which shift the inferred thermodynamic driving force and relative dependence on ImcH versus CbcL without altering bulk powder XRD patterns.
     protein_grounding_status: NOT_APPLICABLE
   - id: synthetic_akaganeite_substrate
     label: Synthetic XRD-assigned akaganeite (beta-FeOOH)
     node_type: MATERIAL_OR_PHASE
-    description: Synthetic beta-FeOOH (akaganeite) mineral suspension (~50 mmol/L Fe(III)) incubated with washed Geobacter sulfurreducens cells, 20 mM sodium acetate, and 10 microM AQDS at 30 degrees C in 30 mM NaHCO3 buffer.
+    description: Freshly precipitated synthetic XRD-assigned akaganeite (beta-FeOOH, prepared by titrating 0.4 M FeCl3 with 25% NaOH to pH 7 and used within 24 h at 1 mL mineral suspension per 9 mL modified NB medium; initial Fe loading is not independently quantified for akaganeite in the inspected Methods).
     protein_grounding_status: NOT_APPLICABLE
   - id: acid_extractable_fe2
     label: 0.5 N HCl-extractable Fe(II) product
     node_type: CHEMICAL_ENTITY
-    description: Reduced Fe(II) species (~20% of total Fe after 19 days by 0.5 N HCl extraction) and crystalline secondary magnetite (major phase) plus goethite (minor phase) identified by XRD, TEM, and Mossbauer spectroscopy.
+    description: 0.5 N HCl-extractable Fe(II) (extracted for >=24 h at 23-25 degrees C and quantified by ferrozine over ~14-15 days in triplicate cultures; measures total acid-extractable Fe(II) rather than dissolved-only Fe(II) or an isolated secondary mineral product).
     protein_grounding_status: NOT_APPLICABLE
   edges:
   - source: ph_and_autoclaving_condition
     target: imch_cytochrome
     predicate: modulates
-    relationship: inferred high-potential inner-membrane cytochrome step in G. sulfurreducens extracellular electron transfer
-    description: By analogy to established Geobacter sulfurreducens PCA EET physiology, ImcH is represented as a candidate inner-membrane quinone oxidoreductase routing respiratory electrons from the menaquinone pool toward periplasmic and outer-membrane electron carriers; Cutting et al. (2009) did not test imcH mutants.
+    relationship: starting pH (6.8 vs 6.3) and 121 degrees C autoclaving govern the phenotypic requirement for ImcH during akaganeite reduction
+    description: Lower medium pH (6.3, both fresh and autoclaved) strongly suppresses akaganeite reduction by delta-imcH, whereas at pH 6.8 fresh unautoclaved akaganeite imposes an ~7-day lag in delta-imcH that is shortened by 20 min autoclaving at 121 degrees C; thermodynamic redox shifts are inferred by analogy to Figure 1 soluble Fe(III)-citrate rather than directly measured on akaganeite.
     evidence:
     - source_ref: levar_2017
       supports: partial
-      explanation: Cutting et al. (2009) demonstrated microbial Fe(III) reduction of akaganeite by wild-type Geobacter sulfurreducens in the presence of 10 microM AQDS but did not perform genetic or biochemical characterization of ImcH (GSU3259).
+      explanation: Levar et al. (2017) Figure 2 and Table 1 show that pH 6.3 strongly suppresses delta-imcH akaganeite reduction and pH 6.8 autoclaving shortens the ~7-day delta-imcH lag without a general fumarate-growth defect, while mineral redox potentials were inferred rather than directly measured.
   - source: imch_cytochrome
     target: synthetic_akaganeite_substrate
     predicate: reduces
-    relationship: inferred lower-potential inner-membrane cytochrome step in G. sulfurreducens extracellular electron transfer
-    description: By analogy to established Geobacter sulfurreducens PCA EET physiology, CbcL is represented as a candidate lower-potential inner-membrane cytochrome pathway operating as redox potential shifts during progressive Fe(III) oxyhydroxide reduction; Cutting et al. (2009) did not test cbcL mutants.
+    relationship: ImcH pathway supports rapid onset of akaganeite Fe(III) reduction at pH 6.8 and reduction at pH 6.3
+    description: ImcH-associated extracellular electron transfer enables rapid initial reduction of fresh akaganeite at pH 6.8 (preventing the ~7-day lag seen in delta-imcH) and is required for substantial reduction at pH 6.3, though direct ImcH electron transfer from the quinone pool was not assayed with purified protein and complementation was cited from earlier work.
     evidence:
     - source_ref: levar_2017
       supports: partial
-      explanation: Cutting et al. (2009) demonstrated progressive transformation of akaganeite to magnetite and goethite by wild-type Geobacter sulfurreducens with 10 microM AQDS but did not perform genetic or biochemical characterization of CbcL (GSU0274).
+      explanation: Levar et al. (2017) Figure 2 demonstrates that wild-type Geobacter sulfurreducens PCA reduces akaganeite without the ~7-day pH 6.8 lag or pH 6.3 suppression observed in delta-imcH, with partial support reflecting inferred mineral redox potential and cited-only genetic complementation.
   - source: cbcl_cytochrome
     target: synthetic_akaganeite_substrate
     predicate: reduces
-    relationship: AQDS-mediated microbial electron transfer reduces structural Fe(III) in synthetic akaganeite
-    description: Extracellular electron transfer from Geobacter sulfurreducens in the presence of 10 microM AQDS reduces structural Fe(III) in synthetic akaganeite (~20% total Fe reduced to 0.5 N HCl-extractable Fe(II) over 19 days); because all biological incubations contained 10 microM AQDS, the assay does not isolate direct unshuttle-assisted electron transfer.
+    relationship: CbcL pathway sustains akaganeite Fe(III) reduction to the full wild-type Fe(II) endpoint
+    description: CbcL-associated extracellular electron transfer sustains akaganeite reduction after initial Fe(III) reduction, as delta-cbcL initiates reduction without lag but stalls below the wild-type 0.5 N HCl-extractable Fe(II) endpoint (and enables lagged reduction in delta-imcH at pH 6.8), without direct mineral voltage measurement or Figure 2 complementation controls.
     evidence:
     - source_ref: levar_2017
       supports: partial
-      explanation: Cutting et al. (2009) Table 2 and Figure 2 show Fe(II) accumulation (~20% of total Fe at 19 days) in synthetic akaganeite suspensions incubated with G. sulfurreducens, 20 mM acetate, and 10 microM AQDS relative to abiotic controls, without an AQDS-free biological control.
+      explanation: Levar et al. (2017) Figure 2 shows that delta-cbcL cultures initiate akaganeite reduction but plateau below wild-type acid-extractable Fe(II) levels across pH 6.8 and 6.3 conditions, while mineral redox potential and direct CbcL electron-transfer steps remain inferred.
   - source: synthetic_akaganeite_substrate
     target: acid_extractable_fe2
     predicate: produces
-    relationship: Biogenic Fe(II) and reductive dissolution transform akaganeite into magnetite and minor goethite
-    description: Reductive dissolution and Fe(II)-catalyzed recrystallization of synthetic akaganeite produce crystalline magnetite as the primary secondary mineral alongside minor goethite (~14% goethite and ~86% magnetite by 77 K Mossbauer spectroscopy at 9 weeks), without proving a purely solid-state topotactic pathway.
+    relationship: microbial reduction of synthetic akaganeite increases 0.5 N HCl-extractable Fe(II) over 14-15 days
+    description: Condition-dependent microbial reduction of synthetic XRD-assigned akaganeite in modified NB medium with 20 mM acetate increases 0.5 N HCl-extractable Fe(II) (extracted >=24 h at 23-25 degrees C for ferrozine analysis) over ~14-15 days relative to 14-day cell-free controls, without an independently reported initial akaganeite Fe concentration or isolated secondary mineral product.
     evidence:
     - source_ref: levar_2017
       supports: partial
-      explanation: XRD, TEM, and 77 K Mossbauer spectroscopy in Cutting et al. (2009) Table 2 and Figures 3-5 document conversion of synthetic akaganeite to magnetite (major) and goethite (minor), while dissolution-reprecipitation versus solid-state conversion contributions remain partially unresolved.
+      explanation: Levar et al. (2017) Figure 2 and Methods document accumulation of 0.5 N HCl-extractable Fe(II) in live PCA cultures over ~14-15 days with no observable reduction in 14-day cell-free controls, while initial akaganeite Fe loading is not independently quantified and 0.5 N HCl extraction does not isolate a purified mineral product.
 curation_history:
 - timestamp: '2026-10-14T06:25:01.132038+00:00'
   curator: codex (GPT-6; codex)
@@ -214,11 +214,11 @@ curation_history:
   curator: antigravity
   action: EDIT
   summary: Added verified UniProtKB protein examples (ImcH UniProtKB:Q747K6, CbcL UniProtKB:Q74GH2) and a record-specific causal graph for condition-dependent akaganeite reduction by Geobacter sulfurreducens PCA.
-- timestamp: '2026-11-10T16:51:44Z'
+- timestamp: '2026-11-10T17:43:28Z'
   curator: marcin
   action: edit
-  summary: Scope Geobacter sulfurreducens ImcH/CbcL protein examples and akaganeite causal graph to PCA EET proxies and 10 uM AQDS caveats (#991)
+  summary: 'Scope akaganeite G. sulfurreducens PCA ImcH/CbcL protein examples and causal graph to Levar et al. (2017) pH/autoclaving and redox caveats (#991, #995)'
 history_refs:
 - history/records/akaganeite/2026-10-14T062506Z-codex-282c73.yaml
 - history/records/akaganeite/2026-10-18T042750Z-antigravity-aefb7d.yaml
-- history/records/akaganeite/2026-11-10T165144Z-marcin-7c5a6c.yaml
+- history/records/akaganeite/2026-11-10T174328Z-marcin-386d0d.yaml

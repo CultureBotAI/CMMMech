@@ -8,33 +8,33 @@
 
 ## Grouped Remediation Summary
 
-| Group ID | Finding ID | GitHub Issue | Target Records | Status |
-| :--- | :--- | :--- | :--- | :--- |
-| `GRP-C13S5-001` | `cmmmech-cycle13-stage4-finding-0001` | [#991](https://github.com/CultureBotAI/CMMMech/issues/991) | `cmmmech:akaganeite` | `resolved` |
-| `GRP-C13S5-002` | `cmmmech-cycle13-stage4-finding-0002` | [#992](https://github.com/CultureBotAI/CMMMech/issues/992) | `cmmmech:hydroxylapatite` | `resolved` |
-| `GRP-C13S5-003` | `cmmmech-cycle13-stage4-finding-0003` | [#993](https://github.com/CultureBotAI/CMMMech/issues/993) | `cmmmech:allanite-concentrate`, `cmmmech:fluorescent-lamp-phosphor`, `cmmmech:neodymium` | `resolved` |
+| Group ID | Finding ID | Stage 4 Issue Key | GitHub Issue | Target Records | Status |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `GRP-C13S5-001` | `cmmmech-cycle13-stage4-finding-0001` | `cmmmech.levar2017-akaganeite.abbreviated-graph-nodes-edges-and-redox-complementation-qualifications` | [#991](https://github.com/CultureBotAI/CMMMech/issues/991) (and [#995](https://github.com/CultureBotAI/CMMMech/issues/995)) | `cmmmech:akaganeite` | `resolved` |
+| `GRP-C13S5-002` | `cmmmech-cycle13-stage4-finding-0002` | `cmmmech.zorzetto2023-hydroxylapatite.abbreviated-graph-nodes-edges-and-fixed-biofilm-control-qualifications` | [#992](https://github.com/CultureBotAI/CMMMech/issues/992) (and [#995](https://github.com/CultureBotAI/CMMMech/issues/995)) | `cmmmech:hydroxylapatite` | `resolved` |
+| `GRP-C13S5-003` | `cmmmech-cycle13-stage4-finding-0003` | `cmmmech.schmitz-marecos-gluconobacter-graphs.template-pqqc-gdh-nodes-edges-and-relative-denominator-qualifications` | [#993](https://github.com/CultureBotAI/CMMMech/issues/993) (and [#995](https://github.com/CultureBotAI/CMMMech/issues/995)) | `cmmmech:allanite-concentrate`, `cmmmech:fluorescent-lamp-phosphor`, `cmmmech:neodymium` | `resolved` |
 
 ## Detailed Finding Dispositions
 
 ### 1. `GRP-C13S5-001` (`cmmmech-cycle13-stage4-finding-0001` -> Issue [#991](https://github.com/CultureBotAI/CMMMech/issues/991))
-- **Root Cause**: In `data/records/akaganeite.yaml` (`cutting_2009`), `mechanisms[0].protein_examples[0..1]` (`UniProtKB:Q747K6` ImcH, `UniProtKB:Q74GH2` CbcL), `causal_graphs[0].nodes[0..1]`, and `causal_graphs[0].edges[0..3]` asserted `supports: support` with generic inner-membrane cytochrome prose, omitting that Cutting et al. (2009) used wild-type *Geobacter sulfurreducens* PCA with exogenously added `10 microM` AQDS without genetic, proteomic, or transcriptomic assays of ImcH or CbcL, and omitting the secondary goethite (~14%) alongside magnetite (~86%) and dissolution-reprecipitation caveats already documented in `mechanisms[0].evidence[1]`.
+- **Root Cause**: In `data/records/akaganeite.yaml` (`levar_2017`, Levar et al. 2017 *ISME Journal* 11:741–752), `mechanisms[0].protein_examples[0..1]` (`UniProtKB:Q747K6` ImcH, `UniProtKB:Q74GH2` CbcL), `causal_graphs[0].nodes[0..4].description`, and `causal_graphs[0].edges[0..3]` used abbreviated one-sentence descriptions and `supports: support` polarity that omitted pH 6.8 vs 6.3 and 121 °C autoclaving phenotypes, inferred mineral redox potential vs Figure 1 soluble Fe(III)-citrate, cited-only complementation, unquantified initial akaganeite Fe loading, and 0.5 N HCl ferrozine extraction scope.
 - **Remediation**:
   - Updated `mechanisms[0].protein_examples[0..1]`, `causal_graphs[0].nodes[0..1].protein_examples[0]`, `causal_graphs[0].nodes[0..4].description`, and `causal_graphs[0].edges[0..3]` (with `supports: partial` on all 4 edges and both protein examples) in `data/records/akaganeite.yaml` via `scripts/curate_causal_graphs.py` (`curate_record_file`).
   - Minted append-only `EDIT` history sidecar:
-    - `history/records/akaganeite/2026-11-10T165144Z-marcin-7c5a6c.yaml`
+    - `history/records/akaganeite/2026-11-10T174328Z-marcin-386d0d.yaml`
 
 ### 2. `GRP-C13S5-002` (`cmmmech-cycle13-stage4-finding-0002` -> Issue [#992](https://github.com/CultureBotAI/CMMMech/issues/992))
-- **Root Cause**: In `data/records/hydroxylapatite.yaml` (`antonijevic2023`), `causal_graphs[0]` described the substrate and edges as `supports: support` dissolution of `'Finely ground (<37 um) hydroxylapatite mineral feed'`, whereas `mechanisms[0].evidence[1]` (`supports: partial`) notes that Antonijevic et al. (2023) leached natural Tunisian Gafsa sedimentary phosphorite ore (~27.7 wt% P2O5, dominated by carbonate-fluorapatite/francolite with carbonate and quartz gangue) rather than phase-pure hydroxylapatite.
+- **Root Cause**: In `data/records/hydroxylapatite.yaml` (`zorzetto_2023` / `zorzetto_2023_si`, Zorzetto et al. 2023 *Chemistry of Materials* 35:2762–2772), `causal_graphs[0]` (`w3110_phoa_biofilm_hydroxyapatite_graph`) used abbreviated 88–108 char node/edge descriptions and `supports: support` on `edges[1]`, omitting P-Ca 10:10 and 10:1 salt-free LB agar conditions, 4% PFA/PBS-fixed biofilm mineralization (Figure S9, Table S10), 20 mM L-glutathione (Figure 4A, Figure S7) and pH 10.4 purified-ALP (Figure 4B) control limits, and WAXS OH/F/Cl occupancy and yield caveats.
 - **Remediation**:
   - Updated `causal_graphs[0].description`, `causal_graphs[0].nodes[0..2].description`, and `causal_graphs[0].edges[0..1]` (with `supports: partial` on both edges) in `data/records/hydroxylapatite.yaml` via `scripts/curate_causal_graphs.py` (`curate_record_file`).
   - Minted append-only `EDIT` history sidecar:
-    - `history/records/hydroxylapatite/2026-11-10T165144Z-marcin-7f0203.yaml`
+    - `history/records/hydroxylapatite/2026-11-10T174328Z-marcin-38f616.yaml`
 
 ### 3. `GRP-C13S5-003` (`cmmmech-cycle13-stage4-finding-0003` -> Issue [#993](https://github.com/CultureBotAI/CMMMech/issues/993))
-- **Root Cause**: In `data/records/allanite-concentrate.yaml` (`schmitz2021`), `data/records/fluorescent-lamp-phosphor.yaml` (`schmitz2021`), and `data/records/neodymium.yaml` (`marecos2025`, `marecos2025_data4`), *Gluconobacter oxydans* B58 `protein_examples` and `causal_graphs[0]` edges used `supports: support` with generic explanations that omitted: (1) proxy grounding of B58 loci (`mgdh`, `pqqC`, `pstC`, `GO_1598`, `GO_1096`) to the *G. oxydans* 621H reference proteome (`UP000006375`, `NCBITaxon:290633`); (2) residual REE leaching by `mgdh` and `pqqC` disruption mutants in Schmitz et al. (2021) Fig. 4D and the hypothesized status of `pstC` phosphate-sensing derepression; (3) the 9 of 12 selected B58 disruption strains in Marecos et al. (2025) that altered Mon2 Nd extraction without significant pH shifts; and (4) relative-over-wild-type (`11%`, `18%`, `56-111%`) versus absolute-recovery denominators and study-specific timing/control caveats.
+- **Root Cause**: In `data/records/allanite-concentrate.yaml` (`schmitz2025`, Schmitz et al. 2025 *Communications Biology* 8:815), `data/records/fluorescent-lamp-phosphor.yaml` (`schmitz2021`, Schmitz et al. 2021 *Nature Communications* 12:6693), and `data/records/neodymium.yaml` (`marecos2025` / `marecos2025_data4`, Marecos et al. 2025 *Communications Biology* 8:682), *Gluconobacter oxydans* B58 `protein_examples` and `causal_graphs[0]` edges retained generic template descriptions and `supports: support` polarity that omitted: (1) proxy grounding of B58 loci (`mgdh`, `pqqC`, `pstC`, `pstS`, `GO_1598`, `GO_1096`) to the *G. oxydans* 621H reference proteome (`UP000006375`, `NCBITaxon:290633`); (2) residual REE leaching by `mgdh` and `pqqC` disruption mutants in Schmitz et al. (2021) Fig. 4D and hypothesized `pstC`/`pstS` pho-regulon regulation; (3) the 9 of 12 selected B58 disruption strains in Marecos et al. (2025) that altered Mon2 Nd extraction without significant pH shifts and unresolved concentration vs composition in Schmitz et al. (2025) Discussion; and (4) relative-over-wild-type (`53.1%`/`73.1%` in `schmitz2025`, `18%` / literature denominator in `schmitz2021`, `56–111%` in `marecos2025`) versus absolute-recovery denominators and study-specific timing/control caveats.
 - **Remediation**:
   - Updated `protein_examples` and `causal_graphs[0]` nodes/edges to `supports: partial` with study-specific prose across `data/records/allanite-concentrate.yaml`, `data/records/fluorescent-lamp-phosphor.yaml`, and `data/records/neodymium.yaml` via `scripts/curate_causal_graphs.py` (`curate_record_file`).
   - Minted append-only `EDIT` history sidecars:
-    - `history/records/allanite-concentrate/2026-11-10T165144Z-marcin-b31f32.yaml`
+    - `history/records/allanite-concentrate/2026-11-10T174328Z-marcin-a6b0be.yaml`
     - `history/records/fluorescent-lamp-phosphor/2026-11-10T165144Z-marcin-daa0d7.yaml`
     - `history/records/neodymium/2026-11-10T165144Z-marcin-3d1c04.yaml`

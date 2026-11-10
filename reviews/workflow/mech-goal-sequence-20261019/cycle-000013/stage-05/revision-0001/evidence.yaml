@@ -9,19 +9,23 @@ outcome: completed
 summary: 'Consumed the 3 Cycle 13 Stage 4 review findings (cmmmech-cycle13-stage4-finding-0001,
   cmmmech-cycle13-stage4-finding-0002, cmmmech-cycle13-stage4-finding-0003) across
   5 distinct records, grouped them by root cause and repair ownership into GRP-C13S5-001
-  (#991, akaganeite.yaml Cutting et al. 2009 Geobacter sulfurreducens ImcH/CbcL protein_examples
-  and causal_graphs[0] nodes/edges scoped to supports: partial as G. sulfurreducens
-  PCA reference-proteome EET proxies and expanded with 10 microM AQDS shuttle and
-  secondary magnetite/goethite caveats), GRP-C13S5-002 (#992, hydroxylapatite.yaml
-  Antonijevic et al. 2023 causal_graphs[0] nodes and edges scoped to supports: partial
-  and aligned with natural Tunisian Gafsa carbonate-fluorapatite/francolite phosphorite
-  ore ~20-52% 14-day phosphate extraction rather than phase-pure hydroxylapatite),
-  and GRP-C13S5-003 (#993, allanite-concentrate.yaml, fluorescent-lamp-phosphor.yaml,
-  and neodymium.yaml Gluconobacter oxydans B58 protein_examples and causal_graphs[0]
-  nodes/edges scoped to supports: partial with G. oxydans 621H reference-proteome
-  proxy grounding, residual mgdh/pqqC mutant leaching, hypothesized pstC phosphate-sensing
-  regulation, non-pH-resolved mutant effects across 9 of 12 strains, and relative-over-wild-type
-  vs absolute-recovery denominators), applied all 5 record remediations with 5 append-only
+  (#991, akaganeite.yaml Levar et al. 2017 Geobacter sulfurreducens PCA ImcH/CbcL
+  protein_examples and causal_graphs[0] nodes/edges scoped to supports: partial with
+  pH 6.8 vs 6.3 and 121 C autoclaving phenotypes, inferred mineral redox potential
+  vs Figure 1 soluble Fe(III)-citrate, cited-only complementation, unquantified initial
+  Fe loading, and 0.5 N HCl ferrozine extraction scope), GRP-C13S5-002 (#992, hydroxylapatite.yaml
+  Zorzetto et al. 2023 Escherichia coli K-12 substr. W3110 PhoA biofilm causal_graphs[0]
+  nodes and edges scoped to supports: partial with P-Ca 10:10 and 10:1 salt-free LB
+  agar conditions, 4% PFA/PBS-fixed biofilm mineralization in Figure S9 / Table S10,
+  20 mM L-glutathione in Figure 4A / Figure S7 and pH 10.4 purified-ALP in Figure
+  4B control limits, and WAXS OH/F/Cl occupancy and yield caveats), and GRP-C13S5-003
+  (#993, allanite-concentrate.yaml Schmitz et al. 2025, fluorescent-lamp-phosphor.yaml
+  Schmitz et al. 2021, and neodymium.yaml Marecos et al. 2025 Gluconobacter oxydans
+  B58 protein_examples and causal_graphs[0] nodes/edges scoped to supports: partial
+  with G. oxydans 621H reference-proteome proxy grounding, residual mgdh/pqqC mutant
+  leaching, non-pH-resolved mutant effects across 9 of 12 strains, unresolved concentration
+  vs composition in Schmitz et al. 2025 Discussion, and relative-over-wild-type vs
+  absolute-recovery denominators), applied all 5 record remediations with 5 append-only
   EDIT history sidecars and regenerated pages/, preserved all immutable Stage 4 review
   bundles untouched, and verified all 5 remediated records in structured review bundle
   20261110T165200Z-cycle13-stage5-remediation-verification with verdict pass and 0
@@ -33,7 +37,7 @@ previous_evidence:
   sha256: 297254433f266a44507f83c259b937a8105d8923675bffee143d6044311c898e
 artifacts:
 - path: reviews/workflow/mech-goal-sequence-20261019/cycle-000013/stage-05/revision-0001/issue_map.md
-  sha256: 6158fdd1926dfada09b7ce022bcf31733df26000db2b00c485ab7429717cefd6
+  sha256: f3819349ef0eaca8acae31ce17c80017457c47b69c36eb5e84f91cf1660ba7b6
   kind: issue_map
 - path: reviews/workflow/mech-goal-sequence-20261019/cycle-000013/stage-05/revision-0001/validation.md
   sha256: cc32719b7d82344fe537674524e098762740d229bf795bc6e065c0af59d5de17
@@ -50,12 +54,13 @@ findings:
     and edges[0..3] use abbreviated 51-103 char descriptions/explanations and supports:
     support polarity omitting unmeasured akaganeite redox potential, cited-only complementation,
     unquantified initial Fe loading, and 0.5 N HCl extraction scope.'
-  disposition: 'Resolved under #991 (GRP-C13S5-001) by updating mechanisms[0].protein_examples[0..1],
+  disposition: 'Resolved under #991 and #995 (GRP-C13S5-001) by updating mechanisms[0].protein_examples[0..1],
     causal_graphs[0].nodes[0..1].protein_examples[0], causal_graphs[0].nodes[0..4].description,
-    and causal_graphs[0].edges[0..3] in akaganeite.yaml to supports: partial as G.
-    sulfurreducens PCA reference-proteome EET proxies and documenting the 10 microM
-    AQDS shuttle and secondary magnetite/goethite caveats from Cutting et al. (2009)
-    with an append-only EDIT history sidecar; verified in reviews/structured/20261110T165200Z-cycle13-stage5-remediation-verification/review.yaml.'
+    and causal_graphs[0].edges[0..3] in akaganeite.yaml to supports: partial with
+    Levar et al. (2017) pH 6.8 vs 6.3 and 121 C autoclaving phenotypes, inferred mineral
+    redox potential vs Figure 1 soluble Fe(III)-citrate, cited-only complementation,
+    unquantified initial Fe loading, and 0.5 N HCl ferrozine extraction scope with
+    an append-only EDIT history sidecar; verified in reviews/structured/20261110T165200Z-cycle13-stage5-remediation-verification/review.yaml.'
 - finding_id: cmmmech-cycle13-stage4-finding-0002
   carried_from: cmmmech-cycle13-stage4-finding-0002
   status: resolved
@@ -67,12 +72,13 @@ findings:
     supports: support on edges[1] omitting P-Ca 10:10/10:1 salt-free LB agar conditions,
     4% PFA/PBS-fixed biofilm mineralization (Figure S9, Table S10), 20 mM L-glutathione
     and pH 10.4 purified-ALP control limits, and WAXS phase-occupancy/yield caveats.'
-  disposition: 'Resolved under #992 (GRP-C13S5-002) by updating causal_graphs[0].description,
+  disposition: 'Resolved under #992 and #995 (GRP-C13S5-002) by updating causal_graphs[0].description,
     causal_graphs[0].nodes[0..2].description, and causal_graphs[0].edges[0..1] (supports:
-    partial) in hydroxylapatite.yaml to explicitly state that Antonijevic et al. (2023)
-    leached natural Tunisian Gafsa carbonate-fluorapatite/francolite phosphorite ore
-    (~20-52% phosphate extraction over 14 days at 1% w/v) rather than phase-pure hydroxylapatite
-    with an append-only EDIT history sidecar; verified in reviews/structured/20261110T165200Z-cycle13-stage5-remediation-verification/review.yaml.'
+    partial) in hydroxylapatite.yaml to incorporate Zorzetto et al. (2023) P-Ca 10:10
+    and 10:1 salt-free LB agar conditions, 4% PFA/PBS-fixed biofilm mineralization
+    (Figure S9, Table S10), 20 mM L-glutathione (Figure 4A, Figure S7) and pH 10.4
+    purified-ALP (Figure 4B) control limits, and WAXS OH/F/Cl occupancy and yield
+    caveats with an append-only EDIT history sidecar; verified in reviews/structured/20261110T165200Z-cycle13-stage5-remediation-verification/review.yaml.'
 - finding_id: cmmmech-cycle13-stage4-finding-0003
   carried_from: cmmmech-cycle13-stage4-finding-0003
   status: resolved
@@ -85,23 +91,25 @@ findings:
     descriptions and supports: support polarity omitting 621H proxy grounding, residual
     mgdh/pqqC mutant leaching, non-pH mutant effects, relative extraction denominators,
     and study-specific timing/control caveats.'
-  disposition: 'Resolved under #993 (GRP-C13S5-003) by updating G. oxydans B58 protein_examples
-    and causal_graphs[0] nodes/edges to supports: partial in allanite-concentrate.yaml,
-    fluorescent-lamp-phosphor.yaml, and neodymium.yaml with G. oxydans 621H reference-proteome
-    proxy grounding, residual mgdh/pqqC mutant leaching, hypothesized pstC phosphate-sensing
-    regulation, non-pH-resolved mutant effects (9 of 12 strains), and relative-over-wild-type
-    vs absolute-recovery denominators with 3 append-only EDIT history sidecars; verified
-    in reviews/structured/20261110T165200Z-cycle13-stage5-remediation-verification/review.yaml.'
+  disposition: 'Resolved under #993 and #995 (GRP-C13S5-003) by updating G. oxydans
+    B58 protein_examples and causal_graphs[0] nodes/edges to supports: partial in
+    allanite-concentrate.yaml (Schmitz et al. 2025), fluorescent-lamp-phosphor.yaml
+    (Schmitz et al. 2021), and neodymium.yaml (Marecos et al. 2025) with G. oxydans
+    621H reference-proteome proxy grounding, residual mgdh/pqqC mutant leaching, non-pH-resolved
+    mutant effects (9 of 12 strains), unresolved concentration vs composition in Schmitz
+    et al. (2025) Discussion, and relative-over-wild-type vs absolute-recovery denominators
+    with 3 append-only EDIT history sidecars; verified in reviews/structured/20261110T165200Z-cycle13-stage5-remediation-verification/review.yaml.'
 groups:
 - group_id: GRP-C13S5-001
   finding_ids:
   - cmmmech-cycle13-stage4-finding-0001
   issue_url: https://github.com/CultureBotAI/CMMMech/issues/991
   status: resolved
-  summary: 'Scope akaganeite.yaml Geobacter sulfurreducens ImcH/CbcL protein_examples
-    and causal_graphs[0] nodes/edges to supports: partial as PCA reference-proteome
-    EET proxies and record 10 microM AQDS shuttle and secondary magnetite/goethite
-    caveats with an append-only EDIT history sidecar.'
+  summary: 'Scope akaganeite.yaml Geobacter sulfurreducens PCA ImcH/CbcL protein_examples
+    and causal_graphs[0] nodes/edges to supports: partial with Levar et al. (2017)
+    pH 6.8 vs 6.3 and 121 C autoclaving phenotypes, inferred mineral redox potential,
+    cited-only complementation, and 0.5 N HCl extraction scope with an append-only
+    EDIT history sidecar.'
   resolution_evidence:
   - reviews/workflow/mech-goal-sequence-20261019/cycle-000013/stage-05/revision-0001/issue_map.md
   - reviews/workflow/mech-goal-sequence-20261019/cycle-000013/stage-05/revision-0001/validation.md
@@ -114,10 +122,11 @@ groups:
   - cmmmech-cycle13-stage4-finding-0002
   issue_url: https://github.com/CultureBotAI/CMMMech/issues/992
   status: resolved
-  summary: 'Align hydroxylapatite.yaml causal_graphs[0] nodes and edges with natural
-    Tunisian Gafsa carbonate-fluorapatite/francolite phosphorite ore (~20-52% phosphate
-    extraction over 14 days at 1% w/v) and set supports: partial with an append-only
-    EDIT history sidecar.'
+  summary: 'Expand hydroxylapatite.yaml Escherichia coli W3110 PhoA biofilm causal_graphs[0]
+    nodes and edges with Zorzetto et al. (2023) P-Ca 10:10/10:1 conditions, 4% PFA/PBS-fixed
+    biofilm mineralization, 20 mM L-glutathione and pH 10.4 purified-ALP control limits,
+    and WAXS OH/F/Cl occupancy caveats with supports: partial and an append-only EDIT
+    history sidecar.'
   resolution_evidence:
   - reviews/workflow/mech-goal-sequence-20261019/cycle-000013/stage-05/revision-0001/issue_map.md
   - reviews/workflow/mech-goal-sequence-20261019/cycle-000013/stage-05/revision-0001/validation.md
@@ -130,10 +139,11 @@ groups:
   issue_url: https://github.com/CultureBotAI/CMMMech/issues/993
   status: resolved
   summary: 'Scope Gluconobacter oxydans B58 protein_examples and causal_graphs[0]
-    edges in allanite-concentrate.yaml, fluorescent-lamp-phosphor.yaml, and neodymium.yaml
-    to supports: partial with G. oxydans 621H reference-proteome proxy grounding,
-    residual mgdh/pqqC mutant leaching, non-pH-resolved mutant effects, and relative
-    vs absolute extraction denominators with 3 append-only EDIT history sidecars.'
+    edges in allanite-concentrate.yaml (Schmitz et al. 2025), fluorescent-lamp-phosphor.yaml
+    (Schmitz et al. 2021), and neodymium.yaml (Marecos et al. 2025) to supports: partial
+    with G. oxydans 621H reference-proteome proxy grounding, residual mgdh/pqqC mutant
+    leaching, non-pH-resolved mutant effects, and relative vs absolute extraction
+    denominators with 3 append-only EDIT history sidecars.'
   resolution_evidence:
   - reviews/workflow/mech-goal-sequence-20261019/cycle-000013/stage-05/revision-0001/issue_map.md
   - reviews/workflow/mech-goal-sequence-20261019/cycle-000013/stage-05/revision-0001/validation.md

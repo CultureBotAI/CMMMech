@@ -1,0 +1,33 @@
+history_version: 1
+target:
+  kind: record
+  slug: hydroxylapatite
+  path: data/records/hydroxylapatite.yaml
+session:
+  id: 2026-11-10T174328Z-marcin-38f616
+  timestamp: '2026-11-10T17:43:28Z'
+  actors:
+  - name: marcin
+    type: ai_agent
+    model: claude-opus-4-6
+    agent_tool: antigravity
+events:
+- type: EDIT
+  outcome: changed
+  summary: 'Expand hydroxylapatite E. coli W3110 PhoA biofilm causal graph with Zorzetto et
+    al. (2023) fixed-biofilm and control caveats (#992, #995)'
+  details: 'Updated causal_graphs[0].description, causal_graphs[0].nodes[0..2].description,
+    and causal_graphs[0].edges[0..1] (with supports: partial on both edges) in hydroxylapatite.yaml
+    to incorporate Zorzetto et al. (2023) P-Ca 10:10 and 10:1 salt-free LB agar conditions,
+    4% PFA/PBS-fixed biofilm mineralization (Figure S9, Table S10), 20 mM L-glutathione (Figure
+    4A, Figure S7) and pH 10.4 purified-ALP (Figure 4B) control limits, and WAXS OH/F/Cl occupancy
+    and yield caveats under GRP-C13S5-002 (#992, #995).'
+  sections:
+  - mechanisms
+  - causal_graphs
+  - curation_history
+  - history_refs
+links:
+  issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/992
+  - https://github.com/CultureBotAI/CMMMech/issues/995

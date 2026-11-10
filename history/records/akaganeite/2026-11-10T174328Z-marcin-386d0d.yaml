@@ -1,0 +1,34 @@
+history_version: 1
+target:
+  kind: record
+  slug: akaganeite
+  path: data/records/akaganeite.yaml
+session:
+  id: 2026-11-10T174328Z-marcin-386d0d
+  timestamp: '2026-11-10T17:43:28Z'
+  actors:
+  - name: marcin
+    type: ai_agent
+    model: claude-opus-4-6
+    agent_tool: antigravity
+events:
+- type: EDIT
+  outcome: changed
+  summary: 'Scope akaganeite G. sulfurreducens PCA ImcH/CbcL protein examples and causal graph
+    to Levar et al. (2017) pH/autoclaving and redox caveats (#991, #995)'
+  details: 'Updated mechanisms[0].protein_examples[0..1] (UniProtKB:Q747K6 ImcH, UniProtKB:Q74GH2
+    CbcL), causal_graphs[0].nodes[0..1].protein_examples[0], causal_graphs[0].nodes[0..4].description,
+    and causal_graphs[0].edges[0..3] (with supports: partial on all 4 edges and both protein
+    examples) in akaganeite.yaml to incorporate Levar et al. (2017) pH 6.8 vs 6.3 and 121
+    C autoclaving phenotypes, inferred mineral redox potential vs Figure 1 soluble Fe(III)-citrate,
+    cited-only complementation, unquantified initial Fe loading, and 0.5 N HCl ferrozine extraction
+    scope under GRP-C13S5-001 (#991, #995).'
+  sections:
+  - mechanisms
+  - causal_graphs
+  - curation_history
+  - history_refs
+links:
+  issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/991
+  - https://github.com/CultureBotAI/CMMMech/issues/995

@@ -1,0 +1,36 @@
+history_version: 1
+target:
+  kind: record
+  slug: allanite-concentrate
+  path: data/records/allanite-concentrate.yaml
+session:
+  id: 2026-11-10T174328Z-marcin-a6b0be
+  timestamp: '2026-11-10T17:43:28Z'
+  actors:
+  - name: marcin
+    type: ai_agent
+    model: claude-opus-4-6
+    agent_tool: antigravity
+events:
+- type: EDIT
+  outcome: changed
+  summary: 'Scope allanite-concentrate G. oxydans B58 protein examples and causal graph to
+    Schmitz et al. (2025) 621H proxies and relative denominators (#993, #995)'
+  details: 'Updated mechanisms[0].protein_examples[0..4] (UniProtKB:Q5FT13 pstC, UniProtKB:Q5FTI1
+    pstS GOX0537, UniProtKB:Q5FSF4 pstS GOX0920, UniProtKB:Q9L3B2 pqqC, UniProtKB:P27175 gdh),
+    causal_graphs[0].nodes[0..3].protein_examples, causal_graphs[0].nodes[0..6].description,
+    and causal_graphs[0].edges[0..5] (with supports: partial on all 5 protein examples and
+    all 6 edges) in allanite-concentrate.yaml to document G. oxydans 621H reference-proteome
+    proxy grounding, delta-pstS, P112:mgdh 53.1% (10% w/v) and 73.1% (1% w/v) relative improvements
+    over wild-type vs absolute recovery, unresolved concentration vs composition in Discussion,
+    24 h vs 36 h pH timing discrepancy, and Figure S2 Panel B label and neat nitric-acid comparator
+    caveats in Schmitz et al. (2025) under GRP-C13S5-003 (#993, #995).'
+  sections:
+  - mechanisms
+  - causal_graphs
+  - curation_history
+  - history_refs
+links:
+  issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/993
+  - https://github.com/CultureBotAI/CMMMech/issues/995
