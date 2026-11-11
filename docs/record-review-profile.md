@@ -67,7 +67,10 @@ Before queue admission:
    locking: retain the native queue checks and verify the actual merged tree
    and parent, followed by fresh remote-main provenance checks.
 
-Consumers must fetch the retained references before checking provenance:
+## Checking provenance in a new checkout
+
+Consumers must fetch the retained references before running `just test`,
+`just check`, or the structured review checker:
 
 ```sh
 git fetch origin --tags
@@ -75,7 +78,33 @@ uv run --locked python scripts/record_review.py check --require-reviews --base H
 ```
 
 The CI checkout uses `fetch-depth: 0`, which fetches complete branch/tag history.
-A shallow or single-branch clone must not assume that an unrelated provenance
-tag was fetched automatically. If a base is unavailable, fetch its documented
-reference and verify its target; do not rewrite the review or relax the governed
-validator. No review base should depend solely on a soon-to-be-deleted branch.
+A clone made with `--no-tags` does not fetch tags during later ordinary fetches;
+the explicit `--tags` option above is needed. A shallow or single-branch clone
+must not assume that an unrelated provenance tag was fetched automatically.
+For a shallow checkout, obtain full history before checking provenance:
+
+```sh
+git rev-parse --is-shallow-repository
+# Run only when the result above is true:
+git fetch origin --unshallow --tags
+```
+
+If a check reports `source provenance unverified`, read the exact
+`source.git_revision` and retained reference documented by the saved review
+or its publication receipt. Check that the reference's peeled commit matches
+that revision and that the commit is available locally. For example, the
+source-survey review base retained for issue #509 can be inspected with:
+
+```sh
+git ls-remote origin 'refs/tags/review-base/cmm-source-survey-20261009*'
+git rev-parse 'refs/tags/review-base/cmm-source-survey-20261009^{commit}'
+git cat-file -t c0adc2c0763e1515ed07dc712b024974d98fb342
+```
+
+The expected peeled revision for this reference is
+`c0adc2c0763e1515ed07dc712b024974d98fb342`, and `cat-file` should print `commit`.
+This example preserves one source revision; other missing bases require their
+own documented references. If the reference is absent remotely or does not
+match the recorded revision, report the unavailable evidence. Do not rewrite
+the review or relax the governed validator. No review base should depend solely
+on a soon-to-be-deleted branch.
