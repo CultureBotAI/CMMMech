@@ -60,14 +60,14 @@ mechanisms:
     - id: GO:0035435
       label: phosphate ion transmembrane transport
     functional_role: Periplasmic high-affinity phosphate-binding protein PstS (locus PP_2656) of the PstSACB ABC transporter complex capturing inorganic orthophosphate under phosphate starvation.
-    annotation_note: 'Grounded to reference proteome UP000000556 for type/model strain Pseudomonas putida KT2440 (NCBITaxon:160488; UniProtKB organism string: Pseudomonas putida (strain ATCC 47054 / DSM 6125 / CFBP 8728 / NCIMB 11950 / KT2440); pstS / PP_2656, UniProtKB:Q88JJ3), representing species-level Pseudomonas putida (NCBITaxon:303) grown on synthetic chlorapatite as sole phosphorus source in Topolska et al. (2014).'
+    annotation_note: Grounded to reference proteome UP000000556 for type/model strain Pseudomonas putida KT2440 (NCBITaxon:160488; pstS / PP_2656, UniProtKB:Q88JJ3), representing Pseudomonas putida IBPRS KKP 1136 (species NCBITaxon:303) grown on synthetic chlorapatite Ca5(PO4)3Cl in phosphate-deficient MP- medium in Topolska et al. (2014).
     evidence:
     - source_ref: topolska_2014
       supports: partial
-      explanation: Topolska et al. (2014) grew Pseudomonas putida in phosphate-deficient minimal medium (MP-) with synthetic chlorapatite Ca5(PO4)3Cl as the sole phosphorus source, showing viable growth from ~10^3 to ~10^8 CFU/mL and depletion of dissolved orthophosphate relative to abiotic controls; individual Pst transporter subunits were not directly assayed.
+      explanation: Topolska et al. (2014) Figure 2b-c and Table 2 (E.I) show that Pseudomonas putida IBPRS KKP 1136 achieved limited OD600 growth in phosphate-deficient MP- medium (5 g/L disodium succinate, 6.5 g/L glycerol, initial pH ~7.3, 21 +/- 1 C, 100 rpm, 305 h) when 0.05 g/100 mL synthetic chlorapatite (10-80 um) was supplied (vs no sustained growth in mineral-free MP-), while abiotic MP- controls released 119 +/- 10.7 uM P (Table 2 E.II, Table 3); PstS was not directly assayed.
     - source_ref: uniprot_pseudomonas_putida_phosphate_starvation
       supports: partial
-      explanation: UniProtKB:Q88JJ3 (Q88JJ3_PSEPK, pstS / PP_2656) in Pseudomonas putida KT2440 reference proteome UP000000556 (NCBITaxon:160488) encodes Phosphate-binding protein PstS (GO:0042301 phosphate ion binding; GO:0035435 phosphate ion transmembrane transport).
+      explanation: UniProtKB:Q88JJ3 (Q88JJ3_PSEPK, pstS / PP_2656) in Pseudomonas putida KT2440 reference proteome UP000000556 (NCBITaxon:160488) encodes Phosphate-binding protein PstS (GO:0042301; GO:0035435).
   - uniprot_accession: UniProtKB:Q88JJ0
     entry_name: PSTB1_PSEPK
     protein_name: Phosphate import ATP-binding protein PstB 1
@@ -101,14 +101,14 @@ mechanisms:
     - id: GO:0035435
       label: phosphate ion transmembrane transport
     functional_role: Phosphate import ATP-binding protein PstB 1 (EC 7.3.2.1; locus PP_2659) coupling ATP hydrolysis to high-affinity orthophosphate import across the inner membrane.
-    annotation_note: Grounded to reviewed Swiss-Prot entry UniProtKB:Q88JJ0 (PSTB1_PSEPK, pstB1 / PP_2659) in reference proteome UP000000556 for Pseudomonas putida KT2440 (NCBITaxon:160488), representing species-level Pseudomonas putida (NCBITaxon:303) in Topolska et al. (2014).
+    annotation_note: Grounded to reviewed Swiss-Prot entry UniProtKB:Q88JJ0 (PSTB1_PSEPK, pstB1 / PP_2659) in reference proteome UP000000556 for Pseudomonas putida KT2440 (NCBITaxon:160488), representing Pseudomonas putida IBPRS KKP 1136 (NCBITaxon:303) in Topolska et al. (2014).
     evidence:
     - source_ref: topolska_2014
       supports: partial
-      explanation: Topolska et al. (2014) demonstrated that Pseudomonas putida scavenges phosphate released from synthetic chlorapatite in P-free MP- medium to support a 5-log CFU/mL expansion while keeping net supernatant phosphate at or below abiotic levels; ATPase subunit activity was not isolated.
+      explanation: Topolska et al. (2014) demonstrated OD600 growth of Pseudomonas putida IBPRS KKP 1136 in K2HPO4-omitted MP- medium supplemented with 0.05 g/100 mL synthetic chlorapatite over 305 h (where abiotic MP- chlorapatite dissolution supplies 119 +/- 10.7 uM P and no biotic chlorapatite dissolved-P or pH series was reported); PstB1 ATPase activity was not directly measured.
     - source_ref: uniprot_pseudomonas_putida_phosphate_starvation
       supports: partial
-      explanation: Reviewed Swiss-Prot entry UniProtKB:Q88JJ0 (PSTB1_PSEPK, pstB1 / PP_2659) in Pseudomonas putida KT2440 reference proteome UP000000556 (NCBITaxon:160488) encodes Phosphate import ATP-binding protein PstB 1 (EC:7.3.2.1; GO:0015415 ATPase-coupled phosphate ion transmembrane transporter activity).
+      explanation: Reviewed Swiss-Prot entry UniProtKB:Q88JJ0 (PSTB1_PSEPK, pstB1 / PP_2659) in Pseudomonas putida KT2440 reference proteome UP000000556 (NCBITaxon:160488) encodes Phosphate import ATP-binding protein PstB 1 (EC:7.3.2.1; GO:0015415).
   - uniprot_accession: UniProtKB:Q88C63
     entry_name: Q88C63_PSEPK
     protein_name: Phosphate regulon transcriptional regulatory protein PhoB
@@ -145,14 +145,14 @@ mechanisms:
     - id: GO:0006355
       label: regulation of DNA-templated transcription
     functional_role: Phosphate regulon transcriptional regulatory protein PhoB (locus PP_5320) activating transcription of high-affinity phosphate acquisition genes under inorganic phosphate limitation.
-    annotation_note: Grounded to reference proteome UP000000556 for Pseudomonas putida KT2440 (NCBITaxon:160488; phoB / PP_5320, UniProtKB:Q88C63), representing the phosphate-starvation regulon of species-level Pseudomonas putida (NCBITaxon:303) in Topolska et al. (2014).
+    annotation_note: Grounded to reference proteome UP000000556 for Pseudomonas putida KT2440 (NCBITaxon:160488; phoB / PP_5320, UniProtKB:Q88C63), representing the phosphate-starvation regulon of Pseudomonas putida IBPRS KKP 1136 (NCBITaxon:303) in Topolska et al. (2014).
     evidence:
     - source_ref: topolska_2014
       supports: partial
-      explanation: Topolska et al. (2014) imposed strict inorganic phosphate starvation in MP- medium to force Pseudomonas putida to acquire phosphorus from sparingly soluble chlorapatite; phoB regulation was not directly measured by transcriptomics or mutagenesis.
+      explanation: Topolska et al. (2014) omitted K2HPO4 in MP- medium (5 g/L disodium succinate, 6.5 g/L glycerol, initial pH ~7.3) so that Pseudomonas putida IBPRS KKP 1136 relied on 0.05 g/100 mL synthetic chlorapatite for phosphorus over 305 h at 21 +/- 1 C; phoB regulation was not directly measured.
     - source_ref: uniprot_pseudomonas_putida_phosphate_starvation
       supports: partial
-      explanation: UniProtKB:Q88C63 (Q88C63_PSEPK, phoB / PP_5320) in Pseudomonas putida KT2440 reference proteome UP000000556 (NCBITaxon:160488) encodes Phosphate regulon transcriptional regulatory protein PhoB (GO:0000156 phosphorelay response regulator activity; GO:0006817 phosphate ion transport).
+      explanation: UniProtKB:Q88C63 (Q88C63_PSEPK, phoB / PP_5320) in Pseudomonas putida KT2440 reference proteome UP000000556 (NCBITaxon:160488) encodes Phosphate regulon transcriptional regulatory protein PhoB (GO:0000156; GO:0006817).
   evidence:
   - source_ref: topolska_2014
     supports: support
@@ -185,21 +185,21 @@ mechanisms:
     explanation: Starting phosphate in MP+ contributes to its final P concentration. The study does not report a complete chlorapatite Ca/P mass balance or isolate a recovered phosphorus product. Table 3 is part of the same experiment used under lead and pyromorphite, not independent replication.
 causal_graphs:
 - id: putida_chlorapatite_phosphate_scavenging_graph
-  name: Pseudomonas putida phosphate-starvation regulon and high-affinity PstSACB orthophosphate scavenging from synthetic chlorapatite
-  description: Causal pathway linking representative Pseudomonas putida KT2440 phosphate-starvation regulator PhoB (UniProtKB:Q88C63) and high-affinity ABC transporter subunits PstS (UniProtKB:Q88JJ3) and PstB1 (UniProtKB:Q88JJ0) to cellular orthophosphate scavenging, culture acidification (pH 6.2 to ~4.7), and viable cell growth (~10^3 to ~10^8 CFU/mL) on synthetic chlorapatite Ca5(PO4)3Cl in phosphate-free MP- medium in Topolska et al. (2014), where net dissolved phosphate remains at or below abiotic background (~115 uM P) due to microbial uptake.
+  name: Pseudomonas putida IBPRS KKP 1136 phosphate-starvation regulon and orthophosphate acquisition from synthetic chlorapatite in MP- medium
+  description: Causal pathway linking representative Pseudomonas putida KT2440 phosphate-starvation regulator PhoB (UniProtKB:Q88C63) and high-affinity ABC transporter subunits PstS (UniProtKB:Q88JJ3) and PstB1 (UniProtKB:Q88JJ0) to cellular acquisition of orthophosphate released from 0.05 g/100 mL synthetic chlorapatite Ca5(PO4)3Cl (10-80 um) in K2HPO4-omitted MP- medium (5 g/L disodium succinate, 6.5 g/L glycerol, initial pH ~7.3, 21 +/- 1 C, 100 rpm, 305 h), supporting limited OD600 growth (Figure 2b-c, Table 2 E.I) where uninoculated abiotic MP- controls release 119 +/- 10.7 uM P (and abiotic MP+ releases 2796 +/- 9 uM P; Table 2 E.II, Table 3) and no biotic chlorapatite dissolved-P or pH series was measured in Topolska et al. (2014).
   scope: REPRESENTATIVE_EXAMPLE
   mechanism_ref: putida_chlorapatite_nutrient_access
   nodes:
   - id: phosphate_deficient_mp_minus_chlorapatite_system
-    label: Phosphate-free minimal medium (MP-, 10 g/L glucose) with 50 mg/150 mL synthetic chlorapatite at 22 C
+    label: Phosphate-deficient MP- medium (5 g/L disodium succinate, 6.5 g/L glycerol, no K2HPO4, initial pH ~7.3) with 0.05 g/100 mL synthetic chlorapatite at 21 +/- 1 C and 100 rpm for 305 h
     node_type: ENVIRONMENTAL_CONDITION
-    description: 150 mL phosphate-omitted minimal medium (MP-) containing 10 g/L glucose and 50 mg (0.333 g/L) synthetic Ca5(PO4)3Cl as the sole phosphorus source, incubated at 22 +/- 2 C for 25 days.
+    description: Triplicate 500 mL flasks containing 100 mL K2HPO4-omitted MP- medium (5 g/L disodium succinate, 6.5 g/L glycerol, salts, source-reported 30 mM FeEDTA, initial pH ~7.3) and 0.05 g (0.5 g/L) synthetic chlorapatite Ca5(PO4)3Cl (10-80 um) incubated with Pseudomonas putida IBPRS KKP 1136 at 21 +/- 1 C and 100 rpm for 305 h (~12.7 days).
     protein_grounding_status: NOT_APPLICABLE
   - id: putida_phob_phosphate_regulon_activator
     label: Pseudomonas putida PhoB phosphate-regulon response regulator (phoB / PP_5320)
     node_type: GENE_OR_PROTEIN
     gene_symbol: phoB
-    description: Representative Pseudomonas putida KT2440 phosphate-regulon transcriptional activator PhoB (PP_5320, UniProtKB:Q88C63) in reference proteome UP000000556 induced by external orthophosphate limitation.
+    description: Representative Pseudomonas putida KT2440 phosphate-regulon transcriptional activator PhoB (PP_5320, UniProtKB:Q88C63) in reference proteome UP000000556 induced by soluble orthophosphate omission in MP-.
     protein_grounding_status: GROUNDED
     protein_examples:
     - uniprot_accession: UniProtKB:Q88C63
@@ -238,14 +238,14 @@ causal_graphs:
       - id: GO:0006355
         label: regulation of DNA-templated transcription
       functional_role: Phosphate regulon transcriptional regulatory protein PhoB (locus PP_5320) activating transcription of high-affinity phosphate acquisition genes under inorganic phosphate limitation.
-      annotation_note: Grounded to reference proteome UP000000556 for Pseudomonas putida KT2440 (NCBITaxon:160488; phoB / PP_5320, UniProtKB:Q88C63), representing the phosphate-starvation regulon of species-level Pseudomonas putida (NCBITaxon:303) in Topolska et al. (2014).
+      annotation_note: Grounded to reference proteome UP000000556 for Pseudomonas putida KT2440 (NCBITaxon:160488; phoB / PP_5320, UniProtKB:Q88C63), representing the phosphate-starvation regulon of Pseudomonas putida IBPRS KKP 1136 (NCBITaxon:303) in Topolska et al. (2014).
       evidence:
       - source_ref: topolska_2014
         supports: partial
-        explanation: Topolska et al. (2014) imposed strict inorganic phosphate starvation in MP- medium to force Pseudomonas putida to acquire phosphorus from sparingly soluble chlorapatite; phoB regulation was not directly measured by transcriptomics or mutagenesis.
+        explanation: Topolska et al. (2014) omitted K2HPO4 in MP- medium (5 g/L disodium succinate, 6.5 g/L glycerol, initial pH ~7.3) so that Pseudomonas putida IBPRS KKP 1136 relied on 0.05 g/100 mL synthetic chlorapatite for phosphorus over 305 h at 21 +/- 1 C; phoB regulation was not directly measured.
       - source_ref: uniprot_pseudomonas_putida_phosphate_starvation
         supports: partial
-        explanation: UniProtKB:Q88C63 (Q88C63_PSEPK, phoB / PP_5320) in Pseudomonas putida KT2440 reference proteome UP000000556 (NCBITaxon:160488) encodes Phosphate regulon transcriptional regulatory protein PhoB (GO:0000156 phosphorelay response regulator activity; GO:0006817 phosphate ion transport).
+        explanation: UniProtKB:Q88C63 (Q88C63_PSEPK, phoB / PP_5320) in Pseudomonas putida KT2440 reference proteome UP000000556 (NCBITaxon:160488) encodes Phosphate regulon transcriptional regulatory protein PhoB (GO:0000156; GO:0006817).
   - id: putida_pstsacb_high_affinity_phosphate_transporter
     label: Pseudomonas putida PstSACB high-affinity phosphate ABC transporter (pstS / PP_2656, pstB1 / PP_2659)
     node_type: GENE_OR_PROTEIN
@@ -278,14 +278,14 @@ causal_graphs:
       - id: GO:0035435
         label: phosphate ion transmembrane transport
       functional_role: Periplasmic high-affinity phosphate-binding protein PstS (locus PP_2656) of the PstSACB ABC transporter complex capturing inorganic orthophosphate under phosphate starvation.
-      annotation_note: 'Grounded to reference proteome UP000000556 for type/model strain Pseudomonas putida KT2440 (NCBITaxon:160488; UniProtKB organism string: Pseudomonas putida (strain ATCC 47054 / DSM 6125 / CFBP 8728 / NCIMB 11950 / KT2440); pstS / PP_2656, UniProtKB:Q88JJ3), representing species-level Pseudomonas putida (NCBITaxon:303) grown on synthetic chlorapatite as sole phosphorus source in Topolska et al. (2014).'
+      annotation_note: Grounded to reference proteome UP000000556 for type/model strain Pseudomonas putida KT2440 (NCBITaxon:160488; pstS / PP_2656, UniProtKB:Q88JJ3), representing Pseudomonas putida IBPRS KKP 1136 (species NCBITaxon:303) grown on synthetic chlorapatite Ca5(PO4)3Cl in phosphate-deficient MP- medium in Topolska et al. (2014).
       evidence:
       - source_ref: topolska_2014
         supports: partial
-        explanation: Topolska et al. (2014) grew Pseudomonas putida in phosphate-deficient minimal medium (MP-) with synthetic chlorapatite Ca5(PO4)3Cl as the sole phosphorus source, showing viable growth from ~10^3 to ~10^8 CFU/mL and depletion of dissolved orthophosphate relative to abiotic controls; individual Pst transporter subunits were not directly assayed.
+        explanation: Topolska et al. (2014) Figure 2b-c and Table 2 (E.I) show that Pseudomonas putida IBPRS KKP 1136 achieved limited OD600 growth in phosphate-deficient MP- medium (5 g/L disodium succinate, 6.5 g/L glycerol, initial pH ~7.3, 21 +/- 1 C, 100 rpm, 305 h) when 0.05 g/100 mL synthetic chlorapatite (10-80 um) was supplied (vs no sustained growth in mineral-free MP-), while abiotic MP- controls released 119 +/- 10.7 uM P (Table 2 E.II, Table 3); PstS was not directly assayed.
       - source_ref: uniprot_pseudomonas_putida_phosphate_starvation
         supports: partial
-        explanation: UniProtKB:Q88JJ3 (Q88JJ3_PSEPK, pstS / PP_2656) in Pseudomonas putida KT2440 reference proteome UP000000556 (NCBITaxon:160488) encodes Phosphate-binding protein PstS (GO:0042301 phosphate ion binding; GO:0035435 phosphate ion transmembrane transport).
+        explanation: UniProtKB:Q88JJ3 (Q88JJ3_PSEPK, pstS / PP_2656) in Pseudomonas putida KT2440 reference proteome UP000000556 (NCBITaxon:160488) encodes Phosphate-binding protein PstS (GO:0042301; GO:0035435).
     - uniprot_accession: UniProtKB:Q88JJ0
       entry_name: PSTB1_PSEPK
       protein_name: Phosphate import ATP-binding protein PstB 1
@@ -319,34 +319,34 @@ causal_graphs:
       - id: GO:0035435
         label: phosphate ion transmembrane transport
       functional_role: Phosphate import ATP-binding protein PstB 1 (EC 7.3.2.1; locus PP_2659) coupling ATP hydrolysis to high-affinity orthophosphate import across the inner membrane.
-      annotation_note: Grounded to reviewed Swiss-Prot entry UniProtKB:Q88JJ0 (PSTB1_PSEPK, pstB1 / PP_2659) in reference proteome UP000000556 for Pseudomonas putida KT2440 (NCBITaxon:160488), representing species-level Pseudomonas putida (NCBITaxon:303) in Topolska et al. (2014).
+      annotation_note: Grounded to reviewed Swiss-Prot entry UniProtKB:Q88JJ0 (PSTB1_PSEPK, pstB1 / PP_2659) in reference proteome UP000000556 for Pseudomonas putida KT2440 (NCBITaxon:160488), representing Pseudomonas putida IBPRS KKP 1136 (NCBITaxon:303) in Topolska et al. (2014).
       evidence:
       - source_ref: topolska_2014
         supports: partial
-        explanation: Topolska et al. (2014) demonstrated that Pseudomonas putida scavenges phosphate released from synthetic chlorapatite in P-free MP- medium to support a 5-log CFU/mL expansion while keeping net supernatant phosphate at or below abiotic levels; ATPase subunit activity was not isolated.
+        explanation: Topolska et al. (2014) demonstrated OD600 growth of Pseudomonas putida IBPRS KKP 1136 in K2HPO4-omitted MP- medium supplemented with 0.05 g/100 mL synthetic chlorapatite over 305 h (where abiotic MP- chlorapatite dissolution supplies 119 +/- 10.7 uM P and no biotic chlorapatite dissolved-P or pH series was reported); PstB1 ATPase activity was not directly measured.
       - source_ref: uniprot_pseudomonas_putida_phosphate_starvation
         supports: partial
-        explanation: Reviewed Swiss-Prot entry UniProtKB:Q88JJ0 (PSTB1_PSEPK, pstB1 / PP_2659) in Pseudomonas putida KT2440 reference proteome UP000000556 (NCBITaxon:160488) encodes Phosphate import ATP-binding protein PstB 1 (EC:7.3.2.1; GO:0015415 ATPase-coupled phosphate ion transmembrane transporter activity).
+        explanation: Reviewed Swiss-Prot entry UniProtKB:Q88JJ0 (PSTB1_PSEPK, pstB1 / PP_2659) in Pseudomonas putida KT2440 reference proteome UP000000556 (NCBITaxon:160488) encodes Phosphate import ATP-binding protein PstB 1 (EC:7.3.2.1; GO:0015415).
   - id: synthetic_chlorapatite_mineral_substrate
-    label: Synthetic crystalline chlorapatite Ca5(PO4)3Cl powder (50 mg per 150 mL)
+    label: Synthetic chlorapatite Ca5(PO4)3Cl solid (10-80 um; 0.05 g/100 mL; abiotic solubility 119 +/- 10.7 uM P in MP- and 2796 +/- 9 uM P in MP+ at 305 h)
     node_type: MATERIAL_OR_PHASE
-    description: Synthetic Ca5(PO4)3Cl solid verified by XRD and FTIR, exhibiting substantial abiotic background phosphate solubility (up to ~115 uM P in sterile MP- controls) alongside biotic glucose-medium acidification from pH 6.2 to ~4.7.
+    description: 'Synthetic chlorapatite Ca5(PO4)3Cl (10-80 um) whose solution chemistry was measured only in uninoculated abiotic controls (Table 2 E.II, Table 3: 119 +/- 10.7 uM P in abiotic MP- and 2796 +/- 9 uM P in abiotic MP+ after 305 h), providing a substantial abiotic dissolved P pool in MP-.'
     protein_grounding_status: NOT_APPLICABLE
   - id: dissolved_phosphate_depletion_and_viable_putida_growth
-    label: Viable P. putida growth (~10^3 to ~10^8 CFU/mL by day 6) and net supernatant phosphate draw-down below abiotic control
+    label: Limited OD600 bacterial growth in chlorapatite-supplemented MP- (Figure 2b-c, Table 2 E.I) vs no sustained growth in mineral-free MP-
     node_type: PHENOTYPE_OR_TRAIT
-    description: Expansion of viable Pseudomonas putida cells from ~10^3 to ~10^8 CFU/mL by day 6 (vs exponential decay by day 10 in mineral-free P-starved controls) coupled to cellular P assimilation that keeps net dissolved phosphate in biotic flasks below the ~115 uM abiotic control trajectory.
+    description: Limited bacterial growth measured solely as OD600 in chlorapatite-amended MP- over 305 h (Figure 2b-c, Table 2 E.I; lower than in phosphate-replete MP+, and without conversion to CFU/mL, biomass yield, or biotic dissolved-P/pH series), whereas mineral-free MP- showed no sustained growth.
     protein_grounding_status: NOT_APPLICABLE
   edges:
   - source: phosphate_deficient_mp_minus_chlorapatite_system
     target: putida_phob_phosphate_regulon_activator
     predicate: drives
-    relationship: soluble orthophosphate starvation in MP- medium activates PhoB
-    description: Omission of soluble phosphate from MP- medium triggers the PhoR/PhoB phosphate-starvation response.
+    relationship: omission of K2HPO4 in MP- medium induces the PhoB phosphate-starvation response
+    description: Absence of K2HPO4 in MP- medium triggers the PhoR/PhoB phosphate-starvation regulon.
     evidence:
     - source_ref: topolska_2014
       supports: partial
-      explanation: Topolska et al. (2014) formulated MP- without soluble orthophosphate so that cells experienced P starvation unless mineral phosphate was scavenged; PhoB is grounded as the conserved Pseudomonas putida KT2440 phosphate-starvation regulator.
+      explanation: Topolska et al. (2014) formulated MP- without K2HPO4 so that cells required phosphorus from synthetic chlorapatite; PhoB is grounded as the conserved Pseudomonas putida KT2440 phosphate-starvation regulator.
   - source: putida_phob_phosphate_regulon_activator
     target: putida_pstsacb_high_affinity_phosphate_transporter
     predicate: positively_regulates
@@ -355,25 +355,25 @@ causal_graphs:
     evidence:
     - source_ref: uniprot_pseudomonas_putida_phosphate_starvation
       supports: partial
-      explanation: UniProtKB:Q88C63 (PhoB, PP_5320) positively regulates the phosphate regulon including PstS (UniProtKB:Q88JJ3) and PstB1 (UniProtKB:Q88JJ0) under phosphate limitation.
+      explanation: UniProtKB:Q88C63 (PhoB, PP_5320) positively regulates the phosphate regulon including PstS (UniProtKB:Q88JJ3) and PstB1 (UniProtKB:Q88JJ0).
   - source: synthetic_chlorapatite_mineral_substrate
     target: putida_pstsacb_high_affinity_phosphate_transporter
     predicate: supplies_substrate_for
-    relationship: chlorapatite dissolution in acidifying medium (pH 6.2 to ~4.7) supplies orthophosphate to PstSACB
-    description: Dissolution of synthetic Ca5(PO4)3Cl in MP- medium (acidified from pH 6.2 to ~4.7 during glucose metabolism) releases orthophosphate captured by PstSACB.
+    relationship: chlorapatite dissolution in MP- (119 +/- 10.7 uM P in abiotic MP- at 305 h) supplies orthophosphate to PstSACB
+    description: Dissolution of synthetic Ca5(PO4)3Cl in MP- releases dissolved orthophosphate (119 +/- 10.7 uM P in uninoculated abiotic MP- at 305 h; biotic chlorapatite solution P was not measured) for uptake via PstSACB.
     evidence:
     - source_ref: topolska_2014
-      supports: support
-      explanation: Figures 2-4 of Topolska et al. (2014) show chlorapatite releasing up to ~115 uM dissolved P in sterile MP- controls while biotic flasks acidify to pH ~4.7 and support viable growth exclusively when chlorapatite is present.
+      supports: partial
+      explanation: Table 2 (E.II) and Table 3 of Topolska et al. (2014) report 119 +/- 10.7 uM dissolved P in abiotic MP- chlorapatite controls after 305 h (and 2796 +/- 9 uM P in abiotic MP+), sufficient to supply nutrient P without proving microbially enhanced chlorapatite dissolution.
   - source: putida_pstsacb_high_affinity_phosphate_transporter
     target: dissolved_phosphate_depletion_and_viable_putida_growth
     predicate: drives
-    relationship: high-affinity orthophosphate import sustains ~5-log CFU/mL growth and draws down supernatant P
-    description: Cellular orthophosphate import via PstSACB supports expansion from ~10^3 to ~10^8 CFU/mL and depletes dissolved phosphate below abiotic control concentrations.
+    relationship: orthophosphate import supports limited OD600 growth in chlorapatite-amended MP-
+    description: Orthophosphate import supports limited OD600 growth of Pseudomonas putida IBPRS KKP 1136 in chlorapatite-supplemented MP- relative to mineral-free MP-.
     evidence:
     - source_ref: topolska_2014
       supports: support
-      explanation: Figures 2 and 4 of Topolska et al. (2014) show viable cell counts rising from ~10^3 to ~10^8 CFU/mL by day 6 with chlorapatite (vs cell death by day 10 without mineral) while biotic supernatant P remains lower than abiotic chlorapatite controls due to cellular P uptake.
+      explanation: Figure 2b-c and Table 2 (E.I) of Topolska et al. (2014) show limited OD600 growth in MP- with 0.05 g/100 mL chlorapatite over 305 h compared with no sustained growth in mineral-free MP-.
 curation_history:
 - timestamp: '2026-10-14T11:27:17.455877+00:00'
   curator: codex (GPT-6; codex)
@@ -383,6 +383,11 @@ curation_history:
   curator: marcin
   action: edit
   summary: Add putida_chlorapatite_phosphate_scavenging_graph causal graph and ground putida_chlorapatite_nutrient_access to Pseudomonas putida KT2440 reference-proteome proteins (UniProtKB:Q88JJ3, UniProtKB:Q88JJ0, UniProtKB:Q88C63)
+- timestamp: '2026-11-11T12:40:09Z'
+  curator: marcin
+  action: edit
+  summary: 'Align putida_chlorapatite_phosphate_scavenging_graph and protein_examples in chlorapatite.yaml with Topolska et al. (2014) parameters (fixes #1000)'
 history_refs:
 - history/records/chlorapatite/2026-10-14T112720Z-codex-ae98f3.yaml
 - history/records/chlorapatite/2026-11-10T224938Z-marcin-ae78a3.yaml
+- history/records/chlorapatite/2026-11-11T124009Z-marcin-cb435f.yaml

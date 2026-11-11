@@ -1,0 +1,226 @@
+schema_version: 1.0.0
+review_id: 20261111T124100Z-kaolin-mine-waste-cycle14-stage2-causal-graphs-rereview
+kind: record
+repository: CultureBotAI/CMMMech
+title: 'Cycle 14 Stage 2 causal_graphs and UniProtKB grounding re-review of Kaolin
+  mine waste (cmmmech:kaolin-mine-waste) after Issue #1000 alignment'
+started_at: '2026-11-11T12:40:00Z'
+finished_at: '2026-11-11T12:41:00Z'
+reviewer:
+  identity: antigravity / cmmmech-cycle14-stage2-causal-graphs-reviewer
+  kind: agent
+  model: claude-opus-4-6
+  independence: self_review
+  independence_basis: 'Single-agent Goal Mode execution of .claude/skills/review-record/SKILL.md
+    verifying the Cycle 14 Stage 2 curation of data/records/kaolin-mine-waste.yaml
+    (SHA-256 7b4d0ce747f2d797298981f53c8485811cac6050a08d092e23e24edf82693327) against
+    live UniProtKB grounding and cited primary source (sanchez_palencia_2022: Sanchez-Palencia
+    et al. (2022). Iron Removal from Kaolin Waste Dumps by Chemical (Oxalic and Citric
+    Acids) and Biological (Bacillus Strain) Leaching. Clays and Clay Minerals 70(3):386-404.
+    DOI 10.1007/s42860-022-00192-7. Original Springer version published 7 July 2022;
+    complete 19-page PDF, Tables 1-4 and Figures 1-12 inspected. The later Cambridge/Crossref
+    online date is not a separate experiment. (https://doi.org/10.1007/s42860-022-00192-7)).'
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: 82a39149d4ef1a53b156989b8eaa220e3c809415
+  state: working_tree
+  inputs:
+  - path: data/records/kaolin-mine-waste.yaml
+    sha256: 7b4d0ce747f2d797298981f53c8485811cac6050a08d092e23e24edf82693327
+    role: target
+  - path: history/records/kaolin-mine-waste/2026-11-11T124005Z-marcin-2f9dc4.yaml
+    sha256: 0152fa37894e94ddb3a23f3c193933d807e53895b3c6debde646d8d095823aa5
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+targets:
+- target_id: cmmmech:kaolin-mine-waste
+  path: data/records/kaolin-mine-waste.yaml
+  label: Kaolin mine waste
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/kaolin-mine-waste.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/kaolin-mine-waste/2026-11-11T124005Z-marcin-2f9dc4.yaml
+    role: canonical_history
+scope:
+  description: 'Cycle 14 Stage 2 causal_graphs and protein_examples review of data/records/kaolin-mine-waste.yaml
+    (SHA-256 7b4d0ce747f2d797298981f53c8485811cac6050a08d092e23e24edf82693327) and
+    its canonical EDIT history sidecar (history/records/kaolin-mine-waste/2026-11-11T124005Z-marcin-2f9dc4.yaml)
+    verifying causal-graph node/edge topology, live UniProtKB grounding (UniProtKB:A0A0K0QI82
+    (A0A0K0QI82_BACTU, Citrate synthase, gene_symbol: CAB88_23625, TREMBL, NCBITaxon:1428
+    Bacillus thuringiensis, UP000194143); UniProtKB:A0A0K0QJ28 (A0A0K0QJ28_BACTU,
+    L-lactate dehydrogenase, gene_symbol: ldh, TREMBL, NCBITaxon:1428 Bacillus thuringiensis,
+    UP000194143); UniProtKB:A0A0G3E229 (A0A0G3E229_BACTU, Beta-ketoacyl-[acyl-carrier-protein]
+    synthase III, gene_symbol: fabH, TREMBL, NCBITaxon:1428 Bacillus thuringiensis,
+    UP000194143)), and primary-source evidence fidelity across ''bacillus_kaolin_waste_iron_impurity_leaching_graph''
+    (mechanism_ref: bacillus_iron_impurity_leaching, 6 nodes / 6 edges).'
+  selection: Cycle 14 Stage 2 causal_graphs cohort review for cmmmech:kaolin-mine-waste
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:kaolin-mine-waste
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/kaolin-mine-waste.yaml
+  locator: Working-tree record data/records/kaolin-mine-waste.yaml (causal_graphs
+    and mechanisms[].protein_examples)
+  accessed_at: '2026-11-11T12:41:00Z'
+  support: supports
+  summary: 'Updated data/records/kaolin-mine-waste.yaml (SHA-256 7b4d0ce747f2d797298981f53c8485811cac6050a08d092e23e24edf82693327)
+    with causal_graphs (''bacillus_kaolin_waste_iron_impurity_leaching_graph'' (mechanism_ref:
+    bacillus_iron_impurity_leaching, 6 nodes / 6 edges)), achieving 100% parity between
+    mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and
+    preserving source-faithful support levels and experimental caveats.'
+  snapshot_sha256: 7b4d0ce747f2d797298981f53c8485811cac6050a08d092e23e24edf82693327
+- evidence_id: primary_source
+  kind: primary_source
+  reference: https://doi.org/10.1007/s42860-022-00192-7
+  locator: 'sanchez_palencia_2022: Sanchez-Palencia et al. (2022). Iron Removal from
+    Kaolin Waste Dumps by Chemical (Oxalic and Citric Acids) and Biological (Bacillus
+    Strain) Leaching. Clays and Clay Minerals 70(3):386-404. DOI 10.1007/s42860-022-00192-7.
+    Original Springer version published 7 July 2022; complete 19-page PDF, Tables
+    1-4 and Figures 1-12 inspected. The later Cambridge/Crossref online date is not
+    a separate experiment. (https://doi.org/10.1007/s42860-022-00192-7)'
+  accessed_at: '2026-11-11T12:41:00Z'
+  support: supports
+  summary: 'Live-verified UniProtKB grounding across UniProtKB:A0A0K0QI82 (A0A0K0QI82_BACTU,
+    Citrate synthase, gene_symbol: CAB88_23625, TREMBL, NCBITaxon:1428 Bacillus thuringiensis,
+    UP000194143); UniProtKB:A0A0K0QJ28 (A0A0K0QJ28_BACTU, L-lactate dehydrogenase,
+    gene_symbol: ldh, TREMBL, NCBITaxon:1428 Bacillus thuringiensis, UP000194143);
+    UniProtKB:A0A0G3E229 (A0A0G3E229_BACTU, Beta-ketoacyl-[acyl-carrier-protein] synthase
+    III, gene_symbol: fabH, TREMBL, NCBITaxon:1428 Bacillus thuringiensis, UP000194143).
+    Primary mechanism source (sanchez_palencia_2022: Sanchez-Palencia et al. (2022).
+    Iron Removal from Kaolin Waste Dumps by Chemical (Oxalic and Citric Acids) and
+    Biological (Bacillus Strain) Leaching. Clays and Clay Minerals 70(3):386-404.
+    DOI 10.1007/s42860-022-00192-7. Original Springer version published 7 July 2022;
+    complete 19-page PDF, Tables 1-4 and Figures 1-12 inspected. The later Cambridge/Crossref
+    online date is not a separate experiment. (https://doi.org/10.1007/s42860-022-00192-7))
+    parameters and source-level caveats are strictly preserved on all nodes, edges,
+    and ProteinExample evidence items.'
+- evidence_id: edit_history
+  kind: record_content
+  reference: history/records/kaolin-mine-waste/2026-11-11T124005Z-marcin-2f9dc4.yaml
+  locator: Canonical EDIT history sidecar history/records/kaolin-mine-waste/2026-11-11T124005Z-marcin-2f9dc4.yaml
+  accessed_at: '2026-11-11T12:41:00Z'
+  support: supports
+  summary: 'Canonical EDIT history sidecar history/records/kaolin-mine-waste/2026-11-11T124005Z-marcin-2f9dc4.yaml
+    (SHA-256 0152fa37894e94ddb3a23f3c193933d807e53895b3c6debde646d8d095823aa5): Align
+    bacillus_kaolin_waste_iron_impurity_leaching_graph and protein_examples in kaolin-mine-waste.yaml
+    with Sanchez-Palencia et al. (2022) parameters (fixes #1000)'
+  snapshot_sha256: 0152fa37894e94ddb3a23f3c193933d807e53895b3c6debde646d8d095823aa5
+- evidence_id: validation
+  kind: validation
+  reference: data/records/kaolin-mine-waste.yaml
+  locator: Real CLI validation via python -m cmmmech validate --require-records and
+    validate-history --base main
+  accessed_at: '2026-11-11T12:41:00Z'
+  support: supports
+  summary: data/records/kaolin-mine-waste.yaml and history/records/kaolin-mine-waste/2026-11-11T124005Z-marcin-2f9dc4.yaml
+    pass strict LinkML schema, protein_examples parity, and history validation with
+    0 errors.
+  snapshot_sha256: 7b4d0ce747f2d797298981f53c8485811cac6050a08d092e23e24edf82693327
+checks:
+- check_id: validate_records
+  name: Strict corpus validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Checked 713 record(s); 0 failed.
+  target_ids:
+  - cmmmech:kaolin-mine-waste
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: validate_history
+  name: Canonical history validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate-history --base main
+  status: passed
+  required: true
+  summary: Checked 1573 history record(s); 0 error(s).
+  target_ids:
+  - cmmmech:kaolin-mine-waste
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+assessments:
+- assessment_id: causal_graph_and_protein_grounding
+  area: graph
+  topic: 'Verification of causal_graphs structure, UniProtKB grounding, and parity
+    across ''bacillus_kaolin_waste_iron_impurity_leaching_graph'' (mechanism_ref:
+    bacillus_iron_impurity_leaching, 6 nodes / 6 edges)'
+  outcome: supported
+  summary: 'Updated data/records/kaolin-mine-waste.yaml (SHA-256 7b4d0ce747f2d797298981f53c8485811cac6050a08d092e23e24edf82693327)
+    with causal_graphs (''bacillus_kaolin_waste_iron_impurity_leaching_graph'' (mechanism_ref:
+    bacillus_iron_impurity_leaching, 6 nodes / 6 edges)), achieving 100% parity between
+    mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and
+    preserving source-faithful support levels and caveats from sanchez_palencia_2022:
+    Sanchez-Palencia et al. (2022). Iron Removal from Kaolin Waste Dumps by Chemical
+    (Oxalic and Citric Acids) and Biological (Bacillus Strain) Leaching. Clays and
+    Clay Minerals 70(3):386-404. DOI 10.1007/s42860-022-00192-7. Original Springer
+    version published 7 July 2022; complete 19-page PDF, Tables 1-4 and Figures 1-12
+    inspected. The later Cambridge/Crossref online date is not a separate experiment.
+    (https://doi.org/10.1007/s42860-022-00192-7). Live-verified UniProtKB grounding
+    across UniProtKB:A0A0K0QI82 (A0A0K0QI82_BACTU, Citrate synthase, gene_symbol:
+    CAB88_23625, TREMBL, NCBITaxon:1428 Bacillus thuringiensis, UP000194143); UniProtKB:A0A0K0QJ28
+    (A0A0K0QJ28_BACTU, L-lactate dehydrogenase, gene_symbol: ldh, TREMBL, NCBITaxon:1428
+    Bacillus thuringiensis, UP000194143); UniProtKB:A0A0G3E229 (A0A0G3E229_BACTU,
+    Beta-ketoacyl-[acyl-carrier-protein] synthase III, gene_symbol: fabH, TREMBL,
+    NCBITaxon:1428 Bacillus thuringiensis, UP000194143).'
+  target_ids:
+  - cmmmech:kaolin-mine-waste
+  evidence_ids:
+  - owner
+  - primary_source
+- assessment_id: provenance_and_validation_verification
+  area: provenance
+  topic: Verification of canonical EDIT history sidecar and strict schema validation
+  outcome: supported
+  summary: 'data/records/kaolin-mine-waste.yaml was updated exclusively through scripts/curate_causal_graphs.py
+    (curate_record_file), producing append-only history sidecar history/records/kaolin-mine-waste/2026-11-11T124005Z-marcin-2f9dc4.yaml
+    (SHA-256 0152fa37894e94ddb3a23f3c193933d807e53895b3c6debde646d8d095823aa5: Align
+    bacillus_kaolin_waste_iron_impurity_leaching_graph and protein_examples in kaolin-mine-waste.yaml
+    with Sanchez-Palencia et al. (2022) parameters (fixes #1000)) and passing all
+    LinkML and history validation gates.'
+  target_ids:
+  - cmmmech:kaolin-mine-waste
+  evidence_ids:
+  - owner
+  - edit_history
+  - validation
+findings: []
+actions: []
+summary: 'Kaolin mine waste (cmmmech:kaolin-mine-waste) passes Cycle 14 Stage 2 causal_graphs
+  review (scientific_review: true) at SHA-256 7b4d0ce747f2d797298981f53c8485811cac6050a08d092e23e24edf82693327:
+  Updated data/records/kaolin-mine-waste.yaml with ''bacillus_kaolin_waste_iron_impurity_leaching_graph''
+  (mechanism_ref: bacillus_iron_impurity_leaching, 6 nodes / 6 edges), achieving 100%
+  parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples
+  and preserving source-faithful support levels and experimental caveats from sanchez_palencia_2022:
+  Sanchez-Palencia et al. (2022). Iron Removal from Kaolin Waste Dumps by Chemical
+  (Oxalic and Citric Acids) and Biological (Bacillus Strain) Leaching. Clays and Clay
+  Minerals 70(3):386-404. DOI 10.1007/s42860-022-00192-7. Original Springer version
+  published 7 July 2022; complete 19-page PDF, Tables 1-4 and Figures 1-12 inspected.
+  The later Cambridge/Crossref online date is not a separate experiment. (https://doi.org/10.1007/s42860-022-00192-7).
+  Live-verified UniProtKB grounding across UniProtKB:A0A0K0QI82 (A0A0K0QI82_BACTU,
+  Citrate synthase, gene_symbol: CAB88_23625, TREMBL, NCBITaxon:1428 Bacillus thuringiensis,
+  UP000194143); UniProtKB:A0A0K0QJ28 (A0A0K0QJ28_BACTU, L-lactate dehydrogenase, gene_symbol:
+  ldh, TREMBL, NCBITaxon:1428 Bacillus thuringiensis, UP000194143); UniProtKB:A0A0G3E229
+  (A0A0G3E229_BACTU, Beta-ketoacyl-[acyl-carrier-protein] synthase III, gene_symbol:
+  fabH, TREMBL, NCBITaxon:1428 Bacillus thuringiensis, UP000194143).'
+limitations:
+- 'Review is conducted in single-agent Goal Mode (independence: self_review) against
+  working-tree bytes; an independent subagent PR review is executed prior to merge.'
+notes:
+- 'Executed during Cycle 14 Stage 2 (causal_graphs) for cmmmech:kaolin-mine-waste;
+  supersedes initial review 20261110T225100Z-kaolin-mine-waste-cycle14-stage2-causal-graphs-review
+  after Issue #1000 alignment.'
+related_reviews: []

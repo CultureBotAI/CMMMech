@@ -62,15 +62,15 @@ mechanisms:
       label: carbohydrate metabolic process
     - id: GO:0006099
       label: tricarboxylic acid cycle
-    functional_role: Citrate synthase (locus CAB88_23625) catalyzing citrate formation in the tricarboxylic acid cycle during heterotrophic growth in glucose mineral medium.
-    annotation_note: Grounded to species-level Bacillus thuringiensis reference proteome UP000194143 (NCBITaxon:1428; locus CAB88_23625, UniProtKB:A0A0K0QI82; 371 aa), representing the Bacillus thuringiensis culture used for kaolin mine waste bioleaching in Sanchez-Palencia et al. (2022).
+    functional_role: Citrate synthase (locus CAB88_23625) catalyzing citrate formation in the tricarboxylic acid cycle during heterotrophic growth in 20 g/L glucose mineral medium.
+    annotation_note: Grounded to species-rank Bacillus thuringiensis reference proteome UP000194143 (NCBITaxon:1428; CAB88_23625, UniProtKB:A0A0K0QI82; 371 aa), selected to match the species-rank mechanism taxon without asserting subspecific strain assignment for wastewater-reactor isolate no. 91 (Bacillus thuringiensis EB63, no GenBank accession supplied) in Sanchez-Palencia et al. (2022).
     evidence:
     - source_ref: sanchez_palencia_2022
       supports: partial
-      explanation: Sanchez-Palencia et al. (2022) grew Bacillus thuringiensis in 1 g/L glucose mineral broth with 0.5 g/L EDTA and observed culture acidification to pH 4.9-5.7 during 15-day kaolin waste leaching; individual organic-acid synthesis enzymes were not directly assayed.
+      explanation: Sanchez-Palencia et al. (2022) grew Bacillus thuringiensis EB63 (isolate no. 91) in 250 mL medium containing 20 g/L glucose and 0.75 g/L disodium EDTA with 12.5 g (50 g/L) Poveda de la Sierra kaolin mine-dump waste, observing acidification from initial pH 7.5 (plotted ~6.8) to ~pH 4.5 over 14 days; individual TCA enzymes were not directly assayed.
     - source_ref: uniprot_bacillus_thuringiensis_organic_fatty_acids
       supports: partial
-      explanation: UniProtKB:A0A0K0QI82 (A0A0K0QI82_BACTU, locus CAB88_23625) in Bacillus thuringiensis reference proteome UP000194143 (NCBITaxon:1428) encodes Citrate synthase (GO:0036440 citrate synthase activity; GO:0006099 tricarboxylic acid cycle).
+      explanation: UniProtKB:A0A0K0QI82 (A0A0K0QI82_BACTU, locus CAB88_23625) in Bacillus thuringiensis reference proteome UP000194143 (NCBITaxon:1428) encodes Citrate synthase (GO:0036440; GO:0006099).
   - uniprot_accession: UniProtKB:A0A0K0QJ28
     entry_name: A0A0K0QJ28_BACTU
     protein_name: L-lactate dehydrogenase
@@ -106,15 +106,15 @@ mechanisms:
       label: glycolytic process
     - id: GO:0006089
       label: lactate metabolic process
-    functional_role: NAD-dependent L-lactate dehydrogenase Ldh (EC 1.1.1.27; locus CAB88_25135) catalyzing fermentative reduction of pyruvate to L-lactate during glucose catabolism.
-    annotation_note: Grounded to species-level Bacillus thuringiensis reference proteome UP000194143 (NCBITaxon:1428; ldh / CAB88_25135, UniProtKB:A0A0K0QJ28; 314 aa), representing fermentative glucose acidification (pH 4.9-5.7) by Bacillus thuringiensis in Sanchez-Palencia et al. (2022).
+    functional_role: NAD-dependent L-lactate dehydrogenase Ldh (EC 1.1.1.27; locus CAB88_25135) catalyzing fermentative reduction of pyruvate to L-lactate during catabolism of 20 g/L glucose.
+    annotation_note: Grounded to species-rank Bacillus thuringiensis reference proteome UP000194143 (NCBITaxon:1428; ldh / CAB88_25135, UniProtKB:A0A0K0QJ28; 314 aa), selected to match the species-rank mechanism taxon without asserting subspecific strain assignment for Bacillus thuringiensis EB63 in Sanchez-Palencia et al. (2022).
     evidence:
     - source_ref: sanchez_palencia_2022
       supports: partial
-      explanation: Sanchez-Palencia et al. (2022) report broth acidification from neutral pH to pH 4.9-5.7 during glucose-fed Bacillus thuringiensis bioleaching of kaolin waste; specific fermentative dehydrogenases were not isolated.
+      explanation: Sanchez-Palencia et al. (2022) report broth acidification from initial pH 7.5 (plotted ~6.8) to ~pH 4.5 over 14 days during catabolism of 20 g/L glucose by Bacillus thuringiensis EB63; individual fermentative dehydrogenases were not isolated.
     - source_ref: uniprot_bacillus_thuringiensis_organic_fatty_acids
       supports: partial
-      explanation: UniProtKB:A0A0K0QJ28 (A0A0K0QJ28_BACTU, ldh / CAB88_25135) in Bacillus thuringiensis reference proteome UP000194143 (NCBITaxon:1428) encodes L-lactate dehydrogenase (EC:1.1.1.27; GO:0004459 L-lactate dehydrogenase (NAD+) activity; GO:0006089 lactate metabolic process).
+      explanation: UniProtKB:A0A0K0QJ28 (A0A0K0QJ28_BACTU, ldh / CAB88_25135) in Bacillus thuringiensis reference proteome UP000194143 (NCBITaxon:1428) encodes L-lactate dehydrogenase (EC:1.1.1.27; GO:0004459; GO:0006089).
   - uniprot_accession: UniProtKB:A0A0G3E229
     entry_name: A0A0G3E229_BACTU
     protein_name: Beta-ketoacyl-[acyl-carrier-protein] synthase III
@@ -147,14 +147,14 @@ mechanisms:
     - id: GO:0006633
       label: fatty acid biosynthetic process
     functional_role: Beta-ketoacyl-[acyl-carrier-protein] synthase III FabH (EC 2.3.1.180; locus CAB88_05480) catalyzing the initiating condensation step of bacterial fatty acid biosynthesis.
-    annotation_note: Grounded to species-level Bacillus thuringiensis reference proteome UP000194143 (NCBITaxon:1428; fabH / CAB88_05480, UniProtKB:A0A0G3E229; 310 aa), representing fatty-acid biosynthesis associated with the GC-MS lauric acid (dodecanoic acid) signal detected in Bacillus thuringiensis bioleaching broth in Sanchez-Palencia et al. (2022).
+    annotation_note: Grounded to species-rank Bacillus thuringiensis reference proteome UP000194143 (NCBITaxon:1428; fabH / CAB88_05480, UniProtKB:A0A0G3E229; 310 aa), selected to match the species-rank mechanism taxon without asserting subspecific strain assignment for Bacillus thuringiensis EB63 in Sanchez-Palencia et al. (2022).
     evidence:
     - source_ref: sanchez_palencia_2022
       supports: partial
-      explanation: Sanchez-Palencia et al. (2022) and supplementary file sanchez_palencia_2022_esm report GC-MS detection of lauric acid (dodecanoic acid) as the principal organic peak in ethyl-acetate extracts of the Bacillus thuringiensis bioleaching broth; fatty-acid synthase genes were not directly assayed and low-MW hydrophilic organic acids may not partition into ethyl acetate.
+      explanation: Sanchez-Palencia et al. (2022) Section 3.4 reports GC-MS detection (after derivatization) of lauric acid in the Bacillus thuringiensis EB63 bioleaching medium; fatty-acid synthase genes were not directly assayed.
     - source_ref: uniprot_bacillus_thuringiensis_organic_fatty_acids
       supports: partial
-      explanation: UniProtKB:A0A0G3E229 (A0A0G3E229_BACTU, fabH / CAB88_05480) in Bacillus thuringiensis reference proteome UP000194143 (NCBITaxon:1428) encodes Beta-ketoacyl-[acyl-carrier-protein] synthase III (EC:2.3.1.180; GO:0033818; GO:0006633 fatty acid biosynthetic process).
+      explanation: UniProtKB:A0A0G3E229 (A0A0G3E229_BACTU, fabH / CAB88_05480) in Bacillus thuringiensis reference proteome UP000194143 (NCBITaxon:1428) encodes Beta-ketoacyl-[acyl-carrier-protein] synthase III (EC:2.3.1.180; GO:0033818; GO:0006633).
   evidence:
   - source_ref: sanchez_palencia_2022
     supports: support
@@ -189,21 +189,21 @@ mechanisms:
     explanation: Figure S3 photographs the yellow suspension about halfway through the long chemical assay. It establishes neither a final iron yield nor an independently quantified precipitate or recovered product.
 causal_graphs:
 - id: bacillus_kaolin_waste_iron_impurity_leaching_graph
-  name: Bacillus thuringiensis glucose/EDTA-conditioned partial iron impurity removal from Pouto kaolin mine waste
-  description: Causal pathway linking representative Bacillus thuringiensis organic-acid and fatty-acid biosynthetic enzymes Citrate synthase (UniProtKB:A0A0K0QI82), L-lactate dehydrogenase Ldh (UniProtKB:A0A0K0QJ28), and Beta-ketoacyl-ACP synthase III FabH (UniProtKB:A0A0G3E229) to moderate broth acidification (pH 4.9-5.7) and GC-MS-detected lauric acid in 1 g/L glucose + 0.5 g/L EDTA medium, resulting in 20% solid-phase Fe2O3 reduction (from 0.87 to 0.70 wt% Fe2O3; 6.13 mg/L dissolved Fe in leachate, leaving ~82% of solid Fe loss unaccounted for in solution) from Pouto kaolin mine waste in Sanchez-Palencia et al. (2022).
+  name: Bacillus thuringiensis EB63 glucose/EDTA-conditioned trace iron impurity leaching from Poveda de la Sierra kaolin mine-dump waste
+  description: Causal pathway linking representative Bacillus thuringiensis enzymes Citrate synthase (UniProtKB:A0A0K0QI82), L-lactate dehydrogenase Ldh (UniProtKB:A0A0K0QJ28), and Beta-ketoacyl-ACP synthase III FabH (UniProtKB:A0A0G3E229) to catabolism of 20 g/L glucose in medium containing 0.75 g/L disodium EDTA, broth acidification from initial pH 7.5 (plotted ~6.8) to ~pH 4.5 over 14 days, GC-MS detection of lauric acid after derivatization, and trace iron mobilization (0.83% maximum iron elimination, <1%, with high-iron D2 day-7 peaking at 14.9 mg/L total Fe by AAS and substantial iron leaching already occurring in the uninoculated glucose + EDTA medium control, vs 32.21% max iron removal in 100 mM oxalic + citric acid chemical leaching) from Poveda de la Sierra kaolin mine-dump waste (high-iron 3.06 wt% Fe2O3 and low-iron 0.34 wt% Fe2O3) in Sanchez-Palencia et al. (2022).
   scope: REPRESENTATIVE_EXAMPLE
   mechanism_ref: bacillus_iron_impurity_leaching
   nodes:
   - id: glucose_edta_broth_substrate
-    label: Glucose mineral broth (1 g/L glucose) supplemented with 0.5 g/L EDTA at 20 g/L kaolin waste loading (30 C, 160 rpm, 15 d)
+    label: Glucose mineral medium (20 g/L glucose, 0.75 g/L disodium EDTA, initial pH 7.5 / plotted ~6.8) with 12.5 g/250 mL (50 g/L) kaolin waste over 14 d
     node_type: CHEMICAL_ENTITY
-    description: Mineral salts medium containing 1 g/L glucose and 0.5 g/L exogenous EDTA chelator contacted with 20 g/L Pouto kaolin processing waste at 30 C and 160 rpm across single-stage and two-stage 15-day assays.
+    description: 250 mL medium containing 20 g/L glucose, 0.75 g/L disodium EDTA, 2 g/L K2HPO4, 1 g/L (NH4)2SO4, 0.1 g/L CaCl2, 0.2 g/L NaCl, 0.085 g/L NaNO3, 0.2 g/L urea, and 0.1 g/L yeast extract contacted with 12.5 g (50 g/L) autoclaved kaolin mine-dump waste and 1 mL Bacillus thuringiensis EB63 inoculum over 14 days (duplicates D1 and D2).
     protein_grounding_status: NOT_APPLICABLE
   - id: bt_organic_acid_catabolic_enzymes
     label: Bacillus thuringiensis Citrate synthase (CAB88_23625) and L-lactate dehydrogenase (ldh)
     node_type: GENE_OR_PROTEIN
     gene_symbol: CAB88_23625/ldh
-    description: Representative Bacillus thuringiensis reference-proteome enzymes Citrate synthase (CAB88_23625, UniProtKB:A0A0K0QI82) and L-lactate dehydrogenase (ldh / CAB88_25135, UniProtKB:A0A0K0QJ28; EC 1.1.1.27) driving heterotrophic glucose catabolism and culture acidification.
+    description: Representative Bacillus thuringiensis reference-proteome UP000194143 enzymes Citrate synthase (CAB88_23625, UniProtKB:A0A0K0QI82) and L-lactate dehydrogenase (ldh / CAB88_25135, UniProtKB:A0A0K0QJ28; EC 1.1.1.27) driving glucose catabolism and broth acidification.
     protein_grounding_status: GROUNDED
     protein_examples:
     - uniprot_accession: UniProtKB:A0A0K0QI82
@@ -236,15 +236,15 @@ causal_graphs:
         label: carbohydrate metabolic process
       - id: GO:0006099
         label: tricarboxylic acid cycle
-      functional_role: Citrate synthase (locus CAB88_23625) catalyzing citrate formation in the tricarboxylic acid cycle during heterotrophic growth in glucose mineral medium.
-      annotation_note: Grounded to species-level Bacillus thuringiensis reference proteome UP000194143 (NCBITaxon:1428; locus CAB88_23625, UniProtKB:A0A0K0QI82; 371 aa), representing the Bacillus thuringiensis culture used for kaolin mine waste bioleaching in Sanchez-Palencia et al. (2022).
+      functional_role: Citrate synthase (locus CAB88_23625) catalyzing citrate formation in the tricarboxylic acid cycle during heterotrophic growth in 20 g/L glucose mineral medium.
+      annotation_note: Grounded to species-rank Bacillus thuringiensis reference proteome UP000194143 (NCBITaxon:1428; CAB88_23625, UniProtKB:A0A0K0QI82; 371 aa), selected to match the species-rank mechanism taxon without asserting subspecific strain assignment for wastewater-reactor isolate no. 91 (Bacillus thuringiensis EB63, no GenBank accession supplied) in Sanchez-Palencia et al. (2022).
       evidence:
       - source_ref: sanchez_palencia_2022
         supports: partial
-        explanation: Sanchez-Palencia et al. (2022) grew Bacillus thuringiensis in 1 g/L glucose mineral broth with 0.5 g/L EDTA and observed culture acidification to pH 4.9-5.7 during 15-day kaolin waste leaching; individual organic-acid synthesis enzymes were not directly assayed.
+        explanation: Sanchez-Palencia et al. (2022) grew Bacillus thuringiensis EB63 (isolate no. 91) in 250 mL medium containing 20 g/L glucose and 0.75 g/L disodium EDTA with 12.5 g (50 g/L) Poveda de la Sierra kaolin mine-dump waste, observing acidification from initial pH 7.5 (plotted ~6.8) to ~pH 4.5 over 14 days; individual TCA enzymes were not directly assayed.
       - source_ref: uniprot_bacillus_thuringiensis_organic_fatty_acids
         supports: partial
-        explanation: UniProtKB:A0A0K0QI82 (A0A0K0QI82_BACTU, locus CAB88_23625) in Bacillus thuringiensis reference proteome UP000194143 (NCBITaxon:1428) encodes Citrate synthase (GO:0036440 citrate synthase activity; GO:0006099 tricarboxylic acid cycle).
+        explanation: UniProtKB:A0A0K0QI82 (A0A0K0QI82_BACTU, locus CAB88_23625) in Bacillus thuringiensis reference proteome UP000194143 (NCBITaxon:1428) encodes Citrate synthase (GO:0036440; GO:0006099).
     - uniprot_accession: UniProtKB:A0A0K0QJ28
       entry_name: A0A0K0QJ28_BACTU
       protein_name: L-lactate dehydrogenase
@@ -280,20 +280,20 @@ causal_graphs:
         label: glycolytic process
       - id: GO:0006089
         label: lactate metabolic process
-      functional_role: NAD-dependent L-lactate dehydrogenase Ldh (EC 1.1.1.27; locus CAB88_25135) catalyzing fermentative reduction of pyruvate to L-lactate during glucose catabolism.
-      annotation_note: Grounded to species-level Bacillus thuringiensis reference proteome UP000194143 (NCBITaxon:1428; ldh / CAB88_25135, UniProtKB:A0A0K0QJ28; 314 aa), representing fermentative glucose acidification (pH 4.9-5.7) by Bacillus thuringiensis in Sanchez-Palencia et al. (2022).
+      functional_role: NAD-dependent L-lactate dehydrogenase Ldh (EC 1.1.1.27; locus CAB88_25135) catalyzing fermentative reduction of pyruvate to L-lactate during catabolism of 20 g/L glucose.
+      annotation_note: Grounded to species-rank Bacillus thuringiensis reference proteome UP000194143 (NCBITaxon:1428; ldh / CAB88_25135, UniProtKB:A0A0K0QJ28; 314 aa), selected to match the species-rank mechanism taxon without asserting subspecific strain assignment for Bacillus thuringiensis EB63 in Sanchez-Palencia et al. (2022).
       evidence:
       - source_ref: sanchez_palencia_2022
         supports: partial
-        explanation: Sanchez-Palencia et al. (2022) report broth acidification from neutral pH to pH 4.9-5.7 during glucose-fed Bacillus thuringiensis bioleaching of kaolin waste; specific fermentative dehydrogenases were not isolated.
+        explanation: Sanchez-Palencia et al. (2022) report broth acidification from initial pH 7.5 (plotted ~6.8) to ~pH 4.5 over 14 days during catabolism of 20 g/L glucose by Bacillus thuringiensis EB63; individual fermentative dehydrogenases were not isolated.
       - source_ref: uniprot_bacillus_thuringiensis_organic_fatty_acids
         supports: partial
-        explanation: UniProtKB:A0A0K0QJ28 (A0A0K0QJ28_BACTU, ldh / CAB88_25135) in Bacillus thuringiensis reference proteome UP000194143 (NCBITaxon:1428) encodes L-lactate dehydrogenase (EC:1.1.1.27; GO:0004459 L-lactate dehydrogenase (NAD+) activity; GO:0006089 lactate metabolic process).
+        explanation: UniProtKB:A0A0K0QJ28 (A0A0K0QJ28_BACTU, ldh / CAB88_25135) in Bacillus thuringiensis reference proteome UP000194143 (NCBITaxon:1428) encodes L-lactate dehydrogenase (EC:1.1.1.27; GO:0004459; GO:0006089).
   - id: bt_fatty_acid_synthase_fabh
     label: Bacillus thuringiensis Beta-ketoacyl-ACP synthase III (fabH)
     node_type: GENE_OR_PROTEIN
     gene_symbol: fabH
-    description: Representative Bacillus thuringiensis reference-proteome Beta-ketoacyl-[acyl-carrier-protein] synthase III (fabH / CAB88_05480, UniProtKB:A0A0G3E229; EC 2.3.1.180) initiating fatty acid synthesis associated with the GC-MS lauric acid signal in broth extracts.
+    description: Representative Bacillus thuringiensis reference-proteome UP000194143 Beta-ketoacyl-[acyl-carrier-protein] synthase III (fabH / CAB88_05480, UniProtKB:A0A0G3E229; EC 2.3.1.180) initiating fatty acid synthesis associated with the GC-MS lauric acid signal.
     protein_grounding_status: GROUNDED
     protein_examples:
     - uniprot_accession: UniProtKB:A0A0G3E229
@@ -328,84 +328,84 @@ causal_graphs:
       - id: GO:0006633
         label: fatty acid biosynthetic process
       functional_role: Beta-ketoacyl-[acyl-carrier-protein] synthase III FabH (EC 2.3.1.180; locus CAB88_05480) catalyzing the initiating condensation step of bacterial fatty acid biosynthesis.
-      annotation_note: Grounded to species-level Bacillus thuringiensis reference proteome UP000194143 (NCBITaxon:1428; fabH / CAB88_05480, UniProtKB:A0A0G3E229; 310 aa), representing fatty-acid biosynthesis associated with the GC-MS lauric acid (dodecanoic acid) signal detected in Bacillus thuringiensis bioleaching broth in Sanchez-Palencia et al. (2022).
+      annotation_note: Grounded to species-rank Bacillus thuringiensis reference proteome UP000194143 (NCBITaxon:1428; fabH / CAB88_05480, UniProtKB:A0A0G3E229; 310 aa), selected to match the species-rank mechanism taxon without asserting subspecific strain assignment for Bacillus thuringiensis EB63 in Sanchez-Palencia et al. (2022).
       evidence:
       - source_ref: sanchez_palencia_2022
         supports: partial
-        explanation: Sanchez-Palencia et al. (2022) and supplementary file sanchez_palencia_2022_esm report GC-MS detection of lauric acid (dodecanoic acid) as the principal organic peak in ethyl-acetate extracts of the Bacillus thuringiensis bioleaching broth; fatty-acid synthase genes were not directly assayed and low-MW hydrophilic organic acids may not partition into ethyl acetate.
+        explanation: Sanchez-Palencia et al. (2022) Section 3.4 reports GC-MS detection (after derivatization) of lauric acid in the Bacillus thuringiensis EB63 bioleaching medium; fatty-acid synthase genes were not directly assayed.
       - source_ref: uniprot_bacillus_thuringiensis_organic_fatty_acids
         supports: partial
-        explanation: UniProtKB:A0A0G3E229 (A0A0G3E229_BACTU, fabH / CAB88_05480) in Bacillus thuringiensis reference proteome UP000194143 (NCBITaxon:1428) encodes Beta-ketoacyl-[acyl-carrier-protein] synthase III (EC:2.3.1.180; GO:0033818; GO:0006633 fatty acid biosynthetic process).
+        explanation: UniProtKB:A0A0G3E229 (A0A0G3E229_BACTU, fabH / CAB88_05480) in Bacillus thuringiensis reference proteome UP000194143 (NCBITaxon:1428) encodes Beta-ketoacyl-[acyl-carrier-protein] synthase III (EC:2.3.1.180; GO:0033818; GO:0006633).
   - id: acidified_broth_and_metabolite_edta_matrix
-    label: Moderately acidified culture broth (pH 4.9-5.7) with exogenous 0.5 g/L EDTA and GC-MS-detected lauric acid
+    label: Acidified culture broth (~pH 4.5) with 0.75 g/L disodium EDTA and GC-MS-detected lauric acid
     node_type: CHEMICAL_ENTITY
-    description: Conditioned Bacillus thuringiensis broth at pH 4.9-5.7 containing 0.5 g/L supplied EDTA and GC-MS-detected lauric acid (dodecanoic acid) in ethyl-acetate extracts (without an uninoculated EDTA-only control to isolate microbial metabolites from EDTA chelation).
+    description: Conditioned Bacillus thuringiensis EB63 broth acidified from initial pH 7.5 (plotted ~6.8) to ~pH 4.5 over 14 days in the presence of 0.75 g/L disodium EDTA and derivatized GC-MS-detected lauric acid (Section 3.4).
     protein_grounding_status: NOT_APPLICABLE
   - id: pouto_kaolin_mine_waste_iron_impurities
-    label: Pouto kaolin processing waste solid feed (0.87 wt% Fe2O3 impurity; 20 g/L pulp density)
+    label: 'Poveda de la Sierra (Guadalajara, Spain) kaolin mine-dump waste feeds (high-iron: 92.20 wt% kaolinite, 3.06 wt% Fe2O3; low-iron: 97.00 wt% kaolinite, 0.34 wt% Fe2O3; 50 g/L)'
     node_type: MATERIAL_OR_PHASE
-    description: Kaolin mining and processing waste from Pouto (Galicia, Spain) containing 0.87 wt% Fe2O3 (6083 mg Fe/kg solid, equivalent to ~121.7 mg Fe/L at 20 g/L solid loading).
+    description: Autoclaved kaolin mine-dump waste supplied by Caobar SA from Poveda de la Sierra (Guadalajara, Spain), tested as a high-iron sample (92.20 wt% kaolinite, 3.06 wt% Fe2O3) and a low-iron sample (97.00 wt% kaolinite, 0.34 wt% Fe2O3) at 12.5 g per 250 mL (50 g/L).
     protein_grounding_status: NOT_APPLICABLE
   - id: partial_iron_impurity_mobilization
-    label: Modest solid Fe2O3 reduction (20% removal to 0.70 wt% Fe2O3; 6.13 mg/L dissolved Fe in leachate with unclosed Fe balance)
+    label: Trace iron mobilization (0.83% max iron elimination, <1%; high-iron D2 day-7 peak 14.9 mg/L total Fe by AAS; confounded by substantial uninoculated glucose + EDTA control leaching)
     node_type: CHEMICAL_ENTITY
-    description: Two-stage Bacillus thuringiensis + EDTA bioleaching reduces solid-phase Fe2O3 by 20% (from 0.87 to 0.70 wt% Fe2O3 by XRF, ~23.8 mg Fe/L solid loss), while ICP-MS measures at most 6.13 mg/L dissolved Fe (~5.0% of feed Fe, leaving ~82% of solid-loss Fe unaccounted for in solution) and achieves much lower deferrization than 0.1 M oxalic acid (59% Fe removal).
+    description: Successive 0.45-um and 0.22-um filtrates analyzed by AAS for total Fe and phenanthroline colorimetry for Fe(II) show at most 0.83% (<1%) iron elimination (high-iron D2 day-7 peak 14.9 mg/L total Fe, Figure 9 caption), with substantial Fe leaching in the uninoculated high-iron medium-only control (containing 20 g/L glucose + 0.75 g/L disodium EDTA) and far lower deferrization than the 100 mM oxalic + citric acid chemical comparator (32.21% max iron removal, Table 4).
     protein_grounding_status: NOT_APPLICABLE
   edges:
   - source: glucose_edta_broth_substrate
     target: bt_organic_acid_catabolic_enzymes
     predicate: supplies_substrate_for
-    relationship: 1 g/L glucose supports heterotrophic glycolytic and TCA catabolism
-    description: Supplied 1 g/L glucose serves as the carbon and energy source for Bacillus thuringiensis organic-acid metabolism.
+    relationship: 20 g/L glucose supports heterotrophic glycolytic and TCA catabolism
+    description: 20 g/L glucose in the mineral medium supplies carbon flux to Bacillus thuringiensis EB63 organic-acid metabolism.
     evidence:
     - source_ref: sanchez_palencia_2022
       supports: partial
-      explanation: Sanchez-Palencia et al. (2022) supplied 1 g/L glucose in mineral broth for Bacillus thuringiensis growth and acidification to pH 4.9-5.7.
+      explanation: Section 2.3 and Section 3.3 of Sanchez-Palencia et al. (2022) supplied 20 g/L glucose in the bioleaching medium and recorded acidification to ~pH 4.5 over 14 days.
   - source: glucose_edta_broth_substrate
     target: bt_fatty_acid_synthase_fabh
     predicate: supplies_substrate_for
-    relationship: glucose-derived acetyl-CoA/malonyl-ACP feeds fatty-acid biosynthesis
-    description: Heterotrophic growth on glucose supplies precursors for fatty acid synthesis initiated by FabH.
+    relationship: 20 g/L glucose supplies acetyl-CoA/malonyl-ACP precursors for fatty-acid synthesis
+    description: Heterotrophic growth on 20 g/L glucose supplies precursors for fatty acid synthesis initiated by FabH.
     evidence:
     - source_ref: sanchez_palencia_2022
       supports: partial
-      explanation: GC-MS analysis of ethyl-acetate broth extracts in Sanchez-Palencia et al. (2022) detected lauric acid (dodecanoic acid) after growth in glucose mineral medium.
+      explanation: Section 3.4 of Sanchez-Palencia et al. (2022) reports GC-MS detection of lauric acid after derivatization of the glucose-grown bioleaching broth.
   - source: bt_organic_acid_catabolic_enzymes
     target: acidified_broth_and_metabolite_edta_matrix
     predicate: produces
-    relationship: heterotrophic acid production lowering broth pH to 4.9-5.7
-    description: Glucose catabolism by Bacillus thuringiensis acidifies the EDTA-containing mineral broth to pH 4.9-5.7.
+    relationship: heterotrophic acid production lowering broth pH from 7.5 (plotted ~6.8) to ~pH 4.5
+    description: Catabolism of 20 g/L glucose by Bacillus thuringiensis EB63 acidifies the EDTA-containing medium to ~pH 4.5.
     evidence:
     - source_ref: sanchez_palencia_2022
       supports: partial
-      explanation: Sanchez-Palencia et al. (2022) measured culture pH between 4.9 and 5.7 across the 15-day bioleaching treatments.
+      explanation: Section 3.3 and Figures 6-7 of Sanchez-Palencia et al. (2022) document broth acidification to ~pH 4.5 over the 14-day bioleaching experiment.
   - source: bt_fatty_acid_synthase_fabh
     target: acidified_broth_and_metabolite_edta_matrix
     predicate: produces
-    relationship: biosynthesis of fatty acids including GC-MS-detected lauric acid
-    description: Fatty-acid biosynthesis produces medium-chain fatty acids including lauric acid detected in ethyl-acetate broth extracts.
+    relationship: biosynthesis of fatty acids including derivatized GC-MS-detected lauric acid
+    description: Fatty-acid synthesis produces lauric acid detected by GC-MS after derivatization.
     evidence:
     - source_ref: sanchez_palencia_2022
       supports: partial
-      explanation: Sanchez-Palencia et al. (2022) and sanchez_palencia_2022_esm identified lauric acid by GC-MS in organic extracts of the spent culture medium.
+      explanation: Section 3.4 of Sanchez-Palencia et al. (2022) identifies lauric acid by GC-MS after derivatization of the bioleaching medium.
   - source: acidified_broth_and_metabolite_edta_matrix
     target: pouto_kaolin_mine_waste_iron_impurities
     predicate: solubilizes
-    relationship: combined EDTA complexation and mild biotic acidification acting on iron impurities
-    description: The pH 4.9-5.7 Bacillus thuringiensis + 0.5 g/L EDTA broth partially leaches iron impurities from Pouto kaolin waste.
+    relationship: combined 0.75 g/L disodium EDTA complexation and biotic acidification (~pH 4.5) acting on kaolin waste iron impurities
+    description: The acidified (~pH 4.5) Bacillus thuringiensis EB63 + 0.75 g/L disodium EDTA medium mobilizes a trace fraction (<1%) of iron from Poveda de la Sierra kaolin waste.
     evidence:
     - source_ref: sanchez_palencia_2022
       supports: partial
-      explanation: Table 2 and Results of Sanchez-Palencia et al. (2022) show up to 20% solid Fe2O3 reduction in the two-stage Bacillus + EDTA assay, though no cell-free EDTA control was included to separate EDTA complexation from microbial metabolites.
+      explanation: Table 4 and Figure 9 of Sanchez-Palencia et al. (2022) show up to 0.83% (<1%) iron elimination in biotic flasks alongside substantial iron release in the uninoculated glucose + EDTA medium control.
   - source: pouto_kaolin_mine_waste_iron_impurities
     target: partial_iron_impurity_mobilization
     predicate: produces
-    relationship: partial deferrization (0.87 to 0.70 wt% Fe2O3) and 6.13 mg/L dissolved Fe in leachate
-    description: Two-stage treatment reduces solid Fe2O3 from 0.87 to 0.70 wt% (20% solid removal) and yields up to 6.13 mg/L dissolved Fe in ICP-MS leachate analyses.
+    relationship: release of up to 14.9 mg/L total Fe (high-iron D2 day 7) corresponding to 0.83% (<1%) max iron elimination
+    description: Bioweathering at 50 g/L solid loading yields at most 0.83% (<1%) iron elimination (peaking at 14.9 mg/L total Fe by AAS on day 7 in high-iron D2; Table 4 and Figure 9 caption).
     evidence:
     - source_ref: sanchez_palencia_2022
       supports: support
-      explanation: Table 2 and sanchez_palencia_2022_esm report solid Fe2O3 declining from 0.87 wt% to 0.70 wt% (20% removal) in the two-stage Bacillus + EDTA assay and 6.13 mg/L dissolved Fe by ICP-MS, with an unclosed solid-to-solution Fe mass balance.
+      explanation: Table 4, Figure 9, and sanchez_palencia_2022_esm report 0.83% maximum iron elimination (<1%) and 14.9 mg/L peak total Fe by AAS in high-iron D2 on day 7, compared with 32.21% max iron removal using 100 mM oxalic + citric acids.
 curation_history:
 - timestamp: '2026-10-11T19:12:40Z'
   curator: codex (GPT-6)
@@ -419,7 +419,12 @@ curation_history:
   curator: marcin
   action: edit
   summary: Add bacillus_kaolin_waste_iron_impurity_leaching_graph causal graph and ground bacillus_iron_impurity_leaching to Bacillus thuringiensis reference-proteome enzymes (UniProtKB:A0A0K0QI82, UniProtKB:A0A0K0QJ28, UniProtKB:A0A0G3E229)
+- timestamp: '2026-11-11T12:40:05Z'
+  curator: marcin
+  action: edit
+  summary: 'Align bacillus_kaolin_waste_iron_impurity_leaching_graph and protein_examples in kaolin-mine-waste.yaml with Sanchez-Palencia et al. (2022) parameters (fixes #1000)'
 history_refs:
 - history/records/kaolin-mine-waste/2026-10-11T191240Z-codex-59f11b.yaml
 - history/records/kaolin-mine-waste/2026-10-11T191741Z-codex-330403.yaml
 - history/records/kaolin-mine-waste/2026-11-10T224938Z-marcin-515733.yaml
+- history/records/kaolin-mine-waste/2026-11-11T124005Z-marcin-2f9dc4.yaml

@@ -72,15 +72,15 @@ mechanisms:
       label: hydrogenase (acceptor) activity
     - id: GO:0016151
       label: nickel cation binding
-    functional_role: Membrane-bound uptake [NiFe]-hydrogenase large catalytic subunit HoxG (EC 1.12.99.6; locus Rmet_1297) oxidizing molecular H2 to provide electrons for periplasmic/cell-envelope Pt(II) reduction to metallic Pt(0).
-    annotation_note: 'Grounded to exact experimental strain reference proteome UP000002429 for Cupriavidus metallidurans CH34 (NCBITaxon:266264; UniProtKB organism string: Cupriavidus metallidurans (strain ATCC 43123 / DSM 2839 / NBRC 102507 / CH34); hoxG / Rmet_1297, UniProtKB:Q1LNU4) in Maes et al. (2017). Note: UniProtKB TrEMBL includes automated InterPro2GO projection GO:0008901 (ferredoxin hydrogenase activity) from the [NiFe]-hydrogenase large-subunit family domain InterPro:IPR001501 alongside EC:1.12.99.6 and GO:0033748 (hydrogenase (acceptor) activity).'
+    functional_role: Membrane-bound uptake [NiFe]-hydrogenase large catalytic subunit HoxG (EC 1.12.99.6; locus Rmet_1297) oxidizing molecular H2 in Cupriavidus metallidurans CH34.
+    annotation_note: 'Grounded to exact experimental strain reference proteome UP000002429 for Cupriavidus metallidurans CH34 (NCBITaxon:266264; hoxG / Rmet_1297, UniProtKB:Q1LNU4) in Maes et al. (2017). Note: UniProtKB TrEMBL includes automated InterPro2GO projection GO:0008901 (ferredoxin hydrogenase activity) from InterPro:IPR001501 alongside EC:1.12.99.6 and GO:0033748 (hydrogenase (acceptor) activity).'
     evidence:
     - source_ref: maes_2017
       supports: partial
-      explanation: Maes et al. (2017) demonstrated that Cupriavidus metallidurans CH34 requires both living cells and an H2 headspace to reduce 50 mg Pt/L (from K2PtCl4) to cell-envelope metallic Pt(0) nanoparticles (>99% removal in 48 h, vs ~20% biosorption without reduction under N2 and no reduction in cell-free H2 buffer); individual hydrogenase knockout mutants were not tested in that study.
+      explanation: Maes et al. (2017) Table 1 exposed phosphate-buffer-washed Cupriavidus metallidurans CH34 suspensions (OD610 of 1) to 100 mg/L Pt (as K2PtCl4 from a 2.5 g/L Pt stock in 1 M HCl) at initial assay pH 1.8-2.2, 28 C, and 100 rpm under 100% H2 headspace, reporting 99% Pt removal at 48 h with CH34 + H2 versus 24% without electron donor, while the abiotic chemical H2 control (and heat-killed Shewanella + H2) also reached 99% Pt removal and intact CH34 cells declined to the detection limit by 27 h (Figure 5), so a specific hydrogenase requirement is not established.
     - source_ref: uniprot_cupriavidus_metallidurans_ch34_hydrogenases
       supports: partial
-      explanation: UniProtKB:Q1LNU4 (Q1LNU4_CUPMC, hoxG / Rmet_1297) in Cupriavidus metallidurans CH34 reference proteome UP000002429 (NCBITaxon:266264) encodes Uptake hydrogenase large subunit (EC:1.12.99.6; GO:0033748 hydrogenase (acceptor) activity; GO:0016151 nickel cation binding).
+      explanation: UniProtKB:Q1LNU4 (Q1LNU4_CUPMC, hoxG / Rmet_1297) in Cupriavidus metallidurans CH34 reference proteome UP000002429 (NCBITaxon:266264) encodes Uptake hydrogenase large subunit (EC:1.12.99.6; GO:0033748; GO:0016151).
   - uniprot_accession: UniProtKB:Q1LNU3
     entry_name: Q1LNU3_CUPMC
     protein_name: Hydrogenase-1 small chain
@@ -123,15 +123,15 @@ mechanisms:
       label: iron-sulfur cluster binding
     - id: GO:0009061
       label: anaerobic respiration
-    functional_role: Membrane-bound uptake [NiFe]-hydrogenase small Fe-S electron-transfer subunit HoxK (EC 1.12.99.6; locus Rmet_1298) transferring H2-derived electrons from the HoxG catalytic site across the periplasmic membrane complex.
-    annotation_note: 'Grounded to exact experimental strain reference proteome UP000002429 for Cupriavidus metallidurans CH34 (NCBITaxon:266264; hoxK / Rmet_1298, UniProtKB:Q1LNU3) in Maes et al. (2017). Note: UniProtKB TrEMBL includes automated InterPro2GO projections GO:0008901 and GO:0009375 from shared [NiFe]-hydrogenase small-subunit domains alongside EC:1.12.99.6, GO:0044569 ([Ni-Fe] hydrogenase complex), and GO:0033748.'
+    functional_role: Membrane-bound uptake [NiFe]-hydrogenase small Fe-S electron-transfer subunit HoxK (EC 1.12.99.6; locus Rmet_1298) in Cupriavidus metallidurans CH34.
+    annotation_note: 'Grounded to exact experimental strain reference proteome UP000002429 for Cupriavidus metallidurans CH34 (NCBITaxon:266264; hoxK / Rmet_1298, UniProtKB:Q1LNU3) in Maes et al. (2017). Note: UniProtKB TrEMBL includes automated InterPro2GO projections GO:0008901 and GO:0009375 from shared [NiFe]-hydrogenase small-subunit domains alongside EC:1.12.99.6, GO:0044569, and GO:0033748.'
     evidence:
     - source_ref: maes_2017
       supports: partial
-      explanation: Maes et al. (2017) localized metallic Pt(0) nanoparticle nucleation to the periplasm and cell envelope of H2-incubated Cupriavidus metallidurans CH34 cells; HoxK is the Twin-Arginine-Translocation (Tat)-exported periplasmic small subunit of the CH34 membrane-bound uptake [NiFe]-hydrogenase.
+      explanation: Maes et al. (2017) observed Pt(0) nanoparticles on and within Cupriavidus metallidurans CH34 cells exposed to 100 mg/L Pt (K2PtCl4) at initial pH 1.8-2.2 under 100% H2 (99% Pt removal at 48 h in both CH34 + H2 and the abiotic H2 control, n=1 screening in Table 1); HoxK was not genetically perturbed.
     - source_ref: uniprot_cupriavidus_metallidurans_ch34_hydrogenases
       supports: partial
-      explanation: UniProtKB:Q1LNU3 (Q1LNU3_CUPMC, hoxK / Rmet_1298) in Cupriavidus metallidurans CH34 reference proteome UP000002429 (NCBITaxon:266264) encodes Hydrogenase-1 small chain (EC:1.12.99.6; GO:0044569 [Ni-Fe] hydrogenase complex; GO:0051536 iron-sulfur cluster binding).
+      explanation: UniProtKB:Q1LNU3 (Q1LNU3_CUPMC, hoxK / Rmet_1298) in Cupriavidus metallidurans CH34 reference proteome UP000002429 (NCBITaxon:266264) encodes Hydrogenase-1 small chain (EC:1.12.99.6; GO:0044569; GO:0051536).
   - uniprot_accession: UniProtKB:Q1LN68
     entry_name: Q1LN68_CUPMC
     protein_name: NAD-reducing hydrogenase hoxS subunit beta
@@ -157,15 +157,15 @@ mechanisms:
       label: hydrogen dehydrogenase activity
     - id: GO:0016151
       label: nickel cation binding
-    functional_role: Soluble NAD-reducing [NiFe]-hydrogenase catalytic beta subunit HoxH (EC 1.12.1.2; locus Rmet_1525) coupling H2 oxidation to intracellular NAD+ reduction in Cupriavidus metallidurans CH34.
+    functional_role: Soluble NAD-reducing [NiFe]-hydrogenase catalytic beta subunit HoxH (EC 1.12.1.2; locus Rmet_1525) in Cupriavidus metallidurans CH34.
     annotation_note: 'Grounded to exact experimental strain reference proteome UP000002429 for Cupriavidus metallidurans CH34 (NCBITaxon:266264; hoxH / Rmet_1525, UniProtKB:Q1LN68) in Maes et al. (2017). Note: UniProtKB TrEMBL includes automated InterPro2GO projection GO:0008901 from InterPro:IPR001501 alongside specific EC:1.12.1.2 and GO:0047985 (hydrogen dehydrogenase activity).'
     evidence:
     - source_ref: maes_2017
       supports: partial
-      explanation: Maes et al. (2017) showed strictly H2-dependent bioreduction of Pt(II) to Pt(0) by Cupriavidus metallidurans CH34 after initial H2-independent Pt(II) biosorption; CH34 encodes both membrane-bound (hoxKGZ) and soluble NAD+-reducing (hoxFUYH) [NiFe]-hydrogenases.
+      explanation: Maes et al. (2017) Table 1 compared CH34 + H2 (99% removal of 100 mg/L Pt at 48 h), CH34 without electron donor (24% removal), and the abiotic H2 control (99% removal) at initial pH 1.8-2.2 and 28 C; because abiotic H2 also achieved 99% removal and intact cells fell to the detection limit by 27 h, enzymatic HoxH participation is unconfirmed.
     - source_ref: uniprot_cupriavidus_metallidurans_ch34_hydrogenases
       supports: partial
-      explanation: UniProtKB:Q1LN68 (Q1LN68_CUPMC, hoxH / Rmet_1525) in Cupriavidus metallidurans CH34 reference proteome UP000002429 (NCBITaxon:266264) encodes NAD-reducing hydrogenase hoxS subunit beta (EC:1.12.1.2; GO:0047985 hydrogen dehydrogenase activity; GO:0016151 nickel cation binding).
+      explanation: UniProtKB:Q1LN68 (Q1LN68_CUPMC, hoxH / Rmet_1525) in Cupriavidus metallidurans CH34 reference proteome UP000002429 (NCBITaxon:266264) encodes NAD-reducing hydrogenase hoxS subunit beta (EC:1.12.1.2; GO:0047985; GO:0016151).
   evidence:
   - source_ref: maes_2017
     supports: support
@@ -181,21 +181,21 @@ mechanisms:
     explanation: 'Spectroscopy reporting has unresolved internal inconsistencies: Methods specifies the Pt L3 edge and a 11919 eV calibration value, while Figure 1 is plotted near 11560-11630 eV and Results calls the edge K-edge. This record retains the authors'' qualitative XANES/EXAFS interpretation without adopting those conflicting absolute energy assignments or claiming independent spectral refitting. The source also distinguishes solution removal from reduced Pt in biomass.'
 causal_graphs:
 - id: ch34_hydrogen_driven_ptii_reduction_graph
-  name: Cupriavidus metallidurans CH34 [NiFe]-hydrogenase-coupled H2 oxidation and periplasmic reduction of Pt(II) to metallic Pt(0) nanoparticles
-  description: Causal pathway linking Cupriavidus metallidurans CH34 membrane-bound uptake [NiFe]-hydrogenase subunits HoxG (UniProtKB:Q1LNU4) and HoxK (UniProtKB:Q1LNU3) and soluble NAD+-reducing [NiFe]-hydrogenase catalytic subunit HoxH (UniProtKB:Q1LN68) to H2-dependent reduction of biosorbed Pt(II) (supplied at 50 mg Pt/L as K2PtCl4 in anoxic Tris-HCl buffer, pH 7.0, 30 C) into cell-envelope-associated metallic Pt(0) nanoparticles (>99% dissolved Pt removal within 48 h under H2 vs ~20% H2-independent biosorption under N2) in Maes et al. (2017).
+  name: Cupriavidus metallidurans CH34 candidate [NiFe]-hydrogenases and H2-dependent Pt(II) reduction to cell-associated Pt(0) under acidic K2PtCl4 assay conditions
+  description: Causal pathway linking candidate Cupriavidus metallidurans CH34 membrane-bound uptake [NiFe]-hydrogenase subunits HoxG (UniProtKB:Q1LNU4) and HoxK (UniProtKB:Q1LNU3) and soluble NAD+-reducing [NiFe]-hydrogenase subunit HoxH (UniProtKB:Q1LN68) to H2-dependent reduction of 100 mg/L Pt supplied as K2PtCl4 (from a 2.5 g/L Pt stock in 1 M HCl) in phosphate-buffer-washed CH34 cell suspensions (OD610 of 1, initial assay pH 1.8-2.2, 28 C, 100 rpm, 100% H2 headspace), yielding 99% Pt removal by ICP-OES at 48 h with CH34 + H2 vs 24% in the no-electron-donor CH34 arm, while preserving the critical caveats that the abiotic chemical H2 control (and heat-killed Shewanella + H2) also reached 99% Pt removal (Table 1, n=1 screening), intact CH34 cells fell to the detection limit by 27 h (Figure 5), and XAS energy reporting contains an internal discrepancy (Methods states Pt L3-edge at 11919 eV while Figure 1 plots ~11560-11630 eV and Results calls it K-edge) in Maes et al. (2017).
   scope: RECORD_SPECIFIC_MECHANISM
   mechanism_ref: ch34_hydrogen_ptii_transformation
   nodes:
   - id: anoxic_h2_headspace_and_k2ptcl4_assay_suspension
-    label: Anoxic K2PtCl4 solution (50 mg Pt/L, ~256 uM Pt(II)) in pH 7.0 Tris-HCl under 100% H2 headspace with CH34 cells (6 g DW/L)
+    label: Acidic K2PtCl4 assay suspension (100 mg/L Pt from 1 M HCl stock, initial pH 1.8-2.2) in phosphate buffer (8.5 g/L Na2HPO4.7H2O, 3 g/L KH2PO4) with CH34 cells (OD610 = 1) under 100% H2 at 28 C and 100 rpm
     node_type: CHEMICAL_ENTITY
-    description: Anoxic Tris-HCl buffer (pH 7.0, 30 C) containing 50 mg Pt/L as tetrachloroplatinate(II) (K2PtCl4) and resting Cupriavidus metallidurans CH34 biomass (6 g dry weight/L) under 100% H2 headspace.
+    description: 50 mL suspension in 120 mL serum bottles containing LB-Lennox-grown Cupriavidus metallidurans CH34 washed twice with 25 mL phosphate buffer (8.5 g/L Na2HPO4.7H2O and 3 g/L KH2PO4) and resuspended to OD610 of 1 with 100 mg/L Pt (as K2PtCl4 from a 2.5 g/L Pt stock in 1 M HCl; initial assay pH 1.8-2.2) under 100% H2 headspace (after 20 N2/vacuum Conditioning cycles) at 28 C and 100 rpm.
     protein_grounding_status: NOT_APPLICABLE
   - id: ch34_membrane_bound_uptake_hydrogenase_hoxkg
-    label: Cupriavidus metallidurans CH34 membrane-bound uptake [NiFe]-hydrogenase (hoxG / Rmet_1297, hoxK / Rmet_1298)
+    label: Candidate Cupriavidus metallidurans CH34 membrane-bound uptake [NiFe]-hydrogenase (hoxG / Rmet_1297, hoxK / Rmet_1298)
     node_type: GENE_OR_PROTEIN
     gene_symbol: hoxG/hoxK
-    description: Periplasmic/membrane-bound uptake [NiFe]-hydrogenase large subunit HoxG (Rmet_1297, UniProtKB:Q1LNU4; EC 1.12.99.6) and small Fe-S subunit HoxK (Rmet_1298, UniProtKB:Q1LNU3) in Cupriavidus metallidurans CH34 reference proteome UP000002429.
+    description: Candidate periplasmic/membrane-bound uptake [NiFe]-hydrogenase large subunit HoxG (Rmet_1297, UniProtKB:Q1LNU4; EC 1.12.99.6) and small Fe-S subunit HoxK (Rmet_1298, UniProtKB:Q1LNU3) in Cupriavidus metallidurans CH34 reference proteome UP000002429.
     protein_grounding_status: GROUNDED
     protein_examples:
     - uniprot_accession: UniProtKB:Q1LNU4
@@ -226,15 +226,15 @@ causal_graphs:
         label: hydrogenase (acceptor) activity
       - id: GO:0016151
         label: nickel cation binding
-      functional_role: Membrane-bound uptake [NiFe]-hydrogenase large catalytic subunit HoxG (EC 1.12.99.6; locus Rmet_1297) oxidizing molecular H2 to provide electrons for periplasmic/cell-envelope Pt(II) reduction to metallic Pt(0).
-      annotation_note: 'Grounded to exact experimental strain reference proteome UP000002429 for Cupriavidus metallidurans CH34 (NCBITaxon:266264; UniProtKB organism string: Cupriavidus metallidurans (strain ATCC 43123 / DSM 2839 / NBRC 102507 / CH34); hoxG / Rmet_1297, UniProtKB:Q1LNU4) in Maes et al. (2017). Note: UniProtKB TrEMBL includes automated InterPro2GO projection GO:0008901 (ferredoxin hydrogenase activity) from the [NiFe]-hydrogenase large-subunit family domain InterPro:IPR001501 alongside EC:1.12.99.6 and GO:0033748 (hydrogenase (acceptor) activity).'
+      functional_role: Membrane-bound uptake [NiFe]-hydrogenase large catalytic subunit HoxG (EC 1.12.99.6; locus Rmet_1297) oxidizing molecular H2 in Cupriavidus metallidurans CH34.
+      annotation_note: 'Grounded to exact experimental strain reference proteome UP000002429 for Cupriavidus metallidurans CH34 (NCBITaxon:266264; hoxG / Rmet_1297, UniProtKB:Q1LNU4) in Maes et al. (2017). Note: UniProtKB TrEMBL includes automated InterPro2GO projection GO:0008901 (ferredoxin hydrogenase activity) from InterPro:IPR001501 alongside EC:1.12.99.6 and GO:0033748 (hydrogenase (acceptor) activity).'
       evidence:
       - source_ref: maes_2017
         supports: partial
-        explanation: Maes et al. (2017) demonstrated that Cupriavidus metallidurans CH34 requires both living cells and an H2 headspace to reduce 50 mg Pt/L (from K2PtCl4) to cell-envelope metallic Pt(0) nanoparticles (>99% removal in 48 h, vs ~20% biosorption without reduction under N2 and no reduction in cell-free H2 buffer); individual hydrogenase knockout mutants were not tested in that study.
+        explanation: Maes et al. (2017) Table 1 exposed phosphate-buffer-washed Cupriavidus metallidurans CH34 suspensions (OD610 of 1) to 100 mg/L Pt (as K2PtCl4 from a 2.5 g/L Pt stock in 1 M HCl) at initial assay pH 1.8-2.2, 28 C, and 100 rpm under 100% H2 headspace, reporting 99% Pt removal at 48 h with CH34 + H2 versus 24% without electron donor, while the abiotic chemical H2 control (and heat-killed Shewanella + H2) also reached 99% Pt removal and intact CH34 cells declined to the detection limit by 27 h (Figure 5), so a specific hydrogenase requirement is not established.
       - source_ref: uniprot_cupriavidus_metallidurans_ch34_hydrogenases
         supports: partial
-        explanation: UniProtKB:Q1LNU4 (Q1LNU4_CUPMC, hoxG / Rmet_1297) in Cupriavidus metallidurans CH34 reference proteome UP000002429 (NCBITaxon:266264) encodes Uptake hydrogenase large subunit (EC:1.12.99.6; GO:0033748 hydrogenase (acceptor) activity; GO:0016151 nickel cation binding).
+        explanation: UniProtKB:Q1LNU4 (Q1LNU4_CUPMC, hoxG / Rmet_1297) in Cupriavidus metallidurans CH34 reference proteome UP000002429 (NCBITaxon:266264) encodes Uptake hydrogenase large subunit (EC:1.12.99.6; GO:0033748; GO:0016151).
     - uniprot_accession: UniProtKB:Q1LNU3
       entry_name: Q1LNU3_CUPMC
       protein_name: Hydrogenase-1 small chain
@@ -277,20 +277,20 @@ causal_graphs:
         label: iron-sulfur cluster binding
       - id: GO:0009061
         label: anaerobic respiration
-      functional_role: Membrane-bound uptake [NiFe]-hydrogenase small Fe-S electron-transfer subunit HoxK (EC 1.12.99.6; locus Rmet_1298) transferring H2-derived electrons from the HoxG catalytic site across the periplasmic membrane complex.
-      annotation_note: 'Grounded to exact experimental strain reference proteome UP000002429 for Cupriavidus metallidurans CH34 (NCBITaxon:266264; hoxK / Rmet_1298, UniProtKB:Q1LNU3) in Maes et al. (2017). Note: UniProtKB TrEMBL includes automated InterPro2GO projections GO:0008901 and GO:0009375 from shared [NiFe]-hydrogenase small-subunit domains alongside EC:1.12.99.6, GO:0044569 ([Ni-Fe] hydrogenase complex), and GO:0033748.'
+      functional_role: Membrane-bound uptake [NiFe]-hydrogenase small Fe-S electron-transfer subunit HoxK (EC 1.12.99.6; locus Rmet_1298) in Cupriavidus metallidurans CH34.
+      annotation_note: 'Grounded to exact experimental strain reference proteome UP000002429 for Cupriavidus metallidurans CH34 (NCBITaxon:266264; hoxK / Rmet_1298, UniProtKB:Q1LNU3) in Maes et al. (2017). Note: UniProtKB TrEMBL includes automated InterPro2GO projections GO:0008901 and GO:0009375 from shared [NiFe]-hydrogenase small-subunit domains alongside EC:1.12.99.6, GO:0044569, and GO:0033748.'
       evidence:
       - source_ref: maes_2017
         supports: partial
-        explanation: Maes et al. (2017) localized metallic Pt(0) nanoparticle nucleation to the periplasm and cell envelope of H2-incubated Cupriavidus metallidurans CH34 cells; HoxK is the Twin-Arginine-Translocation (Tat)-exported periplasmic small subunit of the CH34 membrane-bound uptake [NiFe]-hydrogenase.
+        explanation: Maes et al. (2017) observed Pt(0) nanoparticles on and within Cupriavidus metallidurans CH34 cells exposed to 100 mg/L Pt (K2PtCl4) at initial pH 1.8-2.2 under 100% H2 (99% Pt removal at 48 h in both CH34 + H2 and the abiotic H2 control, n=1 screening in Table 1); HoxK was not genetically perturbed.
       - source_ref: uniprot_cupriavidus_metallidurans_ch34_hydrogenases
         supports: partial
-        explanation: UniProtKB:Q1LNU3 (Q1LNU3_CUPMC, hoxK / Rmet_1298) in Cupriavidus metallidurans CH34 reference proteome UP000002429 (NCBITaxon:266264) encodes Hydrogenase-1 small chain (EC:1.12.99.6; GO:0044569 [Ni-Fe] hydrogenase complex; GO:0051536 iron-sulfur cluster binding).
+        explanation: UniProtKB:Q1LNU3 (Q1LNU3_CUPMC, hoxK / Rmet_1298) in Cupriavidus metallidurans CH34 reference proteome UP000002429 (NCBITaxon:266264) encodes Hydrogenase-1 small chain (EC:1.12.99.6; GO:0044569; GO:0051536).
   - id: ch34_soluble_nad_reducing_hydrogenase_hoxh
-    label: Cupriavidus metallidurans CH34 soluble NAD+-reducing [NiFe]-hydrogenase beta subunit (hoxH / Rmet_1525)
+    label: Candidate Cupriavidus metallidurans CH34 soluble NAD+-reducing [NiFe]-hydrogenase beta subunit (hoxH / Rmet_1525)
     node_type: GENE_OR_PROTEIN
     gene_symbol: hoxH
-    description: Cytoplasmic NAD+-reducing [NiFe]-hydrogenase catalytic beta subunit HoxH (Rmet_1525, UniProtKB:Q1LN68; EC 1.12.1.2) in Cupriavidus metallidurans CH34 reference proteome UP000002429.
+    description: Candidate cytoplasmic NAD+-reducing [NiFe]-hydrogenase catalytic beta subunit HoxH (Rmet_1525, UniProtKB:Q1LN68; EC 1.12.1.2) in Cupriavidus metallidurans CH34 reference proteome UP000002429.
     protein_grounding_status: GROUNDED
     protein_examples:
     - uniprot_accession: UniProtKB:Q1LN68
@@ -318,71 +318,71 @@ causal_graphs:
         label: hydrogen dehydrogenase activity
       - id: GO:0016151
         label: nickel cation binding
-      functional_role: Soluble NAD-reducing [NiFe]-hydrogenase catalytic beta subunit HoxH (EC 1.12.1.2; locus Rmet_1525) coupling H2 oxidation to intracellular NAD+ reduction in Cupriavidus metallidurans CH34.
+      functional_role: Soluble NAD-reducing [NiFe]-hydrogenase catalytic beta subunit HoxH (EC 1.12.1.2; locus Rmet_1525) in Cupriavidus metallidurans CH34.
       annotation_note: 'Grounded to exact experimental strain reference proteome UP000002429 for Cupriavidus metallidurans CH34 (NCBITaxon:266264; hoxH / Rmet_1525, UniProtKB:Q1LN68) in Maes et al. (2017). Note: UniProtKB TrEMBL includes automated InterPro2GO projection GO:0008901 from InterPro:IPR001501 alongside specific EC:1.12.1.2 and GO:0047985 (hydrogen dehydrogenase activity).'
       evidence:
       - source_ref: maes_2017
         supports: partial
-        explanation: Maes et al. (2017) showed strictly H2-dependent bioreduction of Pt(II) to Pt(0) by Cupriavidus metallidurans CH34 after initial H2-independent Pt(II) biosorption; CH34 encodes both membrane-bound (hoxKGZ) and soluble NAD+-reducing (hoxFUYH) [NiFe]-hydrogenases.
+        explanation: Maes et al. (2017) Table 1 compared CH34 + H2 (99% removal of 100 mg/L Pt at 48 h), CH34 without electron donor (24% removal), and the abiotic H2 control (99% removal) at initial pH 1.8-2.2 and 28 C; because abiotic H2 also achieved 99% removal and intact cells fell to the detection limit by 27 h, enzymatic HoxH participation is unconfirmed.
       - source_ref: uniprot_cupriavidus_metallidurans_ch34_hydrogenases
         supports: partial
-        explanation: UniProtKB:Q1LN68 (Q1LN68_CUPMC, hoxH / Rmet_1525) in Cupriavidus metallidurans CH34 reference proteome UP000002429 (NCBITaxon:266264) encodes NAD-reducing hydrogenase hoxS subunit beta (EC:1.12.1.2; GO:0047985 hydrogen dehydrogenase activity; GO:0016151 nickel cation binding).
+        explanation: UniProtKB:Q1LN68 (Q1LN68_CUPMC, hoxH / Rmet_1525) in Cupriavidus metallidurans CH34 reference proteome UP000002429 (NCBITaxon:266264) encodes NAD-reducing hydrogenase hoxS subunit beta (EC:1.12.1.2; GO:0047985; GO:0016151).
   - id: biosorbed_ptii_and_h2_dependent_electron_transfer
-    label: Initial H2-independent Pt(II) biosorption (~20% in 2 h) followed by H2-dependent biological/autocatalytic Pt(II) reduction
+    label: No-donor Pt(II) sorption (24% removal at 48 h) and H2-driven biological/abiotic/autocatalytic Pt(II) reduction (as intact cells decline to detection limit by 27 h)
     node_type: BIOLOGICAL_PROCESS
-    description: Two-stage interaction in which ~20% of dissolved Pt(II) rapidly sorbs onto cell envelopes independent of H2 (matching N2 controls), followed by H2-dependent reduction of Pt(II) to Pt(0) nucleated in the cell envelope and accelerated by autocatalytic H2 activation on nascent Pt(0).
+    description: Pt(II) removal increases from 24% without electron donor to 99% under 100% H2 at 48 h (Table 1), while intact CH34 cells decline to the flow-cytometry detection limit by 27 h under the pH 1.8-2.2 Pt(II) exposure (Figure 5) and the abiotic chemical H2 control (as well as heat-killed Shewanella + H2) also reaches 99% Pt removal, confounding enzymatic vs abiotic/autocatalytic H2 reduction.
     protein_grounding_status: NOT_APPLICABLE
   - id: cell_associated_metallic_pt0_nanoparticles
-    label: '>99% dissolved Pt removal (48 h) and cell-envelope/periplasmic metallic Pt(0) nanoparticles (XRD, XANES, TEM)'
+    label: 99% Pt removal from 100 mg/L Pt at 48 h under H2 (matching 99% in abiotic H2 control, n=1 screening) and cell-associated Pt(0) nanoparticles (TEM, XANES/EXAFS)
     node_type: MATERIAL_OR_PHASE
-    description: Near-quantitative (>99%) depletion of dissolved Pt from 50 mg Pt/L solution within 48 h under H2, yielding cell-envelope-localized metallic Pt(0) nanoparticles confirmed by synchrotron XANES, XRD, and TEM (whereas cell-free H2 buffer shows no Pt reduction).
+    description: 99% ICP-OES Pt removal from 100 mg/L Pt solution at 48 h in the CH34 + H2 arm (vs 24% without electron donor and 99% in the abiotic H2 control; Table 1, n=1 screening), producing cell-associated metallic Pt(0) nanoparticles characterized by TEM and synchrotron XANES/EXAFS (noting that Methods states Pt L3-edge at 11919 eV whereas Figure 1 plots ~11560-11630 eV and Results refers to K-edge).
     protein_grounding_status: NOT_APPLICABLE
   edges:
   - source: anoxic_h2_headspace_and_k2ptcl4_assay_suspension
     target: ch34_membrane_bound_uptake_hydrogenase_hoxkg
     predicate: supplies_substrate_for
-    relationship: dissolved H2 from the 100% H2 headspace serves as electron donor for HoxKG
-    description: Molecular H2 in the anoxic suspension supplies electrons to the membrane-bound uptake [NiFe]-hydrogenase HoxKG.
+    relationship: 100% H2 headspace supplies molecular H2 to candidate uptake hydrogenase HoxKG
+    description: Molecular H2 in the serum-bottle suspension is a candidate electron donor for membrane-bound uptake [NiFe]-hydrogenase HoxKG.
     evidence:
     - source_ref: maes_2017
       supports: partial
-      explanation: Maes et al. (2017) showed that Pt(II) reduction to Pt(0) required both CH34 cells and an H2 headspace (no reduction under N2 or in cell-free H2 controls); HoxKG is grounded from the CH34 reference proteome without single-gene knockout testing.
+      explanation: Maes et al. (2017) supplied a 100% H2 headspace to Cupriavidus metallidurans CH34 suspensions; HoxKG is grounded from the CH34 reference proteome, though abiotic H2 controls also achieved 99% Pt removal and hydrogenase mutants were not tested.
   - source: anoxic_h2_headspace_and_k2ptcl4_assay_suspension
     target: ch34_soluble_nad_reducing_hydrogenase_hoxh
     predicate: supplies_substrate_for
-    relationship: dissolved H2 serves as electron donor for soluble NAD+-reducing hydrogenase HoxH
-    description: Molecular H2 supplies reducing equivalents to the soluble [NiFe]-hydrogenase HoxH in Cupriavidus metallidurans CH34.
+    relationship: 100% H2 headspace supplies molecular H2 to candidate soluble hydrogenase HoxH
+    description: Molecular H2 is a candidate substrate for soluble NAD+-reducing [NiFe]-hydrogenase HoxH in Cupriavidus metallidurans CH34.
     evidence:
     - source_ref: maes_2017
       supports: partial
-      explanation: Maes et al. (2017) demonstrated strict H2 dependence of cellular Pt(II) reduction in CH34 without resolving the relative contributions of membrane-bound versus soluble hydrogenases.
+      explanation: Maes et al. (2017) tested CH34 under 100% H2 headspace without resolving enzymatic hydrogenase activity from abiotic/autocatalytic H2 reduction.
   - source: ch34_membrane_bound_uptake_hydrogenase_hoxkg
     target: biosorbed_ptii_and_h2_dependent_electron_transfer
     predicate: drives
-    relationship: H2 oxidation provides electrons for periplasmic nucleation of Pt(0) from biosorbed Pt(II)
-    description: Periplasmic H2 oxidation by HoxKG drives electron transfer to cell-envelope-sorbed Pt(II) complexes.
+    relationship: candidate H2 activation alongside direct abiotic/autocatalytic H2 reduction at pH 1.8-2.2
+    description: Candidate HoxKG H2 oxidation may contribute to initial Pt(II) reduction alongside abiotic and autocatalytic H2 reduction.
     evidence:
     - source_ref: maes_2017
       supports: partial
-      explanation: Maes et al. (2017) observed initial H2-independent biosorption of ~20% Pt(II) within 2 h (also seen under N2) followed by H2-specific reduction to periplasmic/cell-envelope Pt(0) nanoparticles.
+      explanation: Table 1 and Figure 5 of Maes et al. (2017) show 99% Pt removal in CH34 + H2 vs 24% without electron donor, but also 99% Pt removal in the abiotic H2 control and rapid loss of intact CH34 cells by 27 h at pH 1.8-2.2.
   - source: ch34_soluble_nad_reducing_hydrogenase_hoxh
     target: biosorbed_ptii_and_h2_dependent_electron_transfer
     predicate: drives
-    relationship: H2-driven cellular reducing power supports Pt(II) bioreduction
-    description: H2 oxidation by HoxH contributes cellular reducing equivalents during anoxic H2 incubation.
+    relationship: candidate H2-coupled cellular reducing power during initial Pt(II) exposure
+    description: Candidate HoxH activity may contribute cellular reducing equivalents prior to cell-integrity loss under acidic Pt(II) exposure.
     evidence:
     - source_ref: maes_2017
       supports: partial
-      explanation: Maes et al. (2017) established that cellular H2 activation initiates Pt(0) nanoparticle nucleation before autocatalytic surface growth.
+      explanation: Maes et al. (2017) did not isolate HoxH activity, and both heat-killed Shewanella + H2 and abiotic H2 controls reached 99% Pt removal in Table 1.
   - source: biosorbed_ptii_and_h2_dependent_electron_transfer
     target: cell_associated_metallic_pt0_nanoparticles
     predicate: produces
-    relationship: reduction of >99% of 50 mg/L Pt(II) to cell-associated metallic Pt(0) nanoparticles within 48 h
-    description: H2-driven reduction converts >99% of dissolved Pt(II) into cell-associated metallic Pt(0) nanoparticles over 48 h.
+    relationship: 99% removal of 100 mg/L Pt at 48 h under H2 and deposition of cell-associated metallic Pt(0) nanoparticles
+    description: H2-dependent reduction converts dissolved Pt(II) (100 mg/L Pt) into cell-associated metallic Pt(0) nanoparticles with 99% removal at 48 h (vs 24% without electron donor and 99% in the abiotic H2 control).
     evidence:
     - source_ref: maes_2017
       supports: support
-      explanation: Maes et al. (2017) demonstrated >99% removal of 50 mg Pt/L within 48 h under H2 and verified metallic Pt(0) nanoparticles in the cell envelope by Pt L3-edge XANES, XRD, and TEM.
+      explanation: Table 1, Figure 1, and TEM data in Maes et al. (2017) report 99% Pt removal from 100 mg/L Pt at 48 h with CH34 + H2 (and 99% in the abiotic H2 control, vs 24% in no-donor CH34) and confirm metallic Pt(0) nanoparticles on/in cells.
 curation_history:
 - timestamp: '2026-10-11T04:36:09Z'
   curator: Codex (GPT-6; Codex)
@@ -392,6 +392,11 @@ curation_history:
   curator: marcin
   action: edit
   summary: Add ch34_hydrogen_driven_ptii_reduction_graph causal graph and ground ch34_hydrogen_ptii_transformation to Cupriavidus metallidurans CH34 [NiFe]-hydrogenases (UniProtKB:Q1LNU4, UniProtKB:Q1LNU3, UniProtKB:Q1LN68)
+- timestamp: '2026-11-11T12:40:12Z'
+  curator: marcin
+  action: edit
+  summary: 'Align ch34_hydrogen_driven_ptii_reduction_graph and protein_examples in platinum.yaml with Maes et al. (2017) parameters and abiotic-control caveats (fixes #1000)'
 history_refs:
 - history/records/platinum/2026-10-11T043609Z-codex-1cf1ab.yaml
 - history/records/platinum/2026-11-10T225033Z-marcin-49e8b8.yaml
+- history/records/platinum/2026-11-11T124012Z-marcin-898d42.yaml

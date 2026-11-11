@@ -59,15 +59,15 @@ mechanisms:
       label: electron transport coupled proton transport
     - id: GO:0022904
       label: respiratory electron transport chain
-    functional_role: Terminal oxidase subunit I FoxA (locus Msed_0484) of the iron-oxidation respiratory complex catalyzing aerobic biooxidation of ferrous iron and mineral impurities in thermoacidophilic bioleaching.
-    annotation_note: 'Grounded to reference proteome UP000000242 for type strain Metallosphaera sedula DSM 5348 (NCBITaxon:399549; UniProtKB organism string: Metallosphaera sedula (strain ATCC 51363 / DSM 5348 / JCM 9185 / NBRC 15509 / TH2); foxA / Msed_0484, UniProtKB:A4YE09), matching the exact experimental strain Metallosphaera sedula DSM 5348 (annotated at species rank NCBITaxon:43687 on the mechanism) in Blazevic et al. (2019).'
+    functional_role: Terminal oxidase subunit I FoxA (locus Msed_0484) of the iron-oxidation respiratory complex catalyzing aerobic biooxidation in thermoacidophilic bioleaching.
+    annotation_note: Grounded to reference proteome UP000000242 for type strain Metallosphaera sedula DSM 5348 (NCBITaxon:399549; foxA / Msed_0484, UniProtKB:A4YE09), matching the exact experimental strain Metallosphaera sedula DSM 5348 (annotated at species rank NCBITaxon:43687 on the mechanism) in Blazevic et al. (2019).
     evidence:
     - source_ref: blazevic2019
       supports: partial
-      explanation: Blazevic et al. (2019) grew Metallosphaera sedula DSM 5348 at 65 C and initial pH 2.0 on 10 g/L impure Mittersill scheelite concentrate (containing 0.25% Fe, 0.05% Mn, and 0.1% S impurities), observing biooxidation-associated mobilization of Fe, Mn, and W into leachate; individual fox cluster subunits were not mutated or directly assayed in this study.
+      explanation: Blazevic et al. (2019) grew Metallosphaera sedula DSM 5348 aerobically at 73 C with CO2 supplementation in DSMZ 88 Sulfolobus medium initially adjusted to pH 2.0 with H2SO4 on 10 g/L impure scheelite concentrate (average particle size 1 mm) from the Serido Scheelite Province, Brazil (containing Fe- and Mn-oxide impurities, with Methods stating 19.0% Fe-oxide and Table 1 reporting 22.6 wt% Fe), observing elevated soluble W, Fe, and Mn signals by ICP-OES over 21 days (though the actual growth-supporting energy source is unconfirmed and individual fox cluster subunits were not directly assayed).
     - source_ref: uniprot_metallosphaera_sedula_biooxidation_slayer
       supports: partial
-      explanation: UniProtKB:A4YE09 (A4YE09_METS5, foxA / Msed_0484) in Metallosphaera sedula DSM 5348 reference proteome UP000000242 (NCBITaxon:399549) encodes Cytochrome c oxidase, subunit I (GO:0004129 cytochrome-c oxidase activity; GO:0015990 electron transport coupled proton transport).
+      explanation: UniProtKB:A4YE09 (A4YE09_METS5, foxA / Msed_0484) in Metallosphaera sedula DSM 5348 reference proteome UP000000242 (NCBITaxon:399549) encodes Cytochrome c oxidase, subunit I (GO:0004129; GO:0015990).
   - uniprot_accession: UniProtKB:A4YDJ8
     entry_name: A4YDJ8_METS5
     protein_name: Sulfocyanin
@@ -97,10 +97,10 @@ mechanisms:
     evidence:
     - source_ref: blazevic2019
       supports: partial
-      explanation: Blazevic et al. (2019) demonstrated that metabolically active Metallosphaera sedula DSM 5348 cultures at 65 C accelerate W, Fe, and Mn release from impure scheelite concentrate ~4.7-fold over abiotic controls and alter surface W/Fe/Mn redox states by STEM-EELS; individual electron-transfer proteins were not isolated.
+      explanation: Blazevic et al. (2019) showed that aerobic cultures of Metallosphaera sedula DSM 5348 at 73 C and initial pH 2.0 on 10 g/L Serido impure scheelite concentrate produced higher 0.44-um-filtered ICP-OES soluble W, Fe, and Mn signals than abiotic controls over 21 days (without extracting numerical mg/L values from Figure 3 due to its x-axis days-vs-hours and y-axis log10-vs-mg/L axis/caption inconsistencies) and altered surface redox states by STEM-EELS; individual electron-transfer proteins were not isolated.
     - source_ref: uniprot_metallosphaera_sedula_biooxidation_slayer
       supports: partial
-      explanation: UniProtKB:A4YDJ8 (A4YDJ8_METS5, Msed_0323) in Metallosphaera sedula DSM 5348 reference proteome UP000000242 (NCBITaxon:399549) encodes Sulfocyanin (GO:0005507 copper ion binding; Pfam:PF06525).
+      explanation: UniProtKB:A4YDJ8 (A4YDJ8_METS5, Msed_0323) in Metallosphaera sedula DSM 5348 reference proteome UP000000242 (NCBITaxon:399549) encodes Sulfocyanin (GO:0005507; Pfam:PF06525).
   - uniprot_accession: UniProtKB:A4YHQ8
     entry_name: SLAA_METS5
     protein_name: S-layer protein A
@@ -119,15 +119,15 @@ mechanisms:
     go_terms:
     - id: GO:0030115
       label: S-layer
-    functional_role: Major paracrystalline S-layer large glycoprotein SlaA (locus Msed_1806; 1360 aa) forming the outer cell-surface sheath that binds tungsten species and templates cell-surface tungsten/tungsten-carbide biomineralization.
+    functional_role: Major paracrystalline S-layer large glycoprotein SlaA (locus Msed_1806; 1360 aa) forming the outer cell-surface sheath that binds tungsten species and hosts cell-surface tungsten/tungsten-carbide-like deposits.
     annotation_note: Grounded to reviewed Swiss-Prot entry UniProtKB:A4YHQ8 (SLAA_METS5, slaA / Msed_1806) in reference proteome UP000000242 for Metallosphaera sedula DSM 5348 (NCBITaxon:399549), matching the experimental strain DSM 5348 (species NCBITaxon:43687) in Blazevic et al. (2019).
     evidence:
     - source_ref: blazevic2019
       supports: support
-      explanation: Blazevic et al. (2019) directly imaged and analyzed the crystalline S-layer of scheelite-grown Metallosphaera sedula DSM 5348 by HAADF-STEM, STEM-EDX, and EELS, demonstrating tungsten encrustation of the S-layer (~62 mg W/g dry biomass) and formation of tungsten carbide-like nanoparticles on the cell surface.
+      explanation: Blazevic et al. (2019) Figures 4-7 directly imaged and analyzed the crystalline S-layer of scheelite-incubated Metallosphaera sedula DSM 5348 by HAADF-STEM, STEM-EDX, HRTEM, and EELS, documenting W-bearing cell-surface encrustation and tungsten carbide-like nanostructures (examined after 30 days of oxic dehydration and FIB preparation).
     - source_ref: uniprot_metallosphaera_sedula_biooxidation_slayer
       supports: support
-      explanation: Reviewed Swiss-Prot entry UniProtKB:A4YHQ8 (SLAA_METS5, slaA / Msed_1806) in Metallosphaera sedula DSM 5348 reference proteome UP000000242 (NCBITaxon:399549) encodes S-layer protein A (GO:0030115 S-layer; Pfam:PF28202).
+      explanation: Reviewed Swiss-Prot entry UniProtKB:A4YHQ8 (SLAA_METS5, slaA / Msed_1806) in Metallosphaera sedula DSM 5348 reference proteome UP000000242 (NCBITaxon:399549) encodes S-layer protein A (GO:0030115; Pfam:PF28202).
   evidence:
   - source_ref: blazevic2019
     supports: support
@@ -140,15 +140,16 @@ mechanisms:
     explanation: Figures 4-7 and the tungsten-deposit discussion support W-bearing surface encrustation in processed cells, so filtrate W alone is not total mobilized W. The microscopy preparation included 30 days of oxic dehydration after 21 days of culture and focused-ion-beam preparation. The authors describe the deposits as carbide-like and call for further W-environment spectroscopy; no pure WC phase, resolved W redox route, in-vivo product stoichiometry or useful material yield is accepted here. This associated observation does not convert the bioleaching result into demonstrated recovery.
 causal_graphs:
 - id: metallosphaera_scheelite_concentrate_bioleaching_graph
-  name: Metallosphaera sedula DSM 5348 thermoacidophilic bioleaching of impure Mittersill scheelite concentrate and SlaA S-layer tungsten encrustation
-  description: Causal pathway linking Metallosphaera sedula DSM 5348 respiratory biooxidation proteins FoxA (UniProtKB:A4YE09) and Sulfocyanin (UniProtKB:A4YDJ8) and paracrystalline S-layer protein SlaA (UniProtKB:A4YHQ8) to thermoacidophilic bioleaching of impure Mittersill scheelite concentrate (62.6 wt% WO3 with Fe, Mn, S, and carbonate gangue at 10 g/L, pH 2.0-2.65, 65 C), yielding up to 74.9 mg/L dissolved W (~1.5% of bulk solid W, ~4.7-fold above abiotic controls) and ~62 mg W/g dry biomass encrusted as tungsten/tungsten-carbide nanoparticles on the S-layer in Blazevic et al. (2019).
+  name: Metallosphaera sedula DSM 5348 thermoacidophilic bioleaching of impure Serido scheelite concentrate and SlaA S-layer tungsten encrustation
+  description: 'Causal pathway linking Metallosphaera sedula DSM 5348 respiratory biooxidation proteins FoxA (UniProtKB:A4YE09) and Sulfocyanin (UniProtKB:A4YDJ8) and paracrystalline S-layer protein SlaA (UniProtKB:A4YHQ8) to aerobic thermoacidophilic incubation at 73 C with CO2 supplementation in DSMZ 88 Sulfolobus medium (initially adjusted to pH 2.0 with H2SO4) on 10 g/L impure scheelite concentrate (average particle size 1 mm) from the Serido Scheelite Province, Brazil (containing Fe- and Mn-oxide impurities: 19.0% Fe-oxide in Methods, 22.6 wt% Fe in Table 1), producing a higher 0.44-um-filtered ICP-OES soluble W signal in inoculated cultures than in abiotic controls over 21 days (with appreciable abiotic release also present and no numerical mg/L values extracted from Figure 3 due to its x-axis days-vs-hours and y-axis log10-vs-mg/L axis/caption inconsistencies) and W-bearing S-layer encrustation and tungsten carbide-like surface deposits (Figures 4-7, observed after 30 days of oxic
+    dehydration and FIB preparation) in Blazevic et al. (2019).'
   scope: REPRESENTATIVE_EXAMPLE
   mechanism_ref: metallosphaera_scheelite_tungsten_release
   nodes:
   - id: impure_mittersill_scheelite_concentrate_in_acidic_medium
-    label: Impure Mittersill scheelite concentrate (62.6 wt% WO3, 0.25% Fe, 0.05% Mn, 0.1% S; 10 g/L) in pH 2.0 DSMZ 88 medium at 65 C
+    label: Impure Serido scheelite concentrate (10 g/L, 1 mm average particle size; 19.0% Fe-oxide in Methods / 22.6 wt% Fe in Table 1, plus Mn-oxide impurities) in pH 2.0 DSMZ 88 Sulfolobus medium at 73 C with CO2
     node_type: MATERIAL_OR_PHASE
-    description: 10 g/L finely ground scheelite concentrate from Mittersill (Austria) containing 62.6 wt% WO3 (~4964 mg W/L feed inventory), 0.25% Fe, 0.05% Mn, 0.1% S, and gangue calcite/dolomite/quartz/clinochlore in DSMZ 88 medium with 0.1 g/L yeast extract at pH 2.0 and 65 C.
+    description: 10 g/L heat- and autoclave-sterilized impure scheelite concentrate (average particle size 1 mm) from the Serido Scheelite Province, Brazil (containing Fe- and Mn-oxide impurities; 19.0% Fe-oxide in Methods, 22.6 wt% Fe in Table 1) in DSMZ 88 Sulfolobus medium initially adjusted to pH 2.0 with H2SO4 and incubated aerobically with CO2 at 73 C for 21 days.
     protein_grounding_status: NOT_APPLICABLE
   - id: msed_foxa_and_sulfocyanin_respiratory_chain
     label: Metallosphaera sedula DSM 5348 FoxA terminal oxidase (Msed_0484) and Sulfocyanin (Msed_0323)
@@ -185,15 +186,15 @@ causal_graphs:
         label: electron transport coupled proton transport
       - id: GO:0022904
         label: respiratory electron transport chain
-      functional_role: Terminal oxidase subunit I FoxA (locus Msed_0484) of the iron-oxidation respiratory complex catalyzing aerobic biooxidation of ferrous iron and mineral impurities in thermoacidophilic bioleaching.
-      annotation_note: 'Grounded to reference proteome UP000000242 for type strain Metallosphaera sedula DSM 5348 (NCBITaxon:399549; UniProtKB organism string: Metallosphaera sedula (strain ATCC 51363 / DSM 5348 / JCM 9185 / NBRC 15509 / TH2); foxA / Msed_0484, UniProtKB:A4YE09), matching the exact experimental strain Metallosphaera sedula DSM 5348 (annotated at species rank NCBITaxon:43687 on the mechanism) in Blazevic et al. (2019).'
+      functional_role: Terminal oxidase subunit I FoxA (locus Msed_0484) of the iron-oxidation respiratory complex catalyzing aerobic biooxidation in thermoacidophilic bioleaching.
+      annotation_note: Grounded to reference proteome UP000000242 for type strain Metallosphaera sedula DSM 5348 (NCBITaxon:399549; foxA / Msed_0484, UniProtKB:A4YE09), matching the exact experimental strain Metallosphaera sedula DSM 5348 (annotated at species rank NCBITaxon:43687 on the mechanism) in Blazevic et al. (2019).
       evidence:
       - source_ref: blazevic2019
         supports: partial
-        explanation: Blazevic et al. (2019) grew Metallosphaera sedula DSM 5348 at 65 C and initial pH 2.0 on 10 g/L impure Mittersill scheelite concentrate (containing 0.25% Fe, 0.05% Mn, and 0.1% S impurities), observing biooxidation-associated mobilization of Fe, Mn, and W into leachate; individual fox cluster subunits were not mutated or directly assayed in this study.
+        explanation: Blazevic et al. (2019) grew Metallosphaera sedula DSM 5348 aerobically at 73 C with CO2 supplementation in DSMZ 88 Sulfolobus medium initially adjusted to pH 2.0 with H2SO4 on 10 g/L impure scheelite concentrate (average particle size 1 mm) from the Serido Scheelite Province, Brazil (containing Fe- and Mn-oxide impurities, with Methods stating 19.0% Fe-oxide and Table 1 reporting 22.6 wt% Fe), observing elevated soluble W, Fe, and Mn signals by ICP-OES over 21 days (though the actual growth-supporting energy source is unconfirmed and individual fox cluster subunits were not directly assayed).
       - source_ref: uniprot_metallosphaera_sedula_biooxidation_slayer
         supports: partial
-        explanation: UniProtKB:A4YE09 (A4YE09_METS5, foxA / Msed_0484) in Metallosphaera sedula DSM 5348 reference proteome UP000000242 (NCBITaxon:399549) encodes Cytochrome c oxidase, subunit I (GO:0004129 cytochrome-c oxidase activity; GO:0015990 electron transport coupled proton transport).
+        explanation: UniProtKB:A4YE09 (A4YE09_METS5, foxA / Msed_0484) in Metallosphaera sedula DSM 5348 reference proteome UP000000242 (NCBITaxon:399549) encodes Cytochrome c oxidase, subunit I (GO:0004129; GO:0015990).
     - uniprot_accession: UniProtKB:A4YDJ8
       entry_name: A4YDJ8_METS5
       protein_name: Sulfocyanin
@@ -223,20 +224,20 @@ causal_graphs:
       evidence:
       - source_ref: blazevic2019
         supports: partial
-        explanation: Blazevic et al. (2019) demonstrated that metabolically active Metallosphaera sedula DSM 5348 cultures at 65 C accelerate W, Fe, and Mn release from impure scheelite concentrate ~4.7-fold over abiotic controls and alter surface W/Fe/Mn redox states by STEM-EELS; individual electron-transfer proteins were not isolated.
+        explanation: Blazevic et al. (2019) showed that aerobic cultures of Metallosphaera sedula DSM 5348 at 73 C and initial pH 2.0 on 10 g/L Serido impure scheelite concentrate produced higher 0.44-um-filtered ICP-OES soluble W, Fe, and Mn signals than abiotic controls over 21 days (without extracting numerical mg/L values from Figure 3 due to its x-axis days-vs-hours and y-axis log10-vs-mg/L axis/caption inconsistencies) and altered surface redox states by STEM-EELS; individual electron-transfer proteins were not isolated.
       - source_ref: uniprot_metallosphaera_sedula_biooxidation_slayer
         supports: partial
-        explanation: UniProtKB:A4YDJ8 (A4YDJ8_METS5, Msed_0323) in Metallosphaera sedula DSM 5348 reference proteome UP000000242 (NCBITaxon:399549) encodes Sulfocyanin (GO:0005507 copper ion binding; Pfam:PF06525).
+        explanation: UniProtKB:A4YDJ8 (A4YDJ8_METS5, Msed_0323) in Metallosphaera sedula DSM 5348 reference proteome UP000000242 (NCBITaxon:399549) encodes Sulfocyanin (GO:0005507; Pfam:PF06525).
   - id: thermoacidophilic_redox_and_proton_attack_on_scheelite
-    label: Thermoacidophilic biooxidation of Fe/Mn/S impurities and acidic leaching of scheelite surfaces (pH 2.0-2.65, 65 C)
+    label: Aerobic thermoacidophilic interaction with impure Serido scheelite concentrate at 73 C and initial pH 2.0 over 21 days
     node_type: BIOLOGICAL_PROCESS
-    description: Mixotrophic growth of Metallosphaera sedula DSM 5348 (~10^8 cells/mL) coupling yeast-extract and mineral Fe/Mn/S oxidation with proton attack on scheelite, depleting W from mineral grain surfaces (STEM-EELS).
+    description: Aerobic growth and mineral interaction of Metallosphaera sedula DSM 5348 at 73 C with CO2 over 21 days (3 biological replicates), shifting surface Fe/Mn redox states (STEM-EELS) and elevating soluble W, Fe, and Mn signals above abiotic controls (while the exact growth-supporting energy source in the impure concentrate remains unconfirmed).
     protein_grounding_status: NOT_APPLICABLE
   - id: msed_slaa_crystalline_surface_layer
     label: Metallosphaera sedula DSM 5348 paracrystalline S-layer protein SlaA (slaA / Msed_1806)
     node_type: GENE_OR_PROTEIN
     gene_symbol: slaA
-    description: Reviewed Swiss-Prot outer S-layer glycoprotein SlaA (Msed_1806, UniProtKB:A4YHQ8) forming the ordered archaeal cell-envelope array that binds dissolved tungstate/polyoxotungstate species.
+    description: Reviewed Swiss-Prot outer S-layer glycoprotein SlaA (Msed_1806, UniProtKB:A4YHQ8) forming the ordered archaeal cell-envelope array that binds tungsten species.
     protein_grounding_status: GROUNDED
     protein_examples:
     - uniprot_accession: UniProtKB:A4YHQ8
@@ -257,57 +258,57 @@ causal_graphs:
       go_terms:
       - id: GO:0030115
         label: S-layer
-      functional_role: Major paracrystalline S-layer large glycoprotein SlaA (locus Msed_1806; 1360 aa) forming the outer cell-surface sheath that binds tungsten species and templates cell-surface tungsten/tungsten-carbide biomineralization.
+      functional_role: Major paracrystalline S-layer large glycoprotein SlaA (locus Msed_1806; 1360 aa) forming the outer cell-surface sheath that binds tungsten species and hosts cell-surface tungsten/tungsten-carbide-like deposits.
       annotation_note: Grounded to reviewed Swiss-Prot entry UniProtKB:A4YHQ8 (SLAA_METS5, slaA / Msed_1806) in reference proteome UP000000242 for Metallosphaera sedula DSM 5348 (NCBITaxon:399549), matching the experimental strain DSM 5348 (species NCBITaxon:43687) in Blazevic et al. (2019).
       evidence:
       - source_ref: blazevic2019
         supports: support
-        explanation: Blazevic et al. (2019) directly imaged and analyzed the crystalline S-layer of scheelite-grown Metallosphaera sedula DSM 5348 by HAADF-STEM, STEM-EDX, and EELS, demonstrating tungsten encrustation of the S-layer (~62 mg W/g dry biomass) and formation of tungsten carbide-like nanoparticles on the cell surface.
+        explanation: Blazevic et al. (2019) Figures 4-7 directly imaged and analyzed the crystalline S-layer of scheelite-incubated Metallosphaera sedula DSM 5348 by HAADF-STEM, STEM-EDX, HRTEM, and EELS, documenting W-bearing cell-surface encrustation and tungsten carbide-like nanostructures (examined after 30 days of oxic dehydration and FIB preparation).
       - source_ref: uniprot_metallosphaera_sedula_biooxidation_slayer
         supports: support
-        explanation: Reviewed Swiss-Prot entry UniProtKB:A4YHQ8 (SLAA_METS5, slaA / Msed_1806) in Metallosphaera sedula DSM 5348 reference proteome UP000000242 (NCBITaxon:399549) encodes S-layer protein A (GO:0030115 S-layer; Pfam:PF28202).
+        explanation: Reviewed Swiss-Prot entry UniProtKB:A4YHQ8 (SLAA_METS5, slaA / Msed_1806) in Metallosphaera sedula DSM 5348 reference proteome UP000000242 (NCBITaxon:399549) encodes S-layer protein A (GO:0030115; Pfam:PF28202).
   - id: solubilized_tungsten_and_tungsten_carbide_encrusted_slayer
-    label: Dissolved W in leachate (74.9 mg/L at 21 d, ~1.5% of feed W vs ~16 mg/L abiotic) and W/WC-encrusted S-layer (~62 mg W/g dry biomass)
+    label: Elevated 0.44-um-filtered ICP-OES soluble W signal over 21 days (qualitative due to Figure 3 axis/caption inconsistencies) and W/WC-like encrusted S-layer (Figures 4-7)
     node_type: CHEMICAL_ENTITY
-    description: ICP-MS-measured 74.9 mg/L dissolved W in biotic leachate after 21 days (~4.7-fold above the ~16 mg/L abiotic control, representing ~1.5% of bulk solid W at 10 g/L loading) alongside ~62 mg W/g dry weight bound to the S-layer and reduced to crystalline tungsten carbide-like nanoparticles (HRTEM/STEM-EELS).
+    description: Higher 0.44-um-filtered ICP-OES soluble W signal in biotic cultures than in abiotic controls over 21 days (with appreciable abiotic W release also present; no numerical mg/L values extracted from Figure 3 because its x-axis is plotted in days while its caption states hours and its y-axis plots log10 soluble metals with mg/L units), accompanied by W-bearing S-layer encrustation and tungsten carbide-like cell-surface deposits observed by HRTEM/STEM-EDX/EELS after 30 days of oxic dehydration and FIB preparation (Figures 4-7).
     protein_grounding_status: NOT_APPLICABLE
   edges:
   - source: impure_mittersill_scheelite_concentrate_in_acidic_medium
     target: msed_foxa_and_sulfocyanin_respiratory_chain
     predicate: supplies_substrate_for
-    relationship: oxidizable Fe, Mn, and S impurities in the concentrate and 0.1 g/L yeast extract support mixotrophic respiration
-    description: Fe, Mn, and S impurities in the Mittersill scheelite concentrate together with 0.1 g/L yeast extract supply electron donors to Metallosphaera sedula DSM 5348.
+    relationship: impure Serido scheelite concentrate (with Fe/Mn-oxide impurities) in pH 2.0 medium at 73 C provides the mineral substrate for thermoacidophilic respiration
+    description: The impure Serido scheelite concentrate (19.0% Fe-oxide in Methods, 22.6 wt% Fe in Table 1, plus Mn-oxide impurities) in pH 2.0 DSMZ 88 medium with CO2 at 73 C supports Metallosphaera sedula DSM 5348 cultures (though the specific growth-supporting electron donor is unconfirmed).
     evidence:
     - source_ref: blazevic2019
       supports: partial
-      explanation: Blazevic et al. (2019) characterized 0.25% Fe, 0.05% Mn, and 0.1% S impurities in the scheelite concentrate and observed concurrent Fe/Mn release and valence changes by EELS during mixotrophic growth with 0.1 g/L yeast extract.
+      explanation: Blazevic et al. (2019) grew Metallosphaera sedula DSM 5348 aerobically at 73 C with CO2 on 10 g/L impure Serido scheelite concentrate and observed surface Fe/Mn valence changes by EELS, while noting that the exact growth-supporting energy source in the impure concentrate was not isolated.
   - source: msed_foxa_and_sulfocyanin_respiratory_chain
     target: thermoacidophilic_redox_and_proton_attack_on_scheelite
     predicate: drives
-    relationship: respiratory electron transport and proton translocation sustain thermoacidophilic mineral attack
-    description: FoxA and Sulfocyanin respiratory electron transport sustains cell growth (~10^8 cells/mL) and oxidative/acidic attack on the scheelite concentrate.
+    relationship: respiratory electron transport sustains thermoacidophilic culture activity and mineral attack at 73 C
+    description: FoxA and Sulfocyanin respiratory activity supports Metallosphaera sedula DSM 5348 growth and oxidative/acidic attack on the impure scheelite concentrate.
     evidence:
     - source_ref: blazevic2019
       supports: partial
-      explanation: Blazevic et al. (2019) showed that living Metallosphaera sedula DSM 5348 cultures reached >10^8 cells/mL and enhanced W, Fe, and Mn dissolution relative to sterile pH 2.0 controls.
+      explanation: Blazevic et al. (2019) showed cell growth and enhanced soluble W, Fe, and Mn ICP-OES signals in inoculated flasks compared with abiotic pH 2.0 controls over 21 days at 73 C.
   - source: thermoacidophilic_redox_and_proton_attack_on_scheelite
     target: solubilized_tungsten_and_tungsten_carbide_encrusted_slayer
     predicate: produces
-    relationship: mobilization of 74.9 mg/L dissolved W into leachate (~1.5% of bulk solid W)
-    description: Thermoacidophilic bioleaching releases up to 74.9 mg/L dissolved W over 21 days compared with ~16 mg/L in abiotic controls.
+    relationship: elevated 0.44-um-filtered ICP-OES soluble W signal in biotic supernatants relative to abiotic controls over 21 days
+    description: Thermoacidophilic bioleaching over 21 days yields a higher 0.44-um-filtered ICP-OES soluble W signal than abiotic controls (with appreciable abiotic W release also present; Figure 3).
     evidence:
     - source_ref: blazevic2019
       supports: support
-      explanation: Figure 1 and Results of Blazevic et al. (2019) report 74.9 mg/L dissolved W in biotic supernatants after 21 days versus ~16 mg/L in abiotic controls, plus STEM-EELS evidence of W depletion from leached mineral surfaces.
+      explanation: Figure 3 and Results of Blazevic et al. (2019) report higher 0.44-um-filtered ICP-OES soluble W signals in biotic cultures (3 biological replicates) than in abiotic controls over 21 days (recorded qualitatively because Figure 3 plots days on the x-axis while the caption says hours and plots log10 values with mg/L y-axis units).
   - source: msed_slaa_crystalline_surface_layer
     target: solubilized_tungsten_and_tungsten_carbide_encrusted_slayer
     predicate: nucleates
-    relationship: S-layer binding of dissolved W (~62 mg W/g dry weight) and nucleation of tungsten carbide-like nanoparticles
-    description: The paracrystalline SlaA S-layer binds dissolved tungsten species and templates cell-surface tungsten and tungsten carbide-like nanostructures.
+    relationship: S-layer binding of tungsten and formation of W-bearing encrustation and tungsten carbide-like surface deposits
+    description: The paracrystalline SlaA S-layer binds tungsten species and hosts W-bearing cell-surface encrustation and tungsten carbide-like nanostructures (observed after 30 days of oxic dehydration and FIB preparation).
     evidence:
     - source_ref: blazevic2019
       supports: support
-      explanation: Figures 2-6 of Blazevic et al. (2019) demonstrate ~62 mg W/g dry biomass accumulation on the Metallosphaera sedula S-layer and identify crystalline tungsten carbide-like nanoparticles on the cell surface by HRTEM, SAED, and STEM-EELS.
+      explanation: Figures 4-7 of Blazevic et al. (2019) demonstrate W-bearing S-layer encrustation and tungsten carbide-like nanostructures on Metallosphaera sedula DSM 5348 cells by HAADF-STEM, STEM-EDX, HRTEM, and EELS (after 30 days of oxic dehydration and FIB preparation).
 curation_history:
 - timestamp: '2026-10-11T09:26:54.239859+00:00'
   curator: codex (GPT-6; codex)
@@ -317,6 +318,11 @@ curation_history:
   curator: marcin
   action: edit
   summary: Add metallosphaera_scheelite_concentrate_bioleaching_graph causal graph and ground metallosphaera_scheelite_tungsten_release in scheelite.yaml to Metallosphaera sedula DSM 5348 proteins (UniProtKB:A4YE09, UniProtKB:A4YDJ8, UniProtKB:A4YHQ8)
+- timestamp: '2026-11-11T12:40:12Z'
+  curator: marcin
+  action: edit
+  summary: 'Align metallosphaera_scheelite_concentrate_bioleaching_graph and protein_examples in scheelite.yaml with Blazevic et al. (2019) parameters and Figure 3 caveats (fixes #1000)'
 history_refs:
 - history/records/scheelite/2026-10-11T092653Z-codex-43e8e4.yaml
 - history/records/scheelite/2026-11-10T225033Z-marcin-7237d0.yaml
+- history/records/scheelite/2026-11-11T124012Z-marcin-493c3d.yaml
