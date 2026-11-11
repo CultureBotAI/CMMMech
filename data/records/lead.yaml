@@ -1,33 +1,21 @@
 id: cmmmech:lead
 name: Lead
 material_kind: element
-description: Lead (Pb), represented as an element distinct from dissolved lead, pyromorphite
-  mineral and lead-bearing commodities or wastes. Laboratory bacterial cultures enhanced Pb
-  release from synthetic pyromorphite, demonstrating that microbial interactions can remobilize
-  previously immobilized lead. The United States 2025 designation names the lead commodity;
-  it does not designate every lead compound, mineral or secondary resource.
+description: Lead (Pb), represented as an element distinct from dissolved lead, pyromorphite mineral and lead-bearing commodities or wastes. Laboratory bacterial cultures enhanced Pb release from synthetic pyromorphite, demonstrating that microbial interactions can remobilize previously immobilized lead. The United States 2025 designation names the lead commodity; it does not designate every lead compound, mineral or secondary resource.
 identifiers:
 - id: CHEBI:25016
   label: lead atom
 sources:
 - id: topolska_2014
-  title: Topolska, Latowski, Kaschabek, Manecki, Merkel and Rakovan (2014; online July 20,
-    2013). Pb remobilization by bacterially mediated dissolution of pyromorphite Pb5(PO4)3Cl
-    in presence of phosphate-solubilizing Pseudomonas putida. Environmental Science and Pollution
-    Research 21, 1079-1089. DOI 10.1007/s11356-013-1968-3; PMID 23872890; PMC3880484.
+  title: Topolska, Latowski, Kaschabek, Manecki, Merkel and Rakovan (2014; online July 20, 2013). Pb remobilization by bacterially mediated dissolution of pyromorphite Pb5(PO4)3Cl in presence of phosphate-solubilizing Pseudomonas putida. Environmental Science and Pollution Research 21, 1079-1089. DOI 10.1007/s11356-013-1968-3; PMID 23872890; PMC3880484.
   url: https://doi.org/10.1007/s11356-013-1968-3
   accessed_on: '2026-10-11'
 - id: kato_2022
-  title: Kato et al. (2022). Deposition of Lead Phosphate by Lead-Tolerant Bacteria Isolated
-    from Fresh Water near an Abandoned Mine. International Journal of Molecular Sciences 23(5),
-    2483. DOI 10.3390/ijms23052483; PMID 35269625; PMC8910126. Distinct deposition context;
-    quantitative conditions and phosphate-phase mapping remain inconsistent.
+  title: Kato et al. (2022). Deposition of Lead Phosphate by Lead-Tolerant Bacteria Isolated from Fresh Water near an Abandoned Mine. International Journal of Molecular Sciences 23(5), 2483. DOI 10.3390/ijms23052483; PMID 35269625; PMC8910126. Distinct deposition context; quantitative conditions and phosphate-phase mapping remain inconsistent.
   url: https://doi.org/10.3390/ijms23052483
   accessed_on: '2026-10-11'
 - id: usgs_2025
-  title: U.S. Geological Survey (2025). Final 2025 List of Critical Minerals. Federal Register
-    90 FR 50494-50497, November 7, 2025; Lead row in the final commodity table. The adjacent
-    No is the byproduct/co-product column, not criticality.
+  title: U.S. Geological Survey (2025). Final 2025 List of Critical Minerals. Federal Register 90 FR 50494-50497, November 7, 2025; Lead row in the final commodity table. The adjacent No is the byproduct/co-product column, not criticality.
   url: https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm
   accessed_on: '2026-10-11'
 - id: chebi_lead
@@ -35,10 +23,13 @@ sources:
   url: https://www.ebi.ac.uk/chebi/CHEBI:25016
   accessed_on: '2026-10-11'
 - id: ncbi_putida
-  title: 'NCBI Taxonomy 303: Pseudomonas putida, species. This identifier does not resolve
-    IBPRS KKP 1136 at strain level.'
+  title: 'NCBI Taxonomy 303: Pseudomonas putida, species. This identifier does not resolve IBPRS KKP 1136 at strain level.'
   url: https://api.ncbi.nlm.nih.gov/datasets/v2/taxonomy/taxon/303/dataset_report
   accessed_on: '2026-10-11'
+- id: uniprot_pseudomonas_putida_phosphate_starvation
+  title: 'UniProtKB reference proteome UP000000556 (Pseudomonas putida KT2440, NCBITaxon:160488): Phosphate-binding protein PstS (pstS / PP_2656, UniProtKB:Q88JJ3), Phosphate import ATP-binding protein PstB 1 (pstB1 / PP_2659, UniProtKB:Q88JJ0), and Phosphate regulon transcriptional regulatory protein PhoB (phoB / PP_5320, UniProtKB:Q88C63).'
+  url: https://www.uniprot.org/uniprotkb?query=(proteome:UP000000556)+AND+(accession:Q88JJ3+OR+accession:Q88JJ0+OR+accession:Q88C63)
+  accessed_on: '2026-11-10'
 criticality:
 - jurisdiction: United States of America
   list_name: U.S. Department of the Interior Final List of Critical Minerals
@@ -49,69 +40,350 @@ mechanisms:
 - id: putida_pyromorphite_remobilization
   name: Culture-enhanced lead release from synthetic pyromorphite
   process: bioleaching
-  description: Growing Pseudomonas putida IBPRS KKP 1136 cultures increased filtered-solution
-    Pb relative to uninoculated controls during dissolution of synthetic pyromorphite. The
-    effect was greater when the mineral was the only added phosphate source. Nutrient scavenging,
-    metabolites and cell-associated binding are candidate contributors; the experiment does
-    not identify a unique dissolution pathway. This laboratory remobilization observation
-    is not an isolated-metal recovery process or proof of a field remediation outcome.
-  context: 'Topolska et al. E.II: 0.05 g synthetic pyromorphite in 100 mL medium in 500 mL
-    flasks, run in triplicate for 305 h at 21 +/- 1 degrees Celsius and 100 rpm. XRD and SEM-EDS
-    characterized the starting mineral; wet chemical analysis gave Pb5.09(PO4)2.96Cl. Mineral
-    portions were heated at 180 degrees Celsius for 3 h before use. Mid-log cells grown to
-    OD600 0.8 were pelleted, resuspended in the experimental solution and inoculated 1:100.
-    The paper identifies the strain by earlier numerical taxonomy; the linked species identifier
-    does not independently verify that strain assignment. MP+ contained 0.5 g/L K2HPO4, disodium
-    succinate, glycerol, salts and FeEDTA; MP- omitted K2HPO4. The source reports FeEDTA as
-    30 mM, an unusual medium specification retained as reported rather than silently corrected.
-    Initial pH was about 7.3; biotic pH rose toward 9, while abiotic pH stayed near its initial
-    value. Controls included uninoculated mineral suspensions, growth without mineral and
-    chlorapatite comparisons. ICP-MS measured total Pb and P after centrifugation and 0.2
-    micrometre polycarbonate filtration; a separate acid-digestion comparison assessed cell-associated
-    Pb. Feed was a synthetic mineral, not a contaminated soil or industrial ore.'
+  description: Growing Pseudomonas putida IBPRS KKP 1136 cultures increased filtered-solution Pb relative to uninoculated controls during dissolution of synthetic pyromorphite. The effect was greater when the mineral was the only added phosphate source. Nutrient scavenging, metabolites and cell-associated binding are candidate contributors; the experiment does not identify a unique dissolution pathway. This laboratory remobilization observation is not an isolated-metal recovery process or proof of a field remediation outcome.
+  context: 'Topolska et al. E.II: 0.05 g synthetic pyromorphite in 100 mL medium in 500 mL flasks, run in triplicate for 305 h at 21 +/- 1 degrees Celsius and 100 rpm. XRD and SEM-EDS characterized the starting mineral; wet chemical analysis gave Pb5.09(PO4)2.96Cl. Mineral portions were heated at 180 degrees Celsius for 3 h before use. Mid-log cells grown to OD600 0.8 were pelleted, resuspended in the experimental solution and inoculated 1:100. The paper identifies the strain by earlier numerical taxonomy; the linked species identifier does not independently verify that strain assignment. MP+ contained 0.5 g/L K2HPO4, disodium succinate, glycerol, salts and FeEDTA; MP- omitted K2HPO4. The source reports FeEDTA as 30 mM, an unusual medium specification retained as reported rather than silently corrected. Initial pH was about 7.3; biotic pH rose toward 9, while abiotic pH stayed near its initial value. Controls included uninoculated mineral suspensions, growth without mineral and chlorapatite
+    comparisons. ICP-MS measured total Pb and P after centrifugation and 0.2 micrometre polycarbonate filtration; a separate acid-digestion comparison assessed cell-associated Pb. Feed was a synthetic mineral, not a contaminated soil or industrial ore.'
   microbial: true
   organisms:
   - id: NCBITaxon:303
     label: Pseudomonas putida
+  protein_examples:
+  - uniprot_accession: UniProtKB:Q88JJ3
+    entry_name: Q88JJ3_PSEPK
+    protein_name: Phosphate-binding protein PstS
+    gene_symbol: pstS
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:160488
+      label: Pseudomonas putida KT2440
+    reference_proteome_id: UP000000556
+    interpro_ids:
+    - InterPro:IPR005673
+    - InterPro:IPR024370
+    - InterPro:IPR050962
+    pfam_ids:
+    - Pfam:PF12849
+    ncbifam_ids:
+    - NCBIfam:TIGR00975
+    go_terms:
+    - id: GO:0043190
+      label: ATP-binding cassette (ABC) transporter complex
+    - id: GO:0042301
+      label: phosphate ion binding
+    - id: GO:0035435
+      label: phosphate ion transmembrane transport
+    functional_role: Periplasmic high-affinity phosphate-binding protein PstS (locus PP_2656) of the PstSACB ABC transporter complex scavenging orthophosphate liberated from pyromorphite under phosphorus starvation.
+    annotation_note: Grounded to reference proteome UP000000556 for type/model strain Pseudomonas putida KT2440 (NCBITaxon:160488; pstS / PP_2656, UniProtKB:Q88JJ3), representing Pseudomonas putida IBPRS KKP 1136 (species NCBITaxon:303) incubated with synthetic pyromorphite Pb5(PO4)3Cl in Topolska et al. (2014).
+    evidence:
+    - source_ref: topolska_2014
+      supports: partial
+      explanation: Topolska et al. (2014) incubated Pseudomonas putida IBPRS KKP 1136 with 0.05 g/100 mL synthetic pyromorphite (wet-chemical formula Pb5.09(PO4)2.96Cl) in succinate/glycerol MP- and MP+ media (initial pH ~7.3, rising toward pH 9 in biotic assays; 21 +/- 1 C, 100 rpm, 305 h), elevating 0.2-um-filtered solution Pb to 13.5 +/- 0.37 uM (vs 1.47 +/- 0.16 uM abiotic) in MP- and 3.66 +/- 0.31 uM (vs 1.15 +/- 0.07 uM abiotic) in MP+ (Table 3, Figure 4); PstS was not directly assayed.
+    - source_ref: uniprot_pseudomonas_putida_phosphate_starvation
+      supports: partial
+      explanation: UniProtKB:Q88JJ3 (Q88JJ3_PSEPK, pstS / PP_2656) in Pseudomonas putida KT2440 reference proteome UP000000556 (NCBITaxon:160488) encodes Phosphate-binding protein PstS (GO:0042301; GO:0035435).
+  - uniprot_accession: UniProtKB:Q88JJ0
+    entry_name: PSTB1_PSEPK
+    protein_name: Phosphate import ATP-binding protein PstB 1
+    gene_symbol: pstB1
+    entry_status: SWISS_PROT
+    target_organism:
+      id: NCBITaxon:160488
+      label: Pseudomonas putida KT2440
+    reference_proteome_id: UP000000556
+    ec_numbers:
+    - EC:7.3.2.1
+    interpro_ids:
+    - InterPro:IPR003593
+    - InterPro:IPR003439
+    - InterPro:IPR017871
+    - InterPro:IPR027417
+    - InterPro:IPR005670
+    pfam_ids:
+    - Pfam:PF00005
+    ncbifam_ids:
+    - NCBIfam:TIGR00972
+    go_terms:
+    - id: GO:0005886
+      label: plasma membrane
+    - id: GO:0005524
+      label: ATP binding
+    - id: GO:0016887
+      label: ATP hydrolysis activity
+    - id: GO:0015415
+      label: ATPase-coupled phosphate ion transmembrane transporter activity
+    - id: GO:0035435
+      label: phosphate ion transmembrane transport
+    functional_role: Phosphate import ATP-binding protein PstB 1 (EC 7.3.2.1; locus PP_2659) coupling ATP hydrolysis to high-affinity orthophosphate import across the inner membrane during pyromorphite dissolution.
+    annotation_note: Grounded to reviewed Swiss-Prot entry UniProtKB:Q88JJ0 (PSTB1_PSEPK, pstB1 / PP_2659) in reference proteome UP000000556 for Pseudomonas putida KT2440 (NCBITaxon:160488), representing Pseudomonas putida IBPRS KKP 1136 (NCBITaxon:303) in Topolska et al. (2014).
+    evidence:
+    - source_ref: topolska_2014
+      supports: partial
+      explanation: Topolska et al. (2014) showed that phosphorus-starved MP- cultures of Pseudomonas putida IBPRS KKP 1136 with 0.05 g/100 mL synthetic pyromorphite mobilized more dissolved Pb after 305 h (13.5 +/- 0.37 uM vs 1.47 +/- 0.16 uM abiotic) than phosphate-replete MP+ cultures (3.66 +/- 0.31 uM vs 1.15 +/- 0.07 uM abiotic; Table 3); PstB1 ATPase activity was not directly measured.
+    - source_ref: uniprot_pseudomonas_putida_phosphate_starvation
+      supports: partial
+      explanation: Reviewed Swiss-Prot entry UniProtKB:Q88JJ0 (PSTB1_PSEPK, pstB1 / PP_2659) in Pseudomonas putida KT2440 reference proteome UP000000556 (NCBITaxon:160488) encodes Phosphate import ATP-binding protein PstB 1 (EC:7.3.2.1; GO:0015415).
+  - uniprot_accession: UniProtKB:Q88C63
+    entry_name: Q88C63_PSEPK
+    protein_name: Phosphate regulon transcriptional regulatory protein PhoB
+    gene_symbol: phoB
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:160488
+      label: Pseudomonas putida KT2440
+    reference_proteome_id: UP000000556
+    interpro_ids:
+    - InterPro:IPR011006
+    - InterPro:IPR001867
+    - InterPro:IPR016032
+    - InterPro:IPR011879
+    - InterPro:IPR001789
+    - InterPro:IPR039420
+    - InterPro:IPR036388
+    pfam_ids:
+    - Pfam:PF00072
+    - Pfam:PF00486
+    ncbifam_ids:
+    - NCBIfam:TIGR02154
+    go_terms:
+    - id: GO:0005829
+      label: cytosol
+    - id: GO:0032993
+      label: protein-DNA complex
+    - id: GO:0000156
+      label: phosphorelay response regulator activity
+    - id: GO:0000976
+      label: transcription cis-regulatory region binding
+    - id: GO:0006817
+      label: phosphate ion transport
+    - id: GO:0006355
+      label: regulation of DNA-templated transcription
+    functional_role: Phosphate regulon transcriptional regulatory protein PhoB (locus PP_5320) activating the high-affinity phosphate acquisition regulon under orthophosphate starvation.
+    annotation_note: Grounded to reference proteome UP000000556 for Pseudomonas putida KT2440 (NCBITaxon:160488; phoB / PP_5320, UniProtKB:Q88C63), representing the phosphate-starvation transcriptional response of Pseudomonas putida IBPRS KKP 1136 (NCBITaxon:303) in Topolska et al. (2014).
+    evidence:
+    - source_ref: topolska_2014
+      supports: partial
+      explanation: Topolska et al. (2014) omitted K2HPO4 in MP- medium to induce microbial phosphorus scavenging from 0.05 g/100 mL synthetic pyromorphite over 305 h at 21 +/- 1 C; phoB transcription was not directly quantified.
+    - source_ref: uniprot_pseudomonas_putida_phosphate_starvation
+      supports: partial
+      explanation: UniProtKB:Q88C63 (Q88C63_PSEPK, phoB / PP_5320) in Pseudomonas putida KT2440 reference proteome UP000000556 (NCBITaxon:160488) encodes Phosphate regulon transcriptional regulatory protein PhoB (GO:0000156; GO:0006817).
   evidence:
   - source_ref: topolska_2014
     supports: support
-    explanation: 'Experimental methods, Table 2, Figure 4 and Table 3: after 305 h, filtered-solution
-      Pb in MP- was 13.5 +/- 0.37 micromolar with bacteria versus 1.47 +/- 0.16 micromolar
-      without; MP+ values were 3.66 +/- 0.31 and 1.15 +/- 0.07 micromolar, respectively. Errors
-      are reported standard deviations of triplicates. These are solution concentrations,
-      not extraction percentages or isolated-product yields. Figure 2 also shows limited growth
-      when pyromorphite supplies phosphate, with no growth in the no-phosphate/no-mineral
-      control.'
+    explanation: 'Experimental methods, Table 2, Figure 4 and Table 3: after 305 h, filtered-solution Pb in MP- was 13.5 +/- 0.37 micromolar with bacteria versus 1.47 +/- 0.16 micromolar without; MP+ values were 3.66 +/- 0.31 and 1.15 +/- 0.07 micromolar, respectively. Errors are reported standard deviations of triplicates. These are solution concentrations, not extraction percentages or isolated-product yields. Figure 2 also shows limited growth when pyromorphite supplies phosphate, with no growth in the no-phosphate/no-mineral control.'
   - source_ref: topolska_2014
     supports: partial
-    explanation: 'Solution analysis, cell-bound Pb method and Results E.II: the separate 100
-      h MP+ acid-digestion comparison assigned 13.6 +/- 0.4 micromolar Pb to cells, reported
-      as 94% of total Pb released in that comparison. That fraction is not the 305 h filtered-solution
-      result or a 94% mineral-recovery yield. Sorption could be reversible; no long-term permanence
-      is demonstrated.'
+    explanation: 'Solution analysis, cell-bound Pb method and Results E.II: the separate 100 h MP+ acid-digestion comparison assigned 13.6 +/- 0.4 micromolar Pb to cells, reported as 94% of total Pb released in that comparison. That fraction is not the 305 h filtered-solution result or a 94% mineral-recovery yield. Sorption could be reversible; no long-term permanence is demonstrated.'
   - source_ref: topolska_2014
     supports: partial
-    explanation: 'Discussion, Microbially enhanced Pb remobilization: pH was not held equal
-      across biotic and abiotic arms. The authors argue that the observed pH range is insufficient
-      to explain the Pb difference but explicitly do not completely exclude its contribution.
-      Unmeasured metabolites, P uptake and binding are proposed contributors; acidification,
-      a named enzyme or a unique chelation mechanism is not established.'
+    explanation: 'Discussion, Microbially enhanced Pb remobilization: pH was not held equal across biotic and abiotic arms. The authors argue that the observed pH range is insufficient to explain the Pb difference but explicitly do not completely exclude its contribution. Unmeasured metabolites, P uptake and binding are proposed contributors; acidification, a named enzyme or a unique chelation mechanism is not established.'
   - source_ref: kato_2022
     supports: context_only
-    explanation: Results 2.3 and Figures 6-7 report pyromorphite/hydrocerussite associated
-      with a different isolate, Pseudomonas sp. KKY-29, exposed to lead acetate. This distinct
-      deposition experiment does not contradict Topolska's dissolution result under different
-      substrate and nutrient conditions, or establish permanent immobilization. Kato's Results
-      2.6 and Discussion reverse the phosphate-condition phase assignments, and biomass/phosphate
-      units are inconsistent; those assignments, removal percentages and proposed phosphate-metabolism
-      causality are not transferred here.
+    explanation: Results 2.3 and Figures 6-7 report pyromorphite/hydrocerussite associated with a different isolate, Pseudomonas sp. KKY-29, exposed to lead acetate. This distinct deposition experiment does not contradict Topolska's dissolution result under different substrate and nutrient conditions, or establish permanent immobilization. Kato's Results 2.6 and Discussion reverse the phosphate-condition phase assignments, and biomass/phosphate units are inconsistent; those assignments, removal percentages and proposed phosphate-metabolism causality are not transferred here.
+causal_graphs:
+- id: putida_pyromorphite_lead_remobilization_graph
+  name: Pseudomonas putida IBPRS KKP 1136 phosphate-starvation PstSACB orthophosphate scavenging and lead remobilization from synthetic pyromorphite
+  description: Causal pathway linking representative Pseudomonas putida KT2440 phosphate-starvation regulator PhoB (UniProtKB:Q88C63) and high-affinity ABC transporter subunits PstS (UniProtKB:Q88JJ3) and PstB1 (UniProtKB:Q88JJ0) to phosphorus scavenging and culture alkalinization (initial pH ~7.3 rising toward pH 9) during 305 h incubation of Pseudomonas putida IBPRS KKP 1136 with 0.05 g/100 mL synthetic pyromorphite Pb5(PO4)3Cl (wet-chemical formula Pb5.09(PO4)2.96Cl) at 21 +/- 1 C and 100 rpm in succinate/glycerol media, increasing 0.2-um-filtered solution Pb to 13.5 +/- 0.37 uM vs 1.47 +/- 0.16 uM abiotic in P-deficient MP- and 3.66 +/- 0.31 uM vs 1.15 +/- 0.07 uM abiotic in P-replete MP+ (Table 3, Figure 4), with a separate 100-h MP+ acid-digestion comparison assigning 13.6 +/- 0.4 uM Pb (94% of total released Pb in that comparison) to cells in Topolska et al. (2014).
+  scope: REPRESENTATIVE_EXAMPLE
+  mechanism_ref: putida_pyromorphite_remobilization
+  nodes:
+  - id: phosphate_deficient_mp_minus_pyromorphite_system
+    label: Succinate/glycerol medium (5 g/L disodium succinate, 6.5 g/L glycerol, initial pH ~7.3; P-deficient MP- and P-replete MP+) with 0.05 g/100 mL synthetic pyromorphite at 21 +/- 1 C and 100 rpm for 305 h
+    node_type: ENVIRONMENTAL_CONDITION
+    description: Triplicate 500 mL flasks containing 100 mL MP- (without K2HPO4) or MP+ (with 0.5 g/L K2HPO4) medium (5 g/L disodium succinate, 6.5 g/L glycerol, salts, source-reported 30 mM FeEDTA, initial pH ~7.3, rising toward pH 9 in biotic flasks) and 0.05 g (0.5 g/L) synthetic pyromorphite incubated with Pseudomonas putida IBPRS KKP 1136 at 21 +/- 1 C and 100 rpm for 305 h (~12.7 days).
+    protein_grounding_status: NOT_APPLICABLE
+  - id: putida_phob_phosphate_regulon_activator
+    label: Pseudomonas putida PhoB phosphate-regulon response regulator (phoB / PP_5320)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: phoB
+    description: Representative Pseudomonas putida KT2440 phosphate-regulon transcriptional activator PhoB (PP_5320, UniProtKB:Q88C63) in reference proteome UP000000556.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:Q88C63
+      entry_name: Q88C63_PSEPK
+      protein_name: Phosphate regulon transcriptional regulatory protein PhoB
+      gene_symbol: phoB
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:160488
+        label: Pseudomonas putida KT2440
+      reference_proteome_id: UP000000556
+      interpro_ids:
+      - InterPro:IPR011006
+      - InterPro:IPR001867
+      - InterPro:IPR016032
+      - InterPro:IPR011879
+      - InterPro:IPR001789
+      - InterPro:IPR039420
+      - InterPro:IPR036388
+      pfam_ids:
+      - Pfam:PF00072
+      - Pfam:PF00486
+      ncbifam_ids:
+      - NCBIfam:TIGR02154
+      go_terms:
+      - id: GO:0005829
+        label: cytosol
+      - id: GO:0032993
+        label: protein-DNA complex
+      - id: GO:0000156
+        label: phosphorelay response regulator activity
+      - id: GO:0000976
+        label: transcription cis-regulatory region binding
+      - id: GO:0006817
+        label: phosphate ion transport
+      - id: GO:0006355
+        label: regulation of DNA-templated transcription
+      functional_role: Phosphate regulon transcriptional regulatory protein PhoB (locus PP_5320) activating the high-affinity phosphate acquisition regulon under orthophosphate starvation.
+      annotation_note: Grounded to reference proteome UP000000556 for Pseudomonas putida KT2440 (NCBITaxon:160488; phoB / PP_5320, UniProtKB:Q88C63), representing the phosphate-starvation transcriptional response of Pseudomonas putida IBPRS KKP 1136 (NCBITaxon:303) in Topolska et al. (2014).
+      evidence:
+      - source_ref: topolska_2014
+        supports: partial
+        explanation: Topolska et al. (2014) omitted K2HPO4 in MP- medium to induce microbial phosphorus scavenging from 0.05 g/100 mL synthetic pyromorphite over 305 h at 21 +/- 1 C; phoB transcription was not directly quantified.
+      - source_ref: uniprot_pseudomonas_putida_phosphate_starvation
+        supports: partial
+        explanation: UniProtKB:Q88C63 (Q88C63_PSEPK, phoB / PP_5320) in Pseudomonas putida KT2440 reference proteome UP000000556 (NCBITaxon:160488) encodes Phosphate regulon transcriptional regulatory protein PhoB (GO:0000156; GO:0006817).
+  - id: putida_pstsacb_high_affinity_phosphate_transporter
+    label: Pseudomonas putida PstSACB high-affinity phosphate ABC transporter (pstS / PP_2656, pstB1 / PP_2659)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: pstS/pstB1
+    description: Representative Pseudomonas putida KT2440 periplasmic phosphate-binding protein PstS (PP_2656, UniProtKB:Q88JJ3) and ATP-binding subunit PstB1 (PP_2659, UniProtKB:Q88JJ0; EC 7.3.2.1) scavenging orthophosphate released from pyromorphite.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:Q88JJ3
+      entry_name: Q88JJ3_PSEPK
+      protein_name: Phosphate-binding protein PstS
+      gene_symbol: pstS
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:160488
+        label: Pseudomonas putida KT2440
+      reference_proteome_id: UP000000556
+      interpro_ids:
+      - InterPro:IPR005673
+      - InterPro:IPR024370
+      - InterPro:IPR050962
+      pfam_ids:
+      - Pfam:PF12849
+      ncbifam_ids:
+      - NCBIfam:TIGR00975
+      go_terms:
+      - id: GO:0043190
+        label: ATP-binding cassette (ABC) transporter complex
+      - id: GO:0042301
+        label: phosphate ion binding
+      - id: GO:0035435
+        label: phosphate ion transmembrane transport
+      functional_role: Periplasmic high-affinity phosphate-binding protein PstS (locus PP_2656) of the PstSACB ABC transporter complex scavenging orthophosphate liberated from pyromorphite under phosphorus starvation.
+      annotation_note: Grounded to reference proteome UP000000556 for type/model strain Pseudomonas putida KT2440 (NCBITaxon:160488; pstS / PP_2656, UniProtKB:Q88JJ3), representing Pseudomonas putida IBPRS KKP 1136 (species NCBITaxon:303) incubated with synthetic pyromorphite Pb5(PO4)3Cl in Topolska et al. (2014).
+      evidence:
+      - source_ref: topolska_2014
+        supports: partial
+        explanation: Topolska et al. (2014) incubated Pseudomonas putida IBPRS KKP 1136 with 0.05 g/100 mL synthetic pyromorphite (wet-chemical formula Pb5.09(PO4)2.96Cl) in succinate/glycerol MP- and MP+ media (initial pH ~7.3, rising toward pH 9 in biotic assays; 21 +/- 1 C, 100 rpm, 305 h), elevating 0.2-um-filtered solution Pb to 13.5 +/- 0.37 uM (vs 1.47 +/- 0.16 uM abiotic) in MP- and 3.66 +/- 0.31 uM (vs 1.15 +/- 0.07 uM abiotic) in MP+ (Table 3, Figure 4); PstS was not directly assayed.
+      - source_ref: uniprot_pseudomonas_putida_phosphate_starvation
+        supports: partial
+        explanation: UniProtKB:Q88JJ3 (Q88JJ3_PSEPK, pstS / PP_2656) in Pseudomonas putida KT2440 reference proteome UP000000556 (NCBITaxon:160488) encodes Phosphate-binding protein PstS (GO:0042301; GO:0035435).
+    - uniprot_accession: UniProtKB:Q88JJ0
+      entry_name: PSTB1_PSEPK
+      protein_name: Phosphate import ATP-binding protein PstB 1
+      gene_symbol: pstB1
+      entry_status: SWISS_PROT
+      target_organism:
+        id: NCBITaxon:160488
+        label: Pseudomonas putida KT2440
+      reference_proteome_id: UP000000556
+      ec_numbers:
+      - EC:7.3.2.1
+      interpro_ids:
+      - InterPro:IPR003593
+      - InterPro:IPR003439
+      - InterPro:IPR017871
+      - InterPro:IPR027417
+      - InterPro:IPR005670
+      pfam_ids:
+      - Pfam:PF00005
+      ncbifam_ids:
+      - NCBIfam:TIGR00972
+      go_terms:
+      - id: GO:0005886
+        label: plasma membrane
+      - id: GO:0005524
+        label: ATP binding
+      - id: GO:0016887
+        label: ATP hydrolysis activity
+      - id: GO:0015415
+        label: ATPase-coupled phosphate ion transmembrane transporter activity
+      - id: GO:0035435
+        label: phosphate ion transmembrane transport
+      functional_role: Phosphate import ATP-binding protein PstB 1 (EC 7.3.2.1; locus PP_2659) coupling ATP hydrolysis to high-affinity orthophosphate import across the inner membrane during pyromorphite dissolution.
+      annotation_note: Grounded to reviewed Swiss-Prot entry UniProtKB:Q88JJ0 (PSTB1_PSEPK, pstB1 / PP_2659) in reference proteome UP000000556 for Pseudomonas putida KT2440 (NCBITaxon:160488), representing Pseudomonas putida IBPRS KKP 1136 (NCBITaxon:303) in Topolska et al. (2014).
+      evidence:
+      - source_ref: topolska_2014
+        supports: partial
+        explanation: Topolska et al. (2014) showed that phosphorus-starved MP- cultures of Pseudomonas putida IBPRS KKP 1136 with 0.05 g/100 mL synthetic pyromorphite mobilized more dissolved Pb after 305 h (13.5 +/- 0.37 uM vs 1.47 +/- 0.16 uM abiotic) than phosphate-replete MP+ cultures (3.66 +/- 0.31 uM vs 1.15 +/- 0.07 uM abiotic; Table 3); PstB1 ATPase activity was not directly measured.
+      - source_ref: uniprot_pseudomonas_putida_phosphate_starvation
+        supports: partial
+        explanation: Reviewed Swiss-Prot entry UniProtKB:Q88JJ0 (PSTB1_PSEPK, pstB1 / PP_2659) in Pseudomonas putida KT2440 reference proteome UP000000556 (NCBITaxon:160488) encodes Phosphate import ATP-binding protein PstB 1 (EC:7.3.2.1; GO:0015415).
+  - id: synthetic_pyromorphite_lead_phosphate_substrate
+    label: Synthetic pyromorphite Pb5(PO4)3Cl solid (wet-chemical formula Pb5.09(PO4)2.96Cl; 0.05 g per 100 mL)
+    node_type: MATERIAL_OR_PHASE
+    description: Synthetic lead chlorophosphate Pb5(PO4)3Cl (wet-chemical composition Pb5.09(PO4)2.96Cl) exhibiting low abiotic Pb solubility (1.47 +/- 0.16 uM in abiotic MP- and 1.15 +/- 0.07 uM in abiotic MP+ at 305 h; Table 3).
+    protein_grounding_status: NOT_APPLICABLE
+  - id: remobilized_dissolved_and_cell_sorbed_lead
+    label: Remobilized 0.2-um-filtered Pb at 305 h (13.5 +/- 0.37 uM vs 1.47 +/- 0.16 uM abiotic in MP-; 3.66 +/- 0.31 uM vs 1.15 +/- 0.07 uM abiotic in MP+) and cell-associated Pb (13.6 +/- 0.4 uM, 94% at 100 h in MP+)
+    node_type: CHEMICAL_ENTITY
+    description: 0.2-um-filtered ICP-MS solution Pb after 305 h reaching 13.5 +/- 0.37 uM with bacteria vs 1.47 +/- 0.16 uM without in MP- and 3.66 +/- 0.31 uM with bacteria vs 1.15 +/- 0.07 uM without in MP+ (Table 3, Figure 4), alongside a separate 100-h MP+ acid-digestion comparison assigning 13.6 +/- 0.4 uM Pb (94% of total released Pb in that comparison) to cells.
+    protein_grounding_status: NOT_APPLICABLE
+  edges:
+  - source: phosphate_deficient_mp_minus_pyromorphite_system
+    target: putida_phob_phosphate_regulon_activator
+    predicate: drives
+    relationship: omission of K2HPO4 in MP- medium activates PhoB
+    description: Absence of soluble phosphate in MP- medium induces the PhoB phosphate-starvation regulon.
+    evidence:
+    - source_ref: topolska_2014
+      supports: partial
+      explanation: Topolska et al. (2014) supplied synthetic pyromorphite as the sole phosphorus source in K2HPO4-free MP- medium; PhoB is grounded as the conserved Pseudomonas putida KT2440 phosphate-regulon activator.
+  - source: putida_phob_phosphate_regulon_activator
+    target: putida_pstsacb_high_affinity_phosphate_transporter
+    predicate: positively_regulates
+    relationship: transcriptional induction of PstSACB high-affinity phosphate transport system
+    description: PhoB activates expression of the PstSACB high-affinity orthophosphate ABC transporter.
+    evidence:
+    - source_ref: uniprot_pseudomonas_putida_phosphate_starvation
+      supports: partial
+      explanation: UniProtKB:Q88C63 (PhoB, PP_5320) positively regulates the phosphate regulon including PstS (UniProtKB:Q88JJ3) and PstB1 (UniProtKB:Q88JJ0).
+  - source: putida_pstsacb_high_affinity_phosphate_transporter
+    target: synthetic_pyromorphite_lead_phosphate_substrate
+    predicate: solubilizes
+    relationship: microbial orthophosphate scavenging and metabolic activity (as pH rises from ~7.3 toward 9) enhance pyromorphite dissolution
+    description: Microbial phosphorus demand in MP- (and metabolic activity in MP+ as culture pH rises from ~7.3 toward 9) destabilizes synthetic Pb5(PO4)3Cl relative to sterile controls.
+    evidence:
+    - source_ref: topolska_2014
+      supports: support
+      explanation: Table 3 and Figures 2-4 of Topolska et al. (2014) demonstrate higher 305-h dissolved Pb in biotic vs abiotic flasks in both MP- (13.5 +/- 0.37 vs 1.47 +/- 0.16 uM) and MP+ (3.66 +/- 0.31 vs 1.15 +/- 0.07 uM) while biotic pH rose from ~7.3 toward 9.
+  - source: synthetic_pyromorphite_lead_phosphate_substrate
+    target: remobilized_dissolved_and_cell_sorbed_lead
+    predicate: produces
+    relationship: release of dissolved Pb (13.5 +/- 0.37 uM in MP- and 3.66 +/- 0.31 uM in MP+ at 305 h) and cell-bound Pb (13.6 +/- 0.4 uM at 100 h in MP+)
+    description: Pyromorphite dissolution yields 13.5 +/- 0.37 uM 0.2-um-filtered Pb at 305 h in biotic MP- (vs 1.47 +/- 0.16 uM abiotic) and 3.66 +/- 0.31 uM in biotic MP+ (vs 1.15 +/- 0.07 uM abiotic), plus 13.6 +/- 0.4 uM cell-associated Pb (94% of total released Pb) in the 100-h MP+ acid-digestion comparison.
+    evidence:
+    - source_ref: topolska_2014
+      supports: support
+      explanation: Table 3 and Figure 4 of Topolska et al. (2014) report the 305-h 0.2-um-filtered solution Pb concentrations in MP- and MP+ and the 100-h MP+ acid-digestion cell-associated Pb fraction (13.6 +/- 0.4 uM, 94%).
 curation_history:
 - timestamp: '2026-10-11T06:24:33Z'
   curator: Codex (GPT-6; Codex)
   action: create_record
-  summary: Curated elemental lead, the named US 2025 designation and controlled pyromorphite
-    remobilization; preserved cell-associated versus filtered-solution Pb, unequal pH, reported
-    medium uncertainty and distinct deposition context.
+  summary: Curated elemental lead, the named US 2025 designation and controlled pyromorphite remobilization; preserved cell-associated versus filtered-solution Pb, unequal pH, reported medium uncertainty and distinct deposition context.
+- timestamp: '2026-11-10T22:50:33Z'
+  curator: marcin
+  action: edit
+  summary: Add putida_pyromorphite_lead_remobilization_graph causal graph and ground putida_pyromorphite_remobilization in lead.yaml to Pseudomonas putida KT2440 reference-proteome proteins (UniProtKB:Q88JJ3, UniProtKB:Q88JJ0, UniProtKB:Q88C63)
+- timestamp: '2026-11-11T12:40:09Z'
+  curator: marcin
+  action: edit
+  summary: 'Align putida_pyromorphite_lead_remobilization_graph and protein_examples in lead.yaml with Topolska et al. (2014) parameters (fixes #1000)'
 history_refs:
 - history/records/lead/2026-10-11T062445Z-codex-f6ac41.yaml
+- history/records/lead/2026-11-10T225033Z-marcin-9327b1.yaml
+- history/records/lead/2026-11-11T124009Z-marcin-a238c8.yaml

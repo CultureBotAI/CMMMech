@@ -1,0 +1,31 @@
+history_version: 1
+target:
+  kind: record
+  slug: kaolin-mine-waste
+  path: data/records/kaolin-mine-waste.yaml
+session:
+  id: 2026-11-11T124005Z-marcin-2f9dc4
+  timestamp: '2026-11-11T12:40:05Z'
+  actors:
+  - name: marcin
+    type: ai_agent
+    model: claude-opus-4-6
+    agent_tool: antigravity
+events:
+- type: EDIT
+  outcome: changed
+  summary: 'Align bacillus_kaolin_waste_iron_impurity_leaching_graph and protein_examples
+    in kaolin-mine-waste.yaml with Sanchez-Palencia et al. (2022) parameters (fixes #1000)'
+  details: Aligned causal_graphs and protein_examples in data/records/kaolin-mine-waste.yaml
+    with exact Sanchez-Palencia et al. (2022) parameters (Poveda de la Sierra kaolin mine-dump
+    waste from Guadalajara, Spain with high-iron 92.20 wt% kaolinite / 3.06 wt% Fe2O3 and
+    low-iron 97.00 wt% kaolinite / 0.34 wt% Fe2O3 feeds, Bacillus thuringiensis EB63 isolate
+    no. 91, 12.5 g feed in 250 mL medium [50 g/L] with 20 g/L glucose and 0.75 g/L disodium
+    EDTA, pH 7.5 [plotted ~6.8] to ~pH 4.5 over 14 days, 0.83% [<1%] max iron elimination,
+    14.9 mg/L peak total Fe by AAS on day 7 in high-iron D2, substantial uninoculated medium-control
+    leaching, and UP000194143 selection note).
+  sections:
+  - mechanisms
+  - causal_graphs
+  - curation_history
+  - history_refs

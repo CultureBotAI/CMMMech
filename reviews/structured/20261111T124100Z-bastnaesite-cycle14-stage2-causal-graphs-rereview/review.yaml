@@ -1,0 +1,222 @@
+schema_version: 1.0.0
+review_id: 20261111T124100Z-bastnaesite-cycle14-stage2-causal-graphs-rereview
+kind: record
+repository: CultureBotAI/CMMMech
+title: 'Cycle 14 Stage 2 causal_graphs and UniProtKB grounding re-review of Bastnaesite
+  fluorocarbonate family (cmmmech:bastnaesite) after Issue #1000 alignment'
+started_at: '2026-11-11T12:40:00Z'
+finished_at: '2026-11-11T12:41:00Z'
+reviewer:
+  identity: antigravity / cmmmech-cycle14-stage2-causal-graphs-reviewer
+  kind: agent
+  model: claude-opus-4-6
+  independence: self_review
+  independence_basis: 'Single-agent Goal Mode execution of .claude/skills/review-record/SKILL.md
+    verifying the Cycle 14 Stage 2 curation of data/records/bastnaesite.yaml (SHA-256
+    0053dcdd0b148de0012082849276622ea488f7668cb3368e66c469241cdb6332) against live
+    UniProtKB grounding and cited primary source (he_2025: He, Ma, Li, Liu, Liang,
+    Zhu and He (2025). Microbial-mediated bastnaesite dissolution as a viable source
+    of clay-adsorbed rare earth elements in the regolith-hosted deposits. Geochimica
+    et Cosmochimica Acta 394:43-52. DOI 10.1016/j.gca.2025.02.027. Complete 39-page
+    GFZ institutional postprint; methods pp8-13, Figures 1-8, Tables 1-2 on p39, and
+    Discussion pp18-30. (https://gfzpublic.gfz.de/pubman/item/item_5034287_3/component/file_5034752/5034287.pdf)).'
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: 82a39149d4ef1a53b156989b8eaa220e3c809415
+  state: working_tree
+  inputs:
+  - path: data/records/bastnaesite.yaml
+    sha256: 0053dcdd0b148de0012082849276622ea488f7668cb3368e66c469241cdb6332
+    role: target
+  - path: history/records/bastnaesite/2026-11-11T124005Z-marcin-2260ea.yaml
+    sha256: c390a33fc5cbc7a341746da55d2ae7c74c0d77eccfbf515e1ee7002c5b345245
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+targets:
+- target_id: cmmmech:bastnaesite
+  path: data/records/bastnaesite.yaml
+  label: Bastnaesite fluorocarbonate family
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/bastnaesite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/bastnaesite/2026-11-11T124005Z-marcin-2260ea.yaml
+    role: canonical_history
+scope:
+  description: 'Cycle 14 Stage 2 causal_graphs and protein_examples review of data/records/bastnaesite.yaml
+    (SHA-256 0053dcdd0b148de0012082849276622ea488f7668cb3368e66c469241cdb6332) and
+    its canonical EDIT history sidecar (history/records/bastnaesite/2026-11-11T124005Z-marcin-2260ea.yaml)
+    verifying causal-graph node/edge topology, live UniProtKB grounding (UniProtKB:A0A0K0QI82
+    (A0A0K0QI82_BACTU, Citrate synthase, gene_symbol: CAB88_23625, TREMBL, NCBITaxon:1428
+    Bacillus thuringiensis, UP000194143); UniProtKB:A0A0B5XLM5 (A0A0B5XLM5_BACTU,
+    Malate dehydrogenase, gene_symbol: mdh, TREMBL, NCBITaxon:1428 Bacillus thuringiensis,
+    UP000194143); UniProtKB:A0A0K0QJ28 (A0A0K0QJ28_BACTU, L-lactate dehydrogenase,
+    gene_symbol: ldh, TREMBL, NCBITaxon:1428 Bacillus thuringiensis, UP000194143)),
+    and primary-source evidence fidelity across ''bt_bastnaesite_organic_acid_dissolution_graph''
+    (mechanism_ref: bt_bastnaesite_dissolution, 6 nodes / 6 edges).'
+  selection: Cycle 14 Stage 2 causal_graphs cohort review for cmmmech:bastnaesite
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:bastnaesite
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/bastnaesite.yaml
+  locator: Working-tree record data/records/bastnaesite.yaml (causal_graphs and mechanisms[].protein_examples)
+  accessed_at: '2026-11-11T12:41:00Z'
+  support: supports
+  summary: 'Updated data/records/bastnaesite.yaml (SHA-256 0053dcdd0b148de0012082849276622ea488f7668cb3368e66c469241cdb6332)
+    with causal_graphs (''bt_bastnaesite_organic_acid_dissolution_graph'' (mechanism_ref:
+    bt_bastnaesite_dissolution, 6 nodes / 6 edges)), achieving 100% parity between
+    mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and
+    preserving source-faithful support levels and experimental caveats.'
+  snapshot_sha256: 0053dcdd0b148de0012082849276622ea488f7668cb3368e66c469241cdb6332
+- evidence_id: primary_source
+  kind: primary_source
+  reference: https://gfzpublic.gfz.de/pubman/item/item_5034287_3/component/file_5034752/5034287.pdf
+  locator: 'he_2025: He, Ma, Li, Liu, Liang, Zhu and He (2025). Microbial-mediated
+    bastnaesite dissolution as a viable source of clay-adsorbed rare earth elements
+    in the regolith-hosted deposits. Geochimica et Cosmochimica Acta 394:43-52. DOI
+    10.1016/j.gca.2025.02.027. Complete 39-page GFZ institutional postprint; methods
+    pp8-13, Figures 1-8, Tables 1-2 on p39, and Discussion pp18-30. (https://gfzpublic.gfz.de/pubman/item/item_5034287_3/component/file_5034752/5034287.pdf)'
+  accessed_at: '2026-11-11T12:41:00Z'
+  support: supports
+  summary: 'Live-verified UniProtKB grounding across UniProtKB:A0A0K0QI82 (A0A0K0QI82_BACTU,
+    Citrate synthase, gene_symbol: CAB88_23625, TREMBL, NCBITaxon:1428 Bacillus thuringiensis,
+    UP000194143); UniProtKB:A0A0B5XLM5 (A0A0B5XLM5_BACTU, Malate dehydrogenase, gene_symbol:
+    mdh, TREMBL, NCBITaxon:1428 Bacillus thuringiensis, UP000194143); UniProtKB:A0A0K0QJ28
+    (A0A0K0QJ28_BACTU, L-lactate dehydrogenase, gene_symbol: ldh, TREMBL, NCBITaxon:1428
+    Bacillus thuringiensis, UP000194143). Primary mechanism source (he_2025: He, Ma,
+    Li, Liu, Liang, Zhu and He (2025). Microbial-mediated bastnaesite dissolution
+    as a viable source of clay-adsorbed rare earth elements in the regolith-hosted
+    deposits. Geochimica et Cosmochimica Acta 394:43-52. DOI 10.1016/j.gca.2025.02.027.
+    Complete 39-page GFZ institutional postprint; methods pp8-13, Figures 1-8, Tables
+    1-2 on p39, and Discussion pp18-30. (https://gfzpublic.gfz.de/pubman/item/item_5034287_3/component/file_5034752/5034287.pdf))
+    parameters and source-level caveats are strictly preserved on all nodes, edges,
+    and ProteinExample evidence items.'
+- evidence_id: edit_history
+  kind: record_content
+  reference: history/records/bastnaesite/2026-11-11T124005Z-marcin-2260ea.yaml
+  locator: Canonical EDIT history sidecar history/records/bastnaesite/2026-11-11T124005Z-marcin-2260ea.yaml
+  accessed_at: '2026-11-11T12:41:00Z'
+  support: supports
+  summary: 'Canonical EDIT history sidecar history/records/bastnaesite/2026-11-11T124005Z-marcin-2260ea.yaml
+    (SHA-256 c390a33fc5cbc7a341746da55d2ae7c74c0d77eccfbf515e1ee7002c5b345245): Align
+    bt_bastnaesite_organic_acid_dissolution_graph and protein_examples in bastnaesite.yaml
+    with He et al. (2025) and Mendeley Data he_data_v1 parameters (fixes #1000)'
+  snapshot_sha256: c390a33fc5cbc7a341746da55d2ae7c74c0d77eccfbf515e1ee7002c5b345245
+- evidence_id: validation
+  kind: validation
+  reference: data/records/bastnaesite.yaml
+  locator: Real CLI validation via python -m cmmmech validate --require-records and
+    validate-history --base main
+  accessed_at: '2026-11-11T12:41:00Z'
+  support: supports
+  summary: data/records/bastnaesite.yaml and history/records/bastnaesite/2026-11-11T124005Z-marcin-2260ea.yaml
+    pass strict LinkML schema, protein_examples parity, and history validation with
+    0 errors.
+  snapshot_sha256: 0053dcdd0b148de0012082849276622ea488f7668cb3368e66c469241cdb6332
+checks:
+- check_id: validate_records
+  name: Strict corpus validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Checked 713 record(s); 0 failed.
+  target_ids:
+  - cmmmech:bastnaesite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: validate_history
+  name: Canonical history validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate-history --base main
+  status: passed
+  required: true
+  summary: Checked 1573 history record(s); 0 error(s).
+  target_ids:
+  - cmmmech:bastnaesite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+assessments:
+- assessment_id: causal_graph_and_protein_grounding
+  area: graph
+  topic: 'Verification of causal_graphs structure, UniProtKB grounding, and parity
+    across ''bt_bastnaesite_organic_acid_dissolution_graph'' (mechanism_ref: bt_bastnaesite_dissolution,
+    6 nodes / 6 edges)'
+  outcome: supported
+  summary: 'Updated data/records/bastnaesite.yaml (SHA-256 0053dcdd0b148de0012082849276622ea488f7668cb3368e66c469241cdb6332)
+    with causal_graphs (''bt_bastnaesite_organic_acid_dissolution_graph'' (mechanism_ref:
+    bt_bastnaesite_dissolution, 6 nodes / 6 edges)), achieving 100% parity between
+    mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and
+    preserving source-faithful support levels and caveats from he_2025: He, Ma, Li,
+    Liu, Liang, Zhu and He (2025). Microbial-mediated bastnaesite dissolution as a
+    viable source of clay-adsorbed rare earth elements in the regolith-hosted deposits.
+    Geochimica et Cosmochimica Acta 394:43-52. DOI 10.1016/j.gca.2025.02.027. Complete
+    39-page GFZ institutional postprint; methods pp8-13, Figures 1-8, Tables 1-2 on
+    p39, and Discussion pp18-30. (https://gfzpublic.gfz.de/pubman/item/item_5034287_3/component/file_5034752/5034287.pdf).
+    Live-verified UniProtKB grounding across UniProtKB:A0A0K0QI82 (A0A0K0QI82_BACTU,
+    Citrate synthase, gene_symbol: CAB88_23625, TREMBL, NCBITaxon:1428 Bacillus thuringiensis,
+    UP000194143); UniProtKB:A0A0B5XLM5 (A0A0B5XLM5_BACTU, Malate dehydrogenase, gene_symbol:
+    mdh, TREMBL, NCBITaxon:1428 Bacillus thuringiensis, UP000194143); UniProtKB:A0A0K0QJ28
+    (A0A0K0QJ28_BACTU, L-lactate dehydrogenase, gene_symbol: ldh, TREMBL, NCBITaxon:1428
+    Bacillus thuringiensis, UP000194143).'
+  target_ids:
+  - cmmmech:bastnaesite
+  evidence_ids:
+  - owner
+  - primary_source
+- assessment_id: provenance_and_validation_verification
+  area: provenance
+  topic: Verification of canonical EDIT history sidecar and strict schema validation
+  outcome: supported
+  summary: 'data/records/bastnaesite.yaml was updated exclusively through scripts/curate_causal_graphs.py
+    (curate_record_file), producing append-only history sidecar history/records/bastnaesite/2026-11-11T124005Z-marcin-2260ea.yaml
+    (SHA-256 c390a33fc5cbc7a341746da55d2ae7c74c0d77eccfbf515e1ee7002c5b345245: Align
+    bt_bastnaesite_organic_acid_dissolution_graph and protein_examples in bastnaesite.yaml
+    with He et al. (2025) and Mendeley Data he_data_v1 parameters (fixes #1000)) and
+    passing all LinkML and history validation gates.'
+  target_ids:
+  - cmmmech:bastnaesite
+  evidence_ids:
+  - owner
+  - edit_history
+  - validation
+findings: []
+actions: []
+summary: 'Bastnaesite fluorocarbonate family (cmmmech:bastnaesite) passes Cycle 14
+  Stage 2 causal_graphs review (scientific_review: true) at SHA-256 0053dcdd0b148de0012082849276622ea488f7668cb3368e66c469241cdb6332:
+  Updated data/records/bastnaesite.yaml with ''bt_bastnaesite_organic_acid_dissolution_graph''
+  (mechanism_ref: bt_bastnaesite_dissolution, 6 nodes / 6 edges), achieving 100% parity
+  between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples
+  and preserving source-faithful support levels and experimental caveats from he_2025:
+  He, Ma, Li, Liu, Liang, Zhu and He (2025). Microbial-mediated bastnaesite dissolution
+  as a viable source of clay-adsorbed rare earth elements in the regolith-hosted deposits.
+  Geochimica et Cosmochimica Acta 394:43-52. DOI 10.1016/j.gca.2025.02.027. Complete
+  39-page GFZ institutional postprint; methods pp8-13, Figures 1-8, Tables 1-2 on
+  p39, and Discussion pp18-30. (https://gfzpublic.gfz.de/pubman/item/item_5034287_3/component/file_5034752/5034287.pdf).
+  Live-verified UniProtKB grounding across UniProtKB:A0A0K0QI82 (A0A0K0QI82_BACTU,
+  Citrate synthase, gene_symbol: CAB88_23625, TREMBL, NCBITaxon:1428 Bacillus thuringiensis,
+  UP000194143); UniProtKB:A0A0B5XLM5 (A0A0B5XLM5_BACTU, Malate dehydrogenase, gene_symbol:
+  mdh, TREMBL, NCBITaxon:1428 Bacillus thuringiensis, UP000194143); UniProtKB:A0A0K0QJ28
+  (A0A0K0QJ28_BACTU, L-lactate dehydrogenase, gene_symbol: ldh, TREMBL, NCBITaxon:1428
+  Bacillus thuringiensis, UP000194143).'
+limitations:
+- 'Review is conducted in single-agent Goal Mode (independence: self_review) against
+  working-tree bytes; an independent subagent PR review is executed prior to merge.'
+notes:
+- 'Executed during Cycle 14 Stage 2 (causal_graphs) for cmmmech:bastnaesite; supersedes
+  initial review 20261110T225100Z-bastnaesite-cycle14-stage2-causal-graphs-review
+  after Issue #1000 alignment.'
+related_reviews: []
