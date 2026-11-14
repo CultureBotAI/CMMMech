@@ -1,0 +1,289 @@
+# Cycle 14 Stage 3 protein_examples and causal_graphs review of Acanthite (cmmmech:acanthite)
+
+- Review: 20261111T142200Z-acanthite-cycle14-stage3-protein-examples-review
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-11-11T14:21:00Z
+- Finished UTC: 2026-11-11T14:22:00Z
+- Reviewer: antigravity / cmmmech-cycle14-stage3-protein-examples-reviewer (self_review)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Acanthite (cmmmech:acanthite) passes Cycle 14 Stage 3 protein_examples review (scientific_review: true) at SHA-256 3d0e705eea46d95a0d1d4d4d1de4c508b67f930b5248ad7ffca898fef268dccc: Updated data/records/acanthite.yaml with UniProtKB:F8H4S1 (F8H4S1_STUS2, Copper resistance protein A, gene_symbol: copA, TREMBL, NCBITaxon:96563 Stutzerimonas stutzeri ATCC 17588 = LMG 11199, UP000008932); UniProtKB:A4VLP4 (A4VLP4_STUS1, Sulfite reductase, gene_symbol: cysI, TREMBL, NCBITaxon:379731 Stutzerimonas stutzeri A1501, UP000000233) and 'ag259_periplasmic_acanthite_formation_graph' (mechanism_ref: ag259_associated_acanthite_particles, 4 nodes / 3 edges), achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and preserving source-faithful support levels and experimental caveats from klaus1999: Klaus, Joerger, Olsson and Granqvist (1999). Silver-based crystalline nanoparticles, microbially fabricated. PNAS 96, 13611-13614. Complete original PMC full text, Materials and Methods, Results and Discussion, and original Figures 1-3, especially Figure 3b. (https://doi.org/10.1073/pnas.96.24.13611).
+
+## Scope And Provenance
+
+Cycle 14 Stage 3 protein_examples and causal_graphs review of data/records/acanthite.yaml (SHA-256 3d0e705eea46d95a0d1d4d4d1de4c508b67f930b5248ad7ffca898fef268dccc) and its canonical EDIT history sidecar (history/records/acanthite/2026-11-11T142114Z-marcin-e02f8f.yaml) verifying live UniProtKB grounding (UniProtKB:F8H4S1 (F8H4S1_STUS2, Copper resistance protein A, gene_symbol: copA, TREMBL, NCBITaxon:96563 Stutzerimonas stutzeri ATCC 17588 = LMG 11199, UP000008932); UniProtKB:A4VLP4 (A4VLP4_STUS1, Sulfite reductase, gene_symbol: cysI, TREMBL, NCBITaxon:379731 Stutzerimonas stutzeri A1501, UP000000233)), causal-graph node/edge parity across 'ag259_periplasmic_acanthite_formation_graph' (mechanism_ref: ag259_associated_acanthite_particles, 4 nodes / 3 edges), and primary-source evidence fidelity.
+
+Selection: Cycle 14 Stage 3 protein_examples cohort review for cmmmech:acanthite
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 000fd9c1bad8e0de32a55b4bc1554d4a86696dae.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:acanthite | data/records/acanthite.yaml | maintained | Acanthite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Strict corpus validation | passed | True | cmmmech:acanthite | Checked 713 record(s); 0 failed. |
+| Canonical history validation | passed | True | cmmmech:acanthite | Checked 1583 history record(s); 0 error(s). |
+
+## Scientific And Domain Assessments
+
+### Verification of UniProtKB protein_examples grounding, causal_graphs structure, and parity across 'ag259_periplasmic_acanthite_formation_graph' (mechanism_ref: ag259_associated_acanthite_particles, 4 nodes / 3 edges)
+
+graph: supported. Targets: cmmmech:acanthite.
+
+Updated data/records/acanthite.yaml (SHA-256 3d0e705eea46d95a0d1d4d4d1de4c508b67f930b5248ad7ffca898fef268dccc) with live-verified protein_examples (UniProtKB:F8H4S1 (F8H4S1_STUS2, Copper resistance protein A, gene_symbol: copA, TREMBL, NCBITaxon:96563 Stutzerimonas stutzeri ATCC 17588 = LMG 11199, UP000008932); UniProtKB:A4VLP4 (A4VLP4_STUS1, Sulfite reductase, gene_symbol: cysI, TREMBL, NCBITaxon:379731 Stutzerimonas stutzeri A1501, UP000000233)) and causal_graphs ('ag259_periplasmic_acanthite_formation_graph' (mechanism_ref: ag259_associated_acanthite_particles, 4 nodes / 3 edges)), achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and preserving source-faithful support levels and caveats from klaus1999: Klaus, Joerger, Olsson and Granqvist (1999). Silver-based crystalline nanoparticles, microbially fabricated. PNAS 96, 13611-13614. Complete original PMC full text, Materials and Methods, Results and Discussion, and original Figures 1-3, especially Figure 3b. (https://doi.org/10.1073/pnas.96.24.13611).
+
+### Verification of canonical EDIT history sidecar and strict schema validation
+
+provenance: supported. Targets: cmmmech:acanthite.
+
+data/records/acanthite.yaml was updated exclusively through scripts/curate_causal_graphs.py (curate_record_file), producing append-only history sidecar history/records/acanthite/2026-11-11T142114Z-marcin-e02f8f.yaml (SHA-256 e0dca36c90c2c8a7c9f9d6640e90a2ad7d78a7a0dc08f6bd6d71455b566208bf: Added Stutzerimonas stutzeri reference-proteome protein examples (CopA UniProtKB:F8H4S1, CysI UniProtKB:A4VLP4) and representative causal graph for isolate AG259 periplasmic acanthite formation.) and passing all LinkML and history validation gates.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/records/acanthite.yaml; Working-tree record data/records/acanthite.yaml (mechanisms[].protein_examples and causal_graphs) | supports | Updated data/records/acanthite.yaml (SHA-256 3d0e705eea46d95a0d1d4d4d1de4c508b67f930b5248ad7ffca898fef268dccc) with live-verified protein_examples (UniProtKB:F8H4S1 (F8H4S1_STUS2, Copper resistance protein A, gene_symbol: copA, TREMBL, NCBITaxon:96563 Stutzerimonas stutzeri ATCC 17588 = LMG 11199, UP000008932); UniProtKB:A4VLP4 (A4VLP4_STUS1, Sulfite reductase, gene_symbol: cysI, TREMBL, NCBITaxon:379731 Stutzerimonas stutzeri A1501, UP000000233)) and causal_graphs ('ag259_periplasmic_acanthite_formation_graph' (mechanism_ref: ag259_associated_acanthite_particles, 4 nodes / 3 edges)), achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and preserving source-faithful support levels. |
+| primary_source | https://doi.org/10.1073/pnas.96.24.13611; klaus1999: Klaus, Joerger, Olsson and Granqvist (1999). Silver-based crystalline nanoparticles, microbially fabricated. PNAS 96, 13611-13614. Complete original PMC full text, Materials and Methods, Results and Discussion, and original Figures 1-3, especially Figure 3b. (https://doi.org/10.1073/pnas.96.24.13611) | supports | Live-verified UniProtKB grounding across UniProtKB:F8H4S1 (F8H4S1_STUS2, Copper resistance protein A, gene_symbol: copA, TREMBL, NCBITaxon:96563 Stutzerimonas stutzeri ATCC 17588 = LMG 11199, UP000008932); UniProtKB:A4VLP4 (A4VLP4_STUS1, Sulfite reductase, gene_symbol: cysI, TREMBL, NCBITaxon:379731 Stutzerimonas stutzeri A1501, UP000000233). Primary mechanism source (klaus1999: Klaus, Joerger, Olsson and Granqvist (1999). Silver-based crystalline nanoparticles, microbially fabricated. PNAS 96, 13611-13614. Complete original PMC full text, Materials and Methods, Results and Discussion, and original Figures 1-3, especially Figure 3b. (https://doi.org/10.1073/pnas.96.24.13611)) parameters and source-level caveats are strictly preserved on all nodes, edges, and ProteinExample evidence items. |
+| edit_history | history/records/acanthite/2026-11-11T142114Z-marcin-e02f8f.yaml; Canonical EDIT history sidecar history/records/acanthite/2026-11-11T142114Z-marcin-e02f8f.yaml | supports | Canonical EDIT history sidecar history/records/acanthite/2026-11-11T142114Z-marcin-e02f8f.yaml (SHA-256 e0dca36c90c2c8a7c9f9d6640e90a2ad7d78a7a0dc08f6bd6d71455b566208bf): Added Stutzerimonas stutzeri reference-proteome protein examples (CopA UniProtKB:F8H4S1, CysI UniProtKB:A4VLP4) and representative causal graph for isolate AG259 periplasmic acanthite formation. |
+| validation | data/records/acanthite.yaml; Real CLI validation via python -m cmmmech validate --require-records and validate-history --base main | supports | data/records/acanthite.yaml and history/records/acanthite/2026-11-11T142114Z-marcin-e02f8f.yaml pass strict LinkML schema, protein_examples parity, and history validation with 0 errors. |
+
+## Limits And Additional Notes
+
+- Review is conducted in single-agent Goal Mode (independence: self_review) against working-tree bytes; an independent subagent PR review is executed prior to merge.
+- Executed during Cycle 14 Stage 3 (protein_examples) for cmmmech:acanthite.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261111T142200Z-acanthite-cycle14-stage3-protein-examples-review
+kind: record
+repository: CultureBotAI/CMMMech
+title: Cycle 14 Stage 3 protein_examples and causal_graphs review of Acanthite (cmmmech:acanthite)
+started_at: '2026-11-11T14:21:00Z'
+finished_at: '2026-11-11T14:22:00Z'
+reviewer:
+  identity: antigravity / cmmmech-cycle14-stage3-protein-examples-reviewer
+  kind: agent
+  model: claude-opus-4-6
+  independence: self_review
+  independence_basis: 'Single-agent Goal Mode execution of .claude/skills/review-record/SKILL.md
+    verifying the Cycle 14 Stage 3 curation of data/records/acanthite.yaml (SHA-256
+    3d0e705eea46d95a0d1d4d4d1de4c508b67f930b5248ad7ffca898fef268dccc) against live
+    UniProtKB grounding and cited primary source (klaus1999: Klaus, Joerger, Olsson
+    and Granqvist (1999). Silver-based crystalline nanoparticles, microbially fabricated.
+    PNAS 96, 13611-13614. Complete original PMC full text, Materials and Methods,
+    Results and Discussion, and original Figures 1-3, especially Figure 3b. (https://doi.org/10.1073/pnas.96.24.13611)).'
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: 000fd9c1bad8e0de32a55b4bc1554d4a86696dae
+  state: working_tree
+  inputs:
+  - path: data/records/acanthite.yaml
+    sha256: 3d0e705eea46d95a0d1d4d4d1de4c508b67f930b5248ad7ffca898fef268dccc
+    role: target
+  - path: history/records/acanthite/2026-11-11T142114Z-marcin-e02f8f.yaml
+    sha256: e0dca36c90c2c8a7c9f9d6640e90a2ad7d78a7a0dc08f6bd6d71455b566208bf
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+targets:
+- target_id: cmmmech:acanthite
+  path: data/records/acanthite.yaml
+  label: Acanthite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/acanthite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/acanthite/2026-11-11T142114Z-marcin-e02f8f.yaml
+    role: canonical_history
+scope:
+  description: 'Cycle 14 Stage 3 protein_examples and causal_graphs review of data/records/acanthite.yaml
+    (SHA-256 3d0e705eea46d95a0d1d4d4d1de4c508b67f930b5248ad7ffca898fef268dccc) and
+    its canonical EDIT history sidecar (history/records/acanthite/2026-11-11T142114Z-marcin-e02f8f.yaml)
+    verifying live UniProtKB grounding (UniProtKB:F8H4S1 (F8H4S1_STUS2, Copper resistance
+    protein A, gene_symbol: copA, TREMBL, NCBITaxon:96563 Stutzerimonas stutzeri ATCC
+    17588 = LMG 11199, UP000008932); UniProtKB:A4VLP4 (A4VLP4_STUS1, Sulfite reductase,
+    gene_symbol: cysI, TREMBL, NCBITaxon:379731 Stutzerimonas stutzeri A1501, UP000000233)),
+    causal-graph node/edge parity across ''ag259_periplasmic_acanthite_formation_graph''
+    (mechanism_ref: ag259_associated_acanthite_particles, 4 nodes / 3 edges), and
+    primary-source evidence fidelity.'
+  selection: Cycle 14 Stage 3 protein_examples cohort review for cmmmech:acanthite
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:acanthite
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/acanthite.yaml
+  locator: Working-tree record data/records/acanthite.yaml (mechanisms[].protein_examples
+    and causal_graphs)
+  accessed_at: '2026-11-11T14:22:00Z'
+  support: supports
+  summary: 'Updated data/records/acanthite.yaml (SHA-256 3d0e705eea46d95a0d1d4d4d1de4c508b67f930b5248ad7ffca898fef268dccc)
+    with live-verified protein_examples (UniProtKB:F8H4S1 (F8H4S1_STUS2, Copper resistance
+    protein A, gene_symbol: copA, TREMBL, NCBITaxon:96563 Stutzerimonas stutzeri ATCC
+    17588 = LMG 11199, UP000008932); UniProtKB:A4VLP4 (A4VLP4_STUS1, Sulfite reductase,
+    gene_symbol: cysI, TREMBL, NCBITaxon:379731 Stutzerimonas stutzeri A1501, UP000000233))
+    and causal_graphs (''ag259_periplasmic_acanthite_formation_graph'' (mechanism_ref:
+    ag259_associated_acanthite_particles, 4 nodes / 3 edges)), achieving 100% parity
+    between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples
+    and preserving source-faithful support levels.'
+  snapshot_sha256: 3d0e705eea46d95a0d1d4d4d1de4c508b67f930b5248ad7ffca898fef268dccc
+- evidence_id: primary_source
+  kind: primary_source
+  reference: https://doi.org/10.1073/pnas.96.24.13611
+  locator: 'klaus1999: Klaus, Joerger, Olsson and Granqvist (1999). Silver-based crystalline
+    nanoparticles, microbially fabricated. PNAS 96, 13611-13614. Complete original
+    PMC full text, Materials and Methods, Results and Discussion, and original Figures
+    1-3, especially Figure 3b. (https://doi.org/10.1073/pnas.96.24.13611)'
+  accessed_at: '2026-11-11T14:22:00Z'
+  support: supports
+  summary: 'Live-verified UniProtKB grounding across UniProtKB:F8H4S1 (F8H4S1_STUS2,
+    Copper resistance protein A, gene_symbol: copA, TREMBL, NCBITaxon:96563 Stutzerimonas
+    stutzeri ATCC 17588 = LMG 11199, UP000008932); UniProtKB:A4VLP4 (A4VLP4_STUS1,
+    Sulfite reductase, gene_symbol: cysI, TREMBL, NCBITaxon:379731 Stutzerimonas stutzeri
+    A1501, UP000000233). Primary mechanism source (klaus1999: Klaus, Joerger, Olsson
+    and Granqvist (1999). Silver-based crystalline nanoparticles, microbially fabricated.
+    PNAS 96, 13611-13614. Complete original PMC full text, Materials and Methods,
+    Results and Discussion, and original Figures 1-3, especially Figure 3b. (https://doi.org/10.1073/pnas.96.24.13611))
+    parameters and source-level caveats are strictly preserved on all nodes, edges,
+    and ProteinExample evidence items.'
+- evidence_id: edit_history
+  kind: record_content
+  reference: history/records/acanthite/2026-11-11T142114Z-marcin-e02f8f.yaml
+  locator: Canonical EDIT history sidecar history/records/acanthite/2026-11-11T142114Z-marcin-e02f8f.yaml
+  accessed_at: '2026-11-11T14:22:00Z'
+  support: supports
+  summary: 'Canonical EDIT history sidecar history/records/acanthite/2026-11-11T142114Z-marcin-e02f8f.yaml
+    (SHA-256 e0dca36c90c2c8a7c9f9d6640e90a2ad7d78a7a0dc08f6bd6d71455b566208bf): Added
+    Stutzerimonas stutzeri reference-proteome protein examples (CopA UniProtKB:F8H4S1,
+    CysI UniProtKB:A4VLP4) and representative causal graph for isolate AG259 periplasmic
+    acanthite formation.'
+  snapshot_sha256: e0dca36c90c2c8a7c9f9d6640e90a2ad7d78a7a0dc08f6bd6d71455b566208bf
+- evidence_id: validation
+  kind: validation
+  reference: data/records/acanthite.yaml
+  locator: Real CLI validation via python -m cmmmech validate --require-records and
+    validate-history --base main
+  accessed_at: '2026-11-11T14:22:00Z'
+  support: supports
+  summary: data/records/acanthite.yaml and history/records/acanthite/2026-11-11T142114Z-marcin-e02f8f.yaml
+    pass strict LinkML schema, protein_examples parity, and history validation with
+    0 errors.
+  snapshot_sha256: 3d0e705eea46d95a0d1d4d4d1de4c508b67f930b5248ad7ffca898fef268dccc
+checks:
+- check_id: validate_records
+  name: Strict corpus validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Checked 713 record(s); 0 failed.
+  target_ids:
+  - cmmmech:acanthite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: validate_history
+  name: Canonical history validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate-history --base main
+  status: passed
+  required: true
+  summary: Checked 1583 history record(s); 0 error(s).
+  target_ids:
+  - cmmmech:acanthite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+assessments:
+- assessment_id: protein_grounding_and_causal_graph
+  area: graph
+  topic: 'Verification of UniProtKB protein_examples grounding, causal_graphs structure,
+    and parity across ''ag259_periplasmic_acanthite_formation_graph'' (mechanism_ref:
+    ag259_associated_acanthite_particles, 4 nodes / 3 edges)'
+  outcome: supported
+  summary: 'Updated data/records/acanthite.yaml (SHA-256 3d0e705eea46d95a0d1d4d4d1de4c508b67f930b5248ad7ffca898fef268dccc)
+    with live-verified protein_examples (UniProtKB:F8H4S1 (F8H4S1_STUS2, Copper resistance
+    protein A, gene_symbol: copA, TREMBL, NCBITaxon:96563 Stutzerimonas stutzeri ATCC
+    17588 = LMG 11199, UP000008932); UniProtKB:A4VLP4 (A4VLP4_STUS1, Sulfite reductase,
+    gene_symbol: cysI, TREMBL, NCBITaxon:379731 Stutzerimonas stutzeri A1501, UP000000233))
+    and causal_graphs (''ag259_periplasmic_acanthite_formation_graph'' (mechanism_ref:
+    ag259_associated_acanthite_particles, 4 nodes / 3 edges)), achieving 100% parity
+    between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples
+    and preserving source-faithful support levels and caveats from klaus1999: Klaus,
+    Joerger, Olsson and Granqvist (1999). Silver-based crystalline nanoparticles,
+    microbially fabricated. PNAS 96, 13611-13614. Complete original PMC full text,
+    Materials and Methods, Results and Discussion, and original Figures 1-3, especially
+    Figure 3b. (https://doi.org/10.1073/pnas.96.24.13611).'
+  target_ids:
+  - cmmmech:acanthite
+  evidence_ids:
+  - owner
+  - primary_source
+- assessment_id: provenance_and_validation_verification
+  area: provenance
+  topic: Verification of canonical EDIT history sidecar and strict schema validation
+  outcome: supported
+  summary: 'data/records/acanthite.yaml was updated exclusively through scripts/curate_causal_graphs.py
+    (curate_record_file), producing append-only history sidecar history/records/acanthite/2026-11-11T142114Z-marcin-e02f8f.yaml
+    (SHA-256 e0dca36c90c2c8a7c9f9d6640e90a2ad7d78a7a0dc08f6bd6d71455b566208bf: Added
+    Stutzerimonas stutzeri reference-proteome protein examples (CopA UniProtKB:F8H4S1,
+    CysI UniProtKB:A4VLP4) and representative causal graph for isolate AG259 periplasmic
+    acanthite formation.) and passing all LinkML and history validation gates.'
+  target_ids:
+  - cmmmech:acanthite
+  evidence_ids:
+  - owner
+  - edit_history
+  - validation
+findings: []
+actions: []
+summary: 'Acanthite (cmmmech:acanthite) passes Cycle 14 Stage 3 protein_examples review
+  (scientific_review: true) at SHA-256 3d0e705eea46d95a0d1d4d4d1de4c508b67f930b5248ad7ffca898fef268dccc:
+  Updated data/records/acanthite.yaml with UniProtKB:F8H4S1 (F8H4S1_STUS2, Copper
+  resistance protein A, gene_symbol: copA, TREMBL, NCBITaxon:96563 Stutzerimonas stutzeri
+  ATCC 17588 = LMG 11199, UP000008932); UniProtKB:A4VLP4 (A4VLP4_STUS1, Sulfite reductase,
+  gene_symbol: cysI, TREMBL, NCBITaxon:379731 Stutzerimonas stutzeri A1501, UP000000233)
+  and ''ag259_periplasmic_acanthite_formation_graph'' (mechanism_ref: ag259_associated_acanthite_particles,
+  4 nodes / 3 edges), achieving 100% parity between mechanisms[].protein_examples
+  and causal_graphs[].nodes[].protein_examples and preserving source-faithful support
+  levels and experimental caveats from klaus1999: Klaus, Joerger, Olsson and Granqvist
+  (1999). Silver-based crystalline nanoparticles, microbially fabricated. PNAS 96,
+  13611-13614. Complete original PMC full text, Materials and Methods, Results and
+  Discussion, and original Figures 1-3, especially Figure 3b. (https://doi.org/10.1073/pnas.96.24.13611).'
+limitations:
+- 'Review is conducted in single-agent Goal Mode (independence: self_review) against
+  working-tree bytes; an independent subagent PR review is executed prior to merge.'
+notes:
+- Executed during Cycle 14 Stage 3 (protein_examples) for cmmmech:acanthite.
+related_reviews: []
+```

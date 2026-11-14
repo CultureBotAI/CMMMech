@@ -1,0 +1,29 @@
+history_version: 1
+target:
+  kind: record
+  slug: monazite-ore
+  path: data/records/monazite-ore.yaml
+session:
+  id: 2026-11-11T142116Z-marcin-59a02e
+  timestamp: '2026-11-11T14:21:16Z'
+  actors:
+  - name: marcin
+    type: ai_agent
+    model: claude-opus-4-6
+    agent_tool: antigravity
+events:
+- type: EDIT
+  outcome: changed
+  summary: Added strain-exact Klebsiella aerogenes ATCC 13048 reference-proteome protein examples
+    (EAE_11450 UniProtKB:A0A0H3FRY1, PqqC UniProtKB:A0A0H3FSZ4) and representative causal
+    graph for monazite-ore biofilm colonization and surface alteration.
+  details: Grounded klebsiella_surface_colonization in data/records/monazite-ore.yaml to live-verified
+    Klebsiella aerogenes ATCC 13048 (= KCTC 2190) reference proteome UP000008881 entries for
+    Glucose dehydrogenase (EAE_11450, UniProtKB:A0A0H3FRY1) and PqqC (pqqC / EAE_19565, UniProtKB:A0A0H3FSZ4)
+    and added klebsiella_monazite_ore_biofilm_colonization_graph preserving van Alin et al.
+    (2023) qualitative surface-erosion caveats.
+  sections:
+  - mechanisms
+  - causal_graphs
+  - curation_history
+  - history_refs

@@ -1,0 +1,287 @@
+# Cycle 14 Stage 3 protein_examples and causal_graphs review of Tellurium (cmmmech:tellurium)
+
+- Review: 20261111T142200Z-tellurium-cycle14-stage3-protein-examples-review
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-11-11T14:21:00Z
+- Finished UTC: 2026-11-11T14:22:00Z
+- Reviewer: antigravity / cmmmech-cycle14-stage3-protein-examples-reviewer (self_review)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Tellurium (cmmmech:tellurium) passes Cycle 14 Stage 3 protein_examples review (scientific_review: true) at SHA-256 6b5af984d11be95eecdfcee97eb1921afa5672dceb63784a74abfd89ea6410ce: Updated data/records/tellurium.yaml with UniProtKB:A0A059MJL9 (A0A059MJL9_9NOCA, Thioredoxin reductase, gene_symbol: RAJCM14343_5433, TREMBL, NCBITaxon:191292 Rhodococcus aetherivorans, UP000325466); UniProtKB:A0ABQ0YU44 (A0ABQ0YU44_9NOCA, Catalase-peroxidase, gene_symbol: katG, TREMBL, NCBITaxon:191292 Rhodococcus aetherivorans, UP000325466) and 'bcp1_resting_cell_tellurite_reduction_graph' (mechanism_ref: bcp1_tellurite_reduction, 4 nodes / 3 edges), achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and preserving source-faithful support levels and experimental caveats from presentato_2018: Presentato et al. (2018). Assembly, growth and conductive properties of tellurium nanorods produced by Rhodococcus aetherivorans BCP1. Scientific Reports 8, 3923. DOI 10.1038/s41598-018-22320-x. (https://link.springer.com/article/10.1038/s41598-018-22320-x).
+
+## Scope And Provenance
+
+Cycle 14 Stage 3 protein_examples and causal_graphs review of data/records/tellurium.yaml (SHA-256 6b5af984d11be95eecdfcee97eb1921afa5672dceb63784a74abfd89ea6410ce) and its canonical EDIT history sidecar (history/records/tellurium/2026-11-11T142112Z-marcin-21e979.yaml) verifying live UniProtKB grounding (UniProtKB:A0A059MJL9 (A0A059MJL9_9NOCA, Thioredoxin reductase, gene_symbol: RAJCM14343_5433, TREMBL, NCBITaxon:191292 Rhodococcus aetherivorans, UP000325466); UniProtKB:A0ABQ0YU44 (A0ABQ0YU44_9NOCA, Catalase-peroxidase, gene_symbol: katG, TREMBL, NCBITaxon:191292 Rhodococcus aetherivorans, UP000325466)), causal-graph node/edge parity across 'bcp1_resting_cell_tellurite_reduction_graph' (mechanism_ref: bcp1_tellurite_reduction, 4 nodes / 3 edges), and primary-source evidence fidelity.
+
+Selection: Cycle 14 Stage 3 protein_examples cohort review for cmmmech:tellurium
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 000fd9c1bad8e0de32a55b4bc1554d4a86696dae.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:tellurium | data/records/tellurium.yaml | maintained | Tellurium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Strict corpus validation | passed | True | cmmmech:tellurium | Checked 713 record(s); 0 failed. |
+| Canonical history validation | passed | True | cmmmech:tellurium | Checked 1583 history record(s); 0 error(s). |
+
+## Scientific And Domain Assessments
+
+### Verification of UniProtKB protein_examples grounding, causal_graphs structure, and parity across 'bcp1_resting_cell_tellurite_reduction_graph' (mechanism_ref: bcp1_tellurite_reduction, 4 nodes / 3 edges)
+
+graph: supported. Targets: cmmmech:tellurium.
+
+Updated data/records/tellurium.yaml (SHA-256 6b5af984d11be95eecdfcee97eb1921afa5672dceb63784a74abfd89ea6410ce) with live-verified protein_examples (UniProtKB:A0A059MJL9 (A0A059MJL9_9NOCA, Thioredoxin reductase, gene_symbol: RAJCM14343_5433, TREMBL, NCBITaxon:191292 Rhodococcus aetherivorans, UP000325466); UniProtKB:A0ABQ0YU44 (A0ABQ0YU44_9NOCA, Catalase-peroxidase, gene_symbol: katG, TREMBL, NCBITaxon:191292 Rhodococcus aetherivorans, UP000325466)) and causal_graphs ('bcp1_resting_cell_tellurite_reduction_graph' (mechanism_ref: bcp1_tellurite_reduction, 4 nodes / 3 edges)), achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and preserving source-faithful support levels and caveats from presentato_2018: Presentato et al. (2018). Assembly, growth and conductive properties of tellurium nanorods produced by Rhodococcus aetherivorans BCP1. Scientific Reports 8, 3923. DOI 10.1038/s41598-018-22320-x. (https://link.springer.com/article/10.1038/s41598-018-22320-x).
+
+### Verification of canonical EDIT history sidecar and strict schema validation
+
+provenance: supported. Targets: cmmmech:tellurium.
+
+data/records/tellurium.yaml was updated exclusively through scripts/curate_causal_graphs.py (curate_record_file), producing append-only history sidecar history/records/tellurium/2026-11-11T142112Z-marcin-21e979.yaml (SHA-256 0b77fa5c5e75602cfbd938ab50d952c9f7431b2f9325eba4c428c49070c25d93: Added Rhodococcus aetherivorans reference-proteome protein examples (thioredoxin reductase UniProtKB:A0A059MJL9, KatG UniProtKB:A0ABQ0YU44) and representative causal graph for strain BCP1 tellurite reduction.) and passing all LinkML and history validation gates.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/records/tellurium.yaml; Working-tree record data/records/tellurium.yaml (mechanisms[].protein_examples and causal_graphs) | supports | Updated data/records/tellurium.yaml (SHA-256 6b5af984d11be95eecdfcee97eb1921afa5672dceb63784a74abfd89ea6410ce) with live-verified protein_examples (UniProtKB:A0A059MJL9 (A0A059MJL9_9NOCA, Thioredoxin reductase, gene_symbol: RAJCM14343_5433, TREMBL, NCBITaxon:191292 Rhodococcus aetherivorans, UP000325466); UniProtKB:A0ABQ0YU44 (A0ABQ0YU44_9NOCA, Catalase-peroxidase, gene_symbol: katG, TREMBL, NCBITaxon:191292 Rhodococcus aetherivorans, UP000325466)) and causal_graphs ('bcp1_resting_cell_tellurite_reduction_graph' (mechanism_ref: bcp1_tellurite_reduction, 4 nodes / 3 edges)), achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and preserving source-faithful support levels. |
+| primary_source | https://link.springer.com/article/10.1038/s41598-018-22320-x; presentato_2018: Presentato et al. (2018). Assembly, growth and conductive properties of tellurium nanorods produced by Rhodococcus aetherivorans BCP1. Scientific Reports 8, 3923. DOI 10.1038/s41598-018-22320-x. (https://link.springer.com/article/10.1038/s41598-018-22320-x) | supports | Live-verified UniProtKB grounding across UniProtKB:A0A059MJL9 (A0A059MJL9_9NOCA, Thioredoxin reductase, gene_symbol: RAJCM14343_5433, TREMBL, NCBITaxon:191292 Rhodococcus aetherivorans, UP000325466); UniProtKB:A0ABQ0YU44 (A0ABQ0YU44_9NOCA, Catalase-peroxidase, gene_symbol: katG, TREMBL, NCBITaxon:191292 Rhodococcus aetherivorans, UP000325466). Primary mechanism source (presentato_2018: Presentato et al. (2018). Assembly, growth and conductive properties of tellurium nanorods produced by Rhodococcus aetherivorans BCP1. Scientific Reports 8, 3923. DOI 10.1038/s41598-018-22320-x. (https://link.springer.com/article/10.1038/s41598-018-22320-x)) parameters and source-level caveats are strictly preserved on all nodes, edges, and ProteinExample evidence items. |
+| edit_history | history/records/tellurium/2026-11-11T142112Z-marcin-21e979.yaml; Canonical EDIT history sidecar history/records/tellurium/2026-11-11T142112Z-marcin-21e979.yaml | supports | Canonical EDIT history sidecar history/records/tellurium/2026-11-11T142112Z-marcin-21e979.yaml (SHA-256 0b77fa5c5e75602cfbd938ab50d952c9f7431b2f9325eba4c428c49070c25d93): Added Rhodococcus aetherivorans reference-proteome protein examples (thioredoxin reductase UniProtKB:A0A059MJL9, KatG UniProtKB:A0ABQ0YU44) and representative causal graph for strain BCP1 tellurite reduction. |
+| validation | data/records/tellurium.yaml; Real CLI validation via python -m cmmmech validate --require-records and validate-history --base main | supports | data/records/tellurium.yaml and history/records/tellurium/2026-11-11T142112Z-marcin-21e979.yaml pass strict LinkML schema, protein_examples parity, and history validation with 0 errors. |
+
+## Limits And Additional Notes
+
+- Review is conducted in single-agent Goal Mode (independence: self_review) against working-tree bytes; an independent subagent PR review is executed prior to merge.
+- Executed during Cycle 14 Stage 3 (protein_examples) for cmmmech:tellurium.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261111T142200Z-tellurium-cycle14-stage3-protein-examples-review
+kind: record
+repository: CultureBotAI/CMMMech
+title: Cycle 14 Stage 3 protein_examples and causal_graphs review of Tellurium (cmmmech:tellurium)
+started_at: '2026-11-11T14:21:00Z'
+finished_at: '2026-11-11T14:22:00Z'
+reviewer:
+  identity: antigravity / cmmmech-cycle14-stage3-protein-examples-reviewer
+  kind: agent
+  model: claude-opus-4-6
+  independence: self_review
+  independence_basis: 'Single-agent Goal Mode execution of .claude/skills/review-record/SKILL.md
+    verifying the Cycle 14 Stage 3 curation of data/records/tellurium.yaml (SHA-256
+    6b5af984d11be95eecdfcee97eb1921afa5672dceb63784a74abfd89ea6410ce) against live
+    UniProtKB grounding and cited primary source (presentato_2018: Presentato et al.
+    (2018). Assembly, growth and conductive properties of tellurium nanorods produced
+    by Rhodococcus aetherivorans BCP1. Scientific Reports 8, 3923. DOI 10.1038/s41598-018-22320-x.
+    (https://link.springer.com/article/10.1038/s41598-018-22320-x)).'
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: 000fd9c1bad8e0de32a55b4bc1554d4a86696dae
+  state: working_tree
+  inputs:
+  - path: data/records/tellurium.yaml
+    sha256: 6b5af984d11be95eecdfcee97eb1921afa5672dceb63784a74abfd89ea6410ce
+    role: target
+  - path: history/records/tellurium/2026-11-11T142112Z-marcin-21e979.yaml
+    sha256: 0b77fa5c5e75602cfbd938ab50d952c9f7431b2f9325eba4c428c49070c25d93
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+targets:
+- target_id: cmmmech:tellurium
+  path: data/records/tellurium.yaml
+  label: Tellurium
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/tellurium.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/tellurium/2026-11-11T142112Z-marcin-21e979.yaml
+    role: canonical_history
+scope:
+  description: 'Cycle 14 Stage 3 protein_examples and causal_graphs review of data/records/tellurium.yaml
+    (SHA-256 6b5af984d11be95eecdfcee97eb1921afa5672dceb63784a74abfd89ea6410ce) and
+    its canonical EDIT history sidecar (history/records/tellurium/2026-11-11T142112Z-marcin-21e979.yaml)
+    verifying live UniProtKB grounding (UniProtKB:A0A059MJL9 (A0A059MJL9_9NOCA, Thioredoxin
+    reductase, gene_symbol: RAJCM14343_5433, TREMBL, NCBITaxon:191292 Rhodococcus
+    aetherivorans, UP000325466); UniProtKB:A0ABQ0YU44 (A0ABQ0YU44_9NOCA, Catalase-peroxidase,
+    gene_symbol: katG, TREMBL, NCBITaxon:191292 Rhodococcus aetherivorans, UP000325466)),
+    causal-graph node/edge parity across ''bcp1_resting_cell_tellurite_reduction_graph''
+    (mechanism_ref: bcp1_tellurite_reduction, 4 nodes / 3 edges), and primary-source
+    evidence fidelity.'
+  selection: Cycle 14 Stage 3 protein_examples cohort review for cmmmech:tellurium
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:tellurium
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/tellurium.yaml
+  locator: Working-tree record data/records/tellurium.yaml (mechanisms[].protein_examples
+    and causal_graphs)
+  accessed_at: '2026-11-11T14:22:00Z'
+  support: supports
+  summary: 'Updated data/records/tellurium.yaml (SHA-256 6b5af984d11be95eecdfcee97eb1921afa5672dceb63784a74abfd89ea6410ce)
+    with live-verified protein_examples (UniProtKB:A0A059MJL9 (A0A059MJL9_9NOCA, Thioredoxin
+    reductase, gene_symbol: RAJCM14343_5433, TREMBL, NCBITaxon:191292 Rhodococcus
+    aetherivorans, UP000325466); UniProtKB:A0ABQ0YU44 (A0ABQ0YU44_9NOCA, Catalase-peroxidase,
+    gene_symbol: katG, TREMBL, NCBITaxon:191292 Rhodococcus aetherivorans, UP000325466))
+    and causal_graphs (''bcp1_resting_cell_tellurite_reduction_graph'' (mechanism_ref:
+    bcp1_tellurite_reduction, 4 nodes / 3 edges)), achieving 100% parity between mechanisms[].protein_examples
+    and causal_graphs[].nodes[].protein_examples and preserving source-faithful support
+    levels.'
+  snapshot_sha256: 6b5af984d11be95eecdfcee97eb1921afa5672dceb63784a74abfd89ea6410ce
+- evidence_id: primary_source
+  kind: primary_source
+  reference: https://link.springer.com/article/10.1038/s41598-018-22320-x
+  locator: 'presentato_2018: Presentato et al. (2018). Assembly, growth and conductive
+    properties of tellurium nanorods produced by Rhodococcus aetherivorans BCP1. Scientific
+    Reports 8, 3923. DOI 10.1038/s41598-018-22320-x. (https://link.springer.com/article/10.1038/s41598-018-22320-x)'
+  accessed_at: '2026-11-11T14:22:00Z'
+  support: supports
+  summary: 'Live-verified UniProtKB grounding across UniProtKB:A0A059MJL9 (A0A059MJL9_9NOCA,
+    Thioredoxin reductase, gene_symbol: RAJCM14343_5433, TREMBL, NCBITaxon:191292
+    Rhodococcus aetherivorans, UP000325466); UniProtKB:A0ABQ0YU44 (A0ABQ0YU44_9NOCA,
+    Catalase-peroxidase, gene_symbol: katG, TREMBL, NCBITaxon:191292 Rhodococcus aetherivorans,
+    UP000325466). Primary mechanism source (presentato_2018: Presentato et al. (2018).
+    Assembly, growth and conductive properties of tellurium nanorods produced by Rhodococcus
+    aetherivorans BCP1. Scientific Reports 8, 3923. DOI 10.1038/s41598-018-22320-x.
+    (https://link.springer.com/article/10.1038/s41598-018-22320-x)) parameters and
+    source-level caveats are strictly preserved on all nodes, edges, and ProteinExample
+    evidence items.'
+- evidence_id: edit_history
+  kind: record_content
+  reference: history/records/tellurium/2026-11-11T142112Z-marcin-21e979.yaml
+  locator: Canonical EDIT history sidecar history/records/tellurium/2026-11-11T142112Z-marcin-21e979.yaml
+  accessed_at: '2026-11-11T14:22:00Z'
+  support: supports
+  summary: 'Canonical EDIT history sidecar history/records/tellurium/2026-11-11T142112Z-marcin-21e979.yaml
+    (SHA-256 0b77fa5c5e75602cfbd938ab50d952c9f7431b2f9325eba4c428c49070c25d93): Added
+    Rhodococcus aetherivorans reference-proteome protein examples (thioredoxin reductase
+    UniProtKB:A0A059MJL9, KatG UniProtKB:A0ABQ0YU44) and representative causal graph
+    for strain BCP1 tellurite reduction.'
+  snapshot_sha256: 0b77fa5c5e75602cfbd938ab50d952c9f7431b2f9325eba4c428c49070c25d93
+- evidence_id: validation
+  kind: validation
+  reference: data/records/tellurium.yaml
+  locator: Real CLI validation via python -m cmmmech validate --require-records and
+    validate-history --base main
+  accessed_at: '2026-11-11T14:22:00Z'
+  support: supports
+  summary: data/records/tellurium.yaml and history/records/tellurium/2026-11-11T142112Z-marcin-21e979.yaml
+    pass strict LinkML schema, protein_examples parity, and history validation with
+    0 errors.
+  snapshot_sha256: 6b5af984d11be95eecdfcee97eb1921afa5672dceb63784a74abfd89ea6410ce
+checks:
+- check_id: validate_records
+  name: Strict corpus validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Checked 713 record(s); 0 failed.
+  target_ids:
+  - cmmmech:tellurium
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: validate_history
+  name: Canonical history validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate-history --base main
+  status: passed
+  required: true
+  summary: Checked 1583 history record(s); 0 error(s).
+  target_ids:
+  - cmmmech:tellurium
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+assessments:
+- assessment_id: protein_grounding_and_causal_graph
+  area: graph
+  topic: 'Verification of UniProtKB protein_examples grounding, causal_graphs structure,
+    and parity across ''bcp1_resting_cell_tellurite_reduction_graph'' (mechanism_ref:
+    bcp1_tellurite_reduction, 4 nodes / 3 edges)'
+  outcome: supported
+  summary: 'Updated data/records/tellurium.yaml (SHA-256 6b5af984d11be95eecdfcee97eb1921afa5672dceb63784a74abfd89ea6410ce)
+    with live-verified protein_examples (UniProtKB:A0A059MJL9 (A0A059MJL9_9NOCA, Thioredoxin
+    reductase, gene_symbol: RAJCM14343_5433, TREMBL, NCBITaxon:191292 Rhodococcus
+    aetherivorans, UP000325466); UniProtKB:A0ABQ0YU44 (A0ABQ0YU44_9NOCA, Catalase-peroxidase,
+    gene_symbol: katG, TREMBL, NCBITaxon:191292 Rhodococcus aetherivorans, UP000325466))
+    and causal_graphs (''bcp1_resting_cell_tellurite_reduction_graph'' (mechanism_ref:
+    bcp1_tellurite_reduction, 4 nodes / 3 edges)), achieving 100% parity between mechanisms[].protein_examples
+    and causal_graphs[].nodes[].protein_examples and preserving source-faithful support
+    levels and caveats from presentato_2018: Presentato et al. (2018). Assembly, growth
+    and conductive properties of tellurium nanorods produced by Rhodococcus aetherivorans
+    BCP1. Scientific Reports 8, 3923. DOI 10.1038/s41598-018-22320-x. (https://link.springer.com/article/10.1038/s41598-018-22320-x).'
+  target_ids:
+  - cmmmech:tellurium
+  evidence_ids:
+  - owner
+  - primary_source
+- assessment_id: provenance_and_validation_verification
+  area: provenance
+  topic: Verification of canonical EDIT history sidecar and strict schema validation
+  outcome: supported
+  summary: 'data/records/tellurium.yaml was updated exclusively through scripts/curate_causal_graphs.py
+    (curate_record_file), producing append-only history sidecar history/records/tellurium/2026-11-11T142112Z-marcin-21e979.yaml
+    (SHA-256 0b77fa5c5e75602cfbd938ab50d952c9f7431b2f9325eba4c428c49070c25d93: Added
+    Rhodococcus aetherivorans reference-proteome protein examples (thioredoxin reductase
+    UniProtKB:A0A059MJL9, KatG UniProtKB:A0ABQ0YU44) and representative causal graph
+    for strain BCP1 tellurite reduction.) and passing all LinkML and history validation
+    gates.'
+  target_ids:
+  - cmmmech:tellurium
+  evidence_ids:
+  - owner
+  - edit_history
+  - validation
+findings: []
+actions: []
+summary: 'Tellurium (cmmmech:tellurium) passes Cycle 14 Stage 3 protein_examples review
+  (scientific_review: true) at SHA-256 6b5af984d11be95eecdfcee97eb1921afa5672dceb63784a74abfd89ea6410ce:
+  Updated data/records/tellurium.yaml with UniProtKB:A0A059MJL9 (A0A059MJL9_9NOCA,
+  Thioredoxin reductase, gene_symbol: RAJCM14343_5433, TREMBL, NCBITaxon:191292 Rhodococcus
+  aetherivorans, UP000325466); UniProtKB:A0ABQ0YU44 (A0ABQ0YU44_9NOCA, Catalase-peroxidase,
+  gene_symbol: katG, TREMBL, NCBITaxon:191292 Rhodococcus aetherivorans, UP000325466)
+  and ''bcp1_resting_cell_tellurite_reduction_graph'' (mechanism_ref: bcp1_tellurite_reduction,
+  4 nodes / 3 edges), achieving 100% parity between mechanisms[].protein_examples
+  and causal_graphs[].nodes[].protein_examples and preserving source-faithful support
+  levels and experimental caveats from presentato_2018: Presentato et al. (2018).
+  Assembly, growth and conductive properties of tellurium nanorods produced by Rhodococcus
+  aetherivorans BCP1. Scientific Reports 8, 3923. DOI 10.1038/s41598-018-22320-x.
+  (https://link.springer.com/article/10.1038/s41598-018-22320-x).'
+limitations:
+- 'Review is conducted in single-agent Goal Mode (independence: self_review) against
+  working-tree bytes; an independent subagent PR review is executed prior to merge.'
+notes:
+- Executed during Cycle 14 Stage 3 (protein_examples) for cmmmech:tellurium.
+related_reviews: []
+```

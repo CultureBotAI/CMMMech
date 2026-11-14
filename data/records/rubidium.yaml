@@ -39,6 +39,60 @@ mechanisms:
   organisms:
   - id: NCBITaxon:1063
     label: Cereibacter sphaeroides
+  protein_examples:
+  - uniprot_accession: UniProtKB:Q3J1A5
+    entry_name: RCEL_CERS4
+    protein_name: Reaction center protein L chain
+    gene_symbol: pufL
+    entry_status: SWISS_PROT
+    target_organism:
+      id: NCBITaxon:272943
+      label: Cereibacter sphaeroides 2.4.1
+    reference_proteome_id: UP000002703
+    interpro_ids:
+    - InterPro:IPR036854
+    - InterPro:IPR005871
+    - InterPro:IPR000484
+    - InterPro:IPR055265
+    pfam_ids:
+    - Pfam:PF00124
+    ncbifam_ids:
+    - NCBIfam:TIGR01157
+    functional_role: Photosynthetic reaction center L subunit PufL (pufL / RHOS4_18610) in Cereibacter sphaeroides strain 2.4.1 initiating light-driven cyclic electron transfer and trans-membrane electrical potential (Delta-psi) generation coupled to Rb+ uptake.
+    annotation_note: 'Grounded to reviewed Swiss-Prot entry UniProtKB:Q3J1A5 (RCEL_CERS4; pufL / RHOS4_18610) in reference proteome UP000002703 for the exact experimental strain Rhodopseudomonas (= Cereibacter) sphaeroides 2.4.1 (NCBITaxon:272943; UniProtKB organism string: Cereibacter sphaeroides (strain ATCC 17023 / DSM 158 / JCM 6121 / CCUG 31486 / LMG 2827 / NBRC 12203 / NCIMB 8253 / ATH 2.4.1.)) while mechanisms[].organisms[].id is species-level NCBITaxon:1063.'
+    evidence:
+    - source_ref: primary
+      supports: partial
+      explanation: Hellingwerf et al. (1982) assayed light-dependent Rb-86 chloride uptake by intact Rhodopseudomonas (= Cereibacter) sphaeroides strain 2.4.1 cells in automated flow dialysis (Figures 4-5) driven by photosynthetic cyclic electron transport and proton-motive force, without mutating pufL.
+  - uniprot_accession: UniProtKB:Q3J2L5
+    entry_name: Q3J2L5_CERS4
+    protein_name: Trk system potassium uptake protein TrkA
+    gene_symbol: trkA
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:272943
+      label: Cereibacter sphaeroides 2.4.1
+    reference_proteome_id: UP000002703
+    interpro_ids:
+    - InterPro:IPR006036
+    - InterPro:IPR036291
+    - InterPro:IPR006037
+    - InterPro:IPR036721
+    - InterPro:IPR003148
+    - InterPro:IPR050721
+    pfam_ids:
+    - Pfam:PF02080
+    - Pfam:PF02254
+    ncbifam_ids:
+    - NCBIfam:NF007031
+    - NCBIfam:NF007032
+    - NCBIfam:NF007039
+    functional_role: Endogenous Trk potassium/rubidium uptake system peripheral membrane component TrkA (trkA / ORF RSP_2841) in Cereibacter sphaeroides strain 2.4.1 representing the intrinsic monovalent cation transport pathway that mediates light-dependent Rb+ accumulation without added valinomycin.
+    annotation_note: 'Grounded to strain-exact Cereibacter sphaeroides 2.4.1 reference proteome UP000002703 (NCBITaxon:272943; UniProtKB organism string: Cereibacter sphaeroides (strain ATCC 17023 / DSM 158 / JCM 6121 / CCUG 31486 / LMG 2827 / NBRC 12203 / NCIMB 8253 / ATH 2.4.1.); trkA / ORF RSP_2841) while mechanisms[].organisms[].id is species-level NCBITaxon:1063.'
+    evidence:
+    - source_ref: primary
+      supports: partial
+      explanation: Hellingwerf et al. (1982) demonstrated that intact strain 2.4.1 cells take up Rb-86 chloride via an endogenous K+/Rb+ transport system (distinguished from 20 uM valinomycin-facilitated equilibration, and restored in washed cells in K+-/Na+-free choline chloride buffer upon adding 35 mM sodium formate in Figure 4B) that was unaffected by arsenate or DCCD (data not shown), without isolating the specific transporter gene.
   evidence:
   - source_ref: primary
     supports: support
@@ -52,6 +106,118 @@ mechanisms:
   - source_ref: primary
     supports: partial
     explanation: Figures 4-5 provide illustrative traces without replicate counts or error bars, and the full flow-dialysis implementation refers to earlier methodological work. The experiment neither tests a real mineral/brine feed nor measures selective rubidium product isolation, desorption recovery, industrial deployment or a rubidium redox reaction. The authors also acknowledge previously reported differences between potassium and rubidium transport; using rubidium as a potassium analogue does not make the two ions interchangeable in every organism.
+causal_graphs:
+- id: sphaeroides_241_light_dependent_rb_uptake_graph
+  name: Cereibacter sphaeroides 2.4.1 light-driven proton-motive-force generation and reversible Rb+ accumulation
+  description: Representative pathway linking strain-exact Cereibacter sphaeroides 2.4.1 photosynthetic reaction center L subunit PufL (RHOS4_18610 UniProtKB:Q3J1A5) and Trk potassium uptake protein TrkA (RSP_2841 UniProtKB:Q3J2L5) in reference proteome UP000002703 to actinic light-driven trans-membrane potential generation and reversible Rb-86 chloride uptake in automated flow dialysis in Hellingwerf et al. (1982).
+  scope: REPRESENTATIVE_EXAMPLE
+  mechanism_ref: sphaeroides_light_dependent_rb_uptake
+  nodes:
+  - id: pufl_reaction_center_subunit
+    label: PufL photosynthetic reaction center L chain (Cereibacter sphaeroides 2.4.1 UP000002703)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: pufL
+    description: Reviewed Swiss-Prot photosynthetic reaction center protein L chain PufL (UniProtKB:Q3J1A5; pufL / RHOS4_18610 in strain-exact C. sphaeroides 2.4.1 reference proteome UP000002703, NCBITaxon:272943) driving cyclic electron transfer and proton-motive-force generation upon illumination.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:Q3J1A5
+      entry_name: RCEL_CERS4
+      protein_name: Reaction center protein L chain
+      gene_symbol: pufL
+      entry_status: SWISS_PROT
+      target_organism:
+        id: NCBITaxon:272943
+        label: Cereibacter sphaeroides 2.4.1
+      reference_proteome_id: UP000002703
+      interpro_ids:
+      - InterPro:IPR036854
+      - InterPro:IPR005871
+      - InterPro:IPR000484
+      - InterPro:IPR055265
+      pfam_ids:
+      - Pfam:PF00124
+      ncbifam_ids:
+      - NCBIfam:TIGR01157
+      functional_role: Photosynthetic reaction center L subunit PufL (pufL / RHOS4_18610) in Cereibacter sphaeroides strain 2.4.1 initiating light-driven cyclic electron transfer and trans-membrane electrical potential (Delta-psi) generation coupled to Rb+ uptake.
+      annotation_note: 'Grounded to reviewed Swiss-Prot entry UniProtKB:Q3J1A5 (RCEL_CERS4; pufL / RHOS4_18610) in reference proteome UP000002703 for the exact experimental strain Rhodopseudomonas (= Cereibacter) sphaeroides 2.4.1 (NCBITaxon:272943; UniProtKB organism string: Cereibacter sphaeroides (strain ATCC 17023 / DSM 158 / JCM 6121 / CCUG 31486 / LMG 2827 / NBRC 12203 / NCIMB 8253 / ATH 2.4.1.)) while mechanisms[].organisms[].id is species-level NCBITaxon:1063.'
+      evidence:
+      - source_ref: primary
+        supports: partial
+        explanation: Hellingwerf et al. (1982) assayed light-dependent Rb-86 chloride uptake by intact Rhodopseudomonas (= Cereibacter) sphaeroides strain 2.4.1 cells in automated flow dialysis (Figures 4-5) driven by photosynthetic cyclic electron transport and proton-motive force, without mutating pufL.
+  - id: trka_potassium_uptake_protein
+    label: TrkA potassium/rubidium uptake protein (Cereibacter sphaeroides 2.4.1 UP000002703)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: trkA
+    description: Trk system potassium uptake protein TrkA (UniProtKB:Q3J2L5; trkA / ORF RSP_2841 in strain-exact C. sphaeroides 2.4.1 reference proteome UP000002703, NCBITaxon:272943) representing the endogenous K+/Rb+ transport system inferred in Hellingwerf et al. (1982), where individual transporter genes were not mutated.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:Q3J2L5
+      entry_name: Q3J2L5_CERS4
+      protein_name: Trk system potassium uptake protein TrkA
+      gene_symbol: trkA
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:272943
+        label: Cereibacter sphaeroides 2.4.1
+      reference_proteome_id: UP000002703
+      interpro_ids:
+      - InterPro:IPR006036
+      - InterPro:IPR036291
+      - InterPro:IPR006037
+      - InterPro:IPR036721
+      - InterPro:IPR003148
+      - InterPro:IPR050721
+      pfam_ids:
+      - Pfam:PF02080
+      - Pfam:PF02254
+      ncbifam_ids:
+      - NCBIfam:NF007031
+      - NCBIfam:NF007032
+      - NCBIfam:NF007039
+      functional_role: Endogenous Trk potassium/rubidium uptake system peripheral membrane component TrkA (trkA / ORF RSP_2841) in Cereibacter sphaeroides strain 2.4.1 representing the intrinsic monovalent cation transport pathway that mediates light-dependent Rb+ accumulation without added valinomycin.
+      annotation_note: 'Grounded to strain-exact Cereibacter sphaeroides 2.4.1 reference proteome UP000002703 (NCBITaxon:272943; UniProtKB organism string: Cereibacter sphaeroides (strain ATCC 17023 / DSM 158 / JCM 6121 / CCUG 31486 / LMG 2827 / NBRC 12203 / NCIMB 8253 / ATH 2.4.1.); trkA / ORF RSP_2841) while mechanisms[].organisms[].id is species-level NCBITaxon:1063.'
+      evidence:
+      - source_ref: primary
+        supports: partial
+        explanation: Hellingwerf et al. (1982) demonstrated that intact strain 2.4.1 cells take up Rb-86 chloride via an endogenous K+/Rb+ transport system (distinguished from 20 uM valinomycin-facilitated equilibration, and restored in washed cells in K+-/Na+-free choline chloride buffer upon adding 35 mM sodium formate in Figure 4B) that was unaffected by arsenate or DCCD (data not shown), without isolating the specific transporter gene.
+  - id: rb86_chloride_flow_dialysis_suspension
+    label: Rb-86 chloride tracer in chloramphenicol-inhibited washed C. sphaeroides 2.4.1 flow-dialysis buffer (+/- 20 uM valinomycin)
+    node_type: CHEMICAL_ENTITY
+    description: 'Rb-86 chloride tracer supplied to anaerobically light-grown (Sistrom medium, 30 degrees C, 50 ug/mL chloramphenicol added before harvest) intact C. sphaeroides 2.4.1 cells washed at room temperature 5-8 times over 2 days (Figure 4, +/- 20 uM valinomycin preincubated >=1 h at 25 degrees C: Figure 4A in 67 mM Na2SO4, 20 mM MES, 20 mM HEPES, 5 mM MgSO4, 2 mM Na-EDTA, 15 ug/mL chloramphenicol at pH 5.5 vs 7.5; Figure 4B in 100 mM choline chloride, 20 mM PIPES, 5 mM MgSO4, 10 ug/mL chloramphenicol at pH 7.5 with 35 mM sodium formate added where indicated) or washed 7 times over 2 days (Figure 5 in 67 mM Na2SO4, 40 mM sodium phosphate, 1 mM MgSO4, 15 ug/mL chloramphenicol at pH 8 under varying actinic light intensity); exact Rb concentration, assay temperature, and replicate count not reported.'
+    protein_grounding_status: NOT_APPLICABLE
+  - id: reversible_intracellular_rb_accumulation
+    label: Reversible light-driven intracellular Rb+ accumulation (released upon darkness or 5 uM FCCP)
+    node_type: CHEMICAL_ENTITY
+    description: Intracellular Rb-86 accumulation in the light that is rapidly released into the dialysate when light is turned off or 5 uM FCCP is added (Figures 4-5; in Figure 4B washed cells without valinomycin required 35 mM sodium formate to accumulate Rb+; arsenate and DCCD had no effect in unshown ATP-synthesis-inhibition experiments; physiological tracer study rather than mineral recovery).
+    protein_grounding_status: NOT_APPLICABLE
+  edges:
+  - source: pufl_reaction_center_subunit
+    target: trka_potassium_uptake_protein
+    predicate: drives
+    relationship: light-driven cyclic electron transport generates proton-motive force energizing K+/Rb+ uptake
+    description: Illumination of the photosynthetic reaction center (PufL UniProtKB:Q3J1A5) generates the trans-membrane electrical potential (Delta-psi) that energizes Rb+ transport via the endogenous K+/Rb+ uptake system (represented by TrkA UniProtKB:Q3J2L5) and via 20 uM valinomycin.
+    evidence:
+    - source_ref: primary
+      supports: partial
+      explanation: Hellingwerf et al. (1982) Figures 4-5 show light-intensity-dependent Rb+ accumulation and dark/FCCP-induced release, and report that arsenate and DCCD did not inhibit uptake (data not shown), without genetically dissecting pufL or trkA.
+  - source: trka_potassium_uptake_protein
+    target: rb86_chloride_flow_dialysis_suspension
+    predicate: transports
+    relationship: endogenous K+/Rb+ transport system mediates valinomycin-independent Rb+ uptake
+    description: The endogenous K+/Rb+ transport system (represented by TrkA UniProtKB:Q3J2L5) imports extracellular Rb-86 tracer in illuminated cells without valinomycin (requiring 35 mM sodium formate as electron donor in extensively washed cells in choline chloride buffer at pH 7.5 in Figure 4B).
+    evidence:
+    - source_ref: primary
+      supports: partial
+      explanation: Figure 4A-B of Hellingwerf et al. (1982) distinguishes endogenous K+-transport-mediated Rb+ uptake (without valinomycin, restored by 35 mM sodium formate in washed cells) from 20 uM valinomycin-mediated electrogenic equilibration.
+  - source: rb86_chloride_flow_dialysis_suspension
+    target: reversible_intracellular_rb_accumulation
+    predicate: transforms_into
+    relationship: reversible light-dependent intracellular Rb+ accumulation and dark/FCCP efflux
+    description: Extracellular Rb-86 chloride tracer is accumulated intracellularly during illumination and released upon switching off the light or adding 5 uM FCCP (Figures 4-5).
+    evidence:
+    - source_ref: primary
+      supports: support
+      explanation: Figures 4 and 5 of Hellingwerf et al. (1982) directly demonstrate reversible light-dependent Rb-86 uptake and dark/FCCP-induced release in automated flow-dialysis assays of C. sphaeroides 2.4.1.
 curation_history:
 - timestamp: '2026-10-11T07:53:00Z'
   curator: codex (GPT-6)
@@ -61,6 +227,11 @@ curation_history:
   curator: claude
   action: edit
   summary: Normalize top-level curation_history/history_refs YAML key order in rubidium.yaml (#864)
+- timestamp: '2026-11-11T14:21:18Z'
+  curator: marcin
+  action: edit
+  summary: Added strain-exact Cereibacter sphaeroides 2.4.1 reference-proteome protein examples (PufL UniProtKB:Q3J1A5, TrkA UniProtKB:Q3J2L5) and representative causal graph for light-dependent Rb+ uptake.
 history_refs:
 - history/records/rubidium/2026-10-11T075221Z-codex-dfa1a8.yaml
 - history/records/rubidium/2026-10-30T103605Z-claude-6bedf9.yaml
+- history/records/rubidium/2026-11-11T142118Z-marcin-360277.yaml

@@ -1,101 +1,258 @@
 id: cmmmech:gold
 name: Gold
 material_kind: element
-description: Gold (Au), represented by its neutral-atom identity. The laboratory Au(III)-chloride
-  solutions and source-assigned cell-associated particles below are experimental forms of
-  this element, not separate ore or waste-feed identities. No criticality-list designation
-  is asserted here.
+description: Gold (Au), represented by its neutral-atom identity. The laboratory Au(III)-chloride solutions and source-assigned cell-associated particles below are experimental forms of this element, not separate ore or waste-feed identities. No criticality-list designation is asserted here.
 identifiers:
 - id: CHEBI:29287
   label: gold atom
 sources:
 - id: chebi_gold
-  title: ChEBI:29287, gold atom; Au, charge zero, resolved through the EBI Ontology Lookup
-    Service.
+  title: ChEBI:29287, gold atom; Au, charge zero, resolved through the EBI Ontology Lookup Service.
   url: https://www.ebi.ac.uk/chebi/CHEBI:29287
   accessed_on: '2026-10-14'
 - id: ncbi_species
-  title: 'NCBI Taxonomy 119219: Cupriavidus metallidurans, species; this species identifier
-    does not identify derivative AE104.'
+  title: 'NCBI Taxonomy 119219: Cupriavidus metallidurans, species; this species identifier does not identify derivative AE104.'
   url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=119219
   accessed_on: '2026-10-14'
 - id: hirth_2024
-  title: Hirth et al. (2024). A gold speciation that adds a second layer to synergistic gold-copper
-    toxicity in Cupriavidus metallidurans. Applied and Environmental Microbiology 90(4), e00146-24.
-    DOI 10.1128/aem.00146-24; complete JATS original and original graphics.
+  title: Hirth et al. (2024). A gold speciation that adds a second layer to synergistic gold-copper toxicity in Cupriavidus metallidurans. Applied and Environmental Microbiology 90(4), e00146-24. DOI 10.1128/aem.00146-24; complete JATS original and original graphics.
   url: https://doi.org/10.1128/aem.00146-24
   accessed_on: '2026-10-14'
 - id: hirth_2024_si
-  title: Hirth et al. (2024), supplementary tables and figures, aem.00146-24-s0001.pdf, 12
-    pages; Table S4 identifies AE104 and study derivatives.
+  title: Hirth et al. (2024), supplementary tables and figures, aem.00146-24-s0001.pdf, 12 pages; Table S4 identifies AE104 and study derivatives.
   url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11022561/supplementaryFiles
   accessed_on: '2026-10-14'
 mechanisms:
 - id: ae104_stock_dependent_particles
   name: Stock-dependent culture-associated formation of source-assigned gold nanoparticles
   process: biomineralization
-  description: Cupriavidus metallidurans AE104 cells exposed to an aqua-regia-prepared Au(III)
-    solution contained particles interpreted by the authors as periplasmic gold nanoparticles.
-    The commercial Au(III) stock instead produced damaged cells or no visible nanoparticles
-    in the reported microscopy series. This laboratory comparison supports a preparation-dependent
-    outcome, not universal reduction of every gold complex or an isolated-product recovery
-    yield.
-  context: AE104 is the plasmid-free derivative of CH34; the species identifier does not identify
-    this derivative. Cells were cultivated aerobically in Tris-buffered mineral salts medium
-    with 2 g/L sodium gluconate at 30 degrees C. The TEM protocol used two precultures at
-    200 rpm, a 66-fold dilution into fresh medium, and addition of Au(III)-chloride after
-    reaching 180-200 Klett units. Incubation after addition was at 100 rpm and 30 degrees
-    C. Figure 2A reports 50 micromolar of the previously used, aqua-regia-prepared stock for
-    72 h. Commercial HAu(III)Cl4 was Sigma-Aldrich TraceCERT, supplied as 1 g/L Au in hydrochloric
-    acid; Figure 2B-D report 50 micromolar for 70 h, 15 micromolar for 21 h, and 50 micromolar
-    for 30 min. The general methods describe 72 h and additional exposure/recovery experiments;
-    their timings are not substituted for the labeled panels. Samples were fixed with glutaraldehyde
-    and osmium tetroxide, ethanol-dehydrated, uranyl-acetate-stained, resin-embedded and sectioned
-    at 80 nm. Exact final medium pH and a molecular analysis of the two stock solutions are
-    not reported for this microscopy comparison.
+  description: Cupriavidus metallidurans AE104 cells exposed to an aqua-regia-prepared Au(III) solution contained particles interpreted by the authors as periplasmic gold nanoparticles. The commercial Au(III) stock instead produced damaged cells or no visible nanoparticles in the reported microscopy series. This laboratory comparison supports a preparation-dependent outcome, not universal reduction of every gold complex or an isolated-product recovery yield.
+  context: AE104 is the plasmid-free derivative of CH34; the species identifier does not identify this derivative. Cells were cultivated aerobically in Tris-buffered mineral salts medium with 2 g/L sodium gluconate at 30 degrees C. The TEM protocol used two precultures at 200 rpm, a 66-fold dilution into fresh medium, and addition of Au(III)-chloride after reaching 180-200 Klett units. Incubation after addition was at 100 rpm and 30 degrees C. Figure 2A reports 50 micromolar of the previously used, aqua-regia-prepared stock for 72 h. Commercial HAu(III)Cl4 was Sigma-Aldrich TraceCERT, supplied as 1 g/L Au in hydrochloric acid; Figure 2B-D report 50 micromolar for 70 h, 15 micromolar for 21 h, and 50 micromolar for 30 min. The general methods describe 72 h and additional exposure/recovery experiments; their timings are not substituted for the labeled panels. Samples were fixed with glutaraldehyde and osmium tetroxide, ethanol-dehydrated, uranyl-acetate-stained, resin-embedded and sectioned
+    at 80 nm. Exact final medium pH and a molecular analysis of the two stock solutions are not reported for this microscopy comparison.
   microbial: true
   organisms:
   - id: NCBITaxon:119219
     label: Cupriavidus metallidurans
+  protein_examples:
+  - uniprot_accession: UniProtKB:Q1LHI0
+    entry_name: Q1LHI0_CUPMC
+    protein_name: P-type ATPase CupA
+    gene_symbol: cupA
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:266264
+      label: Cupriavidus metallidurans CH34
+    reference_proteome_id: UP000002429
+    ec_numbers:
+    - EC:3.6.3.4
+    interpro_ids:
+    - InterPro:IPR023299
+    - InterPro:IPR018303
+    - InterPro:IPR023298
+    - InterPro:IPR008250
+    - InterPro:IPR059000
+    - InterPro:IPR036412
+    - InterPro:IPR023214
+    - InterPro:IPR017969
+    - InterPro:IPR006122
+    - InterPro:IPR006121
+    - InterPro:IPR036163
+    - InterPro:IPR027256
+    - InterPro:IPR001757
+    - InterPro:IPR044492
+    pfam_ids:
+    - Pfam:PF00122
+    - Pfam:PF00403
+    - Pfam:PF00702
+    ncbifam_ids:
+    - NCBIfam:TIGR01511
+    - NCBIfam:TIGR01525
+    - NCBIfam:TIGR01494
+    - NCBIfam:TIGR00003
+    functional_role: Chromosomal Cu(I)/Au-translocating P-type ATPase CupA (Rmet_3524; EC 3.6.3.4) involved in cytoplasmic copper/gold homeostasis in Cupriavidus metallidurans AE104 (the plasmid-free derivative of CH34).
+    annotation_note: 'Grounded to parental Cupriavidus metallidurans CH34 reference proteome UP000002429 (NCBITaxon:266264; UniProtKB organism string: Cupriavidus metallidurans (strain ATCC 43123 / DSM 2839 / NBRC 102507 / CH34); chromosomal locus Rmet_3524 retained in plasmid-free derivative AE104) while mechanism organism is species-level NCBITaxon:119219.'
+    evidence:
+    - source_ref: hirth_2024
+      supports: partial
+      explanation: Hirth et al. (2024) Discussion and Conclusion discuss chromosomal copper-homeostasis and efflux systems in plasmid-free Cupriavidus metallidurans AE104 during synergistic Au/Cu toxicity and stock-dependent periplasmic gold nanoparticle formation (Figure 2A-D), but Figure 2 microscopy used parental AE104 without testing a cupA mutant or purified CupA enzyme.
+  - uniprot_accession: UniProtKB:Q1LRS8
+    entry_name: Q1LRS8_CUPMC
+    protein_name: Cytochrome c oxidase subunit 1
+    gene_symbol: coxA
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:266264
+      label: Cupriavidus metallidurans CH34
+    reference_proteome_id: UP000002429
+    ec_numbers:
+    - EC:7.1.1.9
+    interpro_ids:
+    - InterPro:IPR023616
+    - InterPro:IPR036927
+    - InterPro:IPR000883
+    - InterPro:IPR023615
+    - InterPro:IPR033944
+    - InterPro:IPR014241
+    pfam_ids:
+    - Pfam:PF00115
+    ncbifam_ids:
+    - NCBIfam:TIGR02891
+    functional_role: Respiratory heme-copper cytochrome c oxidase subunit 1 CoxA (Rmet_0262; EC 7.1.1.9) representing the periplasmic/inner-membrane respiratory electron-transport chain discussed in relation to Au(III) reduction and toxicity in Cupriavidus metallidurans AE104.
+    annotation_note: 'Grounded to parental Cupriavidus metallidurans CH34 reference proteome UP000002429 (NCBITaxon:266264; UniProtKB organism string: Cupriavidus metallidurans (strain ATCC 43123 / DSM 2839 / NBRC 102507 / CH34); chromosomal locus Rmet_0262 retained in plasmid-free derivative AE104) while mechanism organism is species-level NCBITaxon:119219.'
+    evidence:
+    - source_ref: hirth_2024
+      supports: partial
+      explanation: Hirth et al. (2024) Discussion proposes respiratory-chain interactions and stock-dependent Au(III) chloride/hydroxide speciation to explain why 50 uM aqua-regia-prepared Au(III) stock yielded periplasmic particles at 72 h (Figure 2A) whereas commercial TraceCERT HAuCl4 (50 uM for 70 h, 15 uM for 21 h, 50 uM for 30 min; Figure 2B-D) caused cell damage or no visible particles; direct coxA catalysis was not experimentally tested.
   evidence:
   - source_ref: hirth_2024
     supports: support
-    explanation: 'Results, No appearance of gold nanoparticles in the periplasm; Figure 2A
-      and its caption; Methods, Bacterial strains and growth conditions and Transmission electron
-      microscopy: the previous stock gave source-assigned periplasmic particles after 72 h.
-      The original Figure 2 was inspected. The figure is microscopy evidence with an author-assigned
-      particle identity, not a new phase-resolved product-purity or bulk mass-balance measurement.'
+    explanation: 'Results, No appearance of gold nanoparticles in the periplasm; Figure 2A and its caption; Methods, Bacterial strains and growth conditions and Transmission electron microscopy: the previous stock gave source-assigned periplasmic particles after 72 h. The original Figure 2 was inspected. The figure is microscopy evidence with an author-assigned particle identity, not a new phase-resolved product-purity or bulk mass-balance measurement.'
   - source_ref: hirth_2024
     supports: partial
-    explanation: 'Figure 2B-D and the same Results subsection retain the negative commercial-stock
-      outcome: long exposures damaged cells, whereas the short-exposure panel showed cells
-      without the reported particles. The authors discuss alternative directions of causality
-      between toxicity and failed particle formation. The 70-h figure label differs from the
-      general 72-h protocol and the prose description of three days. The figure does not quantify
-      the fraction of all cells forming particles, a detection limit, or a conversion yield.'
+    explanation: 'Figure 2B-D and the same Results subsection retain the negative commercial-stock outcome: long exposures damaged cells, whereas the short-exposure panel showed cells without the reported particles. The authors discuss alternative directions of causality between toxicity and failed particle formation. The 70-h figure label differs from the general 72-h protocol and the prose description of three days. The figure does not quantify the fraction of all cells forming particles, a detection limit, or a conversion yield.'
   - source_ref: hirth_2024
     supports: partial
-    explanation: Discussion, The procedure used to produce Au(III) solutions has biological
-      consequences, and Conclusion propose stock-speciation, respiratory-chain and copper-homeostasis
-      explanations. The specific chloride/hydroxide species and chlorine-manufacturing route
-      are hypotheses here, not directly measured stock compositions or a demonstrated exclusive
-      pathway. This microscopy comparison supplies no matched cell-free or killed-cell series
-      establishing metabolic necessity. Laboratory particle association does not demonstrate
-      permanent environmental immobilization, isolated gold recovery, or industrial deployment.
+    explanation: Discussion, The procedure used to produce Au(III) solutions has biological consequences, and Conclusion propose stock-speciation, respiratory-chain and copper-homeostasis explanations. The specific chloride/hydroxide species and chlorine-manufacturing route are hypotheses here, not directly measured stock compositions or a demonstrated exclusive pathway. This microscopy comparison supplies no matched cell-free or killed-cell series establishing metabolic necessity. Laboratory particle association does not demonstrate permanent environmental immobilization, isolated gold recovery, or industrial deployment.
   - source_ref: hirth_2024_si
     supports: context_only
-    explanation: Supplementary Table S4 (PDF page 6) explicitly identifies AE104 as a plasmid-free
-      derivative of CH34 and lists the genetic derivatives used elsewhere in the paper. These
-      genotypes are not transferred to the parental AE104 microscopy panels; neither the strain
-      table nor the species identifier proves a particular molecular mechanism.
+    explanation: Supplementary Table S4 (PDF page 6) explicitly identifies AE104 as a plasmid-free derivative of CH34 and lists the genetic derivatives used elsewhere in the paper. These genotypes are not transferred to the parental AE104 microscopy panels; neither the strain table nor the species identifier proves a particular molecular mechanism.
+causal_graphs:
+- id: ae104_stock_dependent_gold_particle_graph
+  name: Cupriavidus metallidurans AE104 stock-dependent periplasmic gold nanoparticle formation vs commercial-stock toxicity
+  description: Representative pathway linking Cupriavidus metallidurans AE104 respiratory-chain and copper-homeostasis proteins (represented by CH34 chromosomal orthologs CoxA Rmet_0262 and CupA Rmet_3524) and Au(III) stock preparation chemistry to source-assigned periplasmic gold nanoparticles in 50 uM aqua-regia-prepared Au(III) stock (72 h, Figure 2A) versus cell damage or no visible particles in commercial TraceCERT HAu(III)Cl4 (Figure 2B-D) in Hirth et al. (2024).
+  scope: REPRESENTATIVE_EXAMPLE
+  mechanism_ref: ae104_stock_dependent_particles
+  nodes:
+  - id: cupa_efflux_atpase
+    label: CupA chromosomal Cu(I)/Au P-type ATPase (CH34 reference proteome UP000002429)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: cupA
+    description: Chromosomal P-type ATPase CupA (UniProtKB:Q1LHI0; Rmet_3524 in parental CH34, retained in plasmid-free derivative AE104) representing cytoplasmic Cu/Au homeostasis pathways discussed in Hirth et al. (2024); mutant genotypes in Supplementary Table S4 were not transferred to the parental AE104 Figure 2 TEM series.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:Q1LHI0
+      entry_name: Q1LHI0_CUPMC
+      protein_name: P-type ATPase CupA
+      gene_symbol: cupA
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:266264
+        label: Cupriavidus metallidurans CH34
+      reference_proteome_id: UP000002429
+      ec_numbers:
+      - EC:3.6.3.4
+      interpro_ids:
+      - InterPro:IPR023299
+      - InterPro:IPR018303
+      - InterPro:IPR023298
+      - InterPro:IPR008250
+      - InterPro:IPR059000
+      - InterPro:IPR036412
+      - InterPro:IPR023214
+      - InterPro:IPR017969
+      - InterPro:IPR006122
+      - InterPro:IPR006121
+      - InterPro:IPR036163
+      - InterPro:IPR027256
+      - InterPro:IPR001757
+      - InterPro:IPR044492
+      pfam_ids:
+      - Pfam:PF00122
+      - Pfam:PF00403
+      - Pfam:PF00702
+      ncbifam_ids:
+      - NCBIfam:TIGR01511
+      - NCBIfam:TIGR01525
+      - NCBIfam:TIGR01494
+      - NCBIfam:TIGR00003
+      functional_role: Chromosomal Cu(I)/Au-translocating P-type ATPase CupA (Rmet_3524; EC 3.6.3.4) involved in cytoplasmic copper/gold homeostasis in Cupriavidus metallidurans AE104 (the plasmid-free derivative of CH34).
+      annotation_note: 'Grounded to parental Cupriavidus metallidurans CH34 reference proteome UP000002429 (NCBITaxon:266264; UniProtKB organism string: Cupriavidus metallidurans (strain ATCC 43123 / DSM 2839 / NBRC 102507 / CH34); chromosomal locus Rmet_3524 retained in plasmid-free derivative AE104) while mechanism organism is species-level NCBITaxon:119219.'
+      evidence:
+      - source_ref: hirth_2024
+        supports: partial
+        explanation: Hirth et al. (2024) Discussion and Conclusion discuss chromosomal copper-homeostasis and efflux systems in plasmid-free Cupriavidus metallidurans AE104 during synergistic Au/Cu toxicity and stock-dependent periplasmic gold nanoparticle formation (Figure 2A-D), but Figure 2 microscopy used parental AE104 without testing a cupA mutant or purified CupA enzyme.
+  - id: coxa_cytochrome_oxidase
+    label: CoxA cytochrome c oxidase subunit 1 (CH34 reference proteome UP000002429)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: coxA
+    description: Chromosomal cytochrome c oxidase subunit 1 CoxA (UniProtKB:Q1LRS8; Rmet_0262 in parental CH34) representing the respiratory electron-transport chain proposed in Hirth et al. (2024) Discussion to interact with periplasmic Au complexes in Cupriavidus metallidurans AE104.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:Q1LRS8
+      entry_name: Q1LRS8_CUPMC
+      protein_name: Cytochrome c oxidase subunit 1
+      gene_symbol: coxA
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:266264
+        label: Cupriavidus metallidurans CH34
+      reference_proteome_id: UP000002429
+      ec_numbers:
+      - EC:7.1.1.9
+      interpro_ids:
+      - InterPro:IPR023616
+      - InterPro:IPR036927
+      - InterPro:IPR000883
+      - InterPro:IPR023615
+      - InterPro:IPR033944
+      - InterPro:IPR014241
+      pfam_ids:
+      - Pfam:PF00115
+      ncbifam_ids:
+      - NCBIfam:TIGR02891
+      functional_role: Respiratory heme-copper cytochrome c oxidase subunit 1 CoxA (Rmet_0262; EC 7.1.1.9) representing the periplasmic/inner-membrane respiratory electron-transport chain discussed in relation to Au(III) reduction and toxicity in Cupriavidus metallidurans AE104.
+      annotation_note: 'Grounded to parental Cupriavidus metallidurans CH34 reference proteome UP000002429 (NCBITaxon:266264; UniProtKB organism string: Cupriavidus metallidurans (strain ATCC 43123 / DSM 2839 / NBRC 102507 / CH34); chromosomal locus Rmet_0262 retained in plasmid-free derivative AE104) while mechanism organism is species-level NCBITaxon:119219.'
+      evidence:
+      - source_ref: hirth_2024
+        supports: partial
+        explanation: Hirth et al. (2024) Discussion proposes respiratory-chain interactions and stock-dependent Au(III) chloride/hydroxide speciation to explain why 50 uM aqua-regia-prepared Au(III) stock yielded periplasmic particles at 72 h (Figure 2A) whereas commercial TraceCERT HAuCl4 (50 uM for 70 h, 15 uM for 21 h, 50 uM for 30 min; Figure 2B-D) caused cell damage or no visible particles; direct coxA catalysis was not experimentally tested.
+  - id: au3_chloride_stock_solutions
+    label: Aqua-regia-prepared Au(III) stock vs commercial TraceCERT HAu(III)Cl4 in Tris-buffered gluconate medium
+    node_type: CHEMICAL_ENTITY
+    description: 'Au(III)-chloride solutions added to aerobic Cupriavidus metallidurans AE104 cultures (grown in Tris-buffered mineral salts medium with 2 g/L sodium gluconate at 30 degrees C through two 200 rpm precultures and a 66-fold dilution to 180-200 Klett units, then incubated at 100 rpm and 30 degrees C): 50 uM aqua-regia-prepared stock for 72 h (Figure 2A) versus commercial Sigma-Aldrich TraceCERT HAu(III)Cl4 (1 g/L Au in HCl) at 50 uM for 70 h, 15 uM for 21 h, or 50 uM for 30 min (Figure 2B-D; exact final medium pH and molecular stock speciation unmeasured).'
+    protein_grounding_status: NOT_APPLICABLE
+  - id: periplasmic_gold_nanoparticles
+    label: Source-assigned periplasmic gold nanoparticles (aqua-regia stock) vs damaged/particle-free cells (commercial stock)
+    node_type: MATERIAL_OR_PHASE
+    description: 'Preparation-dependent TEM outcome in 80-nm glutaraldehyde/OsO4-fixed, ethanol-dehydrated, uranyl-acetate-stained resin sections (Figure 2A-D): source-assigned periplasmic gold nanoparticles after 72 h with 50 uM aqua-regia-prepared Au(III) stock, versus damaged cells (50 uM for 70 h; 15 uM for 21 h) or cells without visible particles (50 uM for 30 min) with commercial TraceCERT HAu(III)Cl4, without bulk phase-purity, cell-fraction, or recovery-yield quantification.'
+    protein_grounding_status: NOT_APPLICABLE
+  edges:
+  - source: cupa_efflux_atpase
+    target: au3_chloride_stock_solutions
+    predicate: modulates
+    relationship: proposed cytoplasmic/periplasmic Cu-Au homeostasis interaction during Au(III) exposure
+    description: Chromosomal copper/gold homeostasis (represented by CupA in plasmid-free AE104) is proposed in Hirth et al. (2024) Discussion to modulate cellular tolerance and periplasmic handling of Au species, without direct knockout testing in the Figure 2 microscopy series.
+    evidence:
+    - source_ref: hirth_2024
+      supports: partial
+      explanation: Hirth et al. (2024) Discussion and Supplementary Table S4 discuss copper-homeostasis and respiratory pathways in AE104, while Figure 2 TEM panels tested only parental AE104 without matched cell-free or killed-cell controls.
+  - source: coxa_cytochrome_oxidase
+    target: au3_chloride_stock_solutions
+    predicate: reduces
+    relationship: proposed respiratory-chain electron transfer to periplasmic Au(III) complexes
+    description: Respiratory-chain electron transport (represented by CoxA Rmet_0262) is proposed in Hirth et al. (2024) Discussion as a candidate pathway for reducing reactive aqua-regia-prepared Au(III) species in the periplasm of AE104, whereas commercial HAu(III)Cl4 stock caused cell damage or no visible nanoparticles.
+    evidence:
+    - source_ref: hirth_2024
+      supports: partial
+      explanation: Hirth et al. (2024) Discussion and Conclusion propose stock-speciation and respiratory-chain explanations for the contrast between Figure 2A (50 uM aqua-regia stock, 72 h) and Figure 2B-D (commercial TraceCERT stock, 50 uM for 70 h, 15 uM for 21 h, 50 uM for 30 min), as hypotheses rather than directly assayed enzymatic steps.
+  - source: au3_chloride_stock_solutions
+    target: periplasmic_gold_nanoparticles
+    predicate: transforms_into
+    relationship: stock-dependent culture-associated formation of TEM-assigned periplasmic gold nanoparticles
+    description: Exposure of aerobic C. metallidurans AE104 cultures (30 degrees C, 100 rpm after addition at 180-200 Klett units) to 50 uM aqua-regia-prepared Au(III) stock for 72 h yielded TEM-assigned periplasmic gold nanoparticles (Figure 2A), whereas commercial TraceCERT HAu(III)Cl4 yielded damaged cells or no visible nanoparticles (Figure 2B-D).
+    evidence:
+    - source_ref: hirth_2024
+      supports: support
+      explanation: Figure 2A-D and Results ('No appearance of gold nanoparticles in the periplasm') document the stock-dependent TEM contrast between the 72 h 50 uM aqua-regia-prepared stock and commercial TraceCERT HAu(III)Cl4 exposures, without quantifying bulk conversion yield or phase purity.
 curation_history:
 - timestamp: '2026-10-14T19:43:25Z'
   curator: Codex (GPT-6; Codex)
   action: create
-  summary: Created elemental gold identity and a narrowly scoped AE104 stock-comparison observation
-    from verified identifiers, the complete 2024 original XML, original Figure 2 and official
-    supplementary strain table. Retained the commercial-stock null/damage outcome, timing
-    discrepancy, proposed stock chemistry, microscopy limits and missing causal controls;
-    no criticality or recovery-yield claim.
+  summary: Created elemental gold identity and a narrowly scoped AE104 stock-comparison observation from verified identifiers, the complete 2024 original XML, original Figure 2 and official supplementary strain table. Retained the commercial-stock null/damage outcome, timing discrepancy, proposed stock chemistry, microscopy limits and missing causal controls; no criticality or recovery-yield claim.
+- timestamp: '2026-11-11T14:21:12Z'
+  curator: marcin
+  action: edit
+  summary: Added CH34 reference-proteome protein examples (CupA UniProtKB:Q1LHI0, CoxA UniProtKB:Q1LRS8) and representative causal graph for Cupriavidus metallidurans AE104 stock-dependent gold nanoparticle formation.
 history_refs:
 - history/records/gold/2026-10-14T194328Z-codex-3c0536.yaml
+- history/records/gold/2026-11-11T142112Z-marcin-7acf73.yaml

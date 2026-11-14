@@ -1,147 +1,221 @@
 id: cmmmech:lead-blast-furnace-slag
 name: Lead blast-furnace slag
 material_kind: secondary_resource
-description: >-
-  Partly vitrified residue generated during lead blast-furnace smelting.
-  The curated example is granulated slag from the former lead-zinc smelter
-  at Noyelles-Godault, northern France, containing a silicate glass matrix,
-  crystalline phases and metallic lead droplets. It is a process-defined
-  secondary resource, distinct from elemental lead or zinc, a pure mineral,
-  copper-smelter slag, steelmaking slag, furnace dust or zinc-leach residue.
-  Its composition is sample-specific. No criticality designation is inherited
-  from constituent elements.
+description: Partly vitrified residue generated during lead blast-furnace smelting. The curated example is granulated slag from the former lead-zinc smelter at Noyelles-Godault, northern France, containing a silicate glass matrix, crystalline phases and metallic lead droplets. It is a process-defined secondary resource, distinct from elemental lead or zinc, a pure mineral, copper-smelter slag, steelmaking slag, furnace dust or zinc-leach residue. Its composition is sample-specific. No criticality designation is inherited from constituent elements.
 sources:
-  - id: yin2014_thesis
-    title: >-
-      Yin NH (2014). Weathering of metallurgical slags: a comprehensive study
-      on the importance of chemical and biological contributions. Doctoral
-      thesis, Universite Paris-Est; defended 2 December 2014, NNT 2014PEST1125.
-      HAL tel-01154324v1. Complete 200-page deposited PDF inspected for
-      Section 4.1.2 (printed p.84; PDF p.85) and Chapter 8 (printed
-      pp.171-186; PDF pp.172-187), including relevant original tables and
-      figures. Chapter 8 identifies its associated journal article DOI
-      10.1016/j.jenvman.2014.09.018. The thesis is the full-text version
-      inspected here; it is not an independent replication of that article.
-    url: https://theses.hal.science/tel-01154324v1
-    accessed_on: '2026-10-16'
-  - id: vanhullebusch2015
-    title: >-
-      van Hullebusch ED, Yin NH, Seignez N, Labanowski J, Gauthier A,
-      Lens PNL, Avril C and Sivry Y (2015). Bio-alteration of metallurgical
-      wastes by Pseudomonas aeruginosa in a semi flow-through reactor.
-      Journal of Environmental Management 147:297-305.
-      DOI 10.1016/j.jenvman.2014.09.018; PMID 25277127.
-      Publisher abstract and bibliographic metadata checked; full publisher
-      article not acquired. Experimental details below are grounded to the
-      deposited thesis chapter, without assuming version-identical prose.
-    url: https://doi.org/10.1016/j.jenvman.2014.09.018
-    accessed_on: '2026-10-16'
-  - id: ncbi_taxonomy
-    title: >-
-      NCBI Taxonomy, taxon 287, Pseudomonas aeruginosa, rank species.
-      The identifier denotes the species, not the experimental strain.
-    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=287&mode=Info
-    accessed_on: '2026-10-16'
-  - id: pasteur_cip
-    title: >-
-      Institut Pasteur CRBIP collection catalogue, CIP 105094,
-      Pseudomonas aeruginosa. Collection identity checked; catalogue
-      cultivation conditions are not substituted for the experiment's
-      reported conditions.
-    url: https://catalogue-crbip.pasteur.fr/fiche_catalogue.xhtml?crbip=CIP+105094
-    accessed_on: '2026-10-16'
+- id: yin2014_thesis
+  title: 'Yin NH (2014). Weathering of metallurgical slags: a comprehensive study on the importance of chemical and biological contributions. Doctoral thesis, Universite Paris-Est; defended 2 December 2014, NNT 2014PEST1125. HAL tel-01154324v1. Complete 200-page deposited PDF inspected for Section 4.1.2 (printed p.84; PDF p.85) and Chapter 8 (printed pp.171-186; PDF pp.172-187), including relevant original tables and figures. Chapter 8 identifies its associated journal article DOI 10.1016/j.jenvman.2014.09.018. The thesis is the full-text version inspected here; it is not an independent replication of that article.'
+  url: https://theses.hal.science/tel-01154324v1
+  accessed_on: '2026-10-16'
+- id: vanhullebusch2015
+  title: van Hullebusch ED, Yin NH, Seignez N, Labanowski J, Gauthier A, Lens PNL, Avril C and Sivry Y (2015). Bio-alteration of metallurgical wastes by Pseudomonas aeruginosa in a semi flow-through reactor. Journal of Environmental Management 147:297-305. DOI 10.1016/j.jenvman.2014.09.018; PMID 25277127. Publisher abstract and bibliographic metadata checked; full publisher article not acquired. Experimental details below are grounded to the deposited thesis chapter, without assuming version-identical prose.
+  url: https://doi.org/10.1016/j.jenvman.2014.09.018
+  accessed_on: '2026-10-16'
+- id: ncbi_taxonomy
+  title: NCBI Taxonomy, taxon 287, Pseudomonas aeruginosa, rank species. The identifier denotes the species, not the experimental strain.
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=287&mode=Info
+  accessed_on: '2026-10-16'
+- id: pasteur_cip
+  title: Institut Pasteur CRBIP collection catalogue, CIP 105094, Pseudomonas aeruginosa. Collection identity checked; catalogue cultivation conditions are not substituted for the experiment's reported conditions.
+  url: https://catalogue-crbip.pasteur.fr/fiche_catalogue.xhtml?crbip=CIP+105094
+  accessed_on: '2026-10-16'
 mechanisms:
-  - id: pseudomonas_bioalteration
-    name: Heterotrophic microbial alteration of lead blast-furnace slag
-    process: bioleaching
-    description: >-
-      Living Pseudomonas aeruginosa cultures altered a real lead-smelting
-      residue in laboratory reactors with weekly medium renewal. Compared
-      with sterile growth medium, the inoculated treatment increased
-      cumulative elemental release into the operational digested-liquid
-      fraction. Filtered and digested fractions differed, consistent with
-      particulate association as well as dissolved mobilization. These
-      measurements do not uniquely quantify cell-surface sorption, isolate
-      a metal product, or establish a commercial recovery process.
-    context: >-
-      Chapter 8 Section 8.2 describes duplicate experiments with 2.5 g of
-      slag grains, reported as 2 mm diameter, in 75 mL of medium in
-      150 mL polycarbonate flasks at 23 +/- 2 degrees C and 100 rpm for
-      140 days. The three arms were ultrapure water, sterile growth medium,
-      and growth medium with P. aeruginosa. Fresh medium was supplied
-      every seven days. Per litre the medium contained 4 g succinic acid,
-      1 g ammonium sulfate, 1 g disodium hydrogen phosphate and 6 g TRIS.
-      Methods specify NaOH adjustment to pH 7.8; results instead describe
-      initial medium pH 8.2, increasing to 8.5 in the biotic arm and
-      remaining 8.2 in the sterile arm. These reported settings are
-      retained separately. General thesis methods, Section 4.1.2, identify
-      the research strain as CIP 105094 from Institut Pasteur; Chapter 8
-      itself names the species without repeating its accession. An
-      inoculum dose and a Chapter-8-specific slag sterilization protocol
-      were not specified in the inspected methods. The digested sample
-      used hydrogen peroxide and heating; the filtered sample excluded
-      suspended cells and neoformed precipitates. The PDF prints the
-      filter pore-size unit as micrograms, which is dimensionally invalid;
-      a corrected pore diameter is not inferred. Separate polished-section
-      observations at 60 and 150 days are not the same endpoint as the
-      140-day liquid series or the 128-day cumulative table. Industrial
-      feedstock origin does not establish industrial operation of this
-      laboratory weathering experiment.
-    microbial: true
-    organisms:
-      - id: NCBITaxon:287
-        label: Pseudomonas aeruginosa
+- id: pseudomonas_bioalteration
+  name: Heterotrophic microbial alteration of lead blast-furnace slag
+  process: bioleaching
+  description: Living Pseudomonas aeruginosa cultures altered a real lead-smelting residue in laboratory reactors with weekly medium renewal. Compared with sterile growth medium, the inoculated treatment increased cumulative elemental release into the operational digested-liquid fraction. Filtered and digested fractions differed, consistent with particulate association as well as dissolved mobilization. These measurements do not uniquely quantify cell-surface sorption, isolate a metal product, or establish a commercial recovery process.
+  context: Chapter 8 Section 8.2 describes duplicate experiments with 2.5 g of slag grains, reported as 2 mm diameter, in 75 mL of medium in 150 mL polycarbonate flasks at 23 +/- 2 degrees C and 100 rpm for 140 days. The three arms were ultrapure water, sterile growth medium, and growth medium with P. aeruginosa. Fresh medium was supplied every seven days. Per litre the medium contained 4 g succinic acid, 1 g ammonium sulfate, 1 g disodium hydrogen phosphate and 6 g TRIS. Methods specify NaOH adjustment to pH 7.8; results instead describe initial medium pH 8.2, increasing to 8.5 in the biotic arm and remaining 8.2 in the sterile arm. These reported settings are retained separately. General thesis methods, Section 4.1.2, identify the research strain as CIP 105094 from Institut Pasteur; Chapter 8 itself names the species without repeating its accession. An inoculum dose and a Chapter-8-specific slag sterilization protocol were not specified in the inspected methods. The digested sample used
+    hydrogen peroxide and heating; the filtered sample excluded suspended cells and neoformed precipitates. The PDF prints the filter pore-size unit as micrograms, which is dimensionally invalid; a corrected pore diameter is not inferred. Separate polished-section observations at 60 and 150 days are not the same endpoint as the 140-day liquid series or the 128-day cumulative table. Industrial feedstock origin does not establish industrial operation of this laboratory weathering experiment.
+  microbial: true
+  organisms:
+  - id: NCBITaxon:287
+    label: Pseudomonas aeruginosa
+  protein_examples:
+  - uniprot_accession: UniProtKB:Q51548
+    entry_name: PVDA_PSEAE
+    protein_name: L-ornithine N(5)-monooxygenase
+    gene_symbol: pvdA
+    entry_status: SWISS_PROT
+    target_organism:
+      id: NCBITaxon:208964
+      label: Pseudomonas aeruginosa PAO1
+    reference_proteome_id: UP000002438
+    ec_numbers:
+    - EC:1.14.13.195
+    interpro_ids:
+    - InterPro:IPR036188
+    - InterPro:IPR025700
+    pfam_ids:
+    - Pfam:PF13434
+    functional_role: L-ornithine N(5)-monooxygenase PvdA (EC 1.14.13.195; PA2386) catalyzing the committed hydroxylation step of pyoverdine siderophore biosynthesis in Pseudomonas aeruginosa.
+    annotation_note: 'Grounded to reviewed Swiss-Prot entry UniProtKB:Q51548 (PVDA_PSEAE; pvdA / PA2386) in Pseudomonas aeruginosa PAO1 reference proteome UP000002438 (NCBITaxon:208964; UniProtKB organism string: Pseudomonas aeruginosa (strain ATCC 15692 / DSM 22644 / CIP 104116 / JCM 14847 / LMG 12228 / 1C / PRS 101 / PAO1)) as a species-level ortholog proxy for strain CIP 105094 (mechanisms[].organisms[].id NCBITaxon:287) in Yin (2014) / van Hullebusch et al. (2015).'
     evidence:
-      - source_ref: yin2014_thesis
-        supports: support
-        explanation: >-
-          Sections 8.2.1-8.2.3 establish feed origin, medium, duplicate
-          control arms and ICP-AES measurement. Figures 8.1 and 8.7 and
-          Table 8.3 support greater cumulative release in digested biotic
-          liquid than in sterile medium under the reported conditions.
-          This is a treatment-level comparison, not a demonstrated
-          molecular mechanism. Figure 8.6 shows bacterial colonization
-          of the slag surface; the neighboring abiotic images also show
-          glass and lead-droplet alteration.
+    - source_ref: yin2014_thesis
+      supports: partial
+      explanation: Yin (2014) Chapter 8 Section 8.4.3 and schematic Figure 8.9 propose siderophore (pyoverdine) complexation and cell-surface binding to explain enhanced elemental mobilization from granulated Noyelles-Godault lead blast-furnace slag by Pseudomonas aeruginosa CIP 105094 relative to sterile succinate-TRIS medium over 140 days, without directly quantifying siderophores or testing pvdA mutants.
+  - uniprot_accession: UniProtKB:P48632
+    entry_name: FPVA_PSEAE
+    protein_name: Ferripyoverdine receptor
+    gene_symbol: fpvA
+    entry_status: SWISS_PROT
+    target_organism:
+      id: NCBITaxon:208964
+      label: Pseudomonas aeruginosa PAO1
+    reference_proteome_id: UP000002438
+    interpro_ids:
+    - InterPro:IPR000531
+    - InterPro:IPR036942
+    - InterPro:IPR012910
+    - InterPro:IPR037066
+    - InterPro:IPR011662
+    - InterPro:IPR039426
+    - InterPro:IPR010917
+    - InterPro:IPR010105
+    pfam_ids:
+    - Pfam:PF07715
+    - Pfam:PF07660
+    - Pfam:PF00593
+    ncbifam_ids:
+    - NCBIfam:TIGR01786
+    functional_role: Outer-membrane TonB-dependent ferripyoverdine receptor FpvA (PA2398) mediating uptake and cell-surface association of metal-pyoverdine complexes in Pseudomonas aeruginosa.
+    annotation_note: 'Grounded to reviewed Swiss-Prot entry UniProtKB:P48632 (FPVA_PSEAE; fpvA / PA2398) in Pseudomonas aeruginosa PAO1 reference proteome UP000002438 (NCBITaxon:208964; UniProtKB organism string: Pseudomonas aeruginosa (strain ATCC 15692 / DSM 22644 / CIP 104116 / JCM 14847 / LMG 12228 / 1C / PRS 101 / PAO1)) as a species-level ortholog proxy for strain CIP 105094 (mechanisms[].organisms[].id NCBITaxon:287) in Yin (2014) / van Hullebusch et al. (2015).'
+    evidence:
+    - source_ref: yin2014_thesis
+      supports: partial
+      explanation: Yin (2014) Sections 8.3.1, 8.4.1, and 8.4.3 and Figures 8.7 and 8.9 propose siderophore chelation and cell/biofilm metal association to explain differences between H2O2/heat-digested and filtered biotic liquids (though filtration also removes neoformed precipitates and fpvA was not directly assayed).
+  evidence:
+  - source_ref: yin2014_thesis
+    supports: support
+    explanation: Sections 8.2.1-8.2.3 establish feed origin, medium, duplicate control arms and ICP-AES measurement. Figures 8.1 and 8.7 and Table 8.3 support greater cumulative release in digested biotic liquid than in sterile medium under the reported conditions. This is a treatment-level comparison, not a demonstrated molecular mechanism. Figure 8.6 shows bacterial colonization of the slag surface; the neighboring abiotic images also show glass and lead-droplet alteration.
+  - source_ref: yin2014_thesis
+    supports: partial
+    explanation: Table 8.3 reports 128-day cumulative Zn release of 260.4 micrograms per gram of slag in digested biotic liquid and 257.0 micrograms per gram in ultrapure water, versus 42.6 in sterile medium. The water arm therefore precludes describing Zn release as universally or exclusively microbially driven. The filtered biotic Zn value is 136.8 micrograms per gram of slag; it represents a different sampled fraction, not a lower total extraction experiment. The source does not establish statistical superiority over water or a recovered-metal yield.
+  - source_ref: yin2014_thesis
+    supports: partial
+    explanation: Sections 8.3.1 and 8.4.1 and Figure 8.7 attribute differences between digested and filtered liquid to metal association with cells or biofilm. Filtration also removes neoformed precipitates, so that difference alone cannot distinguish biosorption, intracellular accumulation and noncellular particulate metal. The narrative's 28% dissolved and 72% associated Fe are not arithmetically consistent with Table 8.3 values 91.1 and 270.1 micrograms per gram. No corrected fraction or exclusive biosorption yield is adopted.
+  - source_ref: yin2014_thesis
+    supports: context_only
+    explanation: Section 8.4.3 and schematic Figure 8.9 propose siderophore complexation and cell-surface binding to explain enhanced mobilization. They do not directly identify or quantify those ligands in this experiment. Table 8.4 extrapolates complete leaching times while neglecting protective secondary layers; these are model extrapolations, not observed field lifetimes or industrial treatment times. Neither criticality nor a separated product recovery is established.
+causal_graphs:
+- id: pseudomonas_lead_slag_bioalteration_graph
+  name: Pseudomonas aeruginosa CIP 105094 heterotrophic bioalteration of granulated lead blast-furnace slag
+  description: Representative pathway linking Pseudomonas aeruginosa pyoverdine siderophore biosynthesis and outer-membrane reception (represented by reviewed PAO1 Swiss-Prot orthologs PvdA PA2386 UniProtKB:Q51548 and FpvA PA2398 UniProtKB:P48632) to surface colonization and elemental mobilization from granulated Noyelles-Godault lead blast-furnace slag in weekly-renewed semi-flow-through reactors in Yin (2014) / van Hullebusch et al. (2015).
+  scope: REPRESENTATIVE_EXAMPLE
+  mechanism_ref: pseudomonas_bioalteration
+  nodes:
+  - id: pvda_pyoverdine_monooxygenase
+    label: PvdA L-ornithine N(5)-monooxygenase (P. aeruginosa PAO1 Swiss-Prot proxy)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: pvdA
+    description: Reviewed Swiss-Prot L-ornithine N(5)-monooxygenase PvdA (UniProtKB:Q51548; pvdA / PA2386; EC 1.14.13.195 in P. aeruginosa PAO1 UP000002438, NCBITaxon:208964) representing pyoverdine siderophore synthesis proposed in Yin (2014) Section 8.4.3 and Figure 8.9 for strain CIP 105094 (NCBITaxon:287), where siderophore concentrations were not directly quantified.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:Q51548
+      entry_name: PVDA_PSEAE
+      protein_name: L-ornithine N(5)-monooxygenase
+      gene_symbol: pvdA
+      entry_status: SWISS_PROT
+      target_organism:
+        id: NCBITaxon:208964
+        label: Pseudomonas aeruginosa PAO1
+      reference_proteome_id: UP000002438
+      ec_numbers:
+      - EC:1.14.13.195
+      interpro_ids:
+      - InterPro:IPR036188
+      - InterPro:IPR025700
+      pfam_ids:
+      - Pfam:PF13434
+      functional_role: L-ornithine N(5)-monooxygenase PvdA (EC 1.14.13.195; PA2386) catalyzing the committed hydroxylation step of pyoverdine siderophore biosynthesis in Pseudomonas aeruginosa.
+      annotation_note: 'Grounded to reviewed Swiss-Prot entry UniProtKB:Q51548 (PVDA_PSEAE; pvdA / PA2386) in Pseudomonas aeruginosa PAO1 reference proteome UP000002438 (NCBITaxon:208964; UniProtKB organism string: Pseudomonas aeruginosa (strain ATCC 15692 / DSM 22644 / CIP 104116 / JCM 14847 / LMG 12228 / 1C / PRS 101 / PAO1)) as a species-level ortholog proxy for strain CIP 105094 (mechanisms[].organisms[].id NCBITaxon:287) in Yin (2014) / van Hullebusch et al. (2015).'
+      evidence:
       - source_ref: yin2014_thesis
         supports: partial
-        explanation: >-
-          Table 8.3 reports 128-day cumulative Zn release of 260.4
-          micrograms per gram of slag in digested biotic liquid and
-          257.0 micrograms per gram in ultrapure water, versus 42.6 in
-          sterile medium. The water arm therefore precludes describing
-          Zn release as universally or exclusively microbially driven.
-          The filtered biotic Zn value is 136.8 micrograms per gram of
-          slag; it represents a different sampled fraction, not a lower
-          total extraction experiment. The source does not establish
-          statistical superiority over water or a recovered-metal yield.
+        explanation: Yin (2014) Chapter 8 Section 8.4.3 and schematic Figure 8.9 propose siderophore (pyoverdine) complexation and cell-surface binding to explain enhanced elemental mobilization from granulated Noyelles-Godault lead blast-furnace slag by Pseudomonas aeruginosa CIP 105094 relative to sterile succinate-TRIS medium over 140 days, without directly quantifying siderophores or testing pvdA mutants.
+  - id: fpva_ferripyoverdine_receptor
+    label: FpvA outer-membrane ferripyoverdine receptor (P. aeruginosa PAO1 Swiss-Prot proxy)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: fpvA
+    description: Reviewed Swiss-Prot outer-membrane receptor FpvA (UniProtKB:P48632; fpvA / PA2398 in P. aeruginosa PAO1 UP000002438, NCBITaxon:208964) representing cell-surface siderophore-metal reception and biofilm association in strain CIP 105094.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:P48632
+      entry_name: FPVA_PSEAE
+      protein_name: Ferripyoverdine receptor
+      gene_symbol: fpvA
+      entry_status: SWISS_PROT
+      target_organism:
+        id: NCBITaxon:208964
+        label: Pseudomonas aeruginosa PAO1
+      reference_proteome_id: UP000002438
+      interpro_ids:
+      - InterPro:IPR000531
+      - InterPro:IPR036942
+      - InterPro:IPR012910
+      - InterPro:IPR037066
+      - InterPro:IPR011662
+      - InterPro:IPR039426
+      - InterPro:IPR010917
+      - InterPro:IPR010105
+      pfam_ids:
+      - Pfam:PF07715
+      - Pfam:PF07660
+      - Pfam:PF00593
+      ncbifam_ids:
+      - NCBIfam:TIGR01786
+      functional_role: Outer-membrane TonB-dependent ferripyoverdine receptor FpvA (PA2398) mediating uptake and cell-surface association of metal-pyoverdine complexes in Pseudomonas aeruginosa.
+      annotation_note: 'Grounded to reviewed Swiss-Prot entry UniProtKB:P48632 (FPVA_PSEAE; fpvA / PA2398) in Pseudomonas aeruginosa PAO1 reference proteome UP000002438 (NCBITaxon:208964; UniProtKB organism string: Pseudomonas aeruginosa (strain ATCC 15692 / DSM 22644 / CIP 104116 / JCM 14847 / LMG 12228 / 1C / PRS 101 / PAO1)) as a species-level ortholog proxy for strain CIP 105094 (mechanisms[].organisms[].id NCBITaxon:287) in Yin (2014) / van Hullebusch et al. (2015).'
+      evidence:
       - source_ref: yin2014_thesis
         supports: partial
-        explanation: >-
-          Sections 8.3.1 and 8.4.1 and Figure 8.7 attribute differences
-          between digested and filtered liquid to metal association with
-          cells or biofilm. Filtration also removes neoformed precipitates,
-          so that difference alone cannot distinguish biosorption,
-          intracellular accumulation and noncellular particulate metal.
-          The narrative's 28% dissolved and 72% associated Fe are not
-          arithmetically consistent with Table 8.3 values 91.1 and
-          270.1 micrograms per gram. No corrected fraction or exclusive
-          biosorption yield is adopted.
-      - source_ref: yin2014_thesis
-        supports: context_only
-        explanation: >-
-          Section 8.4.3 and schematic Figure 8.9 propose siderophore
-          complexation and cell-surface binding to explain enhanced
-          mobilization. They do not directly identify or quantify those
-          ligands in this experiment. Table 8.4 extrapolates complete
-          leaching times while neglecting protective secondary layers;
-          these are model extrapolations, not observed field lifetimes
-          or industrial treatment times. Neither criticality nor a
-          separated product recovery is established.
+        explanation: Yin (2014) Sections 8.3.1, 8.4.1, and 8.4.3 and Figures 8.7 and 8.9 propose siderophore chelation and cell/biofilm metal association to explain differences between H2O2/heat-digested and filtered biotic liquids (though filtration also removes neoformed precipitates and fpvA was not directly assayed).
+  - id: granulated_lead_blast_furnace_slag
+    label: Granulated Noyelles-Godault lead blast-furnace slag (2.5 g of 2-mm grains in 75 mL succinate-TRIS medium)
+    node_type: MATERIAL_OR_PHASE
+    description: Partly vitrified granulated slag from the former Noyelles-Godault lead-zinc smelter (containing silicate glass matrix, crystalline phases, and metallic Pb droplets; 2.5 g of 2-mm grains in 75 mL medium in 150 mL polycarbonate flasks at 23 +/- 2 degrees C and 100 rpm for 140 days with 7-day medium renewal; medium contained 4 g/L succinic acid, 1 g/L (NH4)2SO4, 1 g/L Na2HPO4, and 6 g/L TRIS, with Methods specifying NaOH adjustment to pH 7.8 whereas Results report initial pH 8.2 rising to 8.5 in the biotic arm vs remaining 8.2 in sterile medium).
+    protein_grounding_status: NOT_APPLICABLE
+  - id: mobilized_slag_elements_in_digested_and_filtered_fractions
+    label: Cumulative mobilized slag elements in H2O2/heat-digested vs filtered reactor liquids
+    node_type: CHEMICAL_ENTITY
+    description: ICP-AES-measured cumulative elemental release (Figures 8.1, 8.7; Table 8.3 at 128 days), where 128-day cumulative Zn release was 260.4 ug/g slag in H2O2/heat-digested biotic liquid vs 42.6 ug/g in sterile medium and 257.0 ug/g in ultrapure water (and 136.8 ug/g in filtered biotic liquid; filtration also removes neoformed precipitates, the PDF prints the filter pore-size unit as 'micrograms', and narrative 28%/72% Fe fractions do not arithmetically match Table 8.3's 91.1 and 270.1 ug/g).
+    protein_grounding_status: NOT_APPLICABLE
+  edges:
+  - source: pvda_pyoverdine_monooxygenase
+    target: granulated_lead_blast_furnace_slag
+    predicate: solubilizes
+    relationship: proposed siderophore-assisted chelation and weathering of lead blast-furnace slag
+    description: Siderophore biosynthesis (represented by PvdA UniProtKB:Q51548) is proposed in Yin (2014) Section 8.4.3 and Figure 8.9 to promote ligand-assisted dissolution of granulated lead blast-furnace slag relative to sterile growth medium, though ligands were not directly quantified and ultrapure water released comparable 128-day Zn (257.0 vs 260.4 ug/g).
+    evidence:
+    - source_ref: yin2014_thesis
+      supports: partial
+      explanation: Section 8.4.3 and Figure 8.9 propose siderophore complexation, while Table 8.3 shows higher 128-day Zn release in digested biotic liquid (260.4 ug/g) than in sterile medium (42.6 ug/g) but similar release in ultrapure water (257.0 ug/g), without direct siderophore quantification.
+  - source: fpva_ferripyoverdine_receptor
+    target: mobilized_slag_elements_in_digested_and_filtered_fractions
+    predicate: modulates
+    relationship: proposed cell/biofilm metal association contributing to digested-vs-filtered liquid differences
+    description: Cell-surface siderophore reception and biofilm binding (represented by FpvA UniProtKB:P48632) are proposed in Sections 8.3.1 and 8.4.1 to contribute to higher metal inventories in H2O2/heat-digested vs filtered biotic liquid, although filtration also removes neoformed precipitates.
+    evidence:
+    - source_ref: yin2014_thesis
+      supports: partial
+      explanation: Sections 8.3.1 and 8.4.1 and Figure 8.7 compare digested and filtered biotic liquids (e.g., 260.4 vs 136.8 ug Zn/g slag at 128 days in Table 8.3), which cannot uniquely separate cell/biofilm sorption from noncellular neoformed precipitates.
+  - source: granulated_lead_blast_furnace_slag
+    target: mobilized_slag_elements_in_digested_and_filtered_fractions
+    predicate: produces
+    relationship: 140-day weekly-renewed biotic reactor weathering releases slag elements into digested and filtered liquid fractions
+    description: Incubation of 2.5 g granulated lead blast-furnace slag in 75 mL weekly-renewed P. aeruginosa CIP 105094 culture (23 +/- 2 degrees C, 100 rpm) increased cumulative elemental release in digested biotic liquid relative to sterile medium (Figures 8.1, 8.7; Table 8.3).
+    evidence:
+    - source_ref: yin2014_thesis
+      supports: support
+      explanation: Sections 8.2.1-8.2.3, Figures 8.1, 8.6, and 8.7, and Table 8.3 document slag colonization and increased cumulative elemental release in digested biotic liquid relative to sterile medium, while preserving the ultrapure-water comparator and fraction/unit caveats.
 curation_history:
-  - timestamp: '2026-10-16T03:44:16.492080Z'
-    curator: codex (GPT-6; codex)
-    action: CREATE
-    summary: Added process-defined lead slag and controlled laboratory bioalteration evidence; preserved fraction and source inconsistencies without claiming product recovery.
+- timestamp: '2026-10-16T03:44:16.492080Z'
+  curator: codex (GPT-6; codex)
+  action: CREATE
+  summary: Added process-defined lead slag and controlled laboratory bioalteration evidence; preserved fraction and source inconsistencies without claiming product recovery.
+- timestamp: '2026-11-11T14:21:14Z'
+  curator: marcin
+  action: edit
+  summary: Added reviewed Swiss-Prot Pseudomonas aeruginosa PAO1 protein examples (PvdA UniProtKB:Q51548, FpvA UniProtKB:P48632) and representative causal graph for CIP 105094 lead blast-furnace slag bioalteration.
 history_refs:
-  - history/records/lead-blast-furnace-slag/2026-10-16T034356Z-codex-ebaabd.yaml
+- history/records/lead-blast-furnace-slag/2026-10-16T034356Z-codex-ebaabd.yaml
+- history/records/lead-blast-furnace-slag/2026-11-11T142114Z-marcin-df2c06.yaml
