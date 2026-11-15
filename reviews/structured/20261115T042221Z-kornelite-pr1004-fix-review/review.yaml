@@ -1,0 +1,148 @@
+schema_version: 1.0.0
+review_id: 20261115T042221Z-kornelite-pr1004-fix-review
+kind: record
+repository: CultureBotAI/CMMMech
+title: PR
+started_at: '2026-11-15T04:20:23Z'
+finished_at: '2026-11-15T04:22:21Z'
+reviewer:
+  identity: codex / cmmmech-pr1004-fix-reviewer
+  kind: agent
+  model: GPT-5
+  independence: self_review
+  independence_basis: Fresh final-state review after independent PR
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: a71f064a761609077b865bdb9bcc892c567d3a68
+  state: working_tree
+  inputs:
+  - path: data/records/kornelite.yaml
+    sha256: 59f9118beb832ed80e970786249514fec873066af68729d6f1e03c88b25740ca
+    role: target
+  - path: history/records/kornelite/2026-11-15T042024Z-codex-71c38d.yaml
+    sha256: 6d37422df73ba6c37d3a1ef0c260666a773ae9f760b5bf34ef685fd3ec0e165e
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+targets:
+- target_id: cmmmech:kornelite
+  path: data/records/kornelite.yaml
+  label: Kornelite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/kornelite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/kornelite/2026-11-15T042024Z-codex-71c38d.yaml
+    role: canonical_history
+scope:
+  description: Review of the final PR
+  selection: PR
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:kornelite
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/kornelite.yaml
+  accessed_at: '2026-11-15T04:22:21Z'
+  support: supports
+  summary: The Sat node now catalyzes intracellular sulfate activation to APS, and
+    that process supplies substrate upstream of DsrA instead of asserting direct protein-to-protein
+    regulation.
+  snapshot_sha256: 59f9118beb832ed80e970786249514fec873066af68729d6f1e03c88b25740ca
+- evidence_id: history
+  kind: record_content
+  reference: history/records/kornelite/2026-11-15T042024Z-codex-71c38d.yaml
+  accessed_at: '2026-11-15T04:22:21Z'
+  support: supports
+  summary: Canonical sidecar records the Sat-to-DsrA graph-edge correction.
+  snapshot_sha256: 6d37422df73ba6c37d3a1ef0c260666a773ae9f760b5bf34ef685fd3ec0e165e
+- evidence_id: validation
+  kind: validation
+  reference: local validation commands
+  accessed_at: '2026-11-15T04:22:21Z'
+  support: supports
+  summary: The repaired record passed strict record validation, history validation,
+    and regenerated-page freshness checks.
+checks:
+- check_id: validate_record
+  name: Strict affected-record validation
+  command: uv run --locked cmmmech validate data/records/acanthite.yaml data/records/lead-blast-furnace-slag.yaml
+    data/records/monazite-ore.yaml data/records/pyrite.yaml data/records/kornelite.yaml
+    data/records/stibnite.yaml
+  status: passed
+  required: true
+  summary: Checked 6 record(s); 0 failed.
+  target_ids:
+  - cmmmech:kornelite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: validate_history
+  name: Canonical history validation
+  command: uv run --locked cmmmech validate-history --base origin/main
+  status: passed
+  required: true
+  summary: Checked 1589 history record(s); 0 error(s).
+  target_ids:
+  - cmmmech:kornelite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: render_check
+  name: Static page freshness
+  command: just render-check
+  status: passed
+  required: true
+  summary: pages/ is current.
+  target_ids:
+  - cmmmech:kornelite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+assessments:
+- assessment_id: causal_graph_fix
+  area: graph
+  topic: Sat-to-DsrA edge repair
+  outcome: supported
+  summary: The graph now models Sat as catalyzing upstream sulfate activation rather
+    than positively regulating DsrA without direct source support.
+  target_ids:
+  - cmmmech:kornelite
+  evidence_ids:
+  - record
+- assessment_id: provenance
+  area: provenance
+  topic: Correction sidecar and validation
+  outcome: supported
+  summary: The correction is represented by a new append-only history sidecar and
+    the final bytes pass affected validation.
+  target_ids:
+  - cmmmech:kornelite
+  evidence_ids:
+  - history
+  - validation
+findings: []
+actions: []
+summary: Kornelite passes the focused PR
+limitations:
+- This successor review focuses on PR
+related_reviews:
+- repository: CultureBotAI/CMMMech
+  review_id: 20261111T142200Z-kornelite-cycle14-stage3-protein-examples-review
+  relationship: supersedes the pre-fix PR
+links:
+- https://github.com/CultureBotAI/CMMMech/issues/1006
+tags:
+- pr1004
+- cycle14-stage3

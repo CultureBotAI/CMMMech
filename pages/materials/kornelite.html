@@ -228,7 +228,7 @@
     </div>
     <p style="margin: .5rem 0; font-size: .94rem;">Representative pathway linking Desulfovibrio desulfuricans dissimilatory sulfate-reduction enzymes (Sat UniProtKB:B8J4A8 and DsrA UniProtKB:Q93EW5) in glycerol-fed Widdel-Bak medium with 100 mg/L Fe (as FeSO4) to mixed bioreactor precipitates in which powder XRD patterns carry provisional database peak assignments to kornelite alongside iron sulfides in Karnachuk et al. (2021).</p>
 
-    <strong style="font-size: .86rem; color: var(--muted); text-transform: uppercase; letter-spacing: .05em;">Causal Nodes (4):</strong>
+    <strong style="font-size: .86rem; color: var(--muted); text-transform: uppercase; letter-spacing: .05em;">Causal Nodes (5):</strong>
     <table style="margin: .4rem 0 .8rem; font-size: .88rem;">
       <thead>
         <tr>
@@ -292,6 +292,18 @@
           <td>
 <div>1-L bioreactor containing glycerol-fed Widdel-Bak medium with sulfate, phosphate, nutrients, reductant, and 100 mg/L iron supplied as FeSO4 at 28 degrees C, 100 rpm, and 25 mL/min N2 sparging, with pH progressively stepped down from 7 to 6.5, 6, and 5.5 using HCl or NaHCO3 (successive pH arms share reactor history rather than independent fresh inoculations; centrifuged at 13,100 g for 15 min at 15 degrees C and washed 10 min in distilled water without reported O2 exclusion or sterile mineralogical controls).</div>          </td>
         </tr>
+        <tr id="causal-node-ay5_provisional_kornelite_phase_graph-intracellular_sulfate_activation_to_aps">
+          <td>
+            <strong>Intracellular sulfate activation to APS</strong><br>
+            <code style="font-size: .78rem; color: var(--muted);">intracellular_sulfate_activation_to_aps</code>
+          </td>
+          <td>
+            <span class="badge">BIOLOGICAL PROCESS</span>
+            <br><span class="badge" style="font-size: .72rem; margin-top: .2rem;">NOT_APPLICABLE</span>
+          </td>
+          <td>
+<div>ATP-dependent activation of intracellular sulfate to adenosine 5&#39;-phosphosulfate as an upstream step in the Desulfovibrio desulfuricans dissimilatory sulfate-reduction pathway, represented by Sat without direct enzyme assays in Karnachuk et al. (2021).</div>          </td>
+        </tr>
         <tr id="causal-node-ay5_provisional_kornelite_phase_graph-provisional_kornelite_xrd_peaks">
           <td>
             <strong>Mixed culture precipitates with provisional XRD database peak assignments to kornelite</strong><br>
@@ -307,11 +319,14 @@
       </tbody>
     </table>
 
-    <strong style="font-size: .86rem; color: var(--muted); text-transform: uppercase; letter-spacing: .05em;">Causal Edges (3):</strong>
+    <strong style="font-size: .86rem; color: var(--muted); text-transform: uppercase; letter-spacing: .05em;">Causal Edges (4):</strong>
     <ul style="margin: .4rem 0 0; padding-left: 1.2rem; font-size: .88rem;">
       <li style="margin-bottom: .35rem;">
-        <code>sat_sulfate_adenylyltransferase</code> &rarr; <strong>activates sulfate to APS upstream of dissimilatory sulfite reduction</strong> (<code>positively_regulates</code>) &rarr; <code>dsra_sulfite_reductase</code>
-: Sulfate adenylyltransferase Sat (UniProtKB:B8J4A8) initiates dissimilatory sulfate reduction upstream of DsrAB (UniProtKB:Q93EW5) in D. desulfuricans.[<a href="#source-karnachuk2021"><code>karnachuk2021</code></a>]      </li>
+        <code>sat_sulfate_adenylyltransferase</code> &rarr; <strong>activates sulfate to APS upstream of dissimilatory sulfite reduction</strong> (<code>catalyzes</code>) &rarr; <code>intracellular_sulfate_activation_to_aps</code>
+: Sulfate adenylyltransferase Sat (UniProtKB:B8J4A8) catalyzes ATP-dependent sulfate activation to APS as an upstream pathway step rather than directly regulating DsrA.[<a href="#source-karnachuk2021"><code>karnachuk2021</code></a>]      </li>
+      <li style="margin-bottom: .35rem;">
+        <code>intracellular_sulfate_activation_to_aps</code> &rarr; <strong>feeds activated sulfur intermediates toward DsrA-mediated sulfite reduction</strong> (<code>supplies_substrate_for</code>) &rarr; <code>dsra_sulfite_reductase</code>
+: Intracellular sulfate activation feeds the downstream dissimilatory sulfate-reduction pathway culminating in DsrA-mediated sulfite reduction, without implying a tested Sat-to-DsrA regulatory interaction.[<a href="#source-karnachuk2021"><code>karnachuk2021</code></a>]      </li>
       <li style="margin-bottom: .35rem;">
         <code>dsra_sulfite_reductase</code> &rarr; <strong>drives culture sulfidogenesis and Fe-S turnover in the stepped-pH bioreactor</strong> (<code>modulates</code>) &rarr; <code>feso4_widdel_bak_bioreactor_medium</code>
 : Dissimilatory sulfite reduction (represented by DsrA UniProtKB:Q93EW5) drives iron-sulfide precipitation in the FeSO4-amended Widdel-Bak bioreactor, while the provisional ferric-sulfate kornelite XRD peaks are not proof that sulfate-reducing metabolism directly precipitates Fe(III) sulfate.[<a href="#source-karnachuk2021"><code>karnachuk2021</code></a>]      </li>
@@ -377,6 +392,12 @@
         <td><span class="badge">edit</span></td>
         <td>Added Desulfovibrio desulfuricans protein examples (DsrA UniProtKB:Q93EW5, Sat UniProtKB:B8J4A8) and representative causal graph for provisional kornelite XRD assignments in AY5 culture precipitates.</td>
       </tr>
+      <tr>
+        <td><code>2026-11-15T04:18:30Z</code></td>
+        <td>codex</td>
+        <td><span class="badge">edit</span></td>
+        <td>Replaced the Sat-to-DsrA regulatory edge with an explicit intracellular sulfate-activation node upstream of DsrA-mediated sulfate reduction.</td>
+      </tr>
     </tbody>
   </table>
 </div>
@@ -386,7 +407,7 @@
 </p>
 </main>
 <footer>
-  <p><strong>CMMMech</strong> · Critical Materials and Minerals Mechanism Ontology · data: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · code: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/LICENSE-CODE">BSD-3-Clause</a> · <a href="../index.json" download>Download index.json</a> · <a href="../corpus_map.json" download>Download corpus_map.json</a> · <a href="https://github.com/CultureBotAI/CMMMech/blob/main/src/cmmmech/schema/cmmmech.yaml">LinkML schema</a> · generated by <code>scripts/render_pages.py</code> (713 materials · 609 mechanisms · latest curation 2026-11-11 · corpus digest <code>a91718374a97</code>)</p>
+  <p><strong>CMMMech</strong> · Critical Materials and Minerals Mechanism Ontology · data: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · code: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/LICENSE-CODE">BSD-3-Clause</a> · <a href="../index.json" download>Download index.json</a> · <a href="../corpus_map.json" download>Download corpus_map.json</a> · <a href="https://github.com/CultureBotAI/CMMMech/blob/main/src/cmmmech/schema/cmmmech.yaml">LinkML schema</a> · generated by <code>scripts/render_pages.py</code> (713 materials · 609 mechanisms · latest curation 2026-11-15 · corpus digest <code>6a7722c9fd77</code>)</p>
   <p class="fam">
     <a href="https://culturebotai.github.io/CultureMech/">CultureMech</a> ·
     <a href="https://culturebotai.github.io/MediaIngredientMech/">MediaIngredientMech</a> ·

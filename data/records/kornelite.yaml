@@ -185,6 +185,11 @@ causal_graphs:
     node_type: CHEMICAL_ENTITY
     description: 1-L bioreactor containing glycerol-fed Widdel-Bak medium with sulfate, phosphate, nutrients, reductant, and 100 mg/L iron supplied as FeSO4 at 28 degrees C, 100 rpm, and 25 mL/min N2 sparging, with pH progressively stepped down from 7 to 6.5, 6, and 5.5 using HCl or NaHCO3 (successive pH arms share reactor history rather than independent fresh inoculations; centrifuged at 13,100 g for 15 min at 15 degrees C and washed 10 min in distilled water without reported O2 exclusion or sterile mineralogical controls).
     protein_grounding_status: NOT_APPLICABLE
+  - id: intracellular_sulfate_activation_to_aps
+    label: Intracellular sulfate activation to APS
+    node_type: BIOLOGICAL_PROCESS
+    description: ATP-dependent activation of intracellular sulfate to adenosine 5'-phosphosulfate as an upstream step in the Desulfovibrio desulfuricans dissimilatory sulfate-reduction pathway, represented by Sat without direct enzyme assays in Karnachuk et al. (2021).
+    protein_grounding_status: NOT_APPLICABLE
   - id: provisional_kornelite_xrd_peaks
     label: Mixed culture precipitates with provisional XRD database peak assignments to kornelite
     node_type: MATERIAL_OR_PHASE
@@ -192,14 +197,23 @@ causal_graphs:
     protein_grounding_status: NOT_APPLICABLE
   edges:
   - source: sat_sulfate_adenylyltransferase
-    target: dsra_sulfite_reductase
-    predicate: positively_regulates
+    target: intracellular_sulfate_activation_to_aps
+    predicate: catalyzes
     relationship: activates sulfate to APS upstream of dissimilatory sulfite reduction
-    description: Sulfate adenylyltransferase Sat (UniProtKB:B8J4A8) initiates dissimilatory sulfate reduction upstream of DsrAB (UniProtKB:Q93EW5) in D. desulfuricans.
+    description: Sulfate adenylyltransferase Sat (UniProtKB:B8J4A8) catalyzes ATP-dependent sulfate activation to APS as an upstream pathway step rather than directly regulating DsrA.
     evidence:
     - source_ref: karnachuk2021
       supports: partial
       explanation: Karnachuk et al. (2021) grew D. desulfuricans AY5 under sulfate-reducing conditions in Widdel-Bak medium without directly assaying Sat or DsrA enzymes.
+  - source: intracellular_sulfate_activation_to_aps
+    target: dsra_sulfite_reductase
+    predicate: supplies_substrate_for
+    relationship: feeds activated sulfur intermediates toward DsrA-mediated sulfite reduction
+    description: Intracellular sulfate activation feeds the downstream dissimilatory sulfate-reduction pathway culminating in DsrA-mediated sulfite reduction, without implying a tested Sat-to-DsrA regulatory interaction.
+    evidence:
+    - source_ref: karnachuk2021
+      supports: partial
+      explanation: Karnachuk et al. (2021) used sulfate-rich medium that supported D. desulfuricans AY5 sulfate-reducing activity, but did not assay the individual Sat/DsrA pathway steps or the provisional kornelite formation route.
   - source: dsra_sulfite_reductase
     target: feso4_widdel_bak_bioreactor_medium
     predicate: modulates
@@ -227,6 +241,11 @@ curation_history:
   curator: marcin
   action: edit
   summary: Added Desulfovibrio desulfuricans protein examples (DsrA UniProtKB:Q93EW5, Sat UniProtKB:B8J4A8) and representative causal graph for provisional kornelite XRD assignments in AY5 culture precipitates.
+- timestamp: '2026-11-15T04:18:30Z'
+  curator: codex
+  action: edit
+  summary: Replaced the Sat-to-DsrA regulatory edge with an explicit intracellular sulfate-activation node upstream of DsrA-mediated sulfate reduction.
 history_refs:
 - history/records/kornelite/2026-10-15T171449Z-codex-6a5cfa.yaml
 - history/records/kornelite/2026-11-11T142114Z-marcin-bf977b.yaml
+- history/records/kornelite/2026-11-15T042024Z-codex-71c38d.yaml

@@ -58,7 +58,8 @@ mechanisms:
     - Pfam:PF07731
     - Pfam:PF07732
     ncbifam_ids:
-    - NCBIfam:TIGR01479
+    - NCBIfam:TIGR01480
+    - NCBIfam:TIGR01409
     functional_role: Periplasmic multicopper oxidase family copper/silver-resistance protein CopA (PSTAB_2699) representing periplasmic metal-homeostasis and binding proteins in Stutzerimonas stutzeri.
     annotation_note: 'Grounded to Stutzerimonas stutzeri type-strain ATCC 17588 = LMG 11199 reference proteome UP000008932 (NCBITaxon:96563; UniProtKB organism string: Stutzerimonas stutzeri (strain ATCC 17588 / DSM 5190 / CCUG 11256 / JCM 5965 / LMG 11199 / NBRC 14165 / NCIMB 11358 / Stanier 221); copA / PSTAB_2699) as an orthologous species-level proxy for unsequenced historical silver-mine isolate AG259 (mechanisms[].organisms[].id NCBITaxon:316) in Klaus et al. (1999).'
     evidence:
@@ -140,7 +141,8 @@ causal_graphs:
       - Pfam:PF07731
       - Pfam:PF07732
       ncbifam_ids:
-      - NCBIfam:TIGR01479
+      - NCBIfam:TIGR01480
+      - NCBIfam:TIGR01409
       functional_role: Periplasmic multicopper oxidase family copper/silver-resistance protein CopA (PSTAB_2699) representing periplasmic metal-homeostasis and binding proteins in Stutzerimonas stutzeri.
       annotation_note: 'Grounded to Stutzerimonas stutzeri type-strain ATCC 17588 = LMG 11199 reference proteome UP000008932 (NCBITaxon:96563; UniProtKB organism string: Stutzerimonas stutzeri (strain ATCC 17588 / DSM 5190 / CCUG 11256 / JCM 5965 / LMG 11199 / NBRC 14165 / NCIMB 11358 / Stanier 221); copA / PSTAB_2699) as an orthologous species-level proxy for unsequenced historical silver-mine isolate AG259 (mechanisms[].organisms[].id NCBITaxon:316) in Klaus et al. (1999).'
       evidence:
@@ -183,6 +185,11 @@ causal_graphs:
     node_type: CHEMICAL_ENTITY
     description: Lennox L agar supplemented with nominally 50 mM AgNO3 incubated with Pseudomonas (Stutzerimonas) stutzeri AG259 at 30 degrees C for 48 hours in the dark (assay pH, inoculum density, agar recipe, free dissolved Ag+, biological replicate count, and matched cell-free/killed-cell/sulfide control series not reported).
     protein_grounding_status: NOT_APPLICABLE
+  - id: endogenous_h2s_generation
+    label: Proposed endogenous H2S generation for periplasmic silver sulfidation
+    node_type: BIOLOGICAL_PROCESS
+    description: Proposed cellular sulfite-to-sulfide/H2S production in unsequenced isolate AG259 that could supply sulfur for minority periplasmic Ag2S particles; Klaus et al. (1999) did not measure H2S flux, identify the sulfur source, or test cysI activity in the silver-nitrate agar experiment.
+    protein_grounding_status: NOT_APPLICABLE
   - id: minority_periplasmic_acanthite_ag2s
     label: Minority periplasmic monoclinic acanthite (Ag2S) nanoparticles within mixed Ag-bearing crystals
     node_type: MATERIAL_OR_PHASE
@@ -199,14 +206,23 @@ causal_graphs:
       supports: partial
       explanation: Klaus et al. (1999) discuss efflux and silver-binding hypotheses for AG259 without isolating specific proteins or running matched chemical controls.
   - source: cysi_sulfite_reductase
-    target: ag_nitrate_agar_substrate
-    predicate: transforms_into
-    relationship: proposed endogenous H2S production reacting with periplasmic silver
-    description: Cellular sulfur reduction (represented by S. stutzeri CysI proxy UniProtKB:A4VLP4) is proposed in Klaus et al. (1999) to supply H2S that reacts with silver to form minority monoclinic Ag2S particles, although H2S production and sulfur sources were not measured in this experiment.
+    target: endogenous_h2s_generation
+    predicate: catalyzes
+    relationship: representative sulfite reduction to sulfide upstream of proposed Ag2S formation
+    description: CysI (represented by S. stutzeri A1501 UniProtKB:A4VLP4) catalyzes sulfite reduction to sulfide/H2S in the reference pathway and stands in for the proposed endogenous H2S source in AG259, although Klaus et al. (1999) did not measure H2S production, sulfur sources, or cysI activity.
     evidence:
     - source_ref: klaus1999
       supports: partial
       explanation: Klaus et al. (1999) propose reaction of silver particles with bacterially produced H2S based on earlier literature, without measuring H2S or enzymatic activity in the 50 mM AgNO3 agar experiment.
+  - source: endogenous_h2s_generation
+    target: minority_periplasmic_acanthite_ag2s
+    predicate: supplies_substrate_for
+    relationship: proposed endogenous H2S supply for Ag2S nanoparticle formation
+    description: The proposed endogenous H2S pool could react with periplasmic silver to produce minority monoclinic Ag2S particles, but that sulfur flux was inferred rather than directly assayed.
+    evidence:
+    - source_ref: klaus1999
+      supports: partial
+      explanation: Klaus et al. (1999) interpret a small number of periplasmic Ag2S particles in Figure 3b as products of bacterially generated H2S without matched sulfide controls or H2S quantification.
   - source: ag_nitrate_agar_substrate
     target: minority_periplasmic_acanthite_ag2s
     predicate: transforms_into
@@ -225,6 +241,11 @@ curation_history:
   curator: marcin
   action: edit
   summary: Added Stutzerimonas stutzeri reference-proteome protein examples (CopA UniProtKB:F8H4S1, CysI UniProtKB:A4VLP4) and representative causal graph for isolate AG259 periplasmic acanthite formation.
+- timestamp: '2026-11-15T04:18:30Z'
+  curator: codex
+  action: edit
+  summary: Refreshed the live UniProtKB NCBIfam assignments for the CopA example and routed the proposed CysI sulfide contribution through an explicit H2S-generation node.
 history_refs:
 - history/records/acanthite/2026-10-14T171634Z-codex-d5f96c.yaml
 - history/records/acanthite/2026-11-11T142114Z-marcin-e02f8f.yaml
+- history/records/acanthite/2026-11-15T042023Z-codex-104f01.yaml

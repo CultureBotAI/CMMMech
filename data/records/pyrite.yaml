@@ -61,8 +61,7 @@ mechanisms:
     - Pfam:PF00384
     - Pfam:PF01568
     ncbifam_ids:
-    - NCBIfam:TIGR01583
-    - NCBIfam:TIGR01701
+    - NCBIfam:TIGR01591
     functional_role: Coenzyme F420-dependent formate dehydrogenase alpha subunit (Mvol_0819; EC 1.17.98.3) in Methanococcus voltae A3 oxidizing formate to provide reducing equivalents for methanogenesis and reductive mineral transformation.
     annotation_note: 'Grounded to strain-exact Methanococcus voltae A3 (ATCC BAA-1334) reference proteome UP000007722 (NCBITaxon:456320; UniProtKB organism string: Methanococcus voltae (strain ATCC BAA-1334 / A3); locus Mvol_0819).'
     evidence:
@@ -155,8 +154,7 @@ causal_graphs:
       - Pfam:PF00384
       - Pfam:PF01568
       ncbifam_ids:
-      - NCBIfam:TIGR01583
-      - NCBIfam:TIGR01701
+      - NCBIfam:TIGR01591
       functional_role: Coenzyme F420-dependent formate dehydrogenase alpha subunit (Mvol_0819; EC 1.17.98.3) in Methanococcus voltae A3 oxidizing formate to provide reducing equivalents for methanogenesis and reductive mineral transformation.
       annotation_note: 'Grounded to strain-exact Methanococcus voltae A3 (ATCC BAA-1334) reference proteome UP000007722 (NCBITaxon:456320; UniProtKB organism string: Methanococcus voltae (strain ATCC BAA-1334 / A3); locus Mvol_0819).'
       evidence:
@@ -205,6 +203,11 @@ causal_graphs:
     node_type: MATERIAL_OR_PHASE
     description: 'Two distinct assay substrates in 75 mL pH-7 defined basal medium with formate (165 mL serum bottles, 80:20 N2/CO2 headspace at 3.14 atm, static 38 degrees C, 10% v/v washed M. voltae A3 inoculum): (1) 63-125 um HCl/water/acetone-washed Zacatecas specimen pyrite at 1.5 g per 75 mL (167 mM FeS2; 5-day growth endpoint in Figure S3a), and (2) XRD-characterized synthesized FeS2 at 2 mM Fe (7-day time course in Figure 1a,c,e and 5-day 3.5-kDa dialysis comparison in Figure 3 / Table S3).'
     protein_grounding_status: NOT_APPLICABLE
+  - id: formate_fueled_methanogenic_cells
+    label: Formate-fueled M. voltae A3 methanogenic metabolism coupled to accessible FeS2
+    node_type: BIOLOGICAL_PROCESS
+    description: Formate-fueled methanogenic metabolism in M. voltae A3 under 80:20 N2/CO2 with cell contact to accessible synthesized FeS2 or washed specimen pyrite; Payne et al. (2021) showed accessibility-dependent sulfide release and growth but did not identify a direct extracellular FeS2 reductase.
+    protein_grounding_status: NOT_APPLICABLE
   - id: methane_growth_and_synthesized_phase_sulfide
     label: Methanogenic cell/CH4 production (specimen & synthetic FeS2) and 10.55 +/- 0.13 umol sulfide (accessible synthetic FeS2)
     node_type: CHEMICAL_ENTITY
@@ -221,14 +224,23 @@ causal_graphs:
       supports: partial
       explanation: Payne et al. (2021) supplied formate (0.4% v/v of 40% wt/v stock) under 80:20 N2/CO2 as electron donor for M. voltae A3 growth and methanogenesis without mutating individual dehydrogenase loci.
   - source: mvol0819_formate_dehydrogenase
-    target: specimen_and_synthesized_pyrite_substrates
-    predicate: reduces
-    relationship: couples cellular formate oxidation to accessibility-dependent reductive dissolution of FeS2
-    description: Formate-powered cellular reduction in M. voltae A3 drives reductive sulfide release from accessible synthesized FeS2 (blocked by 3.5 kDa dialysis membranes in Figure 3 / Table S3) and supports growth on washed specimen pyrite (Figure S3a), while the specific cell-surface electron-transfer mechanism was not genetically isolated.
+    target: formate_fueled_methanogenic_cells
+    predicate: provides_electrons_to
+    relationship: supplies formate-derived reducing equivalents to M. voltae A3 methanogenic metabolism
+    description: Formate dehydrogenase Mvol_0819 represents cellular oxidation of supplied formate to feed methanogenic metabolism during FeS2 incubation, without making Mvol_0819 the direct cell-surface FeS2 reductase.
     evidence:
     - source_ref: payne2021
       supports: partial
       explanation: Figure 3 and Table S3 show that 3.5 kDa dialysis sequestration prevents synthesized-FeS2 reduction and growth (10.55 +/- 0.13 umol sulfide in accessible vs below detection in sequestered reactors at day 5), without distinguishing direct contact-dependent electron transfer from large extracellular assemblies.
+  - source: formate_fueled_methanogenic_cells
+    target: methane_growth_and_synthesized_phase_sulfide
+    predicate: modulates
+    relationship: accessibility-dependent cellular FeS2 reduction and methanogenic growth
+    description: Formate-fueled M. voltae A3 cells contact accessible FeS2 to support sulfide release, cell production, and methane production, while the unresolved extracellular electron-transfer machinery remains distinct from Mvol_0819 formate oxidation.
+    evidence:
+    - source_ref: payne2021
+      supports: partial
+      explanation: The synthesized-FeS2 dialysis comparison in Figure 3 and Table S3 shows accessible FeS2 supported cell production and 10.55 +/- 0.13 umol sulfide at day 5 while 3.5-kDa dialysis membranes blocked growth and sulfide release.
   - source: specimen_and_synthesized_pyrite_substrates
     target: methane_growth_and_synthesized_phase_sulfide
     predicate: transforms_into
@@ -251,7 +263,12 @@ curation_history:
   curator: marcin
   action: edit
   summary: Added strain-exact Methanococcus voltae A3 reference-proteome protein examples (Mvol_0819 UniProtKB:D7DTL8, Mvol_1128 UniProtKB:D7DUH5) and representative causal graph for pyrite-associated growth and synthesized-FeS2 reduction.
+- timestamp: '2026-11-15T04:18:30Z'
+  curator: codex
+  action: edit
+  summary: Refreshed the live UniProtKB NCBIfam assignment for Mvol_0819 and weakened the formate-dehydrogenase causal edge so it no longer asserts direct FeS2 reduction.
 history_refs:
 - history/records/pyrite/2026-10-11T202913Z-codex-7036c0.yaml
 - history/records/pyrite/2026-10-11T203753Z-codex-171a3f.yaml
 - history/records/pyrite/2026-11-11T142116Z-marcin-aeee3a.yaml
+- history/records/pyrite/2026-11-15T042023Z-codex-99368c.yaml
