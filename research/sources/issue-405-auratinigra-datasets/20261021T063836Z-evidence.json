@@ -1,0 +1,3291 @@
+{
+  "investigation": "issue-405-auratinigra-datasets",
+  "saved_at_utc": "2026-10-21T06:38:36Z",
+  "researcher": "Codex source-investigation agent; continuation of the 2026-10-20 acquisition",
+  "base": "2da10d95a72146ee0c69cb91fe303348fbadb638",
+  "branch": "codex/issue-405-auratinigra-datasets",
+  "issue": 405,
+  "status": "source-only partial handoff; no accepted record claim or issue closure",
+  "reconciliation": {
+    "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/reconcile-405-20261021T063557Z/receipt.json",
+    "sha256": "ef5944c3af68bcb2978cd46dec46be5abb4d0e9cb8202fc28cc6ff005a5676eb",
+    "open_issues": 185,
+    "open_prs": 0,
+    "comments": 0
+  },
+  "owners": [
+    {
+      "path": "data/records/monazite-la.yaml",
+      "sha256": "c85a83609a45fc37a0be5e1f6876e0ecd38fe83a884a4104b9b9e89a69242598",
+      "unchanged_from_origin_main": true,
+      "last_change": "ee4ea8c2efa351a688946660c9ddc70560c3e86e 2026-10-15T22:43:26Z"
+    },
+    {
+      "path": "data/records/monazite-gd.yaml",
+      "sha256": "22dadc915191c2e871fd01ac84205b4489c90c39d1145e3f1d7531da483a4b34",
+      "unchanged_from_origin_main": true,
+      "last_change": "27d842b3e6239bf60565f93c958d3f2cad395037 2026-10-16T00:18:02Z"
+    }
+  ],
+  "deduplication": {
+    "at": "2026-10-20T07:29:27.349000+00:00",
+    "command": [
+      "rg",
+      "--no-ignore",
+      "--hidden",
+      "-L",
+      "-n",
+      "wxdnxzm8g8|6trx96yjt9|gca.2026.02.015|auratinigra",
+      "data/records",
+      "research",
+      "reviews",
+      "history"
+    ],
+    "cwd": "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-405",
+    "exit": 0,
+    "matching_lines": 122,
+    "sha256": "c9f11d69ffe723943a4a411a36a8fe0979be4fcfd9d555e60231f0b123367ec5",
+    "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/dedup.txt",
+    "ignored_hidden_included": true,
+    "symlinks_followed": true,
+    "stderr": ""
+  },
+  "patent_deduplication": {
+    "at": "2026-10-20T07:34:21.284285+00:00",
+    "command": [
+      "rg",
+      "--no-ignore",
+      "--hidden",
+      "-L",
+      "-n",
+      "116640685|GDMCC.?63268|KLBMP.?9673",
+      "data/records",
+      "research",
+      "reviews",
+      "history"
+    ],
+    "exit_code": 0,
+    "matched_lines": 3,
+    "ignored_and_hidden": true,
+    "followed_symlinks": true,
+    "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/patent-dedup.txt",
+    "sha256": "df0a32d21c71cca9093e43f6d9b710bed6ceac1d6c44272c8b3af68564c3d4f1"
+  },
+  "acquisition_dates": "2026-10-20 for retained remote files; 2026-10-21 for fresh GitHub reconciliation, search recheck, local byte/worksheet/figure review",
+  "web_searches_original": {
+    "date_utc": "2026-10-20",
+    "provider": "web.run search_query",
+    "batches": [
+      [
+        "\"10.1016/j.gca.2026.02.015\"",
+        "\"Synergistic interfacial\" \"auratinigra\"",
+        "\"6trx96yjt9\" \"wxdnxzm8g8\"",
+        "\"gca.2026.02.015\" correction OR corrigendum OR retraction"
+      ],
+      [
+        "\"Synergistic\" \"auratinigra\" filetype:pdf",
+        "\"auratinigra\" \"2026\" site:jsnu.edu.cn",
+        "\"auratinigra\" \"Wang\" site:ir.gyig.ac.cn",
+        "\"S0016703726001080\" supplement OR manuscript OR corrigendum"
+      ],
+      [
+        "\"10.1016/j.gca.2026.02.015\" correction corrigendum retraction",
+        "\"Synergistic Interfacial and Multi-omics\" repository manuscript",
+        "\"Micromonospora auratinigra\" \"Wang\" \"2026\" supplementary",
+        "\"Micromonospora auratinigra\" \"KLBMP\""
+      ],
+      [
+        "\"KLBMP 9576\"",
+        "\"ON693947\"",
+        "\"10.1016/j.gca.2026.02.015\" \"supplement\"",
+        "\"Synergistic interfacial\" \"Table S2\""
+      ]
+    ],
+    "scope": "First returned results for each batch; no date filter, no pagination. Domain/filetype constraints are literal query terms as recorded. Bounded search, not exhaustive.",
+    "meaningful_results": [
+      "https://www.sciencedirect.com/science/article/pii/S0016703726001080",
+      "https://www.sciencedirect.com/science/article/abs/pii/S0016703726001080",
+      "https://data.mendeley.com/datasets/wxdnxzm8g8/1",
+      "https://data.mendeley.com/datasets/6trx96yjt9/2",
+      "https://patents.google.com/patent/CN116640685A/en"
+    ],
+    "limits": [
+      "No legitimate complete main article located in returned repository/title/DOI results. ResearchGate results advertised request-only, not full text; no request made.",
+      "No matching correction/retraction notice located in these returned results; Crossref relation/update fields and OpenAlex retraction flag separately retained.",
+      "The exact strain/accession follow-up returned no additional study-linked primary culture record beyond taxonomy discovery.",
+      "The official SI and figure assets were acquired separately through conventional inferred publisher CDN URLs, not discovered in search result links."
+    ]
+  },
+  "web_searches_resume": {
+    "at_utc": "2026-10-21",
+    "provider": "web.run",
+    "queries": [
+      "\"10.1016/j.gca.2026.02.015\" filetype:pdf",
+      "\"Synergistic interfacial\" \"auratinigra\" correction OR corrigendum OR retraction",
+      "\"KLBMP 9576\" \"Table S2\""
+    ],
+    "opened": [
+      "https://www.sciencedirect.com/science/article/pii/S0016703726001080"
+    ],
+    "scope": "First returned results, no date filter or pagination; publisher open403; indexed publisher snippets and repository metadata are not complete methods."
+  },
+  "dataset_counts": {
+    "6trx96yjt9.1": 34,
+    "6trx96yjt9.2": 36,
+    "wxdnxzm8g8.1": 62,
+    "versioned_entries": 132,
+    "unique_contents": 64,
+    "downloaded_unique_bytes": 117442447,
+    "all_advertised_hashes_and_sizes_match": true,
+    "zip_downloaded": false
+  },
+  "dataset_comparison": {
+    "shared_all_three": 33,
+    "shared_6trx96yjt9_v2_and_wxdnxzm8g8_v1": 34,
+    "new_contents_wxdnxzm8g8_v1_vs_6trx96yjt9_v2": 28,
+    "interpretation": "The releases share image data and differ in workbooks and additional figure content; they are not independent replication."
+  },
+  "artifacts": [
+    {
+      "local_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/artifacts/2a8db393ef0884d7-Fig. 6-A.tif",
+      "sha256": "2a8db393ef0884d78b3af9ba32a4a26c6a3a73b3a45ba21b493e31b3e99eec46",
+      "bytes": 446786,
+      "acquired_at": "2026-10-20T07:32:39.515723+00:00",
+      "members": [
+        {
+          "dataset": "wxdnxzm8g8",
+          "version": 1,
+          "folder": "Figures",
+          "folder_id": "2b68a76f-7f3b-4854-b250-ef038eaa8462",
+          "filename": "Fig. 6-A.tif",
+          "file_id": "9d785517-d810-4806-af42-ee1b15347586",
+          "url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/9d785517-d810-4806-af42-ee1b15347586/file_downloaded"
+        },
+        {
+          "dataset": "6trx96yjt9",
+          "version": 2,
+          "folder": "Figures",
+          "folder_id": "df0ac996-8832-4534-b377-2ca596837092",
+          "filename": "Fig. 6-A.tif",
+          "file_id": "b6f1bf41-472e-4179-8a34-cd6fcf08eef2",
+          "url": "https://data.mendeley.com/public-files/datasets/6trx96yjt9/files/b6f1bf41-472e-4179-8a34-cd6fcf08eef2/file_downloaded"
+        },
+        {
+          "dataset": "6trx96yjt9",
+          "version": 1,
+          "folder": "Figures",
+          "folder_id": "df0ac996-8832-4534-b377-2ca596837092",
+          "filename": "Fig. 6-A.tif",
+          "file_id": "b6f1bf41-472e-4179-8a34-cd6fcf08eef2",
+          "url": "https://data.mendeley.com/public-files/datasets/6trx96yjt9/files/b6f1bf41-472e-4179-8a34-cd6fcf08eef2/file_downloaded"
+        }
+      ]
+    },
+    {
+      "local_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/artifacts/038ea6ae41abcc12-Fig. 6-B.tif",
+      "sha256": "038ea6ae41abcc124243fcf9b8e717e4467765fd2ca43c356d573ecffb730022",
+      "bytes": 398946,
+      "acquired_at": "2026-10-20T07:32:42.387386+00:00",
+      "members": [
+        {
+          "dataset": "wxdnxzm8g8",
+          "version": 1,
+          "folder": "Figures",
+          "folder_id": "2b68a76f-7f3b-4854-b250-ef038eaa8462",
+          "filename": "Fig. 6-B.tif",
+          "file_id": "d8c3e7da-9a02-4585-bf5e-69156e1f8127",
+          "url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/d8c3e7da-9a02-4585-bf5e-69156e1f8127/file_downloaded"
+        },
+        {
+          "dataset": "6trx96yjt9",
+          "version": 2,
+          "folder": "Figures",
+          "folder_id": "df0ac996-8832-4534-b377-2ca596837092",
+          "filename": "Fig. 6-B.tif",
+          "file_id": "e280ea14-3aa7-4df5-b256-ee1de2ab0d48",
+          "url": "https://data.mendeley.com/public-files/datasets/6trx96yjt9/files/e280ea14-3aa7-4df5-b256-ee1de2ab0d48/file_downloaded"
+        },
+        {
+          "dataset": "6trx96yjt9",
+          "version": 1,
+          "folder": "Figures",
+          "folder_id": "df0ac996-8832-4534-b377-2ca596837092",
+          "filename": "Fig. 6-B.tif",
+          "file_id": "e280ea14-3aa7-4df5-b256-ee1de2ab0d48",
+          "url": "https://data.mendeley.com/public-files/datasets/6trx96yjt9/files/e280ea14-3aa7-4df5-b256-ee1de2ab0d48/file_downloaded"
+        }
+      ]
+    },
+    {
+      "local_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/artifacts/6bf2c41819031dbe-Fig. 6-C.tif",
+      "sha256": "6bf2c41819031dbe516f55b4ca24df3ae7e6527076d3f9467b8611db492ed7a5",
+      "bytes": 438020,
+      "acquired_at": "2026-10-20T07:33:02.154108+00:00",
+      "members": [
+        {
+          "dataset": "wxdnxzm8g8",
+          "version": 1,
+          "folder": "Figures",
+          "folder_id": "2b68a76f-7f3b-4854-b250-ef038eaa8462",
+          "filename": "Fig. 6-C.tif",
+          "file_id": "cbe24ab7-ede5-4b3c-9816-d0cbb2704443",
+          "url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/cbe24ab7-ede5-4b3c-9816-d0cbb2704443/file_downloaded"
+        },
+        {
+          "dataset": "6trx96yjt9",
+          "version": 2,
+          "folder": "Figures",
+          "folder_id": "df0ac996-8832-4534-b377-2ca596837092",
+          "filename": "Fig. 6-C.tif",
+          "file_id": "bc67d2d6-5f21-4036-a6e7-dca15e6547ee",
+          "url": "https://data.mendeley.com/public-files/datasets/6trx96yjt9/files/bc67d2d6-5f21-4036-a6e7-dca15e6547ee/file_downloaded"
+        },
+        {
+          "dataset": "6trx96yjt9",
+          "version": 1,
+          "folder": "Figures",
+          "folder_id": "df0ac996-8832-4534-b377-2ca596837092",
+          "filename": "Fig. 6-C.tif",
+          "file_id": "bc67d2d6-5f21-4036-a6e7-dca15e6547ee",
+          "url": "https://data.mendeley.com/public-files/datasets/6trx96yjt9/files/bc67d2d6-5f21-4036-a6e7-dca15e6547ee/file_downloaded"
+        }
+      ]
+    },
+    {
+      "local_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/artifacts/0a36dc11046b34a9-Fig. 6-D.tif",
+      "sha256": "0a36dc11046b34a97b21a74cf8094af0020a88463ffbda75a8ae790c6b296797",
+      "bytes": 334230,
+      "acquired_at": "2026-10-20T07:32:39.213572+00:00",
+      "members": [
+        {
+          "dataset": "wxdnxzm8g8",
+          "version": 1,
+          "folder": "Figures",
+          "folder_id": "2b68a76f-7f3b-4854-b250-ef038eaa8462",
+          "filename": "Fig. 6-D.tif",
+          "file_id": "062f8a1f-67df-4bf6-aa55-66449611d74f",
+          "url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/062f8a1f-67df-4bf6-aa55-66449611d74f/file_downloaded"
+        },
+        {
+          "dataset": "6trx96yjt9",
+          "version": 2,
+          "folder": "Figures",
+          "folder_id": "df0ac996-8832-4534-b377-2ca596837092",
+          "filename": "Fig. 6-D.tif",
+          "file_id": "84b2efe8-7eb3-439a-85a1-dbd4ff97236a",
+          "url": "https://data.mendeley.com/public-files/datasets/6trx96yjt9/files/84b2efe8-7eb3-439a-85a1-dbd4ff97236a/file_downloaded"
+        },
+        {
+          "dataset": "6trx96yjt9",
+          "version": 1,
+          "folder": "Figures",
+          "folder_id": "df0ac996-8832-4534-b377-2ca596837092",
+          "filename": "Fig. 6-D.tif",
+          "file_id": "84b2efe8-7eb3-439a-85a1-dbd4ff97236a",
+          "url": "https://data.mendeley.com/public-files/datasets/6trx96yjt9/files/84b2efe8-7eb3-439a-85a1-dbd4ff97236a/file_downloaded"
+        }
+      ]
+    },
+    {
+      "local_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/artifacts/3168eeb29de16176-Fig. 6-E.tif",
+      "sha256": "3168eeb29de16176a3e2edbc9a2354b20b678faa015202edd6b6808275637ed4",
+      "bytes": 421604,
+      "acquired_at": "2026-10-20T07:32:47.281433+00:00",
+      "members": [
+        {
+          "dataset": "wxdnxzm8g8",
+          "version": 1,
+          "folder": "Figures",
+          "folder_id": "2b68a76f-7f3b-4854-b250-ef038eaa8462",
+          "filename": "Fig. 6-E.tif",
+          "file_id": "6ca623cd-b6db-405d-83d2-f80f018ffcf7",
+          "url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/6ca623cd-b6db-405d-83d2-f80f018ffcf7/file_downloaded"
+        },
+        {
+          "dataset": "6trx96yjt9",
+          "version": 2,
+          "folder": "Figures",
+          "folder_id": "df0ac996-8832-4534-b377-2ca596837092",
+          "filename": "Fig. 6-E.tif",
+          "file_id": "009e71cd-8953-49e3-9b38-68724bd491a3",
+          "url": "https://data.mendeley.com/public-files/datasets/6trx96yjt9/files/009e71cd-8953-49e3-9b38-68724bd491a3/file_downloaded"
+        },
+        {
+          "dataset": "6trx96yjt9",
+          "version": 1,
+          "folder": "Figures",
+          "folder_id": "df0ac996-8832-4534-b377-2ca596837092",
+          "filename": "Fig. 6-E.tif",
+          "file_id": "009e71cd-8953-49e3-9b38-68724bd491a3",
+          "url": "https://data.mendeley.com/public-files/datasets/6trx96yjt9/files/009e71cd-8953-49e3-9b38-68724bd491a3/file_downloaded"
+        }
+      ]
+    },
+    {
+      "local_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/artifacts/be84d268f366350f-Fig. 6-F.tif",
+      "sha256": "be84d268f366350f9088bc977c4021fc57267b9cd3f2b9cd1570223ea15dc7f8",
+      "bytes": 372128,
+      "acquired_at": "2026-10-20T07:32:41.893694+00:00",
+      "members": [
+        {
+          "dataset": "wxdnxzm8g8",
+          "version": 1,
+          "folder": "Figures",
+          "folder_id": "2b68a76f-7f3b-4854-b250-ef038eaa8462",
+          "filename": "Fig. 6-F.tif",
+          "file_id": "71753883-52c3-4675-9377-af7876227341",
+          "url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/71753883-52c3-4675-9377-af7876227341/file_downloaded"
+        },
+        {
+          "dataset": "6trx96yjt9",
+          "version": 2,
+          "folder": "Figures",
+          "folder_id": "df0ac996-8832-4534-b377-2ca596837092",
+          "filename": "Fig. 6-F.tif",
+          "file_id": "e6c8d3f7-549b-483a-99a1-8d1bda16f16f",
+          "url": "https://data.mendeley.com/public-files/datasets/6trx96yjt9/files/e6c8d3f7-549b-483a-99a1-8d1bda16f16f/file_downloaded"
+        },
+        {
+          "dataset": "6trx96yjt9",
+          "version": 1,
+          "folder": "Figures",
+          "folder_id": "df0ac996-8832-4534-b377-2ca596837092",
+          "filename": "Fig. 6-F.tif",
+          "file_id": "e6c8d3f7-549b-483a-99a1-8d1bda16f16f",
+          "url": "https://data.mendeley.com/public-files/datasets/6trx96yjt9/files/e6c8d3f7-549b-483a-99a1-8d1bda16f16f/file_downloaded"
+        }
+      ]
+    },
+    {
+      "local_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/artifacts/b21df59b12f172b9-Fig. 7-A.tif",
+      "sha256": "b21df59b12f172b936ce7dc5711f7877111782799a1a20b6e2f1a7316c4f92dc",
+      "bytes": 4308140,
+      "acquired_at": "2026-10-20T07:33:37.346153+00:00",
+      "members": [
+        {
+          "dataset": "wxdnxzm8g8",
+          "version": 1,
+          "folder": "Figures",
+          "folder_id": "2b68a76f-7f3b-4854-b250-ef038eaa8462",
+          "filename": "Fig. 7-A.tif",
+          "file_id": "29f38341-1086-4376-924c-52230cfa0197",
+          "url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/29f38341-1086-4376-924c-52230cfa0197/file_downloaded"
+        },
+        {
+          "dataset": "6trx96yjt9",
+          "version": 2,
+          "folder": "Figures",
+          "folder_id": "df0ac996-8832-4534-b377-2ca596837092",
+          "filename": "Fig. 7-A.tif",
+          "file_id": "27c796d1-8666-4a58-9130-ecc02719ef5e",
+          "url": "https://data.mendeley.com/public-files/datasets/6trx96yjt9/files/27c796d1-8666-4a58-9130-ecc02719ef5e/file_downloaded"
+        },
+        {
+          "dataset": "6trx96yjt9",
+          "version": 1,
+          "folder": "Figures",
+          "folder_id": "df0ac996-8832-4534-b377-2ca596837092",
+          "filename": "Fig. 7-A.tif",
+          "file_id": "27c796d1-8666-4a58-9130-ecc02719ef5e",
+          "url": "https://data.mendeley.com/public-files/datasets/6trx96yjt9/files/27c796d1-8666-4a58-9130-ecc02719ef5e/file_downloaded"
+        }
+      ]
+    },
+    {
+      "local_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/artifacts/2d63cc49904a5fb0-Fig. 7-B.tif",
+      "sha256": "2d63cc49904a5fb0814068844483eff2ed369f92c866e2e8652b108430221588",
+      "bytes": 4210034,
+      "acquired_at": "2026-10-20T07:36:56.227881+00:00",
+      "members": [
+        {
+          "dataset": "wxdnxzm8g8",
+          "version": 1,
+          "folder": "Figures",
+          "folder_id": "2b68a76f-7f3b-4854-b250-ef038eaa8462",
+          "filename": "Fig. 7-B.tif",
+          "file_id": "77552e19-e785-40ed-b334-438b2fbaac04",
+          "url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/77552e19-e785-40ed-b334-438b2fbaac04/file_downloaded"
+        },
+        {
+          "dataset": "6trx96yjt9",
+          "version": 2,
+          "folder": "Figures",
+          "folder_id": "df0ac996-8832-4534-b377-2ca596837092",
+          "filename": "Fig. 7-B.tif",
+          "file_id": "88595784-a200-4f47-aa89-78fb202f23a3",
+          "url": "https://data.mendeley.com/public-files/datasets/6trx96yjt9/files/88595784-a200-4f47-aa89-78fb202f23a3/file_downloaded"
+        },
+        {
+          "dataset": "6trx96yjt9",
+          "version": 1,
+          "folder": "Figures",
+          "folder_id": "df0ac996-8832-4534-b377-2ca596837092",
+          "filename": "Fig. 7-B.tif",
+          "file_id": "88595784-a200-4f47-aa89-78fb202f23a3",
+          "url": "https://data.mendeley.com/public-files/datasets/6trx96yjt9/files/88595784-a200-4f47-aa89-78fb202f23a3/file_downloaded"
+        }
+      ]
+    },
+    {
+      "local_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/artifacts/8b7c462aaed7fe63-Fig. 7-C.tif",
+      "sha256": "8b7c462aaed7fe631854bdfed506fe41cec8d1bcff06dad08f4675df32c3f788",
+      "bytes": 19041534,
+      "acquired_at": "2026-10-20T07:32:55.408266+00:00",
+      "members": [
+        {
+          "dataset": "wxdnxzm8g8",
+          "version": 1,
+          "folder": "Figures",
+          "folder_id": "2b68a76f-7f3b-4854-b250-ef038eaa8462",
+          "filename": "Fig. 7-C.tif",
+          "file_id": "dd4772f8-62b1-4450-8164-b27bc2dee793",
+          "url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/dd4772f8-62b1-4450-8164-b27bc2dee793/file_downloaded"
+        },
+        {
+          "dataset": "6trx96yjt9",
+          "version": 2,
+          "folder": "Figures",
+          "folder_id": "df0ac996-8832-4534-b377-2ca596837092",
+          "filename": "Fig. 7-C.tif",
+          "file_id": "916dca88-ff91-4b18-bf9e-e981062a7701",
+          "url": "https://data.mendeley.com/public-files/datasets/6trx96yjt9/files/916dca88-ff91-4b18-bf9e-e981062a7701/file_downloaded"
+        },
+        {
+          "dataset": "6trx96yjt9",
+          "version": 1,
+          "folder": "Figures",
+          "folder_id": "df0ac996-8832-4534-b377-2ca596837092",
+          "filename": "Fig. 7-C.tif",
+          "file_id": "916dca88-ff91-4b18-bf9e-e981062a7701",
+          "url": "https://data.mendeley.com/public-files/datasets/6trx96yjt9/files/916dca88-ff91-4b18-bf9e-e981062a7701/file_downloaded"
+        }
+      ]
+    },
+    {
+      "local_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/artifacts/3957dfa0ddd7dcf0-Fig. 7-D.tif",
+      "sha256": "3957dfa0ddd7dcf0982f7b0a1fb09507b48697fa6c889c1a021df93953b5ec12",
+      "bytes": 4597192,
+      "acquired_at": "2026-10-20T07:33:35.184899+00:00",
+      "members": [
+        {
+          "dataset": "wxdnxzm8g8",
+          "version": 1,
+          "folder": "Figures",
+          "folder_id": "2b68a76f-7f3b-4854-b250-ef038eaa8462",
+          "filename": "Fig. 7-D.tif",
+          "file_id": "bd24b0a5-5f65-4622-a259-55cb0c987ac1",
+          "url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/bd24b0a5-5f65-4622-a259-55cb0c987ac1/file_downloaded"
+        },
+        {
+          "dataset": "6trx96yjt9",
+          "version": 2,
+          "folder": "Figures",
+          "folder_id": "df0ac996-8832-4534-b377-2ca596837092",
+          "filename": "Fig. 7-D.tif",
+          "file_id": "bdf58dde-c1bc-4837-8192-b50eeab3fdeb",
+          "url": "https://data.mendeley.com/public-files/datasets/6trx96yjt9/files/bdf58dde-c1bc-4837-8192-b50eeab3fdeb/file_downloaded"
+        },
+        {
+          "dataset": "6trx96yjt9",
+          "version": 1,
+          "folder": "Figures",
+          "folder_id": "df0ac996-8832-4534-b377-2ca596837092",
+          "filename": "Fig. 7-D.tif",
+          "file_id": "bdf58dde-c1bc-4837-8192-b50eeab3fdeb",
+          "url": "https://data.mendeley.com/public-files/datasets/6trx96yjt9/files/bdf58dde-c1bc-4837-8192-b50eeab3fdeb/file_downloaded"
+        }
+      ]
+    },
+    {
+      "local_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/artifacts/205b1eedab094749-Fig. 7-E.tif",
+      "sha256": "205b1eedab094749559078470e37b0d39f3dbbfede4ad9427bb333df6a0417dd",
+      "bytes": 3394836,
+      "acquired_at": "2026-10-20T07:34:53.904610+00:00",
+      "members": [
+        {
+          "dataset": "wxdnxzm8g8",
+          "version": 1,
+          "folder": "Figures",
+          "folder_id": "2b68a76f-7f3b-4854-b250-ef038eaa8462",
+          "filename": "Fig. 7-E.tif",
+          "file_id": "86c16925-040f-42de-9966-5debf5c9041a",
+          "url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/86c16925-040f-42de-9966-5debf5c9041a/file_downloaded"
+        },
+        {
+          "dataset": "6trx96yjt9",
+          "version": 2,
+          "folder": "Figures",
+          "folder_id": "df0ac996-8832-4534-b377-2ca596837092",
+          "filename": "Fig. 7-E.tif",
+          "file_id": "3397224f-ffa4-493c-9592-de4f8d4da695",
+          "url": "https://data.mendeley.com/public-files/datasets/6trx96yjt9/files/3397224f-ffa4-493c-9592-de4f8d4da695/file_downloaded"
+        },
+        {
+          "dataset": "6trx96yjt9",
+          "version": 1,
+          "folder": "Figures",
+          "folder_id": "df0ac996-8832-4534-b377-2ca596837092",
+          "filename": "Fig. 7-E.tif",
+          "file_id": "3397224f-ffa4-493c-9592-de4f8d4da695",
+          "url": "https://data.mendeley.com/public-files/datasets/6trx96yjt9/files/3397224f-ffa4-493c-9592-de4f8d4da695/file_downloaded"
+        }
+      ]
+    },
+    {
+      "local_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/artifacts/0be60cc459b1864c-Fig. 7-F.tif",
+      "sha256": "0be60cc459b1864c53ee8ed95a5298dd9be11bc0f53ef73a44a7d039fee6dc0e",
+      "bytes": 18709244,
+      "acquired_at": "2026-10-20T07:45:05.433456+00:00",
+      "members": [
+        {
+          "dataset": "wxdnxzm8g8",
+          "version": 1,
+          "folder": "Figures",
+          "folder_id": "2b68a76f-7f3b-4854-b250-ef038eaa8462",
+          "filename": "Fig. 7-F.tif",
+          "file_id": "fbcbbf01-8c8b-4ba3-9992-5a870129cd22",
+          "url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/fbcbbf01-8c8b-4ba3-9992-5a870129cd22/file_downloaded"
+        },
+        {
+          "dataset": "6trx96yjt9",
+          "version": 2,
+          "folder": "Figures",
+          "folder_id": "df0ac996-8832-4534-b377-2ca596837092",
+          "filename": "Fig. 7-F.tif",
+          "file_id": "9bbbe691-c236-4296-9a17-ed4f57370498",
+          "url": "https://data.mendeley.com/public-files/datasets/6trx96yjt9/files/9bbbe691-c236-4296-9a17-ed4f57370498/file_downloaded"
+        },
+        {
+          "dataset": "6trx96yjt9",
+          "version": 1,
+          "folder": "Figures",
+          "folder_id": "df0ac996-8832-4534-b377-2ca596837092",
+          "filename": "Fig. 7-F.tif",
+          "file_id": "9bbbe691-c236-4296-9a17-ed4f57370498",
+          "url": "https://data.mendeley.com/public-files/datasets/6trx96yjt9/files/9bbbe691-c236-4296-9a17-ed4f57370498/file_downloaded"
+        }
+      ]
+    },
+    {
+      "local_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/artifacts/1b68da988bf46018-Fig. 7-G.tif",
+      "sha256": "1b68da988bf460187178024508c5eccf6cd8a194c8f6734d55448b4066001f8d",
+      "bytes": 4079606,
+      "acquired_at": "2026-10-20T07:36:23.257136+00:00",
+      "members": [
+        {
+          "dataset": "wxdnxzm8g8",
+          "version": 1,
+          "folder": "Figures",
+          "folder_id": "2b68a76f-7f3b-4854-b250-ef038eaa8462",
+          "filename": "Fig. 7-G.tif",
+          "file_id": "13fe6d52-ee6c-41de-9334-db045544ac58",
+          "url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/13fe6d52-ee6c-41de-9334-db045544ac58/file_downloaded"
+        },
+        {
+          "dataset": "6trx96yjt9",
+          "version": 2,
+          "folder": "Figures",
+          "folder_id": "df0ac996-8832-4534-b377-2ca596837092",
+          "filename": "Fig. 7-G.tif",
+          "file_id": "d5effae6-a444-44dc-ba9b-9d9ccfe1f259",
+          "url": "https://data.mendeley.com/public-files/datasets/6trx96yjt9/files/d5effae6-a444-44dc-ba9b-9d9ccfe1f259/file_downloaded"
+        },
+        {
+          "dataset": "6trx96yjt9",
+          "version": 1,
+          "folder": "Figures",
+          "folder_id": "df0ac996-8832-4534-b377-2ca596837092",
+          "filename": "Fig. 7-G.tif",
+          "file_id": "d5effae6-a444-44dc-ba9b-9d9ccfe1f259",
+          "url": "https://data.mendeley.com/public-files/datasets/6trx96yjt9/files/d5effae6-a444-44dc-ba9b-9d9ccfe1f259/file_downloaded"
+        }
+      ]
+    },
+    {
+      "local_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/artifacts/698cc8bccffb790a-Fig. 7-H.tif",
+      "sha256": "698cc8bccffb790a9e4d260d0f161a4cf86bfc5e0c58dea380cfbb4e22310475",
+      "bytes": 3838030,
+      "acquired_at": "2026-10-20T07:35:01.443936+00:00",
+      "members": [
+        {
+          "dataset": "wxdnxzm8g8",
+          "version": 1,
+          "folder": "Figures",
+          "folder_id": "2b68a76f-7f3b-4854-b250-ef038eaa8462",
+          "filename": "Fig. 7-H.tif",
+          "file_id": "579e6f1d-3e75-4e97-a938-b4aa9f3d1ed6",
+          "url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/579e6f1d-3e75-4e97-a938-b4aa9f3d1ed6/file_downloaded"
+        },
+        {
+          "dataset": "6trx96yjt9",
+          "version": 2,
+          "folder": "Figures",
+          "folder_id": "df0ac996-8832-4534-b377-2ca596837092",
+          "filename": "Fig. 7-H.tif",
+          "file_id": "1275fccb-3227-4caf-9f67-f7168ac317d4",
+          "url": "https://data.mendeley.com/public-files/datasets/6trx96yjt9/files/1275fccb-3227-4caf-9f67-f7168ac317d4/file_downloaded"
+        },
+        {
+          "dataset": "6trx96yjt9",
+          "version": 1,
+          "folder": "Figures",
+          "folder_id": "df0ac996-8832-4534-b377-2ca596837092",
+          "filename": "Fig. 7-H.tif",
+          "file_id": "1275fccb-3227-4caf-9f67-f7168ac317d4",
+          "url": "https://data.mendeley.com/public-files/datasets/6trx96yjt9/files/1275fccb-3227-4caf-9f67-f7168ac317d4/file_downloaded"
+        }
+      ]
+    },
+    {
+      "local_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/artifacts/47c6e95ec15dd33e-Fig. 7-I.tif",
+      "sha256": "47c6e95ec15dd33ee98445ab656575de00b1dc3e7792a880547f659266aae677",
+      "bytes": 19091134,
+      "acquired_at": "2026-10-20T07:45:04.531076+00:00",
+      "members": [
+        {
+          "dataset": "wxdnxzm8g8",
+          "version": 1,
+          "folder": "Figures",
+          "folder_id": "2b68a76f-7f3b-4854-b250-ef038eaa8462",
+          "filename": "Fig. 7-I.tif",
+          "file_id": "cc5a006d-ee4b-489a-b0f0-34642e1a83ae",
+          "url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/cc5a006d-ee4b-489a-b0f0-34642e1a83ae/file_downloaded"
+        },
+        {
+          "dataset": "6trx96yjt9",
+          "version": 2,
+          "folder": "Figures",
+          "folder_id": "df0ac996-8832-4534-b377-2ca596837092",
+          "filename": "Fig. 7-I.tif",
+          "file_id": "4c4da5fb-9465-4365-8f42-9717a75740bd",
+          "url": "https://data.mendeley.com/public-files/datasets/6trx96yjt9/files/4c4da5fb-9465-4365-8f42-9717a75740bd/file_downloaded"
+        },
+        {
+          "dataset": "6trx96yjt9",
+          "version": 1,
+          "folder": "Figures",
+          "folder_id": "df0ac996-8832-4534-b377-2ca596837092",
+          "filename": "Fig. 7-I.tif",
+          "file_id": "4c4da5fb-9465-4365-8f42-9717a75740bd",
+          "url": "https://data.mendeley.com/public-files/datasets/6trx96yjt9/files/4c4da5fb-9465-4365-8f42-9717a75740bd/file_downloaded"
+        }
+      ]
+    },
+    {
+      "local_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/artifacts/24841ebff2006a30-Fig. S4-Gd-C.png",
+      "sha256": "24841ebff2006a3095a3cff12fb2d4174fafb12749b032d96cafd11f8ce3c4c2",
+      "bytes": 46185,
+      "acquired_at": "2026-10-20T07:36:24.709508+00:00",
+      "members": [
+        {
+          "dataset": "wxdnxzm8g8",
+          "version": 1,
+          "folder": "Figures",
+          "folder_id": "2b68a76f-7f3b-4854-b250-ef038eaa8462",
+          "filename": "Fig. S4-Gd-C.png",
+          "file_id": "bc1c916d-203b-4c11-a468-baf9c8935073",
+          "url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/bc1c916d-203b-4c11-a468-baf9c8935073/file_downloaded"
+        },
+        {
+          "dataset": "6trx96yjt9",
+          "version": 2,
+          "folder": "Figures",
+          "folder_id": "df0ac996-8832-4534-b377-2ca596837092",
+          "filename": "Fig. S4-Gd-C.png",
+          "file_id": "a9fd7936-e21a-43ba-8f95-439122737f20",
+          "url": "https://data.mendeley.com/public-files/datasets/6trx96yjt9/files/a9fd7936-e21a-43ba-8f95-439122737f20/file_downloaded"
+        },
+        {
+          "dataset": "6trx96yjt9",
+          "version": 1,
+          "folder": "Figures",
+          "folder_id": "df0ac996-8832-4534-b377-2ca596837092",
+          "filename": "Fig. S4-Gd-C.png",
+          "file_id": "a9fd7936-e21a-43ba-8f95-439122737f20",
+          "url": "https://data.mendeley.com/public-files/datasets/6trx96yjt9/files/a9fd7936-e21a-43ba-8f95-439122737f20/file_downloaded"
+        }
+      ]
+    },
+    {
+      "local_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/artifacts/956e8f8ea1af17bf-Fig. S4-Gd-Gd.png",
+      "sha256": "956e8f8ea1af17bf52d9b096359dbd402c52b69c11a744897e7634fba425ed4f",
+      "bytes": 24493,
+      "acquired_at": "2026-10-20T07:36:25.942020+00:00",
+      "members": [
+        {
+          "dataset": "wxdnxzm8g8",
+          "version": 1,
+          "folder": "Figures",
+          "folder_id": "2b68a76f-7f3b-4854-b250-ef038eaa8462",
+          "filename": "Fig. S4-Gd-Gd.png",
+          "file_id": "e64ef023-81f0-4f63-b03f-af9c4085317d",
+          "url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/e64ef023-81f0-4f63-b03f-af9c4085317d/file_downloaded"
+        },
+        {
+          "dataset": "6trx96yjt9",
+          "version": 2,
+          "folder": "Figures",
+          "folder_id": "df0ac996-8832-4534-b377-2ca596837092",
+          "filename": "Fig. S4-Gd-Gd.png",
+          "file_id": "700a1825-ab49-4967-a2e8-891e99526312",
+          "url": "https://data.mendeley.com/public-files/datasets/6trx96yjt9/files/700a1825-ab49-4967-a2e8-891e99526312/file_downloaded"
+        },
+        {
+          "dataset": "6trx96yjt9",
+          "version": 1,
+          "folder": "Figures",
+          "folder_id": "df0ac996-8832-4534-b377-2ca596837092",
+          "filename": "Fig. S4-Gd-Gd.png",
+          "file_id": "700a1825-ab49-4967-a2e8-891e99526312",
+          "url": "https://data.mendeley.com/public-files/datasets/6trx96yjt9/files/700a1825-ab49-4967-a2e8-891e99526312/file_downloaded"
+        }
+      ]
+    },
+    {
+      "local_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/artifacts/8e06dd8a8e5322b3-Fig. S4-Gd-N.png",
+      "sha256": "8e06dd8a8e5322b354b1696cb1b85b9df18080c1b60aa69849187c000d543ac0",
+      "bytes": 11978,
+      "acquired_at": "2026-10-20T07:36:30.392012+00:00",
+      "members": [
+        {
+          "dataset": "wxdnxzm8g8",
+          "version": 1,
+          "folder": "Figures",
+          "folder_id": "2b68a76f-7f3b-4854-b250-ef038eaa8462",
+          "filename": "Fig. S4-Gd-N.png",
+          "file_id": "dfb49221-da3d-4826-8893-6c5a905f05c0",
+          "url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/dfb49221-da3d-4826-8893-6c5a905f05c0/file_downloaded"
+        },
+        {
+          "dataset": "6trx96yjt9",
+          "version": 2,
+          "folder": "Figures",
+          "folder_id": "df0ac996-8832-4534-b377-2ca596837092",
+          "filename": "Fig. S4-Gd-N.png",
+          "file_id": "dce3df6e-aabe-4a24-a9fb-97c0fe295437",
+          "url": "https://data.mendeley.com/public-files/datasets/6trx96yjt9/files/dce3df6e-aabe-4a24-a9fb-97c0fe295437/file_downloaded"
+        },
+        {
+          "dataset": "6trx96yjt9",
+          "version": 1,
+          "folder": "Figures",
+          "folder_id": "df0ac996-8832-4534-b377-2ca596837092",
+          "filename": "Fig. S4-Gd-N.png",
+          "file_id": "dce3df6e-aabe-4a24-a9fb-97c0fe295437",
+          "url": "https://data.mendeley.com/public-files/datasets/6trx96yjt9/files/dce3df6e-aabe-4a24-a9fb-97c0fe295437/file_downloaded"
+        }
+      ]
+    },
+    {
+      "local_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/artifacts/3569fb7b6b3b915e-Fig. S4-Gd-O.png",
+      "sha256": "3569fb7b6b3b915eaab3fb2d212dc83c09d087af5c5e3ce79bd56018a06062d1",
+      "bytes": 24173,
+      "acquired_at": "2026-10-20T07:36:32.426767+00:00",
+      "members": [
+        {
+          "dataset": "wxdnxzm8g8",
+          "version": 1,
+          "folder": "Figures",
+          "folder_id": "2b68a76f-7f3b-4854-b250-ef038eaa8462",
+          "filename": "Fig. S4-Gd-O.png",
+          "file_id": "e109d445-fb8f-427d-ad40-a480cef9949e",
+          "url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/e109d445-fb8f-427d-ad40-a480cef9949e/file_downloaded"
+        },
+        {
+          "dataset": "6trx96yjt9",
+          "version": 2,
+          "folder": "Figures",
+          "folder_id": "df0ac996-8832-4534-b377-2ca596837092",
+          "filename": "Fig. S4-Gd-O.png",
+          "file_id": "6765837a-d990-4fe9-8dd6-49fcd6609268",
+          "url": "https://data.mendeley.com/public-files/datasets/6trx96yjt9/files/6765837a-d990-4fe9-8dd6-49fcd6609268/file_downloaded"
+        },
+        {
+          "dataset": "6trx96yjt9",
+          "version": 1,
+          "folder": "Figures",
+          "folder_id": "df0ac996-8832-4534-b377-2ca596837092",
+          "filename": "Fig. S4-Gd-O.png",
+          "file_id": "6765837a-d990-4fe9-8dd6-49fcd6609268",
+          "url": "https://data.mendeley.com/public-files/datasets/6trx96yjt9/files/6765837a-d990-4fe9-8dd6-49fcd6609268/file_downloaded"
+        }
+      ]
+    },
+    {
+      "local_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/artifacts/55adb4a6ec1eefa6-Fig. S4-Gd-P.png",
+      "sha256": "55adb4a6ec1eefa6d49fd075ca054271048353ef12ffcfa8835be23f591543af",
+      "bytes": 39599,
+      "acquired_at": "2026-10-20T07:36:35.386979+00:00",
+      "members": [
+        {
+          "dataset": "wxdnxzm8g8",
+          "version": 1,
+          "folder": "Figures",
+          "folder_id": "2b68a76f-7f3b-4854-b250-ef038eaa8462",
+          "filename": "Fig. S4-Gd-P.png",
+          "file_id": "f361a9eb-ab96-484c-a497-6058d6cd9b44",
+          "url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/f361a9eb-ab96-484c-a497-6058d6cd9b44/file_downloaded"
+        },
+        {
+          "dataset": "6trx96yjt9",
+          "version": 2,
+          "folder": "Figures",
+          "folder_id": "df0ac996-8832-4534-b377-2ca596837092",
+          "filename": "Fig. S4-Gd-P.png",
+          "file_id": "1dfa4349-0a30-4dbe-9f19-b6236e82ce71",
+          "url": "https://data.mendeley.com/public-files/datasets/6trx96yjt9/files/1dfa4349-0a30-4dbe-9f19-b6236e82ce71/file_downloaded"
+        },
+        {
+          "dataset": "6trx96yjt9",
+          "version": 1,
+          "folder": "Figures",
+          "folder_id": "df0ac996-8832-4534-b377-2ca596837092",
+          "filename": "Fig. S4-Gd-P.png",
+          "file_id": "1dfa4349-0a30-4dbe-9f19-b6236e82ce71",
+          "url": "https://data.mendeley.com/public-files/datasets/6trx96yjt9/files/1dfa4349-0a30-4dbe-9f19-b6236e82ce71/file_downloaded"
+        }
+      ]
+    },
+    {
+      "local_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/artifacts/1cd029a89c555fcc-Fig. S4-Gd.tif",
+      "sha256": "1cd029a89c555fcc7d5df65845f0819a6fb40e03833fe31b6bd6dfa53a2bab01",
+      "bytes": 1231838,
+      "acquired_at": "2026-10-20T07:38:37.641230+00:00",
+      "members": [
+        {
+          "dataset": "wxdnxzm8g8",
+          "version": 1,
+          "folder": "Figures",
+          "folder_id": "2b68a76f-7f3b-4854-b250-ef038eaa8462",
+          "filename": "Fig. S4-Gd.tif",
+          "file_id": "1e6311b1-9304-40bc-b85d-cdc25f8db6ca",
+          "url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/1e6311b1-9304-40bc-b85d-cdc25f8db6ca/file_downloaded"
+        },
+        {
+          "dataset": "6trx96yjt9",
+          "version": 2,
+          "folder": "Figures",
+          "folder_id": "df0ac996-8832-4534-b377-2ca596837092",
+          "filename": "Fig. S4-Gd.tif",
+          "file_id": "5ca0ab09-0ccd-4ee4-95cf-bd195d4dfdb1",
+          "url": "https://data.mendeley.com/public-files/datasets/6trx96yjt9/files/5ca0ab09-0ccd-4ee4-95cf-bd195d4dfdb1/file_downloaded"
+        },
+        {
+          "dataset": "6trx96yjt9",
+          "version": 1,
+          "folder": "Figures",
+          "folder_id": "df0ac996-8832-4534-b377-2ca596837092",
+          "filename": "Fig. S4-Gd.tif",
+          "file_id": "5ca0ab09-0ccd-4ee4-95cf-bd195d4dfdb1",
+          "url": "https://data.mendeley.com/public-files/datasets/6trx96yjt9/files/5ca0ab09-0ccd-4ee4-95cf-bd195d4dfdb1/file_downloaded"
+        }
+      ]
+    },
+    {
+      "local_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/artifacts/87414438e8d977a9-Fig. S4-La-C.png",
+      "sha256": "87414438e8d977a9b0e970b81e62500d86ea8ed8ebf44c938b410df2263c51b2",
+      "bytes": 58868,
+      "acquired_at": "2026-10-20T07:36:58.515774+00:00",
+      "members": [
+        {
+          "dataset": "wxdnxzm8g8",
+          "version": 1,
+          "folder": "Figures",
+          "folder_id": "2b68a76f-7f3b-4854-b250-ef038eaa8462",
+          "filename": "Fig. S4-La-C.png",
+          "file_id": "08bf067e-97a9-421f-9ca7-a255df6451dc",
+          "url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/08bf067e-97a9-421f-9ca7-a255df6451dc/file_downloaded"
+        },
+        {
+          "dataset": "6trx96yjt9",
+          "version": 2,
+          "folder": "Figures",
+          "folder_id": "df0ac996-8832-4534-b377-2ca596837092",
+          "filename": "Fig. S4-La-C.png",
+          "file_id": "4a663852-5930-4074-bd11-8bd7ad0b4e86",
+          "url": "https://data.mendeley.com/public-files/datasets/6trx96yjt9/files/4a663852-5930-4074-bd11-8bd7ad0b4e86/file_downloaded"
+        },
+        {
+          "dataset": "6trx96yjt9",
+          "version": 1,
+          "folder": "Figures",
+          "folder_id": "df0ac996-8832-4534-b377-2ca596837092",
+          "filename": "Fig. S4-La-C.png",
+          "file_id": "4a663852-5930-4074-bd11-8bd7ad0b4e86",
+          "url": "https://data.mendeley.com/public-files/datasets/6trx96yjt9/files/4a663852-5930-4074-bd11-8bd7ad0b4e86/file_downloaded"
+        }
+      ]
+    },
+    {
+      "local_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/artifacts/2beef6456ed50288-Fig. S4-La+Gd-C.png",
+      "sha256": "2beef6456ed502880468140a56f4dd0b2ca98f8d74f5c7effdf5d21d4fe039fb",
+      "bytes": 43969,
+      "acquired_at": "2026-10-20T07:37:00.295112+00:00",
+      "members": [
+        {
+          "dataset": "wxdnxzm8g8",
+          "version": 1,
+          "folder": "Figures",
+          "folder_id": "2b68a76f-7f3b-4854-b250-ef038eaa8462",
+          "filename": "Fig. S4-La+Gd-C.png",
+          "file_id": "414ea626-6b5d-41f3-9680-d30a4cd8b3f5",
+          "url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/414ea626-6b5d-41f3-9680-d30a4cd8b3f5/file_downloaded"
+        },
+        {
+          "dataset": "6trx96yjt9",
+          "version": 2,
+          "folder": "Figures",
+          "folder_id": "df0ac996-8832-4534-b377-2ca596837092",
+          "filename": "Fig. S4-La+Gd-C.png",
+          "file_id": "68672448-d5c6-49a5-8e21-c5a01780c388",
+          "url": "https://data.mendeley.com/public-files/datasets/6trx96yjt9/files/68672448-d5c6-49a5-8e21-c5a01780c388/file_downloaded"
+        },
+        {
+          "dataset": "6trx96yjt9",
+          "version": 1,
+          "folder": "Figures",
+          "folder_id": "df0ac996-8832-4534-b377-2ca596837092",
+          "filename": "Fig. S4-La+Gd-C.png",
+          "file_id": "68672448-d5c6-49a5-8e21-c5a01780c388",
+          "url": "https://data.mendeley.com/public-files/datasets/6trx96yjt9/files/68672448-d5c6-49a5-8e21-c5a01780c388/file_downloaded"
+        }
+      ]
+    },
+    {
+      "local_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/artifacts/4de16e4ac5294eb3-Fig. S4-La+Gd-Gd.png",
+      "sha256": "4de16e4ac5294eb314d7d69cfeed9ecb88a395d0fba8dc68f37de78e88ea0049",
+      "bytes": 15461,
+      "acquired_at": "2026-10-20T07:37:01.358944+00:00",
+      "members": [
+        {
+          "dataset": "wxdnxzm8g8",
+          "version": 1,
+          "folder": "Figures",
+          "folder_id": "2b68a76f-7f3b-4854-b250-ef038eaa8462",
+          "filename": "Fig. S4-La+Gd-Gd.png",
+          "file_id": "5f5d3cb5-4e6a-4986-9ddd-c8701078b3e7",
+          "url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/5f5d3cb5-4e6a-4986-9ddd-c8701078b3e7/file_downloaded"
+        },
+        {
+          "dataset": "6trx96yjt9",
+          "version": 2,
+          "folder": "Figures",
+          "folder_id": "df0ac996-8832-4534-b377-2ca596837092",
+          "filename": "Fig. S4-La+Gd-Gd.png",
+          "file_id": "d6cde747-e44b-41ab-b51b-b04e17c501e7",
+          "url": "https://data.mendeley.com/public-files/datasets/6trx96yjt9/files/d6cde747-e44b-41ab-b51b-b04e17c501e7/file_downloaded"
+        },
+        {
+          "dataset": "6trx96yjt9",
+          "version": 1,
+          "folder": "Figures",
+          "folder_id": "df0ac996-8832-4534-b377-2ca596837092",
+          "filename": "Fig. S4-La+Gd-Gd.png",
+          "file_id": "d6cde747-e44b-41ab-b51b-b04e17c501e7",
+          "url": "https://data.mendeley.com/public-files/datasets/6trx96yjt9/files/d6cde747-e44b-41ab-b51b-b04e17c501e7/file_downloaded"
+        }
+      ]
+    },
+    {
+      "local_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/artifacts/fc231a472725ab66-Fig. S4-La+Gd-La.png",
+      "sha256": "fc231a472725ab6637897634e08b4cbe4dae785152b9633af2c0ec50b9cf334e",
+      "bytes": 20649,
+      "acquired_at": "2026-10-20T07:37:14.162732+00:00",
+      "members": [
+        {
+          "dataset": "wxdnxzm8g8",
+          "version": 1,
+          "folder": "Figures",
+          "folder_id": "2b68a76f-7f3b-4854-b250-ef038eaa8462",
+          "filename": "Fig. S4-La+Gd-La.png",
+          "file_id": "0fe89a21-fd0c-4792-94d8-720555bc4709",
+          "url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/0fe89a21-fd0c-4792-94d8-720555bc4709/file_downloaded"
+        },
+        {
+          "dataset": "6trx96yjt9",
+          "version": 2,
+          "folder": "Figures",
+          "folder_id": "df0ac996-8832-4534-b377-2ca596837092",
+          "filename": "Fig. S4-La+Gd-La.png",
+          "file_id": "9804f16b-2220-494b-9021-1cac42bc9a42",
+          "url": "https://data.mendeley.com/public-files/datasets/6trx96yjt9/files/9804f16b-2220-494b-9021-1cac42bc9a42/file_downloaded"
+        },
+        {
+          "dataset": "6trx96yjt9",
+          "version": 1,
+          "folder": "Figures",
+          "folder_id": "df0ac996-8832-4534-b377-2ca596837092",
+          "filename": "Fig. S4-La+Gd-La.png",
+          "file_id": "9804f16b-2220-494b-9021-1cac42bc9a42",
+          "url": "https://data.mendeley.com/public-files/datasets/6trx96yjt9/files/9804f16b-2220-494b-9021-1cac42bc9a42/file_downloaded"
+        }
+      ]
+    },
+    {
+      "local_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/artifacts/9d2baabb12e0eada-Fig. S4-La+Gd-N.png",
+      "sha256": "9d2baabb12e0eada1bfcce9a23ca887d38a60059869a3868d8622ae64edb7911",
+      "bytes": 9666,
+      "acquired_at": "2026-10-20T07:37:15.486825+00:00",
+      "members": [
+        {
+          "dataset": "wxdnxzm8g8",
+          "version": 1,
+          "folder": "Figures",
+          "folder_id": "2b68a76f-7f3b-4854-b250-ef038eaa8462",
+          "filename": "Fig. S4-La+Gd-N.png",
+          "file_id": "e34ed799-74c7-46b3-aeac-045ebde7b17f",
+          "url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/e34ed799-74c7-46b3-aeac-045ebde7b17f/file_downloaded"
+        },
+        {
+          "dataset": "6trx96yjt9",
+          "version": 2,
+          "folder": "Figures",
+          "folder_id": "df0ac996-8832-4534-b377-2ca596837092",
+          "filename": "Fig. S4-La+Gd-N.png",
+          "file_id": "9b82ee86-92bd-403d-b483-2c0e5c3d63ed",
+          "url": "https://data.mendeley.com/public-files/datasets/6trx96yjt9/files/9b82ee86-92bd-403d-b483-2c0e5c3d63ed/file_downloaded"
+        },
+        {
+          "dataset": "6trx96yjt9",
+          "version": 1,
+          "folder": "Figures",
+          "folder_id": "df0ac996-8832-4534-b377-2ca596837092",
+          "filename": "Fig. S4-La+Gd-N.png",
+          "file_id": "9b82ee86-92bd-403d-b483-2c0e5c3d63ed",
+          "url": "https://data.mendeley.com/public-files/datasets/6trx96yjt9/files/9b82ee86-92bd-403d-b483-2c0e5c3d63ed/file_downloaded"
+        }
+      ]
+    },
+    {
+      "local_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/artifacts/31e2fd96e9ab7d56-Fig. S4-La+Gd-O.png",
+      "sha256": "31e2fd96e9ab7d565567ed452fcebd415cb5e6e51780bfa269e4e02ce616297f",
+      "bytes": 20042,
+      "acquired_at": "2026-10-20T07:37:18.900641+00:00",
+      "members": [
+        {
+          "dataset": "wxdnxzm8g8",
+          "version": 1,
+          "folder": "Figures",
+          "folder_id": "2b68a76f-7f3b-4854-b250-ef038eaa8462",
+          "filename": "Fig. S4-La+Gd-O.png",
+          "file_id": "59c26d6f-49c1-4efe-9843-b250dd498285",
+          "url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/59c26d6f-49c1-4efe-9843-b250dd498285/file_downloaded"
+        },
+        {
+          "dataset": "6trx96yjt9",
+          "version": 2,
+          "folder": "Figures",
+          "folder_id": "df0ac996-8832-4534-b377-2ca596837092",
+          "filename": "Fig. S4-La+Gd-O.png",
+          "file_id": "46e7060b-fa02-43f7-8efd-ca63cb09d3da",
+          "url": "https://data.mendeley.com/public-files/datasets/6trx96yjt9/files/46e7060b-fa02-43f7-8efd-ca63cb09d3da/file_downloaded"
+        },
+        {
+          "dataset": "6trx96yjt9",
+          "version": 1,
+          "folder": "Figures",
+          "folder_id": "df0ac996-8832-4534-b377-2ca596837092",
+          "filename": "Fig. S4-La+Gd-O.png",
+          "file_id": "46e7060b-fa02-43f7-8efd-ca63cb09d3da",
+          "url": "https://data.mendeley.com/public-files/datasets/6trx96yjt9/files/46e7060b-fa02-43f7-8efd-ca63cb09d3da/file_downloaded"
+        }
+      ]
+    },
+    {
+      "local_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/artifacts/1ffedb3b51aaa5a1-Fig. S4-La+Gd-P.png",
+      "sha256": "1ffedb3b51aaa5a1d5a86611ca243fbabd3370fa5be9c6adf8d978c12769642b",
+      "bytes": 28665,
+      "acquired_at": "2026-10-20T07:37:20.155615+00:00",
+      "members": [
+        {
+          "dataset": "wxdnxzm8g8",
+          "version": 1,
+          "folder": "Figures",
+          "folder_id": "2b68a76f-7f3b-4854-b250-ef038eaa8462",
+          "filename": "Fig. S4-La+Gd-P.png",
+          "file_id": "eec8be62-5a89-4688-9d0f-6e0fcb68f3c0",
+          "url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/eec8be62-5a89-4688-9d0f-6e0fcb68f3c0/file_downloaded"
+        },
+        {
+          "dataset": "6trx96yjt9",
+          "version": 2,
+          "folder": "Figures",
+          "folder_id": "df0ac996-8832-4534-b377-2ca596837092",
+          "filename": "Fig. S4-La+Gd-P.png",
+          "file_id": "c8e2ce24-d08c-4a36-bc16-de7f12abddff",
+          "url": "https://data.mendeley.com/public-files/datasets/6trx96yjt9/files/c8e2ce24-d08c-4a36-bc16-de7f12abddff/file_downloaded"
+        },
+        {
+          "dataset": "6trx96yjt9",
+          "version": 1,
+          "folder": "Figures",
+          "folder_id": "df0ac996-8832-4534-b377-2ca596837092",
+          "filename": "Fig. S4-La+Gd-P.png",
+          "file_id": "c8e2ce24-d08c-4a36-bc16-de7f12abddff",
+          "url": "https://data.mendeley.com/public-files/datasets/6trx96yjt9/files/c8e2ce24-d08c-4a36-bc16-de7f12abddff/file_downloaded"
+        }
+      ]
+    },
+    {
+      "local_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/artifacts/a7da631ad4919fca-Fig. S4-La+Gd.tif",
+      "sha256": "a7da631ad4919fcace7160e5141c391abd1dad1991b5b06239515e8942a58799",
+      "bytes": 1231838,
+      "acquired_at": "2026-10-20T07:37:37.188191+00:00",
+      "members": [
+        {
+          "dataset": "wxdnxzm8g8",
+          "version": 1,
+          "folder": "Figures",
+          "folder_id": "2b68a76f-7f3b-4854-b250-ef038eaa8462",
+          "filename": "Fig. S4-La+Gd.tif",
+          "file_id": "efc68dff-de47-4730-b5c9-10e27a989add",
+          "url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/efc68dff-de47-4730-b5c9-10e27a989add/file_downloaded"
+        },
+        {
+          "dataset": "6trx96yjt9",
+          "version": 2,
+          "folder": "Figures",
+          "folder_id": "df0ac996-8832-4534-b377-2ca596837092",
+          "filename": "Fig. S4-La+Gd.tif",
+          "file_id": "d65f2d8d-fc4e-4553-8b20-af6e203fc358",
+          "url": "https://data.mendeley.com/public-files/datasets/6trx96yjt9/files/d65f2d8d-fc4e-4553-8b20-af6e203fc358/file_downloaded"
+        },
+        {
+          "dataset": "6trx96yjt9",
+          "version": 1,
+          "folder": "Figures",
+          "folder_id": "df0ac996-8832-4534-b377-2ca596837092",
+          "filename": "Fig. S4-La+Gd.tif",
+          "file_id": "d65f2d8d-fc4e-4553-8b20-af6e203fc358",
+          "url": "https://data.mendeley.com/public-files/datasets/6trx96yjt9/files/d65f2d8d-fc4e-4553-8b20-af6e203fc358/file_downloaded"
+        }
+      ]
+    },
+    {
+      "local_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/artifacts/33e9d289b2244fcd-Fig. S4-La-N.png",
+      "sha256": "33e9d289b2244fcd7f1b1da39a14f1245c0949065f38c99c7a7e11ea780bd88d",
+      "bytes": 13779,
+      "acquired_at": "2026-10-20T07:37:39.413771+00:00",
+      "members": [
+        {
+          "dataset": "wxdnxzm8g8",
+          "version": 1,
+          "folder": "Figures",
+          "folder_id": "2b68a76f-7f3b-4854-b250-ef038eaa8462",
+          "filename": "Fig. S4-La-N.png",
+          "file_id": "617896d8-fe5d-4fcd-9b95-ff5e1634eb48",
+          "url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/617896d8-fe5d-4fcd-9b95-ff5e1634eb48/file_downloaded"
+        },
+        {
+          "dataset": "6trx96yjt9",
+          "version": 2,
+          "folder": "Figures",
+          "folder_id": "df0ac996-8832-4534-b377-2ca596837092",
+          "filename": "Fig. S4-La-N.png",
+          "file_id": "b0cd6b99-af8d-414c-9452-776ae733eef3",
+          "url": "https://data.mendeley.com/public-files/datasets/6trx96yjt9/files/b0cd6b99-af8d-414c-9452-776ae733eef3/file_downloaded"
+        },
+        {
+          "dataset": "6trx96yjt9",
+          "version": 1,
+          "folder": "Figures",
+          "folder_id": "df0ac996-8832-4534-b377-2ca596837092",
+          "filename": "Fig. S4-La-N.png",
+          "file_id": "b0cd6b99-af8d-414c-9452-776ae733eef3",
+          "url": "https://data.mendeley.com/public-files/datasets/6trx96yjt9/files/b0cd6b99-af8d-414c-9452-776ae733eef3/file_downloaded"
+        }
+      ]
+    },
+    {
+      "local_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/artifacts/57165165148d27a6-Fig. S4-La-O.png",
+      "sha256": "57165165148d27a68f98ff79b7a2fd3f972febcc83e8704b0378c435edde44c7",
+      "bytes": 30712,
+      "acquired_at": "2026-10-20T07:37:40.649634+00:00",
+      "members": [
+        {
+          "dataset": "wxdnxzm8g8",
+          "version": 1,
+          "folder": "Figures",
+          "folder_id": "2b68a76f-7f3b-4854-b250-ef038eaa8462",
+          "filename": "Fig. S4-La-O.png",
+          "file_id": "d10ac228-b95c-4efb-9b45-c7d54a41cd89",
+          "url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/d10ac228-b95c-4efb-9b45-c7d54a41cd89/file_downloaded"
+        },
+        {
+          "dataset": "6trx96yjt9",
+          "version": 2,
+          "folder": "Figures",
+          "folder_id": "df0ac996-8832-4534-b377-2ca596837092",
+          "filename": "Fig. S4-La-O.png",
+          "file_id": "ee3893e2-8818-413f-be89-8ba3df48fb81",
+          "url": "https://data.mendeley.com/public-files/datasets/6trx96yjt9/files/ee3893e2-8818-413f-be89-8ba3df48fb81/file_downloaded"
+        },
+        {
+          "dataset": "6trx96yjt9",
+          "version": 1,
+          "folder": "Figures",
+          "folder_id": "df0ac996-8832-4534-b377-2ca596837092",
+          "filename": "Fig. S4-La-O.png",
+          "file_id": "ee3893e2-8818-413f-be89-8ba3df48fb81",
+          "url": "https://data.mendeley.com/public-files/datasets/6trx96yjt9/files/ee3893e2-8818-413f-be89-8ba3df48fb81/file_downloaded"
+        }
+      ]
+    },
+    {
+      "local_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/artifacts/452fc0517528f5c7-Fig. S4-La-P.png",
+      "sha256": "452fc0517528f5c724690e4311cabe8ab7800231c897873338becb13f10fd4d1",
+      "bytes": 42239,
+      "acquired_at": "2026-10-20T07:37:44.084596+00:00",
+      "members": [
+        {
+          "dataset": "wxdnxzm8g8",
+          "version": 1,
+          "folder": "Figures",
+          "folder_id": "2b68a76f-7f3b-4854-b250-ef038eaa8462",
+          "filename": "Fig. S4-La-P.png",
+          "file_id": "35b110e5-d657-4f4b-8884-f0a00699ff63",
+          "url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/35b110e5-d657-4f4b-8884-f0a00699ff63/file_downloaded"
+        },
+        {
+          "dataset": "6trx96yjt9",
+          "version": 2,
+          "folder": "Figures",
+          "folder_id": "df0ac996-8832-4534-b377-2ca596837092",
+          "filename": "Fig. S4-La-P.png",
+          "file_id": "df3f496b-9b69-40e2-9413-ab34b1425338",
+          "url": "https://data.mendeley.com/public-files/datasets/6trx96yjt9/files/df3f496b-9b69-40e2-9413-ab34b1425338/file_downloaded"
+        },
+        {
+          "dataset": "6trx96yjt9",
+          "version": 1,
+          "folder": "Figures",
+          "folder_id": "df0ac996-8832-4534-b377-2ca596837092",
+          "filename": "Fig. S4-La-P.png",
+          "file_id": "df3f496b-9b69-40e2-9413-ab34b1425338",
+          "url": "https://data.mendeley.com/public-files/datasets/6trx96yjt9/files/df3f496b-9b69-40e2-9413-ab34b1425338/file_downloaded"
+        }
+      ]
+    },
+    {
+      "local_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/artifacts/8bedc19c2969c09f-Fig. S4-La.tif",
+      "sha256": "8bedc19c2969c09fbc7bd3ca0aa3f64c75407ae7f130e92a6f5e7656e2a40bd5",
+      "bytes": 1231838,
+      "acquired_at": "2026-10-20T07:37:51.797718+00:00",
+      "members": [
+        {
+          "dataset": "wxdnxzm8g8",
+          "version": 1,
+          "folder": "Figures",
+          "folder_id": "2b68a76f-7f3b-4854-b250-ef038eaa8462",
+          "filename": "Fig. S4-La.tif",
+          "file_id": "842c8880-e60b-4c6d-b45d-1d4ec59737be",
+          "url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/842c8880-e60b-4c6d-b45d-1d4ec59737be/file_downloaded"
+        },
+        {
+          "dataset": "6trx96yjt9",
+          "version": 2,
+          "folder": "Figures",
+          "folder_id": "df0ac996-8832-4534-b377-2ca596837092",
+          "filename": "Fig. S4-La.tif",
+          "file_id": "1a5507e3-b587-484d-bb1b-4cc07899291a",
+          "url": "https://data.mendeley.com/public-files/datasets/6trx96yjt9/files/1a5507e3-b587-484d-bb1b-4cc07899291a/file_downloaded"
+        },
+        {
+          "dataset": "6trx96yjt9",
+          "version": 1,
+          "folder": "Figures",
+          "folder_id": "df0ac996-8832-4534-b377-2ca596837092",
+          "filename": "Fig. S4-La.tif",
+          "file_id": "1a5507e3-b587-484d-bb1b-4cc07899291a",
+          "url": "https://data.mendeley.com/public-files/datasets/6trx96yjt9/files/1a5507e3-b587-484d-bb1b-4cc07899291a/file_downloaded"
+        }
+      ]
+    },
+    {
+      "local_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/artifacts/e8d9dcdc25054acd-Fig.6A.tif",
+      "sha256": "e8d9dcdc25054acd52a5e35243350c536e24e557c9a01a4e53896338dca09ba5",
+      "bytes": 1231838,
+      "acquired_at": "2026-10-20T07:39:35.411761+00:00",
+      "members": [
+        {
+          "dataset": "wxdnxzm8g8",
+          "version": 1,
+          "folder": "Figures (new)",
+          "folder_id": "f36a0b6b-4f7c-4226-b055-13b577be297c",
+          "filename": "Fig.6A.tif",
+          "file_id": "84a56b1d-4dd0-43a3-9797-0280ebfd2399",
+          "url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/84a56b1d-4dd0-43a3-9797-0280ebfd2399/file_downloaded"
+        }
+      ]
+    },
+    {
+      "local_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/artifacts/93badd1a67141666-Fig.6B.tif",
+      "sha256": "93badd1a67141666f71b296703ea3217891501fba5f6eee55f6e68ebc9ab8512",
+      "bytes": 1231838,
+      "acquired_at": "2026-10-20T07:40:10.893255+00:00",
+      "members": [
+        {
+          "dataset": "wxdnxzm8g8",
+          "version": 1,
+          "folder": "Figures (new)",
+          "folder_id": "f36a0b6b-4f7c-4226-b055-13b577be297c",
+          "filename": "Fig.6B.tif",
+          "file_id": "a11b24a7-dfac-44b1-a6a5-32d3b2ed02db",
+          "url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/a11b24a7-dfac-44b1-a6a5-32d3b2ed02db/file_downloaded"
+        }
+      ]
+    },
+    {
+      "local_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/artifacts/d4cf8914f65cfd62-Fig.6D.tif",
+      "sha256": "d4cf8914f65cfd62a144b45fddbf07ad4750613c7816e7aa1ba6af9d7dce9786",
+      "bytes": 1231838,
+      "acquired_at": "2026-10-20T07:39:42.233593+00:00",
+      "members": [
+        {
+          "dataset": "wxdnxzm8g8",
+          "version": 1,
+          "folder": "Figures (new)",
+          "folder_id": "f36a0b6b-4f7c-4226-b055-13b577be297c",
+          "filename": "Fig.6D.tif",
+          "file_id": "51cf468c-e58e-44d4-a618-c4031f910a44",
+          "url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/51cf468c-e58e-44d4-a618-c4031f910a44/file_downloaded"
+        }
+      ]
+    },
+    {
+      "local_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/artifacts/d38e99988506f69c-Fig.6E.tif",
+      "sha256": "d38e99988506f69c9a6f1e6a2856f583c3d772ca792f1e3c9405d7c97fa4814b",
+      "bytes": 1231838,
+      "acquired_at": "2026-10-20T07:42:41.418526+00:00",
+      "members": [
+        {
+          "dataset": "wxdnxzm8g8",
+          "version": 1,
+          "folder": "Figures (new)",
+          "folder_id": "f36a0b6b-4f7c-4226-b055-13b577be297c",
+          "filename": "Fig.6E.tif",
+          "file_id": "6dc44fec-dd8f-4f66-bd28-ab4b0cba909b",
+          "url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/6dc44fec-dd8f-4f66-bd28-ab4b0cba909b/file_downloaded"
+        }
+      ]
+    },
+    {
+      "local_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/artifacts/c21cfe21c0c107d2-Fig.6G.tif",
+      "sha256": "c21cfe21c0c107d2fef94e15bfd1ad03cc670490f264a61b99012b28afeb98ee",
+      "bytes": 1231838,
+      "acquired_at": "2026-10-20T07:40:14.368715+00:00",
+      "members": [
+        {
+          "dataset": "wxdnxzm8g8",
+          "version": 1,
+          "folder": "Figures (new)",
+          "folder_id": "f36a0b6b-4f7c-4226-b055-13b577be297c",
+          "filename": "Fig.6G.tif",
+          "file_id": "0f9e7df7-fa00-4bba-9bf7-e12bd8d28132",
+          "url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/0f9e7df7-fa00-4bba-9bf7-e12bd8d28132/file_downloaded"
+        }
+      ]
+    },
+    {
+      "local_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/artifacts/33056d907c4b62fe-Fig.6H.tif",
+      "sha256": "33056d907c4b62fe5d429684b3307b9a5a52429d43e250a2bdbfad179290dda9",
+      "bytes": 1231838,
+      "acquired_at": "2026-10-20T07:40:16.396540+00:00",
+      "members": [
+        {
+          "dataset": "wxdnxzm8g8",
+          "version": 1,
+          "folder": "Figures (new)",
+          "folder_id": "f36a0b6b-4f7c-4226-b055-13b577be297c",
+          "filename": "Fig.6H.tif",
+          "file_id": "d982248e-8cfc-49b4-8e57-09ac8d6f4b4e",
+          "url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/d982248e-8cfc-49b4-8e57-09ac8d6f4b4e/file_downloaded"
+        }
+      ]
+    },
+    {
+      "local_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/artifacts/0401a4dea236b7da-Fig.S4A.tif",
+      "sha256": "0401a4dea236b7da1b37534446301f235c27b3a8deac9ed230f7396d305d9692",
+      "bytes": 1231838,
+      "acquired_at": "2026-10-20T07:40:38.009210+00:00",
+      "members": [
+        {
+          "dataset": "wxdnxzm8g8",
+          "version": 1,
+          "folder": "Figures (new)",
+          "folder_id": "f36a0b6b-4f7c-4226-b055-13b577be297c",
+          "filename": "Fig.S4A.tif",
+          "file_id": "d0665d4a-364a-4630-bc98-ded70953403a",
+          "url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/d0665d4a-364a-4630-bc98-ded70953403a/file_downloaded"
+        }
+      ]
+    },
+    {
+      "local_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/artifacts/99dfa3251f1b84c0-Fig.S4B..tif",
+      "sha256": "99dfa3251f1b84c01cc82360040117f6dea247a668923943126f41314b251d7e",
+      "bytes": 1231838,
+      "acquired_at": "2026-10-20T07:40:40.625193+00:00",
+      "members": [
+        {
+          "dataset": "wxdnxzm8g8",
+          "version": 1,
+          "folder": "Figures (new)",
+          "folder_id": "f36a0b6b-4f7c-4226-b055-13b577be297c",
+          "filename": "Fig.S4B..tif",
+          "file_id": "3d5a7c79-e7f7-41e4-943c-f3f0e22180e9",
+          "url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/3d5a7c79-e7f7-41e4-943c-f3f0e22180e9/file_downloaded"
+        }
+      ]
+    },
+    {
+      "local_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/artifacts/c3eb905fbdc2f93e-Fig.S4C.png",
+      "sha256": "c3eb905fbdc2f93e55321ac301a7fe8f747f6cd04100ccf267fd128495c50229",
+      "bytes": 84139,
+      "acquired_at": "2026-10-20T07:40:43.568873+00:00",
+      "members": [
+        {
+          "dataset": "wxdnxzm8g8",
+          "version": 1,
+          "folder": "Figures (new)",
+          "folder_id": "f36a0b6b-4f7c-4226-b055-13b577be297c",
+          "filename": "Fig.S4C.png",
+          "file_id": "a61b0565-1c0c-4462-90f0-3aaf073d564b",
+          "url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/a61b0565-1c0c-4462-90f0-3aaf073d564b/file_downloaded"
+        }
+      ]
+    },
+    {
+      "local_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/artifacts/cf9c7f1a1b2470c7-Fig.S4 Gd-C.png",
+      "sha256": "cf9c7f1a1b2470c7fe42b7b148049b03ec072129ea1934c5214f98b3c8a1113e",
+      "bytes": 52202,
+      "acquired_at": "2026-10-20T07:40:45.136420+00:00",
+      "members": [
+        {
+          "dataset": "wxdnxzm8g8",
+          "version": 1,
+          "folder": "Figures (new)",
+          "folder_id": "f36a0b6b-4f7c-4226-b055-13b577be297c",
+          "filename": "Fig.S4 Gd-C.png",
+          "file_id": "84d0526c-d3ad-463d-bf4c-954980120db2",
+          "url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/84d0526c-d3ad-463d-bf4c-954980120db2/file_downloaded"
+        }
+      ]
+    },
+    {
+      "local_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/artifacts/b19d345d03789e2a-Fig.S4 Gd-Gd.png",
+      "sha256": "b19d345d03789e2a2dd508bee3c2a1ebf073f2ea82a9dcc559681c09768a86c5",
+      "bytes": 31192,
+      "acquired_at": "2026-10-20T07:40:46.887726+00:00",
+      "members": [
+        {
+          "dataset": "wxdnxzm8g8",
+          "version": 1,
+          "folder": "Figures (new)",
+          "folder_id": "f36a0b6b-4f7c-4226-b055-13b577be297c",
+          "filename": "Fig.S4 Gd-Gd.png",
+          "file_id": "e95dcbad-adf9-4839-8fb5-b661b410733e",
+          "url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/e95dcbad-adf9-4839-8fb5-b661b410733e/file_downloaded"
+        }
+      ]
+    },
+    {
+      "local_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/artifacts/331a80fcac1e5f1c-Fig.S4 Gd-O.png",
+      "sha256": "331a80fcac1e5f1c7d3b209f9fda87991bfe70b2b9b278165a664f931cbcfa67",
+      "bytes": 29566,
+      "acquired_at": "2026-10-20T07:40:51.128693+00:00",
+      "members": [
+        {
+          "dataset": "wxdnxzm8g8",
+          "version": 1,
+          "folder": "Figures (new)",
+          "folder_id": "f36a0b6b-4f7c-4226-b055-13b577be297c",
+          "filename": "Fig.S4 Gd-O.png",
+          "file_id": "ad216cb9-f0a6-445b-a2aa-d3416076e6ab",
+          "url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/ad216cb9-f0a6-445b-a2aa-d3416076e6ab/file_downloaded"
+        }
+      ]
+    },
+    {
+      "local_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/artifacts/b14011e231a6eb50-Fig.S4 Gd-P.png",
+      "sha256": "b14011e231a6eb5000a7c3a1da77b4979cf06490b8b2b5754fffa37122caf830",
+      "bytes": 47866,
+      "acquired_at": "2026-10-20T07:40:59.493575+00:00",
+      "members": [
+        {
+          "dataset": "wxdnxzm8g8",
+          "version": 1,
+          "folder": "Figures (new)",
+          "folder_id": "f36a0b6b-4f7c-4226-b055-13b577be297c",
+          "filename": "Fig.S4 Gd-P.png",
+          "file_id": "cfcb54b9-a30d-4532-9943-b7d8ff7bb7b8",
+          "url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/cfcb54b9-a30d-4532-9943-b7d8ff7bb7b8/file_downloaded"
+        }
+      ]
+    },
+    {
+      "local_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/artifacts/9a7e457de6ed57b3-Fig.S4 La-C.png",
+      "sha256": "9a7e457de6ed57b3be778c39006daa9521d0fce06fd47349a982db8d2bd22e94",
+      "bytes": 48509,
+      "acquired_at": "2026-10-20T07:41:00.736392+00:00",
+      "members": [
+        {
+          "dataset": "wxdnxzm8g8",
+          "version": 1,
+          "folder": "Figures (new)",
+          "folder_id": "f36a0b6b-4f7c-4226-b055-13b577be297c",
+          "filename": "Fig.S4 La-C.png",
+          "file_id": "4b6e460c-f67e-49a1-8ce6-53ede15e7793",
+          "url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/4b6e460c-f67e-49a1-8ce6-53ede15e7793/file_downloaded"
+        }
+      ]
+    },
+    {
+      "local_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/artifacts/f6fac13b7a75c6c6-Fig.S4 La+Gd-C.png",
+      "sha256": "f6fac13b7a75c6c67644edefe3b7ffbbfa7c965484de81478a9985f73c8cff1a",
+      "bytes": 58195,
+      "acquired_at": "2026-10-20T07:41:01.990850+00:00",
+      "members": [
+        {
+          "dataset": "wxdnxzm8g8",
+          "version": 1,
+          "folder": "Figures (new)",
+          "folder_id": "f36a0b6b-4f7c-4226-b055-13b577be297c",
+          "filename": "Fig.S4 La+Gd-C.png",
+          "file_id": "dcb3769d-88b2-42de-a5dc-94c36a38c804",
+          "url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/dcb3769d-88b2-42de-a5dc-94c36a38c804/file_downloaded"
+        }
+      ]
+    },
+    {
+      "local_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/artifacts/3a2f128d9f42f592-Fig.S4 La+Gd-Gd.png",
+      "sha256": "3a2f128d9f42f592b360ad53e46779eb24804284cebc16e7380f5a67b243d096",
+      "bytes": 24932,
+      "acquired_at": "2026-10-20T07:41:04.484512+00:00",
+      "members": [
+        {
+          "dataset": "wxdnxzm8g8",
+          "version": 1,
+          "folder": "Figures (new)",
+          "folder_id": "f36a0b6b-4f7c-4226-b055-13b577be297c",
+          "filename": "Fig.S4 La+Gd-Gd.png",
+          "file_id": "ff10b28d-8465-4a96-98fa-572e94a44dbe",
+          "url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/ff10b28d-8465-4a96-98fa-572e94a44dbe/file_downloaded"
+        }
+      ]
+    },
+    {
+      "local_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/artifacts/28d372989a1cae65-Fig.S4 La+Gd-La.png",
+      "sha256": "28d372989a1cae65f014cd06cdd2678e41670815419c36e46b2824d65ba94f54",
+      "bytes": 29759,
+      "acquired_at": "2026-10-20T07:41:06.037617+00:00",
+      "members": [
+        {
+          "dataset": "wxdnxzm8g8",
+          "version": 1,
+          "folder": "Figures (new)",
+          "folder_id": "f36a0b6b-4f7c-4226-b055-13b577be297c",
+          "filename": "Fig.S4 La+Gd-La.png",
+          "file_id": "c46f9632-74e5-4394-bae0-d93f9990cdec",
+          "url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/c46f9632-74e5-4394-bae0-d93f9990cdec/file_downloaded"
+        }
+      ]
+    },
+    {
+      "local_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/artifacts/60333621428e4fbf-Fig.S4 La+Gd-O.png",
+      "sha256": "60333621428e4fbf643f3e22ba02ed2dcff9f140b309730dab57e96b026f6ad1",
+      "bytes": 38417,
+      "acquired_at": "2026-10-20T07:41:07.292769+00:00",
+      "members": [
+        {
+          "dataset": "wxdnxzm8g8",
+          "version": 1,
+          "folder": "Figures (new)",
+          "folder_id": "f36a0b6b-4f7c-4226-b055-13b577be297c",
+          "filename": "Fig.S4 La+Gd-O.png",
+          "file_id": "c5c2a3ea-e53e-461b-a0ad-e53a65f4b31c",
+          "url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/c5c2a3ea-e53e-461b-a0ad-e53a65f4b31c/file_downloaded"
+        }
+      ]
+    },
+    {
+      "local_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/artifacts/d17199333a550202-Fig.S4 La+Gd-P.png",
+      "sha256": "d17199333a550202b647c352b2e8890f6030f2534a479acbc70526fd027e35d8",
+      "bytes": 52026,
+      "acquired_at": "2026-10-20T07:41:09.197299+00:00",
+      "members": [
+        {
+          "dataset": "wxdnxzm8g8",
+          "version": 1,
+          "folder": "Figures (new)",
+          "folder_id": "f36a0b6b-4f7c-4226-b055-13b577be297c",
+          "filename": "Fig.S4 La+Gd-P.png",
+          "file_id": "d4360286-5753-48b2-8275-3419ec4efeef",
+          "url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/d4360286-5753-48b2-8275-3419ec4efeef/file_downloaded"
+        }
+      ]
+    },
+    {
+      "local_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/artifacts/324add69166f0f7d-Fig.S4 La-La.png",
+      "sha256": "324add69166f0f7d1a9805e65152d281e6eeab315f7dae4f4254657094b02399",
+      "bytes": 40154,
+      "acquired_at": "2026-10-20T07:41:10.434942+00:00",
+      "members": [
+        {
+          "dataset": "wxdnxzm8g8",
+          "version": 1,
+          "folder": "Figures (new)",
+          "folder_id": "f36a0b6b-4f7c-4226-b055-13b577be297c",
+          "filename": "Fig.S4 La-La.png",
+          "file_id": "5d031699-a46f-4f94-a02b-7454acf5e17b",
+          "url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/5d031699-a46f-4f94-a02b-7454acf5e17b/file_downloaded"
+        }
+      ]
+    },
+    {
+      "local_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/artifacts/0e5ce2eb03140c4f-Fig.S4 La-O.png",
+      "sha256": "0e5ce2eb03140c4f1677d7323f4c61af09ac63155bd5fba6af7dbcb049a7f311",
+      "bytes": 30471,
+      "acquired_at": "2026-10-20T07:41:12.999089+00:00",
+      "members": [
+        {
+          "dataset": "wxdnxzm8g8",
+          "version": 1,
+          "folder": "Figures (new)",
+          "folder_id": "f36a0b6b-4f7c-4226-b055-13b577be297c",
+          "filename": "Fig.S4 La-O.png",
+          "file_id": "f540c1a1-327d-48ff-9a18-51a4eab1110d",
+          "url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/f540c1a1-327d-48ff-9a18-51a4eab1110d/file_downloaded"
+        }
+      ]
+    },
+    {
+      "local_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/artifacts/dbb3712d81e4f75a-Fig.S4 La-P.png",
+      "sha256": "dbb3712d81e4f75ad4963ea32485a3c50df67b2ba39ad41812eabd926ee35297",
+      "bytes": 48014,
+      "acquired_at": "2026-10-20T07:41:14.783282+00:00",
+      "members": [
+        {
+          "dataset": "wxdnxzm8g8",
+          "version": 1,
+          "folder": "Figures (new)",
+          "folder_id": "f36a0b6b-4f7c-4226-b055-13b577be297c",
+          "filename": "Fig.S4 La-P.png",
+          "file_id": "8608b53c-c763-4e85-b821-b75550cebc67",
+          "url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/8608b53c-c763-4e85-b821-b75550cebc67/file_downloaded"
+        }
+      ]
+    },
+    {
+      "local_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/artifacts/3477e814ba0b4a63-Fig. Enlarged TEM images.png",
+      "sha256": "3477e814ba0b4a6368c734e4d49cb42669e1276a8e44a372a1130f888042e62a",
+      "bytes": 12732827,
+      "acquired_at": "2026-10-20T07:45:08.315369+00:00",
+      "members": [
+        {
+          "dataset": "wxdnxzm8g8",
+          "version": 1,
+          "folder": "GCA补充图片（新）",
+          "folder_id": "7ef8d3d5-284b-4bcb-9511-7383654e78e5",
+          "filename": "Fig. Enlarged TEM images.png",
+          "file_id": "a64c3870-a45f-467b-bcfc-a159ce68f3a3",
+          "url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/a64c3870-a45f-467b-bcfc-a159ce68f3a3/file_downloaded"
+        },
+        {
+          "dataset": "6trx96yjt9",
+          "version": 2,
+          "folder": "Figures-2",
+          "folder_id": "e08ce6dd-c534-4048-9d02-328f1a98ecc8",
+          "filename": "Fig. Enlarged TEM images.png",
+          "file_id": "1579a83d-604b-4be1-b04e-03931e7f29c7",
+          "url": "https://data.mendeley.com/public-files/datasets/6trx96yjt9/files/1579a83d-604b-4be1-b04e-03931e7f29c7/file_downloaded"
+        }
+      ]
+    },
+    {
+      "local_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/artifacts/df3df41d4736370a-Fig. FTIR at different pH values.png",
+      "sha256": "df3df41d4736370a69e16078cfa37542a4d23c461d4e74054f2dabf4e5d375b2",
+      "bytes": 880624,
+      "acquired_at": "2026-10-20T07:42:44.183966+00:00",
+      "members": [
+        {
+          "dataset": "wxdnxzm8g8",
+          "version": 1,
+          "folder": "GCA补充图片（新）",
+          "folder_id": "7ef8d3d5-284b-4bcb-9511-7383654e78e5",
+          "filename": "Fig. FTIR at different pH values.png",
+          "file_id": "d612c9db-0bfe-4c0b-9e9e-0120b5fd8d9a",
+          "url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/d612c9db-0bfe-4c0b-9e9e-0120b5fd8d9a/file_downloaded"
+        }
+      ]
+    },
+    {
+      "local_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/artifacts/2c12f1650d868c3a-Fig. FTIR of functional group shielding-01.png",
+      "sha256": "2c12f1650d868c3ac5d954884e1f8e2428534270f5b857add02892a376833147",
+      "bytes": 362221,
+      "acquired_at": "2026-10-20T07:42:48.151804+00:00",
+      "members": [
+        {
+          "dataset": "wxdnxzm8g8",
+          "version": 1,
+          "folder": "GCA补充图片（新）",
+          "folder_id": "7ef8d3d5-284b-4bcb-9511-7383654e78e5",
+          "filename": "Fig. FTIR of functional group shielding-01.png",
+          "file_id": "3f145561-457a-4916-a734-a33cda38f981",
+          "url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/3f145561-457a-4916-a734-a33cda38f981/file_downloaded"
+        }
+      ]
+    },
+    {
+      "local_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/artifacts/a7745680e2f923a8-Fig. Visual MINTEQ.png",
+      "sha256": "a7745680e2f923a8a18f0a001082a074deafc7fa8965fc2bfd587b2a13f9988f",
+      "bytes": 90005,
+      "acquired_at": "2026-10-20T07:42:49.610832+00:00",
+      "members": [
+        {
+          "dataset": "wxdnxzm8g8",
+          "version": 1,
+          "folder": "GCA补充图片（新）",
+          "folder_id": "7ef8d3d5-284b-4bcb-9511-7383654e78e5",
+          "filename": "Fig. Visual MINTEQ.png",
+          "file_id": "95da2d33-c533-40e1-83ce-88c16a3c8a85",
+          "url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/95da2d33-c533-40e1-83ce-88c16a3c8a85/file_downloaded"
+        }
+      ]
+    },
+    {
+      "local_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/artifacts/d9532cfca3e38741-Fig. zeta potential.png",
+      "sha256": "d9532cfca3e38741de8e6d89ee89f49871b1c7166cc8b070e181fdf9c810bc04",
+      "bytes": 82826,
+      "acquired_at": "2026-10-20T07:42:51.111477+00:00",
+      "members": [
+        {
+          "dataset": "wxdnxzm8g8",
+          "version": 1,
+          "folder": "GCA补充图片（新）",
+          "folder_id": "7ef8d3d5-284b-4bcb-9511-7383654e78e5",
+          "filename": "Fig. zeta potential.png",
+          "file_id": "0adcce66-6dc1-4f80-acf5-d42b54590226",
+          "url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/0adcce66-6dc1-4f80-acf5-d42b54590226/file_downloaded"
+        }
+      ]
+    },
+    {
+      "local_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/artifacts/b2316e164cf88aa7-Research Data-2.xlsx",
+      "sha256": "b2316e164cf88aa7dbdd7d2a15ed747f53bf15abeb538ba4adcfe04d59ac32a7",
+      "bytes": 1439220,
+      "acquired_at": "2026-10-20T07:42:56.195464+00:00",
+      "members": [
+        {
+          "dataset": "wxdnxzm8g8",
+          "version": 1,
+          "folder": "Research Data",
+          "folder_id": "247ea10f-1fe7-499f-b4ab-bcb2dff99815",
+          "filename": "Research Data-2.xlsx",
+          "file_id": "a86f9918-3aa8-43a4-bb58-0279dfb4e118",
+          "url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/a86f9918-3aa8-43a4-bb58-0279dfb4e118/file_downloaded"
+        }
+      ]
+    },
+    {
+      "local_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/artifacts/954d4e7020c37d07-Research Data.xlsx",
+      "sha256": "954d4e7020c37d071273ae73fe57900c714ad98d0f3dbde67ea82c32ff622792",
+      "bytes": 1230806,
+      "acquired_at": "2026-10-20T07:44:04.251271+00:00",
+      "members": [
+        {
+          "dataset": "wxdnxzm8g8",
+          "version": 1,
+          "folder": "Research Data",
+          "folder_id": "247ea10f-1fe7-499f-b4ab-bcb2dff99815",
+          "filename": "Research Data.xlsx",
+          "file_id": "af133b56-4025-4d6f-9800-f031a4abb0bb",
+          "url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/af133b56-4025-4d6f-9800-f031a4abb0bb/file_downloaded"
+        }
+      ]
+    },
+    {
+      "local_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/artifacts/3afb8414735325b4-Research Data-2.xlsx",
+      "sha256": "3afb8414735325b472692f9ef7c597786e70180fab31f9bbc5691a46244e475d",
+      "bytes": 1115686,
+      "acquired_at": "2026-10-20T07:44:14.006710+00:00",
+      "members": [
+        {
+          "dataset": "6trx96yjt9",
+          "version": 2,
+          "folder": "Research Data",
+          "folder_id": "2e5508ec-11eb-4ca0-b788-b82b19aaea33",
+          "filename": "Research Data-2.xlsx",
+          "file_id": "d30fd8c9-7418-48a9-ac09-36aec8c9ebd6",
+          "url": "https://data.mendeley.com/public-files/datasets/6trx96yjt9/files/d30fd8c9-7418-48a9-ac09-36aec8c9ebd6/file_downloaded"
+        }
+      ]
+    },
+    {
+      "local_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/artifacts/f85523c9e8212877-Research Data.xlsx",
+      "sha256": "f85523c9e82128771f17541f1277ad74062ab9d92aae905cb068bcd52fd0c1fa",
+      "bytes": 1230630,
+      "acquired_at": "2026-10-20T07:44:56.278221+00:00",
+      "members": [
+        {
+          "dataset": "6trx96yjt9",
+          "version": 2,
+          "folder": "Research Data",
+          "folder_id": "2e5508ec-11eb-4ca0-b788-b82b19aaea33",
+          "filename": "Research Data.xlsx",
+          "file_id": "3543aca8-e803-4021-9562-439c7f6a482a",
+          "url": "https://data.mendeley.com/public-files/datasets/6trx96yjt9/files/3543aca8-e803-4021-9562-439c7f6a482a/file_downloaded"
+        },
+        {
+          "dataset": "6trx96yjt9",
+          "version": 1,
+          "folder": "Research Data",
+          "folder_id": "2e5508ec-11eb-4ca0-b788-b82b19aaea33",
+          "filename": "Research Data.xlsx",
+          "file_id": "3543aca8-e803-4021-9562-439c7f6a482a",
+          "url": "https://data.mendeley.com/public-files/datasets/6trx96yjt9/files/3543aca8-e803-4021-9562-439c7f6a482a/file_downloaded"
+        }
+      ]
+    }
+  ],
+  "other_acquisition_receipts": [
+    {
+      "name": "wxdnxzm8g8-v1/landing.html",
+      "url": "https://data.mendeley.com/datasets/wxdnxzm8g8/1",
+      "started_at": "2026-10-20T07:31:28.136558+00:00",
+      "status": 200,
+      "final_url": "https://data.mendeley.com/datasets/wxdnxzm8g8/1",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 117923,
+      "sha256": "65f2082fa3964ae741f7b057b11f361ee92aefd84f2d4fe49625d5292972e3e1",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/wxdnxzm8g8-v1/landing.html",
+      "finished_at": "2026-10-20T07:31:28.491638+00:00"
+    },
+    {
+      "name": "wxdnxzm8g8-v1/snapshot.json",
+      "url": "https://data.mendeley.com/public-api/datasets/wxdnxzm8g8/snapshot/1",
+      "started_at": "2026-10-20T07:31:28.136091+00:00",
+      "status": 200,
+      "final_url": "https://data.mendeley.com/public-api/datasets/wxdnxzm8g8/snapshot/1",
+      "content_type": "application/json; charset=utf-8",
+      "bytes": 1738,
+      "sha256": "43deca2ce4e662e8c6ff80936d86def80bc3b8bbe6849ac8135ed828283bbca6",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/wxdnxzm8g8-v1/snapshot.json",
+      "finished_at": "2026-10-20T07:31:28.395229+00:00"
+    },
+    {
+      "name": "wxdnxzm8g8-v1/folders.json",
+      "url": "https://data.mendeley.com/public-api/datasets/wxdnxzm8g8/folders/1",
+      "started_at": "2026-10-20T07:31:28.136945+00:00",
+      "status": 200,
+      "final_url": "https://data.mendeley.com/public-api/datasets/wxdnxzm8g8/folders/1",
+      "content_type": "application/json; charset=utf-8",
+      "bytes": 598,
+      "sha256": "babdb73ea61a2e6e741141e760574f217fb47af9c5a5f0844a5f0c01265e7814",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/wxdnxzm8g8-v1/folders.json",
+      "finished_at": "2026-10-20T07:31:28.866792+00:00"
+    },
+    {
+      "name": "wxdnxzm8g8-v1/files-root.json",
+      "url": "https://data.mendeley.com/public-api/datasets/wxdnxzm8g8/files?folder_id=root&version=1&$start=0&$limit=1000",
+      "started_at": "2026-10-20T07:31:28.137065+00:00",
+      "status": 200,
+      "final_url": "https://data.mendeley.com/public-api/datasets/wxdnxzm8g8/files?folder_id=root&version=1&$start=0&$limit=1000",
+      "content_type": "application/json; charset=utf-8",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/wxdnxzm8g8-v1/files-root.json",
+      "finished_at": "2026-10-20T07:31:28.401589+00:00"
+    },
+    {
+      "name": "6trx96yjt9-v2/landing.html",
+      "url": "https://data.mendeley.com/datasets/6trx96yjt9/2",
+      "started_at": "2026-10-20T07:31:28.395328+00:00",
+      "status": 200,
+      "final_url": "https://data.mendeley.com/datasets/6trx96yjt9/2",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 118407,
+      "sha256": "2b239127afb5571e288c7e1a17ce8fdbddf2cba0d47d17e9071d788ac0568532",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/6trx96yjt9-v2/landing.html",
+      "finished_at": "2026-10-20T07:31:29.854686+00:00"
+    },
+    {
+      "name": "6trx96yjt9-v2/snapshot.json",
+      "url": "https://data.mendeley.com/public-api/datasets/6trx96yjt9/snapshot/2",
+      "started_at": "2026-10-20T07:31:28.401642+00:00",
+      "status": 200,
+      "final_url": "https://data.mendeley.com/public-api/datasets/6trx96yjt9/snapshot/2",
+      "content_type": "application/json; charset=utf-8",
+      "bytes": 1843,
+      "sha256": "40492fb7ba823c290e6353cef6575d3e9ad357345226bcb67d55990916f0eb83",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/6trx96yjt9-v2/snapshot.json",
+      "finished_at": "2026-10-20T07:31:28.633143+00:00"
+    },
+    {
+      "name": "6trx96yjt9-v2/folders.json",
+      "url": "https://data.mendeley.com/public-api/datasets/6trx96yjt9/folders/2",
+      "started_at": "2026-10-20T07:31:28.491717+00:00",
+      "status": 200,
+      "final_url": "https://data.mendeley.com/public-api/datasets/6trx96yjt9/folders/2",
+      "content_type": "application/json; charset=utf-8",
+      "bytes": 422,
+      "sha256": "f56c4145f9e3580920e75bd8a42c2670a64c6715d238d2288e302f2802012739",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/6trx96yjt9-v2/folders.json",
+      "finished_at": "2026-10-20T07:31:28.764752+00:00"
+    },
+    {
+      "name": "6trx96yjt9-v2/files-root.json",
+      "url": "https://data.mendeley.com/public-api/datasets/6trx96yjt9/files?folder_id=root&version=2&$start=0&$limit=1000",
+      "started_at": "2026-10-20T07:31:28.633203+00:00",
+      "status": 200,
+      "final_url": "https://data.mendeley.com/public-api/datasets/6trx96yjt9/files?folder_id=root&version=2&$start=0&$limit=1000",
+      "content_type": "application/json; charset=utf-8",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/6trx96yjt9-v2/files-root.json",
+      "finished_at": "2026-10-20T07:31:28.853182+00:00"
+    },
+    {
+      "name": "6trx96yjt9-v1/landing.html",
+      "url": "https://data.mendeley.com/datasets/6trx96yjt9/1",
+      "started_at": "2026-10-20T07:31:28.764885+00:00",
+      "status": 200,
+      "final_url": "https://data.mendeley.com/datasets/6trx96yjt9/1",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 118398,
+      "sha256": "f9b2f86f93cc70672353dde7c4d918a883133bfd876253eb8deabf837bdbf9d0",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/6trx96yjt9-v1/landing.html",
+      "finished_at": "2026-10-20T07:31:29.549093+00:00"
+    },
+    {
+      "name": "6trx96yjt9-v1/snapshot.json",
+      "url": "https://data.mendeley.com/public-api/datasets/6trx96yjt9/snapshot/1",
+      "started_at": "2026-10-20T07:31:28.853240+00:00",
+      "status": 200,
+      "final_url": "https://data.mendeley.com/public-api/datasets/6trx96yjt9/snapshot/1",
+      "content_type": "application/json; charset=utf-8",
+      "bytes": 1843,
+      "sha256": "50cc197ad866868954db57f7ac6a04fe6bbb9cd2f2cdcc64c2f433c0c267f463",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/6trx96yjt9-v1/snapshot.json",
+      "finished_at": "2026-10-20T07:31:29.336070+00:00"
+    },
+    {
+      "name": "6trx96yjt9-v1/folders.json",
+      "url": "https://data.mendeley.com/public-api/datasets/6trx96yjt9/folders/1",
+      "started_at": "2026-10-20T07:31:28.866869+00:00",
+      "status": 200,
+      "final_url": "https://data.mendeley.com/public-api/datasets/6trx96yjt9/folders/1",
+      "content_type": "application/json; charset=utf-8",
+      "bytes": 265,
+      "sha256": "4f8b36d3ba6aaab8376e610048ef3056d4a73b6d179ffe87274094c70eb5ebe9",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/6trx96yjt9-v1/folders.json",
+      "finished_at": "2026-10-20T07:31:29.232505+00:00"
+    },
+    {
+      "name": "6trx96yjt9-v1/files-root.json",
+      "url": "https://data.mendeley.com/public-api/datasets/6trx96yjt9/files?folder_id=root&version=1&$start=0&$limit=1000",
+      "started_at": "2026-10-20T07:31:29.232590+00:00",
+      "status": 200,
+      "final_url": "https://data.mendeley.com/public-api/datasets/6trx96yjt9/files?folder_id=root&version=1&$start=0&$limit=1000",
+      "content_type": "application/json; charset=utf-8",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/6trx96yjt9-v1/files-root.json",
+      "finished_at": "2026-10-20T07:31:29.450067+00:00"
+    },
+    {
+      "name": "article-crossref.json",
+      "url": "https://api.crossref.org/works/10.1016/j.gca.2026.02.015",
+      "started_at": "2026-10-20T07:31:29.336145+00:00",
+      "status": 200,
+      "final_url": "https://api.crossref.org/works/10.1016/j.gca.2026.02.015",
+      "content_type": "application/json",
+      "bytes": 33436,
+      "sha256": "fac89f13e1b8bb972aa2160e102d4d67f24239c205da6790f7e520d774af5370",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/article-crossref.json",
+      "finished_at": "2026-10-20T07:31:30.071326+00:00"
+    },
+    {
+      "name": "article-openalex.json",
+      "url": "https://api.openalex.org/works/https://doi.org/10.1016/j.gca.2026.02.015",
+      "started_at": "2026-10-20T07:31:29.450124+00:00",
+      "status": 200,
+      "final_url": "https://api.openalex.org/works/https://doi.org/10.1016/j.gca.2026.02.015",
+      "content_type": "application/json",
+      "bytes": 24523,
+      "sha256": "0a617ac8bb846c21ebc79e623576f1b1327035bcc8ae27f69c46814d8540d05a",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/article-openalex.json",
+      "finished_at": "2026-10-20T07:31:29.743408+00:00"
+    },
+    {
+      "name": "wxdnxzm8g8-v1/files-2b68a76f-7f3b-4854-b250-ef038eaa8462.json",
+      "url": "https://data.mendeley.com/public-api/datasets/wxdnxzm8g8/files?folder_id=2b68a76f-7f3b-4854-b250-ef038eaa8462&version=1&$start=0&$limit=1000",
+      "started_at": "2026-10-20T07:32:00.334075+00:00",
+      "status": 200,
+      "final_url": "https://data.mendeley.com/public-api/datasets/wxdnxzm8g8/files?folder_id=2b68a76f-7f3b-4854-b250-ef038eaa8462&version=1&$start=0&$limit=1000",
+      "content_type": "application/json; charset=utf-8",
+      "bytes": 24912,
+      "sha256": "5ecc208242fe440c3fbda5a6400a60762fc886e3be34ef62c55c4e4abd64f0e0",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/wxdnxzm8g8-v1/files-2b68a76f-7f3b-4854-b250-ef038eaa8462.json",
+      "finished_at": "2026-10-20T07:32:00.571637+00:00"
+    },
+    {
+      "name": "wxdnxzm8g8-v1/files-f36a0b6b-4f7c-4226-b055-13b577be297c.json",
+      "url": "https://data.mendeley.com/public-api/datasets/wxdnxzm8g8/files?folder_id=f36a0b6b-4f7c-4226-b055-13b577be297c&version=1&$start=0&$limit=1000",
+      "started_at": "2026-10-20T07:32:00.334867+00:00",
+      "status": 200,
+      "final_url": "https://data.mendeley.com/public-api/datasets/wxdnxzm8g8/files?folder_id=f36a0b6b-4f7c-4226-b055-13b577be297c&version=1&$start=0&$limit=1000",
+      "content_type": "application/json; charset=utf-8",
+      "bytes": 16585,
+      "sha256": "903ad7a1bd8f5596ecc23ddef327ea54f8418c3ea3e2454ce433b95e484a2972",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/wxdnxzm8g8-v1/files-f36a0b6b-4f7c-4226-b055-13b577be297c.json",
+      "finished_at": "2026-10-20T07:32:00.586931+00:00"
+    },
+    {
+      "name": "wxdnxzm8g8-v1/files-7ef8d3d5-284b-4bcb-9511-7383654e78e5.json",
+      "url": "https://data.mendeley.com/public-api/datasets/wxdnxzm8g8/files?folder_id=7ef8d3d5-284b-4bcb-9511-7383654e78e5&version=1&$start=0&$limit=1000",
+      "started_at": "2026-10-20T07:32:00.335159+00:00",
+      "status": 200,
+      "final_url": "https://data.mendeley.com/public-api/datasets/wxdnxzm8g8/files?folder_id=7ef8d3d5-284b-4bcb-9511-7383654e78e5&version=1&$start=0&$limit=1000",
+      "content_type": "application/json; charset=utf-8",
+      "bytes": 3856,
+      "sha256": "851777a32439d0b2905b6aae27c1c0c08a0bbbab2ff1a252314879a6db254ad8",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/wxdnxzm8g8-v1/files-7ef8d3d5-284b-4bcb-9511-7383654e78e5.json",
+      "finished_at": "2026-10-20T07:32:01.007861+00:00"
+    },
+    {
+      "name": "wxdnxzm8g8-v1/files-247ea10f-1fe7-499f-b4ab-bcb2dff99815.json",
+      "url": "https://data.mendeley.com/public-api/datasets/wxdnxzm8g8/files?folder_id=247ea10f-1fe7-499f-b4ab-bcb2dff99815&version=1&$start=0&$limit=1000",
+      "started_at": "2026-10-20T07:32:00.335441+00:00",
+      "status": 200,
+      "final_url": "https://data.mendeley.com/public-api/datasets/wxdnxzm8g8/files?folder_id=247ea10f-1fe7-499f-b4ab-bcb2dff99815&version=1&$start=0&$limit=1000",
+      "content_type": "application/json; charset=utf-8",
+      "bytes": 1635,
+      "sha256": "932e061d7fc8ce4319e2000f60e4cc7c2f378ce243d65897df09c7523cb0b50f",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/wxdnxzm8g8-v1/files-247ea10f-1fe7-499f-b4ab-bcb2dff99815.json",
+      "finished_at": "2026-10-20T07:32:00.568385+00:00"
+    },
+    {
+      "name": "6trx96yjt9-v2/files-df0ac996-8832-4534-b377-2ca596837092.json",
+      "url": "https://data.mendeley.com/public-api/datasets/6trx96yjt9/files?folder_id=df0ac996-8832-4534-b377-2ca596837092&version=2&$start=0&$limit=1000",
+      "started_at": "2026-10-20T07:32:00.568488+00:00",
+      "status": 200,
+      "final_url": "https://data.mendeley.com/public-api/datasets/6trx96yjt9/files?folder_id=df0ac996-8832-4534-b377-2ca596837092&version=2&$start=0&$limit=1000",
+      "content_type": "application/json; charset=utf-8",
+      "bytes": 24917,
+      "sha256": "5d57cf115d3e065545777b1812a77af16ec54fff730b254c08db8a60ceb143b6",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/6trx96yjt9-v2/files-df0ac996-8832-4534-b377-2ca596837092.json",
+      "finished_at": "2026-10-20T07:32:00.787976+00:00"
+    },
+    {
+      "name": "6trx96yjt9-v2/files-e08ce6dd-c534-4048-9d02-328f1a98ecc8.json",
+      "url": "https://data.mendeley.com/public-api/datasets/6trx96yjt9/files?folder_id=e08ce6dd-c534-4048-9d02-328f1a98ecc8&version=2&$start=0&$limit=1000",
+      "started_at": "2026-10-20T07:32:00.571718+00:00",
+      "status": 200,
+      "final_url": "https://data.mendeley.com/public-api/datasets/6trx96yjt9/files?folder_id=e08ce6dd-c534-4048-9d02-328f1a98ecc8&version=2&$start=0&$limit=1000",
+      "content_type": "application/json; charset=utf-8",
+      "bytes": 773,
+      "sha256": "69009a8780fadcfce76230f52634b236f7b752bd0bd0c51c95cb9779debd9927",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/6trx96yjt9-v2/files-e08ce6dd-c534-4048-9d02-328f1a98ecc8.json",
+      "finished_at": "2026-10-20T07:32:01.227565+00:00"
+    },
+    {
+      "name": "6trx96yjt9-v2/files-2e5508ec-11eb-4ca0-b788-b82b19aaea33.json",
+      "url": "https://data.mendeley.com/public-api/datasets/6trx96yjt9/files?folder_id=2e5508ec-11eb-4ca0-b788-b82b19aaea33&version=2&$start=0&$limit=1000",
+      "started_at": "2026-10-20T07:32:00.587000+00:00",
+      "status": 200,
+      "final_url": "https://data.mendeley.com/public-api/datasets/6trx96yjt9/files?folder_id=2e5508ec-11eb-4ca0-b788-b82b19aaea33&version=2&$start=0&$limit=1000",
+      "content_type": "application/json; charset=utf-8",
+      "bytes": 1635,
+      "sha256": "2873fa73dac10efe459315128ff1f8056c58e2579da14c877031e76e6b6020cc",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/6trx96yjt9-v2/files-2e5508ec-11eb-4ca0-b788-b82b19aaea33.json",
+      "finished_at": "2026-10-20T07:32:00.800072+00:00"
+    },
+    {
+      "name": "6trx96yjt9-v1/files-df0ac996-8832-4534-b377-2ca596837092.json",
+      "url": "https://data.mendeley.com/public-api/datasets/6trx96yjt9/files?folder_id=df0ac996-8832-4534-b377-2ca596837092&version=1&$start=0&$limit=1000",
+      "started_at": "2026-10-20T07:32:00.788040+00:00",
+      "status": 200,
+      "final_url": "https://data.mendeley.com/public-api/datasets/6trx96yjt9/files?folder_id=df0ac996-8832-4534-b377-2ca596837092&version=1&$start=0&$limit=1000",
+      "content_type": "application/json; charset=utf-8",
+      "bytes": 24911,
+      "sha256": "1735b586b3816d84022c1edbdd0075d15c628fba1949150da2fb10573a64b4ba",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/6trx96yjt9-v1/files-df0ac996-8832-4534-b377-2ca596837092.json",
+      "finished_at": "2026-10-20T07:32:01.007989+00:00"
+    },
+    {
+      "name": "6trx96yjt9-v1/files-2e5508ec-11eb-4ca0-b788-b82b19aaea33.json",
+      "url": "https://data.mendeley.com/public-api/datasets/6trx96yjt9/files?folder_id=2e5508ec-11eb-4ca0-b788-b82b19aaea33&version=1&$start=0&$limit=1000",
+      "started_at": "2026-10-20T07:32:00.800171+00:00",
+      "status": 200,
+      "final_url": "https://data.mendeley.com/public-api/datasets/6trx96yjt9/files?folder_id=2e5508ec-11eb-4ca0-b788-b82b19aaea33&version=1&$start=0&$limit=1000",
+      "content_type": "application/json; charset=utf-8",
+      "bytes": 817,
+      "sha256": "478421ae1caa2265e310e6180476cbe039746945e39fb39e2e4fdb03795adf48",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/6trx96yjt9-v1/files-2e5508ec-11eb-4ca0-b788-b82b19aaea33.json",
+      "finished_at": "2026-10-20T07:32:01.019289+00:00"
+    },
+    {
+      "name": "article-api.xml",
+      "url": "https://api.elsevier.com/content/article/PII:S0016703726001080?httpAccept=text/xml",
+      "started_at": "2026-10-20T07:32:11.144716+00:00",
+      "status": 200,
+      "final_url": "https://api.elsevier.com/content/article/PII:S0016703726001080?httpAccept=text/xml",
+      "content_type": "text/xml;charset=UTF-8",
+      "bytes": 1880,
+      "sha256": "ba4ce6c7e2adf0b81019787ab92249018fbdb1ef8781b014c09b9be402c4952a",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/article-api.xml",
+      "finished_at": "2026-10-20T07:32:11.688216+00:00"
+    },
+    {
+      "name": "article-preview.html",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0016703726001080",
+      "started_at": "2026-10-20T07:32:11.145360+00:00",
+      "status": 403,
+      "error": "HTTP Error 403: Forbidden",
+      "bytes": 1207787,
+      "sha256": "0c66204728a43dbbe5da0bd995c9da66d2050a102bb27694066e290606886d1a",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/article-preview.html",
+      "finished_at": "2026-10-20T07:32:11.260153+00:00"
+    },
+    {
+      "name": "supplement-mmc1.docx",
+      "url": "https://ars.els-cdn.com/content/image/1-s2.0-S0016703726001080-mmc1.docx",
+      "started_at": "2026-10-20T07:35:28.792338+00:00",
+      "status": 404,
+      "error": "HTTP Error 404: Not Found",
+      "bytes": 189,
+      "sha256": "83cf0fd7cf2740129f2ddedb484cf2f65c2f831820454bbd6fa35dad094a4d8d",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/supplement-mmc1.docx",
+      "finished_at": "2026-10-20T07:35:28.977219+00:00"
+    },
+    {
+      "name": "supplement-mmc1.pdf",
+      "url": "https://ars.els-cdn.com/content/image/1-s2.0-S0016703726001080-mmc1.pdf",
+      "started_at": "2026-10-20T07:35:28.792899+00:00",
+      "status": 200,
+      "final_url": "https://ars.els-cdn.com/content/image/1-s2.0-S0016703726001080-mmc1.pdf",
+      "content_type": "application/pdf",
+      "bytes": 1958246,
+      "sha256": "88ec656e9127e19c00e284b348d7da5c6202c2f5dd8bcbb2b45f1d678042e26e",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/supplement-mmc1.pdf",
+      "finished_at": "2026-10-20T07:35:29.253094+00:00"
+    },
+    {
+      "name": "supplement-mmc2.xlsx",
+      "url": "https://ars.els-cdn.com/content/image/1-s2.0-S0016703726001080-mmc2.xlsx",
+      "started_at": "2026-10-20T07:36:06.154597+00:00",
+      "status": 404,
+      "error": "HTTP Error 404: Not Found",
+      "bytes": 189,
+      "sha256": "83cf0fd7cf2740129f2ddedb484cf2f65c2f831820454bbd6fa35dad094a4d8d",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/supplement-mmc2.xlsx",
+      "finished_at": "2026-10-20T07:36:06.324032+00:00"
+    },
+    {
+      "name": "ON693947.gb",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=ON693947&rettype=gb&retmode=text",
+      "started_at": "2026-10-20T07:36:33.780247+00:00",
+      "status": 200,
+      "final_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=ON693947&rettype=gb&retmode=text",
+      "content_type": "text/plain",
+      "bytes": 3391,
+      "sha256": "d35a2ddcaaaeb96feac4c07789a9a3d911f5cdc53ba136e6a5197ef769f8886e",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/ON693947.gb",
+      "finished_at": "2026-10-20T07:36:34.084413+00:00"
+    },
+    {
+      "name": "supplement-mmc2.xls",
+      "url": "https://ars.els-cdn.com/content/image/1-s2.0-S0016703726001080-mmc2.xls",
+      "started_at": "2026-10-20T07:36:33.780880+00:00",
+      "status": 404,
+      "error": "HTTP Error 404: Not Found",
+      "bytes": 189,
+      "sha256": "83cf0fd7cf2740129f2ddedb484cf2f65c2f831820454bbd6fa35dad094a4d8d",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/supplement-mmc2.xls",
+      "finished_at": "2026-10-20T07:36:33.923841+00:00"
+    },
+    {
+      "name": "article-gr6-large.jpg",
+      "url": "https://ars.els-cdn.com/content/image/1-s2.0-S0016703726001080-gr6_lrg.jpg",
+      "started_at": "2026-10-20T07:36:48.205542+00:00",
+      "status": 200,
+      "final_url": "https://ars.els-cdn.com/content/image/1-s2.0-S0016703726001080-gr6_lrg.jpg",
+      "content_type": "image/jpeg",
+      "bytes": 889832,
+      "sha256": "e8f18dd304664aa6b2719afc26643f3777926f52c5e7c1cd8159cc43004b4250",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/article-gr6-large.jpg",
+      "finished_at": "2026-10-20T07:36:48.476045+00:00"
+    },
+    {
+      "name": "article-gr7-large.jpg",
+      "url": "https://ars.els-cdn.com/content/image/1-s2.0-S0016703726001080-gr7_lrg.jpg",
+      "started_at": "2026-10-20T07:36:48.205093+00:00",
+      "status": 200,
+      "final_url": "https://ars.els-cdn.com/content/image/1-s2.0-S0016703726001080-gr7_lrg.jpg",
+      "content_type": "image/jpeg",
+      "bytes": 606081,
+      "sha256": "760515e3b8d45145a3388a865d0fe90afa592ee325cf2c3db2a01b040eea9f39",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/article-gr7-large.jpg",
+      "finished_at": "2026-10-20T07:36:48.522126+00:00"
+    },
+    {
+      "name": "patent-CN116640685A.pdf",
+      "url": "https://patentimages.storage.googleapis.com/74/8a/41/5451a8cdaf3ed3/CN116640685A.pdf",
+      "started_at": "2026-10-20T07:33:28.020544+00:00",
+      "status": 200,
+      "final_url": "https://patentimages.storage.googleapis.com/74/8a/41/5451a8cdaf3ed3/CN116640685A.pdf",
+      "content_type": "application/pdf",
+      "bytes": 623120,
+      "sha256": "2bf0c8c2d1b6b1f00904df2ea281af1ab7b975f28715f7920830ed48a3085313",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/patent-CN116640685A.pdf",
+      "finished_at": "2026-10-20T07:33:28.337934+00:00"
+    },
+    {
+      "name": "patent-CN116640685A.html",
+      "url": "https://patents.google.com/patent/CN116640685A/en",
+      "started_at": "2026-10-20T07:33:28.021723+00:00",
+      "status": 200,
+      "final_url": "https://patents.google.com/patent/CN116640685A/en",
+      "content_type": "text/html",
+      "bytes": 112705,
+      "sha256": "e1ba3a6a50fecfc8c12fd279f655785f689efe3ef51243f662a7dade459e674e",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/patent-CN116640685A.html",
+      "finished_at": "2026-10-20T07:33:28.628724+00:00"
+    }
+  ],
+  "workbook_schemas": [
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/artifacts/b2316e164cf88aa7-Research Data-2.xlsx",
+      "sha256": "b2316e164cf88aa7dbdd7d2a15ed747f53bf15abeb538ba4adcfe04d59ac32a7",
+      "members": [
+        {
+          "dataset": "wxdnxzm8g8",
+          "version": 1,
+          "file_id": "a86f9918-3aa8-43a4-bb58-0279dfb4e118",
+          "name": "Research Data-2.xlsx"
+        }
+      ],
+      "sheets": [
+        {
+          "name": "Sheet1",
+          "max_row": 4,
+          "max_column": 20,
+          "nonempty_cells": 8,
+          "formula_cells": 0,
+          "all_values_sha256": "9813a0aa87cd8c4992f70d71329475ce414dc731c0ea5684a65816ed1bd3e6a9"
+        },
+        {
+          "name": "Data 9",
+          "max_row": 9,
+          "max_column": 4,
+          "nonempty_cells": 36,
+          "formula_cells": 0,
+          "all_values_sha256": "fc11a8ac142985c7be54e330f542a8d3385190055d359becbd18ef64f9f5d64a"
+        },
+        {
+          "name": "Data 10",
+          "max_row": 7470,
+          "max_column": 16,
+          "nonempty_cells": 112050,
+          "formula_cells": 0,
+          "all_values_sha256": "d48e86d8bc238101b2c9d325b66a5e8c459ebfe7a5968d009de0d3d57ce866e3"
+        },
+        {
+          "name": "Data 11",
+          "max_row": 7470,
+          "max_column": 4,
+          "nonempty_cells": 29880,
+          "formula_cells": 0,
+          "all_values_sha256": "bd0e6b2473d028be683e0e0ec59aa38cd9ef223cffa8fb7a9e1dca2c5fc439f6"
+        },
+        {
+          "name": "Data 12",
+          "max_row": 14,
+          "max_column": 15,
+          "nonempty_cells": 194,
+          "formula_cells": 48,
+          "all_values_sha256": "50999f9b0e4a239087a6bac073eda2e2a2e5648cf0740a4acd777b940072f596"
+        }
+      ]
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/artifacts/954d4e7020c37d07-Research Data.xlsx",
+      "sha256": "954d4e7020c37d071273ae73fe57900c714ad98d0f3dbde67ea82c32ff622792",
+      "members": [
+        {
+          "dataset": "wxdnxzm8g8",
+          "version": 1,
+          "file_id": "af133b56-4025-4d6f-9800-f031a4abb0bb",
+          "name": "Research Data.xlsx"
+        }
+      ],
+      "sheets": [
+        {
+          "name": "Sheet1",
+          "max_row": 8,
+          "max_column": 20,
+          "nonempty_cells": 16,
+          "formula_cells": 0,
+          "all_values_sha256": "fc3897b4b4109816df047fe92da892d2745cee43477f2d7d9454ebfdf89667b2"
+        },
+        {
+          "name": "Data 1",
+          "max_row": 15,
+          "max_column": 4,
+          "nonempty_cells": 48,
+          "formula_cells": 0,
+          "all_values_sha256": "2545c0cd459fc1af49180c9c5085da87c38e6782c96443be448a79e882d65f63"
+        },
+        {
+          "name": "Data 2",
+          "max_row": 53,
+          "max_column": 9,
+          "nonempty_cells": 347,
+          "formula_cells": 0,
+          "all_values_sha256": "0e52a425c58b2b61b2f3fc2ff3689984bb4062289d962804472dfe57f8a06658"
+        },
+        {
+          "name": "Data 3",
+          "max_row": 27,
+          "max_column": 13,
+          "nonempty_cells": 302,
+          "formula_cells": 0,
+          "all_values_sha256": "6e7b3c5dd27e3ac38595a9ef712824fd20a98147b0a4b5fae14d92177fbddab6"
+        },
+        {
+          "name": "Data 4",
+          "max_row": 7470,
+          "max_column": 5,
+          "nonempty_cells": 37349,
+          "formula_cells": 0,
+          "all_values_sha256": "fe8c05f89945c7602ed55f3fa036b04f682ce92822b546e0686a1becf278e852"
+        },
+        {
+          "name": "Data 5",
+          "max_row": 1607,
+          "max_column": 145,
+          "nonempty_cells": 113397,
+          "formula_cells": 0,
+          "all_values_sha256": "0da8f3513d7d2b7c849912d237f74700a7e35363c1ee07924671f19aa010106b"
+        },
+        {
+          "name": "Data 6",
+          "max_row": 17,
+          "max_column": 12,
+          "nonempty_cells": 70,
+          "formula_cells": 0,
+          "all_values_sha256": "69ceec7985b0b665cb4fed3b22c0cf483190665c2006a6379a97d7f49cc554ab"
+        },
+        {
+          "name": "Data 7",
+          "max_row": 26,
+          "max_column": 11,
+          "nonempty_cells": 180,
+          "formula_cells": 0,
+          "all_values_sha256": "cabace0252c0a17fdc38a93debaaf8ffd65146008f040c17a926ffea627c6235"
+        },
+        {
+          "name": "Data 8",
+          "max_row": 18,
+          "max_column": 5,
+          "nonempty_cells": 68,
+          "formula_cells": 0,
+          "all_values_sha256": "4e0503b6c8c30b3eb85c92bbbf63fc66471fda9ad4fb171329d909e256f304fb"
+        }
+      ]
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/artifacts/3afb8414735325b4-Research Data-2.xlsx",
+      "sha256": "3afb8414735325b472692f9ef7c597786e70180fab31f9bbc5691a46244e475d",
+      "members": [
+        {
+          "dataset": "6trx96yjt9",
+          "version": 2,
+          "file_id": "d30fd8c9-7418-48a9-ac09-36aec8c9ebd6",
+          "name": "Research Data-2.xlsx"
+        }
+      ],
+      "sheets": [
+        {
+          "name": "Sheet1",
+          "max_row": 4,
+          "max_column": 20,
+          "nonempty_cells": 8,
+          "formula_cells": 0,
+          "all_values_sha256": "9813a0aa87cd8c4992f70d71329475ce414dc731c0ea5684a65816ed1bd3e6a9"
+        },
+        {
+          "name": "Data 9",
+          "max_row": 9,
+          "max_column": 4,
+          "nonempty_cells": 36,
+          "formula_cells": 0,
+          "all_values_sha256": "fc11a8ac142985c7be54e330f542a8d3385190055d359becbd18ef64f9f5d64a"
+        },
+        {
+          "name": "Data 10",
+          "max_row": 7470,
+          "max_column": 10,
+          "nonempty_cells": 74700,
+          "formula_cells": 0,
+          "all_values_sha256": "c126484c6b05455c9d8a4d481bcfee2ce90262276d67a3b1cf281215acaf5fa3"
+        },
+        {
+          "name": "Data 11",
+          "max_row": 7470,
+          "max_column": 4,
+          "nonempty_cells": 29880,
+          "formula_cells": 0,
+          "all_values_sha256": "bd0e6b2473d028be683e0e0ec59aa38cd9ef223cffa8fb7a9e1dca2c5fc439f6"
+        },
+        {
+          "name": "Data 12",
+          "max_row": 14,
+          "max_column": 15,
+          "nonempty_cells": 194,
+          "formula_cells": 48,
+          "all_values_sha256": "50999f9b0e4a239087a6bac073eda2e2a2e5648cf0740a4acd777b940072f596"
+        }
+      ]
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/artifacts/f85523c9e8212877-Research Data.xlsx",
+      "sha256": "f85523c9e82128771f17541f1277ad74062ab9d92aae905cb068bcd52fd0c1fa",
+      "members": [
+        {
+          "dataset": "6trx96yjt9",
+          "version": 2,
+          "file_id": "3543aca8-e803-4021-9562-439c7f6a482a",
+          "name": "Research Data.xlsx"
+        },
+        {
+          "dataset": "6trx96yjt9",
+          "version": 1,
+          "file_id": "3543aca8-e803-4021-9562-439c7f6a482a",
+          "name": "Research Data.xlsx"
+        }
+      ],
+      "sheets": [
+        {
+          "name": "Sheet1",
+          "max_row": 8,
+          "max_column": 20,
+          "nonempty_cells": 16,
+          "formula_cells": 0,
+          "all_values_sha256": "fc3897b4b4109816df047fe92da892d2745cee43477f2d7d9454ebfdf89667b2"
+        },
+        {
+          "name": "Data 1",
+          "max_row": 15,
+          "max_column": 4,
+          "nonempty_cells": 48,
+          "formula_cells": 0,
+          "all_values_sha256": "2545c0cd459fc1af49180c9c5085da87c38e6782c96443be448a79e882d65f63"
+        },
+        {
+          "name": "Data 2",
+          "max_row": 52,
+          "max_column": 9,
+          "nonempty_cells": 338,
+          "formula_cells": 0,
+          "all_values_sha256": "f0fbfd5c980724d954bcbf6657e32323f3f41adef614676c615be76ed468069f"
+        },
+        {
+          "name": "Data 3",
+          "max_row": 27,
+          "max_column": 13,
+          "nonempty_cells": 302,
+          "formula_cells": 0,
+          "all_values_sha256": "6e7b3c5dd27e3ac38595a9ef712824fd20a98147b0a4b5fae14d92177fbddab6"
+        },
+        {
+          "name": "Data 4",
+          "max_row": 7470,
+          "max_column": 5,
+          "nonempty_cells": 37349,
+          "formula_cells": 0,
+          "all_values_sha256": "fe8c05f89945c7602ed55f3fa036b04f682ce92822b546e0686a1becf278e852"
+        },
+        {
+          "name": "Data 5",
+          "max_row": 1607,
+          "max_column": 145,
+          "nonempty_cells": 113397,
+          "formula_cells": 0,
+          "all_values_sha256": "0da8f3513d7d2b7c849912d237f74700a7e35363c1ee07924671f19aa010106b"
+        },
+        {
+          "name": "Data 6",
+          "max_row": 17,
+          "max_column": 12,
+          "nonempty_cells": 70,
+          "formula_cells": 0,
+          "all_values_sha256": "69ceec7985b0b665cb4fed3b22c0cf483190665c2006a6379a97d7f49cc554ab"
+        },
+        {
+          "name": "Data 7",
+          "max_row": 26,
+          "max_column": 11,
+          "nonempty_cells": 180,
+          "formula_cells": 0,
+          "all_values_sha256": "cabace0252c0a17fdc38a93debaaf8ffd65146008f040c17a926ffea627c6235"
+        },
+        {
+          "name": "Data 8",
+          "max_row": 18,
+          "max_column": 5,
+          "nonempty_cells": 68,
+          "formula_cells": 0,
+          "all_values_sha256": "4e0503b6c8c30b3eb85c92bbbf63fc66471fda9ad4fb171329d909e256f304fb"
+        }
+      ]
+    }
+  ],
+  "workbook_cell_comparison": [
+    {
+      "older_sha256": "f85523c9e82128771f17541f1277ad74062ab9d92aae905cb068bcd52fd0c1fa",
+      "newer_sha256": "954d4e7020c37d071273ae73fe57900c714ad98d0f3dbde67ea82c32ff622792",
+      "sheets": [
+        {
+          "name": "Sheet1",
+          "old_present": true,
+          "new_present": true,
+          "different_cells": 0
+        },
+        {
+          "name": "Data 1",
+          "old_present": true,
+          "new_present": true,
+          "different_cells": 0
+        },
+        {
+          "name": "Data 2",
+          "old_present": true,
+          "new_present": true,
+          "different_cells": 59
+        },
+        {
+          "name": "Data 3",
+          "old_present": true,
+          "new_present": true,
+          "different_cells": 0
+        },
+        {
+          "name": "Data 4",
+          "old_present": true,
+          "new_present": true,
+          "different_cells": 0
+        },
+        {
+          "name": "Data 5",
+          "old_present": true,
+          "new_present": true,
+          "different_cells": 0
+        },
+        {
+          "name": "Data 6",
+          "old_present": true,
+          "new_present": true,
+          "different_cells": 0
+        },
+        {
+          "name": "Data 7",
+          "old_present": true,
+          "new_present": true,
+          "different_cells": 0
+        },
+        {
+          "name": "Data 8",
+          "old_present": true,
+          "new_present": true,
+          "different_cells": 0
+        }
+      ]
+    },
+    {
+      "older_sha256": "3afb8414735325b472692f9ef7c597786e70180fab31f9bbc5691a46244e475d",
+      "newer_sha256": "b2316e164cf88aa7dbdd7d2a15ed747f53bf15abeb538ba4adcfe04d59ac32a7",
+      "sheets": [
+        {
+          "name": "Sheet1",
+          "old_present": true,
+          "new_present": true,
+          "different_cells": 0
+        },
+        {
+          "name": "Data 9",
+          "old_present": true,
+          "new_present": true,
+          "different_cells": 0
+        },
+        {
+          "name": "Data 10",
+          "old_present": true,
+          "new_present": true,
+          "different_cells": 112030
+        },
+        {
+          "name": "Data 11",
+          "old_present": true,
+          "new_present": true,
+          "different_cells": 0
+        },
+        {
+          "name": "Data 12",
+          "old_present": true,
+          "new_present": true,
+          "different_cells": 0
+        }
+      ]
+    }
+  ],
+  "label_audit": {
+    "unexpected_labels": [
+      {
+        "cell": "M1",
+        "value": "Frederik Southam Balfour"
+      },
+      {
+        "cell": "U1",
+        "value": "Frederik Southam Balfour"
+      },
+      {
+        "cell": "AC1",
+        "value": "Frederik Southam Balfour"
+      },
+      {
+        "cell": "AK1",
+        "value": "Frederik Southam Balfour"
+      },
+      {
+        "cell": "AR1",
+        "value": "Frederik Southam Balfour"
+      },
+      {
+        "cell": "AY1",
+        "value": "Frederik Southam Balfour"
+      },
+      {
+        "cell": "BF1",
+        "value": "Frederik Southam Balfour"
+      },
+      {
+        "cell": "BM1",
+        "value": "Frederik Southam Balfour"
+      },
+      {
+        "cell": "BS1",
+        "value": "Frederik Southam Balfour"
+      },
+      {
+        "cell": "BY1",
+        "value": "Frederik Southam Balfour"
+      },
+      {
+        "cell": "CE1",
+        "value": "Frederik Southam Balfour"
+      },
+      {
+        "cell": "CK1",
+        "value": "Frederik Southam Balfour"
+      },
+      {
+        "cell": "CQ1",
+        "value": "Frederik Southam Balfour"
+      },
+      {
+        "cell": "CW1",
+        "value": "Frederik Southam Balfour"
+      },
+      {
+        "cell": "DC1",
+        "value": "Frederik Southam Balfour"
+      },
+      {
+        "cell": "DI1",
+        "value": "Frederik Southam Balfour"
+      },
+      {
+        "cell": "DR1",
+        "value": "Frederik Southam Balfour"
+      },
+      {
+        "cell": "EA1",
+        "value": "Frederik Southam Balfour"
+      },
+      {
+        "cell": "EH1",
+        "value": "Frederik Southam Balfour"
+      },
+      {
+        "cell": "EO1",
+        "value": "Frederik Southam Balfour"
+      }
+    ],
+    "data10_A_F": {
+      "headers": [
+        "Ph=2(Gd)",
+        "Ph=2(La)"
+      ],
+      "numeric_rows_compared": 7469,
+      "mismatches": 0,
+      "first_row": 2,
+      "last_row": 7470
+    },
+    "no_data10_x_axis": {
+      "headers": [
+        "Ph=2(Gd)",
+        "Ph=3(Gd)",
+        "Ph=4(Gd)",
+        "Ph=5(Gd)",
+        "Ph=6(Gd)",
+        "Ph=2(La)",
+        "Ph=3(La)",
+        "Ph=4(La)",
+        "Ph=5(La)",
+        "Ph=6(La)",
+        "Ph=2(CK)",
+        "Ph=3(CK)",
+        "Ph=4(CK)",
+        "Ph=5(CK)",
+        "Ph=6(CK)",
+        null
+      ],
+      "note": "No explicit wavenumber column among15 labeled trace columns; blankP excluded. Do not transfer Data4 axis without provenance."
+    }
+  },
+  "figure_panel_correspondence": [
+    {
+      "published_asset": "gr6_lrg.jpg",
+      "panel": "A",
+      "artifact_sha256": "e8d9dcdc25054acd52a5e35243350c536e24e557c9a01a4e53896338dca09ba5",
+      "match": "Visual correspondence of distinctive morphology and relative location, including final overlay annotations; not byte identity or an author-issued specimen join.",
+      "scale_labels": {
+        "deposited_image": "5.00 um",
+        "published_panel": "2 um"
+      }
+    },
+    {
+      "published_asset": "gr6_lrg.jpg",
+      "panel": "B",
+      "artifact_sha256": "93badd1a67141666f71b296703ea3217891501fba5f6eee55f6e68ebc9ab8512",
+      "match": "Visual correspondence of distinctive morphology and relative location, including final overlay annotations; not byte identity or an author-issued specimen join.",
+      "scale_labels": {
+        "deposited_image": "500 nm",
+        "published_panel": "500 nm"
+      }
+    },
+    {
+      "published_asset": "gr6_lrg.jpg",
+      "panel": "D",
+      "artifact_sha256": "d4cf8914f65cfd62a144b45fddbf07ad4750613c7816e7aa1ba6af9d7dce9786",
+      "match": "Visual correspondence of distinctive morphology and relative location, including final overlay annotations; not byte identity or an author-issued specimen join.",
+      "scale_labels": {
+        "deposited_image": "5.00 um",
+        "published_panel": "2 um"
+      }
+    },
+    {
+      "published_asset": "gr6_lrg.jpg",
+      "panel": "E",
+      "artifact_sha256": "d38e99988506f69c9a6f1e6a2856f583c3d772ca792f1e3c9405d7c97fa4814b",
+      "match": "Visual correspondence of distinctive morphology and relative location, including final overlay annotations; not byte identity or an author-issued specimen join.",
+      "scale_labels": {
+        "deposited_image": "500 nm",
+        "published_panel": "500 nm"
+      }
+    },
+    {
+      "published_asset": "gr6_lrg.jpg",
+      "panel": "G",
+      "artifact_sha256": "c21cfe21c0c107d2fef94e15bfd1ad03cc670490f264a61b99012b28afeb98ee",
+      "match": "Visual correspondence of distinctive morphology and relative location, including final overlay annotations; not byte identity or an author-issued specimen join.",
+      "scale_labels": {
+        "deposited_image": "5.00 um",
+        "published_panel": "2 um"
+      }
+    },
+    {
+      "published_asset": "gr6_lrg.jpg",
+      "panel": "H",
+      "artifact_sha256": "33056d907c4b62fe5d429684b3307b9a5a52429d43e250a2bdbfad179290dda9",
+      "match": "Visual correspondence of distinctive morphology and relative location, including final overlay annotations; not byte identity or an author-issued specimen join.",
+      "scale_labels": {
+        "deposited_image": "500 nm",
+        "published_panel": "500 nm"
+      }
+    },
+    {
+      "published_asset": "gr7_lrg.jpg",
+      "panel": "A",
+      "artifact_sha256": "b21df59b12f172b936ce7dc5711f7877111782799a1a20b6e2f1a7316c4f92dc",
+      "match": "Visual correspondence of the TEM/SAED/HRTEM image content; published annotations, crops and FFT insets are additional. Not an author-issued specimen join."
+    },
+    {
+      "published_asset": "gr7_lrg.jpg",
+      "panel": "B",
+      "artifact_sha256": "2d63cc49904a5fb0814068844483eff2ed369f92c866e2e8652b108430221588",
+      "match": "Visual correspondence of the TEM/SAED/HRTEM image content; published annotations, crops and FFT insets are additional. Not an author-issued specimen join."
+    },
+    {
+      "published_asset": "gr7_lrg.jpg",
+      "panel": "C",
+      "artifact_sha256": "8b7c462aaed7fe631854bdfed506fe41cec8d1bcff06dad08f4675df32c3f788",
+      "match": "Visual correspondence of the TEM/SAED/HRTEM image content; published annotations, crops and FFT insets are additional. Not an author-issued specimen join."
+    },
+    {
+      "published_asset": "gr7_lrg.jpg",
+      "panel": "D",
+      "artifact_sha256": "3957dfa0ddd7dcf0982f7b0a1fb09507b48697fa6c889c1a021df93953b5ec12",
+      "match": "Visual correspondence of the TEM/SAED/HRTEM image content; published annotations, crops and FFT insets are additional. Not an author-issued specimen join."
+    },
+    {
+      "published_asset": "gr7_lrg.jpg",
+      "panel": "E",
+      "artifact_sha256": "205b1eedab094749559078470e37b0d39f3dbbfede4ad9427bb333df6a0417dd",
+      "match": "Visual correspondence of the TEM/SAED/HRTEM image content; published annotations, crops and FFT insets are additional. Not an author-issued specimen join."
+    },
+    {
+      "published_asset": "gr7_lrg.jpg",
+      "panel": "F",
+      "artifact_sha256": "0be60cc459b1864c53ee8ed95a5298dd9be11bc0f53ef73a44a7d039fee6dc0e",
+      "match": "Visual correspondence of the TEM/SAED/HRTEM image content; published annotations, crops and FFT insets are additional. Not an author-issued specimen join."
+    },
+    {
+      "published_asset": "gr7_lrg.jpg",
+      "panel": "G",
+      "artifact_sha256": "1b68da988bf460187178024508c5eccf6cd8a194c8f6734d55448b4066001f8d",
+      "match": "Visual correspondence of the TEM/SAED/HRTEM image content; published annotations, crops and FFT insets are additional. Not an author-issued specimen join."
+    },
+    {
+      "published_asset": "gr7_lrg.jpg",
+      "panel": "H",
+      "artifact_sha256": "698cc8bccffb790a9e4d260d0f161a4cf86bfc5e0c58dea380cfbb4e22310475",
+      "match": "Visual correspondence of the TEM/SAED/HRTEM image content; published annotations, crops and FFT insets are additional. Not an author-issued specimen join."
+    },
+    {
+      "published_asset": "gr7_lrg.jpg",
+      "panel": "I",
+      "artifact_sha256": "47c6e95ec15dd33ee98445ab656575de00b1dc3e7792a880547f659266aae677",
+      "match": "Visual correspondence of the TEM/SAED/HRTEM image content; published annotations, crops and FFT insets are additional. Not an author-issued specimen join."
+    }
+  ],
+  "figure_limits": [
+    "The same recognizable low-magnification SEM fields in new Fig6A/D/G carry 5.00um in deposited image strips and2um in the published composite. The correct calibration is unresolved; no size correction is inferred.",
+    "Figures/ and Figures(new)/ cannot be joined by filename alone; the final SEM fields visually match the newer six images.",
+    "A full figure-to-specimen-to-treatment provenance chain and raw instrument calibration/preparation records remain unacquired.",
+    "FinalFig7 labels monazite La,Gd,mixed and provides indexed SAED/HRTEM; no independent re-indexing, polymorph discrimination or quantified purity is claimed."
+  ],
+  "strain": {
+    "paper_SI": "KLBMP9576",
+    "SI_FigS1_node": "Micromonospora sp. KLBMP9576 (ON693947)",
+    "NCBI_version": "ON693947.1",
+    "NCBI_taxon": 2950557,
+    "NCBI_label": "Micromonospora sp. KLBMP9576",
+    "sequence_length_bp": 1464,
+    "qualifiers": {
+      "isolation_source": "soil",
+      "host": "Homo sapiens"
+    },
+    "interpretation": "Sequence supports the strain/accession join. It does not independently establish the paper species assignment or experimental live/dead biomass state. The unexpected host qualifier is retained, not repaired."
+  },
+  "excluded_substitutions": [
+    "2024 M.saelicesensis KLBMP9669 study, issue397",
+    "CN116640685A KLBMP9673/GDMCC63268 patent, already a round104 lead; no equation withKLBMP9576"
+  ],
+  "acceptance": [
+    {
+      "requirement": "Complete article andSI; strain,biomass,salts,controls,units,phase",
+      "state": "partial",
+      "evidence": "18p officialSI and figureassets acquired; strain/accession joined; indexed reagent snippet names hydrated chlorides. Complete methods and separate TableS2 remain inaccessible."
+    },
+    {
+      "requirement": "Reconcile datasets and final figures toIDs/hashes",
+      "state": "partial",
+      "evidence": "All132 versionedentries/64contents acquired and hashed; worksheet changes and15 visual panel correspondences preserved. No authoritative specimen-level join or EDS raw-spectrum mapping."
+    },
+    {
+      "requirement": "Inspect diffraction/microscopy and preparation before mineral admission",
+      "state": "partial",
+      "evidence": "Nine depositedTEM/SAED/HRTEM images and finalFig7 checked; six newSEM fields and finalFig6 compared. Source-assigned indices remain unvalidated; preparation and scale-label issues unresolved."
+    },
+    {
+      "requirement": "Separate uptake,fits and recovery; unexpectedlabels",
+      "state": "advanced",
+      "evidence": "All four distinct XLSX cell matrices compared; transformedData7/8 and modeledData12 separated. Percent/fraction labels,XPS headers,identicalData10 pH2Gd/La arrays and missingaxis retained; no isolated recovery claim."
+    },
+    {
+      "requirement": "Only supported ownerupdates with native reviews; preserve397",
+      "state": "deferred",
+      "evidence": "Both owners byte-identical toorigin/main; no mechanism admitted, no record review claimed. Full methods/controls and source conflicts preclude acceptance."
+    }
+  ],
+  "raw_input_manifest": [
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/6trx96yjt9-v1/files-2e5508ec-11eb-4ca0-b788-b82b19aaea33.json",
+      "sha256": "478421ae1caa2265e310e6180476cbe039746945e39fb39e2e4fdb03795adf48",
+      "bytes": 817
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/6trx96yjt9-v1/files-df0ac996-8832-4534-b377-2ca596837092.json",
+      "sha256": "1735b586b3816d84022c1edbdd0075d15c628fba1949150da2fb10573a64b4ba",
+      "bytes": 24911
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/6trx96yjt9-v1/files-root.json",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "bytes": 2
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/6trx96yjt9-v1/folders.json",
+      "sha256": "4f8b36d3ba6aaab8376e610048ef3056d4a73b6d179ffe87274094c70eb5ebe9",
+      "bytes": 265
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/6trx96yjt9-v1/landing.html",
+      "sha256": "f9b2f86f93cc70672353dde7c4d918a883133bfd876253eb8deabf837bdbf9d0",
+      "bytes": 118398
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/6trx96yjt9-v1/snapshot.json",
+      "sha256": "50cc197ad866868954db57f7ac6a04fe6bbb9cd2f2cdcc64c2f433c0c267f463",
+      "bytes": 1843
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/6trx96yjt9-v2/files-2e5508ec-11eb-4ca0-b788-b82b19aaea33.json",
+      "sha256": "2873fa73dac10efe459315128ff1f8056c58e2579da14c877031e76e6b6020cc",
+      "bytes": 1635
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/6trx96yjt9-v2/files-df0ac996-8832-4534-b377-2ca596837092.json",
+      "sha256": "5d57cf115d3e065545777b1812a77af16ec54fff730b254c08db8a60ceb143b6",
+      "bytes": 24917
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/6trx96yjt9-v2/files-e08ce6dd-c534-4048-9d02-328f1a98ecc8.json",
+      "sha256": "69009a8780fadcfce76230f52634b236f7b752bd0bd0c51c95cb9779debd9927",
+      "bytes": 773
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/6trx96yjt9-v2/files-root.json",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "bytes": 2
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/6trx96yjt9-v2/folders.json",
+      "sha256": "f56c4145f9e3580920e75bd8a42c2670a64c6715d238d2288e302f2802012739",
+      "bytes": 422
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/6trx96yjt9-v2/landing.html",
+      "sha256": "2b239127afb5571e288c7e1a17ce8fdbddf2cba0d47d17e9071d788ac0568532",
+      "bytes": 118407
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/6trx96yjt9-v2/snapshot.json",
+      "sha256": "40492fb7ba823c290e6353cef6575d3e9ad357345226bcb67d55990916f0eb83",
+      "bytes": 1843
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/ON693947.gb",
+      "sha256": "d35a2ddcaaaeb96feac4c07789a9a3d911f5cdc53ba136e6a5197ef769f8886e",
+      "bytes": 3391
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/accession-jobs-receipts.json",
+      "sha256": "057f6797ebbbb9119072c1d6dc327f1b6e47883366cfad4f4048c00f8b010fb1",
+      "bytes": 1120
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/accession-jobs.json",
+      "sha256": "eec99914263fb91bff51fc9b77036b0ae9cbfc7e5533588a5b7b95bbf30436c0",
+      "bytes": 256
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/acquire.py",
+      "sha256": "8b20a4e2de00ffda984ede126e5344994c21e75d48780fccfbef8f41ec7070ef",
+      "bytes": 1318
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/article-api.xml",
+      "sha256": "ba4ce6c7e2adf0b81019787ab92249018fbdb1ef8781b014c09b9be402c4952a",
+      "bytes": 1880
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/article-crossref.json",
+      "sha256": "fac89f13e1b8bb972aa2160e102d4d67f24239c205da6790f7e520d774af5370",
+      "bytes": 33436
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/article-gr6-large.jpg",
+      "sha256": "e8f18dd304664aa6b2719afc26643f3777926f52c5e7c1cd8159cc43004b4250",
+      "bytes": 889832
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/article-gr7-large.jpg",
+      "sha256": "760515e3b8d45145a3388a865d0fe90afa592ee325cf2c3db2a01b040eea9f39",
+      "bytes": 606081
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/article-jobs-receipts.json",
+      "sha256": "1d32b186fa9eff252f356858f63f7aff2a29eceb4ac544c6ed02e78c1d187135",
+      "bytes": 1102
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/article-jobs.json",
+      "sha256": "6961633f301f2bcb9c4c0eba99687fb6fb58b02765e669d6de72a427ce429acf",
+      "bytes": 239
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/article-openalex.json",
+      "sha256": "0a617ac8bb846c21ebc79e623576f1b1327035bcc8ae27f69c46814d8540d05a",
+      "bytes": 24523
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/article-preview.html",
+      "sha256": "0c66204728a43dbbe5da0bd995c9da66d2050a102bb27694066e290606886d1a",
+      "bytes": 1207787
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/artifact-jobs-receipts.json",
+      "sha256": "a6dd0850830f9730299dd6ea68835cea77a1729ef6be66fb37bc8bd0dd9ccb99",
+      "bytes": 45820
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/artifact-jobs.json",
+      "sha256": "00136e33dc2d033544c9fe1901e477dcc8f3a599828b4beef8f297a720931164",
+      "bytes": 11780
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/artifact-manifest-planned.json",
+      "sha256": "41a4c6a7f1e9d5e52f4c9e3dec50591b8f17bec31893ed4c0b71560eb68e9ab1",
+      "bytes": 154491
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/baseline-receipt.json",
+      "sha256": "2dae867afeab9b8f4b554e5a853e78164ab4e103eac5ddb042c586e9c1e335c3",
+      "bytes": 469
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/build-handoff.py",
+      "sha256": "43488b39a4e692401bf2179d9fc7176f24fe375e45f990f30d23e3549f0c3e6b",
+      "bytes": 8709
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/dedup-receipt.json",
+      "sha256": "ef867476faa3e2bf99e59a76890e4bf8ad88e64fcd6ac5552320f34bd9e9cfe3",
+      "bytes": 599
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/dedup.txt",
+      "sha256": "c9f11d69ffe723943a4a411a36a8fe0979be4fcfd9d555e60231f0b123367ec5",
+      "bytes": 46650033
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/eligibility.json",
+      "sha256": "f0df0ad6f5ed6df3902b87b1b9122e963378eb05676167506c09d4a556b7736b",
+      "bytes": 900
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/enumerated-files.json",
+      "sha256": "31a693674d47c7c80da7508bbd081624d416d818848bc39c228e63b1844a522e",
+      "bytes": 125997
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/figure-jobs-receipts.json",
+      "sha256": "393d1386c1288af5049593cf7d1fe07add12e073b053da7123b846160689d932",
+      "bytes": 1179
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/figure-jobs.json",
+      "sha256": "2e3f895465c19c59a7fb123c69769327aed36dc63e2779c4847b5a9c528a539a",
+      "bytes": 241
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/folder-jobs-receipts.json",
+      "sha256": "3d2552a691599fcbddb12ef7045fb1458ad1112dd90baf59209137ff3886e987",
+      "bytes": 7376
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/folder-jobs.json",
+      "sha256": "67c7c73cb882a06196e5607647c05b86822cd5a2c7081049424a39188cfb81c1",
+      "bytes": 2028
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/inspect-workbooks.py",
+      "sha256": "c6ba00c8d2ff349e6f75f892a8c74e742167d3fc02f5d36f868e5c8fad63de25",
+      "bytes": 2848
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/label-audit.json",
+      "sha256": "147a17d4c811b5ac48d0b0930a1e0c101bc925909036a92b6cd5f50f28f44a70",
+      "bytes": 2202
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/metadata-jobs-receipts.json",
+      "sha256": "90acfa3199a0316d8979aaa270cc56dd56d409c48782e994ac761b2af4c3175e",
+      "bytes": 8502
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/metadata-jobs.json",
+      "sha256": "66d4cb1471e1f06b05384bbf55f566af59ea973eea0841b81cce17a66296abfc",
+      "bytes": 1697
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/overlap-issues.json",
+      "sha256": "57ffb6d584d71eaae5b6039ff716418f1abb5d2a5b61381a671171e24d58e385",
+      "bytes": 3745
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/patent-CN116640685A.html",
+      "sha256": "e1ba3a6a50fecfc8c12fd279f655785f689efe3ef51243f662a7dade459e674e",
+      "bytes": 112705
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/patent-CN116640685A.pdf",
+      "sha256": "2bf0c8c2d1b6b1f00904df2ea281af1ab7b975f28715f7920830ed48a3085313",
+      "bytes": 623120
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/patent-CN116640685A.txt",
+      "sha256": "1cfed2620933f6cdcce0e11a0cd57f0144d37b43ca4b5f28cb2952aa80291653",
+      "bytes": 25192
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/patent-dedup-receipt.json",
+      "sha256": "e9cde938a8801073679c01e7fadd2187f1dd17ef5ebae5e707f9d90116a5fee6",
+      "bytes": 505
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/patent-dedup.txt",
+      "sha256": "df0a32d21c71cca9093e43f6d9b710bed6ceac1d6c44272c8b3af68564c3d4f1",
+      "bytes": 46622881
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/patent-front.png",
+      "sha256": "d002d633fcbf3fa4743787ae0bb5b32f67488298ee7fc1011c257d241b1ab7ea",
+      "bytes": 410067
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/patent-jobs-receipts.json",
+      "sha256": "fc2437b1f5f2ef8017871f442dd1d920a023364b148fbbdce25af070d1748496",
+      "bytes": 1163
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/patent-jobs.json",
+      "sha256": "096baac3dd02860a3deac7ccbd2672af50d6743d516d5d0af4798d037f5b68a1",
+      "bytes": 231
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/preview-conversions-1.json",
+      "sha256": "164a4949f706fbf3054b5c374fe46ae434bdd3e86df0e1b6a92b70111439de84",
+      "bytes": 5863
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/prior-artifact-check.json",
+      "sha256": "5228871c82ae012df4abfe8933b0330504be0b27361a6e369f8081a15c1a6be6",
+      "bytes": 3693
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/resume-web-results.txt",
+      "sha256": "560fc2e47f2ebc413172bfcbc6b1e7b6abe872313f71abb71cc0dbc1f3a96aae",
+      "bytes": 31982
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/si-table-jobs-receipts.json",
+      "sha256": "14ecf1b7b203a1a5ccd95a092708afb78d4f101a35aeb632361e15abc3d735ef",
+      "bytes": 497
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/si-table-jobs.json",
+      "sha256": "f4436a731f7b3ca53488dc5a9030af54a2429f3f67d2afc4f2ab86bd64817c40",
+      "bytes": 119
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/supplement-jobs-receipts.json",
+      "sha256": "4451da70058de02f677e6540ec1279278d9f2af98e75334438784aa277533170",
+      "bytes": 1081
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/supplement-jobs.json",
+      "sha256": "f0ad3ca150213ce59385c33491cf72d475ccefe6ba9f1d8188d2cd1df818b3ca",
+      "bytes": 233
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/supplement-mmc1.docx",
+      "sha256": "83cf0fd7cf2740129f2ddedb484cf2f65c2f831820454bbd6fa35dad094a4d8d",
+      "bytes": 189
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/supplement-mmc1.pdf",
+      "sha256": "88ec656e9127e19c00e284b348d7da5c6202c2f5dd8bcbb2b45f1d678042e26e",
+      "bytes": 1958246
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/supplement-mmc1.txt",
+      "sha256": "ee0de407ece1e92b9ce75a7f71cf9e34dcc3fd4cb1ed072d858bb9c81be6b524",
+      "bytes": 10543
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/supplement-mmc2.xls",
+      "sha256": "83cf0fd7cf2740129f2ddedb484cf2f65c2f831820454bbd6fa35dad094a4d8d",
+      "bytes": 189
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/supplement-mmc2.xlsx",
+      "sha256": "83cf0fd7cf2740129f2ddedb484cf2f65c2f831820454bbd6fa35dad094a4d8d",
+      "bytes": 189
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/web-search-log.json",
+      "sha256": "e1ce3c3ad38f1184c8a29f24ca8d35dbfe7c1953974514037cfa710e0e760854",
+      "bytes": 2156
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/workbook-inspection.json",
+      "sha256": "45c359c44e5eefb65b51cb0d0850addc1c3c641d7ad13ecc07b78630627a9be0",
+      "bytes": 13975892
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/wxdnxzm8g8-v1/files-247ea10f-1fe7-499f-b4ab-bcb2dff99815.json",
+      "sha256": "932e061d7fc8ce4319e2000f60e4cc7c2f378ce243d65897df09c7523cb0b50f",
+      "bytes": 1635
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/wxdnxzm8g8-v1/files-2b68a76f-7f3b-4854-b250-ef038eaa8462.json",
+      "sha256": "5ecc208242fe440c3fbda5a6400a60762fc886e3be34ef62c55c4e4abd64f0e0",
+      "bytes": 24912
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/wxdnxzm8g8-v1/files-7ef8d3d5-284b-4bcb-9511-7383654e78e5.json",
+      "sha256": "851777a32439d0b2905b6aae27c1c0c08a0bbbab2ff1a252314879a6db254ad8",
+      "bytes": 3856
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/wxdnxzm8g8-v1/files-f36a0b6b-4f7c-4226-b055-13b577be297c.json",
+      "sha256": "903ad7a1bd8f5596ecc23ddef327ea54f8418c3ea3e2454ce433b95e484a2972",
+      "bytes": 16585
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/wxdnxzm8g8-v1/files-root.json",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "bytes": 2
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/wxdnxzm8g8-v1/folders.json",
+      "sha256": "babdb73ea61a2e6e741141e760574f217fb47af9c5a5f0844a5f0c01265e7814",
+      "bytes": 598
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/wxdnxzm8g8-v1/landing.html",
+      "sha256": "65f2082fa3964ae741f7b057b11f361ee92aefd84f2d4fe49625d5292972e3e1",
+      "bytes": 117923
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-405/wxdnxzm8g8-v1/snapshot.json",
+      "sha256": "43deca2ce4e662e8c6ff80936d86def80bc3b8bbe6849ac8135ed828283bbca6",
+      "bytes": 1738
+    }
+  ],
+  "validation_scope": "Dataset hashes, sizes and full worksheet cell-value comparisons completed. Repository final checks are recorded separately after the frozen handoff; this assessment is not an independent record review."
+}
