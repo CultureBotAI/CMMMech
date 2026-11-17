@@ -1,0 +1,1042 @@
+{
+  "created_at": "2026-10-21T19:38:15.351794+00:00",
+  "issue": 388,
+  "visit": 157,
+  "author": "Codex /root",
+  "branch": "codex/issue-388-rhabdophane-thermal-trends",
+  "base": "1296ee20f2595d7d6a50e391f611c22435418906",
+  "disposition": "source-only; retain current Ce and La owners; keep issue open pending attributable clarification",
+  "scope": "Shelyug2018 hydration and thermal trend conflicts, with conditional central-value checks; separate from issue387 Bamforth loading and issue130 biological phase identity.",
+  "inputs": {
+    "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-388/base-inputs.json",
+    "bytes": 3375,
+    "sha256": "2dee39fbeacbde7d8c46c3d9162ce6cb52d0b25020e63ed0830e4003d65c8255"
+  },
+  "guard": {
+    "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-388/local-guards.json",
+    "bytes": 2134,
+    "sha256": "a50ebe4f5262874cdaade2cf5598877a49a4248da92dc21a5ec17303c5c92562"
+  },
+  "baseline": {
+    "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-388-baseline-gates.json",
+    "bytes": 843,
+    "sha256": "42bb63e415d90acb2d1b5a8c3196eb1a76cdf84d4a8aa0f460cb8c0227c086f2"
+  },
+  "corpus": {
+    "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-388-corpus-baseline.json",
+    "bytes": 435555,
+    "sha256": "d2d62acf46106c8fd07fb2cb21da42ca9be8b4e2bb0362e2f40d34a25624485e"
+  },
+  "raw_manifest": {
+    "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-388-evidence-manifest.json",
+    "bytes": 13997,
+    "sha256": "4f10d955b399cb84e2a20e5f67cdbd6b68b6a04607e580d006e32dd116ea025d"
+  },
+  "acquisitions": [
+    [
+      {
+        "url": "https://www.frontiersin.org/journals/chemistry/articles/10.3389/fchem.2018.00604/pdf",
+        "route": "Observed official PDF in live search; prior exact route",
+        "started_at": "2026-10-21T19:25:24.042161+00:00",
+        "method": "GET",
+        "status": 200,
+        "final_url": "https://www.frontiersin.org/journals/chemistry/articles/10.3389/fchem.2018.00604/pdf",
+        "content_type": "application/pdf",
+        "artifact": {
+          "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-388/shelyug2018.pdf",
+          "bytes": 2035040,
+          "sha256": "3df30db72604288aa5941bc8634a6c77dcbaade9a86bd187efac34db6f63b614"
+        },
+        "signature": "b'%PDF-1.5\\n%\\xc7\\xec\\x8f\\xa2\\n25 0 obj\\n<</Length 26 0 R/Filter /FlateDecode>>\\nstream\\nx\\x9c\\xed}\\xcb\\xb6^\\xb9q\\xde'",
+        "completed_at": "2026-10-21T19:25:25.906834+00:00"
+      },
+      {
+        "url": "https://www.frontiersin.org/journals/chemistry/articles/10.3389/fchem.2018.00604/full",
+        "route": "Observed official fulltext in live search",
+        "started_at": "2026-10-21T19:25:24.041723+00:00",
+        "method": "GET",
+        "status": 200,
+        "final_url": "https://www.frontiersin.org/journals/chemistry/articles/10.3389/fchem.2018.00604/full",
+        "content_type": "text/html;charset=utf-8",
+        "artifact": {
+          "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-388/frontiers.html",
+          "bytes": 965105,
+          "sha256": "501cc22815c610ec0094138151b01e110c5e23ae3d987691e67c432859dc0cc6"
+        },
+        "signature": "b'<!DOCTYPE html><html  lang=\"en\" data-capo=\"\"><head><meta charset=\"utf-8\">\\n<meta '",
+        "completed_at": "2026-10-21T19:25:25.231342+00:00"
+      },
+      {
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6304437/fullTextXML",
+        "route": "Prior recorded public full-text route, PMC identity freshly verified",
+        "started_at": "2026-10-21T19:25:24.042077+00:00",
+        "method": "GET",
+        "status": 200,
+        "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6304437/fullTextXML",
+        "content_type": "application/xml",
+        "artifact": {
+          "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-388/shelyug2018.xml",
+          "bytes": 133305,
+          "sha256": "547ecf0019fcc2f0fce435feab8e0a55eee011eee2cd7a59e89cae255bd36072"
+        },
+        "signature": "b'<?xml version=\"1.0\" encoding=\"UTF-8\"?><article xml:lang=\"en\" article-type=\"resea'",
+        "completed_at": "2026-10-21T19:25:25.346507+00:00"
+      },
+      {
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6304437/supplementaryFiles",
+        "route": "Prior recorded public supplement delivery route",
+        "started_at": "2026-10-21T19:25:24.042358+00:00",
+        "method": "GET",
+        "status": 200,
+        "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6304437/supplementaryFiles",
+        "content_type": "application/zip",
+        "artifact": {
+          "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-388/shelyug2018-si.zip",
+          "bytes": 1220028,
+          "sha256": "34e26aaca5a105598f9b37a3f9e626107cdc3c46e6058b280fe861110c664409"
+        },
+        "signature": "b'PK\\x03\\x04\\x14\\x00\\x08\\x08\\x08\\x00,\\xa3U]\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x18\\x00\\x00\\x00fchem-06-00604-g0008.gif\\xedyy<\\x94\\xed\\x17\\xf7=\\x0bf\\xac3\\x96\\x12eK({\\x0b\\xca\\xbeS\\xd9)\\x92'",
+        "completed_at": "2026-10-21T19:26:10.143344+00:00"
+      },
+      {
+        "url": "https://api.crossref.org/works/10.3389/fchem.2018.00604",
+        "route": "Public DOI metadata query for verified DOI",
+        "started_at": "2026-10-21T19:25:24.042327+00:00",
+        "method": "GET",
+        "status": 200,
+        "final_url": "https://api.crossref.org/works/10.3389/fchem.2018.00604",
+        "content_type": "application/json",
+        "artifact": {
+          "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-388/crossref.json",
+          "bytes": 12658,
+          "sha256": "292e086dca5decc72c64d6f00cc6328d97a9f4e28cb6f3dea1687707423e1bb0"
+        },
+        "signature": "b'{\"status\":\"ok\",\"message-type\":\"work\",\"message-version\":\"1.0.0\",\"message\":{\"index'",
+        "completed_at": "2026-10-21T19:25:24.448395+00:00"
+      }
+    ],
+    [
+      {
+        "url": "https://www.dora.lib4ri.ch/psi/islandora/object/psi%3A57672/datastream/PDF2/Pan-2024-Optimized_thermodynamic_properties_of_REE-%28accepted_version%29.pdf",
+        "route": "Primary institutional accepted manuscript observed in live search, bounded citing-paper check",
+        "started_at": "2026-10-21T19:31:19.557494+00:00",
+        "method": "GET",
+        "status": 200,
+        "final_url": "https://www.dora.lib4ri.ch/psi/dload/psi:57672/PDF2/Pan-2024-Optimized_thermodynamic_properties_of_REE-(accepted_version).pdf",
+        "content_type": "application/pdf",
+        "artifact": {
+          "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-388/pan2024-accepted.pdf",
+          "bytes": 3524979,
+          "sha256": "7b9487782ea44ce25f539fbebc3e295d1cc04b5dd4ae6191c661a721e54474cc"
+        },
+        "signature": "b'%PDF-1.6\\r%\\xe2\\xe3\\xcf\\xd3\\r\\n11261 0 obj\\r<</Linearized 1/L 3524979/O 11263/E 148253/N 56/T 35'",
+        "completed_at": "2026-10-21T19:31:23.184897+00:00"
+      }
+    ]
+  ],
+  "searches": [
+    {
+      "file": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-388/web-01.json",
+        "bytes": 33358,
+        "sha256": "85fa943afe8cdcabe3aee2fe485fcd59358e6914f76a8f94f782133b2da9b999"
+      },
+      "request": {
+        "search_query": [
+          {
+            "q": "\"10.3389/fchem.2018.00604\" correction corrigendum erratum retraction"
+          },
+          {
+            "q": "\"Shelyug\" rhabdophane hydration ionic radius 2018 supplementary data"
+          }
+        ],
+        "open": [
+          {
+            "ref_id": "https://www.frontiersin.org/journals/chemistry/articles/10.3389/fchem.2018.00604/full"
+          }
+        ],
+        "response_length": "long"
+      },
+      "provider": "OpenAI web.run tool, called as tools.web__run; underlying search engine was not disclosed."
+    },
+    {
+      "file": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-388/web-02.json",
+        "bytes": 28826,
+        "sha256": "523cf334cd0aeb3630e21e740a559aa21d3ea4ef2522225014d668364fb2dcfb"
+      },
+      "request": {
+        "search_query": [
+          {
+            "q": "\"Thermodynamics and Stability of Rhabdophanes\" corrigendum correction erratum"
+          },
+          {
+            "q": "\"Shelyug\" \"rhabdophanes\" \"correction\""
+          },
+          {
+            "q": "\"Optimized thermodynamic properties of REE\" Pan 2024 rhabdophane"
+          }
+        ],
+        "open": [
+          {
+            "ref_id": "https://www.dora.lib4ri.ch/psi/islandora/object/psi%3A57672/datastream/PDF2/Pan-2024-Optimized_thermodynamic_properties_of_REE-%28accepted_version%29.pdf"
+          }
+        ],
+        "response_length": "long"
+      },
+      "provider": "OpenAI web.run tool, called as tools.web__run; underlying search engine was not disclosed."
+    },
+    {
+      "file": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-388/web-03.json",
+        "bytes": 23414,
+        "sha256": "a024efcb95860a2df82cace57acedc04cdeecababf069fccf9daa4aba4ca1936"
+      },
+      "request": {
+        "find": [
+          {
+            "ref_id": "turn845view0",
+            "pattern": "Shelyug"
+          },
+          {
+            "ref_id": "turn845view0",
+            "pattern": "Table 2"
+          },
+          {
+            "ref_id": "turn845search10",
+            "pattern": "corrigendum"
+          }
+        ],
+        "response_length": "long"
+      },
+      "provider": "OpenAI web.run tool, called as tools.web__run; underlying search engine was not disclosed."
+    }
+  ],
+  "dedup": [
+    {
+      "at": "2026-10-21T19:25:49.540824+00:00",
+      "command": [
+        "rg",
+        "--no-ignore",
+        "--hidden",
+        "--follow",
+        "-n",
+        "-i",
+        "--",
+        "10\\.3389/fchem\\.2018\\.00604|Shelyug|PMC6304437",
+        "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-388/data/records",
+        "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-388/history/records",
+        "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-388/research/sources",
+        "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-388/research/ingests",
+        "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-388/reviews/structured",
+        "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-388"
+      ],
+      "actual_exit": 0,
+      "stderr": "",
+      "roots": [
+        "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-388/data/records",
+        "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-388/history/records",
+        "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-388/research/sources",
+        "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-388/research/ingests",
+        "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-388/reviews/structured",
+        "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-388"
+      ],
+      "hidden_ignored_included": true,
+      "relevant_symlinks_followed": true,
+      "matched_lines": 61,
+      "matched_paths": [
+        "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-388/data/records/rhabdophane-ce.yaml",
+        "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-388/data/records/rhabdophane-la.yaml",
+        "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-388/research/ingests/round103-frontier-20261015.json",
+        "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-388/research/sources/round103-ree-phosphates/20261015T212204Z-source-investigation.json",
+        "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-388/research/sources/round103-ree-phosphates/20261015T212204Z-source-investigation.md",
+        "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-388/research/sources/round109-borates/20261016T024803Z-source-investigation.json",
+        "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-388/reviews/structured/20261015T213558Z-rhabdophane-ce-round103-independent/review.md",
+        "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-388/reviews/structured/20261015T213558Z-rhabdophane-ce-round103-independent/review.yaml",
+        "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-388/reviews/structured/20261015T213608Z-rhabdophane-la-round103-independent/review.md",
+        "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-388/reviews/structured/20261015T213608Z-rhabdophane-la-round103-independent/review.yaml",
+        "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-388/base-inputs.json",
+        "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-388/crossref.json",
+        "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-388/frontiers.html",
+        "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-388/shelyug2018.xml",
+        "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-388/web-01.json"
+      ],
+      "raw_output": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-388/dedup-raw.txt",
+        "bytes": 51767843,
+        "sha256": "78143d0dc601d538c9949dca0f4c2cd9fe2747a2ea0a159429490f7d8bc7fc39"
+      },
+      "historical_raw_root": {
+        "path": "/private/tmp/cmm-round103-ree-research",
+        "exists": false
+      },
+      "exclusions": "No machine-wide or unrelated home/temp scan; binary source contents not searched through this textual rg pass. Current download directory searched at this actual stage, not claimed as final manifest."
+    },
+    {
+      "at": "2026-10-21T19:32:55.062444+00:00",
+      "argv": [
+        "rg",
+        "--no-ignore",
+        "--hidden",
+        "--follow",
+        "-n",
+        "-i",
+        "10\\.1016/j\\.chemgeo\\.2023\\.121817|Optimized thermodynamic properties of REE",
+        "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-388/data/records",
+        "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-388/history/records",
+        "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-388/research/sources",
+        "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-388/research/ingests",
+        "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-388/reviews/structured",
+        "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-388"
+      ],
+      "exit": 0,
+      "stderr": "",
+      "matched_lines": 4,
+      "paths": [
+        "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-388/pan2024-accepted.txt",
+        "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-388/web-02.json"
+      ],
+      "raw": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-388/dedup-pan-raw.txt",
+        "bytes": 28637,
+        "sha256": "a7608fe07bea62d07974fdadc87960772dd2c0e570d6332c243b13ea4fe64fb1"
+      },
+      "boundary": "Selected repository record/history/source/ingest/review roots plus this issue acquisition root. Hidden and ignored files included, symlinks followed; not machine-wide."
+    }
+  ],
+  "historical_comparison": {
+    "prior_dossier": {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-388/research/sources/round103-ree-phosphates/20261015T212204Z-source-investigation.json",
+      "bytes": 35369,
+      "sha256": "5d00ded68a4fc038f173ac60c9f350f671609c067fa07667fa6d054218b4ac07"
+    },
+    "comparisons": [
+      {
+        "current": {
+          "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-388/shelyug2018.pdf",
+          "bytes": 2035040,
+          "sha256": "3df30db72604288aa5941bc8634a6c77dcbaade9a86bd187efac34db6f63b614"
+        },
+        "historical_declaration": {
+          "path": "/private/tmp/cmm-round103-ree-research/thermodynamics2018.pdf",
+          "bytes": 2035040,
+          "sha256": "3df30db72604288aa5941bc8634a6c77dcbaade9a86bd187efac34db6f63b614"
+        },
+        "same": true
+      },
+      {
+        "current": {
+          "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-388/shelyug2018.xml",
+          "bytes": 133305,
+          "sha256": "547ecf0019fcc2f0fce435feab8e0a55eee011eee2cd7a59e89cae255bd36072"
+        },
+        "historical_declaration": {
+          "path": "/private/tmp/cmm-round103-ree-research/thermodynamics2018.xml",
+          "bytes": 133305,
+          "sha256": "547ecf0019fcc2f0fce435feab8e0a55eee011eee2cd7a59e89cae255bd36072"
+        },
+        "same": true
+      },
+      {
+        "current": {
+          "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-388/shelyug2018-si.zip",
+          "bytes": 1220028,
+          "sha256": "34e26aaca5a105598f9b37a3f9e626107cdc3c46e6058b280fe861110c664409"
+        },
+        "historical_declaration": {
+          "path": "/private/tmp/cmm-round103-ree-research/thermodynamics2018-si.zip",
+          "bytes": 1220028,
+          "sha256": "34b54b7e9634e089764e155e1d926e2bae4f2c37cdc2952206920cccd915b4c1"
+        },
+        "same": false
+      },
+      {
+        "current": {
+          "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-388/si/Table_1.DOCX",
+          "bytes": 702000,
+          "sha256": "a54311e34261ab49ba5f61f26fc2fa276d9641bb87da3e1c84f7130a70d6b5b0"
+        },
+        "historical_declaration": {
+          "path": "/private/tmp/cmm-round103-ree-research/thermodynamics2018-si/Table_1.DOCX",
+          "bytes": 702000,
+          "sha256": "a54311e34261ab49ba5f61f26fc2fa276d9641bb87da3e1c84f7130a70d6b5b0"
+        },
+        "same": true
+      }
+    ],
+    "scope": "Oldraw root absent. Comparisons are against historical checksum declarations, not fresh reads of oldpayloads. ZIPdifferentbyhash; unchangedcontainedDOCX doesnotproveeveryunboundmemberunchanged."
+  },
+  "inspection": {
+    "primary_pdf_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "primary_tables": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "primary_figures": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "native_docx": {
+      "tables": 5,
+      "rows": [
+        19,
+        17,
+        17,
+        29,
+        16
+      ],
+      "raw_oMath_nodes": 0,
+      "OLE_objects": 0,
+      "image1": "Frontiers logo visually checked; no scientific data image",
+      "inspection": "All native table cells plus paragraphs; w:subscript/superscript are flattened in reading projection, original DOCX retained; no native visual layout claimed."
+    },
+    "pan_original_pdf_pages": [
+      7,
+      36
+    ],
+    "pan_other": "Title/license and abstract text; Shelyug citation passages; no complete 56-page scientific review or dataset audit.",
+    "owners": [
+      "data/records/rhabdophane-ce.yaml",
+      "data/records/rhabdophane-la.yaml"
+    ],
+    "prior_review_scope": "Relevant identity/evidence/limitations/findings sections of both native reviews; full round103 Markdown and relevant structured dossier sections, not a fresh review of all cited studies."
+  },
+  "diagnostics": {
+    "scope": "Conditional central-value checks from current displayed source entries; not corrected author data, no propagated uncertainty or re-estimation of measurements.",
+    "table2": [
+      {
+        "element": "La",
+        "n": 0.804,
+        "Hdehyd_sample": 59.1,
+        "Hdehyd_water_printed": 73.5,
+        "Hdehyd_water_quotient": 73.50746268656717,
+        "quotient_rounding_interval": [
+          73.39962709757614,
+          73.61543248288736
+        ],
+        "printed_water_interval": [
+          73.45,
+          73.55
+        ],
+        "rounding_intervals_overlap": true,
+        "Htrans": -14.4,
+        "Hdsc_printed": 9.3,
+        "Hdsc_eq4": 9.323999999999996,
+        "Hdsc_difference": 0.02399999999999558,
+        "Hmelt_printed": -3.19
+      },
+      {
+        "element": "Ce",
+        "n": 0.732,
+        "Hdehyd_sample": 50.0,
+        "Hdehyd_water_printed": 68.3,
+        "Hdehyd_water_quotient": 68.30601092896175,
+        "quotient_rounding_interval": [
+          68.1911262798635,
+          68.42105263157895
+        ],
+        "printed_water_interval": [
+          68.25,
+          68.35
+        ],
+        "rounding_intervals_overlap": true,
+        "Htrans": -15.9,
+        "Hdsc_printed": 1.9,
+        "Hdsc_eq4": 1.8920000000000012,
+        "Hdsc_difference": -0.007999999999998675,
+        "Hmelt_printed": 16.79
+      },
+      {
+        "element": "Pr",
+        "n": 0.709,
+        "Hdehyd_sample": 52.6,
+        "Hdehyd_water_printed": 74.1,
+        "Hdehyd_water_quotient": 74.18899858956277,
+        "quotient_rounding_interval": [
+          74.0662438336857,
+          74.31192660550458
+        ],
+        "printed_water_interval": [
+          74.05,
+          74.14999999999999
+        ],
+        "rounding_intervals_overlap": true,
+        "Htrans": -15.2,
+        "Hdsc_printed": 6.1,
+        "Hdsc_eq4": 6.204000000000004,
+        "Hdsc_difference": 0.10400000000000453,
+        "Hmelt_printed": -4.57
+      },
+      {
+        "element": "Nd",
+        "n": 0.746,
+        "Hdehyd_sample": 50.2,
+        "Hdehyd_water_printed": 67.2,
+        "Hdehyd_water_quotient": 67.29222520107238,
+        "quotient_rounding_interval": [
+          67.18017414601475,
+          67.40442655935614
+        ],
+        "printed_water_interval": [
+          67.15,
+          67.25
+        ],
+        "rounding_intervals_overlap": true,
+        "Htrans": -23.1,
+        "Hdsc_printed": -5.7,
+        "Hdsc_eq4": -5.723999999999997,
+        "Hdsc_difference": -0.02399999999999647,
+        "Hmelt_printed": 0.82
+      },
+      {
+        "element": "Sm",
+        "n": 0.636,
+        "Hdehyd_sample": 46.9,
+        "Hdehyd_water_printed": 73.8,
+        "Hdehyd_water_quotient": 73.74213836477988,
+        "quotient_rounding_interval": [
+          73.60565593087196,
+          73.87883556254916
+        ],
+        "printed_water_interval": [
+          73.75,
+          73.85
+        ],
+        "rounding_intervals_overlap": true,
+        "Htrans": -18.5,
+        "Hdsc_printed": 0.4,
+        "Hdsc_eq4": 0.4159999999999968,
+        "Hdsc_difference": 0.015999999999996795,
+        "Hmelt_printed": 9.36
+      },
+      {
+        "element": "Eu",
+        "n": 0.555,
+        "Hdehyd_sample": 43.9,
+        "Hdehyd_water_printed": 79.2,
+        "Hdehyd_water_quotient": 79.09909909909909,
+        "quotient_rounding_interval": [
+          78.93789378937895,
+          79.2605951307484
+        ],
+        "printed_water_interval": [
+          79.15,
+          79.25
+        ],
+        "rounding_intervals_overlap": true,
+        "Htrans": -16.6,
+        "Hdsc_printed": 2.9,
+        "Hdsc_eq4": 2.8799999999999955,
+        "Hdsc_difference": -0.02000000000000446,
+        "Hmelt_printed": 13.25
+      },
+      {
+        "element": "Gd",
+        "n": 0.533,
+        "Hdehyd_sample": 49.5,
+        "Hdehyd_water_printed": 86.1,
+        "Hdehyd_water_quotient": 92.87054409005628,
+        "quotient_rounding_interval": [
+          92.68978444236177,
+          93.05164319248824
+        ],
+        "printed_water_interval": [
+          86.05,
+          86.14999999999999
+        ],
+        "rounding_intervals_overlap": false,
+        "Htrans": -21.2,
+        "Hdsc_printed": 1.3,
+        "Hdsc_eq4": 4.847999999999999,
+        "Hdsc_difference": 3.547999999999999,
+        "Hmelt_printed": 10.65
+      }
+    ],
+    "table2_statistics": {
+      "per_sample": {
+        "n": 7,
+        "mean": 50.31428571428572,
+        "sample_sd": 4.7607522414805326,
+        "two_sem": 3.5987904241573734
+      },
+      "per_water": {
+        "n": 7,
+        "mean": 74.6,
+        "sample_sd": 6.454455825241968,
+        "two_sem": 4.879109989097834
+      },
+      "limitation": "Across seven chemical endmembers, not experimental replication. Source averaging basis is not supplied."
+    },
+    "table3_cycles": [
+      {
+        "element": "La",
+        "hydrated_drop": 203.53,
+        "monazite_drop": 151.26,
+        "water_heat": 69.0,
+        "temperature_C": 700,
+        "calculated": -3.205999999999996,
+        "printed": -3.19,
+        "difference": -0.015999999999996017
+      },
+      {
+        "element": "Ce",
+        "hydrated_drop": 179.56,
+        "monazite_drop": 112.28,
+        "water_heat": 69.0,
+        "temperature_C": 700,
+        "calculated": 16.772000000000006,
+        "printed": 16.79,
+        "difference": -0.017999999999993577
+      },
+      {
+        "element": "Pr",
+        "hydrated_drop": 210.67,
+        "monazite_drop": 163.31,
+        "water_heat": 73.2,
+        "temperature_C": 800,
+        "calculated": -4.538800000000016,
+        "printed": -4.57,
+        "difference": 0.03119999999998413
+      },
+      {
+        "element": "Nd",
+        "hydrated_drop": 197.1,
+        "monazite_drop": 144.8,
+        "water_heat": 69.0,
+        "temperature_C": 700,
+        "calculated": 0.8259999999999863,
+        "printed": 0.82,
+        "difference": 0.00599999999998635
+      },
+      {
+        "element": "Sm",
+        "hydrated_drop": 195.88,
+        "monazite_drop": 142.66,
+        "water_heat": 69.0,
+        "temperature_C": 700,
+        "calculated": 9.335999999999999,
+        "printed": 9.36,
+        "difference": -0.02400000000000091
+      },
+      {
+        "element": "Eu",
+        "hydrated_drop": 191.51,
+        "monazite_drop": 139.98,
+        "water_heat": 69.0,
+        "temperature_C": 700,
+        "calculated": 13.235,
+        "printed": 13.25,
+        "difference": -0.015000000000000568
+      },
+      {
+        "element": "Gd",
+        "hydrated_drop": 186.76,
+        "monazite_drop": 139.33,
+        "water_heat": 69.0,
+        "temperature_C": 700,
+        "calculated": 10.652999999999977,
+        "printed": 10.65,
+        "difference": 0.002999999999977021
+      }
+    ],
+    "table5": [
+      {
+        "reaction": "LaPO4 \u00b7 0.804 H2O \u2192 LaPO4 + 0.804 H2O",
+        "H": -3.19,
+        "S": 85.7,
+        "G_printed": -28.8,
+        "G_eq12": -28.741455000000006,
+        "difference": 0.058544999999995184,
+        "rounding_bound": 0.06990750000000001
+      },
+      {
+        "reaction": "CePO4 \u00b7 0.732 H2O \u2192 CePO4 + 0.732 H2O",
+        "H": 16.79,
+        "S": 76.9,
+        "G_printed": -6.2,
+        "G_eq12": -6.137735000000003,
+        "difference": 0.06226499999999735,
+        "rounding_bound": 0.06990750000000001
+      },
+      {
+        "reaction": "PrPO4 \u00b7 0.709 H2O \u2192 PrPO4 + 0.709 H2O",
+        "H": -4.57,
+        "S": 34.5,
+        "G_printed": -14.9,
+        "G_eq12": -14.856175,
+        "difference": 0.043825,
+        "rounding_bound": 0.06990750000000001
+      },
+      {
+        "reaction": "NdPO4 \u00b7 0.746 H2O \u2192 NdPO4 + 0.746 H2O",
+        "H": 0.82,
+        "S": 33.0,
+        "G_printed": -9.1,
+        "G_eq12": -9.01895,
+        "difference": 0.0810499999999994,
+        "rounding_bound": 0.06990750000000001
+      },
+      {
+        "reaction": "SmPO4 \u00b7 0.636 H2O \u2192 SmPO4 + 0.636 H2O",
+        "H": 9.36,
+        "S": 85.2,
+        "G_printed": -20.1,
+        "G_eq12": -16.042380000000005,
+        "difference": 4.0576199999999965,
+        "rounding_bound": 0.06990750000000001
+      },
+      {
+        "reaction": "EuPO4 \u00b7 0.555 H2O \u2192 EuPO4 + 0.555 H2O",
+        "H": 13.25,
+        "S": 67.2,
+        "G_printed": -9.8,
+        "G_eq12": -6.785680000000003,
+        "difference": 3.014319999999998,
+        "rounding_bound": 0.06990750000000001
+      },
+      {
+        "reaction": "GdPO4 \u00b7 0.533 H2O \u2192 GdPO4 + 0.533 H2O",
+        "H": 10.65,
+        "S": 77.6,
+        "G_printed": -12.5,
+        "G_eq12": -12.48644,
+        "difference": 0.013560000000000016,
+        "rounding_bound": 0.06990750000000001
+      }
+    ],
+    "table1_volume_checks": [
+      {
+        "formula": "LaPO4 \u00b7 0.804 H2O",
+        "printed": 2273.3,
+        "abc_sin_beta": 2273.419268756332,
+        "difference": 0.11926875633162126,
+        "scope": "rounded-cell arithmetic, no covariance or refit"
+      },
+      {
+        "formula": "CePO4 \u00b7 0.732 H2O",
+        "printed": 2231.8,
+        "abc_sin_beta": 2231.940725613761,
+        "difference": 0.14072561376087833,
+        "scope": "rounded-cell arithmetic, no covariance or refit"
+      },
+      {
+        "formula": "PrPO4 \u00b7 0.709 H2O",
+        "printed": 2202.4,
+        "abc_sin_beta": 2202.438905945358,
+        "difference": 0.03890594535778291,
+        "scope": "rounded-cell arithmetic, no covariance or refit"
+      },
+      {
+        "formula": "NdPO4 \u00b7 0.746 H2O",
+        "printed": 2174.7,
+        "abc_sin_beta": 2174.8429493206363,
+        "difference": 0.14294932063648957,
+        "scope": "rounded-cell arithmetic, no covariance or refit"
+      },
+      {
+        "formula": "SmPO4 \u00b7 0.636 H2O",
+        "printed": 2125.0,
+        "abc_sin_beta": 2124.9641099027576,
+        "difference": -0.035890097242372576,
+        "scope": "rounded-cell arithmetic, no covariance or refit"
+      },
+      {
+        "formula": "EuPO4 \u00b7 0.555 H2O",
+        "printed": 2100.9,
+        "abc_sin_beta": 2100.8330625767603,
+        "difference": -0.06693742323977858,
+        "scope": "rounded-cell arithmetic, no covariance or refit"
+      },
+      {
+        "formula": "GdPO4 \u00b7 0.533 H2O",
+        "printed": 2084.6,
+        "abc_sin_beta": 2084.6182571862487,
+        "difference": 0.018257186248774815,
+        "scope": "rounded-cell arithmetic, no covariance or refit"
+      },
+      {
+        "formula": "LaPO4",
+        "printed": 306.5,
+        "abc_sin_beta": 306.4828524788857,
+        "difference": -0.01714752111428197,
+        "scope": "rounded-cell arithmetic, no covariance or refit"
+      },
+      {
+        "formula": "CePO4",
+        "printed": 300.6,
+        "abc_sin_beta": 300.6480254511577,
+        "difference": 0.04802545115768453,
+        "scope": "rounded-cell arithmetic, no covariance or refit"
+      },
+      {
+        "formula": "PrPO4",
+        "printed": 296.1,
+        "abc_sin_beta": 296.0633062543077,
+        "difference": -0.03669374569233241,
+        "scope": "rounded-cell arithmetic, no covariance or refit"
+      },
+      {
+        "formula": "NdPO4",
+        "printed": 292.0,
+        "abc_sin_beta": 291.9066092884388,
+        "difference": -0.09339071156119871,
+        "scope": "rounded-cell arithmetic, no covariance or refit"
+      },
+      {
+        "formula": "SmPO4",
+        "printed": 284.8,
+        "abc_sin_beta": 284.774267430211,
+        "difference": -0.025732569788999626,
+        "scope": "rounded-cell arithmetic, no covariance or refit"
+      },
+      {
+        "formula": "EuPO4",
+        "printed": 282.0,
+        "abc_sin_beta": 281.9752120185801,
+        "difference": -0.024787981419876814,
+        "scope": "rounded-cell arithmetic, no covariance or refit"
+      },
+      {
+        "formula": "GdPO4",
+        "printed": 279.6,
+        "abc_sin_beta": 279.6380768906413,
+        "difference": 0.03807689064126407,
+        "scope": "rounded-cell arithmetic, no covariance or refit"
+      }
+    ],
+    "entropy_sign_check": [
+      {
+        "element": "La",
+        "rhabdophane_S": 77.6,
+        "monazite_S": 107.1,
+        "water_S": 69.95,
+        "n": 0.804,
+        "products_minus_reactant": 85.7398,
+        "printed_eq11_minus_water": -26.739800000000002,
+        "table5": 85.7
+      },
+      {
+        "element": "Ce",
+        "rhabdophane_S": 99.3,
+        "monazite_S": 125.0,
+        "water_S": 69.95,
+        "n": 0.732,
+        "products_minus_reactant": 76.90339999999999,
+        "printed_eq11_minus_water": -25.5034,
+        "table5": 76.9
+      },
+      {
+        "element": "Pr",
+        "rhabdophane_S": 125.7,
+        "monazite_S": 110.6,
+        "water_S": 69.95,
+        "n": 0.709,
+        "products_minus_reactant": 34.49454999999999,
+        "printed_eq11_minus_water": -64.69455,
+        "table5": 34.5
+      },
+      {
+        "element": "Nd",
+        "rhabdophane_S": 141.0,
+        "monazite_S": 121.8,
+        "water_S": 69.95,
+        "n": 0.746,
+        "products_minus_reactant": 32.982699999999994,
+        "printed_eq11_minus_water": -71.3827,
+        "table5": 33.0
+      },
+      {
+        "element": "Sm",
+        "rhabdophane_S": 82.0,
+        "monazite_S": 122.7,
+        "water_S": 69.95,
+        "n": 0.636,
+        "products_minus_reactant": 85.1882,
+        "printed_eq11_minus_water": -3.788199999999989,
+        "table5": 85.2
+      },
+      {
+        "element": "Eu",
+        "rhabdophane_S": 97.5,
+        "monazite_S": 125.9,
+        "water_S": 69.95,
+        "n": 0.555,
+        "products_minus_reactant": 67.22225,
+        "printed_eq11_minus_water": -10.422249999999991,
+        "table5": 67.2
+      },
+      {
+        "element": "Gd",
+        "rhabdophane_S": 85.6,
+        "monazite_S": 125.9,
+        "water_S": 69.95,
+        "n": 0.533,
+        "products_minus_reactant": 77.58335000000002,
+        "printed_eq11_minus_water": 3.0166499999999985,
+        "table5": 77.6
+      }
+    ]
+  },
+  "supplement_checks": {
+    "table4_vs_native_A2_entropy_from_oxides": [
+      {
+        "element": "La",
+        "paper": "\u2212100.2 \u00b1 7.7",
+        "DOCX": "-100.0 \u00b1 7.7"
+      },
+      {
+        "element": "Ce",
+        "paper": "\u221283.9 \u00b1 13.1",
+        "DOCX": "-83.7 \u00b1 13.1"
+      },
+      {
+        "element": "Pr",
+        "paper": "\u221258.2 \u00b1 11.3",
+        "DOCX": "-58.0 \u00b1 11.3"
+      },
+      {
+        "element": "Nd",
+        "paper": "\u221248.5 \u00b1 8.8",
+        "DOCX": "-48.3 \u00b1 8.8"
+      },
+      {
+        "element": "Sm",
+        "paper": "\u2212109.2 \u00b1 11.3",
+        "DOCX": "-95.6 \u00b1 11.3"
+      },
+      {
+        "element": "Eu",
+        "paper": "\u221277.0 \u00b1 14.9",
+        "DOCX": "-66.8 \u00b1 14.9"
+      },
+      {
+        "element": "Gd",
+        "paper": "\u221286.0 \u00b1 7.2",
+        "DOCX": "-85.9 \u00b1 7.2"
+      }
+    ],
+    "Table5_vs_DOCX_A2": [
+      [
+        "LaPO4 \u00b7 0.804 H2O \u2192 LaPO4 + 0.804 H2O -3.19 \u00b1 1.58 85.7 \u00b1 11.1 -28.8 \u00b1 8.5",
+        "CePO4 \u00b7 0.732 H2O \u2192 CePO4 + 0.732 H2O 16.79 \u00b1 1.18 76.9 \u00b1 18.7 -6.2 \u00b1 14.4",
+        "PrPO4 \u00b7 0.709 H2O \u2192 PrPO4 + 0.709 H2O -4.57 \u00b1 2.99 34.5 \u00b1 16.3 -14.9 \u00b1 12.3",
+        "NdPO4 \u00b7 0.746 H2O \u2192 NdPO4 + 0.746 H2O 0.82 \u00b1 1.80 33.0 \u00b1 12.7 -9.1 \u00b1 9.5",
+        "SmPO4 \u00b7 0.636 H2O \u2192 SmPO4 + 0.636 H2O 9.36 \u00b1 1.61 85.2 \u00b1 16.3 -20.1 \u00b1 10.8",
+        "EuPO4 \u00b7 0.555 H2O \u2192 EuPO4 + 0.555 H2O 13.25 \u00b1 1.47 67.2 \u00b1 21.3 -9.8 \u00b1 13.1",
+        "GdPO4 \u00b7 0.533 H2O \u2192 GdPO4 + 0.533 H2O 10.65 \u00b1 1.33 77.6 \u00b1 10.5 -12.5 \u00b1 8.0"
+      ],
+      [
+        "LaPO4 \u00b7 0.804 H2O \u2192 LaPO4 + 0.804 H2O -3.19 \u00b1 1.58 85.7 \u00b1 11.1 -28.8 \u00b1 8.5",
+        "CePO4 \u00b7 0.732 H2O \u2192 CePO4 + 0.732 H2O  16.79 \u00b1 1.18 76.9 \u00b1 18.7 -6.2 \u00b1 14.4",
+        "PrPO4 \u00b7 0.709 H2O \u2192 PrPO4 + 0.709 H2O -4.57 \u00b1 2.99 34.5 \u00b1 16.3 -14.9 \u00b1 12.3",
+        "NdPO4 \u00b7 0.746 H2O \u2192 NdPO4 + 0.746 H2O 0.82 \u00b1 1.80 33.0 \u00b1 12.7 -9.1 \u00b1 9.5",
+        "SmPO4 \u00b7 0.636 H2O \u2192 SmPO4 + 0.636 H2O 9.36 \u00b1 1.61 85.2 \u00b1 16.3 -20.1 \u00b1 10.8",
+        "EuPO4 \u00b7 0.555 H2O \u2192 EuPO4 + 0.555 H2O 13.25 \u00b1 1.47 67.2 \u00b1 21.3 -9.8 \u00b1 13.1",
+        "GdPO4 \u00b7 0.533 H2O \u2192 GdPO4 + 0.533 H2O 10.65 \u00b1 1.33 77.6 \u00b1 10.5 -12.5 \u00b1 8.0"
+      ]
+    ],
+    "crossref": {
+      "relation": {},
+      "update-to": "not supplied",
+      "updated-by": "not supplied",
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2018,
+                12,
+                17
+              ]
+            ],
+            "date-time": "2018-12-17T00:00:00Z",
+            "timestamp": 1545004800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ]
+    },
+    "native_DOCX": {
+      "tables": 5,
+      "rows": [
+        19,
+        17,
+        17,
+        29,
+        16
+      ],
+      "raw_oMath_nodes": 0,
+      "OLE_objects": 0,
+      "image1": "Frontiers logo visually checked; no scientific data image",
+      "inspection": "All native table cells plus paragraphs; w:subscript/superscript are flattened in reading projection, original DOCX retained; no native visual layout claimed."
+    },
+    "failed_web_screenshot": {
+      "url": "https://www.dora.lib4ri.ch/psi/islandora/object/psi%3A57672/datastream/PDF2/Pan-2024-Optimized_thermodynamic_properties_of_REE-%28accepted_version%29.pdf",
+      "zero_index_pages": [
+        6,
+        35
+      ],
+      "page6": "web timeout",
+      "page35": "web tool did not provide an inspectable image in result",
+      "resolution": "Public native PDF fetched and both original pages rendered locally and viewed."
+    },
+    "helper_notes": [
+      "Initial default-Python YAML import unavailable; worktree venv used, no gate failure.",
+      "Initial attempted owner path data/records/minerals/rhabdophane-ce.yaml failed; actual data/records/rhabdophane-ce.yaml read from base inventory. No absence conclusion."
+    ]
+  },
+  "limits": [
+    "No published correction or attributable clarification found in the saved bounded searches, official current article and Crossref relation fields; this is not an exhaustive negative result.",
+    "No raw TGA/DSC peak-integration/replicate/temperature ledger or author calculation workbook acquired. DOCX contains cycles and compiled thermodynamic values.",
+    "No exact temperatures digitized from plots, no uncertainty re-estimation, no replacement coefficients or equilibrium/IMA formula inference.",
+    "Pan2024 reuses hydration data; its full database and model have not been validated here.",
+    "No owners/history/native reviews changed; this discovery assessment is not a new native per-record acceptance review."
+  ],
+  "handoff": [
+    "Keep the qualified existing owner statements.",
+    "Require author/publisher correction identifying the hydration trend and separate T1/T2 versus T3 directions, sample basis, and uncertainty definitions.",
+    "Require raw thermograms/integration and calculation provenance before using disputed enthalpy/entropy/Gibbs entries.",
+    "If later accepted evidence changes an owner, add immutable history and independently review that changed state."
+  ],
+  "supersedes": {
+    "reason": "388-P1: explicitly identify the search tool/provider while preserving the initial pair. Scientific evidence and conclusions unchanged.",
+    "initial_reports": [
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-388/research/sources/issue-388-rhabdophane-thermal-trends/20261021T193436Z.md",
+        "bytes": 14710,
+        "sha256": "e3b3084cf1399791bdc6cef7dd579feaf58ab4875179cd06333a300cc42e5ab1"
+      },
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-388/research/sources/issue-388-rhabdophane-thermal-trends/20261021T193436Z.json",
+        "bytes": 38109,
+        "sha256": "3890fee77df43d82028e90a4eb73615d214ef43250ae1bdcc62d5d19d6cc187b"
+      }
+    ]
+  },
+  "search_provider": "OpenAI web.run tool, called as tools.web__run; underlying search engine was not disclosed."
+}
