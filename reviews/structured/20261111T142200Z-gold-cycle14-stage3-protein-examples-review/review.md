@@ -1,0 +1,289 @@
+# Cycle 14 Stage 3 protein_examples and causal_graphs review of Gold (cmmmech:gold)
+
+- Review: 20261111T142200Z-gold-cycle14-stage3-protein-examples-review
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-11-11T14:21:00Z
+- Finished UTC: 2026-11-11T14:22:00Z
+- Reviewer: antigravity / cmmmech-cycle14-stage3-protein-examples-reviewer (self_review)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Gold (cmmmech:gold) passes Cycle 14 Stage 3 protein_examples review (scientific_review: true) at SHA-256 5d408e1f80620773e9bcb5efbe1623a0d933ea45a2d7a7ef1a41886cd52a723d: Updated data/records/gold.yaml with UniProtKB:Q1LHI0 (Q1LHI0_CUPMC, P-type ATPase CupA, gene_symbol: cupA, TREMBL, NCBITaxon:266264 Cupriavidus metallidurans CH34, UP000002429); UniProtKB:Q1LRS8 (Q1LRS8_CUPMC, Cytochrome c oxidase subunit 1, gene_symbol: coxA, TREMBL, NCBITaxon:266264 Cupriavidus metallidurans CH34, UP000002429) and 'ae104_stock_dependent_gold_particle_graph' (mechanism_ref: ae104_stock_dependent_particles, 4 nodes / 3 edges), achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and preserving source-faithful support levels and experimental caveats from hirth_2024: Hirth et al. (2024). A gold speciation that adds a second layer to synergistic gold-copper toxicity in Cupriavidus metallidurans. Applied and Environmental Microbiology 90(4), e00146-24. DOI 10.1128/aem.00146-24; complete JATS original and original graphics. (https://doi.org/10.1128/aem.00146-24).
+
+## Scope And Provenance
+
+Cycle 14 Stage 3 protein_examples and causal_graphs review of data/records/gold.yaml (SHA-256 5d408e1f80620773e9bcb5efbe1623a0d933ea45a2d7a7ef1a41886cd52a723d) and its canonical EDIT history sidecar (history/records/gold/2026-11-11T142112Z-marcin-7acf73.yaml) verifying live UniProtKB grounding (UniProtKB:Q1LHI0 (Q1LHI0_CUPMC, P-type ATPase CupA, gene_symbol: cupA, TREMBL, NCBITaxon:266264 Cupriavidus metallidurans CH34, UP000002429); UniProtKB:Q1LRS8 (Q1LRS8_CUPMC, Cytochrome c oxidase subunit 1, gene_symbol: coxA, TREMBL, NCBITaxon:266264 Cupriavidus metallidurans CH34, UP000002429)), causal-graph node/edge parity across 'ae104_stock_dependent_gold_particle_graph' (mechanism_ref: ae104_stock_dependent_particles, 4 nodes / 3 edges), and primary-source evidence fidelity.
+
+Selection: Cycle 14 Stage 3 protein_examples cohort review for cmmmech:gold
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 000fd9c1bad8e0de32a55b4bc1554d4a86696dae.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:gold | data/records/gold.yaml | maintained | Gold |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Strict corpus validation | passed | True | cmmmech:gold | Checked 713 record(s); 0 failed. |
+| Canonical history validation | passed | True | cmmmech:gold | Checked 1583 history record(s); 0 error(s). |
+
+## Scientific And Domain Assessments
+
+### Verification of UniProtKB protein_examples grounding, causal_graphs structure, and parity across 'ae104_stock_dependent_gold_particle_graph' (mechanism_ref: ae104_stock_dependent_particles, 4 nodes / 3 edges)
+
+graph: supported. Targets: cmmmech:gold.
+
+Updated data/records/gold.yaml (SHA-256 5d408e1f80620773e9bcb5efbe1623a0d933ea45a2d7a7ef1a41886cd52a723d) with live-verified protein_examples (UniProtKB:Q1LHI0 (Q1LHI0_CUPMC, P-type ATPase CupA, gene_symbol: cupA, TREMBL, NCBITaxon:266264 Cupriavidus metallidurans CH34, UP000002429); UniProtKB:Q1LRS8 (Q1LRS8_CUPMC, Cytochrome c oxidase subunit 1, gene_symbol: coxA, TREMBL, NCBITaxon:266264 Cupriavidus metallidurans CH34, UP000002429)) and causal_graphs ('ae104_stock_dependent_gold_particle_graph' (mechanism_ref: ae104_stock_dependent_particles, 4 nodes / 3 edges)), achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and preserving source-faithful support levels and caveats from hirth_2024: Hirth et al. (2024). A gold speciation that adds a second layer to synergistic gold-copper toxicity in Cupriavidus metallidurans. Applied and Environmental Microbiology 90(4), e00146-24. DOI 10.1128/aem.00146-24; complete JATS original and original graphics. (https://doi.org/10.1128/aem.00146-24).
+
+### Verification of canonical EDIT history sidecar and strict schema validation
+
+provenance: supported. Targets: cmmmech:gold.
+
+data/records/gold.yaml was updated exclusively through scripts/curate_causal_graphs.py (curate_record_file), producing append-only history sidecar history/records/gold/2026-11-11T142112Z-marcin-7acf73.yaml (SHA-256 7fc928136c38ff1bfeae6234389ec6d577b484bf283f59ae614234c5793f3ef3: Added CH34 reference-proteome protein examples (CupA UniProtKB:Q1LHI0, CoxA UniProtKB:Q1LRS8) and representative causal graph for Cupriavidus metallidurans AE104 stock-dependent gold nanoparticle formation.) and passing all LinkML and history validation gates.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/records/gold.yaml; Working-tree record data/records/gold.yaml (mechanisms[].protein_examples and causal_graphs) | supports | Updated data/records/gold.yaml (SHA-256 5d408e1f80620773e9bcb5efbe1623a0d933ea45a2d7a7ef1a41886cd52a723d) with live-verified protein_examples (UniProtKB:Q1LHI0 (Q1LHI0_CUPMC, P-type ATPase CupA, gene_symbol: cupA, TREMBL, NCBITaxon:266264 Cupriavidus metallidurans CH34, UP000002429); UniProtKB:Q1LRS8 (Q1LRS8_CUPMC, Cytochrome c oxidase subunit 1, gene_symbol: coxA, TREMBL, NCBITaxon:266264 Cupriavidus metallidurans CH34, UP000002429)) and causal_graphs ('ae104_stock_dependent_gold_particle_graph' (mechanism_ref: ae104_stock_dependent_particles, 4 nodes / 3 edges)), achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and preserving source-faithful support levels. |
+| primary_source | https://doi.org/10.1128/aem.00146-24; hirth_2024: Hirth et al. (2024). A gold speciation that adds a second layer to synergistic gold-copper toxicity in Cupriavidus metallidurans. Applied and Environmental Microbiology 90(4), e00146-24. DOI 10.1128/aem.00146-24; complete JATS original and original graphics. (https://doi.org/10.1128/aem.00146-24) | supports | Live-verified UniProtKB grounding across UniProtKB:Q1LHI0 (Q1LHI0_CUPMC, P-type ATPase CupA, gene_symbol: cupA, TREMBL, NCBITaxon:266264 Cupriavidus metallidurans CH34, UP000002429); UniProtKB:Q1LRS8 (Q1LRS8_CUPMC, Cytochrome c oxidase subunit 1, gene_symbol: coxA, TREMBL, NCBITaxon:266264 Cupriavidus metallidurans CH34, UP000002429). Primary mechanism source (hirth_2024: Hirth et al. (2024). A gold speciation that adds a second layer to synergistic gold-copper toxicity in Cupriavidus metallidurans. Applied and Environmental Microbiology 90(4), e00146-24. DOI 10.1128/aem.00146-24; complete JATS original and original graphics. (https://doi.org/10.1128/aem.00146-24)) parameters and source-level caveats are strictly preserved on all nodes, edges, and ProteinExample evidence items. |
+| edit_history | history/records/gold/2026-11-11T142112Z-marcin-7acf73.yaml; Canonical EDIT history sidecar history/records/gold/2026-11-11T142112Z-marcin-7acf73.yaml | supports | Canonical EDIT history sidecar history/records/gold/2026-11-11T142112Z-marcin-7acf73.yaml (SHA-256 7fc928136c38ff1bfeae6234389ec6d577b484bf283f59ae614234c5793f3ef3): Added CH34 reference-proteome protein examples (CupA UniProtKB:Q1LHI0, CoxA UniProtKB:Q1LRS8) and representative causal graph for Cupriavidus metallidurans AE104 stock-dependent gold nanoparticle formation. |
+| validation | data/records/gold.yaml; Real CLI validation via python -m cmmmech validate --require-records and validate-history --base main | supports | data/records/gold.yaml and history/records/gold/2026-11-11T142112Z-marcin-7acf73.yaml pass strict LinkML schema, protein_examples parity, and history validation with 0 errors. |
+
+## Limits And Additional Notes
+
+- Review is conducted in single-agent Goal Mode (independence: self_review) against working-tree bytes; an independent subagent PR review is executed prior to merge.
+- Executed during Cycle 14 Stage 3 (protein_examples) for cmmmech:gold.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261111T142200Z-gold-cycle14-stage3-protein-examples-review
+kind: record
+repository: CultureBotAI/CMMMech
+title: Cycle 14 Stage 3 protein_examples and causal_graphs review of Gold (cmmmech:gold)
+started_at: '2026-11-11T14:21:00Z'
+finished_at: '2026-11-11T14:22:00Z'
+reviewer:
+  identity: antigravity / cmmmech-cycle14-stage3-protein-examples-reviewer
+  kind: agent
+  model: claude-opus-4-6
+  independence: self_review
+  independence_basis: 'Single-agent Goal Mode execution of .claude/skills/review-record/SKILL.md
+    verifying the Cycle 14 Stage 3 curation of data/records/gold.yaml (SHA-256 5d408e1f80620773e9bcb5efbe1623a0d933ea45a2d7a7ef1a41886cd52a723d)
+    against live UniProtKB grounding and cited primary source (hirth_2024: Hirth et
+    al. (2024). A gold speciation that adds a second layer to synergistic gold-copper
+    toxicity in Cupriavidus metallidurans. Applied and Environmental Microbiology
+    90(4), e00146-24. DOI 10.1128/aem.00146-24; complete JATS original and original
+    graphics. (https://doi.org/10.1128/aem.00146-24)).'
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: 000fd9c1bad8e0de32a55b4bc1554d4a86696dae
+  state: working_tree
+  inputs:
+  - path: data/records/gold.yaml
+    sha256: 5d408e1f80620773e9bcb5efbe1623a0d933ea45a2d7a7ef1a41886cd52a723d
+    role: target
+  - path: history/records/gold/2026-11-11T142112Z-marcin-7acf73.yaml
+    sha256: 7fc928136c38ff1bfeae6234389ec6d577b484bf283f59ae614234c5793f3ef3
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+targets:
+- target_id: cmmmech:gold
+  path: data/records/gold.yaml
+  label: Gold
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/gold.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/gold/2026-11-11T142112Z-marcin-7acf73.yaml
+    role: canonical_history
+scope:
+  description: 'Cycle 14 Stage 3 protein_examples and causal_graphs review of data/records/gold.yaml
+    (SHA-256 5d408e1f80620773e9bcb5efbe1623a0d933ea45a2d7a7ef1a41886cd52a723d) and
+    its canonical EDIT history sidecar (history/records/gold/2026-11-11T142112Z-marcin-7acf73.yaml)
+    verifying live UniProtKB grounding (UniProtKB:Q1LHI0 (Q1LHI0_CUPMC, P-type ATPase
+    CupA, gene_symbol: cupA, TREMBL, NCBITaxon:266264 Cupriavidus metallidurans CH34,
+    UP000002429); UniProtKB:Q1LRS8 (Q1LRS8_CUPMC, Cytochrome c oxidase subunit 1,
+    gene_symbol: coxA, TREMBL, NCBITaxon:266264 Cupriavidus metallidurans CH34, UP000002429)),
+    causal-graph node/edge parity across ''ae104_stock_dependent_gold_particle_graph''
+    (mechanism_ref: ae104_stock_dependent_particles, 4 nodes / 3 edges), and primary-source
+    evidence fidelity.'
+  selection: Cycle 14 Stage 3 protein_examples cohort review for cmmmech:gold
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:gold
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/gold.yaml
+  locator: Working-tree record data/records/gold.yaml (mechanisms[].protein_examples
+    and causal_graphs)
+  accessed_at: '2026-11-11T14:22:00Z'
+  support: supports
+  summary: 'Updated data/records/gold.yaml (SHA-256 5d408e1f80620773e9bcb5efbe1623a0d933ea45a2d7a7ef1a41886cd52a723d)
+    with live-verified protein_examples (UniProtKB:Q1LHI0 (Q1LHI0_CUPMC, P-type ATPase
+    CupA, gene_symbol: cupA, TREMBL, NCBITaxon:266264 Cupriavidus metallidurans CH34,
+    UP000002429); UniProtKB:Q1LRS8 (Q1LRS8_CUPMC, Cytochrome c oxidase subunit 1,
+    gene_symbol: coxA, TREMBL, NCBITaxon:266264 Cupriavidus metallidurans CH34, UP000002429))
+    and causal_graphs (''ae104_stock_dependent_gold_particle_graph'' (mechanism_ref:
+    ae104_stock_dependent_particles, 4 nodes / 3 edges)), achieving 100% parity between
+    mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and
+    preserving source-faithful support levels.'
+  snapshot_sha256: 5d408e1f80620773e9bcb5efbe1623a0d933ea45a2d7a7ef1a41886cd52a723d
+- evidence_id: primary_source
+  kind: primary_source
+  reference: https://doi.org/10.1128/aem.00146-24
+  locator: 'hirth_2024: Hirth et al. (2024). A gold speciation that adds a second
+    layer to synergistic gold-copper toxicity in Cupriavidus metallidurans. Applied
+    and Environmental Microbiology 90(4), e00146-24. DOI 10.1128/aem.00146-24; complete
+    JATS original and original graphics. (https://doi.org/10.1128/aem.00146-24)'
+  accessed_at: '2026-11-11T14:22:00Z'
+  support: supports
+  summary: 'Live-verified UniProtKB grounding across UniProtKB:Q1LHI0 (Q1LHI0_CUPMC,
+    P-type ATPase CupA, gene_symbol: cupA, TREMBL, NCBITaxon:266264 Cupriavidus metallidurans
+    CH34, UP000002429); UniProtKB:Q1LRS8 (Q1LRS8_CUPMC, Cytochrome c oxidase subunit
+    1, gene_symbol: coxA, TREMBL, NCBITaxon:266264 Cupriavidus metallidurans CH34,
+    UP000002429). Primary mechanism source (hirth_2024: Hirth et al. (2024). A gold
+    speciation that adds a second layer to synergistic gold-copper toxicity in Cupriavidus
+    metallidurans. Applied and Environmental Microbiology 90(4), e00146-24. DOI 10.1128/aem.00146-24;
+    complete JATS original and original graphics. (https://doi.org/10.1128/aem.00146-24))
+    parameters and source-level caveats are strictly preserved on all nodes, edges,
+    and ProteinExample evidence items.'
+- evidence_id: edit_history
+  kind: record_content
+  reference: history/records/gold/2026-11-11T142112Z-marcin-7acf73.yaml
+  locator: Canonical EDIT history sidecar history/records/gold/2026-11-11T142112Z-marcin-7acf73.yaml
+  accessed_at: '2026-11-11T14:22:00Z'
+  support: supports
+  summary: 'Canonical EDIT history sidecar history/records/gold/2026-11-11T142112Z-marcin-7acf73.yaml
+    (SHA-256 7fc928136c38ff1bfeae6234389ec6d577b484bf283f59ae614234c5793f3ef3): Added
+    CH34 reference-proteome protein examples (CupA UniProtKB:Q1LHI0, CoxA UniProtKB:Q1LRS8)
+    and representative causal graph for Cupriavidus metallidurans AE104 stock-dependent
+    gold nanoparticle formation.'
+  snapshot_sha256: 7fc928136c38ff1bfeae6234389ec6d577b484bf283f59ae614234c5793f3ef3
+- evidence_id: validation
+  kind: validation
+  reference: data/records/gold.yaml
+  locator: Real CLI validation via python -m cmmmech validate --require-records and
+    validate-history --base main
+  accessed_at: '2026-11-11T14:22:00Z'
+  support: supports
+  summary: data/records/gold.yaml and history/records/gold/2026-11-11T142112Z-marcin-7acf73.yaml
+    pass strict LinkML schema, protein_examples parity, and history validation with
+    0 errors.
+  snapshot_sha256: 5d408e1f80620773e9bcb5efbe1623a0d933ea45a2d7a7ef1a41886cd52a723d
+checks:
+- check_id: validate_records
+  name: Strict corpus validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Checked 713 record(s); 0 failed.
+  target_ids:
+  - cmmmech:gold
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: validate_history
+  name: Canonical history validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate-history --base main
+  status: passed
+  required: true
+  summary: Checked 1583 history record(s); 0 error(s).
+  target_ids:
+  - cmmmech:gold
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+assessments:
+- assessment_id: protein_grounding_and_causal_graph
+  area: graph
+  topic: 'Verification of UniProtKB protein_examples grounding, causal_graphs structure,
+    and parity across ''ae104_stock_dependent_gold_particle_graph'' (mechanism_ref:
+    ae104_stock_dependent_particles, 4 nodes / 3 edges)'
+  outcome: supported
+  summary: 'Updated data/records/gold.yaml (SHA-256 5d408e1f80620773e9bcb5efbe1623a0d933ea45a2d7a7ef1a41886cd52a723d)
+    with live-verified protein_examples (UniProtKB:Q1LHI0 (Q1LHI0_CUPMC, P-type ATPase
+    CupA, gene_symbol: cupA, TREMBL, NCBITaxon:266264 Cupriavidus metallidurans CH34,
+    UP000002429); UniProtKB:Q1LRS8 (Q1LRS8_CUPMC, Cytochrome c oxidase subunit 1,
+    gene_symbol: coxA, TREMBL, NCBITaxon:266264 Cupriavidus metallidurans CH34, UP000002429))
+    and causal_graphs (''ae104_stock_dependent_gold_particle_graph'' (mechanism_ref:
+    ae104_stock_dependent_particles, 4 nodes / 3 edges)), achieving 100% parity between
+    mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and
+    preserving source-faithful support levels and caveats from hirth_2024: Hirth et
+    al. (2024). A gold speciation that adds a second layer to synergistic gold-copper
+    toxicity in Cupriavidus metallidurans. Applied and Environmental Microbiology
+    90(4), e00146-24. DOI 10.1128/aem.00146-24; complete JATS original and original
+    graphics. (https://doi.org/10.1128/aem.00146-24).'
+  target_ids:
+  - cmmmech:gold
+  evidence_ids:
+  - owner
+  - primary_source
+- assessment_id: provenance_and_validation_verification
+  area: provenance
+  topic: Verification of canonical EDIT history sidecar and strict schema validation
+  outcome: supported
+  summary: 'data/records/gold.yaml was updated exclusively through scripts/curate_causal_graphs.py
+    (curate_record_file), producing append-only history sidecar history/records/gold/2026-11-11T142112Z-marcin-7acf73.yaml
+    (SHA-256 7fc928136c38ff1bfeae6234389ec6d577b484bf283f59ae614234c5793f3ef3: Added
+    CH34 reference-proteome protein examples (CupA UniProtKB:Q1LHI0, CoxA UniProtKB:Q1LRS8)
+    and representative causal graph for Cupriavidus metallidurans AE104 stock-dependent
+    gold nanoparticle formation.) and passing all LinkML and history validation gates.'
+  target_ids:
+  - cmmmech:gold
+  evidence_ids:
+  - owner
+  - edit_history
+  - validation
+findings: []
+actions: []
+summary: 'Gold (cmmmech:gold) passes Cycle 14 Stage 3 protein_examples review (scientific_review:
+  true) at SHA-256 5d408e1f80620773e9bcb5efbe1623a0d933ea45a2d7a7ef1a41886cd52a723d:
+  Updated data/records/gold.yaml with UniProtKB:Q1LHI0 (Q1LHI0_CUPMC, P-type ATPase
+  CupA, gene_symbol: cupA, TREMBL, NCBITaxon:266264 Cupriavidus metallidurans CH34,
+  UP000002429); UniProtKB:Q1LRS8 (Q1LRS8_CUPMC, Cytochrome c oxidase subunit 1, gene_symbol:
+  coxA, TREMBL, NCBITaxon:266264 Cupriavidus metallidurans CH34, UP000002429) and
+  ''ae104_stock_dependent_gold_particle_graph'' (mechanism_ref: ae104_stock_dependent_particles,
+  4 nodes / 3 edges), achieving 100% parity between mechanisms[].protein_examples
+  and causal_graphs[].nodes[].protein_examples and preserving source-faithful support
+  levels and experimental caveats from hirth_2024: Hirth et al. (2024). A gold speciation
+  that adds a second layer to synergistic gold-copper toxicity in Cupriavidus metallidurans.
+  Applied and Environmental Microbiology 90(4), e00146-24. DOI 10.1128/aem.00146-24;
+  complete JATS original and original graphics. (https://doi.org/10.1128/aem.00146-24).'
+limitations:
+- 'Review is conducted in single-agent Goal Mode (independence: self_review) against
+  working-tree bytes; an independent subagent PR review is executed prior to merge.'
+notes:
+- Executed during Cycle 14 Stage 3 (protein_examples) for cmmmech:gold.
+related_reviews: []
+```

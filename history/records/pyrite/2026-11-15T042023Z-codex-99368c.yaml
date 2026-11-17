@@ -1,0 +1,26 @@
+history_version: 1
+target:
+  kind: record
+  slug: pyrite
+  path: data/records/pyrite.yaml
+session:
+  id: 2026-11-15T042023Z-codex-99368c
+  timestamp: '2026-11-15T04:20:23Z'
+  actors:
+  - name: codex
+    type: ai_agent
+    model: GPT-5
+    agent_tool: codex
+events:
+- type: EDIT
+  outcome: changed
+  summary: Refresh pyrite protein metadata and causal graph
+  details: Resolved PR review findings by updating Mvol_0819 UniProtKB NCBIfam assignments
+    from live metadata and weakening the formate-dehydrogenase graph edge so it no longer
+    asserts direct FeS2 reduction.
+links:
+  issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/1005
+  - https://github.com/CultureBotAI/CMMMech/issues/1006
+  prs:
+  - https://github.com/CultureBotAI/CMMMech/pull/1004

@@ -1,0 +1,314 @@
+# Cycle 14 Stage 3 protein_examples and causal_graphs review of Lead blast-furnace slag (cmmmech:lead-blast-furnace-slag)
+
+- Review: 20261111T142200Z-lead-blast-furnace-slag-cycle14-stage3-protein-examples-review
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-11-11T14:21:00Z
+- Finished UTC: 2026-11-11T14:22:00Z
+- Reviewer: antigravity / cmmmech-cycle14-stage3-protein-examples-reviewer (self_review)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Lead blast-furnace slag (cmmmech:lead-blast-furnace-slag) passes Cycle 14 Stage 3 protein_examples review (scientific_review: true) at SHA-256 51ece9c4401e6f66eac7e03082f884a11bdea153b8006843eb60422a55d605d5: Updated data/records/lead-blast-furnace-slag.yaml with UniProtKB:Q51548 (PVDA_PSEAE, L-ornithine N(5)-monooxygenase, gene_symbol: pvdA, SWISS_PROT, NCBITaxon:208964 Pseudomonas aeruginosa PAO1, UP000002438); UniProtKB:P48632 (FPVA_PSEAE, Ferripyoverdine receptor, gene_symbol: fpvA, SWISS_PROT, NCBITaxon:208964 Pseudomonas aeruginosa PAO1, UP000002438) and 'pseudomonas_lead_slag_bioalteration_graph' (mechanism_ref: pseudomonas_bioalteration, 4 nodes / 3 edges), achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and preserving source-faithful support levels and experimental caveats from yin2014_thesis: Yin NH (2014). Weathering of metallurgical slags: a comprehensive study on the importance of chemical and biological contributions. Doctoral thesis, Universite Paris-Est; defended 2 December 2014, NNT 2014PEST1125. HAL tel-01154324v1. Complete 200-page deposited PDF inspected for Section 4.1.2 (printed p.84; PDF p.85) and Chapter 8 (printed pp.171-186; PDF pp.172-187), including relevant original tables and figures. Chapter 8 identifies its associated journal article DOI 10.1016/j.jenvman.2014.09.018. The thesis is the full-text version inspected here; it is not an independent replication of that article. (https://theses.hal.science/tel-01154324v1).
+
+## Scope And Provenance
+
+Cycle 14 Stage 3 protein_examples and causal_graphs review of data/records/lead-blast-furnace-slag.yaml (SHA-256 51ece9c4401e6f66eac7e03082f884a11bdea153b8006843eb60422a55d605d5) and its canonical EDIT history sidecar (history/records/lead-blast-furnace-slag/2026-11-11T142114Z-marcin-df2c06.yaml) verifying live UniProtKB grounding (UniProtKB:Q51548 (PVDA_PSEAE, L-ornithine N(5)-monooxygenase, gene_symbol: pvdA, SWISS_PROT, NCBITaxon:208964 Pseudomonas aeruginosa PAO1, UP000002438); UniProtKB:P48632 (FPVA_PSEAE, Ferripyoverdine receptor, gene_symbol: fpvA, SWISS_PROT, NCBITaxon:208964 Pseudomonas aeruginosa PAO1, UP000002438)), causal-graph node/edge parity across 'pseudomonas_lead_slag_bioalteration_graph' (mechanism_ref: pseudomonas_bioalteration, 4 nodes / 3 edges), and primary-source evidence fidelity.
+
+Selection: Cycle 14 Stage 3 protein_examples cohort review for cmmmech:lead-blast-furnace-slag
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 000fd9c1bad8e0de32a55b4bc1554d4a86696dae.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:lead-blast-furnace-slag | data/records/lead-blast-furnace-slag.yaml | maintained | Lead blast-furnace slag |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Strict corpus validation | passed | True | cmmmech:lead-blast-furnace-slag | Checked 713 record(s); 0 failed. |
+| Canonical history validation | passed | True | cmmmech:lead-blast-furnace-slag | Checked 1583 history record(s); 0 error(s). |
+
+## Scientific And Domain Assessments
+
+### Verification of UniProtKB protein_examples grounding, causal_graphs structure, and parity across 'pseudomonas_lead_slag_bioalteration_graph' (mechanism_ref: pseudomonas_bioalteration, 4 nodes / 3 edges)
+
+graph: supported. Targets: cmmmech:lead-blast-furnace-slag.
+
+Updated data/records/lead-blast-furnace-slag.yaml (SHA-256 51ece9c4401e6f66eac7e03082f884a11bdea153b8006843eb60422a55d605d5) with live-verified protein_examples (UniProtKB:Q51548 (PVDA_PSEAE, L-ornithine N(5)-monooxygenase, gene_symbol: pvdA, SWISS_PROT, NCBITaxon:208964 Pseudomonas aeruginosa PAO1, UP000002438); UniProtKB:P48632 (FPVA_PSEAE, Ferripyoverdine receptor, gene_symbol: fpvA, SWISS_PROT, NCBITaxon:208964 Pseudomonas aeruginosa PAO1, UP000002438)) and causal_graphs ('pseudomonas_lead_slag_bioalteration_graph' (mechanism_ref: pseudomonas_bioalteration, 4 nodes / 3 edges)), achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and preserving source-faithful support levels and caveats from yin2014_thesis: Yin NH (2014). Weathering of metallurgical slags: a comprehensive study on the importance of chemical and biological contributions. Doctoral thesis, Universite Paris-Est; defended 2 December 2014, NNT 2014PEST1125. HAL tel-01154324v1. Complete 200-page deposited PDF inspected for Section 4.1.2 (printed p.84; PDF p.85) and Chapter 8 (printed pp.171-186; PDF pp.172-187), including relevant original tables and figures. Chapter 8 identifies its associated journal article DOI 10.1016/j.jenvman.2014.09.018. The thesis is the full-text version inspected here; it is not an independent replication of that article. (https://theses.hal.science/tel-01154324v1).
+
+### Verification of canonical EDIT history sidecar and strict schema validation
+
+provenance: supported. Targets: cmmmech:lead-blast-furnace-slag.
+
+data/records/lead-blast-furnace-slag.yaml was updated exclusively through scripts/curate_causal_graphs.py (curate_record_file), producing append-only history sidecar history/records/lead-blast-furnace-slag/2026-11-11T142114Z-marcin-df2c06.yaml (SHA-256 187423aeb3d34e1f59891a09ac5540edc095297b89663d77234343a49b88c8f7: Added reviewed Swiss-Prot Pseudomonas aeruginosa PAO1 protein examples (PvdA UniProtKB:Q51548, FpvA UniProtKB:P48632) and representative causal graph for CIP 105094 lead blast-furnace slag bioalteration.) and passing all LinkML and history validation gates.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/records/lead-blast-furnace-slag.yaml; Working-tree record data/records/lead-blast-furnace-slag.yaml (mechanisms[].protein_examples and causal_graphs) | supports | Updated data/records/lead-blast-furnace-slag.yaml (SHA-256 51ece9c4401e6f66eac7e03082f884a11bdea153b8006843eb60422a55d605d5) with live-verified protein_examples (UniProtKB:Q51548 (PVDA_PSEAE, L-ornithine N(5)-monooxygenase, gene_symbol: pvdA, SWISS_PROT, NCBITaxon:208964 Pseudomonas aeruginosa PAO1, UP000002438); UniProtKB:P48632 (FPVA_PSEAE, Ferripyoverdine receptor, gene_symbol: fpvA, SWISS_PROT, NCBITaxon:208964 Pseudomonas aeruginosa PAO1, UP000002438)) and causal_graphs ('pseudomonas_lead_slag_bioalteration_graph' (mechanism_ref: pseudomonas_bioalteration, 4 nodes / 3 edges)), achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and preserving source-faithful support levels. |
+| primary_source | https://theses.hal.science/tel-01154324v1; yin2014_thesis: Yin NH (2014). Weathering of metallurgical slags: a comprehensive study on the importance of chemical and biological contributions. Doctoral thesis, Universite Paris-Est; defended 2 December 2014, NNT 2014PEST1125. HAL tel-01154324v1. Complete 200-page deposited PDF inspected for Section 4.1.2 (printed p.84; PDF p.85) and Chapter 8 (printed pp.171-186; PDF pp.172-187), including relevant original tables and figures. Chapter 8 identifies its associated journal article DOI 10.1016/j.jenvman.2014.09.018. The thesis is the full-text version inspected here; it is not an independent replication of that article. (https://theses.hal.science/tel-01154324v1) | supports | Live-verified UniProtKB grounding across UniProtKB:Q51548 (PVDA_PSEAE, L-ornithine N(5)-monooxygenase, gene_symbol: pvdA, SWISS_PROT, NCBITaxon:208964 Pseudomonas aeruginosa PAO1, UP000002438); UniProtKB:P48632 (FPVA_PSEAE, Ferripyoverdine receptor, gene_symbol: fpvA, SWISS_PROT, NCBITaxon:208964 Pseudomonas aeruginosa PAO1, UP000002438). Primary mechanism source (yin2014_thesis: Yin NH (2014). Weathering of metallurgical slags: a comprehensive study on the importance of chemical and biological contributions. Doctoral thesis, Universite Paris-Est; defended 2 December 2014, NNT 2014PEST1125. HAL tel-01154324v1. Complete 200-page deposited PDF inspected for Section 4.1.2 (printed p.84; PDF p.85) and Chapter 8 (printed pp.171-186; PDF pp.172-187), including relevant original tables and figures. Chapter 8 identifies its associated journal article DOI 10.1016/j.jenvman.2014.09.018. The thesis is the full-text version inspected here; it is not an independent replication of that article. (https://theses.hal.science/tel-01154324v1)) parameters and source-level caveats are strictly preserved on all nodes, edges, and ProteinExample evidence items. |
+| edit_history | history/records/lead-blast-furnace-slag/2026-11-11T142114Z-marcin-df2c06.yaml; Canonical EDIT history sidecar history/records/lead-blast-furnace-slag/2026-11-11T142114Z-marcin-df2c06.yaml | supports | Canonical EDIT history sidecar history/records/lead-blast-furnace-slag/2026-11-11T142114Z-marcin-df2c06.yaml (SHA-256 187423aeb3d34e1f59891a09ac5540edc095297b89663d77234343a49b88c8f7): Added reviewed Swiss-Prot Pseudomonas aeruginosa PAO1 protein examples (PvdA UniProtKB:Q51548, FpvA UniProtKB:P48632) and representative causal graph for CIP 105094 lead blast-furnace slag bioalteration. |
+| validation | data/records/lead-blast-furnace-slag.yaml; Real CLI validation via python -m cmmmech validate --require-records and validate-history --base main | supports | data/records/lead-blast-furnace-slag.yaml and history/records/lead-blast-furnace-slag/2026-11-11T142114Z-marcin-df2c06.yaml pass strict LinkML schema, protein_examples parity, and history validation with 0 errors. |
+
+## Limits And Additional Notes
+
+- Review is conducted in single-agent Goal Mode (independence: self_review) against working-tree bytes; an independent subagent PR review is executed prior to merge.
+- Executed during Cycle 14 Stage 3 (protein_examples) for cmmmech:lead-blast-furnace-slag.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261111T142200Z-lead-blast-furnace-slag-cycle14-stage3-protein-examples-review
+kind: record
+repository: CultureBotAI/CMMMech
+title: Cycle 14 Stage 3 protein_examples and causal_graphs review of Lead blast-furnace
+  slag (cmmmech:lead-blast-furnace-slag)
+started_at: '2026-11-11T14:21:00Z'
+finished_at: '2026-11-11T14:22:00Z'
+reviewer:
+  identity: antigravity / cmmmech-cycle14-stage3-protein-examples-reviewer
+  kind: agent
+  model: claude-opus-4-6
+  independence: self_review
+  independence_basis: 'Single-agent Goal Mode execution of .claude/skills/review-record/SKILL.md
+    verifying the Cycle 14 Stage 3 curation of data/records/lead-blast-furnace-slag.yaml
+    (SHA-256 51ece9c4401e6f66eac7e03082f884a11bdea153b8006843eb60422a55d605d5) against
+    live UniProtKB grounding and cited primary source (yin2014_thesis: Yin NH (2014).
+    Weathering of metallurgical slags: a comprehensive study on the importance of
+    chemical and biological contributions. Doctoral thesis, Universite Paris-Est;
+    defended 2 December 2014, NNT 2014PEST1125. HAL tel-01154324v1. Complete 200-page
+    deposited PDF inspected for Section 4.1.2 (printed p.84; PDF p.85) and Chapter
+    8 (printed pp.171-186; PDF pp.172-187), including relevant original tables and
+    figures. Chapter 8 identifies its associated journal article DOI 10.1016/j.jenvman.2014.09.018.
+    The thesis is the full-text version inspected here; it is not an independent replication
+    of that article. (https://theses.hal.science/tel-01154324v1)).'
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: 000fd9c1bad8e0de32a55b4bc1554d4a86696dae
+  state: working_tree
+  inputs:
+  - path: data/records/lead-blast-furnace-slag.yaml
+    sha256: 51ece9c4401e6f66eac7e03082f884a11bdea153b8006843eb60422a55d605d5
+    role: target
+  - path: history/records/lead-blast-furnace-slag/2026-11-11T142114Z-marcin-df2c06.yaml
+    sha256: 187423aeb3d34e1f59891a09ac5540edc095297b89663d77234343a49b88c8f7
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+targets:
+- target_id: cmmmech:lead-blast-furnace-slag
+  path: data/records/lead-blast-furnace-slag.yaml
+  label: Lead blast-furnace slag
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/lead-blast-furnace-slag.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/lead-blast-furnace-slag/2026-11-11T142114Z-marcin-df2c06.yaml
+    role: canonical_history
+scope:
+  description: 'Cycle 14 Stage 3 protein_examples and causal_graphs review of data/records/lead-blast-furnace-slag.yaml
+    (SHA-256 51ece9c4401e6f66eac7e03082f884a11bdea153b8006843eb60422a55d605d5) and
+    its canonical EDIT history sidecar (history/records/lead-blast-furnace-slag/2026-11-11T142114Z-marcin-df2c06.yaml)
+    verifying live UniProtKB grounding (UniProtKB:Q51548 (PVDA_PSEAE, L-ornithine
+    N(5)-monooxygenase, gene_symbol: pvdA, SWISS_PROT, NCBITaxon:208964 Pseudomonas
+    aeruginosa PAO1, UP000002438); UniProtKB:P48632 (FPVA_PSEAE, Ferripyoverdine receptor,
+    gene_symbol: fpvA, SWISS_PROT, NCBITaxon:208964 Pseudomonas aeruginosa PAO1, UP000002438)),
+    causal-graph node/edge parity across ''pseudomonas_lead_slag_bioalteration_graph''
+    (mechanism_ref: pseudomonas_bioalteration, 4 nodes / 3 edges), and primary-source
+    evidence fidelity.'
+  selection: Cycle 14 Stage 3 protein_examples cohort review for cmmmech:lead-blast-furnace-slag
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:lead-blast-furnace-slag
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/lead-blast-furnace-slag.yaml
+  locator: Working-tree record data/records/lead-blast-furnace-slag.yaml (mechanisms[].protein_examples
+    and causal_graphs)
+  accessed_at: '2026-11-11T14:22:00Z'
+  support: supports
+  summary: 'Updated data/records/lead-blast-furnace-slag.yaml (SHA-256 51ece9c4401e6f66eac7e03082f884a11bdea153b8006843eb60422a55d605d5)
+    with live-verified protein_examples (UniProtKB:Q51548 (PVDA_PSEAE, L-ornithine
+    N(5)-monooxygenase, gene_symbol: pvdA, SWISS_PROT, NCBITaxon:208964 Pseudomonas
+    aeruginosa PAO1, UP000002438); UniProtKB:P48632 (FPVA_PSEAE, Ferripyoverdine receptor,
+    gene_symbol: fpvA, SWISS_PROT, NCBITaxon:208964 Pseudomonas aeruginosa PAO1, UP000002438))
+    and causal_graphs (''pseudomonas_lead_slag_bioalteration_graph'' (mechanism_ref:
+    pseudomonas_bioalteration, 4 nodes / 3 edges)), achieving 100% parity between
+    mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and
+    preserving source-faithful support levels.'
+  snapshot_sha256: 51ece9c4401e6f66eac7e03082f884a11bdea153b8006843eb60422a55d605d5
+- evidence_id: primary_source
+  kind: primary_source
+  reference: https://theses.hal.science/tel-01154324v1
+  locator: 'yin2014_thesis: Yin NH (2014). Weathering of metallurgical slags: a comprehensive
+    study on the importance of chemical and biological contributions. Doctoral thesis,
+    Universite Paris-Est; defended 2 December 2014, NNT 2014PEST1125. HAL tel-01154324v1.
+    Complete 200-page deposited PDF inspected for Section 4.1.2 (printed p.84; PDF
+    p.85) and Chapter 8 (printed pp.171-186; PDF pp.172-187), including relevant original
+    tables and figures. Chapter 8 identifies its associated journal article DOI 10.1016/j.jenvman.2014.09.018.
+    The thesis is the full-text version inspected here; it is not an independent replication
+    of that article. (https://theses.hal.science/tel-01154324v1)'
+  accessed_at: '2026-11-11T14:22:00Z'
+  support: supports
+  summary: 'Live-verified UniProtKB grounding across UniProtKB:Q51548 (PVDA_PSEAE,
+    L-ornithine N(5)-monooxygenase, gene_symbol: pvdA, SWISS_PROT, NCBITaxon:208964
+    Pseudomonas aeruginosa PAO1, UP000002438); UniProtKB:P48632 (FPVA_PSEAE, Ferripyoverdine
+    receptor, gene_symbol: fpvA, SWISS_PROT, NCBITaxon:208964 Pseudomonas aeruginosa
+    PAO1, UP000002438). Primary mechanism source (yin2014_thesis: Yin NH (2014). Weathering
+    of metallurgical slags: a comprehensive study on the importance of chemical and
+    biological contributions. Doctoral thesis, Universite Paris-Est; defended 2 December
+    2014, NNT 2014PEST1125. HAL tel-01154324v1. Complete 200-page deposited PDF inspected
+    for Section 4.1.2 (printed p.84; PDF p.85) and Chapter 8 (printed pp.171-186;
+    PDF pp.172-187), including relevant original tables and figures. Chapter 8 identifies
+    its associated journal article DOI 10.1016/j.jenvman.2014.09.018. The thesis is
+    the full-text version inspected here; it is not an independent replication of
+    that article. (https://theses.hal.science/tel-01154324v1)) parameters and source-level
+    caveats are strictly preserved on all nodes, edges, and ProteinExample evidence
+    items.'
+- evidence_id: edit_history
+  kind: record_content
+  reference: history/records/lead-blast-furnace-slag/2026-11-11T142114Z-marcin-df2c06.yaml
+  locator: Canonical EDIT history sidecar history/records/lead-blast-furnace-slag/2026-11-11T142114Z-marcin-df2c06.yaml
+  accessed_at: '2026-11-11T14:22:00Z'
+  support: supports
+  summary: 'Canonical EDIT history sidecar history/records/lead-blast-furnace-slag/2026-11-11T142114Z-marcin-df2c06.yaml
+    (SHA-256 187423aeb3d34e1f59891a09ac5540edc095297b89663d77234343a49b88c8f7): Added
+    reviewed Swiss-Prot Pseudomonas aeruginosa PAO1 protein examples (PvdA UniProtKB:Q51548,
+    FpvA UniProtKB:P48632) and representative causal graph for CIP 105094 lead blast-furnace
+    slag bioalteration.'
+  snapshot_sha256: 187423aeb3d34e1f59891a09ac5540edc095297b89663d77234343a49b88c8f7
+- evidence_id: validation
+  kind: validation
+  reference: data/records/lead-blast-furnace-slag.yaml
+  locator: Real CLI validation via python -m cmmmech validate --require-records and
+    validate-history --base main
+  accessed_at: '2026-11-11T14:22:00Z'
+  support: supports
+  summary: data/records/lead-blast-furnace-slag.yaml and history/records/lead-blast-furnace-slag/2026-11-11T142114Z-marcin-df2c06.yaml
+    pass strict LinkML schema, protein_examples parity, and history validation with
+    0 errors.
+  snapshot_sha256: 51ece9c4401e6f66eac7e03082f884a11bdea153b8006843eb60422a55d605d5
+checks:
+- check_id: validate_records
+  name: Strict corpus validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Checked 713 record(s); 0 failed.
+  target_ids:
+  - cmmmech:lead-blast-furnace-slag
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: validate_history
+  name: Canonical history validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate-history --base main
+  status: passed
+  required: true
+  summary: Checked 1583 history record(s); 0 error(s).
+  target_ids:
+  - cmmmech:lead-blast-furnace-slag
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+assessments:
+- assessment_id: protein_grounding_and_causal_graph
+  area: graph
+  topic: 'Verification of UniProtKB protein_examples grounding, causal_graphs structure,
+    and parity across ''pseudomonas_lead_slag_bioalteration_graph'' (mechanism_ref:
+    pseudomonas_bioalteration, 4 nodes / 3 edges)'
+  outcome: supported
+  summary: 'Updated data/records/lead-blast-furnace-slag.yaml (SHA-256 51ece9c4401e6f66eac7e03082f884a11bdea153b8006843eb60422a55d605d5)
+    with live-verified protein_examples (UniProtKB:Q51548 (PVDA_PSEAE, L-ornithine
+    N(5)-monooxygenase, gene_symbol: pvdA, SWISS_PROT, NCBITaxon:208964 Pseudomonas
+    aeruginosa PAO1, UP000002438); UniProtKB:P48632 (FPVA_PSEAE, Ferripyoverdine receptor,
+    gene_symbol: fpvA, SWISS_PROT, NCBITaxon:208964 Pseudomonas aeruginosa PAO1, UP000002438))
+    and causal_graphs (''pseudomonas_lead_slag_bioalteration_graph'' (mechanism_ref:
+    pseudomonas_bioalteration, 4 nodes / 3 edges)), achieving 100% parity between
+    mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and
+    preserving source-faithful support levels and caveats from yin2014_thesis: Yin
+    NH (2014). Weathering of metallurgical slags: a comprehensive study on the importance
+    of chemical and biological contributions. Doctoral thesis, Universite Paris-Est;
+    defended 2 December 2014, NNT 2014PEST1125. HAL tel-01154324v1. Complete 200-page
+    deposited PDF inspected for Section 4.1.2 (printed p.84; PDF p.85) and Chapter
+    8 (printed pp.171-186; PDF pp.172-187), including relevant original tables and
+    figures. Chapter 8 identifies its associated journal article DOI 10.1016/j.jenvman.2014.09.018.
+    The thesis is the full-text version inspected here; it is not an independent replication
+    of that article. (https://theses.hal.science/tel-01154324v1).'
+  target_ids:
+  - cmmmech:lead-blast-furnace-slag
+  evidence_ids:
+  - owner
+  - primary_source
+- assessment_id: provenance_and_validation_verification
+  area: provenance
+  topic: Verification of canonical EDIT history sidecar and strict schema validation
+  outcome: supported
+  summary: 'data/records/lead-blast-furnace-slag.yaml was updated exclusively through
+    scripts/curate_causal_graphs.py (curate_record_file), producing append-only history
+    sidecar history/records/lead-blast-furnace-slag/2026-11-11T142114Z-marcin-df2c06.yaml
+    (SHA-256 187423aeb3d34e1f59891a09ac5540edc095297b89663d77234343a49b88c8f7: Added
+    reviewed Swiss-Prot Pseudomonas aeruginosa PAO1 protein examples (PvdA UniProtKB:Q51548,
+    FpvA UniProtKB:P48632) and representative causal graph for CIP 105094 lead blast-furnace
+    slag bioalteration.) and passing all LinkML and history validation gates.'
+  target_ids:
+  - cmmmech:lead-blast-furnace-slag
+  evidence_ids:
+  - owner
+  - edit_history
+  - validation
+findings: []
+actions: []
+summary: 'Lead blast-furnace slag (cmmmech:lead-blast-furnace-slag) passes Cycle 14
+  Stage 3 protein_examples review (scientific_review: true) at SHA-256 51ece9c4401e6f66eac7e03082f884a11bdea153b8006843eb60422a55d605d5:
+  Updated data/records/lead-blast-furnace-slag.yaml with UniProtKB:Q51548 (PVDA_PSEAE,
+  L-ornithine N(5)-monooxygenase, gene_symbol: pvdA, SWISS_PROT, NCBITaxon:208964
+  Pseudomonas aeruginosa PAO1, UP000002438); UniProtKB:P48632 (FPVA_PSEAE, Ferripyoverdine
+  receptor, gene_symbol: fpvA, SWISS_PROT, NCBITaxon:208964 Pseudomonas aeruginosa
+  PAO1, UP000002438) and ''pseudomonas_lead_slag_bioalteration_graph'' (mechanism_ref:
+  pseudomonas_bioalteration, 4 nodes / 3 edges), achieving 100% parity between mechanisms[].protein_examples
+  and causal_graphs[].nodes[].protein_examples and preserving source-faithful support
+  levels and experimental caveats from yin2014_thesis: Yin NH (2014). Weathering of
+  metallurgical slags: a comprehensive study on the importance of chemical and biological
+  contributions. Doctoral thesis, Universite Paris-Est; defended 2 December 2014,
+  NNT 2014PEST1125. HAL tel-01154324v1. Complete 200-page deposited PDF inspected
+  for Section 4.1.2 (printed p.84; PDF p.85) and Chapter 8 (printed pp.171-186; PDF
+  pp.172-187), including relevant original tables and figures. Chapter 8 identifies
+  its associated journal article DOI 10.1016/j.jenvman.2014.09.018. The thesis is
+  the full-text version inspected here; it is not an independent replication of that
+  article. (https://theses.hal.science/tel-01154324v1).'
+limitations:
+- 'Review is conducted in single-agent Goal Mode (independence: self_review) against
+  working-tree bytes; an independent subagent PR review is executed prior to merge.'
+notes:
+- Executed during Cycle 14 Stage 3 (protein_examples) for cmmmech:lead-blast-furnace-slag.
+related_reviews: []
+```

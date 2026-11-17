@@ -1,0 +1,294 @@
+# Cycle 14 Stage 3 protein_examples and causal_graphs review of Whitlockite (cmmmech:whitlockite)
+
+- Review: 20261111T142200Z-whitlockite-cycle14-stage3-protein-examples-review
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-11-11T14:21:00Z
+- Finished UTC: 2026-11-11T14:22:00Z
+- Reviewer: antigravity / cmmmech-cycle14-stage3-protein-examples-reviewer (self_review)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Whitlockite (cmmmech:whitlockite) passes Cycle 14 Stage 3 protein_examples review (scientific_review: true) at SHA-256 7b37c63d3ec86b4b0848794f7de1e421d9975c9fa861c254d35a0762583922cd: Updated data/records/whitlockite.yaml with UniProtKB:P59934 (COOS1_CARHZ, Carbon monoxide dehydrogenase 1, gene_symbol: cooS1, SWISS_PROT, NCBITaxon:246194 Carboxydothermus hydrogenoformans Z-2901, UP000002706); UniProtKB:Q9F8A8 (COOS2_CARHZ, Carbon monoxide dehydrogenase 2, gene_symbol: cooS2, SWISS_PROT, NCBITaxon:246194 Carboxydothermus hydrogenoformans Z-2901, UP000002706) and 'hydrogenoformans_dsm6008_whitlockite_crystallization_graph' (mechanism_ref: hydrogenoformans_associated_phosphate_crystallization, 4 nodes / 3 edges), achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and preserving source-faithful support levels and experimental caveats from haddad2014: Haddad, Vali, Paquette and Guiot (2014). The Role of Carboxydothermus hydrogenoformans in the Conversion of Calcium Phosphate from Amorphous to Crystalline State. PLOS ONE 9:e89480. Complete 14-page original, Figures 1-11 and Tables 1-2; Methods and Results/Discussion. (https://doi.org/10.1371/journal.pone.0089480).
+
+## Scope And Provenance
+
+Cycle 14 Stage 3 protein_examples and causal_graphs review of data/records/whitlockite.yaml (SHA-256 7b37c63d3ec86b4b0848794f7de1e421d9975c9fa861c254d35a0762583922cd) and its canonical EDIT history sidecar (history/records/whitlockite/2026-11-11T142118Z-marcin-7c0085.yaml) verifying live UniProtKB grounding (UniProtKB:P59934 (COOS1_CARHZ, Carbon monoxide dehydrogenase 1, gene_symbol: cooS1, SWISS_PROT, NCBITaxon:246194 Carboxydothermus hydrogenoformans Z-2901, UP000002706); UniProtKB:Q9F8A8 (COOS2_CARHZ, Carbon monoxide dehydrogenase 2, gene_symbol: cooS2, SWISS_PROT, NCBITaxon:246194 Carboxydothermus hydrogenoformans Z-2901, UP000002706)), causal-graph node/edge parity across 'hydrogenoformans_dsm6008_whitlockite_crystallization_graph' (mechanism_ref: hydrogenoformans_associated_phosphate_crystallization, 4 nodes / 3 edges), and primary-source evidence fidelity.
+
+Selection: Cycle 14 Stage 3 protein_examples cohort review for cmmmech:whitlockite
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 000fd9c1bad8e0de32a55b4bc1554d4a86696dae.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:whitlockite | data/records/whitlockite.yaml | maintained | Whitlockite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Strict corpus validation | passed | True | cmmmech:whitlockite | Checked 713 record(s); 0 failed. |
+| Canonical history validation | passed | True | cmmmech:whitlockite | Checked 1583 history record(s); 0 error(s). |
+
+## Scientific And Domain Assessments
+
+### Verification of UniProtKB protein_examples grounding, causal_graphs structure, and parity across 'hydrogenoformans_dsm6008_whitlockite_crystallization_graph' (mechanism_ref: hydrogenoformans_associated_phosphate_crystallization, 4 nodes / 3 edges)
+
+graph: supported. Targets: cmmmech:whitlockite.
+
+Updated data/records/whitlockite.yaml (SHA-256 7b37c63d3ec86b4b0848794f7de1e421d9975c9fa861c254d35a0762583922cd) with live-verified protein_examples (UniProtKB:P59934 (COOS1_CARHZ, Carbon monoxide dehydrogenase 1, gene_symbol: cooS1, SWISS_PROT, NCBITaxon:246194 Carboxydothermus hydrogenoformans Z-2901, UP000002706); UniProtKB:Q9F8A8 (COOS2_CARHZ, Carbon monoxide dehydrogenase 2, gene_symbol: cooS2, SWISS_PROT, NCBITaxon:246194 Carboxydothermus hydrogenoformans Z-2901, UP000002706)) and causal_graphs ('hydrogenoformans_dsm6008_whitlockite_crystallization_graph' (mechanism_ref: hydrogenoformans_associated_phosphate_crystallization, 4 nodes / 3 edges)), achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and preserving source-faithful support levels and caveats from haddad2014: Haddad, Vali, Paquette and Guiot (2014). The Role of Carboxydothermus hydrogenoformans in the Conversion of Calcium Phosphate from Amorphous to Crystalline State. PLOS ONE 9:e89480. Complete 14-page original, Figures 1-11 and Tables 1-2; Methods and Results/Discussion. (https://doi.org/10.1371/journal.pone.0089480).
+
+### Verification of canonical EDIT history sidecar and strict schema validation
+
+provenance: supported. Targets: cmmmech:whitlockite.
+
+data/records/whitlockite.yaml was updated exclusively through scripts/curate_causal_graphs.py (curate_record_file), producing append-only history sidecar history/records/whitlockite/2026-11-11T142118Z-marcin-7c0085.yaml (SHA-256 18e3cbebb00fc0ad1a2e25a2dc427cfc86ea18a8b7d9d5bd2fa4b4154f5c4c0c: Added reviewed Swiss-Prot Carboxydothermus hydrogenoformans DSM 6008 protein examples (CooS1 UniProtKB:P59934, CooS2 UniProtKB:Q9F8A8) and representative causal graph for cell-associated whitlockite crystallization.) and passing all LinkML and history validation gates.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/records/whitlockite.yaml; Working-tree record data/records/whitlockite.yaml (mechanisms[].protein_examples and causal_graphs) | supports | Updated data/records/whitlockite.yaml (SHA-256 7b37c63d3ec86b4b0848794f7de1e421d9975c9fa861c254d35a0762583922cd) with live-verified protein_examples (UniProtKB:P59934 (COOS1_CARHZ, Carbon monoxide dehydrogenase 1, gene_symbol: cooS1, SWISS_PROT, NCBITaxon:246194 Carboxydothermus hydrogenoformans Z-2901, UP000002706); UniProtKB:Q9F8A8 (COOS2_CARHZ, Carbon monoxide dehydrogenase 2, gene_symbol: cooS2, SWISS_PROT, NCBITaxon:246194 Carboxydothermus hydrogenoformans Z-2901, UP000002706)) and causal_graphs ('hydrogenoformans_dsm6008_whitlockite_crystallization_graph' (mechanism_ref: hydrogenoformans_associated_phosphate_crystallization, 4 nodes / 3 edges)), achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and preserving source-faithful support levels. |
+| primary_source | https://doi.org/10.1371/journal.pone.0089480; haddad2014: Haddad, Vali, Paquette and Guiot (2014). The Role of Carboxydothermus hydrogenoformans in the Conversion of Calcium Phosphate from Amorphous to Crystalline State. PLOS ONE 9:e89480. Complete 14-page original, Figures 1-11 and Tables 1-2; Methods and Results/Discussion. (https://doi.org/10.1371/journal.pone.0089480) | supports | Live-verified UniProtKB grounding across UniProtKB:P59934 (COOS1_CARHZ, Carbon monoxide dehydrogenase 1, gene_symbol: cooS1, SWISS_PROT, NCBITaxon:246194 Carboxydothermus hydrogenoformans Z-2901, UP000002706); UniProtKB:Q9F8A8 (COOS2_CARHZ, Carbon monoxide dehydrogenase 2, gene_symbol: cooS2, SWISS_PROT, NCBITaxon:246194 Carboxydothermus hydrogenoformans Z-2901, UP000002706). Primary mechanism source (haddad2014: Haddad, Vali, Paquette and Guiot (2014). The Role of Carboxydothermus hydrogenoformans in the Conversion of Calcium Phosphate from Amorphous to Crystalline State. PLOS ONE 9:e89480. Complete 14-page original, Figures 1-11 and Tables 1-2; Methods and Results/Discussion. (https://doi.org/10.1371/journal.pone.0089480)) parameters and source-level caveats are strictly preserved on all nodes, edges, and ProteinExample evidence items. |
+| edit_history | history/records/whitlockite/2026-11-11T142118Z-marcin-7c0085.yaml; Canonical EDIT history sidecar history/records/whitlockite/2026-11-11T142118Z-marcin-7c0085.yaml | supports | Canonical EDIT history sidecar history/records/whitlockite/2026-11-11T142118Z-marcin-7c0085.yaml (SHA-256 18e3cbebb00fc0ad1a2e25a2dc427cfc86ea18a8b7d9d5bd2fa4b4154f5c4c0c): Added reviewed Swiss-Prot Carboxydothermus hydrogenoformans DSM 6008 protein examples (CooS1 UniProtKB:P59934, CooS2 UniProtKB:Q9F8A8) and representative causal graph for cell-associated whitlockite crystallization. |
+| validation | data/records/whitlockite.yaml; Real CLI validation via python -m cmmmech validate --require-records and validate-history --base main | supports | data/records/whitlockite.yaml and history/records/whitlockite/2026-11-11T142118Z-marcin-7c0085.yaml pass strict LinkML schema, protein_examples parity, and history validation with 0 errors. |
+
+## Limits And Additional Notes
+
+- Review is conducted in single-agent Goal Mode (independence: self_review) against working-tree bytes; an independent subagent PR review is executed prior to merge.
+- Executed during Cycle 14 Stage 3 (protein_examples) for cmmmech:whitlockite.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261111T142200Z-whitlockite-cycle14-stage3-protein-examples-review
+kind: record
+repository: CultureBotAI/CMMMech
+title: Cycle 14 Stage 3 protein_examples and causal_graphs review of Whitlockite (cmmmech:whitlockite)
+started_at: '2026-11-11T14:21:00Z'
+finished_at: '2026-11-11T14:22:00Z'
+reviewer:
+  identity: antigravity / cmmmech-cycle14-stage3-protein-examples-reviewer
+  kind: agent
+  model: claude-opus-4-6
+  independence: self_review
+  independence_basis: 'Single-agent Goal Mode execution of .claude/skills/review-record/SKILL.md
+    verifying the Cycle 14 Stage 3 curation of data/records/whitlockite.yaml (SHA-256
+    7b37c63d3ec86b4b0848794f7de1e421d9975c9fa861c254d35a0762583922cd) against live
+    UniProtKB grounding and cited primary source (haddad2014: Haddad, Vali, Paquette
+    and Guiot (2014). The Role of Carboxydothermus hydrogenoformans in the Conversion
+    of Calcium Phosphate from Amorphous to Crystalline State. PLOS ONE 9:e89480. Complete
+    14-page original, Figures 1-11 and Tables 1-2; Methods and Results/Discussion.
+    (https://doi.org/10.1371/journal.pone.0089480)).'
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: 000fd9c1bad8e0de32a55b4bc1554d4a86696dae
+  state: working_tree
+  inputs:
+  - path: data/records/whitlockite.yaml
+    sha256: 7b37c63d3ec86b4b0848794f7de1e421d9975c9fa861c254d35a0762583922cd
+    role: target
+  - path: history/records/whitlockite/2026-11-11T142118Z-marcin-7c0085.yaml
+    sha256: 18e3cbebb00fc0ad1a2e25a2dc427cfc86ea18a8b7d9d5bd2fa4b4154f5c4c0c
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+targets:
+- target_id: cmmmech:whitlockite
+  path: data/records/whitlockite.yaml
+  label: Whitlockite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/whitlockite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/whitlockite/2026-11-11T142118Z-marcin-7c0085.yaml
+    role: canonical_history
+scope:
+  description: 'Cycle 14 Stage 3 protein_examples and causal_graphs review of data/records/whitlockite.yaml
+    (SHA-256 7b37c63d3ec86b4b0848794f7de1e421d9975c9fa861c254d35a0762583922cd) and
+    its canonical EDIT history sidecar (history/records/whitlockite/2026-11-11T142118Z-marcin-7c0085.yaml)
+    verifying live UniProtKB grounding (UniProtKB:P59934 (COOS1_CARHZ, Carbon monoxide
+    dehydrogenase 1, gene_symbol: cooS1, SWISS_PROT, NCBITaxon:246194 Carboxydothermus
+    hydrogenoformans Z-2901, UP000002706); UniProtKB:Q9F8A8 (COOS2_CARHZ, Carbon monoxide
+    dehydrogenase 2, gene_symbol: cooS2, SWISS_PROT, NCBITaxon:246194 Carboxydothermus
+    hydrogenoformans Z-2901, UP000002706)), causal-graph node/edge parity across ''hydrogenoformans_dsm6008_whitlockite_crystallization_graph''
+    (mechanism_ref: hydrogenoformans_associated_phosphate_crystallization, 4 nodes
+    / 3 edges), and primary-source evidence fidelity.'
+  selection: Cycle 14 Stage 3 protein_examples cohort review for cmmmech:whitlockite
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:whitlockite
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/whitlockite.yaml
+  locator: Working-tree record data/records/whitlockite.yaml (mechanisms[].protein_examples
+    and causal_graphs)
+  accessed_at: '2026-11-11T14:22:00Z'
+  support: supports
+  summary: 'Updated data/records/whitlockite.yaml (SHA-256 7b37c63d3ec86b4b0848794f7de1e421d9975c9fa861c254d35a0762583922cd)
+    with live-verified protein_examples (UniProtKB:P59934 (COOS1_CARHZ, Carbon monoxide
+    dehydrogenase 1, gene_symbol: cooS1, SWISS_PROT, NCBITaxon:246194 Carboxydothermus
+    hydrogenoformans Z-2901, UP000002706); UniProtKB:Q9F8A8 (COOS2_CARHZ, Carbon monoxide
+    dehydrogenase 2, gene_symbol: cooS2, SWISS_PROT, NCBITaxon:246194 Carboxydothermus
+    hydrogenoformans Z-2901, UP000002706)) and causal_graphs (''hydrogenoformans_dsm6008_whitlockite_crystallization_graph''
+    (mechanism_ref: hydrogenoformans_associated_phosphate_crystallization, 4 nodes
+    / 3 edges)), achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples
+    and preserving source-faithful support levels.'
+  snapshot_sha256: 7b37c63d3ec86b4b0848794f7de1e421d9975c9fa861c254d35a0762583922cd
+- evidence_id: primary_source
+  kind: primary_source
+  reference: https://doi.org/10.1371/journal.pone.0089480
+  locator: 'haddad2014: Haddad, Vali, Paquette and Guiot (2014). The Role of Carboxydothermus
+    hydrogenoformans in the Conversion of Calcium Phosphate from Amorphous to Crystalline
+    State. PLOS ONE 9:e89480. Complete 14-page original, Figures 1-11 and Tables 1-2;
+    Methods and Results/Discussion. (https://doi.org/10.1371/journal.pone.0089480)'
+  accessed_at: '2026-11-11T14:22:00Z'
+  support: supports
+  summary: 'Live-verified UniProtKB grounding across UniProtKB:P59934 (COOS1_CARHZ,
+    Carbon monoxide dehydrogenase 1, gene_symbol: cooS1, SWISS_PROT, NCBITaxon:246194
+    Carboxydothermus hydrogenoformans Z-2901, UP000002706); UniProtKB:Q9F8A8 (COOS2_CARHZ,
+    Carbon monoxide dehydrogenase 2, gene_symbol: cooS2, SWISS_PROT, NCBITaxon:246194
+    Carboxydothermus hydrogenoformans Z-2901, UP000002706). Primary mechanism source
+    (haddad2014: Haddad, Vali, Paquette and Guiot (2014). The Role of Carboxydothermus
+    hydrogenoformans in the Conversion of Calcium Phosphate from Amorphous to Crystalline
+    State. PLOS ONE 9:e89480. Complete 14-page original, Figures 1-11 and Tables 1-2;
+    Methods and Results/Discussion. (https://doi.org/10.1371/journal.pone.0089480))
+    parameters and source-level caveats are strictly preserved on all nodes, edges,
+    and ProteinExample evidence items.'
+- evidence_id: edit_history
+  kind: record_content
+  reference: history/records/whitlockite/2026-11-11T142118Z-marcin-7c0085.yaml
+  locator: Canonical EDIT history sidecar history/records/whitlockite/2026-11-11T142118Z-marcin-7c0085.yaml
+  accessed_at: '2026-11-11T14:22:00Z'
+  support: supports
+  summary: 'Canonical EDIT history sidecar history/records/whitlockite/2026-11-11T142118Z-marcin-7c0085.yaml
+    (SHA-256 18e3cbebb00fc0ad1a2e25a2dc427cfc86ea18a8b7d9d5bd2fa4b4154f5c4c0c): Added
+    reviewed Swiss-Prot Carboxydothermus hydrogenoformans DSM 6008 protein examples
+    (CooS1 UniProtKB:P59934, CooS2 UniProtKB:Q9F8A8) and representative causal graph
+    for cell-associated whitlockite crystallization.'
+  snapshot_sha256: 18e3cbebb00fc0ad1a2e25a2dc427cfc86ea18a8b7d9d5bd2fa4b4154f5c4c0c
+- evidence_id: validation
+  kind: validation
+  reference: data/records/whitlockite.yaml
+  locator: Real CLI validation via python -m cmmmech validate --require-records and
+    validate-history --base main
+  accessed_at: '2026-11-11T14:22:00Z'
+  support: supports
+  summary: data/records/whitlockite.yaml and history/records/whitlockite/2026-11-11T142118Z-marcin-7c0085.yaml
+    pass strict LinkML schema, protein_examples parity, and history validation with
+    0 errors.
+  snapshot_sha256: 7b37c63d3ec86b4b0848794f7de1e421d9975c9fa861c254d35a0762583922cd
+checks:
+- check_id: validate_records
+  name: Strict corpus validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Checked 713 record(s); 0 failed.
+  target_ids:
+  - cmmmech:whitlockite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: validate_history
+  name: Canonical history validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate-history --base main
+  status: passed
+  required: true
+  summary: Checked 1583 history record(s); 0 error(s).
+  target_ids:
+  - cmmmech:whitlockite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+assessments:
+- assessment_id: protein_grounding_and_causal_graph
+  area: graph
+  topic: 'Verification of UniProtKB protein_examples grounding, causal_graphs structure,
+    and parity across ''hydrogenoformans_dsm6008_whitlockite_crystallization_graph''
+    (mechanism_ref: hydrogenoformans_associated_phosphate_crystallization, 4 nodes
+    / 3 edges)'
+  outcome: supported
+  summary: 'Updated data/records/whitlockite.yaml (SHA-256 7b37c63d3ec86b4b0848794f7de1e421d9975c9fa861c254d35a0762583922cd)
+    with live-verified protein_examples (UniProtKB:P59934 (COOS1_CARHZ, Carbon monoxide
+    dehydrogenase 1, gene_symbol: cooS1, SWISS_PROT, NCBITaxon:246194 Carboxydothermus
+    hydrogenoformans Z-2901, UP000002706); UniProtKB:Q9F8A8 (COOS2_CARHZ, Carbon monoxide
+    dehydrogenase 2, gene_symbol: cooS2, SWISS_PROT, NCBITaxon:246194 Carboxydothermus
+    hydrogenoformans Z-2901, UP000002706)) and causal_graphs (''hydrogenoformans_dsm6008_whitlockite_crystallization_graph''
+    (mechanism_ref: hydrogenoformans_associated_phosphate_crystallization, 4 nodes
+    / 3 edges)), achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples
+    and preserving source-faithful support levels and caveats from haddad2014: Haddad,
+    Vali, Paquette and Guiot (2014). The Role of Carboxydothermus hydrogenoformans
+    in the Conversion of Calcium Phosphate from Amorphous to Crystalline State. PLOS
+    ONE 9:e89480. Complete 14-page original, Figures 1-11 and Tables 1-2; Methods
+    and Results/Discussion. (https://doi.org/10.1371/journal.pone.0089480).'
+  target_ids:
+  - cmmmech:whitlockite
+  evidence_ids:
+  - owner
+  - primary_source
+- assessment_id: provenance_and_validation_verification
+  area: provenance
+  topic: Verification of canonical EDIT history sidecar and strict schema validation
+  outcome: supported
+  summary: 'data/records/whitlockite.yaml was updated exclusively through scripts/curate_causal_graphs.py
+    (curate_record_file), producing append-only history sidecar history/records/whitlockite/2026-11-11T142118Z-marcin-7c0085.yaml
+    (SHA-256 18e3cbebb00fc0ad1a2e25a2dc427cfc86ea18a8b7d9d5bd2fa4b4154f5c4c0c: Added
+    reviewed Swiss-Prot Carboxydothermus hydrogenoformans DSM 6008 protein examples
+    (CooS1 UniProtKB:P59934, CooS2 UniProtKB:Q9F8A8) and representative causal graph
+    for cell-associated whitlockite crystallization.) and passing all LinkML and history
+    validation gates.'
+  target_ids:
+  - cmmmech:whitlockite
+  evidence_ids:
+  - owner
+  - edit_history
+  - validation
+findings: []
+actions: []
+summary: 'Whitlockite (cmmmech:whitlockite) passes Cycle 14 Stage 3 protein_examples
+  review (scientific_review: true) at SHA-256 7b37c63d3ec86b4b0848794f7de1e421d9975c9fa861c254d35a0762583922cd:
+  Updated data/records/whitlockite.yaml with UniProtKB:P59934 (COOS1_CARHZ, Carbon
+  monoxide dehydrogenase 1, gene_symbol: cooS1, SWISS_PROT, NCBITaxon:246194 Carboxydothermus
+  hydrogenoformans Z-2901, UP000002706); UniProtKB:Q9F8A8 (COOS2_CARHZ, Carbon monoxide
+  dehydrogenase 2, gene_symbol: cooS2, SWISS_PROT, NCBITaxon:246194 Carboxydothermus
+  hydrogenoformans Z-2901, UP000002706) and ''hydrogenoformans_dsm6008_whitlockite_crystallization_graph''
+  (mechanism_ref: hydrogenoformans_associated_phosphate_crystallization, 4 nodes /
+  3 edges), achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples
+  and preserving source-faithful support levels and experimental caveats from haddad2014:
+  Haddad, Vali, Paquette and Guiot (2014). The Role of Carboxydothermus hydrogenoformans
+  in the Conversion of Calcium Phosphate from Amorphous to Crystalline State. PLOS
+  ONE 9:e89480. Complete 14-page original, Figures 1-11 and Tables 1-2; Methods and
+  Results/Discussion. (https://doi.org/10.1371/journal.pone.0089480).'
+limitations:
+- 'Review is conducted in single-agent Goal Mode (independence: self_review) against
+  working-tree bytes; an independent subagent PR review is executed prior to merge.'
+notes:
+- Executed during Cycle 14 Stage 3 (protein_examples) for cmmmech:whitlockite.
+related_reviews: []
+```

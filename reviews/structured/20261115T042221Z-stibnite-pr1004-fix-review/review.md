@@ -1,0 +1,225 @@
+# PR
+
+- Review: 20261115T042221Z-stibnite-pr1004-fix-review
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-11-15T04:20:23Z
+- Finished UTC: 2026-11-15T04:22:21Z
+- Reviewer: codex / cmmmech-pr1004-fix-reviewer (self_review)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Stibnite passes the focused PR
+
+## Scope And Provenance
+
+Review of the final PR
+
+Selection: PR
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base a71f064a761609077b865bdb9bcc892c567d3a68.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:stibnite | data/records/stibnite.yaml | maintained | Stibnite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Strict affected-record validation | passed | True | cmmmech:stibnite | Checked 6 record(s); 0 failed. |
+| Canonical history validation | passed | True | cmmmech:stibnite | Checked 1589 history record(s); 0 error(s). |
+| Static page freshness | passed | True | cmmmech:stibnite | pages/ is current. |
+
+## Scientific And Domain Assessments
+
+### SoxAX edge repair
+
+graph: supported. Targets: cmmmech:stibnite.
+
+The graph no longer states that SoxAX directly oxidizes solid stibnite; it now presents SoxAX as representative sulfur-turnover modulation with alkaline-abiotic caveats intact.
+
+### Correction sidecar and validation
+
+provenance: supported. Targets: cmmmech:stibnite.
+
+The correction is represented by a new append-only history sidecar and the final bytes pass affected validation.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/records/stibnite.yaml | supports | SoxAX now modulates representative sulfur turnover rather than directly oxidizing the commercial stibnite feed. |
+| history | history/records/stibnite/2026-11-15T042024Z-codex-650387.yaml | supports | Canonical sidecar records the SoxAX causal-edge weakening. |
+| validation | local validation commands | supports | The repaired record passed strict record validation, history validation, and regenerated-page freshness checks. |
+
+## Limits And Additional Notes
+
+- This successor review focuses on PR
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261115T042221Z-stibnite-pr1004-fix-review
+kind: record
+repository: CultureBotAI/CMMMech
+title: PR
+started_at: '2026-11-15T04:20:23Z'
+finished_at: '2026-11-15T04:22:21Z'
+reviewer:
+  identity: codex / cmmmech-pr1004-fix-reviewer
+  kind: agent
+  model: GPT-5
+  independence: self_review
+  independence_basis: Fresh final-state review after independent PR
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: a71f064a761609077b865bdb9bcc892c567d3a68
+  state: working_tree
+  inputs:
+  - path: data/records/stibnite.yaml
+    sha256: 5a99effcdeb7685c5ec05c79ce38329feb8c18bf01ff2c6077a7ad1027b84e0b
+    role: target
+  - path: history/records/stibnite/2026-11-15T042024Z-codex-650387.yaml
+    sha256: 1fb06d938c45265b99ee7f40196dd8520c6bdf5fd12f5cb3e6f6101522983089
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+targets:
+- target_id: cmmmech:stibnite
+  path: data/records/stibnite.yaml
+  label: Stibnite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/stibnite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/stibnite/2026-11-15T042024Z-codex-650387.yaml
+    role: canonical_history
+scope:
+  description: Review of the final PR
+  selection: PR
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:stibnite
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/stibnite.yaml
+  accessed_at: '2026-11-15T04:22:21Z'
+  support: supports
+  summary: SoxAX now modulates representative sulfur turnover rather than directly
+    oxidizing the commercial stibnite feed.
+  snapshot_sha256: 5a99effcdeb7685c5ec05c79ce38329feb8c18bf01ff2c6077a7ad1027b84e0b
+- evidence_id: history
+  kind: record_content
+  reference: history/records/stibnite/2026-11-15T042024Z-codex-650387.yaml
+  accessed_at: '2026-11-15T04:22:21Z'
+  support: supports
+  summary: Canonical sidecar records the SoxAX causal-edge weakening.
+  snapshot_sha256: 1fb06d938c45265b99ee7f40196dd8520c6bdf5fd12f5cb3e6f6101522983089
+- evidence_id: validation
+  kind: validation
+  reference: local validation commands
+  accessed_at: '2026-11-15T04:22:21Z'
+  support: supports
+  summary: The repaired record passed strict record validation, history validation,
+    and regenerated-page freshness checks.
+checks:
+- check_id: validate_record
+  name: Strict affected-record validation
+  command: uv run --locked cmmmech validate data/records/acanthite.yaml data/records/lead-blast-furnace-slag.yaml
+    data/records/monazite-ore.yaml data/records/pyrite.yaml data/records/kornelite.yaml
+    data/records/stibnite.yaml
+  status: passed
+  required: true
+  summary: Checked 6 record(s); 0 failed.
+  target_ids:
+  - cmmmech:stibnite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: validate_history
+  name: Canonical history validation
+  command: uv run --locked cmmmech validate-history --base origin/main
+  status: passed
+  required: true
+  summary: Checked 1589 history record(s); 0 error(s).
+  target_ids:
+  - cmmmech:stibnite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: render_check
+  name: Static page freshness
+  command: just render-check
+  status: passed
+  required: true
+  summary: pages/ is current.
+  target_ids:
+  - cmmmech:stibnite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+assessments:
+- assessment_id: causal_graph_fix
+  area: graph
+  topic: SoxAX edge repair
+  outcome: supported
+  summary: The graph no longer states that SoxAX directly oxidizes solid stibnite;
+    it now presents SoxAX as representative sulfur-turnover modulation with alkaline-abiotic
+    caveats intact.
+  target_ids:
+  - cmmmech:stibnite
+  evidence_ids:
+  - record
+- assessment_id: provenance
+  area: provenance
+  topic: Correction sidecar and validation
+  outcome: supported
+  summary: The correction is represented by a new append-only history sidecar and
+    the final bytes pass affected validation.
+  target_ids:
+  - cmmmech:stibnite
+  evidence_ids:
+  - history
+  - validation
+findings: []
+actions: []
+summary: Stibnite passes the focused PR
+limitations:
+- This successor review focuses on PR
+related_reviews:
+- repository: CultureBotAI/CMMMech
+  review_id: 20261111T142200Z-stibnite-cycle14-stage3-protein-examples-review
+  relationship: supersedes the pre-fix PR
+links:
+- https://github.com/CultureBotAI/CMMMech/issues/1006
+tags:
+- pr1004
+- cycle14-stage3
+```
