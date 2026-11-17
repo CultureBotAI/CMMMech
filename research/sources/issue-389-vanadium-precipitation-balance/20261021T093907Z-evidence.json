@@ -1,0 +1,946 @@
+{
+  "recorded_at": "2026-10-21T09:39:07.142023+00:00",
+  "issue": 389,
+  "author": "Codex /root",
+  "base": "1296ee20f2595d7d6a50e391f611c22435418906",
+  "branch": "codex/issue-389-vanadium-precipitation-balance",
+  "scope": "Source-only Yang2016 assessment; owner/history/generated files unchanged; issue390 remains separate Peng2024 scope.",
+  "source_markdown": {
+    "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-389/research/sources/issue-389-vanadium-precipitation-balance/20261021T093907Z.md",
+    "bytes": 13618,
+    "sha256": "df6d3c6a55cffb44d8914c349a83b5bd5eab6f3c3d6a0d8dd195ca6822d25b8e"
+  },
+  "owner": {
+    "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-389/data/records/spent-vanadium-flow-battery-electrolyte.yaml",
+    "bytes": 10480,
+    "sha256": "e66884747bdbd2f2a51a9e04b4aa33e747b26948fedba9eda9be421c5d84a739"
+  },
+  "history": {
+    "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-389/history/records/spent-vanadium-flow-battery-electrolyte/2026-10-15T211729Z-codex-4ea0f7.yaml",
+    "bytes": 1010,
+    "sha256": "ce2980528f07a6f213b81bc6ddfa5e0a5f6a6230d83464246989748ed5da47c3"
+  },
+  "owner_history_unchanged_from_base": true,
+  "reconciliation": {
+    "receipt": {
+      "issue": 389,
+      "acquired_at": "20261021T092953Z",
+      "open_issue_count": 185,
+      "open_pr_count": 0,
+      "comment_count": 0,
+      "issue_updated_at": "2026-10-15T21:27:02Z",
+      "state": "open",
+      "directory": "/private/tmp/cmmmech-backlog-20261019-fmj36s/reconcile-389-20261021T092953Z"
+    },
+    "files": [
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/reconcile-389-20261021T092953Z/comments.json",
+        "bytes": 3,
+        "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+      },
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/reconcile-389-20261021T092953Z/issue.json",
+        "bytes": 4584,
+        "sha256": "5179c1dfc4c9638cc6b0961a3a790bb37870f8fec8482c383c401a4558a37d6e"
+      },
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/reconcile-389-20261021T092953Z/open-issues.json",
+        "bytes": 944191,
+        "sha256": "87ce6a1754719d8ef22e8b67b4563c4b0cf888d85257f7b5c735a0141012092d"
+      },
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/reconcile-389-20261021T092953Z/open-prs.json",
+        "bytes": 3,
+        "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+      },
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/reconcile-389-20261021T092953Z/receipt.json",
+        "bytes": 286,
+        "sha256": "184cda5f6788a463eb1b84c37380f68808c52bef6121a2d3d19793b0ebc530ba"
+      }
+    ],
+    "owner_last_change": "6b6ccf160a457ceb5ebc265b55bbc5d515964707 2026-10-15T21:51:31Z",
+    "open_issue_body_title_matches": [
+      {
+        "number": 390,
+        "title": "Resolve spent electrolyte regeneration arm labels and charge accounting"
+      },
+      {
+        "number": 389,
+        "title": "Clarify spent vanadium electrolyte precipitation pH and material balance"
+      }
+    ],
+    "scope": "All open issue titles/bodies searched; selected389 and shared390 complete bodies/comments read. Other issue comments and closed issues not exhaustively searched."
+  },
+  "shared_owner_context": [
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-389-shared-owner-390/comments.json",
+      "bytes": 9,
+      "sha256": "93a632246f28a39eedc6577fda8be826f662ca408592e96b1b2b26b4256eea3d"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-389-shared-owner-390/issue.json",
+      "bytes": 4423,
+      "sha256": "461b2d410321aa33d913e24e6322c47dd695a607d1f8231b16c59cef1fceb61d"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-389-shared-owner-390/receipt.json",
+      "bytes": 134,
+      "sha256": "161952a481fa7a6ad07fd6b49cff04ecbc62e945735724c1775b44f62424e243"
+    }
+  ],
+  "baseline_gates": {
+    "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-389-baseline-gates.json",
+    "bytes": 1048,
+    "sha256": "cbd54697b01d3a6c96ef5020a2f90836d7a05c48de07fe618141c033778376fe"
+  },
+  "searches": [
+    {
+      "provider": "web.run",
+      "started_at": "2026-10-21T09:33:36.420Z",
+      "completed_at": "2026-10-21T09:33:37.591Z",
+      "queries": [
+        {
+          "q": "\"10.16085/j.issn.1000-6613.2016.09.047\" correction erratum data",
+          "domains": null,
+          "recency": null
+        },
+        {
+          "q": "\"利用失效钒电解液回收钒制备偏钒酸铵工艺\" 勘误 更正",
+          "domains": null,
+          "recency": null
+        },
+        {
+          "q": "\"杨明平\" \"失效钒电解液\" 148.30",
+          "domains": null,
+          "recency": null
+        }
+      ],
+      "opens": [],
+      "raw_receipt": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-389/web-01.json",
+        "bytes": 26193,
+        "sha256": "efa85f101cd2318778e247338aa91afa71ad5d3bdbf4da326644031aa76abc02"
+      },
+      "scope": "Returned result sets only; no exhaustive pagination or global absence claim"
+    },
+    {
+      "provider": "web.run",
+      "started_at": "2026-10-21T09:35:44.095Z",
+      "completed_at": "2026-10-21T09:35:45.334Z",
+      "queries": [
+        {
+          "q": "\"失效钒电解液\" \"148.30\"",
+          "domains": null,
+          "recency": null
+        },
+        {
+          "q": "\"10.16085/j.issn.1000-6613.2016.09.047\" supplementary dataset",
+          "domains": null,
+          "recency": null
+        },
+        {
+          "q": "\"利用失效钒电解液回收钒制备偏钒酸铵工艺\" \"2.0\"",
+          "domains": null,
+          "recency": null
+        }
+      ],
+      "opens": [
+        "https://hgjz.cip.com.cn/CN/10.16085/j.issn.1000-6613.2016.09.047"
+      ],
+      "raw_receipt": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-389/web-02.json",
+        "bytes": 26891,
+        "sha256": "323b3fcd1b145e3a6ae2823d62e066ac35668e62242fb3bd7e395cb464feccb9"
+      },
+      "scope": "Returned sets and specified primary landing only"
+    }
+  ],
+  "acquisitions": [
+    {
+      "requested_at": "2026-10-21T09:33:30.349852+00:00",
+      "url": "https://hgjz.cip.com.cn/EN/article/downloadArticleFile.do?attachType=PDF&id=4251",
+      "route_provenance": "Original publisher PDF link retained in round103 dossier",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-389/paper.pdf",
+      "method": "GET",
+      "request_headers": {
+        "User-Agent": "CMMMech source assessment"
+      },
+      "status": 200,
+      "final_url": "https://hgjz.cip.com.cn/EN/article/downloadArticleFile.do?attachType=PDF&id=4251",
+      "content_type": "application/x-download",
+      "response_headers": {
+        "Date": "Wed, 21 Oct 2026 09:33:32 GMT",
+        "Content-Type": "application/x-download",
+        "Transfer-Encoding": "chunked",
+        "Connection": "close",
+        "Set-Cookie": "acw_tc=7b3975b917925752123182584e84e8f3d8e1e4f9161624872c31d357cf0b2b;path=/;HttpOnly;Max-Age=1800",
+        "Server": "nginx",
+        "Content-Disposition": "attachment;filename=\"Study on the preparation technology of ammonium metavanadate with vanadium recycled from spent vanadium electrolyte solutions.pdf\"",
+        "Expires": "Wed, 21 Oct 2026 09:33:07 GMT",
+        "Cache-Control": "no-cache"
+      },
+      "bytes": 380584,
+      "sha256": "3418860ee1e3c7366c540ed392f1f444e340be765fcebcb6cc02b5bf00326399",
+      "pdf_magic": true,
+      "completed_at": "2026-10-21T09:33:45.791686+00:00"
+    },
+    {
+      "requested_at": "2026-10-21T09:33:30.354036+00:00",
+      "url": "https://hgjz.cip.com.cn/EN/abstract/abstract4251.shtml",
+      "route_provenance": "Round103 English publisher landing",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-389/landing.html",
+      "method": "GET",
+      "request_headers": {
+        "User-Agent": "CMMMech source assessment"
+      },
+      "status": 200,
+      "final_url": "https://hgjz.cip.com.cn/EN/abstract/abstract4251.shtml",
+      "content_type": "text/html;charset=UTF-8",
+      "response_headers": {
+        "Date": "Wed, 21 Oct 2026 09:33:32 GMT",
+        "Content-Type": "text/html;charset=UTF-8",
+        "Transfer-Encoding": "chunked",
+        "Connection": "close",
+        "Set-Cookie": "acw_tc=7b3975b717925752114415984e9543cc0ad3d9589a98b2565e5745ee66a21c;path=/;HttpOnly;Max-Age=1800",
+        "Server": "nginx",
+        "x-frame-options": "SAMEORIGIN",
+        "Expires": "Wed, 21 Oct 2026 09:33:06 GMT",
+        "last-modified": "Mon, 29 Jun 2026 07:31:10 GMT",
+        "Cache-Control": "no-cache"
+      },
+      "bytes": 65196,
+      "sha256": "7925369225c543d00bb82410e8cf11cde0de8dc24b9e15eee170d1c1467f23bc",
+      "pdf_magic": false,
+      "completed_at": "2026-10-21T09:33:34.138044+00:00"
+    },
+    {
+      "requested_at": "2026-10-21T09:33:30.357207+00:00",
+      "url": "https://doi.org/10.16085/j.issn.1000-6613.2016.09.047",
+      "route_provenance": "Exact DOI resolver",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-389/doi.html",
+      "method": "GET",
+      "request_headers": {
+        "User-Agent": "CMMMech source assessment"
+      },
+      "status": 200,
+      "final_url": "https://www.chndoi.org/Resolution/Handler?doi=10.16085/j.issn.1000-6613.2016.09.047",
+      "content_type": "text/html;charset=UTF-8",
+      "response_headers": {
+        "date": "Wed, 21 Oct 2026 09:33:31 GMT",
+        "content-type": "text/html;charset=UTF-8",
+        "transfer-encoding": "chunked",
+        "content-language": "zh-CN",
+        "set-cookie": "SID_doi=018106; path=/",
+        "cache-control": "private",
+        "connection": "close"
+      },
+      "bytes": 1702,
+      "sha256": "d6eae76ed12240e3b0a0d1c13f27d5f9b6e9478d64ce4cc9a1727918d5c08a1d",
+      "pdf_magic": false,
+      "completed_at": "2026-10-21T09:33:31.646086+00:00"
+    },
+    {
+      "requested_at": "2026-10-21T09:33:30.359245+00:00",
+      "url": "https://api.crossref.org/works/10.16085/j.issn.1000-6613.2016.09.047",
+      "route_provenance": "Exact DOI metadata endpoint",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-389/crossref.json",
+      "method": "GET",
+      "request_headers": {
+        "User-Agent": "CMMMech source assessment"
+      },
+      "status": 404,
+      "final_url": "https://api.crossref.org/works/10.16085/j.issn.1000-6613.2016.09.047",
+      "content_type": "text/plain",
+      "response_headers": {
+        "Date": "Wed, 21 Oct 2026 09:33:30 GMT",
+        "Content-Type": "text/plain",
+        "Transfer-Encoding": "chunked",
+        "Connection": "close",
+        "access-control-expose-headers": "Link",
+        "access-control-allow-headers": "X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language, Accept-Ranges, Cache-Control",
+        "access-control-allow-origin": "*",
+        "server": "Jetty(9.4.40.v20210413)",
+        "x-rate-limit-limit": "5",
+        "x-rate-limit-interval": "1s",
+        "x-concurrency-limit": "1",
+        "x-api-pool": "public-single",
+        "permissions-policy": "interest-cohort=()",
+        "strict-transport-security": "max-age=31536000;"
+      },
+      "bytes": 19,
+      "sha256": "ae8462e3af85ca7577aaa97ff22a194f9dfd7fada58cf4944b53d2fdfa7b1f92",
+      "pdf_magic": false,
+      "completed_at": "2026-10-21T09:33:30.657442+00:00"
+    },
+    {
+      "requested_at": "2026-10-21T09:36:12.118986+00:00",
+      "url": "https://hgjz.cip.com.cn/CN/10.16085/j.issn.1000-6613.2016.09.047",
+      "route_provenance": "Current search-discovered Chinese primary landing",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-389/landing-cn.html",
+      "method": "GET",
+      "request_headers": {
+        "User-Agent": "CMMMech source assessment"
+      },
+      "status": 200,
+      "final_url": "https://hgjz.cip.com.cn/CN/10.16085/j.issn.1000-6613.2016.09.047",
+      "content_type": "text/html;charset=UTF-8",
+      "response_headers": {
+        "Date": "Wed, 21 Oct 2026 09:36:13 GMT",
+        "Content-Type": "text/html;charset=UTF-8",
+        "Transfer-Encoding": "chunked",
+        "Connection": "close",
+        "Set-Cookie": "acw_tc=7b3975b017925753725431691ed4b3e9160ae2a733b8706f0af01a04b6a3b5;path=/;HttpOnly;Max-Age=1800",
+        "Server": "nginx",
+        "x-frame-options": "SAMEORIGIN",
+        "Expires": "Wed, 21 Oct 2026 09:35:47 GMT",
+        "Cache-Control": "no-cache"
+      },
+      "bytes": 67509,
+      "sha256": "796053f436b216ebb2a7ce5eaab3656324ea4a2bb7867b960f850ab583f472d8",
+      "pdf_magic": false,
+      "completed_at": "2026-10-21T09:36:14.970920+00:00"
+    },
+    {
+      "requested_at": "2026-10-21T09:36:12.119900+00:00",
+      "url": "https://api.datacite.org/dois?query=relatedIdentifiers.relatedIdentifier%3A%2210.16085%2Fj.issn.1000-6613.2016.09.047%22&page%5Bsize%5D=100",
+      "route_provenance": "Exact related DOI query; no global dataset absence claim",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-389/datacite.json",
+      "method": "GET",
+      "request_headers": {
+        "User-Agent": "CMMMech source assessment"
+      },
+      "status": 200,
+      "final_url": "https://api.datacite.org/dois?query=relatedIdentifiers.relatedIdentifier%3A%2210.16085%2Fj.issn.1000-6613.2016.09.047%22&page%5Bsize%5D=100",
+      "content_type": "application/json; charset=utf-8",
+      "response_headers": {
+        "Date": "Wed, 21 Oct 2026 09:36:12 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "Transfer-Encoding": "chunked",
+        "Connection": "close",
+        "Status": "200 OK",
+        "x-anonymous-consumer": "true",
+        "cache-control": "max-age=0, private, must-revalidate",
+        "vary": "Accept-Encoding",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "x-permitted-cross-domain-policies": "none",
+        "x-xss-protection": "0",
+        "x-request-id": "480a5da8-87f7-427e-b473-be90789e533e",
+        "etag": "W/\"df0ed864f66cfe57f81c8317a4bfbb54\"",
+        "x-frame-options": "SAMEORIGIN",
+        "x-runtime": "0.080416",
+        "x-content-type-options": "nosniff",
+        "X-Powered-By": "Phusion Passenger(R) 6.1.2",
+        "Server": "nginx/1.24.0 + Phusion Passenger(R) 6.1.2",
+        "Access-Control-Allow-Credentials": "true",
+        "Access-Control-Allow-Methods": "GET, POST, PUT, PATCH, DELETE, OPTIONS",
+        "Access-Control-Allow-Headers": "Accept,Access-Control-Allow-Origin,Access-Control-Expose-Headers,Access-Control-Allow-Methods,Access-Control-Allow-Headers,Authorization,Cache-Control,Content-Type,DNT,If-Modified-Since,Keep-Alive,Origin,User-Agent,X-Mx-ReqToken,X-Requested-With",
+        "Access-Control-Expose-Headers": "Authorization",
+        "X-LupoVersion": "5.92"
+      },
+      "bytes": 218,
+      "sha256": "df0ed864f66cfe57f81c8317a4bfbb5494c6c10d6b3fe9cef22bf686d871d685",
+      "pdf_magic": false,
+      "completed_at": "2026-10-21T09:36:12.852676+00:00"
+    }
+  ],
+  "bounded_dedup": {
+    "at": "2026-10-21T09:36:09.029396+00:00",
+    "command": [
+      "rg",
+      "--no-ignore",
+      "--hidden",
+      "--follow",
+      "-n",
+      "--max-columns",
+      "500",
+      "--max-columns-preview",
+      "10\\.16085/j\\.issn\\.1000-6613\\.2016\\.09\\.047|spent-vanadium-flow-battery-electrolyte|利用失效钒电解液",
+      "data/records",
+      "research/sources",
+      "research/ingests",
+      "reviews",
+      "history",
+      "docs"
+    ],
+    "cwd": "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-389",
+    "returncode": 0,
+    "matching_lines": 142,
+    "ignored_hidden_included": true,
+    "symlinks_followed": true,
+    "scope": "Named maintained roots and exact historical source/review roots only; no machine-wide or binary-fulltext absence claim",
+    "historical_roots": [
+      {
+        "path": "/private/tmp/cmm-round103-electrolyte-research",
+        "exists": false,
+        "is_symlink": false
+      },
+      {
+        "path": "/private/tmp/cmm-round103-uranium-research/independent-electrolyte-review",
+        "exists": false,
+        "is_symlink": false
+      }
+    ]
+  },
+  "numeric_audit": {
+    "method": "Root manually rekeyed all cells from original page images; ratio numerators and time labels included. Dashes remain unreported, not zero. Tables checked against full Chinese text.",
+    "numeric_components": 63,
+    "dash_cells": 5,
+    "tables": {
+      "table1": {
+        "page": 2,
+        "columns": [
+          "total_V_mol_L",
+          "H2SO4_mol_L",
+          "V5_mol_L",
+          "V4_mol_L",
+          "V3_mol_L",
+          "V2_mol_L"
+        ],
+        "row_labels": [
+          "positive",
+          "negative"
+        ],
+        "rows": [
+          [
+            "1.28",
+            "1.75",
+            "0.76",
+            "0.52",
+            "—",
+            "—"
+          ],
+          [
+            "1.53",
+            "1.82",
+            "—",
+            "—",
+            "1.53",
+            "—"
+          ]
+        ]
+      },
+      "table2": {
+        "page": 3,
+        "columns": [
+          "V4_ratio_numerator",
+          "NaClO3_ratio_denominator",
+          "residual_V4_mol_L"
+        ],
+        "rows": [
+          [
+            "1.0",
+            "0.17",
+            "0.09"
+          ],
+          [
+            "1.0",
+            "0.18",
+            "0.05"
+          ],
+          [
+            "1.0",
+            "0.19",
+            "0.02"
+          ],
+          [
+            "1.0",
+            "0.20",
+            "0"
+          ],
+          [
+            "1.0",
+            "0.21",
+            "0"
+          ]
+        ]
+      },
+      "table3": {
+        "page": 3,
+        "columns": [
+          "V3_ratio_numerator",
+          "NaClO3_ratio_denominator",
+          "residual_V3_mol_L"
+        ],
+        "rows": [
+          [
+            "1.0",
+            "0.34",
+            "0.08"
+          ],
+          [
+            "1.0",
+            "0.36",
+            "0.04"
+          ],
+          [
+            "1.0",
+            "0.38",
+            "0.01"
+          ],
+          [
+            "1.0",
+            "0.40",
+            "0"
+          ],
+          [
+            "1.0",
+            "0.42",
+            "0"
+          ]
+        ]
+      },
+      "table4": {
+        "page": 5,
+        "columns": [
+          "time_min",
+          "residual_g_L",
+          "printed_precipitation_percent"
+        ],
+        "rows": [
+          [
+            "40",
+            "3.52",
+            "86.64"
+          ],
+          [
+            "60",
+            "1.25",
+            "95.26"
+          ],
+          [
+            "80",
+            "0.65",
+            "97.53"
+          ],
+          [
+            "100",
+            "0.27",
+            "98.98"
+          ],
+          [
+            "120",
+            "0.26",
+            "99.01"
+          ],
+          [
+            "140",
+            "0.26",
+            "99.01"
+          ]
+        ],
+        "basis": "Section2.3.5 on page4 states nominal initial26.35g/L and residual expressed as V2O5; Table4 heading itself says residual V g/L. Initial same-basis interpretation is explicit inference; no volume correction supplied."
+      },
+      "table5": {
+        "page": 5,
+        "columns": [
+          "NH4VO3_dry_basis_percent",
+          "Si_percent",
+          "Fe_percent",
+          "Na2O_percent",
+          "Cr_percent",
+          "S_percent",
+          "Cl_percent",
+          "P_percent"
+        ],
+        "rows": [
+          [
+            "99.58",
+            "0.014",
+            "0.005",
+            "0.015",
+            "0.012",
+            "0.061",
+            "0.043",
+            "0.010"
+          ]
+        ]
+      }
+    },
+    "calculations": [
+      {
+        "id": "table4_40",
+        "formula": "100*(1-3.52/26.35)",
+        "result": "86.64136622390891840607210626",
+        "unit": "percent",
+        "assumptions": "Same analytical basis and uncorrected liquid-concentration ratio; not isolated product yield or a volume/phase balance."
+      },
+      {
+        "id": "table4_rounding_40",
+        "formula": "86.64-calculated",
+        "result": "-0.00136622390891840607210626",
+        "unit": "percentage_points",
+        "assumptions": "Printed two-decimal value minus concentration diagnostic; all absolute differences below0.005."
+      },
+      {
+        "id": "table4_60",
+        "formula": "100*(1-1.25/26.35)",
+        "result": "95.25616698292220113851992410",
+        "unit": "percent",
+        "assumptions": "Same analytical basis and uncorrected liquid-concentration ratio; not isolated product yield or a volume/phase balance."
+      },
+      {
+        "id": "table4_rounding_60",
+        "formula": "95.26-calculated",
+        "result": "0.00383301707779886148007590",
+        "unit": "percentage_points",
+        "assumptions": "Printed two-decimal value minus concentration diagnostic; all absolute differences below0.005."
+      },
+      {
+        "id": "table4_80",
+        "formula": "100*(1-0.65/26.35)",
+        "result": "97.53320683111954459203036053",
+        "unit": "percent",
+        "assumptions": "Same analytical basis and uncorrected liquid-concentration ratio; not isolated product yield or a volume/phase balance."
+      },
+      {
+        "id": "table4_rounding_80",
+        "formula": "97.53-calculated",
+        "result": "-0.00320683111954459203036053",
+        "unit": "percentage_points",
+        "assumptions": "Printed two-decimal value minus concentration diagnostic; all absolute differences below0.005."
+      },
+      {
+        "id": "table4_100",
+        "formula": "100*(1-0.27/26.35)",
+        "result": "98.97533206831119544592030360",
+        "unit": "percent",
+        "assumptions": "Same analytical basis and uncorrected liquid-concentration ratio; not isolated product yield or a volume/phase balance."
+      },
+      {
+        "id": "table4_rounding_100",
+        "formula": "98.98-calculated",
+        "result": "0.00466793168880455407969640",
+        "unit": "percentage_points",
+        "assumptions": "Printed two-decimal value minus concentration diagnostic; all absolute differences below0.005."
+      },
+      {
+        "id": "table4_120",
+        "formula": "100*(1-0.26/26.35)",
+        "result": "99.01328273244781783681214421",
+        "unit": "percent",
+        "assumptions": "Same analytical basis and uncorrected liquid-concentration ratio; not isolated product yield or a volume/phase balance."
+      },
+      {
+        "id": "table4_rounding_120",
+        "formula": "99.01-calculated",
+        "result": "-0.00328273244781783681214421",
+        "unit": "percentage_points",
+        "assumptions": "Printed two-decimal value minus concentration diagnostic; all absolute differences below0.005."
+      },
+      {
+        "id": "table4_140",
+        "formula": "100*(1-0.26/26.35)",
+        "result": "99.01328273244781783681214421",
+        "unit": "percent",
+        "assumptions": "Same analytical basis and uncorrected liquid-concentration ratio; not isolated product yield or a volume/phase balance."
+      },
+      {
+        "id": "table4_rounding_140",
+        "formula": "99.01-calculated",
+        "result": "-0.00328273244781783681214421",
+        "unit": "percentage_points",
+        "assumptions": "Printed two-decimal value minus concentration diagnostic; all absolute differences below0.005."
+      },
+      {
+        "id": "positive_valence_sum",
+        "formula": "0.76+0.52",
+        "result": "1.28",
+        "unit": "mol/L",
+        "assumptions": "Table1 sum; no independent assay closure/uncertainty."
+      },
+      {
+        "id": "time_increment_100_120",
+        "formula": "99.01-98.98",
+        "result": "0.03",
+        "unit": "percentage_points",
+        "assumptions": "Difference of printed endpoints; no significance test or replicate inference."
+      },
+      {
+        "id": "pilot_nominal_feed",
+        "formula": "1000*1.28",
+        "result": "1280.00",
+        "unit": "mol_V",
+        "assumptions": "Literal1m3 and Table1 positive composition; actual volume and uncertainty unavailable."
+      },
+      {
+        "id": "pilot_ideal_NH4VO3",
+        "formula": "1280*117/1000",
+        "result": "149.76",
+        "unit": "kg",
+        "assumptions": "Illustrative rounded formula mass117g/mol, one V perNH4VO3, quantitative conversion. Not source measurement."
+      },
+      {
+        "id": "pilot_assay_adjusted_mass",
+        "formula": "148.30*0.9958",
+        "result": "147.677140",
+        "unit": "kg_NH4VO3",
+        "assumptions": "Assumes reported powder mass is dry and same batch as99.58% dry-basis assay; moisture and assay procedure unavailable."
+      },
+      {
+        "id": "pilot_gross_ratio",
+        "formula": "100*148.30/149.76",
+        "result": "99.02510683760683760683760684",
+        "unit": "percent",
+        "assumptions": "Conditional gross powder/ideal pure product ratio, not measured V recovery."
+      },
+      {
+        "id": "pilot_assay_ratio",
+        "formula": "100*(148.30*0.9958)/149.76",
+        "result": "98.60920138888888888888888889",
+        "unit": "percent",
+        "assumptions": "Same dry/same-batch/rounded-molar-mass assumptions; not a closed feed/product/filtrate balance."
+      },
+      {
+        "id": "K_per_nominal_litre",
+        "formula": "1.2*26.35",
+        "result": "31.620",
+        "unit": "g_(NH4)2SO4_per_initial_L",
+        "assumptions": "K mass ratio and same V2O5 concentration basis. Actual batch volume and salt-addition volume unknown."
+      },
+      {
+        "id": "positive_V2O5_equivalent",
+        "formula": "1.28*182/2",
+        "result": "116.48",
+        "unit": "g_V2O5_equivalent_per_L",
+        "assumptions": "Illustrative rounded formula mass182g/mol and2V performula. Analytical equivalent, not dissolved V2O5 molecules."
+      },
+      {
+        "id": "nominal_dilution_factor",
+        "formula": "116.48/26.35",
+        "result": "4.420493358633776091081593928",
+        "unit": "dimensionless",
+        "assumptions": "Only if same positive feed, conserved V, and chosen26.35g/L basis; actual water/NaOH/salt additions and pilot linkage unavailable."
+      },
+      {
+        "id": "positive_oxidant_excess",
+        "formula": "100*(0.20/(1/6)-1)",
+        "result": "20.00",
+        "unit": "percent",
+        "assumptions": "Equation2 ideal6V(IV):1chlorate compared with selected ratio; not measured reagent utilization."
+      },
+      {
+        "id": "negative_oxidant_excess",
+        "formula": "100*(0.40/(1/3)-1)",
+        "result": "20.00",
+        "unit": "percent",
+        "assumptions": "Equation3 ideal3V(III):1chlorate compared with selected ratio; not measured reagent utilization."
+      }
+    ],
+    "calculation_count": 24,
+    "figure_scope": "All five figures viewed. Figure1 is process flow; Figures2–5 each show six marker abscissae and smooth connecting curves, with numeric axis ticks, but without numeric values annotated beside the plotted markers or shown error bars. No pixel digitization or uncertainty inference."
+  },
+  "originals_and_derivatives": [
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-389/acquisitions.json",
+      "bytes": 5053,
+      "sha256": "6d2e8070b5bd4d042795105f95df33986c7178873b375830e1760cfdee817219"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-389/crossref.json",
+      "bytes": 19,
+      "sha256": "ae8462e3af85ca7577aaa97ff22a194f9dfd7fada58cf4944b53d2fdfa7b1f92"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-389/crossref.json.acquisition.json",
+      "bytes": 1350,
+      "sha256": "f1291e869e50ddf0a00d832de18fab654cb68e9a07b1182819e0305bae38d550"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-389/datacite.json",
+      "bytes": 218,
+      "sha256": "df0ed864f66cfe57f81c8317a4bfbb5494c6c10d6b3fe9cef22bf686d871d685"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-389/datacite.json.acquisition.json",
+      "bytes": 2170,
+      "sha256": "ee11305477ab8e62fa392113dfe68b13dd05ba86cb6dbd58e8080c7f0805e2f5"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-389/dedup-maintained.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-389/dedup-maintained.txt",
+      "bytes": 31923,
+      "sha256": "c9e39a774539fa4e70b7a27db20368b390b01498052ce0d14be8fbd1a7613789"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-389/dedup-receipt.json",
+      "bytes": 1069,
+      "sha256": "0020be663ccbc4a41a92bf90d46a4e793388f38ee841f38211edfbafad410a8a"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-389/doi.html",
+      "bytes": 1702,
+      "sha256": "d6eae76ed12240e3b0a0d1c13f27d5f9b6e9478d64ce4cc9a1727918d5c08a1d"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-389/doi.html.acquisition.json",
+      "bytes": 968,
+      "sha256": "f5b934728d6a2fe38aff44badbfc88d78917c89dd5f93e9709c11e2fd6da9ae6"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-389/followup-acquisitions.json",
+      "bytes": 3466,
+      "sha256": "ff46bbbfd4e7fb0a9a127d5e825ee1e76debe2edbe8a61de15241677a9e4cfaf"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-389/landing-cn.html",
+      "bytes": 67509,
+      "sha256": "796053f436b216ebb2a7ce5eaab3656324ea4a2bb7867b960f850ab583f472d8"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-389/landing-cn.html.acquisition.json",
+      "bytes": 1151,
+      "sha256": "2a8b4b61182b2b4af2ce01e746bf5e62b897bf6e9d07130743a8040160284a0a"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-389/landing-links.json",
+      "bytes": 7007,
+      "sha256": "6f0ae160096e7258bae6cd80e9bbc4543f579e9e027b70fa36f85334bfe4d97e"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-389/landing-route-lines.txt",
+      "bytes": 5313,
+      "sha256": "15d5faf2b1a1796432be063a3a743bd08c317fce38a8ca61bad0555816e53ee3"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-389/landing-visible.txt",
+      "bytes": 10405,
+      "sha256": "0b0900ad8c2750e9b27c67f6b24aa48316b2e9fc0ee68404a05353e4c479d527"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-389/landing.html",
+      "bytes": 65196,
+      "sha256": "7925369225c543d00bb82410e8cf11cde0de8dc24b9e15eee170d1c1467f23bc"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-389/landing.html.acquisition.json",
+      "bytes": 1167,
+      "sha256": "b3355ae7a19f437e982b24c0bb07cebaa20947f67e5ebfc13d5c529872de1808"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-389/numeric-audit.json",
+      "bytes": 10201,
+      "sha256": "f73f7adb0aeeae12d7c8388358efca4d562509ebbea657e9bff810ae710c0ba0"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-389/page-1.png",
+      "bytes": 513168,
+      "sha256": "3f1d3c42a3a4367bf11beb73867a0c8a13fe05b3f9410490f970f1f96c65c9d6"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-389/page-2.png",
+      "bytes": 808362,
+      "sha256": "69b346fde4da2ef0af955f9f50605f2f84146a0f036ba48335a7305e9d40db87"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-389/page-3.png",
+      "bytes": 815141,
+      "sha256": "536b54e638cec3e92468ec336c90603b6ed30e37c77e1b506ba0abbc5f166509"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-389/page-4.png",
+      "bytes": 573174,
+      "sha256": "ae0da71c8364611d3dae63fa31aa766b58cfee721d3e10b251b0b9430048abd6"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-389/page-5.png",
+      "bytes": 599172,
+      "sha256": "ea44f0785930d389b94b277093e434ada9dc42a938a49e53b49cde1ebcdd1509"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-389/paper.pdf",
+      "bytes": 380584,
+      "sha256": "3418860ee1e3c7366c540ed392f1f444e340be765fcebcb6cc02b5bf00326399"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-389/paper.pdf.acquisition.json",
+      "bytes": 1329,
+      "sha256": "d5089f0d142c5dfe5b58a4aeaf9923e2ba55f66cd937208d82a48787ce3bfba6"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-389/paper.txt",
+      "bytes": 26776,
+      "sha256": "292fdb2f630a2d93baeec3f6ea52b431c8e26d9a1e007a8e09042df6c804b853"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-389/web-01.json",
+      "bytes": 26193,
+      "sha256": "efa85f101cd2318778e247338aa91afa71ad5d3bdbf4da326644031aa76abc02"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-389/web-02.json",
+      "bytes": 26891,
+      "sha256": "323b3fcd1b145e3a6ae2823d62e066ac35668e62242fb3bd7e395cb464feccb9"
+    }
+  ],
+  "author_scripts": [
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/acquire-389.py",
+      "bytes": 1861,
+      "sha256": "81ab377833f4522bd964b37feb82f743a260189371ad6244896249dda88ada3b"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/acquire-389-followup.py",
+      "bytes": 1748,
+      "sha256": "84bf4b16a242f1629f722df4e66563b531a1f3b806b4fb64dffe10d901b06ce2"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/audit-389.py",
+      "bytes": 5400,
+      "sha256": "926d956bfd2e3e0edd179f4d7376fa807d923aeaf6450f23b412abd5a7ce4149"
+    }
+  ],
+  "prior_context": [
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-389/research/sources/round103-electrolyte/20261015T211843Z-source-investigation.md",
+      "bytes": 7947,
+      "sha256": "b9db07aa202dc873568d2d34d90f01017d898719ae5ea791e7b9ce3ef14702c5"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-389/research/sources/round103-electrolyte/20261015T211843Z-source-investigation.json",
+      "bytes": 17936,
+      "sha256": "a1860b3707e692050d6d30cae49495510db0770a3a90b8b2257f0547f76a3b80"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-389/reviews/structured/20261015T213449Z-spent-vanadium-flow-battery-electrolyte-round103-independent/review.yaml",
+      "bytes": 17681,
+      "sha256": "27dfdc86008931f576f88f717e99d0327d424ce952e4e998e7fd1abfc9c34c4e"
+    }
+  ],
+  "handoff": {
+    "owner": "data/records/spent-vanadium-flow-battery-electrolyte.yaml",
+    "decision": "retain unchanged qualified mechanism and separate2024 study",
+    "priority": [
+      "Attributable pH/time correction and run-level ledger",
+      "Explicit V/V2O5 normalization and measured liquid volumes",
+      "Assay/LOD/replication/QC and product diffraction/assay evidence",
+      "Pilot feed/product/filtrate/wash and hold-up inventories"
+    ],
+    "schema_targets": [
+      "sources",
+      "mechanisms[id=chemical_oxidation_ammonium_precipitation].context",
+      "mechanisms[id=chemical_oxidation_ammonium_precipitation].evidence[].explanation"
+    ]
+  },
+  "limitations": [
+    "No attributable correction or raw ledger acquired",
+    "Crossref404 is registry coverage, not invalidity or no-notice proof",
+    "No unlabelled ordinate digitization or independent experiment",
+    "Pilot molar arithmetic explicitly conditional, rounded formula masses and dry/same-batch assumptions; not an observed yield",
+    "Prior raw paths unavailable; current originals compared to maintained historical checksums only",
+    "No fullbody audit of secondary review/patent/listing leads",
+    "No standards acquisition or independent specification compliance",
+    "No paid provider, author contact or remote mutation"
+  ],
+  "final_validation": "Pending after frozen pair; external actual-terminal receipt will follow",
+  "independent_review": "Pending separate review of frozen pair",
+  "wording_correction": {
+    "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-389-wording-correction.json",
+    "bytes": 4312,
+    "sha256": "a86a2c1eda336c36139a1108b06d26912352c1edddf92dd1b07cfad124929989"
+  }
+}
