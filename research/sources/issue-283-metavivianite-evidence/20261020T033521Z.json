@@ -1,0 +1,700 @@
+{
+  "prepared_at": "2026-10-20T03:35:21Z",
+  "researcher": "codex / GPT-6 / codex; agent /root/investigate_134",
+  "issue": 283,
+  "issue_url": "https://github.com/CultureBotAI/CMMMech/issues/283",
+  "status": "source-only deferral; all three gaps remain open; not issue resolution",
+  "repository": {
+    "base": "2da10d95a72146ee0c69cb91fe303348fbadb638",
+    "initial_base": "a272f29d32ad36fa0bb398ed866aeb0ab1b3cd8b",
+    "branch": "codex/issue-283-metavivianite-evidence",
+    "owner": "data/records/metavivianite.yaml",
+    "owner_sha256": "08f50a56a622fceb4f76c6312a05e32b57150e525bd2340baa10b75f09aad1d9",
+    "owner_last_commit": "51adf4be6c544642f6bf54a4e7f514adb84aa34e",
+    "owner_last_changed": "2026-10-15T00:39:40Z",
+    "parent_reconciliation": "/private/tmp/cmmmech-backlog-20261019-fmj36s/reconcile-283-20261020T033148Z",
+    "parent_inventory": {
+      "open_issues": 185,
+      "open_prs": 0,
+      "owners": 616
+    },
+    "writes": "Only this timestamped report and evidence JSON; no records/history/reviews changed"
+  },
+  "scope": {
+    "named_gaps": [
+      {
+        "id": 1,
+        "source_doi": "10.2465/jmps.200417",
+        "status": "open",
+        "new_evidence": "Advance-publication version preserves the same 60/65 C conflict; final PDF and current Crossref metadata match round84 hashes.",
+        "supported_disposition": "Keep unresolved method-versus-result temperature wording. No correction or original protocol data located in this bounded search.",
+        "missing": "Public correction, dated original protocol or sample-linked raw data resolving viv-S60 versus viv-S65.",
+        "prohibited_inference": "Selecting 60 or 65 C as established actual temperature; interpreting mixed-phase diffraction or bulk XANES as mineral-specific yield."
+      },
+      {
+        "id": 2,
+        "source_doi": "10.3929/ethz-a-004796330",
+        "status": "open",
+        "new_evidence": "Current original thesis reinspection confirms tentative phase interpretation and explicit inability to perform XRD; separate 2024 Fe(III)-reduction lead acquired.",
+        "supported_disposition": "Retain provisional unidentified enrichment and historical variable formula. Separate Eshun experiment is a candidate for later independent curation, not specimen identification for Erbs.",
+        "missing": "Orthogonal structural evidence on Erbs material or a characterized follow-up with demonstrated culture/sample lineage; any separate mechanism requires its own controls, handling and phase review.",
+        "prohibited_inference": "Converting 26/38% ferric spectral areas into phase percentages or modern ideal stoichiometry; assigning a named strain to the unidentified culture."
+      },
+      {
+        "id": 3,
+        "source_doi": "10.1111/j.1472-4669.2009.00203.x",
+        "status": "open",
+        "new_evidence": "New DORA public API item metadata lists only a restricted intranet main PDF, no data packages and no SI attachment. Author publication page returned503.",
+        "supported_disposition": "Keep accepted comparison confined to main XRD. SI existence and descriptions reconfirmed, complete file not obtained.",
+        "missing": "Legitimate complete GBI_203_sm_FigS1-S2_Data S1.pdf with FiguresS1-S2 and DataS1 available for inspection.",
+        "prohibited_inference": "Extending to beam-damage controls, STEM localization or quantitative XAS-fit claims from an announcement/metadata alone."
+      }
+    ],
+    "criticality_and_identity_authority": "Not re-curated; current record identity retained, no fresh IMA verification claimed.",
+    "limits": "No author contact, paid sources, restricted-file retrieval, record curation, commit, push or outbound communication. No exhaustive literature or machine-wide absence claim."
+  },
+  "prior_dossier": "research/sources/round84-phosphates/20261015T001048Z-source-investigation.json",
+  "local_searches": [
+    {
+      "at": "2026-10-19T23:40:57.022321+00:00",
+      "command": [
+        "rg",
+        "--no-ignore",
+        "--hidden",
+        "--follow",
+        "--json",
+        "-i",
+        "-g",
+        "*.{md,yaml,yml,json,txt,html,xml,csv,tsv}",
+        "10\\.2465/jmps\\.200417|10\\.3929/ethz-a-004796330|10\\.1111/j\\.1472-4669\\.2009\\.00203\\.x|^id: cmmmech:metavivianite$",
+        "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-283/data/records",
+        "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-283/research",
+        "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-283/reviews",
+        "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-283/history",
+        "/Users/marcin/Documents/VIMSS/ontology/Mechs/CMMMech/data/records",
+        "/Users/marcin/Documents/VIMSS/ontology/Mechs/CMMMech/research",
+        "/Users/marcin/Documents/VIMSS/ontology/Mechs/CMMMech/reviews",
+        "/Users/marcin/Documents/VIMSS/ontology/Mechs/CMMMech/history",
+        "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-283"
+      ],
+      "exit_code": 0,
+      "match_lines": 64,
+      "matched_files": 16,
+      "raw_output": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-283/dedup-raw.jsonl",
+      "raw_sha256": "1aa89acc46752ea7e145afd995a19ec7ba8c0e70a28977b1597daca821f98bbb",
+      "stderr": "",
+      "missing_cited_root": "/private/tmp/cmm-round84-phosphates-research",
+      "hidden_ignored_included": true,
+      "symlinks_followed": true,
+      "scope": "Current worktree and shared main scientific record/research/review/history text; cited round84 raw root if present and current task downloads. No machine-wide or unextracted binary-content absence claim."
+    },
+    {
+      "checked_at": "2026-10-20T03:34:43.761010+00:00",
+      "base": "2da10d95a72146ee0c69cb91fe303348fbadb638",
+      "command": [
+        "rg",
+        "--no-ignore",
+        "--hidden",
+        "--follow",
+        "--json",
+        "-i",
+        "-g",
+        "*.{md,yaml,yml,json,txt,html,xml,csv,tsv}",
+        "10\\.2465/jmps\\.200417|10\\.3929/ethz-a-004796330|10\\.1111/j\\.1472-4669\\.2009\\.00203\\.x|^id: cmmmech:metavivianite$",
+        "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-283/data/records",
+        "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-283/research",
+        "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-283/reviews",
+        "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-283/history",
+        "/Users/marcin/Documents/VIMSS/ontology/Mechs/CMMMech/data/records",
+        "/Users/marcin/Documents/VIMSS/ontology/Mechs/CMMMech/research",
+        "/Users/marcin/Documents/VIMSS/ontology/Mechs/CMMMech/reviews",
+        "/Users/marcin/Documents/VIMSS/ontology/Mechs/CMMMech/history",
+        "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-283"
+      ],
+      "exit_code": 0,
+      "match_lines": 89,
+      "matched_files": 27,
+      "raw_output": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-283/dedup-refresh-raw.jsonl",
+      "sha256": "8db2cd2ab062deb57cccf0f387f2d46795f044134c22dbc4585adae94f4ad737",
+      "stderr": "",
+      "scope": "Both maintained scientific checkouts and current task raw-text artifacts; hidden and ignored included, symlinks followed; unrelated home/temp trees, .git and unextracted binary content excluded",
+      "missing_cited_root": {
+        "path": "/private/tmp/cmm-round84-phosphates-research",
+        "exists": false
+      }
+    },
+    {
+      "checked_at": "2026-10-20T03:30:36.032738+00:00",
+      "command": [
+        "rg",
+        "--no-ignore",
+        "--hidden",
+        "--follow",
+        "--json",
+        "-i",
+        "-g",
+        "*.{md,yaml,yml,json,txt,html,xml,csv,tsv}",
+        "10\\.1016/j\\.envres\\.2023\\.117667|10\\.1186/s40538-024-00558-0|Eshun",
+        "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-283/data/records",
+        "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-283/research",
+        "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-283/reviews",
+        "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-283/history",
+        "/Users/marcin/Documents/VIMSS/ontology/Mechs/CMMMech/data/records",
+        "/Users/marcin/Documents/VIMSS/ontology/Mechs/CMMMech/research",
+        "/Users/marcin/Documents/VIMSS/ontology/Mechs/CMMMech/reviews",
+        "/Users/marcin/Documents/VIMSS/ontology/Mechs/CMMMech/history"
+      ],
+      "exit_code": 1,
+      "match_lines": 0,
+      "files": 0,
+      "raw_output": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-283/eshun-dedup.jsonl",
+      "sha256": "0bd427c9a1a94d901229173ed802175b2aacf1c7acc98af3b9bf497508dc2f70",
+      "scope": "Named maintained text roots only; ignored and hidden files included, symlinks followed. Raw primary downloads, generated site, .git, unrelated home/temp trees and unextracted binary content excluded."
+    }
+  ],
+  "queries": [
+    {
+      "provider": "web search",
+      "utc_date": "2026-10-19",
+      "query": "\"10.2465/jmps.200417\" correction erratum \"viv\"",
+      "coverage": "one returned result set; no systematic pagination; only explicit query filters"
+    },
+    {
+      "provider": "web search",
+      "utc_date": "2026-10-19",
+      "query": "\"viv-S65\" OR \"viv-S60\" metavivianite",
+      "coverage": "one returned result set; no systematic pagination; only explicit query filters"
+    },
+    {
+      "provider": "web search",
+      "utc_date": "2026-10-19",
+      "query": "\"GBI_203_sm_FigS1-S2_Data\" pdf",
+      "coverage": "one returned result set; no systematic pagination; only explicit query filters"
+    },
+    {
+      "provider": "web search",
+      "utc_date": "2026-10-19",
+      "query": "\"Erbs\" \"vivianite\" oxidation",
+      "coverage": "one returned result set; no systematic pagination; only explicit query filters"
+    },
+    {
+      "provider": "web search",
+      "utc_date": "2026-10-19",
+      "query": "\"Solid State Oxidation of Fe(II) in Vivianite\"",
+      "coverage": "one returned result set; no systematic pagination; only explicit query filters"
+    },
+    {
+      "provider": "web search",
+      "utc_date": "2026-10-19",
+      "query": "\"metavivianite\" \"Erbs\" -\"green rust\" -\"PhD\" -\"thesis\"",
+      "coverage": "one returned result set; no systematic pagination; only explicit query filters"
+    },
+    {
+      "provider": "web search",
+      "utc_date": "2026-10-19",
+      "query": "\"GBI_203\" \"pdf\" -site:onlinelibrary.wiley.com",
+      "coverage": "one returned result set; no systematic pagination; only explicit query filters"
+    },
+    {
+      "provider": "web search",
+      "utc_date": "2026-10-19",
+      "query": "\"Transformation of vivianite\" \"supporting\" Miot",
+      "coverage": "one returned result set; no systematic pagination; only explicit query filters"
+    },
+    {
+      "provider": "web search",
+      "utc_date": "2026-10-19",
+      "query": "\"Transformation of vivianite\" \"Miot\" site:hal.science",
+      "coverage": "one returned result set; no systematic pagination; only explicit query filters"
+    },
+    {
+      "provider": "web search",
+      "utc_date": "2026-10-19",
+      "query": "\"GBI_203_sm\" -site:onlinelibrary.wiley.com",
+      "coverage": "one returned result set; no systematic pagination; only explicit query filters"
+    },
+    {
+      "provider": "web search",
+      "utc_date": "2026-10-19",
+      "query": "\"Miot\" \"vivianite\" \"supplement\" -site:researchgate.net",
+      "coverage": "one returned result set; no systematic pagination; only explicit query filters"
+    },
+    {
+      "provider": "web search",
+      "utc_date": "2026-10-19",
+      "query": "\"Erbs\" \"metavivianite\" bacteria",
+      "coverage": "one returned result set; no systematic pagination; only explicit query filters"
+    },
+    {
+      "provider": "web search",
+      "utc_date": "2026-10-19",
+      "query": "\"Eshun\" \"biovivianite\" metavivianite",
+      "coverage": "one returned result set; no systematic pagination; only explicit query filters"
+    },
+    {
+      "provider": "web search",
+      "utc_date": "2026-10-19",
+      "query": "\"Erbs\" \"Solid State Oxidation\" vivianite",
+      "coverage": "one returned result set; no systematic pagination; only explicit query filters"
+    },
+    {
+      "provider": "web search",
+      "utc_date": "2026-10-19",
+      "query": "\"GBI_203_sm_FigS1-S2_Data S1.pdf\"",
+      "coverage": "one returned result set; no systematic pagination; only explicit query filters"
+    },
+    {
+      "provider": "web search",
+      "utc_date": "2026-10-19",
+      "query": "\"Erbs\" \"vivianite\" \"Hansen\" oxidation bacteria",
+      "coverage": "one returned result set; no systematic pagination; only explicit query filters"
+    },
+    {
+      "provider": "web search",
+      "utc_date": "2026-10-19",
+      "query": "\"Solid State Oxidation of Fe(II) in Vivianite\" -site:research-collection.ethz.ch",
+      "coverage": "one returned result set; no systematic pagination; only explicit query filters"
+    },
+    {
+      "provider": "web search",
+      "utc_date": "2026-10-19",
+      "query": "\"Chiba\" \"200417\" correction erratum",
+      "coverage": "one returned result set; no systematic pagination; only explicit query filters"
+    },
+    {
+      "provider": "web search",
+      "utc_date": "2026-10-19",
+      "query": "\"Transformation of vivianite\" \"supplementary\" -site:researchgate.net -site:onlinelibrary.wiley.com",
+      "coverage": "one returned result set; no systematic pagination; only explicit query filters"
+    },
+    {
+      "provider": "web search",
+      "utc_date": "2026-10-19",
+      "query": "\"Strategies for optimizing biovivianite production\" site:research.manchester.ac.uk",
+      "coverage": "one returned result set; no systematic pagination; only explicit query filters"
+    },
+    {
+      "provider": "web search",
+      "utc_date": "2026-10-19",
+      "query": "\"Miot\" \"vivianite\" \"16920\"",
+      "coverage": "one returned result set; no systematic pagination; only explicit query filters"
+    },
+    {
+      "provider": "web search",
+      "utc_date": "2026-10-19",
+      "query": "\"Miot\" \"vivianite\" site:uni-tuebingen.de \"2009\" \"Supporting\"",
+      "coverage": "one returned result set; no systematic pagination; only explicit query filters"
+    },
+    {
+      "provider": "web search",
+      "utc_date": "2026-10-20",
+      "query": "\"GBI_203_sm_FigS1-S2_Data\" -site:onlinelibrary.wiley.com",
+      "coverage": "one returned result set; no systematic pagination; only explicit query filters"
+    },
+    {
+      "provider": "web search",
+      "utc_date": "2026-10-20",
+      "query": "\"Miot\" \"vivianite\" \"Supporting information\" site:hal.science",
+      "coverage": "one returned result set; no systematic pagination; only explicit query filters"
+    },
+    {
+      "provider": "web search",
+      "utc_date": "2026-10-20",
+      "query": "\"psi:16920\" \"vivianite\"",
+      "coverage": "one returned result set; no systematic pagination; only explicit query filters"
+    }
+  ],
+  "search_result_limits": "No source-specific correction or Erbs-lineage orthogonal evidence recovered. Eshun identified as separate primary lead; generic later vivianite oxidation studies are contextual and not proof of old specimen identity. Exact filename and HAL searches did not provide Miot SI. Search snippets were used for discovery only.",
+  "acquisitions": [
+    {
+      "name": "chiba2020.pdf",
+      "url": "https://www.jstage.jst.go.jp/article/jmps/115/6/115_200417/_pdf",
+      "started_at": "2026-10-19T23:41:07.644567+00:00",
+      "status": 200,
+      "final_url": "https://www.jstage.jst.go.jp/article/jmps/115/6/115_200417/_pdf",
+      "content_type": "application/pdf;charset=UTF-8",
+      "bytes": 1216000,
+      "sha256": "112e385df89292ddaa7785c50a46ec33e00f1e78d6e1b89f409d820409122820",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-283/chiba2020.pdf",
+      "pdf_magic": true,
+      "finished_at": "2026-10-19T23:41:10.497694+00:00"
+    },
+    {
+      "name": "chiba-advance.pdf",
+      "url": "https://www.jstage.jst.go.jp/article/jmps/advpub/0/advpub_200417/_pdf/-char/ja",
+      "started_at": "2026-10-19T23:41:07.645079+00:00",
+      "status": 200,
+      "final_url": "https://www.jstage.jst.go.jp/article/jmps/advpub/0/advpub_200417/_pdf/-char/ja",
+      "content_type": "application/pdf;charset=UTF-8",
+      "bytes": 1629270,
+      "sha256": "73605238d73f63f44b234205600a834d832e355356362e1bc8751f2e935a8519",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-283/chiba-advance.pdf",
+      "pdf_magic": true,
+      "finished_at": "2026-10-19T23:41:11.404966+00:00"
+    },
+    {
+      "name": "chiba-landing.html",
+      "url": "https://www.jstage.jst.go.jp/article/jmps/115/6/115_200417/_article",
+      "started_at": "2026-10-19T23:41:07.645347+00:00",
+      "status": 200,
+      "final_url": "https://www.jstage.jst.go.jp/article/jmps/115/6/115_200417/_article",
+      "content_type": "text/html;charset=utf-8",
+      "bytes": 83684,
+      "sha256": "a1f8f92aaca4364ea1cadc3a1d2dcc162caa20f11ab1f87d1dc4d64e6ecd42c0",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-283/chiba-landing.html",
+      "pdf_magic": false,
+      "finished_at": "2026-10-19T23:41:08.819263+00:00"
+    },
+    {
+      "name": "chiba-crossref.json",
+      "url": "https://api.crossref.org/works/10.2465/jmps.200417",
+      "started_at": "2026-10-19T23:41:07.645522+00:00",
+      "status": 200,
+      "final_url": "https://api.crossref.org/works/10.2465/jmps.200417",
+      "content_type": "application/json",
+      "bytes": 10052,
+      "sha256": "25cfa239270dcda0aa2250e48e9c684c42bb991d33f2a3d12dd1ca616aec36bf",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-283/chiba-crossref.json",
+      "pdf_magic": false,
+      "finished_at": "2026-10-19T23:41:07.951452+00:00"
+    },
+    {
+      "name": "eth-thesis.pdf",
+      "url": "https://www.research-collection.ethz.ch/server/api/core/bitstreams/94ff46a2-b9ac-41ea-bd0e-635c776caca1/content",
+      "started_at": "2026-10-19T23:41:07.951761+00:00",
+      "status": 200,
+      "final_url": "https://www.research-collection.ethz.ch/server/api/core/bitstreams/94ff46a2-b9ac-41ea-bd0e-635c776caca1/content",
+      "content_type": "application/pdf;charset=UTF-8",
+      "bytes": 10749824,
+      "sha256": "f60282d45404d0c9e0b96bc692e5c5d7dd29b331403ee03d36fa6542fadf7911",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-283/eth-thesis.pdf",
+      "pdf_magic": true,
+      "finished_at": "2026-10-19T23:41:12.029155+00:00"
+    },
+    {
+      "name": "eth-bitstream-metadata.json",
+      "url": "https://www.research-collection.ethz.ch/server/api/core/bitstreams/94ff46a2-b9ac-41ea-bd0e-635c776caca1",
+      "started_at": "2026-10-19T23:41:08.819302+00:00",
+      "status": 200,
+      "final_url": "https://www.research-collection.ethz.ch/server/api/core/bitstreams/94ff46a2-b9ac-41ea-bd0e-635c776caca1",
+      "content_type": "application/hal+json;charset=UTF-8",
+      "bytes": 2133,
+      "sha256": "2a32395895292228c9a1e2028b95464c98bcc2a0c1fc96c8366ec33f487c5aa4",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-283/eth-bitstream-metadata.json",
+      "pdf_magic": false,
+      "finished_at": "2026-10-19T23:41:09.347342+00:00"
+    },
+    {
+      "name": "miot2009.pdf",
+      "url": "https://uni-tuebingen.de/fileadmin/Uni_Tuebingen/Fakultaeten/MatNat/Fachbereiche/Geowissenschaften/Arbeitsgruppen/Angewandte_Geowissenschaften/Geomikrobiologie/Publications/2009/2009_Miot_Geobiology_Vivianite.pdf",
+      "started_at": "2026-10-19T23:41:09.347438+00:00",
+      "status": 200,
+      "final_url": "https://uni-tuebingen.de/fileadmin/Uni_Tuebingen/Fakultaeten/MatNat/Fachbereiche/Geowissenschaften/Arbeitsgruppen/Angewandte_Geowissenschaften/Geomikrobiologie/Publications/2009/2009_Miot_Geobiology_Vivianite.pdf",
+      "content_type": "application/pdf",
+      "bytes": 1061170,
+      "sha256": "dc09378b0ca506155406e84e9bf6d31a81039589b345d92aa6b64c651f209fec",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-283/miot2009.pdf",
+      "pdf_magic": true,
+      "finished_at": "2026-10-19T23:41:10.702429+00:00"
+    },
+    {
+      "name": "miot-crossref.json",
+      "url": "https://api.crossref.org/works/10.1111/j.1472-4669.2009.00203.x",
+      "started_at": "2026-10-19T23:41:10.497732+00:00",
+      "status": 200,
+      "final_url": "https://api.crossref.org/works/10.1111/j.1472-4669.2009.00203.x",
+      "content_type": "application/json",
+      "bytes": 9999,
+      "sha256": "e41c90555483a2c7a116d8e377c8bfba719fcfd27d6377ca14c742926cecf0d6",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-283/miot-crossref.json",
+      "pdf_magic": false,
+      "finished_at": "2026-10-19T23:41:10.752265+00:00"
+    },
+    {
+      "name": "miot-openalex.json",
+      "url": "https://api.openalex.org/works/https://doi.org/10.1111/j.1472-4669.2009.00203.x",
+      "started_at": "2026-10-19T23:41:10.702451+00:00",
+      "status": 200,
+      "final_url": "https://api.openalex.org/works/https://doi.org/10.1111/j.1472-4669.2009.00203.x",
+      "content_type": "application/json",
+      "bytes": 33542,
+      "sha256": "7af1e08d5d77fe13d1513ea830458502b53aed3567eb6df362c0ed4bba352d38",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-283/miot-openalex.json",
+      "pdf_magic": false,
+      "finished_at": "2026-10-19T23:41:11.199634+00:00"
+    },
+    {
+      "name": "miot-dora.html",
+      "url": "https://www.dora.lib4ri.ch/psi/item/psi:16920",
+      "started_at": "2026-10-19T23:42:54.736102+00:00",
+      "status": 200,
+      "final_url": "https://www.dora.lib4ri.ch/psi/item/psi:16920",
+      "content_type": "text/html",
+      "bytes": 2113,
+      "sha256": "951e25e605ceb0d2566158c2d823ccf88b0c3aea44179b9f308d59d07f003ce4",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-283/miot-dora.html",
+      "pdf_magic": false,
+      "finished_at": "2026-10-19T23:42:56.146824+00:00"
+    },
+    {
+      "name": "miot-wiley-landing.html",
+      "url": "https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1472-4669.2009.00203.x",
+      "started_at": "2026-10-19T23:42:54.736847+00:00",
+      "error": "<HTTPError 403: 'Forbidden'>",
+      "finished_at": "2026-10-19T23:42:54.899854+00:00"
+    },
+    {
+      "name": "eshun2024-fertilizer.pdf",
+      "url": "https://idus.us.es/bitstreams/f3c69fe4-15ce-4c48-a91e-1e3b611effbe/download",
+      "started_at": "2026-10-19T23:42:54.737004+00:00",
+      "status": 200,
+      "final_url": "https://idus.us.es/server/api/core/bitstreams/f3c69fe4-15ce-4c48-a91e-1e3b611effbe/content",
+      "content_type": "application/pdf;charset=UTF-8",
+      "bytes": 1979930,
+      "sha256": "e7fe7ca9c20f8b5c7d6316b1badd2622f0b31d1f6520639621072a769067974f",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-283/eshun2024-fertilizer.pdf",
+      "pdf_magic": true,
+      "finished_at": "2026-10-19T23:43:01.983534+00:00"
+    },
+    {
+      "name": "eshun2024-openalex.json",
+      "url": "https://api.openalex.org/works/https://doi.org/10.1016/j.envres.2023.117667",
+      "started_at": "2026-10-19T23:42:54.737281+00:00",
+      "status": 200,
+      "final_url": "https://api.openalex.org/works/https://doi.org/10.1016/j.envres.2023.117667",
+      "content_type": "application/json",
+      "bytes": 27531,
+      "sha256": "656a8a16e1de940137312ec8a0e976ba15e75e19b744319e0bbaee2446799e96",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-283/eshun2024-openalex.json",
+      "pdf_magic": false,
+      "finished_at": "2026-10-19T23:42:55.156573+00:00"
+    },
+    {
+      "name": "miot-tuebingen-publications.html",
+      "url": "https://uni-tuebingen.de/it/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/geowissenschaften/arbeitsgruppen/geo-und-umweltnaturwissenschaften/geo-und-umweltnaturwissenschaften/geomikrobiologie/arbeitsgruppe/publications/",
+      "started_at": "2026-10-20T03:33:36.983959+00:00",
+      "error": "<HTTPError 503: 'Apache Solr Server is not available.'>",
+      "finished_at": "2026-10-20T03:33:37.825817+00:00"
+    },
+    {
+      "name": "dora-apolloFetcher.js",
+      "url": "https://www.dora.lib4ri.ch/assets/apolloFetcher-BQgzuAcb.js",
+      "started_at": "2026-10-20T03:33:36.984844+00:00",
+      "status": 200,
+      "final_url": "https://www.dora.lib4ri.ch/assets/apolloFetcher-BQgzuAcb.js",
+      "content_type": "text/javascript",
+      "bytes": 36239,
+      "sha256": "790da6b0074f40500f08a2a8d61eb23e14ba2992c87dfb78f79e1f5d58d265b8",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-283/dora-apolloFetcher.js",
+      "pdf_magic": false,
+      "finished_at": "2026-10-20T03:33:38.341404+00:00"
+    },
+    {
+      "name": "dora-manifest.js",
+      "url": "https://www.dora.lib4ri.ch/assets/manifest-e6a3d2bb.js",
+      "started_at": "2026-10-20T03:33:36.985115+00:00",
+      "status": 200,
+      "final_url": "https://www.dora.lib4ri.ch/assets/manifest-e6a3d2bb.js",
+      "content_type": "text/javascript",
+      "bytes": 11249,
+      "sha256": "0ad56b2481ce3fed4d6336086e28693aa16bb5db53e7f3c06a36009602335138",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-283/dora-manifest.js",
+      "pdf_magic": false,
+      "finished_at": "2026-10-20T03:33:38.183334+00:00"
+    },
+    {
+      "name": "dora-constants.js",
+      "url": "https://www.dora.lib4ri.ch/assets/constants-BFjk2gNH.js",
+      "started_at": "2026-10-20T03:34:19.503450+00:00",
+      "status": 200,
+      "final_url": "https://www.dora.lib4ri.ch/assets/constants-BFjk2gNH.js",
+      "content_type": "text/javascript",
+      "bytes": 120,
+      "sha256": "9d537f73b5a9b7fc67d33f738807df8f722bdf77b5f8156d4705ec3a553b6c5d",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-283/dora-constants.js",
+      "pdf_magic": false,
+      "finished_at": "2026-10-20T03:34:20.180597+00:00"
+    },
+    {
+      "name": "dora-item.js",
+      "url": "https://www.dora.lib4ri.ch/assets/item-j_ig6KaO.js",
+      "started_at": "2026-10-20T03:34:19.504675+00:00",
+      "status": 200,
+      "final_url": "https://www.dora.lib4ri.ch/assets/item-j_ig6KaO.js",
+      "content_type": "text/javascript",
+      "bytes": 26033,
+      "sha256": "583396950edac7e3569f97dadadb724d7d38e94cb3a94e998f0d47ff2d6e9279",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-283/dora-item.js",
+      "pdf_magic": false,
+      "finished_at": "2026-10-20T03:34:20.362673+00:00"
+    },
+    {
+      "url": "https://apollo-prod.lib4ri.ch",
+      "method": "POST",
+      "operation": "read-only public GetItem query observed in DORA client",
+      "request_sha256": "48f782981191b8da5f66ff991a079b446a43d52c6994b3bfecc5513dbc8fca2c",
+      "variables": {
+        "subsite": "psi",
+        "pid": "psi:16920"
+      },
+      "started_at": "2026-10-20T03:35:08.792310+00:00",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "bytes": 6608,
+      "sha256": "eecf7f64d05ff9abd83dd4a5148149dc830a588f3ef89d0c70b25496f65fa679",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-283/dora-item-response.json",
+      "finished_at": "2026-10-20T03:35:10.394159+00:00"
+    }
+  ],
+  "inspections": [
+    {
+      "source": "Chiba2020 final",
+      "artifact": "chiba2020.pdf",
+      "pages": 5,
+      "current_inspection": "Methods p486/PDF2 viewed; p487 Fig3 and p488 Table2 text inspected and parent visually checked final PDF3-4. No new full-article scientific review claimed.",
+      "locators": [
+        "p486 direct-synthesis methods",
+        "p487 Figure3 and Results",
+        "p488 Table2"
+      ],
+      "version": "Journal of Mineralogical and Petrological Sciences 115:485-489 (2020)"
+    },
+    {
+      "source": "Chiba2020 advance publication",
+      "artifact": "chiba-advance.pdf",
+      "pages": 5,
+      "current_inspection": "PDF2 visually viewed, original methods lists 60 C in one sentence and 65 C/S65 in the next.",
+      "version": "J-STAGE Advance Publication, November 6, 2020; watermark retained"
+    },
+    {
+      "source": "Erbs2004",
+      "artifact": "eth-thesis.pdf",
+      "pages": 168,
+      "current_inspection": "PDF1 generated cover; chapter opening PDF36; printed pp29-34/PDF48-53 extracted and read; original Figures2.5,2.6,2.7,2.8 viewed at PDF48,50,52,53.",
+      "locators": [
+        "printed p30 ferric spectral areas",
+        "printed p32 tentative assignment and late mixture",
+        "printed p34 Figure2.8 and explicit no-XRD limitation"
+      ],
+      "version": "2004 ETH dissertation15492, current delivered PDF with repository-generated cover"
+    },
+    {
+      "source": "Miot2009",
+      "artifact": "miot2009.pdf",
+      "pages": 12,
+      "current_inspection": "Supporting Information announcement at p384/PDF12 read. Prior record and round84 dossier define accepted main XRD scope; current pass does not claim all main figures were newly reviewed.",
+      "locators": [
+        "p375 XRD methods (existing accepted scope)",
+        "p377 Figure2 (existing accepted scope)",
+        "p384 Supporting Information"
+      ],
+      "version": "Geobiology7:373-384 (2009), author-hosted published article"
+    },
+    {
+      "source": "Eshun2024 fertilizer",
+      "artifact": "eshun2024-fertilizer.pdf",
+      "pages": 14,
+      "current_inspection": "Primary Fig1/Table1 p6 visually viewed; publisher text and p3/p5 methods/results inspected by parent, with p3 text rechecked here. Full supplement and all fertilizer assays not assessed.",
+      "locators": [
+        "p3 synthesis and characterization",
+        "p5 phase assignment",
+        "p6 Figure1 and Table1"
+      ],
+      "version": "Chemical and Biological Technologies in Agriculture11:47 (2024), DOI10.1186/s40538-024-00558-0"
+    }
+  ],
+  "version_comparisons": {
+    "chiba_final": "SHA112e385df89292ddaa7785c50a46ec33e00f1e78d6e1b89f409d820409122820 equals historical dossier",
+    "miot_main": "SHAdc09378b0ca506155406e84e9bf6d31a81039589b345d92aa6b64c651f209fec equals historical dossier",
+    "eth": {
+      "current_sha256": "f60282d45404d0c9e0b96bc692e5c5d7dd29b331403ee03d36fa6542fadf7911",
+      "historical_sha256": "9108aafcee47f5adfaeac094a98194f21f006aee1126185984fa7244a018135d",
+      "both_delivered_bytes": 10749824,
+      "repository_original_metadata_bytes": 10691088,
+      "repository_original_metadata_md5": "87e25fe42f01089b9fdf7c19b35a6edf",
+      "interpretation": "Different delivered bytes. Current cover explicitly says generated upon download. Historical raw root absent, so cover-only change or content equivalence is NOT established."
+    }
+  },
+  "miot_repository_observation": {
+    "route": "https://apollo-prod.lib4ri.ch",
+    "query": "Public client GetItem query with subsite psi and pid psi:16920; exact retained request linked in raw references",
+    "item_doi_verified": true,
+    "downloads": [
+      {
+        "version": "published version",
+        "availability": "intranet",
+        "access": "restricted",
+        "license": "in copyright"
+      }
+    ],
+    "dataPackages": [],
+    "si_attachment_listed": false,
+    "restricted_download_attempted": false,
+    "limit": "Only this item metadata response, not all repository holdings or all possible SI locations"
+  },
+  "deferred_candidates": [
+    {
+      "doi": "10.1186/s40538-024-00558-0",
+      "decision": "bounded new curation lead; complete main PDF acquired, limited methods/Fig1 inspection; not ready for acceptance",
+      "scope": "Geobacter sulfurreducens Fe(III)-reduction experiment; source-assigned vivianite/metavivianite mixture in VivInsol7.0",
+      "not_resolved": "Erbs culture/sample identity, separate cause of phase formation versus handling, quantitative phase yield; all assay/supplement review outstanding",
+      "candidate_fields": [
+        "sources",
+        "mechanisms[].context",
+        "mechanisms[].evidence"
+      ],
+      "license": "CC BY4.0 stated on PDF1; third-party exceptions apply"
+    },
+    {
+      "doi": "10.1016/j.envres.2023.117667",
+      "decision": "metadata-only related original production study; not acquired or experimentally reviewed",
+      "scope": "Geobacter sulfurreducens and Shewanella putrefaciens, independent Fe(III)-reducing lineages",
+      "primary_metadata_url": "https://research.manchester.ac.uk/en/publications/strategies-for-optimizing-biovivianite-production-using-dissimila/",
+      "version": "Environmental Research242:117667 (2024), online20November2023",
+      "relationship": "Related same-team experimental program, not automatically independent replication of fertilizer work"
+    }
+  ],
+  "rights": {
+    "Chiba": "Redistribution license not established; raw PDF kept outsideGit",
+    "Erbs": "Current cover: In Copyright - Non-Commercial Use Permitted",
+    "Miot": "2009 Blackwell copyright; author-hosted reading copy; DORA lists in-copyright main article",
+    "Eshun_fertilizer": "CC BY4.0 per PDF1"
+  },
+  "prior_denied_routes_not_retried": [
+    "https://onlinelibrary.wiley.com/action/downloadSupplement?doi=10.1111%2Fj.1472-4669.2009.00203.x&file=GBI_203_sm_FigS1-S2_Data+S1.pdf",
+    "https://onlinelibrary.wiley.com/doi/suppl/10.1111/j.1472-4669.2009.00203.x/supinfo/GBI_203_sm_FigS1-S2_Data%20S1.pdf"
+  ],
+  "raw_receipts": [
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-283/dedup-receipt.json",
+      "bytes": 1575,
+      "sha256": "bffdf4e844ff0689642eb58d9beb9ee86659ef23b902254c29a5237e8e67f1be"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-283/dedup-refresh-receipt.json",
+      "bytes": 1606,
+      "sha256": "a45577659def8540568345a7bce012d9bc9cd1121b8cbf904df62cb6e4d5a0aa"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-283/eshun-dedup-receipt.json",
+      "bytes": 1301,
+      "sha256": "9b20a96409b32816eba5dca5ac382b64f0e9f5c9aa584000421f5be39355d112"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-283/dora-item-query.graphql",
+      "bytes": 21692,
+      "sha256": "37dfe86df4698584c00be24f6d46db898c6d4ec878d6e591555a12532755e2b5"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-283/dora-query-request.json",
+      "bytes": 22775,
+      "sha256": "48f782981191b8da5f66ff991a079b446a43d52c6994b3bfecc5513dbc8fca2c"
+    }
+  ],
+  "checks": {
+    "acquired_file_bytes_and_hashes": "All retained successful acquisitions rehashed and byte-count checked; zero mismatches",
+    "record_unchanged": true,
+    "independent_record_review": "Not performed; no record edits",
+    "validation": "JSON parsing, hashes, local references and diff checks only; parent owns repository acceptance gates"
+  }
+}
