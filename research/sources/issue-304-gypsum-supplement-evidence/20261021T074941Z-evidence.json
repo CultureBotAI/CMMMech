@@ -1,0 +1,1064 @@
+{
+  "schema": "cmmmech-source-investigation-handoff-v1",
+  "issue": 304,
+  "recorded_at": "2026-10-21T07:49:41Z",
+  "researcher": "codex /root/resume_213_review_165",
+  "source_only": true,
+  "worktree": "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-304",
+  "base": "2da10d95a72146ee0c69cb91fe303348fbadb638",
+  "branch": "codex/issue-304-gypsum-supplement-evidence",
+  "scope": "Reassess genuine Huang/Douchi supplements, original control marker, later loading/radiation metadata and corrections. Mineral identity, criticality and taxonomy are not re-curated.",
+  "eligibility": {
+    "receipt": {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/reconcile-304-20261021T074205Z/eligibility.json",
+      "bytes": 1829,
+      "sha256": "24bdd7a1fe6ab20dba7bb33a4385620064a7bd03eff60a60515636a13bce84e3"
+    },
+    "summary": {
+      "utc": "2026-10-21T07:42:45.780322+00:00",
+      "issue": 304,
+      "base": "2da10d95a72146ee0c69cb91fe303348fbadb638",
+      "owners": [
+        "data/records/gypsum.yaml",
+        "data/records/anhydrite.yaml"
+      ],
+      "owners_last_changed": "2026-10-15T05:41:46Z",
+      "last_commit": "b797f1be3d9d7b45444e0e3f54f3845d8aeeb1ae",
+      "eligible_over_2days": true,
+      "open_issues": 186,
+      "open_PRs": 1,
+      "comments": 0,
+      "PR513_head": "4b2496f7f6db997216a593542687570ea645bcb3",
+      "PR513_files": [
+        ".claude/skills/audit-schema-gaps/SKILL.md",
+        ".claude/skills/cmmmech-evolve-workflow/SKILL.md",
+        ".claude/skills/curate-yaml-record/SKILL.md",
+        ".claude/skills/curate-yaml-record/references/review-checklist.md",
+        ".claude/skills/fetch-source/SKILL.md",
+        ".claude/skills/id-label-correspondence/SKILL.md",
+        ".claude/skills/manage-identifiers/SKILL.md",
+        ".claude/skills/next-tasks/SKILL.md",
+        ".claude/skills/schema-gap-analysis/SKILL.md",
+        ".claude/skills/stats-report/SKILL.md",
+        "INFRA_TASKS.md",
+        "workflow/mech-workflow.yaml",
+        "workflow/parent/mech-cycle.yaml",
+        "workflow/parent/workflow.yaml"
+      ],
+      "three_dot_diff_paths": [
+        ".claude/skills/audit-schema-gaps/SKILL.md",
+        ".claude/skills/cmmmech-evolve-workflow/SKILL.md",
+        ".claude/skills/curate-yaml-record/SKILL.md",
+        ".claude/skills/curate-yaml-record/references/review-checklist.md",
+        ".claude/skills/fetch-source/SKILL.md",
+        ".claude/skills/id-label-correspondence/SKILL.md",
+        ".claude/skills/manage-identifiers/SKILL.md",
+        ".claude/skills/next-tasks/SKILL.md",
+        ".claude/skills/schema-gap-analysis/SKILL.md",
+        ".claude/skills/stats-report/SKILL.md",
+        "INFRA_TASKS.md",
+        "workflow/mech-workflow.yaml",
+        "workflow/parent/mech-cycle.yaml",
+        "workflow/parent/workflow.yaml"
+      ],
+      "covering_PR": false
+    }
+  },
+  "inputs_manifest": {
+    "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/input-manifest.json",
+    "bytes": 4160,
+    "sha256": "6bd9e9f87a35f6a7b9864f42697d4c704a9bd668b6f99c650f9cf21a79249b6b"
+  },
+  "owners": [
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-304/data/records/gypsum.yaml",
+      "bytes": 15047,
+      "sha256": "ea54490afd8114c45393c403088a3605c1df429eb65052cdae9c3c25becc153b",
+      "relative_path": "data/records/gypsum.yaml",
+      "equals_HEAD": true
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-304/data/records/anhydrite.yaml",
+      "bytes": 15103,
+      "sha256": "d5b37f08bac5bbcc572461dd8a47395fa5990dd84c9e4b80a5faca3ca0c06e19",
+      "relative_path": "data/records/anhydrite.yaml",
+      "equals_HEAD": true
+    }
+  ],
+  "dedup": {
+    "receipt": {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/dedup.json",
+      "bytes": 794,
+      "sha256": "93bad79ed4f40fb53703a91df94fc12118571fc4529d12cd25ed132d61de2413"
+    },
+    "summary": {
+      "utc": "2026-10-21T07:43:03.963192+00:00",
+      "cwd": "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-304",
+      "command": [
+        "rg",
+        "--no-ignore",
+        "--hidden",
+        "--follow",
+        "-ni",
+        "pnas[.]2001613117|pcad139|pnas[.]2018184117|gypsum|anhydrite",
+        "data",
+        "research",
+        "reviews",
+        "history",
+        "docs",
+        ".claude",
+        ".agents"
+      ],
+      "exit": 0,
+      "matching_lines": 1630,
+      "matching_paths": 228,
+      "raw_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/dedup.txt",
+      "bytes": 55072602,
+      "sha256": "a8c5249fedb11e6c1b3edb500f5be04219046981f57e2bcd0faa554763ca0655",
+      "stderr_bytes": 0,
+      "scope": "Named maintained roots, hidden/ignored included and symlinks followed; excludes unrelated home/temp trees and binary content semantics."
+    },
+    "prior_raw_availability": {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/prior-raw-availability.json",
+      "bytes": 6117,
+      "sha256": "5d5f35a05726ef2b8dc69b4f8e6c5016b98d6eaf97da3f8e41105f720ff5e097"
+    },
+    "prior_paths_available": 0,
+    "prior_paths_checked": 25,
+    "meaningful_matches": [
+      "Both maintained owners",
+      "Round88 source report and independent reviews",
+      "Known Huang correction/reply and Douchi null comparison"
+    ],
+    "boundary": "Ignored/hidden included; maintained roots and cited prior raw paths plus this task raw directory. No unrelated home/temp-tree search; no global absence claim."
+  },
+  "searches": {
+    "provider": "web.run",
+    "date_utc": "2026-10-21",
+    "queries": [
+      "\"pcad139\" supplementary",
+      "\"pnas.2001613117\" supporting information",
+      "\"pcad139\" correction erratum gypsum",
+      "\"pnas.2001613117\" correction data diffraction",
+      "\"pcad139\" \"supplemental\"",
+      "\"pcad139\" \"Supplementary\" Douchi",
+      "\"pnas.2001613117.sapp.pdf\"",
+      "\"Mechanism of water extraction\" figshare data",
+      "\"pcad139\" \"supplementary_data\"",
+      "\"pcad139\" \"200\" \"3\" chlorophyll",
+      "\"2001613117\" diffraction data correction control",
+      "\"Dryland Endolithic\" \"Supplementary Figure\""
+    ],
+    "filters": "none",
+    "coverage": "One returned set per query; no pagination exhaustion or global correction/data absence claim",
+    "receipts": [
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/web-search-1.json",
+        "bytes": 29510,
+        "sha256": "d6aa66241e4e466cef48d4e5e4d699593935ef3d9ac41c8ea52a70c0405b5be1"
+      },
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/web-search-2.json",
+        "bytes": 29030,
+        "sha256": "3b0e802c4ca55c3bb68fe496e6ed743051a0264d92b3923adc31c54390c54a66"
+      },
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/web-search-3.json",
+        "bytes": 30874,
+        "sha256": "f0032d6581825daa638ecd5f635dbaaeaf46bd93c3db1da3f721b684f1449140"
+      },
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/web-primary-open.json",
+        "bytes": 883,
+        "sha256": "99cf465fdc133c1d41b10e205770605bbd6b0cf4d078685233f74da99f2ccb00"
+      }
+    ]
+  },
+  "acquisitions": [
+    {
+      "name": "huang2020-pmc.html",
+      "requested_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7245118/",
+      "started_at": "2026-10-21T07:45:33.303585+00:00",
+      "status": 200,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7245118/",
+      "content_type": "text/html; charset=utf-8",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/huang2020-pmc.html",
+      "bytes": 21317,
+      "sha256": "8b198112fae21b3debbb80ef95ceee0c72735486d18ab5dad52d4fe4f326b030",
+      "magic_hex": "3c21646f6374797065206874",
+      "finished_at": "2026-10-21T07:45:33.494806+00:00",
+      "receipt": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/acquisition-initial.json",
+        "bytes": 5561,
+        "sha256": "b974fe83ee107e205529efef9fd96c76ac966bbce9bf36c4a691f57ffd1758ca"
+      },
+      "file_type_acceptance": "excluded as primary measurements: challenge, error, download interstitial, or application shell",
+      "prior_sha256": "f196912cfe9952ca400d30b6c052950d33cafe590a19d6d20dd378cb0ba5a135",
+      "same_as_prior": false
+    },
+    {
+      "name": "douchi2024-minimal.html",
+      "requested_url": "https://oup.silverchair-cdn.com/article-minimal/7379783",
+      "started_at": "2026-10-21T07:45:33.304124+00:00",
+      "status": 200,
+      "final_url": "https://oup.silverchair-cdn.com/article-minimal/7379783",
+      "content_type": "text/html",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/douchi2024-minimal.html",
+      "bytes": 465585,
+      "sha256": "b6abc740458a25e0544f7924593059eaeb1f1ad4f9cf7e20b56931e66e97d928",
+      "magic_hex": "0a3c21444f43545950452068",
+      "finished_at": "2026-10-21T07:45:33.938616+00:00",
+      "receipt": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/acquisition-initial.json",
+        "bytes": 5561,
+        "sha256": "b974fe83ee107e205529efef9fd96c76ac966bbce9bf36c4a691f57ffd1758ca"
+      },
+      "file_type_acceptance": "accepted primary main HTML/PDF or original figure; inspection scope separately recorded",
+      "prior_sha256": "b6abc740458a25e0544f7924593059eaeb1f1ad4f9cf7e20b56931e66e97d928",
+      "same_as_prior": true
+    },
+    {
+      "name": "huang2020-correction.html",
+      "requested_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7703571/",
+      "started_at": "2026-10-21T07:45:33.304341+00:00",
+      "status": 200,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7703571/",
+      "content_type": "text/html; charset=utf-8",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/huang2020-correction.html",
+      "bytes": 21317,
+      "sha256": "29f422e6420fc133990bb49695c7778f9b152bc8085a8a0408e432d2fa76556a",
+      "magic_hex": "3c21646f6374797065206874",
+      "finished_at": "2026-10-21T07:45:33.508902+00:00",
+      "receipt": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/acquisition-initial.json",
+        "bytes": 5561,
+        "sha256": "b974fe83ee107e205529efef9fd96c76ac966bbce9bf36c4a691f57ffd1758ca"
+      },
+      "file_type_acceptance": "excluded as primary measurements: challenge, error, download interstitial, or application shell",
+      "prior_sha256": "98f2123e6a94893733b1af43654596b187d03bbcd37a014b2c80b1f7afba24ee",
+      "same_as_prior": false
+    },
+    {
+      "name": "huang-reply-pmc.html",
+      "requested_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7668076/",
+      "started_at": "2026-10-21T07:45:33.304772+00:00",
+      "status": 200,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7668076/",
+      "content_type": "text/html; charset=utf-8",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/huang-reply-pmc.html",
+      "bytes": 112990,
+      "sha256": "43b2738c3eda38dfb2cf116f945ba4bbb877486889ff4a73dbd272faf42f58d8",
+      "magic_hex": "0a3c21444f43545950452068",
+      "finished_at": "2026-10-21T07:45:33.633559+00:00",
+      "receipt": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/acquisition-initial.json",
+        "bytes": 5561,
+        "sha256": "b974fe83ee107e205529efef9fd96c76ac966bbce9bf36c4a691f57ffd1758ca"
+      },
+      "file_type_acceptance": "accepted primary main HTML/PDF or original figure; inspection scope separately recorded",
+      "prior_sha256": "37c850cc954b243c99b0d92bc70c92cf40e3bfe32f011dd6e518b84630e286c5",
+      "same_as_prior": false
+    },
+    {
+      "name": "douchi-hal-api.json",
+      "requested_url": "https://api.archives-ouvertes.fr/search/?q=halId_s:hal-04281075&fl=*&wt=json",
+      "started_at": "2026-10-21T07:45:33.305031+00:00",
+      "status": 200,
+      "final_url": "https://api.archives-ouvertes.fr/search/?q=halId_s:hal-04281075&fl=*&wt=json",
+      "content_type": "application/json; charset=utf-8",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/douchi-hal-api.json",
+      "bytes": 135485,
+      "sha256": "622cb3cc510250c84462f194d365be856f8ea961ea36a7472109eb901b1ed404",
+      "magic_hex": "7b0a202022726573706f6e73",
+      "finished_at": "2026-10-21T07:45:37.509525+00:00",
+      "receipt": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/acquisition-initial.json",
+        "bytes": 5561,
+        "sha256": "b974fe83ee107e205529efef9fd96c76ac966bbce9bf36c4a691f57ffd1758ca"
+      },
+      "file_type_acceptance": "accepted metadata/index/negative listing only; not supplementary measurements"
+    },
+    {
+      "name": "huang-crossref.json",
+      "requested_url": "https://api.crossref.org/works/10.1073/pnas.2001613117",
+      "started_at": "2026-10-21T07:45:33.494841+00:00",
+      "status": 200,
+      "final_url": "https://api.crossref.org/works/10.1073/pnas.2001613117",
+      "content_type": "application/json",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/huang-crossref.json",
+      "bytes": 11001,
+      "sha256": "637a40c46a96d4c2f9ab55f6a0e754ae96d5cddb7bf2c4e17695279d22c05599",
+      "magic_hex": "7b22737461747573223a226f",
+      "finished_at": "2026-10-21T07:45:33.754662+00:00",
+      "receipt": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/acquisition-initial.json",
+        "bytes": 5561,
+        "sha256": "b974fe83ee107e205529efef9fd96c76ac966bbce9bf36c4a691f57ffd1758ca"
+      },
+      "file_type_acceptance": "accepted metadata/index/negative listing only; not supplementary measurements"
+    },
+    {
+      "name": "douchi-crossref.json",
+      "requested_url": "https://api.crossref.org/works/10.1093/pcp/pcad139",
+      "started_at": "2026-10-21T07:45:33.508924+00:00",
+      "status": 200,
+      "final_url": "https://api.crossref.org/works/10.1093/pcp/pcad139",
+      "content_type": "application/json",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/douchi-crossref.json",
+      "bytes": 44111,
+      "sha256": "e50bfd2d688e77e0ddc5f9dd78f159c0c49365b1d5ab36232af494d395aaa5b5",
+      "magic_hex": "7b22737461747573223a226f",
+      "finished_at": "2026-10-21T07:45:33.905612+00:00",
+      "receipt": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/acquisition-initial.json",
+        "bytes": 5561,
+        "sha256": "b974fe83ee107e205529efef9fd96c76ac966bbce9bf36c4a691f57ffd1758ca"
+      },
+      "file_type_acceptance": "accepted metadata/index/negative listing only; not supplementary measurements"
+    },
+    {
+      "name": "huang-epmc-supp-response.xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7245118/supplementaryFiles",
+      "started_at": "2026-10-21T07:45:33.633587+00:00",
+      "status": 200,
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7245118/supplementaryFiles",
+      "content_type": "application/xml",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/huang-epmc-supp-response.xml",
+      "bytes": 296,
+      "sha256": "9642c3f90466f51c6a0049dfc9a16cf3ef5ecb0529fbf11a290796b431a2a070",
+      "magic_hex": "3c3f786d6c2076657273696f",
+      "finished_at": "2026-10-21T07:45:36.838054+00:00",
+      "receipt": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/acquisition-initial.json",
+        "bytes": 5561,
+        "sha256": "b974fe83ee107e205529efef9fd96c76ac966bbce9bf36c4a691f57ffd1758ca"
+      },
+      "file_type_acceptance": "excluded as primary measurements: challenge, error, download interstitial, or application shell"
+    },
+    {
+      "name": "wierzchos2020.pdf",
+      "requested_url": "https://www.ugr.es/~grupo179/pdf/Wierzchos%202020.pdf",
+      "started_at": "2026-10-21T07:45:33.754683+00:00",
+      "status": 200,
+      "final_url": "https://www.ugr.es/~grupo179/pdf/Wierzchos%202020.pdf",
+      "content_type": "application/pdf",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/wierzchos2020.pdf",
+      "bytes": 967548,
+      "sha256": "d856cd0d511c7a8dda94e24a0831a57fea2d465caa4687d8797b1b88266c1231",
+      "magic_hex": "255044462d312e350d25e2e3",
+      "finished_at": "2026-10-21T07:45:35.581252+00:00",
+      "receipt": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/acquisition-initial.json",
+        "bytes": 5561,
+        "sha256": "b974fe83ee107e205529efef9fd96c76ac966bbce9bf36c4a691f57ffd1758ca"
+      },
+      "file_type_acceptance": "accepted primary main HTML/PDF or original figure; inspection scope separately recorded",
+      "prior_sha256": "d856cd0d511c7a8dda94e24a0831a57fea2d465caa4687d8797b1b88266c1231",
+      "same_as_prior": true
+    },
+    {
+      "name": "huang2020-pnas.2001613117fig01.jpg",
+      "requested_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/dcea/7245118/705237e1e2dd/pnas.2001613117fig01.jpg",
+      "started_at": "2026-10-21T07:46:13.285473+00:00",
+      "status": 200,
+      "final_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/dcea/7245118/705237e1e2dd/pnas.2001613117fig01.jpg",
+      "content_type": "image/jpeg",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/huang2020-pnas.2001613117fig01.jpg",
+      "bytes": 145833,
+      "sha256": "ced13e60805fc4f3b41f7e527a69b3d210cfcadf3fc3d864e7b17f00b4de4dc2",
+      "magic_hex": "ffd8ffe000104a4649460001",
+      "finished_at": "2026-10-21T07:46:13.478743+00:00",
+      "receipt": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/acquisition-more.json",
+        "bytes": 11219,
+        "sha256": "a4ecabbe1d9fc45dc31ca82e9d2bb34607a577f45e6a5d3f165049404afeecc3"
+      },
+      "file_type_acceptance": "accepted primary main HTML/PDF or original figure; inspection scope separately recorded",
+      "prior_sha256": "ced13e60805fc4f3b41f7e527a69b3d210cfcadf3fc3d864e7b17f00b4de4dc2",
+      "same_as_prior": true
+    },
+    {
+      "name": "huang2020-pnas.2001613117fig02.jpg",
+      "requested_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/dcea/7245118/26e00dc82733/pnas.2001613117fig02.jpg",
+      "started_at": "2026-10-21T07:46:13.286113+00:00",
+      "status": 200,
+      "final_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/dcea/7245118/26e00dc82733/pnas.2001613117fig02.jpg",
+      "content_type": "image/jpeg",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/huang2020-pnas.2001613117fig02.jpg",
+      "bytes": 173135,
+      "sha256": "246601cf9f303297da84393c21d5f70abb4d4150a72a6720d3c1f40dae3bcc3c",
+      "magic_hex": "ffd8ffe000104a4649460001",
+      "finished_at": "2026-10-21T07:46:13.504842+00:00",
+      "receipt": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/acquisition-more.json",
+        "bytes": 11219,
+        "sha256": "a4ecabbe1d9fc45dc31ca82e9d2bb34607a577f45e6a5d3f165049404afeecc3"
+      },
+      "file_type_acceptance": "accepted primary main HTML/PDF or original figure; inspection scope separately recorded",
+      "prior_sha256": "246601cf9f303297da84393c21d5f70abb4d4150a72a6720d3c1f40dae3bcc3c",
+      "same_as_prior": true
+    },
+    {
+      "name": "huang2020-pnas.2001613117fig03.jpg",
+      "requested_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/dcea/7245118/7e0a5d89ef91/pnas.2001613117fig03.jpg",
+      "started_at": "2026-10-21T07:46:13.286534+00:00",
+      "status": 200,
+      "final_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/dcea/7245118/7e0a5d89ef91/pnas.2001613117fig03.jpg",
+      "content_type": "image/jpeg",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/huang2020-pnas.2001613117fig03.jpg",
+      "bytes": 177478,
+      "sha256": "8866032eec2457ee2112a0b7fec05eabca4f1c92d2e4e2f8f53845fd8518fc44",
+      "magic_hex": "ffd8ffe000104a4649460001",
+      "finished_at": "2026-10-21T07:46:13.479438+00:00",
+      "receipt": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/acquisition-more.json",
+        "bytes": 11219,
+        "sha256": "a4ecabbe1d9fc45dc31ca82e9d2bb34607a577f45e6a5d3f165049404afeecc3"
+      },
+      "file_type_acceptance": "accepted primary main HTML/PDF or original figure; inspection scope separately recorded",
+      "prior_sha256": "8866032eec2457ee2112a0b7fec05eabca4f1c92d2e4e2f8f53845fd8518fc44",
+      "same_as_prior": true
+    },
+    {
+      "name": "huang2020-pnas.2001613117fig04.jpg",
+      "requested_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/dcea/7245118/62ae813fc5ad/pnas.2001613117fig04.jpg",
+      "started_at": "2026-10-21T07:46:13.286978+00:00",
+      "status": 200,
+      "final_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/dcea/7245118/62ae813fc5ad/pnas.2001613117fig04.jpg",
+      "content_type": "image/jpeg",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/huang2020-pnas.2001613117fig04.jpg",
+      "bytes": 170369,
+      "sha256": "133245e68e92f48f285495783c08f84fd65e3836001100764de7bea9519bdf70",
+      "magic_hex": "ffd8ffe000104a4649460001",
+      "finished_at": "2026-10-21T07:46:13.534166+00:00",
+      "receipt": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/acquisition-more.json",
+        "bytes": 11219,
+        "sha256": "a4ecabbe1d9fc45dc31ca82e9d2bb34607a577f45e6a5d3f165049404afeecc3"
+      },
+      "file_type_acceptance": "accepted primary main HTML/PDF or original figure; inspection scope separately recorded",
+      "prior_sha256": "133245e68e92f48f285495783c08f84fd65e3836001100764de7bea9519bdf70",
+      "same_as_prior": true
+    },
+    {
+      "name": "huang-reply-pnas.2018184117fig01.jpg",
+      "requested_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/975b/7668076/40698b0757b2/pnas.2018184117fig01.jpg",
+      "started_at": "2026-10-21T07:46:13.287144+00:00",
+      "status": 200,
+      "final_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/975b/7668076/40698b0757b2/pnas.2018184117fig01.jpg",
+      "content_type": "image/jpeg",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/huang-reply-pnas.2018184117fig01.jpg",
+      "bytes": 146745,
+      "sha256": "dd78716b0b5cac17900a5a65cededeb7ad1aedf7a33b645008ff74ac18451a97",
+      "magic_hex": "ffd8ffe000104a4649460001",
+      "finished_at": "2026-10-21T07:46:13.505659+00:00",
+      "receipt": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/acquisition-more.json",
+        "bytes": 11219,
+        "sha256": "a4ecabbe1d9fc45dc31ca82e9d2bb34607a577f45e6a5d3f165049404afeecc3"
+      },
+      "file_type_acceptance": "accepted primary main HTML/PDF or original figure; inspection scope separately recorded",
+      "prior_sha256": "dd78716b0b5cac17900a5a65cededeb7ad1aedf7a33b645008ff74ac18451a97",
+      "same_as_prior": true
+    },
+    {
+      "name": "huang-reply-pnas.2018184117fig02.jpg",
+      "requested_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/975b/7668076/387411a9187c/pnas.2018184117fig02.jpg",
+      "started_at": "2026-10-21T07:46:13.478777+00:00",
+      "status": 200,
+      "final_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/975b/7668076/387411a9187c/pnas.2018184117fig02.jpg",
+      "content_type": "image/jpeg",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/huang-reply-pnas.2018184117fig02.jpg",
+      "bytes": 247715,
+      "sha256": "5978e8594d502c073b72537bdbc473ef36b69bbc6e8524aafab1a9c3a46c4746",
+      "magic_hex": "ffd8ffe000104a4649460001",
+      "finished_at": "2026-10-21T07:46:13.753054+00:00",
+      "receipt": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/acquisition-more.json",
+        "bytes": 11219,
+        "sha256": "a4ecabbe1d9fc45dc31ca82e9d2bb34607a577f45e6a5d3f165049404afeecc3"
+      },
+      "file_type_acceptance": "accepted primary main HTML/PDF or original figure; inspection scope separately recorded",
+      "prior_sha256": "5978e8594d502c073b72537bdbc473ef36b69bbc6e8524aafab1a9c3a46c4746",
+      "same_as_prior": true
+    },
+    {
+      "name": "douchi2024-pcad139f1.jpeg",
+      "requested_url": "https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/pcp/65/6/10.1093_pcp_pcad139/2/pcad139f1.jpeg?Expires=2147483647&Signature=nhgSeWUMhbmh5CHAb8C3RpZKtwAL8jVE73eUG7MGl13-CrtoX1RtMbHztGA44JswaR~8kEjYWJ3XtpMquiOacFx~Vrdl0URoA~K20Q4aqeSXn67CugGI3NcnhnZMT8mct-vgsL8SEV-H7PC8E6rvDC0CW9BOiy89V0vKoPcFbxiJbnUjLEdRARS9L83mwDJ1DswJmIHH8svhlkt66rqWanMjkJaGq5PzVTSU0sAcFZ3n0JJgU9bzZt8H1qOmri9eAxH4YM-63s6R1PvoMb9K~yM5WpuFE2j7MA31VdV0bsYODK4vJ-eD8xzvMpn0ZIIF2zo6APCEH653vDSoZWpy3A__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA",
+      "started_at": "2026-10-21T07:46:13.479458+00:00",
+      "status": 200,
+      "final_url": "https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/pcp/65/6/10.1093_pcp_pcad139/2/pcad139f1.jpeg?Expires=2147483647&Signature=nhgSeWUMhbmh5CHAb8C3RpZKtwAL8jVE73eUG7MGl13-CrtoX1RtMbHztGA44JswaR~8kEjYWJ3XtpMquiOacFx~Vrdl0URoA~K20Q4aqeSXn67CugGI3NcnhnZMT8mct-vgsL8SEV-H7PC8E6rvDC0CW9BOiy89V0vKoPcFbxiJbnUjLEdRARS9L83mwDJ1DswJmIHH8svhlkt66rqWanMjkJaGq5PzVTSU0sAcFZ3n0JJgU9bzZt8H1qOmri9eAxH4YM-63s6R1PvoMb9K~yM5WpuFE2j7MA31VdV0bsYODK4vJ-eD8xzvMpn0ZIIF2zo6APCEH653vDSoZWpy3A__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA",
+      "content_type": "image/jpeg",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/douchi2024-pcad139f1.jpeg",
+      "bytes": 81801,
+      "sha256": "6edcd58e77d9532f5bfba8739d909adfdc602c3541d3313d4bb70f2ed6c51fdb",
+      "magic_hex": "ffd8ffe000104a4649460001",
+      "finished_at": "2026-10-21T07:46:14.052495+00:00",
+      "receipt": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/acquisition-more.json",
+        "bytes": 11219,
+        "sha256": "a4ecabbe1d9fc45dc31ca82e9d2bb34607a577f45e6a5d3f165049404afeecc3"
+      },
+      "file_type_acceptance": "accepted primary main HTML/PDF or original figure; inspection scope separately recorded",
+      "prior_sha256": "6edcd58e77d9532f5bfba8739d909adfdc602c3541d3313d4bb70f2ed6c51fdb",
+      "same_as_prior": true
+    },
+    {
+      "name": "douchi2024-pcad139f2.jpeg",
+      "requested_url": "https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/pcp/65/6/10.1093_pcp_pcad139/2/pcad139f2.jpeg?Expires=2147483647&Signature=ppx3CynMwpU2YtZMVz4nK4wozluIVqmWk4xMk6gGfaW84pz4KSoIv5PdUJW4oEXH39MDyvc2bT-UqoDfNp4AJDykcWqPjuxXacg5tXIKrsLmLLDTBophhLDTEDNnng3G1c~pJai-4-paSiOi~~iHurE~DVI9QG35YCD6OpJ4y7l10prVEuvM4tyCXnswVwmJnlLhTEOvpt67bmrDi6~tv810yjwYGyB6rI4yIBzDqv~Po3G1kb3i6B6Jd~Zc2XGBgSBwZ0bjMj8KDPLyR~F9fe-uCETw4vgUFJ29Hd4lx8mVIEQGRMdcccpDXz92Lkx5Q2kgdfd59akfAdYaHvXndA__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA",
+      "started_at": "2026-10-21T07:46:13.504876+00:00",
+      "status": 200,
+      "final_url": "https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/pcp/65/6/10.1093_pcp_pcad139/2/pcad139f2.jpeg?Expires=2147483647&Signature=ppx3CynMwpU2YtZMVz4nK4wozluIVqmWk4xMk6gGfaW84pz4KSoIv5PdUJW4oEXH39MDyvc2bT-UqoDfNp4AJDykcWqPjuxXacg5tXIKrsLmLLDTBophhLDTEDNnng3G1c~pJai-4-paSiOi~~iHurE~DVI9QG35YCD6OpJ4y7l10prVEuvM4tyCXnswVwmJnlLhTEOvpt67bmrDi6~tv810yjwYGyB6rI4yIBzDqv~Po3G1kb3i6B6Jd~Zc2XGBgSBwZ0bjMj8KDPLyR~F9fe-uCETw4vgUFJ29Hd4lx8mVIEQGRMdcccpDXz92Lkx5Q2kgdfd59akfAdYaHvXndA__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA",
+      "content_type": "image/jpeg",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/douchi2024-pcad139f2.jpeg",
+      "bytes": 31954,
+      "sha256": "ac5d6ed57d570ff0c72aca08ccb569498858665c7368668f7da02b403a05ff2e",
+      "magic_hex": "ffd8ffe000104a4649460001",
+      "finished_at": "2026-10-21T07:46:13.982152+00:00",
+      "receipt": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/acquisition-more.json",
+        "bytes": 11219,
+        "sha256": "a4ecabbe1d9fc45dc31ca82e9d2bb34607a577f45e6a5d3f165049404afeecc3"
+      },
+      "file_type_acceptance": "accepted primary main HTML/PDF or original figure; inspection scope separately recorded",
+      "prior_sha256": "ac5d6ed57d570ff0c72aca08ccb569498858665c7368668f7da02b403a05ff2e",
+      "same_as_prior": true
+    },
+    {
+      "name": "douchi-hal-response.html",
+      "requested_url": "https://hal.science/hal-04281075/file/Douchi%20et%20al%20main%20text%20HAL.pdf",
+      "started_at": "2026-10-21T07:46:13.505681+00:00",
+      "status": 200,
+      "final_url": "https://hal.science/hal-04281075/file/Douchi%20et%20al%20main%20text%20HAL.pdf",
+      "content_type": "text/html; charset=utf-8",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/douchi-hal-response.html",
+      "bytes": 12535,
+      "sha256": "7ec4f7e3ef07b043bab1f7dd7162f5650b32b6197d1477823ada804c8fdb7607",
+      "magic_hex": "3c21646f6374797065206874",
+      "finished_at": "2026-10-21T07:46:14.393478+00:00",
+      "receipt": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/acquisition-more.json",
+        "bytes": 11219,
+        "sha256": "a4ecabbe1d9fc45dc31ca82e9d2bb34607a577f45e6a5d3f165049404afeecc3"
+      },
+      "file_type_acceptance": "excluded as primary measurements: challenge, error, download interstitial, or application shell"
+    },
+    {
+      "name": "huang-institutional.html",
+      "requested_url": "https://repositories.cdlib.org/uc/item/01n9g84v",
+      "started_at": "2026-10-21T07:46:13.534193+00:00",
+      "status": 403,
+      "final_url": "https://repositories.cdlib.org/uc/item/01n9g84v",
+      "content_type": "text/html",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/huang-institutional.html",
+      "bytes": 919,
+      "sha256": "98bc3123541f5031837cafba234b482d7755cf51f5aa5174483a4233148de656",
+      "magic_hex": "3c21444f4354595045204854",
+      "finished_at": "2026-10-21T07:46:13.615989+00:00",
+      "receipt": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/acquisition-more.json",
+        "bytes": 11219,
+        "sha256": "a4ecabbe1d9fc45dc31ca82e9d2bb34607a577f45e6a5d3f165049404afeecc3"
+      },
+      "file_type_acceptance": "excluded as primary measurements: challenge, error, download interstitial, or application shell"
+    },
+    {
+      "name": "huang-lab.html",
+      "requested_url": "https://faculty.sites.uci.edu/kisailuslab/publications/",
+      "started_at": "2026-10-21T07:46:13.616006+00:00",
+      "status": 200,
+      "final_url": "https://faculty.sites.uci.edu/kisailuslab/publications/",
+      "content_type": "text/html; charset=UTF-8",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/huang-lab.html",
+      "bytes": 201243,
+      "sha256": "9eefa0ef2b79b64513b6f5fde3d45e1745493c7e6a596eb3d4bff4d7232b0da1",
+      "magic_hex": "3c21444f4354595045206874",
+      "finished_at": "2026-10-21T07:46:14.876300+00:00",
+      "receipt": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/acquisition-more.json",
+        "bytes": 11219,
+        "sha256": "a4ecabbe1d9fc45dc31ca82e9d2bb34607a577f45e6a5d3f165049404afeecc3"
+      },
+      "file_type_acceptance": "accepted metadata/index/negative listing only; not supplementary measurements"
+    },
+    {
+      "name": "huang-pmc-supp-response.html",
+      "requested_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7245118/bin/pnas.2001613117.sapp.pdf",
+      "started_at": "2026-10-21T07:46:13.753084+00:00",
+      "status": 404,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7245118/bin/pnas.2001613117.sapp.pdf",
+      "content_type": "text/html; charset=utf-8",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/huang-pmc-supp-response.html",
+      "bytes": 48716,
+      "sha256": "379dfa0eb4b68456e6c466e62014ebedfbffb4c5edaec29f18fef01242938eb3",
+      "magic_hex": "0a0a3c21444f435459504520",
+      "finished_at": "2026-10-21T07:46:13.965656+00:00",
+      "receipt": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/acquisition-more.json",
+        "bytes": 11219,
+        "sha256": "a4ecabbe1d9fc45dc31ca82e9d2bb34607a577f45e6a5d3f165049404afeecc3"
+      },
+      "file_type_acceptance": "excluded as primary measurements: challenge, error, download interstitial, or application shell"
+    },
+    {
+      "name": "huang-publisher-supp-response.html",
+      "requested_url": "https://www.pnas.org/doi/suppl/10.1073/pnas.2001613117/suppl_file/pnas.2001613117.sapp.pdf",
+      "started_at": "2026-10-21T07:46:13.965679+00:00",
+      "status": 403,
+      "final_url": "https://www.pnas.org/doi/suppl/10.1073/pnas.2001613117/suppl_file/pnas.2001613117.sapp.pdf",
+      "content_type": "text/html; charset=UTF-8",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/huang-publisher-supp-response.html",
+      "bytes": 5727,
+      "sha256": "d22f0d5a0b1a4ab637083d9e57aadb360c133564700e602ecbc5564226a720d3",
+      "magic_hex": "3c21444f4354595045206874",
+      "finished_at": "2026-10-21T07:46:14.014225+00:00",
+      "receipt": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/acquisition-more.json",
+        "bytes": 11219,
+        "sha256": "a4ecabbe1d9fc45dc31ca82e9d2bb34607a577f45e6a5d3f165049404afeecc3"
+      },
+      "file_type_acceptance": "excluded as primary measurements: challenge, error, download interstitial, or application shell"
+    },
+    {
+      "name": "douchi-supplemental-endpoint.html",
+      "requested_url": "https://academic.oup.com/pcp/article/65/6/939/7379783#supplementary-data",
+      "started_at": "2026-10-21T07:46:13.982175+00:00",
+      "status": 403,
+      "final_url": "https://academic.oup.com/pcp/article/65/6/939/7379783#supplementary-data",
+      "content_type": "text/html; charset=UTF-8",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/douchi-supplemental-endpoint.html",
+      "bytes": 5523,
+      "sha256": "0dd7dbd41a306cffc040f1b28827b9742d2b86f6f127e283bd299abf1087e617",
+      "magic_hex": "3c21444f4354595045206874",
+      "finished_at": "2026-10-21T07:46:14.026712+00:00",
+      "receipt": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/acquisition-more.json",
+        "bytes": 11219,
+        "sha256": "a4ecabbe1d9fc45dc31ca82e9d2bb34607a577f45e6a5d3f165049404afeecc3"
+      },
+      "file_type_acceptance": "excluded as primary measurements: challenge, error, download interstitial, or application shell"
+    },
+    {
+      "name": "huang-epmc-main-response.xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7245118/fullTextXML",
+      "started_at": "2026-10-21T07:46:52.971775+00:00",
+      "status": 500,
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7245118/fullTextXML",
+      "content_type": "application/json",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/huang-epmc-main-response.xml",
+      "bytes": 150,
+      "sha256": "10679309cc07be9cb83cbef4c7aa399ea2b545d19d9904b55e23cf474bbb7550",
+      "magic_hex": "7b2274696d657374616d7022",
+      "finished_at": "2026-10-21T07:46:53.793029+00:00",
+      "receipt": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/acquisition-followup.json",
+        "bytes": 6317,
+        "sha256": "dbc15c105a4dae20b988683cf1cb8b6a2ad2734ee2c4d1ed0847b015de47f6b3"
+      },
+      "file_type_acceptance": "excluded as primary measurements: challenge, error, download interstitial, or application shell"
+    },
+    {
+      "name": "huang-nlm-oa-response.xml",
+      "requested_url": "https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC7245118",
+      "started_at": "2026-10-21T07:46:52.973560+00:00",
+      "status": 404,
+      "final_url": "https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC7245118",
+      "content_type": "text/html; charset=ISO-8859-1",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/huang-nlm-oa-response.xml",
+      "bytes": 1584,
+      "sha256": "b98327f06afb8629dc6a9396a64e1c1c18ba3001fb2d0500a3617ba0d84c7390",
+      "magic_hex": "3c21444f4354595045206874",
+      "finished_at": "2026-10-21T07:46:53.277960+00:00",
+      "receipt": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/acquisition-followup.json",
+        "bytes": 6317,
+        "sha256": "dbc15c105a4dae20b988683cf1cb8b6a2ad2734ee2c4d1ed0847b015de47f6b3"
+      },
+      "file_type_acceptance": "excluded as primary measurements: challenge, error, download interstitial, or application shell"
+    },
+    {
+      "name": "huang-pmc-instance-supp-response.html",
+      "requested_url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/7245118/bin/pnas.2001613117.sapp.pdf",
+      "started_at": "2026-10-21T07:46:52.974180+00:00",
+      "status": 200,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/7245118/bin/pnas.2001613117.sapp.pdf",
+      "content_type": "text/html; charset=utf-8",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/huang-pmc-instance-supp-response.html",
+      "bytes": 1817,
+      "sha256": "68a96de1069364979a25d92a89c128e65598006569237c244e6500d897f6687d",
+      "magic_hex": "0a0a0a0a3c68746d6c3e0a20",
+      "finished_at": "2026-10-21T07:46:53.150366+00:00",
+      "receipt": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/acquisition-followup.json",
+        "bytes": 6317,
+        "sha256": "dbc15c105a4dae20b988683cf1cb8b6a2ad2734ee2c4d1ed0847b015de47f6b3"
+      },
+      "file_type_acceptance": "excluded as primary measurements: challenge, error, download interstitial, or application shell"
+    },
+    {
+      "name": "huang-escolar-pdf-response.html",
+      "requested_url": "https://escholarship.org/content/qt01n9g84v/qt01n9g84v.pdf",
+      "started_at": "2026-10-21T07:46:52.974449+00:00",
+      "status": 403,
+      "final_url": "https://escholarship.org/content/qt01n9g84v/qt01n9g84v.pdf",
+      "content_type": "text/html",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/huang-escolar-pdf-response.html",
+      "bytes": 919,
+      "sha256": "7bd4f7a018f6e04af43b3c8b506b0d5774454b47c741579ab3ca3bf750ef5cb5",
+      "magic_hex": "3c21444f4354595045204854",
+      "finished_at": "2026-10-21T07:46:53.026901+00:00",
+      "receipt": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/acquisition-followup.json",
+        "bytes": 6317,
+        "sha256": "dbc15c105a4dae20b988683cf1cb8b6a2ad2734ee2c4d1ed0847b015de47f6b3"
+      },
+      "file_type_acceptance": "excluded as primary measurements: challenge, error, download interstitial, or application shell"
+    },
+    {
+      "name": "douchi-epmc-metadata.json",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:10.1093/pcp/pcad139&format=json",
+      "started_at": "2026-10-21T07:46:52.974804+00:00",
+      "status": 200,
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:10.1093/pcp/pcad139&format=json",
+      "content_type": "application/json;charset=UTF-8",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/douchi-epmc-metadata.json",
+      "bytes": 1044,
+      "sha256": "3c5f269729e232a5eef5e1bb71d729ded8d327b23f24fbe4baa5254bc5fbc80e",
+      "magic_hex": "7b2276657273696f6e223a22",
+      "finished_at": "2026-10-21T07:46:53.604646+00:00",
+      "receipt": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/acquisition-followup.json",
+        "bytes": 6317,
+        "sha256": "dbc15c105a4dae20b988683cf1cb8b6a2ad2734ee2c4d1ed0847b015de47f6b3"
+      },
+      "file_type_acceptance": "accepted metadata/index/negative listing only; not supplementary measurements"
+    },
+    {
+      "name": "douchi-indexed-pdf-response",
+      "requested_url": "https://watermark02.silverchair.com/pcad139.pdf?token=AQECAHi208BE49Ooan9kkhW_Ercy7Dm3ZL_9Cf3qfKAc485ysgAAA0owggNGBgkqhkiG9w0BBwagggM3MIIDMwIBADCCAywGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMDuQ-0S1QFvDBtFeiAgEQgIIC_cEb8XrFPLcc2NVScKN1dnNiPAW-N-KZqJZqf8dae0o4p_pvWRsmrMlNV8EIKlLUs1YpclFaECct0DcJWrhYKeDkECOskby6CfAKe66ayGvwIVd-cDH6U0JOEb_yeGm3i_4cHGh4pmfFNrc4soflyZfhZT6RI-GKAGhYarvAvF2xiTyYxYxuitt04L_HHlbtUnM-vJlH8HK6CbHPetN2VdtiZgVpH9ajqAPpRPnWCj4AVKdJThf4rbqDRRz31bWj2HNohGEfFByor4gvb96CdBEmccVORxNiQQGzVhz213iIqRUdkLqzMPgIx9_FEpB5THtyCRz94xmktU_9-exVyhpUEcOiddW4fJzrnXYSu-zyyZxF0kgQqKd8G09VpLPGf2subLiT6y39W5lJ2ZZn2SBM8ceXYZoxDtVdUErj3WskmIzALrL05sR_4ggKc1VZe9NrQV2A5qmXqz0PTvZ1CDjXpy3IPTJwl5g9V6YB5EyIGV0tAzdhLB4hmPXqceZ6zSpg8dcLg4aLEC7cZU-zhUTzQu25Q2NhAJ-vWhkqkSSidKnjavC-cY-EbOZYNnnB_PaPBoQYhklGTEGRRLmuey5PfWF4EpvS1vwZhTbH6yQACm25ipfpm7ygYMo_6HUjcvmmkDV8mhukCWZ4YzFpw__mxoJW1607QUHqEmVNm9cmchWJ9epwWE0_-WVRPHTnivyaUb8hlpmONomJSFDU-IliQ-ZPJZWjitsFi_P3XNUGiZ_FPnvhrO8eYX05wZjeDn-ddCfdfX4RBNRT1xxBeVw5zX-TbYYcBPbXaQaKKd8X_h6wUmqfmJgPSEEOUuwq8Nu-Ixkld7w0atk6tjYUYSxay_t91oFdGEtlAG-jvz7MR7cnkUo23kBrWMYbASH0qvagxTs6Nzeh3JtAr3YedgDurLgNSpHT4QRW-EwJZ1GjMGrXK2MZIMio3Y3klgfDpKs0s4PrgVl-0krfp83Uj7d7RrOG2HuIkAmKnXLhgdILyZWm20qHVzRlWlD44w",
+      "started_at": "2026-10-21T07:46:53.026931+00:00",
+      "status": 400,
+      "final_url": "https://watermark02.silverchair.com/pcad139.pdf?token=AQECAHi208BE49Ooan9kkhW_Ercy7Dm3ZL_9Cf3qfKAc485ysgAAA0owggNGBgkqhkiG9w0BBwagggM3MIIDMwIBADCCAywGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMDuQ-0S1QFvDBtFeiAgEQgIIC_cEb8XrFPLcc2NVScKN1dnNiPAW-N-KZqJZqf8dae0o4p_pvWRsmrMlNV8EIKlLUs1YpclFaECct0DcJWrhYKeDkECOskby6CfAKe66ayGvwIVd-cDH6U0JOEb_yeGm3i_4cHGh4pmfFNrc4soflyZfhZT6RI-GKAGhYarvAvF2xiTyYxYxuitt04L_HHlbtUnM-vJlH8HK6CbHPetN2VdtiZgVpH9ajqAPpRPnWCj4AVKdJThf4rbqDRRz31bWj2HNohGEfFByor4gvb96CdBEmccVORxNiQQGzVhz213iIqRUdkLqzMPgIx9_FEpB5THtyCRz94xmktU_9-exVyhpUEcOiddW4fJzrnXYSu-zyyZxF0kgQqKd8G09VpLPGf2subLiT6y39W5lJ2ZZn2SBM8ceXYZoxDtVdUErj3WskmIzALrL05sR_4ggKc1VZe9NrQV2A5qmXqz0PTvZ1CDjXpy3IPTJwl5g9V6YB5EyIGV0tAzdhLB4hmPXqceZ6zSpg8dcLg4aLEC7cZU-zhUTzQu25Q2NhAJ-vWhkqkSSidKnjavC-cY-EbOZYNnnB_PaPBoQYhklGTEGRRLmuey5PfWF4EpvS1vwZhTbH6yQACm25ipfpm7ygYMo_6HUjcvmmkDV8mhukCWZ4YzFpw__mxoJW1607QUHqEmVNm9cmchWJ9epwWE0_-WVRPHTnivyaUb8hlpmONomJSFDU-IliQ-ZPJZWjitsFi_P3XNUGiZ_FPnvhrO8eYX05wZjeDn-ddCfdfX4RBNRT1xxBeVw5zX-TbYYcBPbXaQaKKd8X_h6wUmqfmJgPSEEOUuwq8Nu-Ixkld7w0atk6tjYUYSxay_t91oFdGEtlAG-jvz7MR7cnkUo23kBrWMYbASH0qvagxTs6Nzeh3JtAr3YedgDurLgNSpHT4QRW-EwJZ1GjMGrXK2MZIMio3Y3klgfDpKs0s4PrgVl-0krfp83Uj7d7RrOG2HuIkAmKnXLhgdILyZWm20qHVzRlWlD44w",
+      "content_type": "text/plain",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/douchi-indexed-pdf-response",
+      "bytes": 92,
+      "sha256": "ca3d7c3eda079d7be0d3bcfb9ab80b349b261bcaf5ea3704a045c403644e19da",
+      "magic_hex": "596f75722073657373696f6e",
+      "finished_at": "2026-10-21T07:46:53.460664+00:00",
+      "receipt": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/acquisition-followup.json",
+        "bytes": 6317,
+        "sha256": "dbc15c105a4dae20b988683cf1cb8b6a2ad2734ee2c4d1ed0847b015de47f6b3"
+      },
+      "file_type_acceptance": "excluded as primary measurements: challenge, error, download interstitial, or application shell"
+    },
+    {
+      "name": "huang-bioc-response.xml",
+      "requested_url": "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_xml/PMC7245118/unicode",
+      "started_at": "2026-10-21T07:47:43.361194+00:00",
+      "status": 200,
+      "final_url": "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_xml/PMC7245118/unicode",
+      "content_type": "text/html",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/huang-bioc-response.xml",
+      "bytes": 6140,
+      "sha256": "478f38e0765ee9c406831bb2fc27e8019ac5227c20c6b28ca0de582d8449354a",
+      "magic_hex": "5b4572726f725d203a204e6f",
+      "finished_at": "2026-10-21T07:47:43.547298+00:00",
+      "receipt": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/acquisition-final-routes.json",
+        "bytes": 3972,
+        "sha256": "1164dec11276b86e12af60949214e381655ffad19f61b3512cb6956e1473ab01"
+      },
+      "file_type_acceptance": "excluded as primary measurements: challenge, error, download interstitial, or application shell"
+    },
+    {
+      "name": "huang-nlm-listing.xml",
+      "requested_url": "https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC7245118",
+      "started_at": "2026-10-21T07:47:43.362406+00:00",
+      "status": 200,
+      "final_url": "https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC7245118",
+      "content_type": "application/xml",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/huang-nlm-listing.xml",
+      "bytes": 256,
+      "sha256": "ae0072865078012f687d749773f9df54a16a0fe146b351ec7ecff5bc4e23b965",
+      "magic_hex": "3c3f786d6c2076657273696f",
+      "finished_at": "2026-10-21T07:47:43.672066+00:00",
+      "receipt": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/acquisition-final-routes.json",
+        "bytes": 3972,
+        "sha256": "1164dec11276b86e12af60949214e381655ffad19f61b3512cb6956e1473ab01"
+      },
+      "file_type_acceptance": "accepted metadata/index/negative listing only; not supplementary measurements"
+    },
+    {
+      "name": "douchi-publisher-supp-page.html",
+      "requested_url": "https://academic.oup.com/pcp/article/65/6/939/7379783/supplementary-data",
+      "started_at": "2026-10-21T07:47:43.363221+00:00",
+      "status": 403,
+      "final_url": "https://academic.oup.com/pcp/article/65/6/939/7379783/supplementary-data",
+      "content_type": "text/html; charset=UTF-8",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/douchi-publisher-supp-page.html",
+      "bytes": 5622,
+      "sha256": "eb320260fc002cc1f5b6d7d8c1e115b4486dd9f0b6765af094d98067f356e3e4",
+      "magic_hex": "3c21444f4354595045206874",
+      "finished_at": "2026-10-21T07:47:43.443339+00:00",
+      "receipt": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/acquisition-final-routes.json",
+        "bytes": 3972,
+        "sha256": "1164dec11276b86e12af60949214e381655ffad19f61b3512cb6956e1473ab01"
+      },
+      "file_type_acceptance": "excluded as primary measurements: challenge, error, download interstitial, or application shell"
+    },
+    {
+      "name": "huang-epmc-page.html",
+      "requested_url": "https://europepmc.org/articles/PMC7245118",
+      "started_at": "2026-10-21T07:47:43.363387+00:00",
+      "status": 200,
+      "final_url": "https://europepmc.org/article/PMC/7245118",
+      "content_type": "text/html;charset=UTF-8",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/huang-epmc-page.html",
+      "bytes": 28590,
+      "sha256": "b0620a1aa8d17d605ebe8f97c18f251bc592e2e53a9672dda1a0e74fbc1fe866",
+      "magic_hex": "3c21444f4354595045206874",
+      "finished_at": "2026-10-21T07:47:43.797152+00:00",
+      "receipt": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/acquisition-final-routes.json",
+        "bytes": 3972,
+        "sha256": "1164dec11276b86e12af60949214e381655ffad19f61b3512cb6956e1473ab01"
+      },
+      "file_type_acceptance": "excluded as primary measurements: challenge, error, download interstitial, or application shell"
+    },
+    {
+      "name": "huang-pubmed.xml",
+      "requested_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=32366642,33168758,33093211&retmode=xml",
+      "started_at": "2026-10-21T07:47:43.364189+00:00",
+      "status": 200,
+      "final_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=32366642,33168758,33093211&retmode=xml",
+      "content_type": "text/xml; charset=UTF-8",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/huang-pubmed.xml",
+      "bytes": 31680,
+      "sha256": "74e295f11a7dc91ab569b279e35c4f0ea976df6ad8af4f65ba896bf7de38943c",
+      "magic_hex": "3c3f786d6c2076657273696f",
+      "finished_at": "2026-10-21T07:47:43.608025+00:00",
+      "receipt": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/acquisition-final-routes.json",
+        "bytes": 3972,
+        "sha256": "1164dec11276b86e12af60949214e381655ffad19f61b3512cb6956e1473ab01"
+      },
+      "file_type_acceptance": "accepted metadata/index/negative listing only; not supplementary measurements"
+    },
+    {
+      "name": "douchi-pubmed.xml",
+      "requested_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=37944070&retmode=xml",
+      "started_at": "2026-10-21T07:47:43.443368+00:00",
+      "status": 200,
+      "final_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=37944070&retmode=xml",
+      "content_type": "text/xml; charset=UTF-8",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/douchi-pubmed.xml",
+      "bytes": 11455,
+      "sha256": "187c6d27d63b3ce68fc922d41415a4cb14d04f79a547f3c7c65d6b04af0894f8",
+      "magic_hex": "3c3f786d6c2076657273696f",
+      "finished_at": "2026-10-21T07:47:43.626474+00:00",
+      "receipt": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/acquisition-final-routes.json",
+        "bytes": 3972,
+        "sha256": "1164dec11276b86e12af60949214e381655ffad19f61b3512cb6956e1473ab01"
+      },
+      "file_type_acceptance": "accepted metadata/index/negative listing only; not supplementary measurements"
+    }
+  ],
+  "derivatives": [
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/douchi2024-minimal.txt",
+      "bytes": 113108,
+      "sha256": "bf1e16fcce6273343c57ad7edf5f64c9a26e42bb70993f84b185dd436631c76b"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/huang-reply-pmc.txt",
+      "bytes": 13319,
+      "sha256": "8f066d94353cbf6ba6e2078db62444b056eddf8f3de8c8b74d3750b6febc0210"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/wierzchos2020.txt",
+      "bytes": 17269,
+      "sha256": "c52743ba4c4cd22281a63f72edde127d92b2649b06d6ba1169511f489d843412"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/wierzchos-page-1.png",
+      "bytes": 327185,
+      "sha256": "b58bd601389a2e8a3f2a78db44e625ba2f368c2bd3f618a6ef765d231870aea3"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/wierzchos-page-2.png",
+      "bytes": 685894,
+      "sha256": "45ce65d571f0dfc7ccdb6a88c6ae883096b399a955ac66cc9949129eaf95222d"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/douchi-publisher-links.json",
+      "bytes": 9771,
+      "sha256": "ddca97c89daf5c1acf3737f9d23669379bbf1060c419615c56d52113f22ae291"
+    }
+  ],
+  "images_visually_inspected": [
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/huang2020-pnas.2001613117fig03.jpg",
+      "bytes": 177478,
+      "sha256": "8866032eec2457ee2112a0b7fec05eabca4f1c92d2e4e2f8f53845fd8518fc44"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/douchi2024-pcad139f1.jpeg",
+      "bytes": 81801,
+      "sha256": "6edcd58e77d9532f5bfba8739d909adfdc602c3541d3313d4bb70f2ed6c51fdb"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/douchi2024-pcad139f2.jpeg",
+      "bytes": 31954,
+      "sha256": "ac5d6ed57d570ff0c72aca08ccb569498858665c7368668f7da02b403a05ff2e"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/huang-reply-pnas.2018184117fig01.jpg",
+      "bytes": 146745,
+      "sha256": "dd78716b0b5cac17900a5a65cededeb7ad1aedf7a33b645008ff74ac18451a97"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/huang-reply-pnas.2018184117fig02.jpg",
+      "bytes": 247715,
+      "sha256": "5978e8594d502c073b72537bdbc473ef36b69bbc6e8524aafab1a9c3a46c4746"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-304/wierzchos-page-2.png",
+      "bytes": 685894,
+      "sha256": "45ce65d571f0dfc7ccdb6a88c6ae883096b399a955ac66cc9949129eaf95222d"
+    }
+  ],
+  "uninspected_available_images": [
+    "Huang main Figures 1, 2 and 4 reacquired but not visually reassessed for new claims in this pass."
+  ],
+  "claim_assessment": [
+    {
+      "id": "huang-control",
+      "source": "10.1073/pnas.2001613117",
+      "locator": "Original Figure 3E, bottom No microbe trace; caption/prose attribution from prior round88 handoff, current full-main reacquisition unsuccessful",
+      "observation": "Original graphic is byte-identical to prior. A square is visible within No microbe. Dry HC and Dry LC also carry squares. The panel does not label light versus dark.",
+      "decision": "Retain existing annotation ambiguity. No resolved control phase, detection limit, raw peak, or culture-specific phase fraction is inferred."
+    },
+    {
+      "id": "douchi-loading-15d",
+      "source": "10.1093/pcp/pcad139",
+      "locator": "Results first mineral subsection; douchi2024-minimal.txt lines 463-480; Methods inoculation subsection lines 1455-1469",
+      "observation": "Results explicitly gives 3 micrograms chlorophyll per polycrystalline chip. Shared Methods gives 200 micrograms chlorophyll per mL and 100 microliters per chip.",
+      "calculation": {
+        "method_mass_micrograms": 20.0,
+        "results_mass_micrograms": 3,
+        "method_to_results_ratio": 6.666666666666667
+      },
+      "decision": "20 micrograms is arithmetic, not a corrected 15-day dose. No arm-specific lower dilution or correction was acquired."
+    },
+    {
+      "id": "douchi-loading-30d",
+      "source": "10.1093/pcp/pcad139",
+      "locator": "Results subsequent single-crystal paragraph, text lines 506-517; Methods alternate crystal subsection",
+      "observation": "Results separately states 100 microliters corresponding to 20 micrograms chlorophyll on (011) or (010) single-crystal pieces for 30 days. Main text attributes oriented and scraped-surface null results to Supplementary Figure S1A-C.",
+      "decision": "The 20-microgram statement belongs to the separate 30-day arm. It does not reconcile the polycrystalline 3-versus-20 discrepancy. S1 graphics were not acquired or inspected."
+    },
+    {
+      "id": "douchi-radiation",
+      "source": "10.1093/pcp/pcad139",
+      "locator": "Methods XRD analysis paragraph, text line 1470 onward; original Figure 1B axes; Figure 1C",
+      "observation": "Methods identifies cobalt source/Panalytical for chips, copper K-alpha/Bruker D8 for scraped powder, and says all patterns are presented for copper K-alpha. Figure 1B explicitly labels lambda-Co.",
+      "decision": "Instrument distinction is reported, but the blanket presentation statement conflicts with Figure 1B. No numerical peak conversion or phase quantification admitted."
+    },
+    {
+      "id": "douchi-null",
+      "source": "10.1093/pcp/pcad139",
+      "locator": "Original Figure 1A-C and caption; Results mineral subsection; Methods strain/chip/XRD subsections",
+      "observation": "Three chip profiles per strain and sterile BG11 blank are shown for the 15-day comparison. Main text reports only gypsum and no difference from blank.",
+      "decision": "Retain qualified independent 15-day null under tested synthetic-chip conditions. No calibrated detection limit, absolute zero transformation, or universal refutation inferred."
+    },
+    {
+      "id": "douchi-growth",
+      "source": "10.1093/pcp/pcad139",
+      "locator": "Original Figure 2 and caption; Results following S1 discussion",
+      "observation": "Chlorophyll growth curves after transfer to fresh BG11 compare Day 0, 2 and 15 pretreatments.",
+      "decision": "Recovery of growth is contextual survival evidence, not a lattice-water uptake assay or recovery yield."
+    },
+    {
+      "id": "reply-correction",
+      "source": "10.1073/pnas.2018184117 and 10.1073/pnas.2021524117",
+      "locator": "Current complete reply, original Figures 1-2; current PubMed relations; cached primary correction text in web-search-1/3",
+      "observation": "Reply describes selected gypsum-only starting regions, defends diffraction assignments, and gives corrected 5 x 8 x 0.5 mm coupon dimensions. PubMed continues to link the known correction and two comments.",
+      "decision": "Same Huang experimental lineage, not independent replication. The correction resolves coupon dimensions, not the Figure 3E square. Current direct correction HTML failed; cached primary correction excerpt is separately labeled."
+    },
+    {
+      "id": "critique",
+      "source": "10.1073/pnas.2013134117",
+      "locator": "Complete original 2-page author-host PDF; Figure 1 and Table 1 on PDF page 2",
+      "observation": "Critique contests initial mineral mixture, diffraction identification, chemical interpretation and attachment specificity. Table 1 compares reported and theoretical spacings.",
+      "decision": "Retain attributed counterinterpretation; corrected coupon objection is not reopened. Images/table do not supply raw original control diffractograms."
+    }
+  ],
+  "licenses": [
+    {
+      "source": "Douchi2024",
+      "status": "Publisher main presents open-access copyright/license context; HAL fileLicenses_s identifies CC BY-NC 4.0 for deposited manuscript. Do not equate main-manuscript license with an unacquired supplement."
+    },
+    {
+      "source": "Huang2020/reply/critique/correction",
+      "status": "PNAS license as printed in reply and critique; no raw full text/images committed. Supplement reuse terms unverified."
+    }
+  ],
+  "access_findings": [
+    "Douchi complete public minimal HTML has malformed href http://Supplementary data in its Supplementary Data paragraph. This is an observed link in that representation, not proof that the complete publisher page lacks downloadable files.",
+    "HAL current record lists exactly one files_s entry, Douchi et al main text HAL.pdf; the direct file route returned anti-bot HTML. No supplementary file listed in that response.",
+    "Huang EuropePMC supplementaryFiles responds HTTP 200 with XML saying article is not open access; fullTextXML responds 500; BioC responds no result. These are not files containing assay data.",
+    "Official NLM public bucket exact prefix PMC7245118 gives KeyCount 0 and IsTruncated false. This is limited to this bucket/prefix, not proof of no supplementary publication.",
+    "PMC main/correction return reCAPTCHA HTML; the instance supplement route returns a preparing-download JavaScript interstitial. No challenge completion or access bypass attempted.",
+    "Public indexed Douchi PDF token returns session-timed-out 400 text. It is not accepted as a PDF.",
+    "Publisher SI routes return 403, eScholarship/CDLib routes return 403/robot verification; author lab page links DOI only. No genuine SI acquired."
+  ],
+  "decision": {
+    "owner_edit": "none",
+    "repository_findings": [],
+    "scientific_issue_status": "keep #304 open",
+    "native_review_required": false,
+    "history_edit_required": false,
+    "reason": "Existing qualified owners retain the demonstrated discrepancies and missing-SI limits. This pass yields reproducible current access/provenance evidence, not corrected assay metadata or new accepted phase evidence."
+  },
+  "handoff_priorities": [
+    "Obtain genuine publisher/repository SI for each study, with parent DOI, original bytes and figures, before extending supplement-dependent claims.",
+    "Resolve Huang Figure 3E control square through attributable annotation correction/raw control traces tied to illumination arm, starting phase and analytical detection limit.",
+    "Resolve Douchi 15-day polycrystalline loading and figure-specific radiation/angle metadata; do not transfer 30-day single-crystal dose or scraped-powder source to the 15-day arm.",
+    "Curate only newly verified bounded claims with parent approval, history and independent native owner review; none proposed from this pass."
+  ],
+  "baseline": {
+    "session_id": 85228,
+    "command": "UV_CACHE_DIR=/private/tmp/cmmmech-backlog-20261019-fmj36s/uv-cache just check",
+    "exit_code": 0,
+    "terminal_exit_observed": true,
+    "result": "327 passed, 3 skipped in 157.77s; 616 records, 0 failed; 744 histories, 0 errors",
+    "log": {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-304-baseline-check.log",
+      "sha256": "ba6910ae89ac3eebc198cfe0529f924abb406ad89bbd87f66c3258da7c4a43f6",
+      "bytes": 590
+    }
+  },
+  "canonical": {
+    "session_id": 37733,
+    "exit_code": 0,
+    "terminal_exit_observed": true,
+    "command": "bash scripts/check_vendored_sync.sh",
+    "result": "22 governed artifacts match pinned claw revision",
+    "log": {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-304-canonical.log",
+      "bytes": 57,
+      "sha256": "3b073aa29da7dc3996edbe18c83d0d6593ba6d03238b663efc40286be4cf428e"
+    }
+  },
+  "final_gate": "Run after this exact source pair is frozen; separate external receipt, not implied completed here.",
+  "limits": [
+    "No genuine SI, raw diffractogram or arm-specific correction acquired.",
+    "Current Huang full main and direct correction were not acquired; prior main-text interpretation is attributed to round88 rather than represented as a fresh full-text inspection.",
+    "No author contact, paid provider, manuscript redistribution, owner edit, commit or remote mutation.",
+    "No biological or mineral yield, calibrated phase fraction, absolute null or exclusive cyanobacterial causality established."
+  ]
+}
