@@ -1,0 +1,858 @@
+{
+  "kind": "source_investigation",
+  "issue": 288,
+  "created_utc": "2026-10-21T07:29:38.622629+00:00",
+  "researcher": "Codex /root/resume_213_review_165",
+  "base": "2da10d95a72146ee0c69cb91fe303348fbadb638",
+  "branch": "codex/issue-288-titanogypsum-evidence",
+  "eligibility": {
+    "utc": "2026-10-21T07:24:05.264657+00:00",
+    "base_refs": [
+      "2da10d95a72146ee0c69cb91fe303348fbadb638",
+      "2da10d95a72146ee0c69cb91fe303348fbadb638"
+    ],
+    "owner_sha256": "da978617d7f84a63f2904ee3e78a682c3ff8d0644e85b64d86ff1da5ab409f72",
+    "reconcile": "/private/tmp/cmmmech-backlog-20261019-fmj36s/reconcile-288-20261021T071837Z",
+    "inventory": {
+      "open_issues": 185,
+      "open_prs": 0,
+      "comments": 0
+    },
+    "owner_last_change": "6a579d90978267cf5d145bca05b4c97e5ba4d629 2026-10-15T01:56:24Z",
+    "two_day_eligibility": "pass"
+  },
+  "later_inventory_notice": {
+    "source": "Parent/root message, not an independent repeat fetch",
+    "at": "2026-10-21T07:24:57Z",
+    "open_issues": 185,
+    "open_prs": 1,
+    "new_pr": 513,
+    "scope": "workflow/six-stage profile and canonical skill adapters; no scientific owner coverage reported",
+    "origin_main": "2da10d95a72146ee0c69cb91fe303348fbadb638"
+  },
+  "owner": {
+    "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-288/data/records/titanogypsum.yaml",
+    "sha256": "da978617d7f84a63f2904ee3e78a682c3ff8d0644e85b64d86ff1da5ab409f72",
+    "unchanged": true
+  },
+  "decision": "Retain owner unchanged; source clarification remains unresolved. No proposedpatch, historyevent, new native review or schema extension.",
+  "dedup": {
+    "utc": "2026-10-21T07:24:04.880792+00:00",
+    "command": [
+      "rg",
+      "--no-ignore",
+      "--hidden",
+      "--follow",
+      "-n",
+      "777957|PMC8758580|titanogypsum|titanium.gypsum",
+      "data",
+      "research",
+      "reviews",
+      "history",
+      "docs",
+      ".claude",
+      ".agents"
+    ],
+    "cwd": "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-288",
+    "exit": 0,
+    "matching_lines": 317,
+    "matching_files": 82,
+    "bytes": 54821939,
+    "sha256": "259a9c23b580361e1b7db93c92ef669db880829f7a8e7b5af767e4d2317a2439",
+    "stderr": ""
+  },
+  "searches": [
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-288/web-search-01.json",
+      "sha256": "1c1d93ac59204c89b10418ea439673e397db7ba772ad6ea7ac9402c7bad8f41e",
+      "date": "2026-10-21",
+      "queries": [
+        "\"10.3389/fbioe.2021.777957\" correction data",
+        "\"titanogypsum\" \"Chen\" \"Rhodotorula\" dataset thesis",
+        "\"777957\" \"DataSheet1\""
+      ],
+      "coverage": "first returned result set; no pagination; only explicit site operators"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-288/web-search-02.json",
+      "sha256": "ad78db673f3bc7910858e48e7e500a765ab024cb09d18d3eb547eb5086a25794",
+      "date": "2026-10-21",
+      "queries": [
+        "\"10.3389/fbioe.2021.777957\" corrigendum OR correction OR dataset",
+        "\"titanogypsum\" \"16597\" data",
+        "\"777957\" site:figshare.com OR site:zenodo.org OR site:data.mendeley.com",
+        "\"\u9648\u6d69\u660e\" \"\u949b\u77f3\u818f\" \"\u7ea2\u9175\u6bcd\""
+      ],
+      "coverage": "first returned result set; no pagination; only explicit site operators"
+    }
+  ],
+  "acquisitions": [
+    {
+      "name": "main.pdf",
+      "requested_url": "https://www.frontiersin.org/journals/bioengineering-and-biotechnology/articles/10.3389/fbioe.2021.777957/pdf",
+      "start": "2026-10-21T07:24:33.700569+00:00",
+      "status": 200,
+      "final_url": "https://www.frontiersin.org/journals/bioengineering-and-biotechnology/articles/10.3389/fbioe.2021.777957/pdf",
+      "content_type": "application/pdf",
+      "bytes": 4076336,
+      "sha256": "6d1dab33b635d2cf38ea6cf0565c93ea862cee355424c4fa22725f1f804f557f",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-288/main.pdf",
+      "leading_bytes": "b'%PDF-1.4\\r%\\xe2\\xe3\\xcf\\xd3\\r\\n507 0 obj <</Linearized '",
+      "finished": "2026-10-21T07:24:35.525730+00:00"
+    },
+    {
+      "name": "main.xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8758580/fullTextXML",
+      "start": "2026-10-21T07:24:33.701378+00:00",
+      "status": 200,
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8758580/fullTextXML",
+      "content_type": "application/xml",
+      "bytes": 123115,
+      "sha256": "def8d63d7ccf65111c4a986ab145a38ac150a8655a8a3bc1edff05b77a4cc39a",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-288/main.xml",
+      "leading_bytes": "b'\\n<!DOCTYPE article\\n  PUBLIC \"-//NLM//DTD'",
+      "finished": "2026-10-21T07:24:34.974821+00:00"
+    },
+    {
+      "name": "main.html",
+      "requested_url": "https://www.frontiersin.org/journals/bioengineering-and-biotechnology/articles/10.3389/fbioe.2021.777957/full",
+      "start": "2026-10-21T07:24:33.701576+00:00",
+      "status": 200,
+      "final_url": "https://www.frontiersin.org/journals/bioengineering-and-biotechnology/articles/10.3389/fbioe.2021.777957/full",
+      "content_type": "text/html;charset=utf-8",
+      "bytes": 944704,
+      "sha256": "ea23cee307a9c5c2f2b907c39d2f0bb27333dacc32a2548daf6c8b28c523b592",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-288/main.html",
+      "leading_bytes": "b'<!DOCTYPE html><html  lang=\"en\" data-cap'",
+      "finished": "2026-10-21T07:24:35.116041+00:00"
+    },
+    {
+      "name": "supplementary.zip",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8758580/supplementaryFiles",
+      "start": "2026-10-21T07:24:33.701708+00:00",
+      "status": 200,
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8758580/supplementaryFiles",
+      "content_type": "application/zip",
+      "bytes": 2283808,
+      "sha256": "bd137ab9615ac7e2ee5aa799697b834173d3766757ef20f57318112c71aee9e3",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-288/supplementary.zip",
+      "leading_bytes": "b'PK\\x03\\x04\\x14\\x00\\x08\\x08\\x08\\x00\\x16CU]\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x0f\\x00\\x00\\x00DataSheet1'",
+      "finished": "2026-10-21T07:25:50.654423+00:00"
+    },
+    {
+      "name": "crossref.json",
+      "requested_url": "https://api.crossref.org/works/10.3389/fbioe.2021.777957",
+      "start": "2026-10-21T07:24:34.974846+00:00",
+      "status": 200,
+      "final_url": "https://api.crossref.org/works/10.3389/fbioe.2021.777957",
+      "content_type": "application/json",
+      "bytes": 23559,
+      "sha256": "18773cd3bb3a93d50f9b5b474a5f2ce826b1348bc9c02521bf7de4335fc38833",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-288/crossref.json",
+      "leading_bytes": "b'{\"status\":\"ok\",\"message-type\":\"work\",\"me'",
+      "finished": "2026-10-21T07:24:35.384955+00:00"
+    },
+    {
+      "name": "crossmark.html",
+      "requested_url": "https://crossmark.crossref.org/dialog/?doi=10.3389/fbioe.2021.777957",
+      "start": "2026-10-21T07:24:35.116066+00:00",
+      "status": 200,
+      "final_url": "https://crossmark.crossref.org/dialog/?doi=10.3389/fbioe.2021.777957",
+      "content_type": "text/html;charset=UTF-8",
+      "bytes": 7682,
+      "sha256": "7bbb5156980cdb9a964decf32cc3ec3706bb43e0590043053bdfd4d0bf999c32",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-288/crossmark.html",
+      "leading_bytes": "b'<!DOCTYPE html>\\n<html lang=\"en\">\\n    <he'",
+      "finished": "2026-10-21T07:24:35.507945+00:00"
+    },
+    {
+      "name": "biostudies.json",
+      "requested_url": "https://www.ebi.ac.uk/biostudies/api/v1/studies/S-EPMC8758580",
+      "start": "2026-10-21T07:24:35.384979+00:00",
+      "status": 404,
+      "final_url": "https://www.ebi.ac.uk/biostudies/api/v1/studies/S-EPMC8758580",
+      "content_type": "application/json",
+      "bytes": 34,
+      "sha256": "3e5c511af4ca6c95e9d4d5bdcb6d73a83779d1f6ee1a04904414daf0ee2d72e3",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-288/biostudies.json",
+      "leading_bytes": "b'{\"errorMessage\":\"Study not found\"}'",
+      "finished": "2026-10-21T07:24:36.126721+00:00"
+    }
+  ],
+  "prior_hash_comparison": [
+    {
+      "fresh_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-288/main.pdf",
+      "fresh_sha256": "6d1dab33b635d2cf38ea6cf0565c93ea862cee355424c4fa22725f1f804f557f",
+      "prior_recorded_sha256": "6d1dab33b635d2cf38ea6cf0565c93ea862cee355424c4fa22725f1f804f557f",
+      "matches": true
+    },
+    {
+      "fresh_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-288/main.xml",
+      "fresh_sha256": "def8d63d7ccf65111c4a986ab145a38ac150a8655a8a3bc1edff05b77a4cc39a",
+      "prior_recorded_sha256": "def8d63d7ccf65111c4a986ab145a38ac150a8655a8a3bc1edff05b77a4cc39a",
+      "matches": true
+    },
+    {
+      "fresh_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-288/supplementary.zip",
+      "fresh_sha256": "bd137ab9615ac7e2ee5aa799697b834173d3766757ef20f57318112c71aee9e3",
+      "prior_recorded_sha256": "00cf10e685fd3d989daff006e2a898a958176fe9b4212deccb79321af66845ff",
+      "matches": false
+    },
+    {
+      "fresh_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-288/assets/DataSheet1.docx",
+      "fresh_sha256": "5a7e99a2cbad3f443b0b890a3712ba5574b3e63839bba4489240319d790d0ed7",
+      "prior_recorded_sha256": "5a7e99a2cbad3f443b0b890a3712ba5574b3e63839bba4489240319d790d0ed7",
+      "matches": true
+    },
+    {
+      "fresh_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-288/assets/image1.png",
+      "fresh_sha256": "51c1024371d10631432eb5675da062172007e4e381eb58e161bc09bfa65079a0",
+      "prior_recorded_sha256": "51c1024371d10631432eb5675da062172007e4e381eb58e161bc09bfa65079a0",
+      "matches": true
+    },
+    {
+      "fresh_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-288/assets/image2.tiff",
+      "fresh_sha256": "bc5569d1f18d89e2ae0d33b563be4af4c713008b7160a5ecb86de3f802398f13",
+      "prior_recorded_sha256": "bc5569d1f18d89e2ae0d33b563be4af4c713008b7160a5ecb86de3f802398f13",
+      "matches": true
+    },
+    {
+      "fresh_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-288/crossref.json",
+      "fresh_sha256": "18773cd3bb3a93d50f9b5b474a5f2ce826b1348bc9c02521bf7de4335fc38833",
+      "prior_recorded_sha256": "18773cd3bb3a93d50f9b5b474a5f2ce826b1348bc9c02521bf7de4335fc38833",
+      "matches": true
+    }
+  ],
+  "artifact_audit": {
+    "zip_crc_pass": true,
+    "archive_members": [
+      {
+        "name": "DataSheet1.docx",
+        "bytes": 1013408,
+        "sha256": "5a7e99a2cbad3f443b0b890a3712ba5574b3e63839bba4489240319d790d0ed7",
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-288/assets/DataSheet1.docx",
+        "crc": 2746021832
+      },
+      {
+        "name": "fbioe-09-777957-g006.jpg",
+        "bytes": 271885,
+        "sha256": "80ebe2906534f947a92168e8d2c2419635fc2fac0ae0a7936cae4d4e5de7fc35",
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-288/assets/fbioe-09-777957-g006.jpg",
+        "crc": 4000217341
+      },
+      {
+        "name": "fbioe-09-777957-g005.gif",
+        "bytes": 27178,
+        "sha256": "ea37ff79fe9336b1ac88d5c1e1cfa967bb66afb37bd08e7e1a0fcfd2dec06558",
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-288/assets/fbioe-09-777957-g005.gif",
+        "crc": 858464397
+      },
+      {
+        "name": "fbioe-09-777957-g002.gif",
+        "bytes": 15002,
+        "sha256": "61a4662c5522ba792658dec103d2ec6c481e8e5d41765955ad7b999e71b04238",
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-288/assets/fbioe-09-777957-g002.gif",
+        "crc": 294028118
+      },
+      {
+        "name": "fbioe-09-777957-g002.jpg",
+        "bytes": 118884,
+        "sha256": "5a19428636358cdc52ac0c5d732ebfd2efbd1f2dd1e61638e37b45e56ed47740",
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-288/assets/fbioe-09-777957-g002.jpg",
+        "crc": 1412554660
+      },
+      {
+        "name": "fbioe-09-777957-g004.jpg",
+        "bytes": 80188,
+        "sha256": "93eeb835ed2306ea6ea6e97747cbaee91e5751f06d88c1454edf72d1f8762aea",
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-288/assets/fbioe-09-777957-g004.jpg",
+        "crc": 2623425672
+      },
+      {
+        "name": "fbioe-09-777957-g001.gif",
+        "bytes": 18492,
+        "sha256": "2fef2fb90211b6848a9117c87271d0026a258df39d0dc5c1831e2149cfa7fa66",
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-288/assets/fbioe-09-777957-g001.gif",
+        "crc": 1263830352
+      },
+      {
+        "name": "fbioe-09-777957-g003.jpg",
+        "bytes": 99939,
+        "sha256": "4c9fea52870200bd21283e6af824dfad25f9b459ba315f38f78a25dc27926135",
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-288/assets/fbioe-09-777957-g003.jpg",
+        "crc": 414441442
+      },
+      {
+        "name": "fbioe-09-777957-g004.gif",
+        "bytes": 14049,
+        "sha256": "3698ea73c85f23faa955c76a40695b603fdf99b4ae3811c40ff01e2493c3c074",
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-288/assets/fbioe-09-777957-g004.gif",
+        "crc": 373306447
+      },
+      {
+        "name": "fbioe-09-777957-g007.jpg",
+        "bytes": 101808,
+        "sha256": "2aa27b1c9c99d7abab59901d8d219e0aab24482b6af5e6e21978f5cdef1a7052",
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-288/assets/fbioe-09-777957-g007.jpg",
+        "crc": 2383836452
+      },
+      {
+        "name": "fbioe-09-777957-g006.gif",
+        "bytes": 19015,
+        "sha256": "10821e8b616a5b1385b758f837ec8e47f6c5828797b60f836fc82b9e74d1005d",
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-288/assets/fbioe-09-777957-g006.gif",
+        "crc": 3409880068
+      },
+      {
+        "name": "fbioe-09-777957-g007.gif",
+        "bytes": 12197,
+        "sha256": "4f0d6dc0aba1e2069fcdad75ff661e640352f8dd519ef472ed7b5b7b9295b993",
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-288/assets/fbioe-09-777957-g007.gif",
+        "crc": 1388198200
+      },
+      {
+        "name": "fbioe-09-777957-g001.jpg",
+        "bytes": 169020,
+        "sha256": "c08e39a429fae2e52af857d8df57dde39706bba1a65e0f35d885587ffdb36746",
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-288/assets/fbioe-09-777957-g001.jpg",
+        "crc": 2916721774
+      },
+      {
+        "name": "fbioe-09-777957-g003.gif",
+        "bytes": 12298,
+        "sha256": "fbbfd8d4d781a3b185b4f036c07764c614b7a03fca6d8732d9219821637e56be",
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-288/assets/fbioe-09-777957-g003.gif",
+        "crc": 1587828248
+      },
+      {
+        "name": "fbioe-09-777957-g005.jpg",
+        "bytes": 523835,
+        "sha256": "3e802727886fbaef31b7878797d4963a5532a579f30422cacdada7f5d9d884eb",
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-288/assets/fbioe-09-777957-g005.jpg",
+        "crc": 2801196312
+      }
+    ],
+    "docx_members": [
+      "[Content_Types].xml",
+      "_rels/.rels",
+      "word/_rels/document.xml.rels",
+      "word/document.xml",
+      "word/media/image1.png",
+      "word/media/image2.tiff",
+      "word/theme/theme1.xml",
+      "word/settings.xml",
+      "word/webSettings.xml",
+      "docProps/core.xml",
+      "word/styles.xml",
+      "word/fontTable.xml",
+      "docProps/app.xml"
+    ],
+    "docx_crc_pass": true,
+    "docx_text": [
+      "Supplementary material ",
+      "",
+      "",
+      "Figure S1. The P content of Titanium gypsum and Phosphogypsum in deionized water. ",
+      "",
+      "",
+      "Figure S2. The adhesion, encapsulation and fragmentation of Red yeast (Rho) to phosphogypsum.",
+      "",
+      ""
+    ],
+    "docx_tables": 0,
+    "docx_embedded_files": [],
+    "docx_core_metadata": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\r\n<cp:coreProperties xmlns:cp=\"http://schemas.openxmlformats.org/package/2006/metadata/core-properties\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:dcterms=\"http://purl.org/dc/terms/\" xmlns:dcmitype=\"http://purl.org/dc/dcmitype/\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"><dc:title></dc:title><dc:subject></dc:subject><dc:creator>CHM</dc:creator><cp:keywords></cp:keywords><dc:description></dc:description><cp:lastModifiedBy>CHM</cp:lastModifiedBy><cp:revision>3</cp:revision><dcterms:created xsi:type=\"dcterms:W3CDTF\">2021-09-15T14:20:00Z</dcterms:created><dcterms:modified xsi:type=\"dcterms:W3CDTF\">2021-09-15T14:20:00Z</dcterms:modified></cp:coreProperties>",
+    "docx_relationships": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\r\n<Relationships xmlns=\"http://schemas.openxmlformats.org/package/2006/relationships\"><Relationship Id=\"rId3\" Type=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships/webSettings\" Target=\"webSettings.xml\"/><Relationship Id=\"rId7\" Type=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships/theme\" Target=\"theme/theme1.xml\"/><Relationship Id=\"rId2\" Type=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships/settings\" Target=\"settings.xml\"/><Relationship Id=\"rId1\" Type=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships/styles\" Target=\"styles.xml\"/><Relationship Id=\"rId6\" Type=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships/fontTable\" Target=\"fontTable.xml\"/><Relationship Id=\"rId5\" Type=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships/image\" Target=\"media/image2.tiff\"/><Relationship Id=\"rId4\" Type=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships/image\" Target=\"media/image1.png\"/></Relationships>",
+    "images": [
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-288/assets/image1.png",
+        "bytes": 8135,
+        "sha256": "51c1024371d10631432eb5675da062172007e4e381eb58e161bc09bfa65079a0"
+      },
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-288/assets/image2.tiff",
+        "bytes": 992114,
+        "sha256": "bc5569d1f18d89e2ae0d33b563be4af4c713008b7160a5ecb86de3f802398f13"
+      },
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-288/assets/si-image2.png",
+        "bytes": 863551,
+        "sha256": "fe6135f7cf98cef0f67b7f1d58963f33c4db838ec77b484412e41b59a1d2c3df"
+      }
+    ],
+    "utc": "2026-10-21T07:26:56.323010+00:00"
+  },
+  "metadata_audit": {
+    "utc": "2026-10-21T07:27:50.849609+00:00",
+    "crossmark_current": true,
+    "crossmark_text_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-288/crossmark-text.txt",
+    "crossref": {
+      "DOI": "10.3389/fbioe.2021.777957",
+      "title": [
+        "Red Yeast Improves the Potential Safe Utilization of Solid Waste (Phosphogypsum and Titanogypsum) Through Bioleaching"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2021,
+            12,
+            31
+          ]
+        ]
+      },
+      "deposited": {
+        "date-parts": [
+          [
+            2021,
+            12,
+            31
+          ]
+        ],
+        "date-time": "2021-12-31T04:46:38Z",
+        "timestamp": 1640925998000
+      },
+      "relation": {},
+      "update-to": null,
+      "updated-by": null,
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                12,
+                31
+              ]
+            ],
+            "date-time": "2021-12-31T00:00:00Z",
+            "timestamp": 1640908800000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ]
+    },
+    "xml_related_articles": 0,
+    "xml_supplements": [
+      "<supplementary-material xmlns:ns0=\"http://www.w3.org/1999/xlink\" id=\"SM1\" position=\"float\" content-type=\"local-data\" orientation=\"portrait\"><media ns0:href=\"DataSheet1.docx\" position=\"float\" orientation=\"portrait\"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material>"
+    ],
+    "xml_license": [
+      "https://creativecommons.org/licenses/by/4.0/This is an open-access article distributed under the terms of the Creative Commons Attribution License (CC BY). The use, distribution or reproduction in other forums is permitted, provided the original author(s) and the copyright owner(s) are credited and that the original publication in this journal is cited, in accordance with accepted academic practice. No use, distribution or reproduction is permitted which does not comply with these terms."
+    ],
+    "availability": [
+      "Data Availability StatementThe original contributions presented in the study are included in the article/Supplementary Material; further inquiries can be directed to the corresponding authors."
+    ],
+    "pdf_embedded_files": "0 embedded files\n"
+  },
+  "claim_matrix": [
+    {
+      "id": "loading",
+      "locators": [
+        "original PDF p1 abstract",
+        "p3 Bioleaching methods"
+      ],
+      "reported": "Abstract prints PG >10 g/ml and TG <5 g/ml. Methods instead specify 5 or 10 g in150 mL YPD, then2 mL inoculum in250 mL flasks.",
+      "assessment": "No attributable correction or actual run sheet resolves abstract units/tolerance. Preserve explicit flask recipe without inventing corrected abstract units."
+    },
+    {
+      "id": "tg_outcome_controls",
+      "locators": [
+        "p5 Figure2B-D",
+        "pp5-6 element-release results"
+      ],
+      "reported": "TG5/TG10 inoculated arms have lower filtered aqueous fluoride than uninoculated counterparts; P difference is nonsignificant, and final pH differs. Three replicates, means/SD and one-way ANOVA p<0.05 reported.",
+      "assessment": "Culture-associated partitioning remains supported. No matched-pH sterile, killed-cell or polymer-free series separates sorption, precipitation, changed dissolution or metabolic causation; PG fluoride increase is a different result."
+    },
+    {
+      "id": "feed_identity",
+      "locators": [
+        "p3 Materials",
+        "p4 Table1 and XRF methods"
+      ],
+      "reported": "Taizhou plant residue, source-labelled TG. Table1 prints Ca30.490\u00b10.001, F5.440\u00b10.001, S0.955\u00b10.002, P0.044\u00b10.002 and Ti0.0355\u00b10.001 wt%. XRF preparation dries105\u00b0C48h, grinds<74micrometres, pyrolyzes600\u00b0C4h and presses4.00\u00b10.01g.",
+      "assessment": "Low sulfur relative to calcium is unexplained in this original. Do not impose pure gypsum identity or treat these prepared-material percentages as a complete original-feed inventory."
+    },
+    {
+      "id": "solid_denominators",
+      "locators": [
+        "p6 Figure3A-D",
+        "pp6-7 safety subsection",
+        "pp3-4 preparation methods"
+      ],
+      "reported": "Figure3B labels TG, although prose cites3A for TG. Figure3A is PG. Figure3C-D caption calls a recycling rate; prose describes pyrolysis losses. TG fluorine proportion reduction49.45\u201359.19% is a compositional claim, not measured whole-process recovery.",
+      "assessment": "No yield admitted. Need initial/residual solid masses, ash basis and volatile fluoride accounting; do not join composition percentages to a separate thermal-loss metric."
+    },
+    {
+      "id": "aqueous_assay",
+      "locators": [
+        "p4 Chemical analyses",
+        "p5 Figure2D"
+      ],
+      "reported": "0.22micrometre filtration and fivefold dilution; IC Metrohm940 forF and ICP-OES for metals/P. Standards0,1,5,10,25,50mg/L; R=0.999. Solution Pb,Cd,Zn,Cu reported<0.05mg/L.",
+      "assessment": "Concentration/dilution is not a full inventory. Final recovered liquid volumes, raw replicate results, fluoride-specificLOD/LOQ, blanks and fluoride retained on filters/vessels remain absent from the inspected article/SI."
+    },
+    {
+      "id": "eps_inventory",
+      "locators": [
+        "pp3-4 EPS extraction",
+        "p10 Figure7C-D and biomechanism text"
+      ],
+      "reported": "60mL fraction, sequential12000g/17000g20min at4\u00b0C, threevolumes absoluteethanol48h4\u00b0C, dialysis bag printed3500molecules withwater exchangedtwiceevery24h; extract split. Figure7D reportsF concentration inTG EPS-associated solution(mg/L). EPS Pb,Zn,Cu<0.5mg/L is distinct from solution<0.05mg/L. Source givesTG EPS percentage17.2\u201329.1%.",
+      "assessment": "No polymer mass, final assay volume, dialysis-loss accounting, cell-F inventory or complete denominator supplied. Do not treatmg/L or the source percentage as adsorptioncapacity per mass or original-feed recovery."
+    },
+    {
+      "id": "phase",
+      "locators": [
+        "p4 XRD methods",
+        "p7 Figure4B and phase discussion",
+        "p8 Figure5C-D"
+      ],
+      "reported": "Mixed traces assign CS,CaSO4; CP,Ca3(PO4)2; CC,CaCO3; FCP,Ca5(PO4)3F; prose also names calcium fluoride sulfate,Ca(SO3F)2. Phosphate-related markers occur in uninoculatedTG5/TG10 as well. The text says standardJCPDS card but supplies no card identifiers here; methods print Pb-Ka,40kV40mA,5\u201365degrees,0.02degrees/s.",
+      "assessment": "Keep author-assigned mixed phases and printed instrument token unresolved. No raw diffractogram/header/card set or quantitative refinement was acquired. EDS colocalization and qualitative patterns do not identify phase-pureF product or exclusive microbial formation."
+    },
+    {
+      "id": "repeated_labels",
+      "locators": [
+        "p8 SEM discussion",
+        "p10 biomechanism discussion"
+      ],
+      "reported": "TG5-Rho is compared withTG5-Rho in the SEM paragraph; TG10-Rho is11.8%lower thanTG10-Rho in EPS paragraph. The samep10 also printsYG5-Rho.",
+      "assessment": "Preserve source tokens and figure-defined arms; no guessed label substitution or inferred quantitative effect."
+    },
+    {
+      "id": "supplement",
+      "locators": [
+        "DataSheet1.docx complete document.xml",
+        "word/media/image1.png FigureS1",
+        "word/media/image2.tiff FigureS2"
+      ],
+      "reported": "S1 caption identifiesP inTG/PG in deionizedwater; chart labelsT5,T10,P5,P10,mg/L. S2caption explicitly concernsPG. DOCX contains twoimagefiles, no tables or embedded workbook.",
+      "assessment": "S1 lackswatervolume,duration,temperature,pH,inoculation,sterilization and sample-preparation recipe. Do not assumeYPD recipe applies towaterassay. S2cannotestablishTGfragmentation."
+    }
+  ],
+  "fluorine_compartment_audit": [
+    {
+      "compartment": "initial TG solid",
+      "evidence": "Table1 prepared-materialwt% and5/10g flaskrecipe",
+      "missing": "Original batch totalF assay and ash/thermal basis; material lost in pretreatment."
+    },
+    {
+      "compartment": "filtered liquid",
+      "evidence": "Figure2Dmg/L,0.22micrometre,fivefolddilution",
+      "missing": "Replicate final volumes/raw concentration/correction/fluoride-specificlimits andblanks."
+    },
+    {
+      "compartment": "cells",
+      "evidence": "Separation described; cells imaged onTG",
+      "missing": "Cell mass and totalF inventory linked to each flask."
+    },
+    {
+      "compartment": "EPS-associated fraction",
+      "evidence": "60mL extraction andFigure7Dmg/L",
+      "missing": "Final reconstitution volume, polymer mass, recoveries and ethanol/dialysis losses."
+    },
+    {
+      "compartment": "remaining solids",
+      "evidence": "Figure3composition andseparatepyrolysis-loss plots; mixedXRD",
+      "missing": "Whole recovered mass and totalF before/afterthermal treatment linked to sampledaliquots."
+    },
+    {
+      "compartment": "other losses",
+      "evidence": "Filtration/centrifugation/dialysis/pyrolysis documented",
+      "missing": "F in filters,pellets,washwater,dialysate,vessel residues andthermalvolatile fraction."
+    }
+  ],
+  "inspection": {
+    "pdf_pages": 13,
+    "visually_inspected_pages": [
+      1,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "text_scope": "All Materials/Methods and Results/Discussion subsections, abstract, conclusion, availability and allmainfigurecaptions; fullsupplement text/media. No claim to all13pagesvisualinspection.",
+    "SI": "DOCX completeinternalmanifest/relationships/text inspected; bothoriginalembeddedfiguresviewed,TIFFviaPNGformatconversion without contentchange.",
+    "taxonomy": "Existing strain/species context retained; no newculture/sequenceauthentication inthispass."
+  },
+  "validation_at_freeze": {
+    "baseline_session": 11063,
+    "baseline_exit": 0,
+    "passed": 327,
+    "skipped": 3,
+    "seconds": 122.54,
+    "records": 616,
+    "histories": 744,
+    "final": "pending separateoutsideGitreceipt",
+    "canonical": "pending separateoutsideGitreceipt"
+  },
+  "raw_manifest": [
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-288/acquire.py",
+      "bytes": 1149,
+      "sha256": "bc341787994d0a2f4e9f67d2dd18a3255f042cf527cfae830fa950d2b72d9c50"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-288/acquisitions-01.json",
+      "bytes": 4739,
+      "sha256": "2a92ac9964b0d6195373afadefdc389447b68a342ba5aedad6cbfe0b29ad6bd7"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-288/archive-audit.json",
+      "bytes": 7782,
+      "sha256": "d6330a9011b84cb9f87c18b493d5d66d763fd2507479f1ba9fb16dddc02e95f2"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-288/assets/DataSheet1.docx",
+      "bytes": 1013408,
+      "sha256": "5a7e99a2cbad3f443b0b890a3712ba5574b3e63839bba4489240319d790d0ed7"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-288/assets/fbioe-09-777957-g001.gif",
+      "bytes": 18492,
+      "sha256": "2fef2fb90211b6848a9117c87271d0026a258df39d0dc5c1831e2149cfa7fa66"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-288/assets/fbioe-09-777957-g001.jpg",
+      "bytes": 169020,
+      "sha256": "c08e39a429fae2e52af857d8df57dde39706bba1a65e0f35d885587ffdb36746"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-288/assets/fbioe-09-777957-g002.gif",
+      "bytes": 15002,
+      "sha256": "61a4662c5522ba792658dec103d2ec6c481e8e5d41765955ad7b999e71b04238"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-288/assets/fbioe-09-777957-g002.jpg",
+      "bytes": 118884,
+      "sha256": "5a19428636358cdc52ac0c5d732ebfd2efbd1f2dd1e61638e37b45e56ed47740"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-288/assets/fbioe-09-777957-g003.gif",
+      "bytes": 12298,
+      "sha256": "fbbfd8d4d781a3b185b4f036c07764c614b7a03fca6d8732d9219821637e56be"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-288/assets/fbioe-09-777957-g003.jpg",
+      "bytes": 99939,
+      "sha256": "4c9fea52870200bd21283e6af824dfad25f9b459ba315f38f78a25dc27926135"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-288/assets/fbioe-09-777957-g004.gif",
+      "bytes": 14049,
+      "sha256": "3698ea73c85f23faa955c76a40695b603fdf99b4ae3811c40ff01e2493c3c074"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-288/assets/fbioe-09-777957-g004.jpg",
+      "bytes": 80188,
+      "sha256": "93eeb835ed2306ea6ea6e97747cbaee91e5751f06d88c1454edf72d1f8762aea"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-288/assets/fbioe-09-777957-g005.gif",
+      "bytes": 27178,
+      "sha256": "ea37ff79fe9336b1ac88d5c1e1cfa967bb66afb37bd08e7e1a0fcfd2dec06558"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-288/assets/fbioe-09-777957-g005.jpg",
+      "bytes": 523835,
+      "sha256": "3e802727886fbaef31b7878797d4963a5532a579f30422cacdada7f5d9d884eb"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-288/assets/fbioe-09-777957-g006.gif",
+      "bytes": 19015,
+      "sha256": "10821e8b616a5b1385b758f837ec8e47f6c5828797b60f836fc82b9e74d1005d"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-288/assets/fbioe-09-777957-g006.jpg",
+      "bytes": 271885,
+      "sha256": "80ebe2906534f947a92168e8d2c2419635fc2fac0ae0a7936cae4d4e5de7fc35"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-288/assets/fbioe-09-777957-g007.gif",
+      "bytes": 12197,
+      "sha256": "4f0d6dc0aba1e2069fcdad75ff661e640352f8dd519ef472ed7b5b7b9295b993"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-288/assets/fbioe-09-777957-g007.jpg",
+      "bytes": 101808,
+      "sha256": "2aa27b1c9c99d7abab59901d8d219e0aab24482b6af5e6e21978f5cdef1a7052"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-288/assets/image1.png",
+      "bytes": 8135,
+      "sha256": "51c1024371d10631432eb5675da062172007e4e381eb58e161bc09bfa65079a0"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-288/assets/image2.tiff",
+      "bytes": 992114,
+      "sha256": "bc5569d1f18d89e2ae0d33b563be4af4c713008b7160a5ecb86de3f802398f13"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-288/assets/si-image2.png",
+      "bytes": 863551,
+      "sha256": "fe6135f7cf98cef0f67b7f1d58963f33c4db838ec77b484412e41b59a1d2c3df"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-288/biostudies.json",
+      "bytes": 34,
+      "sha256": "3e5c511af4ca6c95e9d4d5bdcb6d73a83779d1f6ee1a04904414daf0ee2d72e3"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-288/crossmark-text.txt",
+      "bytes": 671,
+      "sha256": "2557f3453701d3e0465aac20346c3dd4571cc4af6acb2f0aa42484fad145f1de"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-288/crossmark.html",
+      "bytes": 7682,
+      "sha256": "7bbb5156980cdb9a964decf32cc3ec3706bb43e0590043053bdfd4d0bf999c32"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-288/crossref.json",
+      "bytes": 23559,
+      "sha256": "18773cd3bb3a93d50f9b5b474a5f2ce826b1348bc9c02521bf7de4335fc38833"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-288/dedup-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-288/dedup.json",
+      "bytes": 6572,
+      "sha256": "6bc3b21f63a483bb6b0790f3e05e779ffe779f609a01b42621e44603a37d200f"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-288/dedup.txt",
+      "bytes": 54821939,
+      "sha256": "259a9c23b580361e1b7db93c92ef669db880829f7a8e7b5af767e4d2317a2439"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-288/eligibility.json",
+      "bytes": 549,
+      "sha256": "e697912817e75b2dcd94103ecdad780a24f23791c08059f5840991991d9b6293"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-288/main-p1.png",
+      "bytes": 436510,
+      "sha256": "d3b247407127ba6b87a6f63b547cb3084e0908ef35dfb97a190bd2367d5d1c45"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-288/main-p10.png",
+      "bytes": 564523,
+      "sha256": "dec02e64604fd10a3e8e32e70c7820fbdfda470b913027d2432d94c0b6e64d49"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-288/main-p3.png",
+      "bytes": 1016692,
+      "sha256": "cbc5c777e49c92d1ad461cd47fd24cd53d8d8201c2b09edc58dd4208d0a607ea"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-288/main-p4.png",
+      "bytes": 481738,
+      "sha256": "9ff06833dff139a6a08f017866356cfad6bf8b6557ff9c2eb34e0b0419edf809"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-288/main-p5.png",
+      "bytes": 640785,
+      "sha256": "9994e9665392c5566b63dcca2d448c5095b958c8dffb1a365d3c0fb556b018a5"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-288/main-p6.png",
+      "bytes": 476788,
+      "sha256": "06955d46c60ed4791ce1a506826197276c36e6aa3b3dd6259da3032600843dcc"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-288/main-p7.png",
+      "bytes": 601829,
+      "sha256": "a274e0b5e1132feabfb187397405f39a4429ef0d5e45612f18175cf67eb7657b"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-288/main-p8.png",
+      "bytes": 1525993,
+      "sha256": "70d0eac94f754b089d6c9ffc41af62476d655eb8d2a17eded57898b9e884215d"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-288/main-p9.png",
+      "bytes": 459584,
+      "sha256": "db6f6be09ac4af9b3169af3394e8e0e9da20c12705c1b8ecc8e6af365b673551"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-288/main-pdfinfo.txt",
+      "bytes": 566,
+      "sha256": "8cf0c72f3081285329d84437203d94e95715f57ea5cdad83e1f973e4b4564021"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-288/main.html",
+      "bytes": 944704,
+      "sha256": "ea23cee307a9c5c2f2b907c39d2f0bb27333dacc32a2548daf6c8b28c523b592"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-288/main.pdf",
+      "bytes": 4076336,
+      "sha256": "6d1dab33b635d2cf38ea6cf0565c93ea862cee355424c4fa22725f1f804f557f"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-288/main.txt",
+      "bytes": 89877,
+      "sha256": "93964b421620e2c5c3ddfed784cdac89ccda51277072160e42a376e377919fcc"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-288/main.xml",
+      "bytes": 123115,
+      "sha256": "def8d63d7ccf65111c4a986ab145a38ac150a8655a8a3bc1edff05b77a4cc39a"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-288/metadata-audit.json",
+      "bytes": 2353,
+      "sha256": "110305325fefb98e926cf3df350cb53536e5192b519b18cadcb77c7a9b911329"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-288/prior-hash-comparison.json",
+      "bytes": 2158,
+      "sha256": "e7f45aba5401047177bf926d2d3b5c76cd2e554644fab569eb347e05c5e82ac8"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-288/prior-roots.json",
+      "bytes": 557,
+      "sha256": "a55d0b95fb7c59853668de3816aef868bf771412db4c86c0bc4fe348b5c5a5f9"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-288/routes-01.json",
+      "bytes": 806,
+      "sha256": "3fec0e693d0bb9dca291a6d7143fe82b90fe9c311fd0ef52e07279426ba00252"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-288/supplement-text.txt",
+      "bytes": 206,
+      "sha256": "c67e232d246d7bb97bd7f7bff37e95f5e0bf11e55c3eec60deca717a525ab07e"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-288/supplementary.zip",
+      "bytes": 2283808,
+      "sha256": "bd137ab9615ac7e2ee5aa799697b834173d3766757ef20f57318112c71aee9e3"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-288/web-search-01.json",
+      "bytes": 31291,
+      "sha256": "1c1d93ac59204c89b10418ea439673e397db7ba772ad6ea7ac9402c7bad8f41e"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-288/web-search-02.json",
+      "bytes": 29841,
+      "sha256": "ad78db673f3bc7910858e48e7e500a765ab024cb09d18d3eb547eb5086a25794"
+    }
+  ],
+  "limits": [
+    "No author contact, private archives, paid services or broadregistryAPIcrawl.",
+    "No affecting correction or rawassay/instrumentdata found in sevenqueries, publisher/XML/Crossmark/Crossref and exactBioStudiesroute; boundednegative, notuniversalabsence.",
+    "Historicalrawroots unavailable; freshhashescomparepreviouslyrecordeddigests, notoldfiles.",
+    "Laterreview/citing-papersearchleads notused as primaryprotocolcorrections.",
+    "No soil,plant,toxicological,field orindustrial performance evidence obtained."
+  ]
+}
